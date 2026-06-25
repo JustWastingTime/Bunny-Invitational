@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-label="Bunny Invitational">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8ecf"/>
+      <stop offset="100%" stop-color="#e91e8c"/>
+    </linearGradient>
+  </defs>
+  <!-- bunny ears -->
+  <ellipse cx="72" cy="28" rx="18" ry="42" fill="#fff" opacity="0.95" transform="rotate(-15 72 28)"/>
+  <ellipse cx="108" cy="24" rx="18" ry="42" fill="#fff" opacity="0.95" transform="rotate(12 108 24)"/>
+  <text x="200" y="78" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="52" fill="url(#g)" stroke="#fff" stroke-width="3" paint-order="stroke">BUNNY</text>
+  <text x="200" y="112" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="28" fill="#fff" letter-spacing="6">INVITATIONAL</text>
+</svg>

@@ -1,0 +1,998 @@
+{
+  "generatedAt": "2026-06-24T10:49:55.703Z",
+  "sourceCharacterJson": "D:/Documents/Uma/TazunaBot/TazunaDiscordBot/assets/character.json",
+  "spriteFolder": "assets/characters",
+  "totals": {
+    "characterRows": 89,
+    "spriteFiles": 21,
+    "mappedSpriteIds": 86
+  },
+  "bySpriteId": {
+    "100101": {
+      "spriteId": "100101",
+      "umaId": "1001",
+      "characterName": "Special Week",
+      "variant": "Original",
+      "displayName": "Special Week (Original)",
+      "costume": "Special Dreamer",
+      "file": "chara_stand_1001_100101.png"
+    },
+    "100102": {
+      "spriteId": "100102",
+      "umaId": "1001",
+      "characterName": "Special Week",
+      "variant": "Summer",
+      "displayName": "Special Week (Summer)",
+      "costume": "Hopp'n♪Happy Heart",
+      "file": "chara_stand_1001_100102.png"
+    },
+    "100103": {
+      "spriteId": "100103",
+      "umaId": "1001",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1001_100103.png"
+    },
+    "100201": {
+      "spriteId": "100201",
+      "umaId": "1002",
+      "characterName": "Silence Suzuka",
+      "variant": "Original",
+      "displayName": "Silence Suzuka (Original)",
+      "costume": "Innocent Silence",
+      "file": "chara_stand_1002_100201.png"
+    },
+    "100301": {
+      "spriteId": "100301",
+      "umaId": "1003",
+      "characterName": "Tokai Teio",
+      "variant": "Original",
+      "displayName": "Tokai Teio (Original)",
+      "costume": "Peak Joy",
+      "file": "chara_stand_1003_100301.png"
+    },
+    "100302": {
+      "spriteId": "100302",
+      "umaId": "1003",
+      "characterName": "Tokai Teio",
+      "variant": "Anime Collab",
+      "displayName": "Tokai Teio (Anime Collab)",
+      "costume": "Beyond the Horizon",
+      "file": "chara_stand_1003_100302.png"
+    },
+    "100401": {
+      "spriteId": "100401",
+      "umaId": "1004",
+      "characterName": "Maruzensky",
+      "variant": "Original",
+      "displayName": "Maruzensky (Original)",
+      "costume": "Formula R",
+      "file": "chara_stand_1004_100401.png"
+    },
+    "100402": {
+      "spriteId": "100402",
+      "umaId": "1004",
+      "characterName": "Maruzensky",
+      "variant": "Summer",
+      "displayName": "Maruzensky (Summer)",
+      "costume": "Hot☆Summer Night",
+      "file": "chara_stand_1004_100402.png"
+    },
+    "100501": {
+      "spriteId": "100501",
+      "umaId": "1005",
+      "characterName": "Fuji Kiseki",
+      "variant": "Original",
+      "displayName": "Fuji Kiseki (Original)",
+      "costume": "Shooting Star Revue",
+      "file": "chara_stand_1005_100501.png"
+    },
+    "100502": {
+      "spriteId": "100502",
+      "umaId": "1005",
+      "characterName": "Fuji Kiseki",
+      "variant": "Ballroom",
+      "displayName": "Fuji Kiseki (Ballroom)",
+      "costume": "Succès Étoilé",
+      "file": "chara_stand_1005_100502.png"
+    },
+    "100601": {
+      "spriteId": "100601",
+      "umaId": "1006",
+      "characterName": "Oguri Cap",
+      "variant": "Original",
+      "displayName": "Oguri Cap (Original)",
+      "costume": "Starlight Beat",
+      "file": "chara_stand_1006_100601.png"
+    },
+    "100602": {
+      "spriteId": "100602",
+      "umaId": "1006",
+      "characterName": "Oguri Cap",
+      "variant": "Christmas",
+      "displayName": "Oguri Cap (Christmas)",
+      "costume": "Ashen Miracle",
+      "file": "chara_stand_1006_100602.png"
+    },
+    "100701": {
+      "spriteId": "100701",
+      "umaId": "1007",
+      "characterName": "Gold Ship",
+      "variant": "Original",
+      "displayName": "Gold Ship (Original)",
+      "costume": "Red Strife",
+      "file": "chara_stand_1007_100701.png"
+    },
+    "100801": {
+      "spriteId": "100801",
+      "umaId": "1008",
+      "characterName": "Vodka",
+      "variant": "Original",
+      "displayName": "Vodka (Original)",
+      "costume": "Wild Top Gear",
+      "file": "chara_stand_1008_100801.png"
+    },
+    "100901": {
+      "spriteId": "100901",
+      "umaId": "1009",
+      "characterName": "Daiwa Scarlet",
+      "variant": "Original",
+      "displayName": "Daiwa Scarlet (Original)",
+      "costume": "Peak Blue",
+      "file": "chara_stand_1009_100901.png"
+    },
+    "101001": {
+      "spriteId": "101001",
+      "umaId": "1010",
+      "characterName": "Taiki Shuttle",
+      "variant": "Original",
+      "displayName": "Taiki Shuttle (Original)",
+      "costume": "Wild Frontier",
+      "file": "chara_stand_1010_101001.png"
+    },
+    "101002": {
+      "spriteId": "101002",
+      "umaId": "1010",
+      "characterName": "Taiki Shuttle",
+      "variant": "Camping",
+      "displayName": "Taiki Shuttle (Camping)",
+      "costume": "Bubblegum☆Memories",
+      "file": "chara_stand_1010_101002.png"
+    },
+    "101101": {
+      "spriteId": "101101",
+      "umaId": "1011",
+      "characterName": "Grass Wonder",
+      "variant": "Original",
+      "displayName": "Grass Wonder (Original)",
+      "costume": "Stone-Piercing Blue",
+      "file": "chara_stand_1011_101101.png"
+    },
+    "101102": {
+      "spriteId": "101102",
+      "umaId": "1011",
+      "characterName": "Grass Wonder",
+      "variant": "Fantasy",
+      "displayName": "Grass Wonder (Fantasy)",
+      "costume": "Saint Jade Healer",
+      "file": "chara_stand_1011_101102.png"
+    },
+    "101201": {
+      "spriteId": "101201",
+      "umaId": "1012",
+      "characterName": "Hishi Amazon",
+      "variant": "Original",
+      "displayName": "Hishi Amazon (Original)",
+      "costume": "Azure Amazon",
+      "file": "chara_stand_1012_101201.png"
+    },
+    "101301": {
+      "spriteId": "101301",
+      "umaId": "1013",
+      "characterName": "Mejiro McQueen",
+      "variant": "Original",
+      "displayName": "Mejiro McQueen (Original)",
+      "costume": "Frontline Elegance",
+      "file": "chara_stand_1013_101301.png"
+    },
+    "101302": {
+      "spriteId": "101302",
+      "umaId": "1013",
+      "characterName": "Mejiro McQueen",
+      "variant": "Anime Collab",
+      "displayName": "Mejiro McQueen (Anime Collab)",
+      "costume": "End of the Skies",
+      "file": null
+    },
+    "101401": {
+      "spriteId": "101401",
+      "umaId": "1014",
+      "characterName": "El Condor Pasa",
+      "variant": "Original",
+      "displayName": "El Condor Pasa (Original)",
+      "costume": "El☆Número 1",
+      "file": null
+    },
+    "101402": {
+      "spriteId": "101402",
+      "umaId": "1014",
+      "characterName": "El Condor Pasa",
+      "variant": "Fantasy",
+      "displayName": "El Condor Pasa (Fantasy)",
+      "costume": "Kukulkan Warrior",
+      "file": null
+    },
+    "101501": {
+      "spriteId": "101501",
+      "umaId": "1015",
+      "characterName": "T.M. Opera O",
+      "variant": "Original",
+      "displayName": "T.M. Opera O (Original)",
+      "costume": "O Sole Suo!",
+      "file": null
+    },
+    "101502": {
+      "spriteId": "101502",
+      "umaId": "1015",
+      "characterName": "T.M. Opera O",
+      "variant": "New Year",
+      "displayName": "T.M. Opera O (New Year)",
+      "costume": "New Year, Same Radiance!",
+      "file": null
+    },
+    "101601": {
+      "spriteId": "101601",
+      "umaId": "1016",
+      "characterName": "Narita Brian",
+      "variant": "Original",
+      "displayName": "Narita Brian (Original)",
+      "costume": "Maverick",
+      "file": null
+    },
+    "101701": {
+      "spriteId": "101701",
+      "umaId": "1017",
+      "characterName": "Symboli Rudolf",
+      "variant": "Original",
+      "displayName": "Symboli Rudolf (Original)",
+      "costume": "Emperor's Path",
+      "file": null
+    },
+    "101702": {
+      "spriteId": "101702",
+      "umaId": "1017",
+      "characterName": "Symboli Rudolf",
+      "variant": "Festival",
+      "displayName": "Symboli Rudolf (Festival)",
+      "costume": "Archer by Moonlight",
+      "file": null
+    },
+    "101801": {
+      "spriteId": "101801",
+      "umaId": "1018",
+      "characterName": "Air Groove",
+      "variant": "Original",
+      "displayName": "Air Groove (Original)",
+      "costume": "Empress Road",
+      "file": null
+    },
+    "101802": {
+      "spriteId": "101802",
+      "umaId": "1018",
+      "characterName": "Air Groove",
+      "variant": "Wedding",
+      "displayName": "Air Groove (Wedding)",
+      "costume": "Quercus Civilis",
+      "file": null
+    },
+    "101901": {
+      "spriteId": "101901",
+      "umaId": "1019",
+      "characterName": "Agnes Digital",
+      "variant": "Original",
+      "displayName": "Agnes Digital (Original)",
+      "costume": "Full-Color Fangirling",
+      "file": null
+    },
+    "102001": {
+      "spriteId": "102001",
+      "umaId": "1020",
+      "characterName": "Seiun Sky",
+      "variant": "Original",
+      "displayName": "Seiun Sky (Original)",
+      "costume": "Reeling in the Big One",
+      "file": null
+    },
+    "102002": {
+      "spriteId": "102002",
+      "umaId": "1020",
+      "characterName": "Seiun Sky",
+      "variant": "Ballroom",
+      "displayName": "Seiun Sky (Ballroom)",
+      "costume": "Soirée des Chatons",
+      "file": null
+    },
+    "102101": {
+      "spriteId": "102101",
+      "umaId": "1021",
+      "characterName": "Tamamo Cross",
+      "variant": "Original",
+      "displayName": "Tamamo Cross (Original)",
+      "costume": "Fast as Lightning",
+      "file": null
+    },
+    "102201": {
+      "spriteId": "102201",
+      "umaId": "1022",
+      "characterName": "Fine Motion",
+      "variant": "Original",
+      "displayName": "Fine Motion (Original)",
+      "costume": "Noble Seamair",
+      "file": null
+    },
+    "102202": {
+      "spriteId": "102202",
+      "umaId": "1022",
+      "characterName": "Fine Motion",
+      "variant": "Wedding",
+      "displayName": "Fine Motion (Wedding)",
+      "costume": "Titania",
+      "file": null
+    },
+    "102301": {
+      "spriteId": "102301",
+      "umaId": "1023",
+      "characterName": "Biwa Hayahide",
+      "variant": "Original",
+      "displayName": "Biwa Hayahide (Original)",
+      "costume": "pf. Winning Equation...",
+      "file": null
+    },
+    "102302": {
+      "spriteId": "102302",
+      "umaId": "1023",
+      "characterName": "Biwa Hayahide",
+      "variant": "Christmas",
+      "displayName": "Biwa Hayahide (Christmas)",
+      "costume": "Rouge Caroler",
+      "file": null
+    },
+    "102401": {
+      "spriteId": "102401",
+      "umaId": "1024",
+      "characterName": "Mayano Top Gun",
+      "variant": "Original",
+      "displayName": "Mayano Top Gun (Original)",
+      "costume": "Scramble☆Zone",
+      "file": null
+    },
+    "102402": {
+      "spriteId": "102402",
+      "umaId": "1024",
+      "characterName": "Mayano Top Gun",
+      "variant": "Wedding",
+      "displayName": "Mayano Top Gun (Wedding)",
+      "costume": "Sunlight Bouqeut",
+      "file": null
+    },
+    "102501": {
+      "spriteId": "102501",
+      "umaId": "1025",
+      "characterName": "Manhattan Cafe",
+      "variant": "Original",
+      "displayName": "Manhattan Cafe (Original)",
+      "costume": "Creeping Shadow",
+      "file": null
+    },
+    "102601": {
+      "spriteId": "102601",
+      "umaId": "1026",
+      "characterName": "Mihono Bourbon",
+      "variant": "Valentines",
+      "displayName": "Mihono Bourbon (Valentines)",
+      "costume": "CODE: ICING",
+      "file": null
+    },
+    "102701": {
+      "spriteId": "102701",
+      "umaId": "1027",
+      "characterName": "Mejiro Ryan",
+      "variant": "Original",
+      "displayName": "Mejiro Ryan (Original)",
+      "costume": "Down the Line",
+      "file": null
+    },
+    "102801": {
+      "spriteId": "102801",
+      "umaId": "1028",
+      "characterName": "Hishi Akebono",
+      "variant": "Original",
+      "displayName": "Hishi Akebono (Original)",
+      "costume": "Bono ☆ Alla Moda",
+      "file": null
+    },
+    "102901": {
+      "spriteId": "102901",
+      "umaId": "1029",
+      "characterName": "Yukino Bijin",
+      "variant": "Original",
+      "displayName": "Yukino Bijin (Original)",
+      "costume": "Cute Sweet Flower of Mutsu",
+      "file": null
+    },
+    "103001": {
+      "spriteId": "103001",
+      "umaId": "1030",
+      "characterName": "Rice Shower",
+      "variant": "Original",
+      "displayName": "Rice Shower (Original)",
+      "costume": "Rosy Dreams",
+      "file": null
+    },
+    "103002": {
+      "spriteId": "103002",
+      "umaId": "1030",
+      "characterName": "Rice Shower",
+      "variant": "Halloween",
+      "displayName": "Rice Shower (Halloween)",
+      "costume": "Vampire Makeover!",
+      "file": null
+    },
+    "103101": {
+      "spriteId": "103101",
+      "umaId": "1031",
+      "characterName": "Ines Fujin",
+      "variant": "Original",
+      "displayName": "Ines Fujin (Original)",
+      "costume": "Always Electrifying",
+      "file": null
+    },
+    "103201": {
+      "spriteId": "103201",
+      "umaId": "1032",
+      "characterName": "Agnes Tachyon",
+      "variant": "Original",
+      "displayName": "Agnes Tachyon (Original)",
+      "costume": "Tach-nology",
+      "file": null
+    },
+    "103301": {
+      "spriteId": "103301",
+      "umaId": "1033",
+      "characterName": "Admire Vega",
+      "variant": "Original",
+      "displayName": "Admire Vega (Original)",
+      "costume": "Starry Nocturne",
+      "file": null
+    },
+    "103401": {
+      "spriteId": "103401",
+      "umaId": "1034",
+      "characterName": "Inari One",
+      "variant": "Original",
+      "displayName": "Inari One (Original)",
+      "costume": "Edomurasaki",
+      "file": null
+    },
+    "103501": {
+      "spriteId": "103501",
+      "umaId": "1035",
+      "characterName": "Winning Ticket",
+      "variant": "Original",
+      "displayName": "Winning Ticket (Original)",
+      "costume": "Get to Winning!",
+      "file": null
+    },
+    "103601": {
+      "spriteId": "103601",
+      "umaId": "1036",
+      "characterName": "Air Shakur",
+      "variant": "Original",
+      "displayName": "Air Shakur (Original)",
+      "costume": "unsigned",
+      "file": null
+    },
+    "103701": {
+      "spriteId": "103701",
+      "umaId": "1037",
+      "characterName": "Eishin Flash",
+      "variant": "Original",
+      "displayName": "Eishin Flash (Original)",
+      "costume": "Meisterschaft",
+      "file": null
+    },
+    "103702": {
+      "spriteId": "103702",
+      "umaId": "1037",
+      "characterName": "Eishin Flash",
+      "variant": "Valentines",
+      "displayName": "Eishin Flash (Valentines)",
+      "costume": "Precise Chocolatier",
+      "file": null
+    },
+    "103801": {
+      "spriteId": "103801",
+      "umaId": "1038",
+      "characterName": "Curren Chan",
+      "variant": "Wedding",
+      "displayName": "Curren Chan (Wedding)",
+      "costume": "Ma Chérie of the New Moon",
+      "file": null
+    },
+    "103901": {
+      "spriteId": "103901",
+      "umaId": "1039",
+      "characterName": "Kawakami Princess",
+      "variant": "Original",
+      "displayName": "Kawakami Princess (Original)",
+      "costume": "Princess of Pink",
+      "file": null
+    },
+    "104001": {
+      "spriteId": "104001",
+      "umaId": "1040",
+      "characterName": "Gold City",
+      "variant": "Festival",
+      "displayName": "Gold City (Festival)",
+      "costume": "Autumn Cosmos",
+      "file": null
+    },
+    "104101": {
+      "spriteId": "104101",
+      "umaId": "1041",
+      "characterName": "Sakura Bakushin O",
+      "variant": "Original",
+      "displayName": "Sakura Bakushin O (Original)",
+      "costume": "Blossom in Learning",
+      "file": null
+    },
+    "104201": {
+      "spriteId": "104201",
+      "umaId": "1042",
+      "characterName": "Seeking the Pearl",
+      "variant": "Original",
+      "displayName": "Seeking the Pearl (Original)",
+      "costume": "Rocket ☆ Star",
+      "file": null
+    },
+    "104401": {
+      "spriteId": "104401",
+      "umaId": "1044",
+      "characterName": "Sweep Tosho",
+      "variant": "Original",
+      "displayName": "Sweep Tosho (Original)",
+      "costume": "Platanus Witch",
+      "file": null
+    },
+    "104501": {
+      "spriteId": "104501",
+      "umaId": "1045",
+      "characterName": "Super Creek",
+      "variant": "Original",
+      "displayName": "Super Creek (Original)",
+      "costume": "Murmuring Stream",
+      "file": null
+    },
+    "104502": {
+      "spriteId": "104502",
+      "umaId": "1045",
+      "characterName": "Super Creek",
+      "variant": "Halloween",
+      "displayName": "Super Creek (Halloween)",
+      "costume": "Chiffon-Wrapped Mummy",
+      "file": null
+    },
+    "104601": {
+      "spriteId": "104601",
+      "umaId": "1046",
+      "characterName": "Smart Falcon",
+      "variant": "Original",
+      "displayName": "Smart Falcon (Original)",
+      "costume": "LOVE☆4EVER",
+      "file": null
+    },
+    "104801": {
+      "spriteId": "104801",
+      "umaId": "1048",
+      "characterName": "Tosen Jordan",
+      "variant": "Original",
+      "displayName": "Tosen Jordan (Original)",
+      "costume": "Jokester ☆ Vibes",
+      "file": null
+    },
+    "105001": {
+      "spriteId": "105001",
+      "umaId": "1050",
+      "characterName": "Narita Taishin",
+      "variant": "Original",
+      "displayName": "Narita Taishin (Original)",
+      "costume": "Nevertheless",
+      "file": null
+    },
+    "105101": {
+      "spriteId": "105101",
+      "umaId": "1051",
+      "characterName": "Nishino Flower",
+      "variant": "Original",
+      "displayName": "Nishino Flower (Original)",
+      "costume": "Layered Petals",
+      "file": null
+    },
+    "105201": {
+      "spriteId": "105201",
+      "umaId": "1052",
+      "characterName": "Haru Urara",
+      "variant": "Original",
+      "displayName": "Haru Urara (Original)",
+      "costume": "Bestest Prize ♪",
+      "file": null
+    },
+    "105202": {
+      "spriteId": "105202",
+      "umaId": "1052",
+      "characterName": "Haru Urara",
+      "variant": "New Year",
+      "displayName": "Haru Urara (New Year)",
+      "costume": "New Year ♪ New Urara!",
+      "file": null
+    },
+    "105601": {
+      "spriteId": "105601",
+      "umaId": "1056",
+      "characterName": "Matikanefukukitaru",
+      "variant": "Original",
+      "displayName": "Matikanefukukitaru (Original)",
+      "costume": "Rising☆Fortune",
+      "file": null
+    },
+    "105602": {
+      "spriteId": "105602",
+      "umaId": "1056",
+      "characterName": "Matikanefukukitaru",
+      "variant": "Full Armor",
+      "displayName": "Matikanefukukitaru (Full Armor)",
+      "costume": "Lucky Tidings",
+      "file": null
+    },
+    "105801": {
+      "spriteId": "105801",
+      "umaId": "1058",
+      "characterName": "Meisho Doto",
+      "variant": "Original",
+      "displayName": "Meisho Doto (Original)",
+      "costume": "Turbulent Blue",
+      "file": null
+    },
+    "105901": {
+      "spriteId": "105901",
+      "umaId": "1059",
+      "characterName": "Mejiro Dober",
+      "variant": "Camping",
+      "displayName": "Mejiro Dober (Camping)",
+      "costume": "Sapphire Sojourn",
+      "file": null
+    },
+    "106001": {
+      "spriteId": "106001",
+      "umaId": "1060",
+      "characterName": "Nice Nature",
+      "variant": "Original",
+      "displayName": "Nice Nature (Original)",
+      "costume": "Poinsettia Ribbon",
+      "file": null
+    },
+    "106002": {
+      "spriteId": "106002",
+      "umaId": "1060",
+      "characterName": "Nice Nature",
+      "variant": "Cheerleader",
+      "displayName": "Nice Nature (Cheerleader)",
+      "costume": "Run & Win",
+      "file": null
+    },
+    "106101": {
+      "spriteId": "106101",
+      "umaId": "1061",
+      "characterName": "King Halo",
+      "variant": "Original",
+      "displayName": "King Halo (Original)",
+      "costume": "King of Emeralds",
+      "file": null
+    },
+    "106102": {
+      "spriteId": "106102",
+      "umaId": "1061",
+      "characterName": "King Halo",
+      "variant": "Cheerleader",
+      "displayName": "King Halo (Cheerleader)",
+      "costume": "Cheerleader in Noble White",
+      "file": null
+    },
+    "106201": {
+      "spriteId": "106201",
+      "umaId": "1062",
+      "characterName": "Matikanetannhauser",
+      "variant": "Original",
+      "displayName": "Matikanetannhauser (Original)",
+      "costume": "Clippety-Tippety-Clop",
+      "file": null
+    },
+    "106401": {
+      "spriteId": "106401",
+      "umaId": "1064",
+      "characterName": "Mejiro Palmer",
+      "variant": "Original",
+      "displayName": "Mejiro Palmer (Original)",
+      "costume": "Line Breakthrough",
+      "file": null
+    },
+    "106701": {
+      "spriteId": "106701",
+      "umaId": "1067",
+      "characterName": "Satono Diamond",
+      "variant": "Original",
+      "displayName": "Satono Diamond (Original)",
+      "costume": "Natural Brilliance",
+      "file": null
+    },
+    "106801": {
+      "spriteId": "106801",
+      "umaId": "1068",
+      "characterName": "Kitasan Black",
+      "variant": "Original",
+      "displayName": "Kitasan Black (Original)",
+      "costume": "Gilded Shrine to Glory",
+      "file": null
+    },
+    "106901": {
+      "spriteId": "106901",
+      "umaId": "1069",
+      "characterName": "Sakura Chiyono O",
+      "variant": "Original",
+      "displayName": "Sakura Chiyono O (Original)",
+      "costume": "Strength in Full Bloom",
+      "file": null
+    },
+    "107101": {
+      "spriteId": "107101",
+      "umaId": "1071",
+      "characterName": "Mejiro Ardan",
+      "variant": "Original",
+      "displayName": "Mejiro Ardan (Original)",
+      "costume": "Crystalline",
+      "file": null
+    },
+    "107201": {
+      "spriteId": "107201",
+      "umaId": "1072",
+      "characterName": "Yaeno Muteki",
+      "variant": "Original",
+      "displayName": "Yaeno Muteki (Original)",
+      "costume": "Blazed Head, Covered Fists",
+      "file": null
+    },
+    "107401": {
+      "spriteId": "107401",
+      "umaId": "1074",
+      "characterName": "Mejiro Bright",
+      "variant": "Original",
+      "displayName": "Mejiro Bright (Original)",
+      "costume": "Brunissage Line",
+      "file": null
+    }
+  },
+  "byUmaId": {
+    "1001": [
+      "100101",
+      "100102",
+      "100103"
+    ],
+    "1002": [
+      "100201"
+    ],
+    "1003": [
+      "100301",
+      "100302"
+    ],
+    "1004": [
+      "100401",
+      "100402"
+    ],
+    "1005": [
+      "100501",
+      "100502"
+    ],
+    "1006": [
+      "100601",
+      "100602"
+    ],
+    "1007": [
+      "100701"
+    ],
+    "1008": [
+      "100801"
+    ],
+    "1009": [
+      "100901"
+    ],
+    "1010": [
+      "101001",
+      "101002"
+    ],
+    "1011": [
+      "101101",
+      "101102"
+    ],
+    "1012": [
+      "101201"
+    ],
+    "1013": [
+      "101301",
+      "101302"
+    ],
+    "1014": [
+      "101401",
+      "101402"
+    ],
+    "1015": [
+      "101501",
+      "101502"
+    ],
+    "1016": [
+      "101601"
+    ],
+    "1017": [
+      "101701",
+      "101702"
+    ],
+    "1018": [
+      "101801",
+      "101802"
+    ],
+    "1019": [
+      "101901"
+    ],
+    "1020": [
+      "102001",
+      "102002"
+    ],
+    "1021": [
+      "102101"
+    ],
+    "1022": [
+      "102201",
+      "102202"
+    ],
+    "1023": [
+      "102301",
+      "102302"
+    ],
+    "1024": [
+      "102401",
+      "102402"
+    ],
+    "1025": [
+      "102501"
+    ],
+    "1026": [
+      "102601"
+    ],
+    "1027": [
+      "102701"
+    ],
+    "1028": [
+      "102801"
+    ],
+    "1029": [
+      "102901"
+    ],
+    "1030": [
+      "103001",
+      "103002"
+    ],
+    "1031": [
+      "103101"
+    ],
+    "1032": [
+      "103201"
+    ],
+    "1033": [
+      "103301"
+    ],
+    "1034": [
+      "103401"
+    ],
+    "1035": [
+      "103501"
+    ],
+    "1036": [
+      "103601"
+    ],
+    "1037": [
+      "103701",
+      "103702"
+    ],
+    "1038": [
+      "103801"
+    ],
+    "1039": [
+      "103901"
+    ],
+    "1040": [
+      "104001"
+    ],
+    "1041": [
+      "104101"
+    ],
+    "1042": [
+      "104201"
+    ],
+    "1044": [
+      "104401"
+    ],
+    "1045": [
+      "104501",
+      "104502"
+    ],
+    "1046": [
+      "104601"
+    ],
+    "1048": [
+      "104801"
+    ],
+    "1050": [
+      "105001"
+    ],
+    "1051": [
+      "105101"
+    ],
+    "1052": [
+      "105201",
+      "105202"
+    ],
+    "1056": [
+      "105601",
+      "105602"
+    ],
+    "1058": [
+      "105801"
+    ],
+    "1059": [
+      "105901"
+    ],
+    "1060": [
+      "106001",
+      "106002"
+    ],
+    "1061": [
+      "106101",
+      "106102"
+    ],
+    "1062": [
+      "106201"
+    ],
+    "1064": [
+      "106401"
+    ],
+    "1067": [
+      "106701"
+    ],
+    "1068": [
+      "106801"
+    ],
+    "1069": [
+      "106901"
+    ],
+    "1071": [
+      "107101"
+    ],
+    "1072": [
+      "107201"
+    ],
+    "1074": [
+      "107401"
+    ]
+  }
+}

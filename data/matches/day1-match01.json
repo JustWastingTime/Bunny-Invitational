@@ -1,0 +1,249 @@
+{
+  "id": "day1-match01",
+  "day": 1,
+  "matchNumber": 1,
+  "round": "Qualification Round",
+  "teams": [
+    "umalliance-one",
+    "uma-club-b",
+    "boysmells-club"
+  ],
+  "activeCategory": "long",
+  "races": {
+    "sprint": [
+      {
+        "teamId": "umalliance-one",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 2,
+        "gate": null
+      }
+    ],
+    "mile": [
+      {
+        "teamId": "umalliance-one",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 2,
+        "gate": null
+      }
+    ],
+    "medium": [
+      {
+        "teamId": "umalliance-one",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 2,
+        "gate": null
+      }
+    ],
+    "long": [
+      {
+        "teamId": "umalliance-one",
+        "slot": 0,
+        "gate": 6
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 1,
+        "gate": 5
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 2,
+        "gate": 1
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 0,
+        "gate": 6
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 1,
+        "gate": 5
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 2,
+        "gate": 4
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 0,
+        "gate": 6
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 1,
+        "gate": 5
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 2,
+        "gate": 4
+      }
+    ],
+    "dirt": [
+      {
+        "teamId": "umalliance-one",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "umalliance-one",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "uma-club-b",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "boysmells-club",
+        "slot": 2,
+        "gate": null
+      }
+    ]
+  }
+}

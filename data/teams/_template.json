@@ -1,0 +1,43 @@
+{ "id": "TEAM_ID",
+  "name": "Team Display Name",
+  "shortName": "TAG",
+  "color": "#e91e8c",
+  "categories": {
+    "sprint": [
+      { "trainer": "Player Name",
+        "uma": { "name": "Uma Name",
+          "spriteId": 1001,
+          "rating": "SS",
+          "style": "sashi",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": ["Skill 1", "Skill 2"] }
+      },
+      { "trainer": "Player Name",
+        "uma": { "name": "Uma Name", "spriteId": 1002, "rating": "S", "style": "senkou", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] }
+      },
+      { "trainer": "Player Name",
+        "uma": { "name": "Uma Name", "spriteId": 1003, "rating": "S", "style": "nige", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] }
+      }
+    ],
+    "mile": [
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1101, "rating": "SS", "style": "sashi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1102, "rating": "S", "style": "senkou", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1103, "rating": "S", "style": "oikomi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } }
+    ],
+    "medium": [
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1201, "rating": "SS", "style": "sashi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1202, "rating": "S", "style": "senkou", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1203, "rating": "S", "style": "oikomi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } }
+    ],
+    "long": [
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1301, "rating": "SS", "style": "sashi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1302, "rating": "S", "style": "senkou", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1303, "rating": "S", "style": "oikomi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } }
+    ],
+    "dirt": [
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1401, "rating": "SS", "style": "sashi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1402, "rating": "S", "style": "senkou", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } },
+      { "trainer": "Player Name", "uma": { "name": "Uma Name", "spriteId": 1403, "rating": "S", "style": "oikomi", "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 }, "skills": [] } }
+    ]
+  }
+}

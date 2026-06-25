@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bunny-invitational/team",
+  "title": "Team",
+  "type": "object",
+  "required": ["id", "name", "categories"],
+  "properties": {
+    "id": { "type": "string", "description": "Slug used in match files, e.g. dust-bunny" },
+    "name": { "type": "string", "description": "Display name, e.g. Dust Bunny" },
+    "shortName": { "type": "string", "description": "Short label for compact UI" },
+    "tagline": { "type": "string", "description": "Optional subtitle shown under team name" },
+    "color": { "type": "string", "description": "Team accent color (hex)" },
+    "categories": {
+      "type": "object",
+      "required": ["sprint", "mile", "medium", "long", "dirt"],
+      "properties": {
+        "sprint": { "$ref": "#/$defs/roster" },
+        "mile": { "$ref": "#/$defs/roster" },
+        "medium": { "$ref": "#/$defs/roster" },
+        "long": { "$ref": "#/$defs/roster" },
+        "dirt": { "$ref": "#/$defs/roster" }
+      }
+    }
+  },
+  "$defs": {
+    "roster": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "$ref": "#/$defs/member" }
+    },
+    "member": {
+      "type": "object",
+      "required": ["trainer", "uma"],
+      "properties": {
+        "trainer": { "type": "string" },
+        "uma": { "$ref": "#/$defs/uma" }
+      }
+    },
+    "uma": {
+      "type": "object",
+      "required": ["name"],
+      "anyOf": [
+        { "required": ["spriteId"] },
+        { "required": ["characterId"] }
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "spriteId": {
+          "description": "Preferred sprite filename key under assets/characters/ (e.g. 1001 for 1001.png)",
+          "type": ["string", "integer"]
+        },
+        "characterId": { "type": "string", "description": "Legacy sprite filename key under assets/characters/" },
+        "rating": { "type": "string", "description": "e.g. S, SS, UMA" },
+        "style": { "type": "string", "enum": ["nige", "senkou", "sashi", "oikomi"] },
+        "stats": {
+          "type": "object",
+          "properties": {
+            "speed": { "type": "integer" },
+            "stamina": { "type": "integer" },
+            "power": { "type": "integer" },
+            "guts": { "type": "integer" },
+            "wisdom": { "type": "integer" }
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

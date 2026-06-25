@@ -1,0 +1,21 @@
+{
+  "name": "bunny-invitational",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "overlay": "node server/index.js",
+    "check": "node scripts/check-data.js",
+    "build:sprite-map": "node scripts/build-sprite-map.js",
+    "overlay:show": "node scripts/set-overlay-visibility.js show",
+    "overlay:hide": "node scripts/set-overlay-visibility.js hide",
+    "overlay:toggle": "node scripts/set-overlay-visibility.js toggle",
+    "overlay:status": "node scripts/set-overlay-visibility.js status",
+    "category:sprint": "node scripts/set-active-category.js sprint",
+    "category:mile": "node scripts/set-active-category.js mile",
+    "category:medium": "node scripts/set-active-category.js medium",
+    "category:long": "node scripts/set-active-category.js long",
+    "category:dirt": "node scripts/set-active-category.js dirt"
+  }
+}

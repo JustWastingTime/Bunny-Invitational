@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bunny-invitational/match",
+  "title": "Match",
+  "type": "object",
+  "required": ["id", "day", "matchNumber", "round", "teams", "activeCategory", "races"],
+  "properties": {
+    "id": { "type": "string" },
+    "day": { "type": "integer", "minimum": 1 },
+    "matchNumber": { "type": "integer", "minimum": 1 },
+    "round": { "type": "string", "description": "e.g. Qualification, Semifinal, Final" },
+    "teams": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "type": "string", "description": "Team id slugs — order is left-to-right on overlay" }
+    },
+    "activeCategory": {
+      "type": "string",
+      "enum": ["sprint", "mile", "medium", "long", "dirt"],
+      "description": "Which race the overlay currently displays"
+    },
+    "races": {
+      "type": "object",
+      "required": ["sprint", "mile", "medium", "long", "dirt"],
+      "properties": {
+        "sprint": { "$ref": "#/$defs/entries" },
+        "mile": { "$ref": "#/$defs/entries" },
+        "medium": { "$ref": "#/$defs/entries" },
+        "long": { "$ref": "#/$defs/entries" },
+        "dirt": { "$ref": "#/$defs/entries" }
+      },
+      "description": "Each category is an array of 9 entries (3 per team). Track data lives in data/courses.json."
+    }
+  },
+  "$defs": {
+    "entries": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": { "$ref": "#/$defs/entry" }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["teamId", "slot"],
+      "properties": {
+        "teamId": { "type": "string" },
+        "slot": { "type": "integer", "minimum": 0, "maximum": 2, "description": "0–2 index into that team's category roster" },
+        "gate": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Set when gate draw is known — primary live-edit field"
+        }
+      }
+    }
+  }
+}
