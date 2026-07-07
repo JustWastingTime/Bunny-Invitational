@@ -2,6 +2,34 @@
 
 Tournament overlay system for Umamusume 3v3v3 club matches. Team rosters and match data live in JSON files; a local server merges them and feeds a browser overlay for OBS.
 
+## Operator Dashboard
+
+Open **http://localhost:3456/dashboard** during the event.
+
+From the dashboard you can:
+- Select which match is live on OBS
+- Switch category (Sprint / Mile / Medium / Long / Dirt)
+- Hide/show overlay
+- Mark **1st / 2nd / 3rd place players** for the active category (points roll up to teams)
+- View live standings
+
+Standings are saved to:
+- `data/standings.json` (source of truth)
+- `website/data/standings.json` (auto-synced for public site)
+
+## Public scoreboard (GitHub Pages)
+
+The `website/` folder is a static scoreboard that reads `website/data/standings.json`.
+
+1. Run the dashboard during the event (it auto-updates standings files).
+2. Commit and push `website/` to GitHub.
+3. In repo settings, enable GitHub Pages from the `/website` folder (or move contents to `/docs` if you prefer).
+4. Public URL will show standings (refreshes every 15s in browser).
+
+For near-live public updates during stream night:
+- commit + push `website/data/standings.json` between matches, or
+- later automate with a GitHub Action/token (optional phase 2).
+
 ## Quick start
 
 ```bash
@@ -23,6 +51,8 @@ During the event, only edit:
 - `activeCategory` in the match file
 - gate numbers (`races.<category>[].gate`)
 - `data/config.json` when switching to the next match
+
+After adding new sprite files to `assets/characters/`, restart the server (`npm start`) so the sprite map refreshes automatically.
 
 Hide/show overlay quickly:
 - `npm run overlay:hide` (hide UI)
@@ -48,7 +78,9 @@ data/
   teams/               ← one JSON per club (15 players × 5 categories)
   matches/             ← one JSON per 3v3v3 matchup (gates only)
   schema/              ← JSON schemas for validation
-overlay/               ← browser overlay (HTML/CSS/JS)
+overlay/               ← OBS overlay (HTML/CSS/JS)
+dashboard/             ← operator control panel
+website/               ← public scoreboard for GitHub Pages
 assets/
   characters/          ← sprites named by numeric spriteId (e.g. 1001.png)
   logo.svg             ← optional tournament logo (not used by current overlay)

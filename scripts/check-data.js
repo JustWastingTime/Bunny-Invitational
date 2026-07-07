@@ -1,28 +1,20 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-
+import { findTeamFile, CATEGORIES } from "../server/team-resolver.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const TEAM_DIR = path.join(ROOT, "data", "teams");
 const CHAR_DIR = path.join(ROOT, "assets", "characters");
-const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
+
 const IMAGE_EXTS = ["png", "webp", "jpg", "jpeg"];
+
 
 function readJson(relPath) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8"));
 }
 
-function teamFileCandidates(teamId) {
-  return [
-    path.join(TEAM_DIR, `${teamId}.json`),
-    path.join(TEAM_DIR, `${teamId.replace("alliance", "aliance")}.json`),
-    path.join(TEAM_DIR, `${teamId.replace("aliance", "alliance")}.json`),
-  ];
-}
-
-function findTeamFile(teamId) {
-  return teamFileCandidates(teamId).find((p) => fs.existsSync(p));
+function findTeamFileForCheck(teamId) {
+  return findTeamFile(ROOT, teamId);
 }
 
 function hasSpriteFile(spriteId) {
@@ -54,7 +46,7 @@ function run() {
   const teams = new Map();
 
   for (const teamId of match.teams) {
-    const teamFile = findTeamFile(teamId);
+    const teamFile = findTeamFileForCheck(teamId);
     if (!teamFile) {
       issues.push(`Missing team file for "${teamId}" in data/teams`);
       continue;

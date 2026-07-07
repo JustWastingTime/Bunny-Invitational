@@ -1,0 +1,49 @@
+{
+  "width": 1200,
+  "height": 760,
+  "battleWidth": 200,
+  "battleHeight": 78,
+  "battles": [
+    { "id": "group-a-match-1", "label": "Group A Match 1", "x": 60, "y": 540, "matchId": "day1-match01" },
+    { "id": "group-a-match-2", "label": "Group A Match 2", "x": 60, "y": 640, "matchId": null },
+    { "id": "group-b-match-1", "label": "Group B Match 1", "x": 940, "y": 540, "matchId": null },
+    { "id": "group-b-match-2", "label": "Group B Match 2", "x": 940, "y": 640, "matchId": null },
+    { "id": "group-a-match-3-middle", "label": "Group A Match 3 (MIDDLE)", "x": 330, "y": 430, "matchId": null },
+    { "id": "group-b-middle-3-middle", "label": "Group B Middle 3 (MIDDLE)", "x": 670, "y": 430, "matchId": null },
+    { "id": "group-a-second-stage", "label": "Group A Second Stage", "x": 60, "y": 300, "matchId": null },
+    { "id": "group-b-second-stage", "label": "Group B Second Stage", "x": 940, "y": 300, "matchId": null },
+    { "id": "group-a-semi", "label": "Group A Semi", "x": 220, "y": 180, "matchId": null },
+    { "id": "group-b-semi", "label": "Group B Semi", "x": 780, "y": 180, "matchId": null },
+    { "id": "lower-finals", "label": "Lower Finals", "x": 500, "y": 180, "matchId": null },
+    { "id": "finals", "label": "Finals", "x": 500, "y": 40, "matchId": null }
+  ],
+  "links": [
+    { "from": "group-a-match-1", "to": "group-a-semi", "result": "1", "points": [[60, 579], [34, 579], [34, 219], [220, 219]] },
+    { "from": "group-a-match-2", "to": "group-a-semi", "result": "1", "points": [[60, 679], [34, 679], [34, 219], [220, 219]] },
+    { "from": "group-b-match-1", "to": "group-b-semi", "result": "1", "points": [[1140, 579], [1166, 579], [1166, 219], [980, 219]] },
+    { "from": "group-b-match-2", "to": "group-b-semi", "result": "1", "points": [[1140, 679], [1166, 679], [1166, 219], [980, 219]] },
+
+    { "from": "group-a-match-1", "to": "group-a-second-stage", "result": "2", "points": [[60, 579], [50, 579], [50, 339], [60, 339]] },
+    { "from": "group-a-match-2", "to": "group-a-second-stage", "result": "2", "points": [[60, 679], [50, 679], [50, 339], [60, 339]] },
+    { "from": "group-b-match-1", "to": "group-b-second-stage", "result": "2", "points": [[1140, 579], [1150, 579], [1150, 339], [1140, 339]] },
+    { "from": "group-b-match-2", "to": "group-b-second-stage", "result": "2", "points": [[1140, 679], [1150, 679], [1150, 339], [1140, 339]] },
+
+    { "from": "group-a-match-1", "to": "group-a-match-3-middle", "result": "3", "points": [[260, 579], [285, 579], [285, 469], [330, 469]] },
+    { "from": "group-a-match-2", "to": "group-a-match-3-middle", "result": "3", "points": [[260, 679], [285, 679], [285, 469], [330, 469]] },
+    { "from": "group-b-match-1", "to": "group-b-middle-3-middle", "result": "3", "points": [[940, 579], [915, 579], [915, 469], [870, 469]] },
+    { "from": "group-b-match-2", "to": "group-b-middle-3-middle", "result": "3", "points": [[940, 679], [915, 679], [915, 469], [870, 469]] },
+
+    { "from": "group-a-match-3-middle", "to": "group-b-second-stage", "result": "cross", "points": [[430, 430], [430, 322], [920, 322], [920, 339], [940, 339]] },
+    { "from": "group-b-middle-3-middle", "to": "group-a-second-stage", "result": "cross", "points": [[770, 430], [770, 322], [280, 322], [280, 339], [260, 339]] },
+
+    { "from": "group-a-second-stage", "to": "group-a-semi", "result": "1", "points": [[160, 300], [160, 258], [320, 258]] },
+    { "from": "group-b-second-stage", "to": "group-b-semi", "result": "1", "points": [[1040, 300], [1040, 258], [880, 258]] },
+
+    { "from": "group-a-semi", "to": "lower-finals", "result": "2", "points": [[420, 219], [500, 219]] },
+    { "from": "group-b-semi", "to": "lower-finals", "result": "2", "points": [[780, 219], [700, 219]] },
+
+    { "from": "group-a-semi", "to": "finals", "result": "1", "points": [[320, 180], [320, 128], [500, 128], [500, 79]] },
+    { "from": "group-b-semi", "to": "finals", "result": "1", "points": [[880, 180], [880, 128], [700, 128], [700, 79]] },
+    { "from": "lower-finals", "to": "finals", "result": "1", "points": [[600, 180], [600, 118]] }
+  ]
+}

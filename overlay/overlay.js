@@ -8,11 +8,11 @@ const CATEGORY_LABELS = {
   dirt: "Dirt",
 };
 
-const STYLE_LABELS = {
-  nige: "Runner",
-  senkou: "Leader",
-  sashi: "Betweener",
-  oikomi: "Closer",
+const STYLE_SHORT = {
+  nige: "N",
+  senkou: "S",
+  sashi: "A",
+  oikomi: "O",
 };
 const CATEGORY_KEYS = {
   "1": "sprint",
@@ -73,17 +73,32 @@ function portraitHtmlFromPath(spritePath, spriteId, teamColor, umaName) {
   return portraitHtml(spriteId, teamColor, umaName);
 }
 
+function runstyleIconHtml(style) {
+  const key = String(style ?? "").toLowerCase();
+  const short = STYLE_SHORT[key] ?? "?";
+  const src = `/assets/ui/runstyles/${key}.png`;
+  return `
+    <span class="style-icon-wrap">
+      <img
+        class="style-icon"
+        src="${src}"
+        alt="${key}"
+        onerror="this.remove();"
+      />
+      <span class="style-icon-fallback">${short}</span>
+    </span>`;
+}
+
 function entryRow(entry, teamIndex, rowIndex) {
   const slotValue = entry.gate ?? teamIndex * 3 + rowIndex + 1;
-  const style = STYLE_LABELS[entry.uma.style] ?? entry.uma.style ?? "Unknown";
   return `
     <div class="entry-row">
       ${portraitHtmlFromPath(entry.uma.spritePath, entry.uma.spriteId ?? entry.uma.characterId, entry.teamColor, entry.uma.name)}
       <div class="entry-info">
         <div class="uma-name">${entry.uma.name}</div>
         <div class="trainer-row">
+          ${runstyleIconHtml(entry.uma.style)}
           <span class="trainer-name">${entry.trainer}</span>
-          <span class="style-chip">${style}</span>
         </div>
       </div>
       <div class="slot-wrap">

@@ -1,13 +1,22 @@
 {
-  "generatedAt": "2026-06-24T10:49:55.703Z",
+  "generatedAt": "2026-07-05T11:57:43.313Z",
   "sourceCharacterJson": "D:/Documents/Uma/TazunaBot/TazunaDiscordBot/assets/character.json",
   "spriteFolder": "assets/characters",
   "totals": {
-    "characterRows": 89,
-    "spriteFiles": 21,
-    "mappedSpriteIds": 86
+    "characterRows": 94,
+    "spriteFiles": 92,
+    "mappedSpriteIds": 95
   },
   "bySpriteId": {
+    "1": {
+      "spriteId": "1",
+      "umaId": "102701",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1027_102701 (1).png"
+    },
     "100101": {
       "spriteId": "100101",
       "umaId": "1001",
@@ -29,10 +38,10 @@
     "100103": {
       "spriteId": "100103",
       "umaId": "1001",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Special Week",
+      "variant": "Commander",
+      "displayName": "Special Week (Commander)",
+      "costume": "Ruler of Japan",
       "file": "chara_stand_1001_100103.png"
     },
     "100201": {
@@ -120,10 +129,19 @@
       "spriteId": "100701",
       "umaId": "1007",
       "characterName": "Gold Ship",
-      "variant": "Original",
-      "displayName": "Gold Ship (Original)",
-      "costume": "Red Strife",
+      "variant": "Summer",
+      "displayName": "Gold Ship (Summer)",
+      "costume": "RUN! RUIN! LAUNCHER!",
       "file": "chara_stand_1007_100701.png"
+    },
+    "100702": {
+      "spriteId": "100702",
+      "umaId": "1007",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1007_100702.png"
     },
     "100801": {
       "spriteId": "100801",
@@ -204,7 +222,16 @@
       "variant": "Anime Collab",
       "displayName": "Mejiro McQueen (Anime Collab)",
       "costume": "End of the Skies",
-      "file": null
+      "file": "chara_stand_1013_101302.png"
+    },
+    "101303": {
+      "spriteId": "101303",
+      "umaId": "1013",
+      "characterName": "Mejiro McQueen",
+      "variant": "Summer",
+      "displayName": "Mejiro McQueen (Summer)",
+      "costume": "Fair Lady of the Waves",
+      "file": "chara_stand_1013_101303.png"
     },
     "101401": {
       "spriteId": "101401",
@@ -213,7 +240,7 @@
       "variant": "Original",
       "displayName": "El Condor Pasa (Original)",
       "costume": "El☆Número 1",
-      "file": null
+      "file": "chara_stand_1014_101401.png"
     },
     "101402": {
       "spriteId": "101402",
@@ -222,7 +249,7 @@
       "variant": "Fantasy",
       "displayName": "El Condor Pasa (Fantasy)",
       "costume": "Kukulkan Warrior",
-      "file": null
+      "file": "chara_stand_1014_101402.png"
     },
     "101501": {
       "spriteId": "101501",
@@ -231,7 +258,7 @@
       "variant": "Original",
       "displayName": "T.M. Opera O (Original)",
       "costume": "O Sole Suo!",
-      "file": null
+      "file": "chara_stand_1015_101501.png"
     },
     "101502": {
       "spriteId": "101502",
@@ -240,7 +267,7 @@
       "variant": "New Year",
       "displayName": "T.M. Opera O (New Year)",
       "costume": "New Year, Same Radiance!",
-      "file": null
+      "file": "chara_stand_1015_101502.png"
     },
     "101601": {
       "spriteId": "101601",
@@ -249,7 +276,7 @@
       "variant": "Original",
       "displayName": "Narita Brian (Original)",
       "costume": "Maverick",
-      "file": null
+      "file": "chara_stand_1016_101601.png"
     },
     "101701": {
       "spriteId": "101701",
@@ -258,7 +285,7 @@
       "variant": "Original",
       "displayName": "Symboli Rudolf (Original)",
       "costume": "Emperor's Path",
-      "file": null
+      "file": "chara_stand_1017_101701.png"
     },
     "101702": {
       "spriteId": "101702",
@@ -267,7 +294,7 @@
       "variant": "Festival",
       "displayName": "Symboli Rudolf (Festival)",
       "costume": "Archer by Moonlight",
-      "file": null
+      "file": "chara_stand_1017_101702.png"
     },
     "101801": {
       "spriteId": "101801",
@@ -276,7 +303,7 @@
       "variant": "Original",
       "displayName": "Air Groove (Original)",
       "costume": "Empress Road",
-      "file": null
+      "file": "chara_stand_1018_101801.png"
     },
     "101802": {
       "spriteId": "101802",
@@ -285,7 +312,7 @@
       "variant": "Wedding",
       "displayName": "Air Groove (Wedding)",
       "costume": "Quercus Civilis",
-      "file": null
+      "file": "chara_stand_1018_101802.png"
     },
     "101901": {
       "spriteId": "101901",
@@ -294,7 +321,7 @@
       "variant": "Original",
       "displayName": "Agnes Digital (Original)",
       "costume": "Full-Color Fangirling",
-      "file": null
+      "file": "chara_stand_1019_101901.png"
     },
     "102001": {
       "spriteId": "102001",
@@ -303,7 +330,7 @@
       "variant": "Original",
       "displayName": "Seiun Sky (Original)",
       "costume": "Reeling in the Big One",
-      "file": null
+      "file": "chara_stand_1020_102001.png"
     },
     "102002": {
       "spriteId": "102002",
@@ -312,7 +339,7 @@
       "variant": "Ballroom",
       "displayName": "Seiun Sky (Ballroom)",
       "costume": "Soirée des Chatons",
-      "file": null
+      "file": "chara_stand_1020_102002.png"
     },
     "102101": {
       "spriteId": "102101",
@@ -321,7 +348,7 @@
       "variant": "Original",
       "displayName": "Tamamo Cross (Original)",
       "costume": "Fast as Lightning",
-      "file": null
+      "file": "chara_stand_1021_102101.png"
     },
     "102201": {
       "spriteId": "102201",
@@ -330,7 +357,7 @@
       "variant": "Original",
       "displayName": "Fine Motion (Original)",
       "costume": "Noble Seamair",
-      "file": null
+      "file": "chara_stand_1022_102201.png"
     },
     "102202": {
       "spriteId": "102202",
@@ -339,7 +366,7 @@
       "variant": "Wedding",
       "displayName": "Fine Motion (Wedding)",
       "costume": "Titania",
-      "file": null
+      "file": "chara_stand_1022_102202.png"
     },
     "102301": {
       "spriteId": "102301",
@@ -348,7 +375,7 @@
       "variant": "Original",
       "displayName": "Biwa Hayahide (Original)",
       "costume": "pf. Winning Equation...",
-      "file": null
+      "file": "chara_stand_1023_102301.png"
     },
     "102302": {
       "spriteId": "102302",
@@ -357,7 +384,7 @@
       "variant": "Christmas",
       "displayName": "Biwa Hayahide (Christmas)",
       "costume": "Rouge Caroler",
-      "file": null
+      "file": "chara_stand_1023_102302.png"
     },
     "102401": {
       "spriteId": "102401",
@@ -366,7 +393,7 @@
       "variant": "Original",
       "displayName": "Mayano Top Gun (Original)",
       "costume": "Scramble☆Zone",
-      "file": null
+      "file": "chara_stand_1024_102401.png"
     },
     "102402": {
       "spriteId": "102402",
@@ -375,7 +402,7 @@
       "variant": "Wedding",
       "displayName": "Mayano Top Gun (Wedding)",
       "costume": "Sunlight Bouqeut",
-      "file": null
+      "file": "chara_stand_1024_102402.png"
     },
     "102501": {
       "spriteId": "102501",
@@ -384,7 +411,7 @@
       "variant": "Original",
       "displayName": "Manhattan Cafe (Original)",
       "costume": "Creeping Shadow",
-      "file": null
+      "file": "chara_stand_1025_102501.png"
     },
     "102601": {
       "spriteId": "102601",
@@ -393,7 +420,16 @@
       "variant": "Valentines",
       "displayName": "Mihono Bourbon (Valentines)",
       "costume": "CODE: ICING",
-      "file": null
+      "file": "chara_stand_1026_102601.png"
+    },
+    "102602": {
+      "spriteId": "102602",
+      "umaId": "1026",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1026_102602.png"
     },
     "102701": {
       "spriteId": "102701",
@@ -402,7 +438,7 @@
       "variant": "Original",
       "displayName": "Mejiro Ryan (Original)",
       "costume": "Down the Line",
-      "file": null
+      "file": "chara_stand_1027_102701.png"
     },
     "102801": {
       "spriteId": "102801",
@@ -411,7 +447,7 @@
       "variant": "Original",
       "displayName": "Hishi Akebono (Original)",
       "costume": "Bono ☆ Alla Moda",
-      "file": null
+      "file": "chara_stand_1028_102801.png"
     },
     "102901": {
       "spriteId": "102901",
@@ -429,7 +465,7 @@
       "variant": "Original",
       "displayName": "Rice Shower (Original)",
       "costume": "Rosy Dreams",
-      "file": null
+      "file": "chara_stand_1030_103001.png"
     },
     "103002": {
       "spriteId": "103002",
@@ -438,7 +474,7 @@
       "variant": "Halloween",
       "displayName": "Rice Shower (Halloween)",
       "costume": "Vampire Makeover!",
-      "file": null
+      "file": "chara_stand_1030_103002.png"
     },
     "103101": {
       "spriteId": "103101",
@@ -447,7 +483,7 @@
       "variant": "Original",
       "displayName": "Ines Fujin (Original)",
       "costume": "Always Electrifying",
-      "file": null
+      "file": "chara_stand_1031_103101.png"
     },
     "103201": {
       "spriteId": "103201",
@@ -456,7 +492,7 @@
       "variant": "Original",
       "displayName": "Agnes Tachyon (Original)",
       "costume": "Tach-nology",
-      "file": null
+      "file": "chara_stand_1032_103201.png"
     },
     "103301": {
       "spriteId": "103301",
@@ -465,7 +501,7 @@
       "variant": "Original",
       "displayName": "Admire Vega (Original)",
       "costume": "Starry Nocturne",
-      "file": null
+      "file": "chara_stand_1033_103301.png"
     },
     "103401": {
       "spriteId": "103401",
@@ -474,7 +510,7 @@
       "variant": "Original",
       "displayName": "Inari One (Original)",
       "costume": "Edomurasaki",
-      "file": null
+      "file": "chara_stand_1034_103401.png"
     },
     "103501": {
       "spriteId": "103501",
@@ -483,7 +519,7 @@
       "variant": "Original",
       "displayName": "Winning Ticket (Original)",
       "costume": "Get to Winning!",
-      "file": null
+      "file": "chara_stand_1035_103501.png"
     },
     "103601": {
       "spriteId": "103601",
@@ -492,7 +528,7 @@
       "variant": "Original",
       "displayName": "Air Shakur (Original)",
       "costume": "unsigned",
-      "file": null
+      "file": "chara_stand_1036_103601.png"
     },
     "103701": {
       "spriteId": "103701",
@@ -501,7 +537,7 @@
       "variant": "Original",
       "displayName": "Eishin Flash (Original)",
       "costume": "Meisterschaft",
-      "file": null
+      "file": "chara_stand_1037_103701.png"
     },
     "103702": {
       "spriteId": "103702",
@@ -510,7 +546,7 @@
       "variant": "Valentines",
       "displayName": "Eishin Flash (Valentines)",
       "costume": "Precise Chocolatier",
-      "file": null
+      "file": "chara_stand_1037_103702.png"
     },
     "103801": {
       "spriteId": "103801",
@@ -519,7 +555,16 @@
       "variant": "Wedding",
       "displayName": "Curren Chan (Wedding)",
       "costume": "Ma Chérie of the New Moon",
-      "file": null
+      "file": "chara_stand_1038_103801.png"
+    },
+    "103802": {
+      "spriteId": "103802",
+      "umaId": "1038",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1038_103802.png"
     },
     "103901": {
       "spriteId": "103901",
@@ -528,7 +573,7 @@
       "variant": "Original",
       "displayName": "Kawakami Princess (Original)",
       "costume": "Princess of Pink",
-      "file": null
+      "file": "chara_stand_1039_103901.png"
     },
     "104001": {
       "spriteId": "104001",
@@ -537,7 +582,16 @@
       "variant": "Festival",
       "displayName": "Gold City (Festival)",
       "costume": "Autumn Cosmos",
-      "file": null
+      "file": "chara_stand_1040_104001.png"
+    },
+    "104002": {
+      "spriteId": "104002",
+      "umaId": "1040",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1040_104002.png"
     },
     "104101": {
       "spriteId": "104101",
@@ -546,7 +600,7 @@
       "variant": "Original",
       "displayName": "Sakura Bakushin O (Original)",
       "costume": "Blossom in Learning",
-      "file": null
+      "file": "chara_stand_1041_104101.png"
     },
     "104201": {
       "spriteId": "104201",
@@ -564,7 +618,7 @@
       "variant": "Original",
       "displayName": "Sweep Tosho (Original)",
       "costume": "Platanus Witch",
-      "file": null
+      "file": "chara_stand_1044_104401.png"
     },
     "104501": {
       "spriteId": "104501",
@@ -573,7 +627,7 @@
       "variant": "Original",
       "displayName": "Super Creek (Original)",
       "costume": "Murmuring Stream",
-      "file": null
+      "file": "chara_stand_1045_104501.png"
     },
     "104502": {
       "spriteId": "104502",
@@ -582,7 +636,7 @@
       "variant": "Halloween",
       "displayName": "Super Creek (Halloween)",
       "costume": "Chiffon-Wrapped Mummy",
-      "file": null
+      "file": "chara_stand_1045_104502.png"
     },
     "104601": {
       "spriteId": "104601",
@@ -591,7 +645,7 @@
       "variant": "Original",
       "displayName": "Smart Falcon (Original)",
       "costume": "LOVE☆4EVER",
-      "file": null
+      "file": "chara_stand_1046_104601.png"
     },
     "104801": {
       "spriteId": "104801",
@@ -600,7 +654,7 @@
       "variant": "Original",
       "displayName": "Tosen Jordan (Original)",
       "costume": "Jokester ☆ Vibes",
-      "file": null
+      "file": "chara_stand_1048_104801.png"
     },
     "105001": {
       "spriteId": "105001",
@@ -609,7 +663,7 @@
       "variant": "Original",
       "displayName": "Narita Taishin (Original)",
       "costume": "Nevertheless",
-      "file": null
+      "file": "chara_stand_1050_105001.png"
     },
     "105101": {
       "spriteId": "105101",
@@ -618,7 +672,7 @@
       "variant": "Original",
       "displayName": "Nishino Flower (Original)",
       "costume": "Layered Petals",
-      "file": null
+      "file": "chara_stand_1051_105101.png"
     },
     "105201": {
       "spriteId": "105201",
@@ -627,7 +681,7 @@
       "variant": "Original",
       "displayName": "Haru Urara (Original)",
       "costume": "Bestest Prize ♪",
-      "file": null
+      "file": "chara_stand_1052_105201.png"
     },
     "105202": {
       "spriteId": "105202",
@@ -636,7 +690,16 @@
       "variant": "New Year",
       "displayName": "Haru Urara (New Year)",
       "costume": "New Year ♪ New Urara!",
-      "file": null
+      "file": "chara_stand_1052_105202.png"
+    },
+    "105301": {
+      "spriteId": "105301",
+      "umaId": "1053",
+      "characterName": "Bamboo Memory",
+      "variant": "Original",
+      "displayName": "Bamboo Memory (Original)",
+      "costume": "Iron Ambition",
+      "file": "chara_stand_1053_105301.png"
     },
     "105601": {
       "spriteId": "105601",
@@ -645,7 +708,7 @@
       "variant": "Original",
       "displayName": "Matikanefukukitaru (Original)",
       "costume": "Rising☆Fortune",
-      "file": null
+      "file": "chara_stand_1056_105601.png"
     },
     "105602": {
       "spriteId": "105602",
@@ -654,7 +717,7 @@
       "variant": "Full Armor",
       "displayName": "Matikanefukukitaru (Full Armor)",
       "costume": "Lucky Tidings",
-      "file": null
+      "file": "chara_stand_1056_105602.png"
     },
     "105801": {
       "spriteId": "105801",
@@ -663,7 +726,7 @@
       "variant": "Original",
       "displayName": "Meisho Doto (Original)",
       "costume": "Turbulent Blue",
-      "file": null
+      "file": "chara_stand_1058_105801.png"
     },
     "105901": {
       "spriteId": "105901",
@@ -672,7 +735,16 @@
       "variant": "Camping",
       "displayName": "Mejiro Dober (Camping)",
       "costume": "Sapphire Sojourn",
-      "file": null
+      "file": "chara_stand_1059_105901.png"
+    },
+    "105902": {
+      "spriteId": "105902",
+      "umaId": "1059",
+      "characterName": null,
+      "variant": null,
+      "displayName": null,
+      "costume": null,
+      "file": "chara_stand_1059_105902.png"
     },
     "106001": {
       "spriteId": "106001",
@@ -681,7 +753,7 @@
       "variant": "Original",
       "displayName": "Nice Nature (Original)",
       "costume": "Poinsettia Ribbon",
-      "file": null
+      "file": "chara_stand_1060_106001.png"
     },
     "106002": {
       "spriteId": "106002",
@@ -690,7 +762,7 @@
       "variant": "Cheerleader",
       "displayName": "Nice Nature (Cheerleader)",
       "costume": "Run & Win",
-      "file": null
+      "file": "chara_stand_1060_106002.png"
     },
     "106101": {
       "spriteId": "106101",
@@ -699,7 +771,7 @@
       "variant": "Original",
       "displayName": "King Halo (Original)",
       "costume": "King of Emeralds",
-      "file": null
+      "file": "chara_stand_1061_106101.png"
     },
     "106102": {
       "spriteId": "106102",
@@ -708,7 +780,7 @@
       "variant": "Cheerleader",
       "displayName": "King Halo (Cheerleader)",
       "costume": "Cheerleader in Noble White",
-      "file": null
+      "file": "chara_stand_1061_106102.png"
     },
     "106201": {
       "spriteId": "106201",
@@ -717,7 +789,7 @@
       "variant": "Original",
       "displayName": "Matikanetannhauser (Original)",
       "costume": "Clippety-Tippety-Clop",
-      "file": null
+      "file": "chara_stand_1062_106201.png"
     },
     "106401": {
       "spriteId": "106401",
@@ -726,7 +798,7 @@
       "variant": "Original",
       "displayName": "Mejiro Palmer (Original)",
       "costume": "Line Breakthrough",
-      "file": null
+      "file": "chara_stand_1064_106401.png"
     },
     "106701": {
       "spriteId": "106701",
@@ -735,7 +807,7 @@
       "variant": "Original",
       "displayName": "Satono Diamond (Original)",
       "costume": "Natural Brilliance",
-      "file": null
+      "file": "chara_stand_1067_106701.png"
     },
     "106801": {
       "spriteId": "106801",
@@ -744,7 +816,7 @@
       "variant": "Original",
       "displayName": "Kitasan Black (Original)",
       "costume": "Gilded Shrine to Glory",
-      "file": null
+      "file": "chara_stand_1068_106801.png"
     },
     "106901": {
       "spriteId": "106901",
@@ -753,7 +825,7 @@
       "variant": "Original",
       "displayName": "Sakura Chiyono O (Original)",
       "costume": "Strength in Full Bloom",
-      "file": null
+      "file": "chara_stand_1069_106901.png"
     },
     "107101": {
       "spriteId": "107101",
@@ -762,7 +834,7 @@
       "variant": "Original",
       "displayName": "Mejiro Ardan (Original)",
       "costume": "Crystalline",
-      "file": null
+      "file": "chara_stand_1071_107101.png"
     },
     "107201": {
       "spriteId": "107201",
@@ -771,7 +843,7 @@
       "variant": "Original",
       "displayName": "Yaeno Muteki (Original)",
       "costume": "Blazed Head, Covered Fists",
-      "file": null
+      "file": "chara_stand_1072_107201.png"
     },
     "107401": {
       "spriteId": "107401",
@@ -780,6 +852,15 @@
       "variant": "Original",
       "displayName": "Mejiro Bright (Original)",
       "costume": "Brunissage Line",
+      "file": "chara_stand_1074_107401.png"
+    },
+    "109801": {
+      "spriteId": "109801",
+      "umaId": "1098",
+      "characterName": "Copano Rickey",
+      "variant": "Original",
+      "displayName": "Copano Rickey (Original)",
+      "costume": "Eightfold☆Fortune",
       "file": null
     }
   },
@@ -809,7 +890,8 @@
       "100602"
     ],
     "1007": [
-      "100701"
+      "100701",
+      "100702"
     ],
     "1008": [
       "100801"
@@ -830,7 +912,8 @@
     ],
     "1013": [
       "101301",
-      "101302"
+      "101302",
+      "101303"
     ],
     "1014": [
       "101401",
@@ -877,7 +960,8 @@
       "102501"
     ],
     "1026": [
-      "102601"
+      "102601",
+      "102602"
     ],
     "1027": [
       "102701"
@@ -915,13 +999,15 @@
       "103702"
     ],
     "1038": [
-      "103801"
+      "103801",
+      "103802"
     ],
     "1039": [
       "103901"
     ],
     "1040": [
-      "104001"
+      "104001",
+      "104002"
     ],
     "1041": [
       "104101"
@@ -952,6 +1038,9 @@
       "105201",
       "105202"
     ],
+    "1053": [
+      "105301"
+    ],
     "1056": [
       "105601",
       "105602"
@@ -960,7 +1049,8 @@
       "105801"
     ],
     "1059": [
-      "105901"
+      "105901",
+      "105902"
     ],
     "1060": [
       "106001",
@@ -993,6 +1083,12 @@
     ],
     "1074": [
       "107401"
+    ],
+    "1098": [
+      "109801"
+    ],
+    "102701": [
+      "1"
     ]
   }
 }

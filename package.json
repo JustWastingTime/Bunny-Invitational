@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node scripts/build-sprite-map.js && node server/index.js",
     "overlay": "node server/index.js",
     "check": "node scripts/check-data.js",
     "build:sprite-map": "node scripts/build-sprite-map.js",

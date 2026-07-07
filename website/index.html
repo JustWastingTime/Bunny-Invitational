@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bunny Invitational — Tournament Website</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1 id="tournament-name">Bunny Invitational</h1>
+        <p id="updated-at">Loading data...</p>
+      </div>
+      <nav class="tabs" id="tabs">
+        <a href="#bracket" data-tab="bracket">Bracket</a>
+        <a href="#results" data-tab="results">Results</a>
+        <a href="#teams" data-tab="teams">Teams</a>
+        <a href="#stats" data-tab="stats">Stats</a>
+      </nav>
+    </header>
+
+    <section id="view-bracket" class="view card">
+      <div class="match-detail" id="match-detail">
+        <h2>Bracket Match Detail</h2>
+        <p>Click any match box below to inspect head-to-head and race winners.</p>
+      </div>
+      <div class="bracket-grid" id="bracket-grid"></div>
+    </section>
+
+    <section id="view-results" class="view card hidden">
+      <h2>Overall Results</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Team</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </section>
+
+    <section id="view-teams" class="view card hidden">
+      <h2>Team Uma Rosters</h2>
+      <div id="teams-grid" class="teams-grid"></div>
+    </section>
+
+    <section id="view-stats" class="view card hidden">
+      <h2>Tournament Statistics</h2>
+      <div id="stats-grid" class="stats-grid"></div>
+      <div class="card nested">
+        <h3>Most Used Umas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Uma</th>
+              <th>Starts</th>
+              <th>Wins</th>
+              <th>Win rate</th>
+            </tr>
+          </thead>
+          <tbody id="popularity-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="./scoreboard.js" type="module"></script>
+</body>
+</html>

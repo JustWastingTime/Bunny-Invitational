@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bunny Invitational — Operator Dashboard</title>
+  <link rel="stylesheet" href="/dashboard/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div>
+        <h1>Operator Dashboard</h1>
+        <p class="sub">Control OBS overlay and record race results</p>
+      </div>
+      <div class="status-pill" id="overlay-status">Overlay: ON</div>
+    </header>
+
+    <section class="panel">
+      <h2>Live Match</h2>
+      <div class="row">
+        <label>
+          Active match
+          <select id="match-select"></select>
+        </label>
+        <div class="btn-group">
+          <button id="overlay-hide" type="button">Hide Overlay</button>
+          <button id="overlay-show" type="button">Show Overlay</button>
+        </div>
+      </div>
+      <div class="category-grid" id="category-buttons"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Podium — <span id="current-category-label">Long</span></h2>
+      <p class="hint">Select a place (1st / 2nd / 3rd), then click a racer. Points go to their team.</p>
+
+      <div class="podium-row" id="podium-slots"></div>
+
+      <div class="place-select">
+        <span class="place-select-label">Assigning:</span>
+        <button type="button" class="place-btn active" data-place="1">1st</button>
+        <button type="button" class="place-btn" data-place="2">2nd</button>
+        <button type="button" class="place-btn" data-place="3">3rd</button>
+      </div>
+
+      <div class="team-columns" id="team-columns"></div>
+      <button class="btn-muted" id="clear-placements" type="button">Clear all placements for this race</button>
+    </section>
+
+    <section class="panel">
+      <h2>Standings</h2>
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+      <p class="hint" id="scoring-hint"></p>
+    </section>
+  </div>
+
+  <script src="/dashboard/dashboard.js" type="module"></script>
+</body>
+</html>
