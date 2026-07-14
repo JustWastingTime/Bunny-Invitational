@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=1920, height=1080" />
   <title>Bunny Invitational Overlay</title>
   <link rel="stylesheet" href="/overlay/styles.css" />
+  <link rel="stylesheet" href="/overlay/transition.css" />
 </head>
 <body>
+  <div id="scene-transition" class="scene-transition" aria-hidden="true">
+    <div class="scene-transition-stage"></div>
+  </div>
+
   <div id="overlay" class="overlay hidden">
   <header class="top-bar">
     <div class="meta-block">

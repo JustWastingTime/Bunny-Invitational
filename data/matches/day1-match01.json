@@ -2,245 +2,245 @@
   "id": "day1-match01",
   "day": 1,
   "matchNumber": 1,
-  "round": "Qualification Round",
+  "round": "Group A",
   "teams": [
-    "umalliance-one",
-    "uma-club-b",
-    "boysmells-club"
+    "umalliance",
+    "dust-bunny",
+    "falena"
   ],
-  "activeCategory": "mile",
+  "activeCategory": "long",
   "races": {
     "sprint": [
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 0,
-        "gate": 6
+        "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 1,
-        "gate": 5
+        "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 2,
-        "gate": 1
+        "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 0,
-        "gate": 6
+        "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 1,
-        "gate": 5
+        "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 2,
-        "gate": 4
+        "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 0,
-        "gate": 6
+        "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 1,
-        "gate": 5
+        "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 2,
-        "gate": 4
+        "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "umalliance-one",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "uma-club-b",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "boysmells-club",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }

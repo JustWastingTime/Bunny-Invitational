@@ -1,22 +1,13 @@
 {
-  "generatedAt": "2026-07-05T11:57:43.313Z",
+  "generatedAt": "2026-07-12T18:15:13.200Z",
   "sourceCharacterJson": "D:/Documents/Uma/TazunaBot/TazunaDiscordBot/assets/character.json",
   "spriteFolder": "assets/characters",
   "totals": {
     "characterRows": 94,
-    "spriteFiles": 92,
-    "mappedSpriteIds": 95
+    "spriteFiles": 91,
+    "mappedSpriteIds": 94
   },
   "bySpriteId": {
-    "1": {
-      "spriteId": "1",
-      "umaId": "102701",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
-      "file": "chara_stand_1027_102701 (1).png"
-    },
     "100101": {
       "spriteId": "100101",
       "umaId": "1001",
@@ -129,18 +120,18 @@
       "spriteId": "100701",
       "umaId": "1007",
       "characterName": "Gold Ship",
-      "variant": "Summer",
-      "displayName": "Gold Ship (Summer)",
-      "costume": "RUN! RUIN! LAUNCHER!",
+      "variant": "Original",
+      "displayName": "Gold Ship (Original)",
+      "costume": "Red Strife",
       "file": "chara_stand_1007_100701.png"
     },
     "100702": {
       "spriteId": "100702",
       "umaId": "1007",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Gold Ship",
+      "variant": "Summer",
+      "displayName": "Gold Ship (Summer)",
+      "costume": "RUN! RUIN! LAUNCHER!",
       "file": "chara_stand_1007_100702.png"
     },
     "100801": {
@@ -417,18 +408,18 @@
       "spriteId": "102601",
       "umaId": "1026",
       "characterName": "Mihono Bourbon",
-      "variant": "Valentines",
-      "displayName": "Mihono Bourbon (Valentines)",
-      "costume": "CODE: ICING",
+      "variant": "Original",
+      "displayName": "Mihono Bourbon (Original)",
+      "costume": "MB-19890425",
       "file": "chara_stand_1026_102601.png"
     },
     "102602": {
       "spriteId": "102602",
       "umaId": "1026",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Mihono Bourbon",
+      "variant": "Valentines",
+      "displayName": "Mihono Bourbon (Valentines)",
+      "costume": "CODE: ICING",
       "file": "chara_stand_1026_102602.png"
     },
     "102701": {
@@ -552,18 +543,18 @@
       "spriteId": "103801",
       "umaId": "1038",
       "characterName": "Curren Chan",
-      "variant": "Wedding",
-      "displayName": "Curren Chan (Wedding)",
-      "costume": "Ma Chérie of the New Moon",
+      "variant": "Original",
+      "displayName": "Curren Chan (Original)",
+      "costume": "Fille Éclair",
       "file": "chara_stand_1038_103801.png"
     },
     "103802": {
       "spriteId": "103802",
       "umaId": "1038",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Curren Chan",
+      "variant": "Wedding",
+      "displayName": "Curren Chan (Wedding)",
+      "costume": "Ma Chérie of the New Moon",
       "file": "chara_stand_1038_103802.png"
     },
     "103901": {
@@ -579,18 +570,18 @@
       "spriteId": "104001",
       "umaId": "1040",
       "characterName": "Gold City",
-      "variant": "Festival",
-      "displayName": "Gold City (Festival)",
-      "costume": "Autumn Cosmos",
+      "variant": "Original",
+      "displayName": "Gold City (Original)",
+      "costume": "Authentic / 1928",
       "file": "chara_stand_1040_104001.png"
     },
     "104002": {
       "spriteId": "104002",
       "umaId": "1040",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Gold City",
+      "variant": "Festival",
+      "displayName": "Gold City (Festival)",
+      "costume": "Autumn Cosmos",
       "file": "chara_stand_1040_104002.png"
     },
     "104101": {
@@ -732,18 +723,18 @@
       "spriteId": "105901",
       "umaId": "1059",
       "characterName": "Mejiro Dober",
-      "variant": "Camping",
-      "displayName": "Mejiro Dober (Camping)",
-      "costume": "Sapphire Sojourn",
+      "variant": "Original",
+      "displayName": "Mejiro Dober (Original)",
+      "costume": "Off the Line",
       "file": "chara_stand_1059_105901.png"
     },
     "105902": {
       "spriteId": "105902",
       "umaId": "1059",
-      "characterName": null,
-      "variant": null,
-      "displayName": null,
-      "costume": null,
+      "characterName": "Mejiro Dober",
+      "variant": "Camping",
+      "displayName": "Mejiro Dober (Camping)",
+      "costume": "Sapphire Sojourn",
       "file": "chara_stand_1059_105902.png"
     },
     "106001": {
@@ -1086,9 +1077,6 @@
     ],
     "1098": [
       "109801"
-    ],
-    "102701": [
-      "1"
     ]
   }
 }

@@ -1,3 +1,4 @@
 {
-  "visible": true
+  "visible": true,
+  "sceneTransition": false
 }

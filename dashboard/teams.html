@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bunny Invitational — Team Editor</title>
+  <link rel="stylesheet" href="/dashboard/styles.css" />
+</head>
+<body>
+  <div class="page page-wide">
+    <header class="header">
+      <div>
+        <h1>Team Editor</h1>
+        <p class="sub">Create and edit club rosters (trainers + umas). Saves to <code>data/teams/</code>.</p>
+      </div>
+      <nav class="dash-nav">
+        <a href="/dashboard">Live Control</a>
+        <a class="active" href="/dashboard/teams">Teams</a>
+      </nav>
+    </header>
+
+    <section class="panel team-editor-panel">
+      <div class="team-editor-top">
+        <p class="hint" style="margin:0">Select a team to edit, or create a new one.</p>
+        <button type="button" id="team-new">New Team</button>
+      </div>
+
+      <div class="team-editor-layout">
+        <aside class="team-list-pane">
+          <div class="team-list" id="team-list"></div>
+        </aside>
+
+        <div class="team-form-pane" id="team-form-pane">
+          <p class="hint" id="team-form-empty">Select a team or create a new one.</p>
+          <form id="team-form" class="team-form hidden">
+            <div class="team-meta-grid">
+              <label>
+                Team id
+                <input id="team-id" name="id" type="text" pattern="[a-z0-9\-]+" required />
+              </label>
+              <label>
+                Display name
+                <input id="team-name" name="name" type="text" required />
+              </label>
+              <label>
+                Short name
+                <input id="team-short" name="shortName" type="text" />
+              </label>
+              <label>
+                Color
+                <input id="team-color" name="color" type="color" value="#e91e8c" />
+              </label>
+              <label class="span-2">
+                Tagline
+                <input id="team-tagline" name="tagline" type="text" />
+              </label>
+            </div>
+
+            <div class="team-cat-tabs" id="team-cat-tabs"></div>
+            <div class="roster-editor" id="roster-editor"></div>
+
+            <div class="team-form-actions" id="team-form-actions">
+              <button type="submit" id="team-save">Save to JSON</button>
+              <button type="button" class="btn-danger" id="team-delete">Delete</button>
+              <span class="team-editor-status" id="team-editor-status"></span>
+            </div>
+            <p class="hint team-save-hint">Changes are written to <code>data/teams/</code> when you save. Shortcut: Ctrl+S</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/dashboard/team-editor.js" type="module"></script>
+</body>
+</html>

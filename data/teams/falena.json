@@ -1,0 +1,138 @@
+{ "id": "falena",
+  "name": "Falena",
+  "shortName": "FLNA",
+  "tagline": "falena club",
+  "color": "#7c4dff",
+  "categories": {
+    "sprint": [
+      { "trainer": "Swaejudinoli",
+        "uma": { "name": "Curren Chan",
+          "spriteId": 103802,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "XV11",
+        "uma": { "name": "Meisho Doto",
+          "spriteId": 105801,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "zera",
+        "uma": { "name": "Mayano Top Gun",
+          "spriteId": 102401,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "mile": [
+      { "trainer": "StarryNightlight",
+        "uma": { "name": "Manhattan Cafe",
+          "spriteId": 102501,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Clowngeta",
+        "uma": { "name": "Mejiro McQueen",
+          "spriteId": 101301,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Cyndexv",
+        "uma": { "name": "Oguri Cap",
+          "spriteId": 100602,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "medium": [
+      { "trainer": "Haiji",
+        "uma": { "name": "Kitasan Black",
+          "spriteId": 106801,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Chan",
+        "uma": { "name": "Eishin Flash",
+          "spriteId": 103701,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Uprob",
+        "uma": { "name": "Air Shakur",
+          "spriteId": 103601,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "long": [
+      { "trainer": "Korie",
+        "uma": { "name": "Satono Diamond",
+          "spriteId": 106701,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Omatsuri Mambo!",
+        "uma": { "name": "Matikanetannhauser",
+          "spriteId": 106201,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Lazarus",
+        "uma": { "name": "Gold Ship",
+          "spriteId": 100701,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "dirt": [
+      { "trainer": "Plazma",
+        "uma": { "name": "Taiki Shuttle",
+          "spriteId": 101001,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Flemm",
+        "uma": { "name": "Smart Falcon",
+          "spriteId": 104601,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "Nati",
+        "uma": { "name": "El Condor Pasa",
+          "spriteId": 101401,
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ]
+  }
+}

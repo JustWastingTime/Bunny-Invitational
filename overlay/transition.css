@@ -1,0 +1,105 @@
+.scene-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.scene-transition.is-entering,
+.scene-transition.is-shown,
+.scene-transition.is-exiting {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Square large enough that after 45° rotate it covers 1920×1080 edge-to-edge */
+.scene-transition-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2800px;
+  height: 2800px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.scene-bar {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: var(--h);
+  top: var(--top);
+  border-radius: 999px;
+  will-change: transform;
+}
+
+/* Parked off-screen only when idle (not visible) */
+.scene-bar--tl {
+  transform: translate(-125%, -125%);
+}
+
+.scene-bar--br {
+  transform: translate(125%, 125%);
+}
+
+/* Held cover — flat edges so stripes fill with no gaps. Exit keeps rounded caps. */
+.scene-transition.is-shown .scene-bar,
+.scene-transition.is-exiting .scene-bar {
+  transform: translate(0, 0);
+}
+
+.scene-transition.is-shown .scene-bar {
+  animation: none;
+  border-radius: 0;
+}
+
+.scene-bar--green {
+  background: linear-gradient(90deg, #8fc84f 0%, #b6e673 42%, #a4d95f 100%);
+  box-shadow:
+    inset 0 -3px 10px rgba(0, 0, 0, 0.08),
+    inset 0 2px 6px rgba(255, 255, 255, 0.35);
+}
+
+.scene-bar--white {
+  background: linear-gradient(90deg, #dde3e8 0%, #f4f7f9 50%, #e8edf1 100%);
+  box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.65);
+}
+
+.scene-transition.is-entering .scene-bar--tl {
+  animation: scene-bar-in-tl var(--enter-dur) cubic-bezier(0.18, 0.92, 0.28, 1) var(--enter-delay) both;
+}
+
+.scene-transition.is-entering .scene-bar--br {
+  animation: scene-bar-in-br var(--enter-dur) cubic-bezier(0.18, 0.92, 0.28, 1) var(--enter-delay) both;
+}
+
+.scene-transition.is-exiting .scene-bar--tl {
+  animation: scene-bar-out-tl var(--exit-dur) cubic-bezier(0.55, 0.05, 0.45, 0.95) var(--exit-delay) both;
+}
+
+.scene-transition.is-exiting .scene-bar--br {
+  animation: scene-bar-out-br var(--exit-dur) cubic-bezier(0.55, 0.05, 0.45, 0.95) var(--exit-delay) both;
+}
+
+@keyframes scene-bar-in-tl {
+  from { transform: translate(-125%, -125%); }
+  to { transform: translate(0, 0); }
+}
+
+@keyframes scene-bar-in-br {
+  from { transform: translate(125%, 125%); }
+  to { transform: translate(0, 0); }
+}
+
+@keyframes scene-bar-out-tl {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-125%, -125%); }
+}
+
+@keyframes scene-bar-out-br {
+  from { transform: translate(0, 0); }
+  to { transform: translate(125%, 125%); }
+}

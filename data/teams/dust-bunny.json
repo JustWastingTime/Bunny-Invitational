@@ -5,133 +5,133 @@
   "color": "#e91e8c",
   "categories": {
     "sprint": [
-      { "trainer": "Sprint Ace",
-        "uma": { "name": "Vodka",
-          "characterId": "vodka",
-          "rating": "SS",
-          "style": "senkou",
-          "stats": { "speed": 1180, "stamina": 720, "power": 900, "guts": 650, "wisdom": 700 },
-          "skills": ["Steep Slope ◎", "Sprint Straightaways ◎", "Prepared to Pass"] }
-      },
-      { "trainer": "Quick Draw",
-        "uma": { "name": "Taiki Shuttle",
-          "characterId": "taiki-shuttle",
-          "rating": "SS",
-          "style": "nige",
-          "stats": { "speed": 1200, "stamina": 680, "power": 850, "guts": 700, "wisdom": 680 },
-          "skills": ["Front Runner Savvy ◎", "Sprint Corners ◎", "Focus"] }
-      },
-      { "trainer": "Dash Master",
+      { "trainer": "Jlew",
         "uma": { "name": "Sakura Bakushin O",
-          "characterId": "sakura-bakushin-o",
+          "spriteId": 104101,
+          "rating": "SS",
+          "style": "front",
+          "stats": { "speed": 1180, "stamina": 720, "power": 900, "guts": 650, "wisdom": 700 },
+          "skills": [] }
+      },
+      { "trainer": "Banana",
+        "uma": { "name": "Curren Chan",
+          "spriteId": 103801,
+          "rating": "SS",
+          "style": "pace",
+          "stats": { "speed": 1200, "stamina": 680, "power": 850, "guts": 700, "wisdom": 680 },
+          "skills": [] }
+      },
+      { "trainer": "Nightfish",
+        "uma": { "name": "Symboli Rudolf",
+          "spriteId": 101701,
           "rating": "S",
-          "style": "nige",
+          "style": "late",
           "stats": { "speed": 1150, "stamina": 650, "power": 820, "guts": 750, "wisdom": 660 },
-          "skills": ["Front Runner Straightaways ◎", "Short Distance Corners ◎"] }
+          "skills": ["Front Runner Straightaways ◎","Short Distance Corners ◎"] }
       }
     ],
     "mile": [
-      { "trainer": "Mile Runner",
-        "uma": { "name": "Fine Motion",
-          "characterId": "fine-motion",
+      { "trainer": "Bane",
+        "uma": { "name": "Hishi Amazon",
+          "spriteId": 101201,
           "rating": "SS",
-          "style": "sashi",
+          "style": "end",
           "stats": { "speed": 1100, "stamina": 900, "power": 850, "guts": 700, "wisdom": 800 },
-          "skills": ["Mile Straightaways ◎", "Late Surger Corners ◎", "Homestretch Haste"] }
+          "skills": ["Mile Straightaways ◎","Late Surger Corners ◎","Homestretch Haste"] }
       },
-      { "trainer": "Pace Setter",
-        "uma": { "name": "Air Groove",
-          "characterId": "air-groove",
+      { "trainer": "Spurs",
+        "uma": { "name": "Grass Wonder",
+          "spriteId": 101101,
           "rating": "SS",
-          "style": "senkou",
+          "style": "late",
           "stats": { "speed": 1080, "stamina": 950, "power": 880, "guts": 720, "wisdom": 780 },
-          "skills": ["Pace Chaser Savvy ◎", "Mile Corners ◎"] }
+          "skills": ["Pace Chaser Savvy ◎","Mile Corners ◎"] }
       },
-      { "trainer": "Club Mile",
-        "uma": { "name": "Smart Falcon",
-          "characterId": "smart-falcon",
+      { "trainer": "DadSmoocher",
+        "uma": { "name": "Nice Nature",
+          "spriteId": 106001,
           "rating": "S",
-          "style": "oikomi",
+          "style": "end",
           "stats": { "speed": 1050, "stamina": 880, "power": 800, "guts": 680, "wisdom": 750 },
-          "skills": ["Closer Straightaways ◎", "Medium Straightaways ○"] }
+          "skills": ["Closer Straightaways ◎","Medium Straightaways ○"] }
       }
     ],
     "medium": [
-      { "trainer": "Mid Track",
-        "uma": { "name": "Maruzensky",
-          "characterId": "maruzensky",
+      { "trainer": "Crabpeople",
+        "uma": { "name": "Gold Ship",
+          "spriteId": 100702,
           "rating": "SS",
-          "style": "senkou",
+          "style": "end",
           "stats": { "speed": 1050, "stamina": 1050, "power": 900, "guts": 750, "wisdom": 820 },
-          "skills": ["Medium Straightaways ◎", "Pace Chaser Savvy ◎", "Corner Recovery ○"] }
+          "skills": [] }
       },
-      { "trainer": "Stamina Pro",
-        "uma": { "name": "Grass Wonder",
-          "characterId": "grass-wonder",
+      { "trainer": "Hans",
+        "uma": { "name": "Daiwa Scarlet",
+          "spriteId": 100901,
           "rating": "SS",
-          "style": "sashi",
+          "style": "front",
           "stats": { "speed": 1020, "stamina": 1100, "power": 850, "guts": 800, "wisdom": 850 },
-          "skills": ["Late Surger Savvy ◎", "Medium Corners ◎", "Outer Swell"] }
+          "skills": ["Late Surger Savvy ◎","Medium Corners ◎","Outer Swell"] }
       },
-      { "trainer": "Club Mid",
-        "uma": { "name": "Mejiro Ryan",
-          "characterId": "mejiro-ryan",
-          "rating": "S",
-          "style": "oikomi",
+      { "trainer": "Minh",
+        "uma": { "name": "Oguri Cap",
+          "spriteId": 100602,
+          "rating": "SS",
+          "style": "pace",
           "stats": { "speed": 1000, "stamina": 1020, "power": 920, "guts": 780, "wisdom": 760 },
-          "skills": ["Closer Corners ◎", "Ramp Up"] }
+          "skills": ["Closer Corners ◎","Ramp Up"] }
       }
     ],
     "long": [
-      { "trainer": "Trainer A",
-        "uma": { "name": "Biwa Hayahide",
-          "characterId": "biwa-hayahide",
+      { "trainer": "Legi",
+        "uma": { "name": "Special Week",
+          "spriteId": 100101,
           "rating": "SS",
-          "style": "sashi",
+          "style": "pace",
           "stats": { "speed": 980, "stamina": 1200, "power": 900, "guts": 850, "wisdom": 900 },
-          "skills": ["Late Surger Savvy ◎", "Long Straightaways ◎", "Steadfast"] }
+          "skills": ["Late Surger Savvy ◎","Long Straightaways ◎","Steadfast"] }
       },
-      { "trainer": "Trainer B",
-        "uma": { "name": "Fine Motion",
-          "characterId": "fine-motion",
+      { "trainer": "Hai! Aku Aru!",
+        "uma": { "name": "Narita Taishin",
+          "spriteId": 105001,
           "rating": "SS",
-          "style": "sashi",
+          "style": "pace",
           "stats": { "speed": 960, "stamina": 1180, "power": 880, "guts": 820, "wisdom": 880 },
-          "skills": ["Long Corners ◎", "Homestretch Haste", "Outer Swell"] }
+          "skills": ["Long Corners ◎","Homestretch Haste","Outer Swell"] }
       },
-      { "trainer": "Trainer C",
-        "uma": { "name": "El Condor Pasa",
-          "characterId": "el-condor-pasa",
+      { "trainer": "Kai",
+        "uma": { "name": "Kitasan Black",
+          "spriteId": 106801,
           "rating": "SS",
-          "style": "senkou",
+          "style": "front",
           "stats": { "speed": 1000, "stamina": 1150, "power": 920, "guts": 800, "wisdom": 860 },
-          "skills": ["Pace Chaser Savvy ◎", "Long Straightaways ◎", "Corner Recovery ○"] }
+          "skills": ["Pace Chaser Savvy ◎","Long Straightaways ◎","Corner Recovery ○"] }
       }
     ],
     "dirt": [
-      { "trainer": "Dirt King",
-        "uma": { "name": "Gold Ship",
-          "characterId": "gold-ship",
-          "rating": "SS",
-          "style": "oikomi",
-          "stats": { "speed": 1020, "stamina": 1000, "power": 1100, "guts": 900, "wisdom": 700 },
-          "skills": ["Dirt Straightaways ◎", "Closer Savvy ◎", "Ramp Up"] }
+      { "trainer": "Vivi@BUNS",
+        "uma": { "name": "Taiki Shuttle",
+          "spriteId": 101001,
+          "rating": "UG",
+          "style": "pace",
+          "stats": { "speed": 1272, "stamina": 582, "power": 1224, "guts": 601, "wisdom": 1357 },
+          "skills": ["Dirt Straightaways ◎","Closer Savvy ◎","Ramp Up"] }
       },
-      { "trainer": "Mud Runner",
+      { "trainer": "Plnk@BUNS",
         "uma": { "name": "Haru Urara",
-          "characterId": "haru-urara",
+          "spriteId": 105202,
           "rating": "S",
-          "style": "nige",
+          "style": "late",
           "stats": { "speed": 900, "stamina": 950, "power": 850, "guts": 1200, "wisdom": 650 },
-          "skills": ["Front Runner Guts ◎", "Dirt Corners ○", "Guts Genius"] }
+          "skills": ["Front Runner Guts ◎","Dirt Corners ○","Guts Genius"] }
       },
-      { "trainer": "Club Dirt",
-        "uma": { "name": "Oguri Cap",
-          "characterId": "oguri-cap",
+      { "trainer": "Buttered@BUNS",
+        "uma": { "name": "Agnes Digital",
+          "spriteId": 101901,
           "rating": "SS",
-          "style": "sashi",
+          "style": "end",
           "stats": { "speed": 1050, "stamina": 980, "power": 1050, "guts": 880, "wisdom": 720 },
-          "skills": ["Dirt Savvy ◎", "Late Surger Straightaways ◎"] }
+          "skills": ["Dirt Savvy ◎","Late Surger Straightaways ◎"] }
       }
     ]
   }

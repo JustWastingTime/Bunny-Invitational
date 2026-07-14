@@ -132,6 +132,10 @@ function render(state) {
   status.textContent = `Overlay: ${state.overlayVisible ? "ON" : "OFF"}`;
   status.classList.toggle("off", !state.overlayVisible);
 
+  const transitionBtn = $("scene-transition-toggle");
+  transitionBtn.classList.toggle("active", Boolean(state.sceneTransition));
+  transitionBtn.textContent = state.sceneTransition ? "End Scene Transition" : "Scene Transition";
+
   document.querySelectorAll(".place-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.place === selectedPlace);
   });
@@ -223,6 +227,11 @@ $("overlay-hide").addEventListener("click", async () => {
 
 $("overlay-show").addEventListener("click", async () => {
   await api("/api/overlay/visibility?action=show", { method: "POST" });
+  await refresh();
+});
+
+$("scene-transition-toggle").addEventListener("click", async () => {
+  await api("/api/overlay/scene-transition?action=toggle", { method: "POST" });
   await refresh();
 });
 

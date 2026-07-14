@@ -52,7 +52,7 @@
         },
         "characterId": { "type": "string", "description": "Legacy sprite filename key under assets/characters/" },
         "rating": { "type": "string", "description": "e.g. S, SS, UMA" },
-        "style": { "type": "string", "enum": ["nige", "senkou", "sashi", "oikomi"] },
+        "style": { "type": "string", "enum": ["runaway", "front", "pace", "late", "end"] },
         "stats": {
           "type": "object",
           "properties": {

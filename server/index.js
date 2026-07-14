@@ -10,6 +10,17 @@ import {
   clearPlacement,
   ensureStandingsForMatch,
 } from "./tournament.js";
+import {
+  listTeams,
+  getTeam,
+  createTeam,
+  saveTeam,
+  deleteTeam,
+  emptyTeam,
+  STYLES as TEAM_STYLES,
+  CATEGORIES as TEAM_CATEGORIES,
+} from "./team-editor.js";
+import { listCharacterCatalog } from "./sprite-resolver.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -42,19 +53,33 @@ function writeJson(relPath, data) {
 function readOverlayState() {
   const fullPath = path.join(ROOT, OVERLAY_STATE_REL);
   if (!fs.existsSync(fullPath)) {
-    return { visible: true };
+    return { visible: true, sceneTransition: false };
   }
   try {
     const data = JSON.parse(fs.readFileSync(fullPath, "utf8"));
-    return { visible: data.visible !== false };
+    return {
+      visible: data.visible !== false,
+      sceneTransition: data.sceneTransition === true,
+    };
   } catch {
-    return { visible: true };
+    return { visible: true, sceneTransition: false };
   }
 }
 
-function writeOverlayState(visible) {
+function writeOverlayState(patch) {
   const fullPath = path.join(ROOT, OVERLAY_STATE_REL);
-  fs.writeFileSync(fullPath, JSON.stringify({ visible: Boolean(visible) }, null, 2) + "\n");
+  const next = { ...readOverlayState(), ...patch };
+  fs.writeFileSync(
+    fullPath,
+    JSON.stringify(
+      {
+        visible: next.visible !== false,
+        sceneTransition: next.sceneTransition === true,
+      },
+      null,
+      2
+    ) + "\n"
+  );
 }
 
 function buildOverlayPayload() {
@@ -66,6 +91,7 @@ function buildOverlayPayload() {
 
   return {
     visible: overlayState.visible,
+    sceneTransition: overlayState.sceneTransition,
     matchId: match.id,
     day: match.day,
     matchNumber: match.matchNumber,
@@ -136,7 +162,10 @@ const server = http.createServer(async (req, res) => {
   if (url.pathname === "/api/dashboard") {
     try {
       const overlayState = readOverlayState();
-      sendJson(res, 200, buildDashboardState(ROOT, { overlayVisible: overlayState.visible }));
+      sendJson(res, 200, buildDashboardState(ROOT, {
+        overlayVisible: overlayState.visible,
+        sceneTransition: overlayState.sceneTransition,
+      }));
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
     }
@@ -192,6 +221,67 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  if (url.pathname === "/api/characters") {
+    try {
+      sendJson(res, 200, { characters: listCharacterCatalog(ROOT) });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/teams") {
+    try {
+      if (req.method === "GET") {
+        sendJson(res, 200, { teams: listTeams(ROOT), styles: TEAM_STYLES, categories: TEAM_CATEGORIES });
+        return;
+      }
+      if (req.method === "POST") {
+        const body = await readRequestBody(req);
+        const team = createTeam(ROOT, body);
+        sendJson(res, 201, { ok: true, team });
+        return;
+      }
+      sendJson(res, 405, { error: "Method not allowed" });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/teams/new" && req.method === "GET") {
+    sendJson(res, 200, { team: emptyTeam("new-team", "New Team"), styles: TEAM_STYLES, categories: TEAM_CATEGORIES });
+    return;
+  }
+
+  if (url.pathname.startsWith("/api/teams/")) {
+    const teamId = decodeURIComponent(url.pathname.slice("/api/teams/".length));
+    if (!teamId || teamId.includes("/") || teamId.includes("..")) {
+      sendJson(res, 400, { error: "Invalid team id" });
+      return;
+    }
+    try {
+      if (req.method === "GET") {
+        sendJson(res, 200, { team: getTeam(ROOT, teamId), styles: TEAM_STYLES, categories: TEAM_CATEGORIES });
+        return;
+      }
+      if (req.method === "PUT") {
+        const body = await readRequestBody(req);
+        const team = saveTeam(ROOT, teamId, body);
+        sendJson(res, 200, { ok: true, team });
+        return;
+      }
+      if (req.method === "DELETE") {
+        sendJson(res, 200, deleteTeam(ROOT, teamId));
+        return;
+      }
+      sendJson(res, 405, { error: "Method not allowed" });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
   if (url.pathname === "/api/overlay") {
     try {
       sendJson(res, 200, buildOverlayPayload());
@@ -211,11 +301,31 @@ const server = http.createServer(async (req, res) => {
         if (action === "show") nextVisible = true;
         else if (action === "hide") nextVisible = false;
         else if (action === "toggle") nextVisible = !state.visible;
-        writeOverlayState(nextVisible);
+        writeOverlayState({ visible: nextVisible });
         sendJson(res, 200, { visible: nextVisible });
         return;
       }
       sendJson(res, 200, state);
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/overlay/scene-transition") {
+    try {
+      const state = readOverlayState();
+      if (req.method === "POST") {
+        const action = String(url.searchParams.get("action") ?? "").toLowerCase();
+        let nextActive = state.sceneTransition;
+        if (action === "on") nextActive = true;
+        else if (action === "off") nextActive = false;
+        else if (action === "toggle") nextActive = !state.sceneTransition;
+        writeOverlayState({ sceneTransition: nextActive });
+        sendJson(res, 200, { sceneTransition: nextActive });
+        return;
+      }
+      sendJson(res, 200, { sceneTransition: state.sceneTransition });
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
     }
@@ -254,8 +364,10 @@ const server = http.createServer(async (req, res) => {
   let filePath;
   if (url.pathname === "/" || url.pathname === "/overlay") {
     filePath = path.join(ROOT, "overlay", "index.html");
-  } else if (url.pathname === "/dashboard") {
+  } else if (url.pathname === "/dashboard" || url.pathname === "/dashboard/") {
     filePath = path.join(ROOT, "dashboard", "index.html");
+  } else if (url.pathname === "/dashboard/teams") {
+    filePath = path.join(ROOT, "dashboard", "teams.html");
   } else if (url.pathname.startsWith("/dashboard/")) {
     filePath = path.join(ROOT, url.pathname);
   } else if (url.pathname.startsWith("/overlay/")) {
@@ -279,6 +391,7 @@ server.listen(PORT, () => {
   console.log(`Bunny Invitational overlay server`);
   console.log(`  Overlay:    http://localhost:${PORT}/overlay`);
   console.log(`  Dashboard:  http://localhost:${PORT}/dashboard`);
+  console.log(`  Teams:      http://localhost:${PORT}/dashboard/teams`);
   console.log(`  API:        http://localhost:${PORT}/api/overlay`);
   console.log(`\nEdit JSON in data/ — overlay auto-refreshes every second.`);
 });

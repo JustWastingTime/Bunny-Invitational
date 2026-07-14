@@ -421,6 +421,7 @@ export function buildDashboardState(root, extras = {}) {
     activeMatch: config.activeMatch,
     activeCategory: category,
     overlayVisible: extras.overlayVisible ?? true,
+    sceneTransition: extras.sceneTransition ?? false,
     scoring: standings.scoring,
     matches: matchIds.map((id) => {
       const m = JSON.parse(fs.readFileSync(path.join(root, "data", "matches", `${id}.json`), "utf8"));

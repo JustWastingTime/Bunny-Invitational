@@ -1,0 +1,137 @@
+{ "id": "king",
+  "name": "King",
+  "shortName": "KING",
+  "color": "#359b62",
+  "categories": {
+    "sprint": [
+      { "trainer": "VannesGreave",
+        "uma": { "name": "King Halo",
+          "spriteId": 106102,
+          "rating": "S",
+          "style": "late",
+          "stats": { "speed": 1271, "stamina": 608, "power": 1213, "guts": 496, "wisdom": 1213 },
+          "skills": [] }
+      },
+      { "trainer": "New Team sprint 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team sprint 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "mile": [
+      { "trainer": "New Team mile 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team mile 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team mile 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "medium": [
+      { "trainer": "eef",
+        "uma": { "name": "Matikanefukukitaru",
+          "spriteId": 105601,
+          "rating": "UG",
+          "style": "late",
+          "stats": { "speed": 1311, "stamina": 699, "power": 1211, "guts": 488, "wisdom": 1129 },
+          "skills": [] }
+      },
+      { "trainer": "dnh",
+        "uma": { "name": "Mejiro Dober",
+          "spriteId": 105902,
+          "rating": "SS+",
+          "style": "late",
+          "stats": { "speed": 1231, "stamina": 738, "power": 1179, "guts": 501, "wisdom": 1118 },
+          "skills": [] }
+      },
+      { "trainer": "New Team medium 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "long": [
+      { "trainer": "New Team long 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team long 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team long 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "dirt": [
+      { "trainer": "New Team dirt 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team dirt 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team dirt 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ]
+  }
+}

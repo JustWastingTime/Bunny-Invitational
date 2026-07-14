@@ -13,8 +13,72 @@ function normalizeName(value) {
 
 function parseSpriteIdFromFilename(name) {
   const base = path.basename(name, path.extname(name));
+  const match = base.match(/chara_stand_\d+_(\d+)/i);
+  if (match) return match[1];
   const parts = base.match(/\d+/g) ?? [];
   return parts.length ? parts[parts.length - 1] : null;
+}
+
+function parseSpriteIdFromThumbnail(thumbnail) {
+  const match = String(thumbnail ?? "").match(/chara_stand_\d+_(\d+)\./i);
+  return match ? match[1] : null;
+}
+
+function parseCharacterJsonRow(row) {
+  const raw = String(row.id ?? "");
+  const match = raw.match(/^(\d+)\s*-\s*(.+)$/);
+  if (!match) return null;
+
+  const costumeId = match[1];
+  const portraitSpriteId =
+    parseSpriteIdFromThumbnail(row.thumbnail) ?? costumeId;
+  const variant = String(row.type ?? "").trim();
+  const characterName = String(row.character_name ?? match[2]).trim();
+
+  return {
+    costumeId,
+    portraitSpriteId,
+    characterName,
+    variant,
+    displayName: variant ? `${characterName} (${variant})` : characterName,
+    costume: String(row.costume ?? "").trim(),
+  };
+}
+
+export function assignCatalogKeys(rows) {
+  const portraitCounts = new Map();
+  for (const row of rows) {
+    portraitCounts.set(
+      row.portraitSpriteId,
+      (portraitCounts.get(row.portraitSpriteId) ?? 0) + 1
+    );
+  }
+
+  return rows.map((row) => ({
+    ...row,
+    spriteId:
+      (portraitCounts.get(row.portraitSpriteId) ?? 0) > 1
+        ? row.costumeId
+        : row.portraitSpriteId,
+  }));
+}
+
+export function resolvePortraitPath(row, spritesById) {
+  if (spritesById.has(row.spriteId)) return spritesById.get(row.spriteId);
+  if (spritesById.has(row.portraitSpriteId)) {
+    return spritesById.get(row.portraitSpriteId);
+  }
+  if (spritesById.has(row.costumeId)) return spritesById.get(row.costumeId);
+  return null;
+}
+
+export function readCharacterRecords(characterJsonPath) {
+  if (!fs.existsSync(characterJsonPath)) return [];
+
+  const source = JSON.parse(fs.readFileSync(characterJsonPath, "utf8"));
+  if (!Array.isArray(source)) return [];
+
+  return source.map(parseCharacterJsonRow).filter(Boolean);
 }
 
 export function readSpriteFiles(spriteDir) {
@@ -22,6 +86,7 @@ export function readSpriteFiles(spriteDir) {
 
   return fs
     .readdirSync(spriteDir)
+    .filter((name) => !/\(\d+\)\./.test(name))
     .filter((name) => IMAGE_EXTS.has(path.extname(name).toLowerCase()))
     .map((file) => {
       const spriteId = parseSpriteIdFromFilename(file);
@@ -30,32 +95,6 @@ export function readSpriteFiles(spriteDir) {
         file,
         spriteId,
         webPath: `/assets/characters/${file}`,
-      };
-    })
-    .filter(Boolean);
-}
-
-function readCharacterRecords(characterJsonPath) {
-  if (!fs.existsSync(characterJsonPath)) return [];
-
-  const source = JSON.parse(fs.readFileSync(characterJsonPath, "utf8"));
-  if (!Array.isArray(source)) return [];
-
-  return source
-    .map((row) => {
-      const raw = String(row.id ?? "");
-      const match = raw.match(/^(\d+)\s*-\s*(.+)$/);
-      if (!match) return null;
-
-      const spriteId = match[1];
-      const variant = String(row.type ?? "").trim();
-      const characterName = String(row.character_name ?? match[2]).trim();
-
-      return {
-        spriteId,
-        characterName,
-        variant,
-        displayName: variant ? `${characterName} (${variant})` : characterName,
       };
     })
     .filter(Boolean);
@@ -75,9 +114,11 @@ export function buildSpriteLookup(root, options = {}) {
   }
 
   // Enrich with character.json names (preferred Original variant per character).
-  for (const row of readCharacterRecords(characterJsonPath)) {
-    const webPath = bySpriteId.get(row.spriteId);
+  for (const row of assignCatalogKeys(readCharacterRecords(characterJsonPath))) {
+    const webPath = resolvePortraitPath(row, bySpriteId);
     if (!webPath) continue;
+
+    bySpriteId.set(row.spriteId, webPath);
 
     const charKey = normalizeName(row.characterName);
     const displayKey = normalizeName(row.displayName);
@@ -133,4 +174,80 @@ export function resolveSpritePath(uma, lookup) {
     lookup.byCharacterName.get(slugKey) ??
     null
   );
+}
+
+/** Catalog of uma variants for the dashboard team editor. */
+export function listCharacterCatalog(root, options = {}) {
+  const spriteDir = path.join(root, "assets", "characters");
+  const characterJsonPath = options.characterJsonPath ?? DEFAULT_CHARACTER_JSON;
+  const spriteMapPath = path.join(root, "data", "sprite-map.json");
+
+  const spritesById = new Map();
+  for (const sprite of readSpriteFiles(spriteDir)) {
+    spritesById.set(sprite.spriteId, sprite.webPath);
+  }
+
+  if (fs.existsSync(spriteMapPath)) {
+    try {
+      const spriteMap = JSON.parse(fs.readFileSync(spriteMapPath, "utf8"));
+      for (const row of Object.values(spriteMap.bySpriteId ?? {})) {
+        if (!row?.spriteId || !row?.file) continue;
+        spritesById.set(String(row.spriteId), `/assets/characters/${row.file}`);
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  const bySpriteId = new Map();
+
+  for (const row of assignCatalogKeys(readCharacterRecords(characterJsonPath))) {
+    bySpriteId.set(row.spriteId, {
+      spriteId: row.spriteId,
+      name: row.characterName,
+      variant: row.variant || "Original",
+      label: row.displayName,
+      spritePath: resolvePortraitPath(row, spritesById),
+    });
+  }
+
+  if (fs.existsSync(spriteMapPath)) {
+    try {
+      const spriteMap = JSON.parse(fs.readFileSync(spriteMapPath, "utf8"));
+      for (const row of Object.values(spriteMap.bySpriteId ?? {})) {
+        if (!row?.spriteId || !row?.displayName) continue;
+        const spriteId = String(row.spriteId);
+        if (bySpriteId.has(spriteId)) continue;
+        bySpriteId.set(spriteId, {
+          spriteId,
+          name: row.characterName ?? row.displayName,
+          variant: row.variant || "Original",
+          label: row.displayName,
+          spritePath: spritesById.get(spriteId) ?? null,
+        });
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  // Include local sprites that aren't in character.json or sprite-map
+  for (const [spriteId, spritePath] of spritesById.entries()) {
+    if (bySpriteId.has(spriteId)) continue;
+    bySpriteId.set(spriteId, {
+      spriteId,
+      name: `Sprite ${spriteId}`,
+      variant: "Unknown",
+      label: `Sprite ${spriteId}`,
+      spritePath,
+    });
+  }
+
+  return [...bySpriteId.values()].sort((a, b) => {
+    const byName = a.name.localeCompare(b.name);
+    if (byName !== 0) return byName;
+    if (a.variant.toLowerCase() === "original") return -1;
+    if (b.variant.toLowerCase() === "original") return 1;
+    return a.variant.localeCompare(b.variant) || a.spriteId.localeCompare(b.spriteId);
+  });
 }

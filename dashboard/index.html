@@ -13,7 +13,13 @@
         <h1>Operator Dashboard</h1>
         <p class="sub">Control OBS overlay and record race results</p>
       </div>
-      <div class="status-pill" id="overlay-status">Overlay: ON</div>
+      <div class="header-right">
+        <nav class="dash-nav">
+          <a class="active" href="/dashboard">Live Control</a>
+        <a href="/dashboard/teams">Teams</a>
+        </nav>
+        <div class="status-pill" id="overlay-status">Overlay: ON</div>
+      </div>
     </header>
 
     <section class="panel">
@@ -26,6 +32,7 @@
         <div class="btn-group">
           <button id="overlay-hide" type="button">Hide Overlay</button>
           <button id="overlay-show" type="button">Show Overlay</button>
+          <button id="scene-transition-toggle" type="button">Scene Transition</button>
         </div>
       </div>
       <div class="category-grid" id="category-buttons"></div>
