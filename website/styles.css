@@ -94,72 +94,8 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   margin-bottom: 2px;
 }
 
-.match-scoreboard {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin: 12px 0 14px;
-}
-
-.match-score-card {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 10px;
-  align-items: center;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid color-mix(in srgb, var(--team) 55%, white 12%);
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--team) 42%, transparent), rgba(20, 14, 32, 0.55)),
-    rgba(36, 24, 54, 0.95);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-
-.match-score-card.rank-1 {
-  box-shadow:
-    inset 0 0 0 1px rgba(244, 193, 93, 0.35),
-    0 0 0 1px rgba(244, 193, 93, 0.18);
-}
-
-.match-score-rank {
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  min-width: 28px;
-}
-
-.match-score-name {
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-.match-score-sub {
-  margin-top: 2px;
-  font-size: 11px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.match-score-points {
-  text-align: right;
-  line-height: 1;
-}
-
-.match-score-points strong {
-  display: block;
-  font-size: 34px;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-}
-
-.match-score-points span {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
+.match-detail-top {
+  margin-bottom: 12px;
 }
 
 .match-team-board {
@@ -387,7 +323,6 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 }
 
 @media (max-width: 900px) {
-  .match-scoreboard,
   .match-team-board {
     grid-template-columns: 1fr;
   }

@@ -271,25 +271,6 @@ function renderMatchDetail(matchId) {
   const rankByTeam = new Map(teamRows.map((team, idx) => [team.id, idx + 1]));
   const pointsByTeam = new Map(teamRows.map((team) => [team.id, team.matchPoints]));
 
-  const scoreboard = teamRows
-    .map((team, idx) => {
-      const rank = idx + 1;
-      return `
-        <article class="match-score-card rank-${rank}" style="--team:${team.color}">
-          <div class="match-score-rank">#${rank}</div>
-          <div class="match-score-meta">
-            <div class="match-score-name">${team.name}</div>
-            <div class="match-score-sub">${team.shortName ?? ""}</div>
-          </div>
-          <div class="match-score-points">
-            <strong>${team.matchPoints}</strong>
-            <span>pts</span>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
-
   const teamColumns = match.teams
     .map((teamId) => {
       const team = state.teams.find((row) => row.id === teamId) ?? {
@@ -341,7 +322,6 @@ function renderMatchDetail(matchId) {
         <p>${matchStatus(match)}</p>
       </div>
     </div>
-    <div class="match-scoreboard">${scoreboard}</div>
     <div class="match-team-board">${teamColumns}</div>
   `;
 }
