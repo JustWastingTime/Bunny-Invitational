@@ -212,28 +212,58 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 .race-card {
   width: 100%;
   min-width: 0;
-  border: 1px solid rgba(255, 238, 219, 0.14);
-  border-radius: 6px;
-  padding: 3px;
-  background: rgba(48, 34, 72, 0.88);
+  border: 1px solid rgba(255, 238, 219, 0.18);
+  border-radius: 8px;
+  padding: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)),
+    rgba(42, 30, 64, 0.96);
   text-align: center;
+  overflow: hidden;
+  box-shadow:
+    0 4px 10px rgba(8, 4, 16, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.race-card.place-1 { border-color: #f4c15d; box-shadow: inset 0 0 0 1px rgba(244, 193, 93, 0.4); }
-.race-card.place-2 { border-color: #bfc6d6; box-shadow: inset 0 0 0 1px rgba(191, 198, 214, 0.4); }
-.race-card.place-3 { border-color: #d58e67; box-shadow: inset 0 0 0 1px rgba(213, 142, 103, 0.4); }
+.race-card.place-1 {
+  border: 2px solid #f4c15d;
+  box-shadow:
+    0 0 0 1px rgba(244, 193, 93, 0.55),
+    0 0 14px rgba(244, 193, 93, 0.35),
+    0 4px 12px rgba(8, 4, 16, 0.35),
+    inset 0 0 0 1px rgba(255, 230, 150, 0.35);
+}
+
+.race-card.place-2 {
+  border: 2px solid #d5dceb;
+  box-shadow:
+    0 0 0 1px rgba(213, 220, 235, 0.45),
+    0 0 12px rgba(190, 200, 220, 0.22),
+    0 4px 12px rgba(8, 4, 16, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+.race-card.place-3 {
+  border: 2px solid #e0a078;
+  box-shadow:
+    0 0 0 1px rgba(224, 160, 120, 0.45),
+    0 0 12px rgba(224, 160, 120, 0.22),
+    0 4px 12px rgba(8, 4, 16, 0.35),
+    inset 0 0 0 1px rgba(255, 210, 170, 0.25);
+}
 
 .race-portrait-wrap {
   position: relative;
   width: 100%;
   aspect-ratio: 1;
-  margin: 0 auto;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.22);
 }
 
 .race-portrait {
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 0;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -248,48 +278,64 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   color: #fff;
 }
 
+.race-card-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 224, 196, 0.45),
+    transparent
+  );
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
 .podium-badge {
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: 4px;
+  right: 4px;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(16, 12, 26, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #f4c15d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.podium-badge.place-1 { color: #f4c15d; border-color: rgba(244, 193, 93, 0.85); }
+.podium-badge.place-2 { color: #d8dfef; border-color: rgba(216, 223, 239, 0.85); }
+.podium-badge.place-3 { color: #e7b69a; border-color: rgba(231, 182, 154, 0.85); }
+
+.podium-badge .race-icon-svg {
+  width: 11px;
+  height: 11px;
+}
+
+.race-icon.race-icon-star {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
   display: grid;
   place-items: center;
   width: 16px;
   height: 16px;
   border-radius: 999px;
-  background: rgba(16, 12, 26, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  color: #f4c15d;
+  background: rgba(16, 12, 26, 0.94);
+  border: 1px solid rgba(255, 213, 143, 0.55);
+  color: #ffd58f;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
-.podium-badge.place-1 { color: #f4c15d; border-color: rgba(244, 193, 93, 0.65); }
-.podium-badge.place-2 { color: #d8dfef; border-color: rgba(216, 223, 239, 0.65); }
-.podium-badge.place-3 { color: #e7b69a; border-color: rgba(231, 182, 154, 0.65); }
-
-.podium-badge .race-icon-svg {
+.race-icon.race-icon-star .race-icon-svg {
   width: 10px;
   height: 10px;
 }
 
-.race-icon.race-icon-star {
-  position: absolute;
-  left: -2px;
-  bottom: -2px;
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: rgba(16, 12, 26, 0.9);
-  border: 1px solid rgba(255, 213, 143, 0.4);
-  color: #ffd58f;
-}
-
-.race-icon.race-icon-star .race-icon-svg {
-  width: 9px;
-  height: 9px;
-}
-
 .race-trainer {
-  margin-top: 3px;
+  margin: 0;
+  padding: 5px 4px 6px;
   font-size: 10px;
   font-weight: 700;
   color: var(--text);
@@ -298,7 +344,8 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 2.3em;
+  min-height: 2.4em;
+  background: rgba(12, 8, 20, 0.35);
 }
 
 .race-icon-svg {

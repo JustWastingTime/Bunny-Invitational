@@ -94,11 +94,17 @@ function renderRacerCard(racer, podium, uniqueSet) {
   const place = podium.get(key) ?? null;
   const podiumClass = place ? `place-${place}` : "";
   const placeTitle = place === 1 ? "1st place" : place === 2 ? "2nd place" : place === 3 ? "3rd place" : "";
-  const uniqueBonus = Boolean(place && uniqueSet.has(racer.umaName));
+  const isUnique = uniqueSet.has(racer.umaName);
+  const uniquePodiumBonus = Boolean(place && isUnique);
   const initial = (racer.umaName ?? "?").charAt(0).toUpperCase();
   const portraitSrc = resolveAssetPath(racer.spritePath);
+  const titleParts = [
+    racer.trainer,
+    placeTitle || null,
+    isUnique ? (uniquePodiumBonus ? "Unique (podium bonus)" : "Unique uma") : null,
+  ].filter(Boolean);
   return `
-    <article class="race-card ${podiumClass}" title="${racer.trainer}${place ? ` · ${placeTitle}` : ""}${uniqueBonus ? " · Unique" : ""}">
+    <article class="race-card ${podiumClass}${isUnique ? " is-unique" : ""}" title="${titleParts.join(" · ")}">
       <div class="race-portrait-wrap">
         ${
           portraitSrc
@@ -106,8 +112,9 @@ function renderRacerCard(racer, podium, uniqueSet) {
             : `<div class="race-portrait fallback">${initial}</div>`
         }
         ${place ? `<span class="podium-badge ${podiumClass}" title="${placeTitle}">${ICON_CROWN}</span>` : ""}
-        ${uniqueBonus ? `<span class="race-icon race-icon-star" title="Unique bonus">${ICON_STAR}</span>` : ""}
+        ${isUnique ? `<span class="race-icon race-icon-star" title="${uniquePodiumBonus ? "Unique podium bonus" : "Unique uma"}">${ICON_STAR}</span>` : ""}
       </div>
+      <div class="race-card-divider" aria-hidden="true"></div>
       <div class="race-trainer">${racer.trainer}</div>
     </article>
   `;
