@@ -32,6 +32,14 @@ const teamCache = new Map();
 const openTeamIds = new Set();
 let selectedMemberKey = null;
 let teamsBooted = false;
+let skillRarityByName = new Map();
+
+function normalizeSkillKey(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/[◎○◯★☆♪]/g, "")
+    .replace(/[^a-z0-9]+/g, "");
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -81,6 +89,30 @@ async function loadTeamIndex() {
   const res = await fetch("./data/teams/index.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Could not load website/data/teams/index.json");
   return res.json();
+}
+
+async function loadSkillRarities() {
+  try {
+    const res = await fetch("./data/skills.json", { cache: "no-store" });
+    if (!res.ok) return new Map();
+    const data = await res.json();
+    const map = new Map();
+    for (const [name, rarity] of Object.entries(data.byName ?? {})) {
+      map.set(normalizeSkillKey(name), String(rarity).toLowerCase());
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+function lookupSkillRarity(skillName) {
+  const key = normalizeSkillKey(skillName);
+  if (skillRarityByName.has(key)) return skillRarityByName.get(key);
+  for (const [known, rarity] of skillRarityByName.entries()) {
+    if (known.includes(key) || key.includes(known)) return rarity;
+  }
+  return "normal";
 }
 
 async function loadTeam(teamId) {
@@ -179,8 +211,10 @@ function renderTeamsList() {
     .join("");
 }
 
-function renderSkillChip(skill) {
-  return `<span class="uma-skill-chip" title="${escapeHtml(skill)}">${escapeHtml(skill)}</span>`;
+function renderSkillChip(skill, index = 0) {
+  const rarity = lookupSkillRarity(skill);
+  const tone = index === 0 ? "unique-slot" : rarity === "rare" ? "rare" : rarity === "unique" ? "unique" : "normal";
+  return `<span class="uma-skill-chip rarity-${tone}" title="${escapeHtml(skill)} (${escapeHtml(rarity)})">${escapeHtml(skill)}</span>`;
 }
 
 function renderUmaDetail(member, team) {
@@ -215,7 +249,7 @@ function renderUmaDetail(member, team) {
 
   const skills = Array.isArray(uma.skills) ? uma.skills.filter(Boolean) : [];
   const skillGrid = skills.length
-    ? `<div class="uma-skill-grid">${skills.map(renderSkillChip).join("")}</div>`
+    ? `<div class="uma-skill-grid">${skills.map((skill, index) => renderSkillChip(skill, index)).join("")}</div>`
     : `<p class="hint uma-empty">No skills listed.</p>`;
 
   return `
@@ -341,7 +375,8 @@ async function hydrateOpenTeams() {
 
 export async function refreshTeamsPage({ force = false } = {}) {
   try {
-    const nextIndex = await loadTeamIndex();
+    const [nextIndex, rarities] = await Promise.all([loadTeamIndex(), loadSkillRarities()]);
+    skillRarityByName = rarities;
     const indexChanged =
       force ||
       !teamsBooted ||

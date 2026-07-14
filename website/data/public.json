@@ -53,7 +53,7 @@
             "uma": {
               "name": "Sakura Bakushin O",
               "rating": "SS",
-              "style": "front",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "S",
                 "distance": "S",
@@ -542,7 +542,7 @@
           {
             "slot": 1,
             "trainer": "Plnk@BUNS",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Haru Urara",
               "rating": "UG",
@@ -2328,7 +2328,7 @@
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "front",
+              "style": "pace",
               "key": "dust-bunny:0"
             },
             {
@@ -2414,7 +2414,7 @@
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "front",
+              "style": "pace",
               "key": "dust-bunny:0"
             },
             "3": {

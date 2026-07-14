@@ -2,10 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { buildSpriteLookup, resolveSpritePath } from "./sprite-resolver.js";
 import { getTeam, listTeams } from "./team-editor.js";
+import { listSkills } from "./skills.js";
 
 const WEBSITE_SPRITE_DIR = "website/assets/characters";
 const WEBSITE_TEAMS_DIR = "website/data/teams";
 const WEBSITE_RUNSTYLE_DIR = "website/assets/runstyle";
+const WEBSITE_SKILLS_REL = "website/data/skills.json";
 const RUNSTYLE_FILES = ["runaway", "front", "pace", "late", "end"];
 
 function sourcePathFromWebPath(root, webPath) {
@@ -125,6 +127,18 @@ export function publishWebsiteRunstyles(root) {
     copied += 1;
   }
   return { copied, destDir };
+}
+
+export function publishWebsiteSkills(root) {
+  const skills = listSkills();
+  const byName = {};
+  for (const skill of skills) {
+    byName[skill.name] = skill.rarity || "normal";
+  }
+  const outPath = path.join(root, WEBSITE_SKILLS_REL);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, JSON.stringify({ byName }, null, 2) + "\n");
+  return { count: skills.length, outPath };
 }
 
 export function publishWebsiteTeams(root) {

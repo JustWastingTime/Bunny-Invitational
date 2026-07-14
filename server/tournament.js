@@ -8,7 +8,7 @@ import {
   resolveMatchRacers,
   resolveMatchTeams,
 } from "./team-resolver.js";
-import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, buildWebsiteTeams } from "./website-publish.js";
+import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, publishWebsiteSkills, buildWebsiteTeams } from "./website-publish.js";
 import { buildSpriteLookup } from "./sprite-resolver.js";
 const STANDINGS_REL = "data/standings.json";
 const WEBSITE_STANDINGS_REL = "website/data/standings.json";
@@ -118,11 +118,13 @@ export function rebuildWebsitePublic(root) {
   const spriteResult = publishWebsiteSprites(root, data);
   const teamResult = publishWebsiteTeams(root);
   const runstyleResult = publishWebsiteRunstyles(root);
+  const skillResult = publishWebsiteSkills(root);
   fs.writeFileSync(publicPath, JSON.stringify(data, null, 2) + "\n");
   return {
     copied: spriteResult.copied,
     teams: teamResult.teams,
     runstyles: runstyleResult.copied,
+    skills: skillResult.count,
   };
 }
 

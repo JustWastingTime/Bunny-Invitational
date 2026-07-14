@@ -15,6 +15,7 @@ function main() {
   console.log(`Copied ${result.copied} portraits to website/assets/characters/`);
   console.log(`Published ${result.teams} team files to website/data/teams/`);
   console.log(`Copied ${result.runstyles} run style icons`);
+  console.log(`Published ${result.skills} skills to website/data/skills.json`);
 }
 
 main();
