@@ -138,6 +138,8 @@ function renderTrainerButton(team, category, member) {
   const umaName = member.uma?.name ?? "Unknown";
   const portrait = resolveAssetPath(member.uma?.spritePath);
   const initial = umaName.charAt(0).toUpperCase();
+  const styleKey = String(member.uma?.style ?? "pace").toLowerCase();
+  const styleLabel = STYLE_LABELS[styleKey] ?? member.uma?.style ?? styleKey;
   return `
     <button type="button" class="trainer-pick ${selected}" data-member-key="${escapeHtml(key)}" data-team-id="${escapeHtml(team.id)}" data-category="${escapeHtml(category)}" data-slot="${member.slot}">
       <span class="trainer-pick-portrait">
@@ -151,7 +153,9 @@ function renderTrainerButton(team, category, member) {
         <span class="trainer-pick-name">${escapeHtml(member.trainer)}</span>
         <span class="trainer-pick-uma">${escapeHtml(umaName)}</span>
       </span>
-      <span class="trainer-pick-cat">${escapeHtml(category)}</span>
+      <span class="trainer-pick-style" title="${escapeHtml(styleLabel)}">
+        <img class="trainer-pick-style-icon" src="./assets/runstyle/${escapeHtml(styleKey)}.png" alt="${escapeHtml(styleLabel)}" onerror="this.style.display='none'" />
+      </span>
     </button>
   `;
 }
