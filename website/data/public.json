@@ -50,7 +50,7 @@
             "trainer": "Phedro",
             "uma": {
               "name": "Fuji Kiseki",
-              "characterId": "fuji-kiseki",
+              "spriteId": 100501,
               "rating": "SS",
               "style": "front",
               "stats": {
@@ -71,7 +71,7 @@
             "trainer": "Skarpx",
             "uma": {
               "name": "Bamboo Memory",
-              "characterId": "bamboo-memory",
+              "spriteId": 105301,
               "rating": "S",
               "style": "runaway",
               "stats": {
@@ -92,7 +92,7 @@
             "trainer": "Squid",
             "uma": {
               "name": "Narita Brian",
-              "characterId": "narita-brian",
+              "spriteId": 101601,
               "rating": "S",
               "style": "pace",
               "stats": {
@@ -179,7 +179,7 @@
             "trainer": "Toad",
             "uma": {
               "name": "Rice Shower",
-              "characterId": "rice-shower",
+              "spriteId": 103001,
               "rating": "SS",
               "style": "end",
               "stats": {
@@ -200,7 +200,7 @@
             "trainer": "Brendan",
             "uma": {
               "name": "Oguri Cap",
-              "characterId": "oguri-cap",
+              "spriteId": 100601,
               "rating": "SS",
               "style": "pace",
               "stats": {
@@ -221,7 +221,7 @@
             "trainer": "Big Moj",
             "uma": {
               "name": "Agnes Tachyon",
-              "characterId": "agnes-tachyon",
+              "spriteId": 103201,
               "rating": "SS",
               "style": "front",
               "stats": {
@@ -241,31 +241,28 @@
         "long": [
           {
             "slot": 0,
-            "trainer": "Trainer A",
+            "trainer": "Hades",
             "uma": {
               "name": "Special Week",
-              "characterId": "special-week",
-              "rating": "SS",
+              "spriteId": 100101,
+              "rating": "UG",
               "style": "pace",
               "stats": {
-                "speed": 970,
-                "stamina": 1190,
-                "power": 890,
-                "guts": 840,
-                "wisdom": 870
+                "speed": 1318,
+                "stamina": 779,
+                "power": 1064,
+                "guts": 582,
+                "wisdom": 1208
               },
-              "skills": [
-                "Late Surger Savvy ◎",
-                "Long Straightaways ◎"
-              ]
+              "skills": []
             }
           },
           {
             "slot": 1,
-            "trainer": "Trainer B",
+            "trainer": "Fafa",
             "uma": {
               "name": "Silence Suzuka",
-              "characterId": "silence-suzuka",
+              "spriteId": 100201,
               "rating": "SS",
               "style": "runaway",
               "stats": {
@@ -284,10 +281,10 @@
           },
           {
             "slot": 2,
-            "trainer": "Trainer C",
+            "trainer": "Shenezle",
             "uma": {
-              "name": "Agnes Tachyon",
-              "characterId": "agnes-tachyon",
+              "name": "Manhattan Cafe",
+              "spriteId": 102501,
               "rating": "SS",
               "style": "end",
               "stats": {
@@ -307,10 +304,10 @@
         "dirt": [
           {
             "slot": 0,
-            "trainer": "Club A Dirt 1",
+            "trainer": "OJ",
             "uma": {
-              "name": "TM Opera O",
-              "characterId": "tm-opera-o",
+              "name": "Smart Falcon",
+              "spriteId": 104601,
               "rating": "SS",
               "style": "front",
               "stats": {
@@ -328,10 +325,10 @@
           },
           {
             "slot": 1,
-            "trainer": "Club A Dirt 2",
+            "trainer": "eachcorpse",
             "uma": {
-              "name": "Nice Nature",
-              "characterId": "nice-nature",
+              "name": "Taiki Shuttle",
+              "spriteId": 101001,
               "rating": "S",
               "style": "pace",
               "stats": {
@@ -349,10 +346,10 @@
           },
           {
             "slot": 2,
-            "trainer": "Club A Dirt 3",
+            "trainer": "Value",
             "uma": {
-              "name": "Matikanefukukitaru",
-              "characterId": "matikanefukukitaru",
+              "name": "El Condor Pasa",
+              "spriteId": 101401,
               "rating": "S",
               "style": "end",
               "stats": {
@@ -386,14 +383,37 @@
               "spriteId": 104101,
               "rating": "SS",
               "style": "front",
-              "stats": {
-                "speed": 1180,
-                "stamina": 720,
-                "power": 900,
-                "guts": 650,
-                "wisdom": 700
+              "aptitudes": {
+                "terrain": "S",
+                "distance": "S",
+                "style": "A"
               },
-              "skills": []
+              "stats": {
+                "speed": 1328,
+                "stamina": 495,
+                "power": 1229,
+                "guts": 406,
+                "wisdom": 1259
+              },
+              "skills": [
+                "Genius x Bakushin = Victory",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Long Shot",
+                "Professor of Curvature",
+                "Nimble Navigator",
+                "Prepared to Pass",
+                "Turbo Sprint",
+                "Sprint Straightaways",
+                "Countermeasure",
+                "Perfect Prep!",
+                "Pace Chaser Corners",
+                "Straight Descent",
+                "Risky Business",
+                "Light as a Feather",
+                "Aspire",
+                "Burning Spirit SPD"
+              ]
             }
           },
           {
@@ -404,6 +424,11 @@
               "spriteId": 103801,
               "rating": "SS",
               "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
                 "speed": 1200,
                 "stamina": 680,
@@ -420,18 +445,37 @@
             "uma": {
               "name": "Symboli Rudolf",
               "spriteId": 101701,
-              "rating": "S",
+              "rating": "UG",
               "style": "late",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1150,
-                "stamina": 650,
-                "power": 820,
-                "guts": 750,
-                "wisdom": 660
+                "speed": 1287,
+                "stamina": 631,
+                "power": 1228,
+                "guts": 583,
+                "wisdom": 1202
               },
               "skills": [
-                "Front Runner Straightaways ◎",
-                "Short Distance Corners ◎"
+                "Behold Thine Emperor's Divine Might",
+                "Triumphant Pulse",
+                "Let's Pump Some Iron!",
+                "Right-Handed",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "On Your Left!",
+                "Turbo Sprint",
+                "Sprint Straightaways",
+                "Late Surger Straightaways",
+                "Late Surger Corners",
+                "Uma Stan",
+                "Nothing Ventured",
+                "Burning Spirit SPD"
               ]
             }
           }
@@ -439,34 +483,58 @@
         "mile": [
           {
             "slot": 0,
-            "trainer": "Bane",
+            "trainer": "Bane@BUNS",
             "uma": {
               "name": "Hishi Amazon",
               "spriteId": 101201,
-              "rating": "SS",
+              "rating": "UG",
               "style": "end",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1100,
-                "stamina": 900,
-                "power": 850,
-                "guts": 700,
-                "wisdom": 800
+                "speed": 1206,
+                "stamina": 605,
+                "power": 1172,
+                "guts": 809,
+                "wisdom": 1244
               },
               "skills": [
-                "Mile Straightaways ◎",
-                "Late Surger Corners ◎",
-                "Homestretch Haste"
+                "You and Me! One-on-One!",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Wet Conditions",
+                "It's On!",
+                "No Stopping Me!",
+                "Mile Straightaways",
+                "Unyielding Spirit",
+                "End Closer Straightaways",
+                "End Closer Corners",
+                "Tail Held High",
+                "Slipstream",
+                "Playtime's Over!",
+                "Daring Strike",
+                "Leap Forward",
+                "Ignited Spirit PWR"
               ]
             }
           },
           {
             "slot": 1,
-            "trainer": "Spurs",
+            "trainer": "Spurs@BUNS",
             "uma": {
               "name": "Grass Wonder",
               "spriteId": 101101,
               "rating": "SS",
               "style": "late",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
                 "speed": 1080,
                 "stamina": 950,
@@ -474,10 +542,7 @@
                 "guts": 720,
                 "wisdom": 780
               },
-              "skills": [
-                "Pace Chaser Savvy ◎",
-                "Mile Corners ◎"
-              ]
+              "skills": []
             }
           },
           {
@@ -488,6 +553,11 @@
               "spriteId": 106001,
               "rating": "S",
               "style": "end",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
                 "speed": 1050,
                 "stamina": 880,
@@ -509,62 +579,107 @@
             "uma": {
               "name": "Gold Ship",
               "spriteId": 100702,
-              "rating": "SS",
+              "rating": "UG",
               "style": "end",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1050,
-                "stamina": 1050,
-                "power": 900,
-                "guts": 750,
-                "wisdom": 820
+                "speed": 1199,
+                "stamina": 828,
+                "power": 1081,
+                "guts": 687,
+                "wisdom": 1168
               },
               "skills": [
-                "Medium Straightaways ◎",
-                "Pace Chaser Savvy ◎",
-                "Corner Recovery ○"
+                "564 Escapades"
               ]
             }
           },
           {
             "slot": 1,
-            "trainer": "Hans",
+            "trainer": "Hans Pferdemann",
             "uma": {
               "name": "Daiwa Scarlet",
               "spriteId": 100901,
-              "rating": "SS",
+              "rating": "UG",
               "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1020,
-                "stamina": 1100,
-                "power": 850,
-                "guts": 800,
-                "wisdom": 850
+                "speed": 1234,
+                "stamina": 955,
+                "power": 1226,
+                "guts": 478,
+                "wisdom": 1112
               },
               "skills": [
-                "Late Surger Savvy ◎",
-                "Medium Corners ◎",
-                "Outer Swell"
+                "Resplendent Red Ace",
+                "Angling and Scheming",
+                "Operation Cacao",
+                "Right-Handed",
+                "Standard Distance",
+                "Firm Conditions",
+                "Sunny Days",
+                "Corner Adept",
+                "It's On!",
+                "Taking the Lead",
+                "Final Push",
+                "Killer Tunes",
+                "Front Runner Straightaways",
+                "Front Runner Corners",
+                "Dodging Danger",
+                "Groundwork",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Ignited Spirit WIT"
               ]
             }
           },
           {
             "slot": 2,
-            "trainer": "Minh",
+            "trainer": "Minh@BUNS",
             "uma": {
               "name": "Oguri Cap",
               "spriteId": 100602,
-              "rating": "SS",
+              "rating": "UG",
               "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1000,
-                "stamina": 1020,
-                "power": 920,
-                "guts": 780,
-                "wisdom": 760
+                "speed": 1303,
+                "stamina": 618,
+                "power": 1219,
+                "guts": 351,
+                "wisdom": 1292
               },
               "skills": [
-                "Closer Corners ◎",
-                "Ramp Up"
+                "Festive Miracle",
+                "U=ma2",
+                "Right-Handed",
+                "Wet Conditions",
+                "Straightaway Adept",
+                "Straightaway Recovery",
+                "It's On!",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Up-Tempo",
+                "Refraction Arc",
+                "Pace Chaser Straightaways",
+                "Straight Descent",
+                "Hydrate",
+                "Triple 7s",
+                "Tail Held High",
+                "All I've Got",
+                "Burning Spirit SPD"
               ]
             }
           }
@@ -576,19 +691,38 @@
             "uma": {
               "name": "Special Week",
               "spriteId": 100101,
-              "rating": "SS",
+              "rating": "UG",
               "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 980,
-                "stamina": 1200,
-                "power": 900,
-                "guts": 850,
-                "wisdom": 900
+                "speed": 1250,
+                "stamina": 1222,
+                "power": 1009,
+                "guts": 816,
+                "wisdom": 861
               },
               "skills": [
-                "Late Surger Savvy ◎",
-                "Long Straightaways ◎",
-                "Steadfast"
+                "Shooting Star",
+                "Shadow Break",
+                "Barcarole of Blessings",
+                "Wet Conditions",
+                "Corner Adept",
+                "Corner Recovery",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "In Body and Mind",
+                "Prepared to Pass",
+                "Pace Chaser Corners",
+                "Gourmand",
+                "Tail Held High",
+                "Ignited Spirit SPD",
+                "Ignited Spirit STA",
+                "Ignited Spirit PWR"
               ]
             }
           },
@@ -600,6 +734,11 @@
               "spriteId": 105001,
               "rating": "SS",
               "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
                 "speed": 960,
                 "stamina": 1180,
@@ -616,23 +755,46 @@
           },
           {
             "slot": 2,
-            "trainer": "Kai",
+            "trainer": "KaiAiya@BUNS",
             "uma": {
               "name": "Kitasan Black",
               "spriteId": 106801,
-              "rating": "SS",
+              "rating": "UG",
               "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1000,
-                "stamina": 1150,
-                "power": 920,
-                "guts": 800,
-                "wisdom": 860
+                "speed": 1199,
+                "stamina": 1191,
+                "power": 1001,
+                "guts": 674,
+                "wisdom": 1001
               },
               "skills": [
-                "Pace Chaser Savvy ◎",
-                "Long Straightaways ◎",
-                "Corner Recovery ○"
+                "Victory Cheer!",
+                "Barcarole of Blessings",
+                "Operation Cacao",
+                "Right-Handed",
+                "Non-Standard Distance",
+                "Spring Runner",
+                "Corner Adept",
+                "Prudent Positioning",
+                "Taking the Lead",
+                "Escape Artist",
+                "Deep Breaths",
+                "Long Straightaways",
+                "Front Runner Straightaways",
+                "Front Runner Corners",
+                "Dodging Danger",
+                "Leader's Pride",
+                "Groundwork",
+                "Tail Held High",
+                "Firm Resolve",
+                "Burning Spirit SPD",
+                "Ignited Spirit STA"
               ]
             }
           }
@@ -644,19 +806,39 @@
             "uma": {
               "name": "Taiki Shuttle",
               "spriteId": 101001,
-              "rating": "SS",
-              "style": "end",
+              "rating": "UG",
+              "style": "pace",
+              "aptitudes": {
+                "terrain": "S",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1020,
-                "stamina": 1000,
-                "power": 1100,
-                "guts": 900,
-                "wisdom": 700
+                "speed": 1272,
+                "stamina": 582,
+                "power": 1224,
+                "guts": 601,
+                "wisdom": 1357
               },
               "skills": [
-                "Dirt Straightaways ◎",
-                "Closer Savvy ◎",
-                "Ramp Up"
+                "Shooting for Victory!",
+                "Triumphant Pulse",
+                "Budding Blossom",
+                "Right-Handed",
+                "Hakodate Racecourse",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Speed Star",
+                "Turbo Sprint",
+                "Tail Held High",
+                "Top Pick",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Racing Spirit: Stamina",
+                "Racing Spirit: Wit"
               ]
             }
           },
@@ -666,19 +848,37 @@
             "uma": {
               "name": "Haru Urara",
               "spriteId": 105202,
-              "rating": "S",
-              "style": "runaway",
+              "rating": "UG",
+              "style": "late",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "S"
+              },
               "stats": {
-                "speed": 900,
-                "stamina": 950,
-                "power": 850,
-                "guts": 1200,
-                "wisdom": 650
+                "speed": 1222,
+                "stamina": 425,
+                "power": 1275,
+                "guts": 624,
+                "wisdom": 1246
               },
               "skills": [
-                "Front Runner Guts ◎",
-                "Dirt Corners ○",
-                "Guts Genius"
+                "114th Time's the Charm",
+                "Let's Pump Some Iron!",
+                "Louder! Tracen Cheer!",
+                "Professor of Curvature",
+                "It's On!",
+                "No Stopping Me!",
+                "On Your Left!",
+                "Turbo Sprint",
+                "Late Surger Corners",
+                "Playtime's Over!",
+                "Risky Business",
+                "Full Throttle",
+                "Down in the Dirt",
+                "Rapid Gain",
+                "Leap Forward",
+                "Burning Spirit SPD"
               ]
             }
           },
@@ -689,17 +889,34 @@
               "name": "Agnes Digital",
               "spriteId": 101901,
               "rating": "SS",
-              "style": "pace",
+              "style": "end",
+              "aptitudes": {
+                "terrain": "S",
+                "distance": "A",
+                "style": "A"
+              },
               "stats": {
-                "speed": 1050,
-                "stamina": 980,
-                "power": 1050,
-                "guts": 880,
-                "wisdom": 720
+                "speed": 1241,
+                "stamina": 542,
+                "power": 1141,
+                "guts": 543,
+                "wisdom": 1123
               },
               "skills": [
-                "Dirt Savvy ◎",
-                "Late Surger Straightaways ◎"
+                "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+                "Triumphant Pulse",
+                "Louder! Tracen Cheer!",
+                "Wet Conditions",
+                "Professor of Curvature",
+                "No Stopping Me!",
+                "Straightaway Spurt",
+                "Turbo Sprint",
+                "End Closer Corners",
+                "Superstan",
+                "Top Pick",
+                "Daring Strike",
+                "Nothing Ventured",
+                "Burning Spirit SPD"
               ]
             }
           }
@@ -709,7 +926,7 @@
     {
       "id": "falena",
       "name": "Falena",
-      "shortName": "FALENA",
+      "shortName": "FLNA",
       "color": "#7c4dff",
       "categories": {
         "sprint": [
@@ -1017,7 +1234,7 @@
               "gate": null,
               "trainer": "Phedro",
               "umaName": "Fuji Kiseki",
-              "spritePath": "/assets/characters/chara_stand_1005_100501.png",
+              "spritePath": "assets/characters/chara_stand_1005_100501.png",
               "style": "front",
               "key": "umalliance:0"
             },
@@ -1029,7 +1246,7 @@
               "gate": null,
               "trainer": "Skarpx",
               "umaName": "Bamboo Memory",
-              "spritePath": "/assets/characters/chara_stand_1053_105301.png",
+              "spritePath": "assets/characters/chara_stand_1053_105301.png",
               "style": "runaway",
               "key": "umalliance:1"
             },
@@ -1041,7 +1258,7 @@
               "gate": null,
               "trainer": "Squid",
               "umaName": "Narita Brian",
-              "spritePath": "/assets/characters/chara_stand_1016_101601.png",
+              "spritePath": "assets/characters/chara_stand_1016_101601.png",
               "style": "pace",
               "key": "umalliance:2"
             },
@@ -1053,7 +1270,7 @@
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
-              "spritePath": "/assets/characters/chara_stand_1041_104101.png",
+              "spritePath": "assets/characters/chara_stand_1041_104101.png",
               "style": "front",
               "key": "dust-bunny:0"
             },
@@ -1065,7 +1282,7 @@
               "gate": null,
               "trainer": "Banana",
               "umaName": "Curren Chan",
-              "spritePath": "/assets/characters/chara_stand_1038_103801.png",
+              "spritePath": "assets/characters/chara_stand_1038_103801.png",
               "style": "pace",
               "key": "dust-bunny:1"
             },
@@ -1077,7 +1294,7 @@
               "gate": null,
               "trainer": "Nightfish",
               "umaName": "Symboli Rudolf",
-              "spritePath": "/assets/characters/chara_stand_1017_101701.png",
+              "spritePath": "assets/characters/chara_stand_1017_101701.png",
               "style": "late",
               "key": "dust-bunny:2"
             },
@@ -1089,7 +1306,7 @@
               "gate": null,
               "trainer": "Swaejudinoli",
               "umaName": "Curren Chan",
-              "spritePath": "/assets/characters/chara_stand_1038_103802.png",
+              "spritePath": "assets/characters/chara_stand_1038_103802.png",
               "style": "front",
               "key": "falena:0"
             },
@@ -1101,7 +1318,7 @@
               "gate": null,
               "trainer": "XV11",
               "umaName": "Meisho Doto",
-              "spritePath": "/assets/characters/chara_stand_1058_105801.png",
+              "spritePath": "assets/characters/chara_stand_1058_105801.png",
               "style": "front",
               "key": "falena:1"
             },
@@ -1113,7 +1330,7 @@
               "gate": null,
               "trainer": "zera",
               "umaName": "Mayano Top Gun",
-              "spritePath": "/assets/characters/chara_stand_1024_102401.png",
+              "spritePath": "assets/characters/chara_stand_1024_102401.png",
               "style": "front",
               "key": "falena:2"
             }
@@ -1127,7 +1344,7 @@
               "gate": null,
               "trainer": "Phedro",
               "umaName": "Fuji Kiseki",
-              "spritePath": "/assets/characters/chara_stand_1005_100501.png",
+              "spritePath": "assets/characters/chara_stand_1005_100501.png",
               "style": "front",
               "key": "umalliance:0"
             },
@@ -1139,7 +1356,7 @@
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
-              "spritePath": "/assets/characters/chara_stand_1041_104101.png",
+              "spritePath": "assets/characters/chara_stand_1041_104101.png",
               "style": "front",
               "key": "dust-bunny:0"
             },
@@ -1151,7 +1368,7 @@
               "gate": null,
               "trainer": "Swaejudinoli",
               "umaName": "Curren Chan",
-              "spritePath": "/assets/characters/chara_stand_1038_103802.png",
+              "spritePath": "assets/characters/chara_stand_1038_103802.png",
               "style": "front",
               "key": "falena:0"
             }
@@ -1167,7 +1384,7 @@
               "gate": null,
               "trainer": "Lykos",
               "umaName": "Symboli Rudolf",
-              "spritePath": "/assets/characters/chara_stand_1017_101701.png",
+              "spritePath": "assets/characters/chara_stand_1017_101701.png",
               "style": "pace",
               "key": "umalliance:0"
             },
@@ -1179,7 +1396,7 @@
               "gate": null,
               "trainer": "TopCut",
               "umaName": "Nishino Flower",
-              "spritePath": "/assets/characters/chara_stand_1051_105101.png",
+              "spritePath": "assets/characters/chara_stand_1051_105101.png",
               "style": "end",
               "key": "umalliance:1"
             },
@@ -1191,7 +1408,7 @@
               "gate": null,
               "trainer": "DarrylT",
               "umaName": "Maruzensky",
-              "spritePath": "/assets/characters/chara_stand_1004_100401.png",
+              "spritePath": "assets/characters/chara_stand_1004_100401.png",
               "style": "front",
               "key": "umalliance:2"
             },
@@ -1201,9 +1418,9 @@
               "teamColor": "#e91e8c",
               "slot": 0,
               "gate": null,
-              "trainer": "Bane",
+              "trainer": "Bane@BUNS",
               "umaName": "Hishi Amazon",
-              "spritePath": "/assets/characters/chara_stand_1012_101201.png",
+              "spritePath": "assets/characters/chara_stand_1012_101201.png",
               "style": "end",
               "key": "dust-bunny:0"
             },
@@ -1213,9 +1430,9 @@
               "teamColor": "#e91e8c",
               "slot": 1,
               "gate": null,
-              "trainer": "Spurs",
+              "trainer": "Spurs@BUNS",
               "umaName": "Grass Wonder",
-              "spritePath": "/assets/characters/chara_stand_1011_101101.png",
+              "spritePath": "assets/characters/chara_stand_1011_101101.png",
               "style": "late",
               "key": "dust-bunny:1"
             },
@@ -1227,7 +1444,7 @@
               "gate": null,
               "trainer": "DadSmoocher",
               "umaName": "Nice Nature",
-              "spritePath": "/assets/characters/chara_stand_1060_106001.png",
+              "spritePath": "assets/characters/chara_stand_1060_106001.png",
               "style": "end",
               "key": "dust-bunny:2"
             },
@@ -1239,7 +1456,7 @@
               "gate": null,
               "trainer": "StarryNightlight",
               "umaName": "Manhattan Cafe",
-              "spritePath": "/assets/characters/chara_stand_1025_102501.png",
+              "spritePath": "assets/characters/chara_stand_1025_102501.png",
               "style": "front",
               "key": "falena:0"
             },
@@ -1251,7 +1468,7 @@
               "gate": null,
               "trainer": "Clowngeta",
               "umaName": "Mejiro McQueen",
-              "spritePath": "/assets/characters/chara_stand_1013_101301.png",
+              "spritePath": "assets/characters/chara_stand_1013_101301.png",
               "style": "front",
               "key": "falena:1"
             },
@@ -1263,7 +1480,7 @@
               "gate": null,
               "trainer": "Cyndexv",
               "umaName": "Oguri Cap",
-              "spritePath": "/assets/characters/chara_stand_1006_100602.png",
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
               "style": "front",
               "key": "falena:2"
             }
@@ -1284,7 +1501,7 @@
               "gate": null,
               "trainer": "Toad",
               "umaName": "Rice Shower",
-              "spritePath": "/assets/characters/chara_stand_1030_103001.png",
+              "spritePath": "assets/characters/chara_stand_1030_103001.png",
               "style": "end",
               "key": "umalliance:0"
             },
@@ -1296,7 +1513,7 @@
               "gate": null,
               "trainer": "Brendan",
               "umaName": "Oguri Cap",
-              "spritePath": "/assets/characters/chara_stand_1006_100601.png",
+              "spritePath": "assets/characters/chara_stand_1006_100601.png",
               "style": "pace",
               "key": "umalliance:1"
             },
@@ -1308,7 +1525,7 @@
               "gate": null,
               "trainer": "Big Moj",
               "umaName": "Agnes Tachyon",
-              "spritePath": "/assets/characters/chara_stand_1032_103201.png",
+              "spritePath": "assets/characters/chara_stand_1032_103201.png",
               "style": "front",
               "key": "umalliance:2"
             },
@@ -1320,7 +1537,7 @@
               "gate": null,
               "trainer": "Crabpeople",
               "umaName": "Gold Ship",
-              "spritePath": "/assets/characters/chara_stand_1007_100702.png",
+              "spritePath": "assets/characters/chara_stand_1007_100702.png",
               "style": "end",
               "key": "dust-bunny:0"
             },
@@ -1330,9 +1547,9 @@
               "teamColor": "#e91e8c",
               "slot": 1,
               "gate": null,
-              "trainer": "Hans",
+              "trainer": "Hans Pferdemann",
               "umaName": "Daiwa Scarlet",
-              "spritePath": "/assets/characters/chara_stand_1009_100901.png",
+              "spritePath": "assets/characters/chara_stand_1009_100901.png",
               "style": "front",
               "key": "dust-bunny:1"
             },
@@ -1342,9 +1559,9 @@
               "teamColor": "#e91e8c",
               "slot": 2,
               "gate": null,
-              "trainer": "Minh",
+              "trainer": "Minh@BUNS",
               "umaName": "Oguri Cap",
-              "spritePath": "/assets/characters/chara_stand_1006_100602.png",
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
               "style": "pace",
               "key": "dust-bunny:2"
             },
@@ -1356,7 +1573,7 @@
               "gate": null,
               "trainer": "Haiji",
               "umaName": "Kitasan Black",
-              "spritePath": "/assets/characters/chara_stand_1068_106801.png",
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
               "style": "front",
               "key": "falena:0"
             },
@@ -1368,7 +1585,7 @@
               "gate": null,
               "trainer": "Chan",
               "umaName": "Eishin Flash",
-              "spritePath": "/assets/characters/chara_stand_1037_103701.png",
+              "spritePath": "assets/characters/chara_stand_1037_103701.png",
               "style": "front",
               "key": "falena:1"
             },
@@ -1380,7 +1597,7 @@
               "gate": null,
               "trainer": "Uprob",
               "umaName": "Air Shakur",
-              "spritePath": "/assets/characters/chara_stand_1036_103601.png",
+              "spritePath": "assets/characters/chara_stand_1036_103601.png",
               "style": "front",
               "key": "falena:2"
             }
@@ -1399,9 +1616,9 @@
               "teamColor": "#2c49c9",
               "slot": 0,
               "gate": null,
-              "trainer": "Trainer A",
+              "trainer": "Hades",
               "umaName": "Special Week",
-              "spritePath": "/assets/characters/chara_stand_1001_100101.png",
+              "spritePath": "assets/characters/chara_stand_1001_100101.png",
               "style": "pace",
               "key": "umalliance:0"
             },
@@ -1411,9 +1628,9 @@
               "teamColor": "#2c49c9",
               "slot": 1,
               "gate": null,
-              "trainer": "Trainer B",
+              "trainer": "Fafa",
               "umaName": "Silence Suzuka",
-              "spritePath": "/assets/characters/chara_stand_1002_100201.png",
+              "spritePath": "assets/characters/chara_stand_1002_100201.png",
               "style": "runaway",
               "key": "umalliance:1"
             },
@@ -1423,9 +1640,9 @@
               "teamColor": "#2c49c9",
               "slot": 2,
               "gate": null,
-              "trainer": "Trainer C",
-              "umaName": "Agnes Tachyon",
-              "spritePath": "/assets/characters/chara_stand_1032_103201.png",
+              "trainer": "Shenezle",
+              "umaName": "Manhattan Cafe",
+              "spritePath": "assets/characters/chara_stand_1025_102501.png",
               "style": "end",
               "key": "umalliance:2"
             },
@@ -1437,7 +1654,7 @@
               "gate": null,
               "trainer": "Legi",
               "umaName": "Special Week",
-              "spritePath": "/assets/characters/chara_stand_1001_100101.png",
+              "spritePath": "assets/characters/chara_stand_1001_100101.png",
               "style": "pace",
               "key": "dust-bunny:0"
             },
@@ -1449,7 +1666,7 @@
               "gate": null,
               "trainer": "Hai! Aku Aru!",
               "umaName": "Narita Taishin",
-              "spritePath": "/assets/characters/chara_stand_1050_105001.png",
+              "spritePath": "assets/characters/chara_stand_1050_105001.png",
               "style": "pace",
               "key": "dust-bunny:1"
             },
@@ -1459,9 +1676,9 @@
               "teamColor": "#e91e8c",
               "slot": 2,
               "gate": null,
-              "trainer": "Kai",
+              "trainer": "KaiAiya@BUNS",
               "umaName": "Kitasan Black",
-              "spritePath": "/assets/characters/chara_stand_1068_106801.png",
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
               "style": "front",
               "key": "dust-bunny:2"
             },
@@ -1473,7 +1690,7 @@
               "gate": null,
               "trainer": "Korie",
               "umaName": "Satono Diamond",
-              "spritePath": "/assets/characters/chara_stand_1067_106701.png",
+              "spritePath": "assets/characters/chara_stand_1067_106701.png",
               "style": "front",
               "key": "falena:0"
             },
@@ -1485,7 +1702,7 @@
               "gate": null,
               "trainer": "Omatsuri Mambo!",
               "umaName": "Matikanetannhauser",
-              "spritePath": "/assets/characters/chara_stand_1062_106201.png",
+              "spritePath": "assets/characters/chara_stand_1062_106201.png",
               "style": "front",
               "key": "falena:1"
             },
@@ -1497,7 +1714,7 @@
               "gate": null,
               "trainer": "Lazarus",
               "umaName": "Gold Ship",
-              "spritePath": "/assets/characters/chara_stand_1007_100701.png",
+              "spritePath": "assets/characters/chara_stand_1007_100701.png",
               "style": "front",
               "key": "falena:2"
             }
@@ -1516,9 +1733,9 @@
               "teamColor": "#2c49c9",
               "slot": 0,
               "gate": null,
-              "trainer": "Club A Dirt 1",
-              "umaName": "TM Opera O",
-              "spritePath": "/assets/characters/chara_stand_1015_101501.png",
+              "trainer": "OJ",
+              "umaName": "Smart Falcon",
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
               "style": "front",
               "key": "umalliance:0"
             },
@@ -1528,9 +1745,9 @@
               "teamColor": "#2c49c9",
               "slot": 1,
               "gate": null,
-              "trainer": "Club A Dirt 2",
-              "umaName": "Nice Nature",
-              "spritePath": "/assets/characters/chara_stand_1060_106001.png",
+              "trainer": "eachcorpse",
+              "umaName": "Taiki Shuttle",
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
               "style": "pace",
               "key": "umalliance:1"
             },
@@ -1540,9 +1757,9 @@
               "teamColor": "#2c49c9",
               "slot": 2,
               "gate": null,
-              "trainer": "Club A Dirt 3",
-              "umaName": "Matikanefukukitaru",
-              "spritePath": "/assets/characters/chara_stand_1056_105601.png",
+              "trainer": "Value",
+              "umaName": "El Condor Pasa",
+              "spritePath": "assets/characters/chara_stand_1014_101401.png",
               "style": "end",
               "key": "umalliance:2"
             },
@@ -1554,8 +1771,8 @@
               "gate": null,
               "trainer": "Vivi@BUNS",
               "umaName": "Taiki Shuttle",
-              "spritePath": "/assets/characters/chara_stand_1010_101001.png",
-              "style": "end",
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
+              "style": "pace",
               "key": "dust-bunny:0"
             },
             {
@@ -1566,8 +1783,8 @@
               "gate": null,
               "trainer": "Plnk@BUNS",
               "umaName": "Haru Urara",
-              "spritePath": "/assets/characters/chara_stand_1052_105202.png",
-              "style": "runaway",
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
               "key": "dust-bunny:1"
             },
             {
@@ -1578,8 +1795,8 @@
               "gate": null,
               "trainer": "Buttered@BUNS",
               "umaName": "Agnes Digital",
-              "spritePath": "/assets/characters/chara_stand_1019_101901.png",
-              "style": "pace",
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "end",
               "key": "dust-bunny:2"
             },
             {
@@ -1590,7 +1807,7 @@
               "gate": null,
               "trainer": "Plazma",
               "umaName": "Taiki Shuttle",
-              "spritePath": "/assets/characters/chara_stand_1010_101001.png",
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
               "style": "front",
               "key": "falena:0"
             },
@@ -1602,7 +1819,7 @@
               "gate": null,
               "trainer": "Flemm",
               "umaName": "Smart Falcon",
-              "spritePath": "/assets/characters/chara_stand_1046_104601.png",
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
               "style": "front",
               "key": "falena:1"
             },
@@ -1614,7 +1831,7 @@
               "gate": null,
               "trainer": "Nati",
               "umaName": "El Condor Pasa",
-              "spritePath": "/assets/characters/chara_stand_1014_101401.png",
+              "spritePath": "assets/characters/chara_stand_1014_101401.png",
               "style": "front",
               "key": "falena:2"
             }
@@ -1630,7 +1847,7 @@
   ],
   "stats": {
     "totalMatches": 1,
-    "uniqueUmaCount": 35,
+    "uniqueUmaCount": 33,
     "mostCommonUma": {
       "umaName": "Oguri Cap",
       "starts": 3,
@@ -1646,30 +1863,27 @@
     "uniqueUmas": [
       "Fuji Kiseki",
       "Agnes Digital",
+      "Agnes Tachyon",
       "Air Shakur",
       "Bamboo Memory",
       "Daiwa Scarlet",
       "Eishin Flash",
-      "El Condor Pasa",
       "Grass Wonder",
       "Haru Urara",
       "Hishi Amazon",
-      "Manhattan Cafe",
       "Maruzensky",
-      "Matikanefukukitaru",
       "Matikanetannhauser",
       "Mayano Top Gun",
       "Meisho Doto",
       "Mejiro McQueen",
       "Narita Brian",
       "Narita Taishin",
+      "Nice Nature",
       "Nishino Flower",
       "Rice Shower",
       "Sakura Bakushin O",
       "Satono Diamond",
-      "Silence Suzuka",
-      "Smart Falcon",
-      "TM Opera O"
+      "Silence Suzuka"
     ],
     "popularity": [
       {
@@ -1679,13 +1893,19 @@
         "winRate": 0
       },
       {
-        "umaName": "Agnes Tachyon",
-        "starts": 2,
+        "umaName": "Taiki Shuttle",
+        "starts": 3,
         "wins": 0,
         "winRate": 0
       },
       {
         "umaName": "Curren Chan",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "El Condor Pasa",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -1703,7 +1923,13 @@
         "winRate": 0
       },
       {
-        "umaName": "Nice Nature",
+        "umaName": "Manhattan Cafe",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Smart Falcon",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -1721,12 +1947,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Taiki Shuttle",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Fuji Kiseki",
         "starts": 1,
         "wins": 1,
@@ -1734,6 +1954,12 @@
       },
       {
         "umaName": "Agnes Digital",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Agnes Tachyon",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -1763,12 +1989,6 @@
         "winRate": 0
       },
       {
-        "umaName": "El Condor Pasa",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Grass Wonder",
         "starts": 1,
         "wins": 0,
@@ -1787,19 +2007,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Manhattan Cafe",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Maruzensky",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Matikanefukukitaru",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -1841,6 +2049,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Nice Nature",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Nishino Flower",
         "starts": 1,
         "wins": 0,
@@ -1866,18 +2080,6 @@
       },
       {
         "umaName": "Silence Suzuka",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Smart Falcon",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "TM Opera O",
         "starts": 1,
         "wins": 0,
         "winRate": 0

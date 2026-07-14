@@ -22,7 +22,8 @@ Standings are saved to:
 The `website/` folder is a static scoreboard that reads `website/data/standings.json`.
 
 1. Run the dashboard during the event (it auto-updates standings files).
-2. Commit and push `website/` to GitHub.
+2. Run `npm run build:website` to refresh `website/data/public.json` and copy portraits into `website/assets/characters/`.
+3. Commit and push `website/` to GitHub.
 3. In repo settings, enable GitHub Pages from the `/website` folder (or move contents to `/docs` if you prefer).
 4. Public URL will show standings (refreshes every 15s in browser).
 

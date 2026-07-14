@@ -8,6 +8,7 @@ import {
   resolveMatchRacers,
   resolveMatchTeams,
 } from "./team-resolver.js";
+import { publishWebsiteSprites } from "./website-publish.js";
 const STANDINGS_REL = "data/standings.json";
 const WEBSITE_STANDINGS_REL = "website/data/standings.json";
 const WEBSITE_PUBLIC_REL = "website/data/public.json";
@@ -103,7 +104,19 @@ function writeStandings(root, standings) {
 function writeWebsitePublic(root, standings) {
   const publicPath = path.join(root, WEBSITE_PUBLIC_REL);
   fs.mkdirSync(path.dirname(publicPath), { recursive: true });
-  fs.writeFileSync(publicPath, JSON.stringify(buildWebsiteData(root, standings), null, 2) + "\n");
+  const data = buildWebsiteData(root, standings);
+  publishWebsiteSprites(root, data);
+  fs.writeFileSync(publicPath, JSON.stringify(data, null, 2) + "\n");
+}
+
+export function rebuildWebsitePublic(root) {
+  const standings = readStandings(root);
+  const publicPath = path.join(root, WEBSITE_PUBLIC_REL);
+  fs.mkdirSync(path.dirname(publicPath), { recursive: true });
+  const data = buildWebsiteData(root, standings);
+  const result = publishWebsiteSprites(root, data);
+  fs.writeFileSync(publicPath, JSON.stringify(data, null, 2) + "\n");
+  return result;
 }
 
 function buildWebsiteData(root, standings) {

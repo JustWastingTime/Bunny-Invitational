@@ -4,6 +4,8 @@ import { loadMatch } from "./team-resolver.js";
 
 export const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
 export const STYLES = ["runaway", "front", "pace", "late", "end"];
+export const APTITUDE_GRADES = ["S", "A", "B", "C", "D", "E", "F", "G"];
+export const APTITUDE_KEYS = ["terrain", "distance", "style"];
 
 const RESERVED_FILES = new Set(["_template.json"]);
 
@@ -33,14 +35,30 @@ export function slugifyTeamId(value) {
     .slice(0, 48);
 }
 
+function normalizeAptitudeGrade(value, fallback = "A") {
+  const grade = String(value ?? "").trim().toUpperCase();
+  return APTITUDE_GRADES.includes(grade) ? grade : fallback;
+}
+
+function normalizeAptitudes(raw) {
+  const src = raw && typeof raw === "object" ? raw : {};
+  return {
+    terrain: normalizeAptitudeGrade(src.terrain ?? src.turf),
+    distance: normalizeAptitudeGrade(src.distance),
+    style: normalizeAptitudeGrade(src.style),
+  };
+}
+
 function emptyMember(label = "Trainer") {
   return {
     trainer: label,
+    locked: false,
     uma: {
       name: "Uma Name",
       characterId: "",
       rating: "S",
       style: "front",
+      aptitudes: normalizeAptitudes(),
       stats: { speed: 0, stamina: 0, power: 0, guts: 0, wisdom: 0 },
       skills: [],
     },
@@ -76,10 +94,12 @@ function normalizeMember(member, fallbackTrainer) {
 
   const out = {
     trainer: String(src.trainer ?? fallbackTrainer).trim() || fallbackTrainer,
+    locked: Boolean(src.locked),
     uma: {
       name: String(uma.name ?? "Uma Name").trim() || "Uma Name",
       rating: String(uma.rating ?? "S").trim() || "S",
       style,
+      aptitudes: normalizeAptitudes(uma.aptitudes),
       stats: {
         speed: Number(stats.speed) || 0,
         stamina: Number(stats.stamina) || 0,
@@ -158,11 +178,13 @@ export function serializeTeam(team) {
           : null,
         `"rating": ${JSON.stringify(uma.rating)}`,
         `"style": ${JSON.stringify(uma.style)}`,
+        `"aptitudes": { "terrain": ${JSON.stringify(uma.aptitudes.terrain)}, "distance": ${JSON.stringify(uma.aptitudes.distance)}, "style": ${JSON.stringify(uma.aptitudes.style)} }`,
         `"stats": { "speed": ${uma.stats.speed}, "stamina": ${uma.stats.stamina}, "power": ${uma.stats.power}, "guts": ${uma.stats.guts}, "wisdom": ${uma.stats.wisdom} }`,
         `"skills": ${JSON.stringify(uma.skills)}`,
       ].filter(Boolean);
 
       lines.push(`      { "trainer": ${JSON.stringify(member.trainer)},`);
+      if (member.locked) lines.push(`        "locked": true,`);
       lines.push(`        "uma": { ${umaInner[0]},`);
       for (let i = 1; i < umaInner.length; i += 1) {
         const comma = i < umaInner.length - 1 ? "," : " }";

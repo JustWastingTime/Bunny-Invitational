@@ -9,6 +9,7 @@
           "spriteId": 1001,
           "rating": "SS",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": ["Skill 1", "Skill 2"] }
       },

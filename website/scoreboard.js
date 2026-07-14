@@ -91,6 +91,14 @@ function racersGroupedByTeam(racers, teamIds) {
 const ICON_CROWN = `<svg class="race-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 15.5 2.5 8l3.6 2.6L12 5l5.9 5.6L21.5 8 20 15.5H4zm0 2.5h16v2H4v-2z"/></svg>`;
 const ICON_STAR = `<svg class="race-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2 14.8 9H22l-6.2 4.5 2.4 7.3L12 17.3 5.8 20.8 8.2 13.5 2 9h7.2z"/></svg>`;
 
+function resolveAssetPath(spritePath) {
+  if (!spritePath) return null;
+  if (/^https?:\/\//i.test(spritePath)) return spritePath;
+  if (spritePath.startsWith("assets/")) return `./${spritePath}`;
+  const file = String(spritePath).split("/").pop();
+  return file ? `./assets/characters/${file}` : null;
+}
+
 function renderRacerCard(racer, podium, uniqueSet) {
   const key = racerKeyOf(racer);
   const place = podium.get(key) ?? null;
@@ -98,12 +106,13 @@ function renderRacerCard(racer, podium, uniqueSet) {
   const placeTitle = place === 1 ? "1st place" : place === 2 ? "2nd place" : place === 3 ? "3rd place" : "";
   const uniqueBonus = Boolean(place && uniqueSet.has(racer.umaName));
   const initial = (racer.umaName ?? "?").charAt(0).toUpperCase();
+  const portraitSrc = resolveAssetPath(racer.spritePath);
   return `
     <article class="race-card ${podiumClass}">
       <div class="race-portrait-wrap">
         ${
-          racer.spritePath
-            ? `<img class="race-portrait" src="${racer.spritePath}" alt="${racer.umaName}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'race-portrait fallback',textContent:this.dataset.initial||'?'}))" data-initial="${initial}" />`
+          portraitSrc
+            ? `<img class="race-portrait" src="${portraitSrc}" alt="${racer.umaName}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'race-portrait fallback',textContent:this.dataset.initial||'?'}))" data-initial="${initial}" />`
             : `<div class="race-portrait fallback">${initial}</div>`
         }
         ${place ? `<span class="podium-badge ${podiumClass}" title="${placeTitle}">${ICON_CROWN}</span>` : ""}

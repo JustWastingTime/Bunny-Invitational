@@ -34,6 +34,10 @@
       "required": ["trainer", "uma"],
       "properties": {
         "trainer": { "type": "string" },
+        "locked": {
+          "type": "boolean",
+          "description": "When true, team editor treats this roster slot as complete and read-only"
+        },
         "uma": { "$ref": "#/$defs/uma" }
       }
     },
@@ -53,6 +57,15 @@
         "characterId": { "type": "string", "description": "Legacy sprite filename key under assets/characters/" },
         "rating": { "type": "string", "description": "e.g. S, SS, UMA" },
         "style": { "type": "string", "enum": ["runaway", "front", "pace", "late", "end"] },
+        "aptitudes": {
+          "type": "object",
+          "description": "Aptitude grades for terrain, distance, and preferred style",
+          "properties": {
+            "terrain": { "type": "string", "enum": ["S", "A", "B", "C", "D", "E", "F", "G"] },
+            "distance": { "type": "string", "enum": ["S", "A", "B", "C", "D", "E", "F", "G"] },
+            "style": { "type": "string", "enum": ["S", "A", "B", "C", "D", "E", "F", "G"] }
+          }
+        },
         "stats": {
           "type": "object",
           "properties": {

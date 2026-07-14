@@ -21,6 +21,7 @@ import {
   CATEGORIES as TEAM_CATEGORIES,
 } from "./team-editor.js";
 import { listCharacterCatalog } from "./sprite-resolver.js";
+import { listSkills } from "./skills.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -224,6 +225,15 @@ const server = http.createServer(async (req, res) => {
   if (url.pathname === "/api/characters") {
     try {
       sendJson(res, 200, { characters: listCharacterCatalog(ROOT) });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/skills") {
+    try {
+      sendJson(res, 200, { skills: listSkills() });
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
     }
