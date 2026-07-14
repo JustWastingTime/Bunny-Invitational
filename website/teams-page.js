@@ -24,7 +24,9 @@ const STYLE_LABELS = {
 
 let teamIndex = [];
 const teamCache = new Map();
+const openTeamIds = new Set();
 let selectedMemberKey = null;
+let teamsBooted = false;
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -56,6 +58,20 @@ function memberKey(teamId, category, slot) {
   return `${teamId}:${category}:${slot}`;
 }
 
+function parseMemberKey(key) {
+  if (!key) return null;
+  const [teamId, category, slotRaw] = key.split(":");
+  return { teamId, category, slot: Number(slotRaw) };
+}
+
+function firstMemberOf(team) {
+  for (const [category, roster] of orderedCategories(team.categories)) {
+    const member = (roster ?? [])[0];
+    if (member) return { category, member };
+  }
+  return null;
+}
+
 async function loadTeamIndex() {
   const res = await fetch("./data/teams/index.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Could not load website/data/teams/index.json");
@@ -83,10 +99,21 @@ function renderTrainerButton(team, category, member) {
   const key = memberKey(team.id, category, member.slot);
   const selected = selectedMemberKey === key ? "selected" : "";
   const umaName = member.uma?.name ?? "Unknown";
+  const portrait = resolveAssetPath(member.uma?.spritePath);
+  const initial = umaName.charAt(0).toUpperCase();
   return `
     <button type="button" class="trainer-pick ${selected}" data-member-key="${escapeHtml(key)}" data-team-id="${escapeHtml(team.id)}" data-category="${escapeHtml(category)}" data-slot="${member.slot}">
-      <span class="trainer-pick-name">${escapeHtml(member.trainer)}</span>
-      <span class="trainer-pick-uma">${escapeHtml(umaName)}</span>
+      <span class="trainer-pick-portrait">
+        ${
+          portrait
+            ? `<img src="${portrait}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'trainer-pick-fallback',textContent:'${initial}'}))" />`
+            : `<span class="trainer-pick-fallback">${initial}</span>`
+        }
+      </span>
+      <span class="trainer-pick-copy">
+        <span class="trainer-pick-name">${escapeHtml(member.trainer)}</span>
+        <span class="trainer-pick-uma">${escapeHtml(umaName)}</span>
+      </span>
       <span class="trainer-pick-cat">${escapeHtml(category)}</span>
     </button>
   `;
@@ -110,6 +137,7 @@ function renderTeamDetails(team) {
   return `
     <div class="team-roster">
       ${team.tagline ? `<p class="team-tagline">${escapeHtml(team.tagline)}</p>` : ""}
+      <p class="team-roster-hint">Click a trainer to view their uma</p>
       ${categories}
     </div>
   `;
@@ -126,7 +154,7 @@ function renderTeamsList() {
 
   list.innerHTML = teamIndex
     .map((team) => {
-      const open = teamCache.has(team.id) ? "open" : "";
+      const open = openTeamIds.has(team.id) ? "open" : "";
       return `
         <details class="team-collapse" data-team-id="${escapeHtml(team.id)}" style="--team:${escapeHtml(team.color)}" ${open}>
           <summary class="team-collapse-summary">
@@ -135,6 +163,7 @@ function renderTeamsList() {
               <strong>${escapeHtml(team.name)}</strong>
               <small>${escapeHtml(team.shortName)}</small>
             </span>
+            <span class="team-collapse-chevron" aria-hidden="true"></span>
           </summary>
           <div class="team-collapse-body" data-team-body="${escapeHtml(team.id)}">
             <p class="hint team-loading">Loading roster…</p>
@@ -235,14 +264,17 @@ function renderUmaPanel() {
   if (!panel) return;
 
   if (!selectedMemberKey) {
-    panel.innerHTML = `<p class="hint uma-detail-empty">Select a trainer to view their uma.</p>`;
+    panel.innerHTML = `
+      <div class="uma-detail-empty">
+        <p class="hint">Open a team, then click a trainer to view their uma sheet.</p>
+      </div>
+    `;
     return;
   }
 
-  const [teamId, category, slotRaw] = selectedMemberKey.split(":");
-  const slot = Number(slotRaw);
-  const team = teamCache.get(teamId);
-  const member = team?.categories?.[category]?.[slot];
+  const parsed = parseMemberKey(selectedMemberKey);
+  const team = teamCache.get(parsed?.teamId);
+  const member = team?.categories?.[parsed.category]?.[parsed.slot];
   if (!team || !member) {
     panel.innerHTML = `<p class="hint uma-detail-empty">Could not load this uma.</p>`;
     return;
@@ -251,26 +283,73 @@ function renderUmaPanel() {
   panel.innerHTML = renderUmaDetail(member, team);
 }
 
+function syncTrainerSelection() {
+  document.querySelectorAll(".trainer-pick").forEach((btn) => {
+    btn.classList.toggle("selected", btn.dataset.memberKey === selectedMemberKey);
+  });
+}
+
 async function ensureTeamLoaded(teamId) {
   const team = await loadTeam(teamId);
-  const body = document.querySelector(`[data-team-body="${teamId}"]`);
+  const body = document.querySelector(`[data-team-body="${CSS.escape(teamId)}"]`);
   if (body) body.innerHTML = renderTeamDetails(team);
+  syncTrainerSelection();
   return team;
 }
 
 async function selectMember(teamId, category, slot) {
   await ensureTeamLoaded(teamId);
   selectedMemberKey = memberKey(teamId, category, slot);
-  document.querySelectorAll(".trainer-pick").forEach((btn) => {
-    btn.classList.toggle("selected", btn.dataset.memberKey === selectedMemberKey);
-  });
+  syncTrainerSelection();
   renderUmaPanel();
 }
 
-export async function refreshTeamsPage() {
+async function openTeamAndShowUma(teamId) {
+  openTeamIds.add(teamId);
+  const team = await ensureTeamLoaded(teamId);
+  const first = firstMemberOf(team);
+  if (!first) {
+    selectedMemberKey = null;
+    renderUmaPanel();
+    return;
+  }
+
+  const alreadyOnThisTeam = selectedMemberKey?.startsWith(`${teamId}:`);
+  if (!alreadyOnThisTeam) {
+    selectedMemberKey = memberKey(teamId, first.category, first.member.slot);
+  }
+  syncTrainerSelection();
+  renderUmaPanel();
+}
+
+async function hydrateOpenTeams() {
+  const ids = [...openTeamIds];
+  for (const teamId of ids) {
+    try {
+      await ensureTeamLoaded(teamId);
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+  if (selectedMemberKey) renderUmaPanel();
+}
+
+export async function refreshTeamsPage({ force = false } = {}) {
   try {
-    teamIndex = await loadTeamIndex();
-    renderTeamsList();
+    const nextIndex = await loadTeamIndex();
+    const indexChanged =
+      force ||
+      !teamsBooted ||
+      JSON.stringify(nextIndex) !== JSON.stringify(teamIndex);
+
+    teamIndex = nextIndex;
+
+    if (indexChanged) {
+      renderTeamsList();
+      await hydrateOpenTeams();
+      teamsBooted = true;
+    }
+
     renderUmaPanel();
   } catch (err) {
     const list = document.getElementById("teams-list");
@@ -285,23 +364,57 @@ export function setupTeamsPage() {
   const list = document.getElementById("teams-list");
   if (!list) return;
 
-  list.addEventListener("toggle", async (event) => {
-    const details = event.target.closest("details.team-collapse");
-    if (!details || !details.open) return;
-    const teamId = details.dataset.teamId;
-    if (!teamId || teamCache.has(teamId)) return;
-    try {
-      await ensureTeamLoaded(teamId);
-    } catch (err) {
-      const body = details.querySelector("[data-team-body]");
-      if (body) body.innerHTML = `<p class="hint">Failed to load team.</p>`;
-      console.warn(err);
-    }
-  });
+  // `toggle` does not bubble in older browsers — listen in capture phase.
+  list.addEventListener(
+    "toggle",
+    async (event) => {
+      const details = event.target;
+      if (!(details instanceof HTMLDetailsElement)) return;
+      if (!details.classList.contains("team-collapse")) return;
+      const teamId = details.dataset.teamId;
+      if (!teamId) return;
+
+      if (!details.open) {
+        openTeamIds.delete(teamId);
+        return;
+      }
+
+      try {
+        await openTeamAndShowUma(teamId);
+      } catch (err) {
+        const body = details.querySelector("[data-team-body]");
+        if (body) body.innerHTML = `<p class="hint">Failed to load team.</p>`;
+        console.warn(err);
+      }
+    },
+    true
+  );
 
   list.addEventListener("click", async (event) => {
     const btn = event.target.closest(".trainer-pick");
-    if (!btn) return;
-    await selectMember(btn.dataset.teamId, btn.dataset.category, Number(btn.dataset.slot));
+    if (btn) {
+      event.preventDefault();
+      await selectMember(btn.dataset.teamId, btn.dataset.category, Number(btn.dataset.slot));
+      return;
+    }
+
+    // Fallback when toggle capture isn't available: load after summary click.
+    const summary = event.target.closest(".team-collapse-summary");
+    if (!summary) return;
+    const details = summary.closest("details.team-collapse");
+    if (!details) return;
+    const teamId = details.dataset.teamId;
+    if (!teamId) return;
+    setTimeout(async () => {
+      if (!details.open) {
+        openTeamIds.delete(teamId);
+        return;
+      }
+      try {
+        await openTeamAndShowUma(teamId);
+      } catch (err) {
+        console.warn(err);
+      }
+    }, 0);
   });
 }
