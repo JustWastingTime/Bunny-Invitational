@@ -1,11 +1,11 @@
 const CATEGORY_ORDER = ["sprint", "mile", "medium", "long", "dirt"];
 
 const STAT_KEYS = [
-  { key: "speed", label: "SPD", icon: "speed" },
-  { key: "stamina", label: "STA", icon: "stamina" },
-  { key: "power", label: "POW", icon: "power" },
-  { key: "guts", label: "GUT", icon: "guts" },
-  { key: "wisdom", label: "WIT", icon: "wisdom" },
+  { key: "speed", label: "SPD", icon: "Speed" },
+  { key: "stamina", label: "STA", icon: "Stamina" },
+  { key: "power", label: "POW", icon: "Power" },
+  { key: "guts", label: "GUT", icon: "Guts" },
+  { key: "wisdom", label: "WIT", icon: "Wit" },
 ];
 
 const APTITUDE_ROWS = [
@@ -21,6 +21,11 @@ const STYLE_LABELS = {
   late: "Late Surger",
   end: "End Closer",
 };
+
+function gradeIconName(grade) {
+  const letter = String(grade ?? "").trim().toUpperCase();
+  return letter ? `Rank_${letter}` : "Rank_G";
+}
 
 let teamIndex = [];
 const teamCache = new Map();
@@ -203,7 +208,7 @@ function renderUmaDetail(member, team) {
     return `
       <article class="uma-apt-card">
         <div class="uma-apt-label">${label}</div>
-        <div class="uma-apt-grade">${iconImg("grades", grade, "uma-grade-icon", grade)}</div>
+        <div class="uma-apt-grade">${iconImg("grades", gradeIconName(grade), "uma-grade-icon", grade)}</div>
       </article>
     `;
   }).join("");

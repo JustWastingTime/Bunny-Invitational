@@ -9,7 +9,7 @@
         "uma": { "name": "Sakura Bakushin O",
           "spriteId": 104101,
           "rating": "SS",
-          "style": "front",
+          "style": "pace",
           "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
           "stats": { "speed": 1328, "stamina": 495, "power": 1229, "guts": 406, "wisdom": 1259 },
           "skills": ["Genius x Bakushin = Victory","Shooting for Victory!","Budding Blossom","Long Shot","Professor of Curvature","Nimble Navigator","Prepared to Pass","Turbo Sprint","Sprint Straightaways","Countermeasure","Perfect Prep!","Pace Chaser Corners","Straight Descent","Risky Business","Light as a Feather","Aspire","Burning Spirit SPD"] }
@@ -138,6 +138,7 @@
           "skills": ["Shooting for Victory!","Triumphant Pulse","Budding Blossom","Right-Handed","Hakodate Racecourse","Fall Runner","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Speed Star","Turbo Sprint","Tail Held High","Top Pick","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Stamina","Racing Spirit: Wit"] }
       },
       { "trainer": "Plnk@BUNS",
+        "locked": true,
         "uma": { "name": "Haru Urara",
           "spriteId": 105202,
           "rating": "UG",
