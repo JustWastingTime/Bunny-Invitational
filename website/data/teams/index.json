@@ -1,0 +1,37 @@
+[
+  {
+    "id": "dust-bunny",
+    "name": "Dust Bunny",
+    "shortName": "BUNS",
+    "tagline": "",
+    "color": "#e91e8c"
+  },
+  {
+    "id": "falena",
+    "name": "Falena",
+    "shortName": "FLNA",
+    "tagline": "falena club",
+    "color": "#7c4dff"
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "shortName": "KING",
+    "tagline": "",
+    "color": "#359b62"
+  },
+  {
+    "id": "ritto-dorm-dropouts",
+    "name": "Ritto Dorm Dropouts",
+    "shortName": "RDD",
+    "tagline": "",
+    "color": "#992724"
+  },
+  {
+    "id": "umalliance",
+    "name": "UMAlliance",
+    "shortName": "ALLI",
+    "tagline": "",
+    "color": "#2c49c9"
+  }
+]

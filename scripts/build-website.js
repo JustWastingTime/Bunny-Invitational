@@ -13,6 +13,8 @@ function main() {
   const result = rebuildWebsitePublic(ROOT);
   console.log("Wrote website/data/public.json");
   console.log(`Copied ${result.copied} portraits to website/assets/characters/`);
+  console.log(`Published ${result.teams} team files to website/data/teams/`);
+  console.log(`Copied ${result.runstyles} run style icons`);
 }
 
 main();

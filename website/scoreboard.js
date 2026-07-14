@@ -1,3 +1,5 @@
+import { refreshTeamsPage, setupTeamsPage } from "./teams-page.js";
+
 const VIEWS = ["bracket", "results", "teams", "stats"];
 let state = {
   tournament: "Bunny Invitational",
@@ -409,31 +411,7 @@ function renderResults() {
 }
 
 function renderTeams() {
-  const teamsGrid = document.getElementById("teams-grid");
-  teamsGrid.innerHTML = state.teams
-    .map((team) => {
-      const categoryRows = Object.entries(team.categories ?? {})
-        .map(([category, members]) => {
-          const rows = (members ?? [])
-            .map((member) => `<li><strong>${member.trainer}</strong> — ${member.uma?.name ?? "Unknown"}</li>`)
-            .join("");
-          return `
-            <div class="team-category">
-              <h4>${category}</h4>
-              <ul>${rows}</ul>
-            </div>
-          `;
-        })
-        .join("");
-      return `
-        <article class="team-card" style="--team:${team.color}">
-          <h3>${team.name}</h3>
-          <div class="team-meta">${team.shortName}</div>
-          <div class="team-categories">${categoryRows}</div>
-        </article>
-      `;
-    })
-    .join("");
+  refreshTeamsPage();
 }
 
 function renderStats() {
@@ -507,5 +485,6 @@ async function tick() {
 }
 
 setupInteractions();
+setupTeamsPage();
 tick();
 setInterval(tick, 15000);

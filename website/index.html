@@ -48,7 +48,12 @@
 
     <section id="view-teams" class="view card hidden">
       <h2>Team Uma Rosters</h2>
-      <div id="teams-grid" class="teams-grid"></div>
+      <div class="teams-layout">
+        <div id="teams-list" class="teams-list"></div>
+        <div id="uma-detail" class="uma-detail-panel">
+          <p class="hint uma-detail-empty">Select a trainer to view their uma.</p>
+        </div>
+      </div>
     </section>
 
     <section id="view-stats" class="view card hidden">
@@ -71,6 +76,7 @@
     </section>
   </main>
 
+  <script src="./teams-page.js" type="module"></script>
   <script src="./scoreboard.js" type="module"></script>
 </body>
 </html>

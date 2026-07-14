@@ -1,0 +1,394 @@
+{
+  "id": "falena",
+  "name": "Falena",
+  "shortName": "FLNA",
+  "tagline": "falena club",
+  "color": "#7c4dff",
+  "categories": {
+    "sprint": [
+      {
+        "slot": 0,
+        "trainer": "Swaejudinoli",
+        "locked": false,
+        "uma": {
+          "name": "Curren Chan",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 103802,
+          "spritePath": "assets/characters/chara_stand_1038_103802.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "XV11",
+        "locked": false,
+        "uma": {
+          "name": "Meisho Doto",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 105801,
+          "spritePath": "assets/characters/chara_stand_1058_105801.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "zera",
+        "locked": false,
+        "uma": {
+          "name": "Mayano Top Gun",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 102401,
+          "spritePath": "assets/characters/chara_stand_1024_102401.png"
+        }
+      }
+    ],
+    "mile": [
+      {
+        "slot": 0,
+        "trainer": "StarryNightlight",
+        "locked": false,
+        "uma": {
+          "name": "Manhattan Cafe",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 102501,
+          "spritePath": "assets/characters/chara_stand_1025_102501.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "Clowngeta",
+        "locked": false,
+        "uma": {
+          "name": "Mejiro McQueen",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 101301,
+          "spritePath": "assets/characters/chara_stand_1013_101301.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "Cyndexv",
+        "locked": false,
+        "uma": {
+          "name": "Oguri Cap",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 100602,
+          "spritePath": "assets/characters/chara_stand_1006_100602.png"
+        }
+      }
+    ],
+    "medium": [
+      {
+        "slot": 0,
+        "trainer": "Haiji",
+        "locked": false,
+        "uma": {
+          "name": "Kitasan Black",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 106801,
+          "spritePath": "assets/characters/chara_stand_1068_106801.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "Chan",
+        "locked": false,
+        "uma": {
+          "name": "Eishin Flash",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 103701,
+          "spritePath": "assets/characters/chara_stand_1037_103701.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "Uprob",
+        "locked": false,
+        "uma": {
+          "name": "Air Shakur",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 103601,
+          "spritePath": "assets/characters/chara_stand_1036_103601.png"
+        }
+      }
+    ],
+    "long": [
+      {
+        "slot": 0,
+        "trainer": "Korie",
+        "locked": false,
+        "uma": {
+          "name": "Satono Diamond",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 106701,
+          "spritePath": "assets/characters/chara_stand_1067_106701.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "Omatsuri Mambo!",
+        "locked": false,
+        "uma": {
+          "name": "Matikanetannhauser",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 106201,
+          "spritePath": "assets/characters/chara_stand_1062_106201.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "Lazarus",
+        "locked": false,
+        "uma": {
+          "name": "Gold Ship",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 100701,
+          "spritePath": "assets/characters/chara_stand_1007_100701.png"
+        }
+      }
+    ],
+    "dirt": [
+      {
+        "slot": 0,
+        "trainer": "Plazma",
+        "locked": false,
+        "uma": {
+          "name": "Taiki Shuttle",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 101001,
+          "spritePath": "assets/characters/chara_stand_1010_101001.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "Flemm",
+        "locked": false,
+        "uma": {
+          "name": "Smart Falcon",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 104601,
+          "spritePath": "assets/characters/chara_stand_1046_104601.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "Nati",
+        "locked": false,
+        "uma": {
+          "name": "El Condor Pasa",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "spriteId": 101401,
+          "spritePath": "assets/characters/chara_stand_1014_101401.png"
+        }
+      }
+    ]
+  }
+}

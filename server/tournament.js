@@ -8,7 +8,8 @@ import {
   resolveMatchRacers,
   resolveMatchTeams,
 } from "./team-resolver.js";
-import { publishWebsiteSprites } from "./website-publish.js";
+import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, buildWebsiteTeams } from "./website-publish.js";
+import { buildSpriteLookup } from "./sprite-resolver.js";
 const STANDINGS_REL = "data/standings.json";
 const WEBSITE_STANDINGS_REL = "website/data/standings.json";
 const WEBSITE_PUBLIC_REL = "website/data/public.json";
@@ -114,32 +115,27 @@ export function rebuildWebsitePublic(root) {
   const publicPath = path.join(root, WEBSITE_PUBLIC_REL);
   fs.mkdirSync(path.dirname(publicPath), { recursive: true });
   const data = buildWebsiteData(root, standings);
-  const result = publishWebsiteSprites(root, data);
+  const spriteResult = publishWebsiteSprites(root, data);
+  const teamResult = publishWebsiteTeams(root);
+  const runstyleResult = publishWebsiteRunstyles(root);
   fs.writeFileSync(publicPath, JSON.stringify(data, null, 2) + "\n");
-  return result;
+  return {
+    copied: spriteResult.copied,
+    teams: teamResult.teams,
+    runstyles: runstyleResult.copied,
+  };
 }
 
 function buildWebsiteData(root, standings) {
-  const teams = Object.keys(standings.teams ?? {}).map((teamId) => {
-    const team = loadTeam(root, teamId);
-    const categories = Object.fromEntries(
-      CATEGORIES.map((category) => [
-        category,
-        (team.categories?.[category] ?? []).map((member, slot) => ({
-          slot,
-          trainer: member.trainer,
-          uma: member.uma,
-        })),
-      ])
-    );
-    return {
-      id: team.id,
-      name: team.name,
-      shortName: team.shortName ?? team.name,
-      color: team.color,
-      categories,
-    };
-  });
+  const spriteLookup = buildSpriteLookup(root);
+  const teams = buildWebsiteTeams(root).map((team) => ({
+    id: team.id,
+    name: team.name,
+    shortName: team.shortName,
+    tagline: team.tagline ?? "",
+    color: team.color,
+    categories: team.categories,
+  }));
 
   const matches = listMatchFiles(path.join(root, "data", "matches")).map((matchId) => {
     const match = loadMatch(root, matchId);

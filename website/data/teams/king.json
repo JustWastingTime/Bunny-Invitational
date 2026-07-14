@@ -1,0 +1,406 @@
+{
+  "id": "king",
+  "name": "King",
+  "shortName": "KING",
+  "tagline": "",
+  "color": "#359b62",
+  "categories": {
+    "sprint": [
+      {
+        "slot": 0,
+        "trainer": "VannesGreave",
+        "locked": false,
+        "uma": {
+          "name": "King Halo",
+          "rating": "S",
+          "style": "late",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 1271,
+            "stamina": 608,
+            "power": 1213,
+            "guts": 496,
+            "wisdom": 1213
+          },
+          "skills": [],
+          "spriteId": 106102,
+          "spritePath": "assets/characters/chara_stand_1061_106102.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "New Team sprint 2",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "New Team sprint 3",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      }
+    ],
+    "mile": [
+      {
+        "slot": 0,
+        "trainer": "New Team mile 1",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "New Team mile 2",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "New Team mile 3",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      }
+    ],
+    "medium": [
+      {
+        "slot": 0,
+        "trainer": "eef",
+        "locked": false,
+        "uma": {
+          "name": "Matikanefukukitaru",
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 1311,
+            "stamina": 699,
+            "power": 1211,
+            "guts": 488,
+            "wisdom": 1129
+          },
+          "skills": [],
+          "spriteId": 105601,
+          "spritePath": "assets/characters/chara_stand_1056_105601.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "dnh",
+        "locked": false,
+        "uma": {
+          "name": "Mejiro Dober",
+          "rating": "SS+",
+          "style": "late",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 1231,
+            "stamina": 738,
+            "power": 1179,
+            "guts": 501,
+            "wisdom": 1118
+          },
+          "skills": [],
+          "spriteId": 105902,
+          "spritePath": "assets/characters/chara_stand_1059_105902.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "New Team medium 3",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      }
+    ],
+    "long": [
+      {
+        "slot": 0,
+        "trainer": "New Team long 1",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "New Team long 2",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "New Team long 3",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      }
+    ],
+    "dirt": [
+      {
+        "slot": 0,
+        "trainer": "New Team dirt 1",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "New Team dirt 2",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "New Team dirt 3",
+        "locked": false,
+        "uma": {
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
+          },
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
+        }
+      }
+    ]
+  }
+}
