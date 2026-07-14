@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-14T16:58:29.692Z",
+  "updatedAt": "2026-07-14T17:02:37.126Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -20,10 +20,10 @@
     "dust-bunny": {
       "name": "Dust Bunny",
       "color": "#e91e8c",
-      "points": 14,
-      "firsts": 1,
-      "seconds": 3,
-      "thirds": 0
+      "points": 23,
+      "firsts": 2,
+      "seconds": 4,
+      "thirds": 1
     },
     "falena": {
       "name": "Falena",
@@ -111,9 +111,18 @@
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "dust-bunny",
+              "slot": 1
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "slot": 2
+            }
           }
         }
       }
