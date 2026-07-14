@@ -78,18 +78,6 @@ function podiumMap(placements) {
   return map;
 }
 
-function racersGroupedByTeam(racers, teamIds) {
-  const byTeam = new Map(teamIds.map((teamId) => [teamId, []]));
-  for (const racer of racers ?? []) {
-    if (!byTeam.has(racer.teamId)) byTeam.set(racer.teamId, []);
-    byTeam.get(racer.teamId).push(racer);
-  }
-  for (const list of byTeam.values()) {
-    list.sort((a, b) => a.slot - b.slot);
-  }
-  return teamIds.map((teamId) => byTeam.get(teamId) ?? []);
-}
-
 const ICON_CROWN = `<svg class="race-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 15.5 2.5 8l3.6 2.6L12 5l5.9 5.6L21.5 8 20 15.5H4zm0 2.5h16v2H4v-2z"/></svg>`;
 const ICON_STAR = `<svg class="race-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2 14.8 9H22l-6.2 4.5 2.4 7.3L12 17.3 5.8 20.8 8.2 13.5 2 9h7.2z"/></svg>`;
 
@@ -110,7 +98,7 @@ function renderRacerCard(racer, podium, uniqueSet) {
   const initial = (racer.umaName ?? "?").charAt(0).toUpperCase();
   const portraitSrc = resolveAssetPath(racer.spritePath);
   return `
-    <article class="race-card ${podiumClass}">
+    <article class="race-card ${podiumClass}" title="${racer.trainer}${place ? ` · ${placeTitle}` : ""}${uniqueBonus ? " · Unique" : ""}">
       <div class="race-portrait-wrap">
         ${
           portraitSrc
@@ -118,9 +106,9 @@ function renderRacerCard(racer, podium, uniqueSet) {
             : `<div class="race-portrait fallback">${initial}</div>`
         }
         ${place ? `<span class="podium-badge ${podiumClass}" title="${placeTitle}">${ICON_CROWN}</span>` : ""}
+        ${uniqueBonus ? `<span class="race-icon race-icon-star" title="Unique bonus">${ICON_STAR}</span>` : ""}
       </div>
       <div class="race-trainer">${racer.trainer}</div>
-      ${uniqueBonus ? `<div class="race-icons"><span class="race-icon race-icon-star" title="Unique bonus">${ICON_STAR}</span></div>` : ""}
     </article>
   `;
 }
@@ -280,51 +268,81 @@ function renderMatchDetail(matchId) {
 
   const teamRows = matchTeamRows(match);
   const uniqueSet = new Set(state.stats?.uniqueUmas ?? []);
-  const matchTeams = match.teams.map((teamId) => {
-    const team = state.teams.find((row) => row.id === teamId) ?? { id: teamId, name: teamId, color: "#999" };
-    return team;
-  });
-  const teamHeaders = matchTeams
-    .map(
-      (team) => `
-        <div class="race-team-header" style="--team:${team.color}">
-          <span class="race-team-name">${team.name}</span>
-        </div>
-      `
-    )
+  const rankByTeam = new Map(teamRows.map((team, idx) => [team.id, idx + 1]));
+  const pointsByTeam = new Map(teamRows.map((team) => [team.id, team.matchPoints]));
+
+  const scoreboard = teamRows
+    .map((team, idx) => {
+      const rank = idx + 1;
+      return `
+        <article class="match-score-card rank-${rank}" style="--team:${team.color}">
+          <div class="match-score-rank">#${rank}</div>
+          <div class="match-score-meta">
+            <div class="match-score-name">${team.name}</div>
+            <div class="match-score-sub">${team.shortName ?? ""}</div>
+          </div>
+          <div class="match-score-points">
+            <strong>${team.matchPoints}</strong>
+            <span>pts</span>
+          </div>
+        </article>
+      `;
+    })
     .join("");
-  const raceLines = orderedCategoryEntries(match.categories)
-    .map(([category, race]) => {
-      const podium = podiumMap(race.placements);
-      const teamGroups = racersGroupedByTeam(race.racers, match.teams)
-        .map((racers) => {
+
+  const teamColumns = match.teams
+    .map((teamId) => {
+      const team = state.teams.find((row) => row.id === teamId) ?? {
+        id: teamId,
+        name: teamId,
+        shortName: teamId,
+        color: "#999",
+      };
+      const rank = rankByTeam.get(teamId) ?? null;
+      const points = pointsByTeam.get(teamId) ?? 0;
+      const categoryBlocks = orderedCategoryEntries(match.categories)
+        .map(([category, race]) => {
+          const podium = podiumMap(race.placements);
+          const racers = (race.racers ?? [])
+            .filter((racer) => racer.teamId === teamId)
+            .sort((a, b) => a.slot - b.slot);
           const cards = racers.map((racer) => renderRacerCard(racer, podium, uniqueSet)).join("");
-          return `<div class="race-team-group">${cards}</div>`;
+          return `
+            <div class="team-col-race">
+              <div class="team-col-race-label">${category}</div>
+              <div class="team-col-racers">${cards}</div>
+            </div>
+          `;
         })
         .join("");
 
       return `
-        <div class="race-line">
-          <div class="race-category-label cap">${category}</div>
-          <div class="race-cards-area">${teamGroups}</div>
-        </div>
+        <section class="team-col rank-${rank ?? ""}" style="--team:${team.color}">
+          <header class="team-col-head">
+            <div class="team-col-title">
+              ${rank ? `<span class="team-col-rank">#${rank}</span>` : ""}
+              <div>
+                <div class="team-col-name">${team.name}</div>
+                <div class="team-col-short">${team.shortName ?? ""}</div>
+              </div>
+            </div>
+            <div class="team-col-points"><strong>${points}</strong><span>pts</span></div>
+          </header>
+          <div class="team-col-body">${categoryBlocks}</div>
+        </section>
       `;
     })
     .join("");
 
   container.innerHTML = `
-    <h2>Day ${match.day} Match ${match.matchNumber} — ${match.round}</h2>
-    <p>${matchStatus(match)}</p>
-    <div class="chips">
-      ${teamRows.map((team) => `<span class="chip" style="--team:${team.color}">${team.name}: ${team.matchPoints}pts</span>`).join("")}
-    </div>
-    <div class="race-board">
-      <div class="race-line race-line-header">
-        <div class="race-category-label" aria-hidden="true"></div>
-        <div class="race-cards-area race-cards-area-headers">${teamHeaders}</div>
+    <div class="match-detail-top">
+      <div>
+        <h2>Day ${match.day} Match ${match.matchNumber} — ${match.round}</h2>
+        <p>${matchStatus(match)}</p>
       </div>
-      ${raceLines}
     </div>
+    <div class="match-scoreboard">${scoreboard}</div>
+    <div class="match-team-board">${teamColumns}</div>
   `;
 }
 
