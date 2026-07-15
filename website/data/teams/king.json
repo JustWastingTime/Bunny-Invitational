@@ -8,11 +8,11 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "VannesGreave",
+        "trainer": "Vannes",
         "locked": true,
         "uma": {
           "name": "King Halo",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "late",
           "aptitudes": {
             "terrain": "S",
@@ -55,7 +55,7 @@
         "locked": true,
         "uma": {
           "name": "Curren Chan",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "S",
@@ -128,7 +128,7 @@
         "locked": true,
         "uma": {
           "name": "Grass Wonder",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -167,28 +167,43 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team mile 2",
-        "locked": false,
+        "trainer": "BitBoi",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Vodka",
+          "rating": "S+",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1199,
+            "stamina": 655,
+            "power": 1183,
+            "guts": 351,
+            "wisdom": 1016
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Cut and Drive!",
+            "Shooting Star",
+            "Triumphant Pulse",
+            "Moving Past, and Beyond",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "On Your Left!",
+            "Furious Feat",
+            "Mile Straightaways",
+            "Late Surger Corners",
+            "Late Surger Savvy",
+            "Slipstream",
+            "Burning Spirit SPD",
+            "Ignited Spirit GUTS"
+          ],
+          "spriteId": 100801,
+          "spritePath": "assets/characters/chara_stand_1008_100801.png"
         }
       },
       {
@@ -225,7 +240,7 @@
         "locked": true,
         "uma": {
           "name": "Matikanefukukitaru",
-          "rating": "UG",
+          "rating": "UG3",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -315,10 +330,10 @@
       {
         "slot": 2,
         "trainer": "Hines",
-        "locked": true,
+        "locked": false,
         "uma": {
           "name": "Fine Motion",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -365,7 +380,7 @@
         "locked": true,
         "uma": {
           "name": "Super Creek",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "pace",
           "aptitudes": {
             "terrain": "S",
@@ -401,28 +416,43 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team long 2",
-        "locked": false,
+        "trainer": "Jaya",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Nice Nature",
+          "rating": "UG",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1206,
+            "stamina": 1075,
+            "power": 1129,
+            "guts": 451,
+            "wisdom": 1091
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Go☆Go☆Goal!",
+            "White Lightning Comin' Through!",
+            "Right-Handed",
+            "Wet Conditions",
+            "Spring Runner",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Straightaway Spurt",
+            "Cooldown",
+            "End Closer Corners",
+            "Tail Held High",
+            "Daring Strike"
+          ],
+          "spriteId": 106002,
+          "spritePath": "assets/characters/chara_stand_1060_106002.png"
         }
       },
       {
@@ -499,28 +529,43 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team dirt 2",
-        "locked": false,
+        "trainer": "Jameson",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Fuji Kiseki",
+          "rating": "SS",
+          "style": "pace",
           "aptitudes": {
-            "terrain": "A",
+            "terrain": "S",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1115,
+            "stamina": 664,
+            "power": 1289,
+            "guts": 570,
+            "wisdom": 960
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Ravissant",
+            "Triumphant Pulse",
+            "Prideful King",
+            "Presents from X",
+            "Right-Handed",
+            "Wet Conditions",
+            "Beeline Burst",
+            "It's On!",
+            "Speed Star",
+            "Sprint Corners",
+            "Pace Chaser Corners",
+            "Shrewd Step",
+            "Slipstream",
+            "Neck and Neck",
+            "Burning Spirit PWR"
+          ],
+          "spriteId": 100502,
+          "spritePath": "assets/characters/chara_stand_1005_100502.png"
         }
       },
       {

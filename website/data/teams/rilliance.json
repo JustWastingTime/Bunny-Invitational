@@ -12,7 +12,7 @@
         "locked": true,
         "uma": {
           "name": "Maruzensky",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -54,28 +54,46 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
-        "locked": false,
+        "trainer": "Lak",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Hishi Akebono",
+          "rating": "UG2",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1323,
+            "stamina": 483,
+            "power": 1241,
+            "guts": 611,
+            "wisdom": 1222
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "YUMMY☆SPEED!",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Firm Conditions",
+            "Sunny Days",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Homestretch Haste",
+            "Sprinting Gear",
+            "Sprint Corners",
+            "Plan X",
+            "Pace Chaser Savvy",
+            "Uma Stan",
+            "Groundwork",
+            "Playtime's Over!",
+            "Head-On",
+            "Nothing Ventured",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 102801,
+          "spritePath": "assets/characters/chara_stand_1028_102801.png"
         }
       },
       {
@@ -112,7 +130,7 @@
         "locked": true,
         "uma": {
           "name": "Seiun Sky",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -159,37 +177,38 @@
         "locked": true,
         "uma": {
           "name": "Special Week",
-          "rating": "SS",
+          "rating": "UG",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "S",
-            "style": "A"
+            "distance": "A",
+            "style": "S"
           },
           "stats": {
-            "speed": 1259,
-            "stamina": 575,
-            "power": 1156,
-            "guts": 450,
-            "wisdom": 1215
+            "speed": 1214,
+            "stamina": 632,
+            "power": 1252,
+            "guts": 491,
+            "wisdom": 1255
           },
           "skills": [
             "Shooting Star",
             "Let's Pump Some Iron!",
             "Moving Past, and Beyond",
             "Right-Handed",
-            "Hakodate Racecourse",
+            "Winter Runner",
+            "Long Shot",
             "Professor of Curvature",
-            "Corner Recovery",
             "Straightaway Adept",
-            "Ramp Up",
             "No Stopping Me!",
             "Homestretch Haste",
             "On Your Left!",
-            "Updrafters",
-            "1,500,000 CC",
+            "Outer Swell",
             "Uma Stan",
-            "Playtime's Over!",
+            "Tail Held High",
+            "Slipstream",
+            "Nothing Ventured",
+            "Ignited Spirit SPD",
             "Ignited Spirit PWR"
           ],
           "spriteId": 100101,
@@ -198,28 +217,47 @@
       },
       {
         "slot": 2,
-        "trainer": "New Team mile 3",
-        "locked": false,
+        "trainer": "freakkiem",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Smart Falcon",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1263,
+            "stamina": 654,
+            "power": 1238,
+            "guts": 545,
+            "wisdom": 1141
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "SPARKLY☆STARDOM",
+            "Angling and Scheming",
+            "Operation Cacao",
+            "Right-Handed",
+            "Wet Conditions",
+            "Professor of Curvature",
+            "Early Lead",
+            "Fast-Paced",
+            "Mile Corners",
+            "Front Runner Straightaways",
+            "Dodging Danger",
+            "Top Runner",
+            "Front Runner Savvy",
+            "Groundwork",
+            "Playtime's Over!",
+            "Burning Spirit SPD",
+            "Ignited Spirit STA",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 104601,
+          "spritePath": "assets/characters/chara_stand_1046_104601.png"
         }
       }
     ],
@@ -230,7 +268,7 @@
         "locked": true,
         "uma": {
           "name": "Mejiro Dober",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -269,28 +307,47 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team medium 2",
-        "locked": false,
+        "trainer": "RipPeR",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Oguri Cap",
+          "rating": "UG7",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1305,
+            "stamina": 751,
+            "power": 1220,
+            "guts": 639,
+            "wisdom": 1332
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Festive Miracle",
+            "Let's Pump Some Iron!",
+            "Wherever This Wonder Leads",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "On Your Left!",
+            "Medium Corners",
+            "Late Surger Straightaways",
+            "A Small Breather",
+            "Triple 7s",
+            "Tail Held High",
+            "Lone Wolf",
+            "Playtime's Over!",
+            "Be Still",
+            "Pedal to the Metal",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 100602,
+          "spritePath": "assets/characters/chara_stand_1006_100602.png"
         }
       },
       {
@@ -323,28 +380,46 @@
     "long": [
       {
         "slot": 0,
-        "trainer": "New Team long 1",
-        "locked": false,
+        "trainer": "Mada",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Sweep Tosho",
+          "rating": "SS+",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1250,
+            "stamina": 1016,
+            "power": 1050,
+            "guts": 842,
+            "wisdom": 789
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Victory belongs to me—Strelitzia! ☆",
+            "Triumphant Pulse",
+            "Shooting Star of Dioskouroi",
+            "Barcarole of Blessings",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Straightaway Spurt",
+            "End Closer Corners",
+            "End Closer Savvy",
+            "Uma Stan",
+            "Tail Held High",
+            "Sympathy",
+            "Slipstream",
+            "Daring Strike",
+            "Restraint"
+          ],
+          "spriteId": 104401,
+          "spritePath": "assets/characters/chara_stand_1044_104401.png"
         }
       },
       {
@@ -447,28 +522,43 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team dirt 2",
-        "locked": false,
+        "trainer": "Turnip",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Agnes Digital",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1314,
+            "stamina": 463,
+            "power": 1071,
+            "guts": 468,
+            "wisdom": 1336
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+            "Shooting Star",
+            "Budding Blossom",
+            "Corner Adept",
+            "Focus",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "On Your Left!",
+            "Sprinting Gear",
+            "Late Surger Straightaways",
+            "Uma Stan",
+            "Top Pick",
+            "Forward, March!",
+            "Light as a Feather"
+          ],
+          "spriteId": 101901,
+          "spritePath": "assets/characters/chara_stand_1019_101901.png"
         }
       },
       {

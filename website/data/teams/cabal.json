@@ -48,10 +48,10 @@
       {
         "slot": 1,
         "trainer": "Nekata",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Maruzensky",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -79,7 +79,10 @@
             "Dodging Danger",
             "Groundwork",
             "Tail Held High",
-            "In High Spirits"
+            "In High Spirits",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
           ],
           "spriteId": 100402,
           "spritePath": "assets/characters/chara_stand_1004_100402.png"
@@ -156,28 +159,47 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team mile 2",
-        "locked": false,
+        "trainer": "Sapphire",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Mihono Bourbon",
+          "rating": "UG1",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1289,
+            "stamina": 654,
+            "power": 1070,
+            "guts": 575,
+            "wisdom": 1271
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Operation Cacao",
+            "Angling and Scheming",
+            "Right-Handed",
+            "Hakodate Racecourse",
+            "Wet Conditions",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Concentration",
+            "Prudent Positioning",
+            "It's On!",
+            "Early Lead",
+            "Escape Artist",
+            "Front Runner Straightaways",
+            "Top Runner",
+            "Groundwork",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Ignited Spirit WIT",
+            "Racing Spirit: Stamina"
+          ],
+          "spriteId": 102602,
+          "spritePath": "assets/characters/chara_stand_1026_102602.png"
         }
       },
       {
@@ -214,7 +236,7 @@
         "locked": true,
         "uma": {
           "name": "Tokai Teio",
-          "rating": "UG",
+          "rating": "UG3",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -255,7 +277,7 @@
         "locked": true,
         "uma": {
           "name": "Agnes Digital",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "end",
           "aptitudes": {
             "terrain": "A",
@@ -300,7 +322,7 @@
         "locked": true,
         "uma": {
           "name": "Oguri Cap",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -341,28 +363,47 @@
     "long": [
       {
         "slot": 0,
-        "trainer": "New Team long 1",
-        "locked": false,
+        "trainer": "ONEWINGEDANGEL",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Mayano Top Gun",
+          "rating": "UG6",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1302,
+            "stamina": 952,
+            "power": 1199,
+            "guts": 546,
+            "wisdom": 1208
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Flashy☆Landing",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Corner Recovery",
+            "Straightaway Adept",
+            "Breath of Fresh Air",
+            "Focus",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Straightaway Spurt",
+            "Long Corners",
+            "Strategist",
+            "Super Lucky Seven",
+            "Tail Held High",
+            "Daring Strike",
+            "Burning Spirit SPD",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 102401,
+          "spritePath": "assets/characters/chara_stand_1024_102401.png"
         }
       },
       {
@@ -463,28 +504,42 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team dirt 2",
-        "locked": false,
+        "trainer": "Panda28",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Bamboo Memory",
+          "rating": "S+",
+          "style": "late",
           "aptitudes": {
-            "terrain": "A",
+            "terrain": "S",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1289,
+            "stamina": 380,
+            "power": 1021,
+            "guts": 467,
+            "wisdom": 1064
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Red-Hot Discipline!",
+            "Tokyo Racecourse",
+            "Hanshin Racecourse",
+            "Kyoto Racecourse",
+            "Standard Distance",
+            "Corner Adept",
+            "Straightaway Adept",
+            "Center Stage",
+            "It's On!",
+            "No Stopping Me!",
+            "Rising Dragon",
+            "Sprint Straightaways",
+            "Sprint Corners",
+            "Plan X"
+          ],
+          "spriteId": 105301,
+          "spritePath": "assets/characters/chara_stand_1053_105301.png"
         }
       },
       {

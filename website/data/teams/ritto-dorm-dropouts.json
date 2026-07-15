@@ -223,7 +223,7 @@
         "locked": true,
         "uma": {
           "name": "Fine Motion",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -442,7 +442,7 @@
         "locked": true,
         "uma": {
           "name": "Agnes Digital",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "end",
           "aptitudes": {
             "terrain": "A",

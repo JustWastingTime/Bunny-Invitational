@@ -12,7 +12,7 @@
         "locked": true,
         "uma": {
           "name": "Mejiro Ardan",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -53,7 +53,7 @@
       },
       {
         "slot": 1,
-        "trainer": "AzureLight",
+        "trainer": "AzureLightBR",
         "locked": true,
         "uma": {
           "name": "Sakura Chiyono O",
@@ -95,39 +95,51 @@
       },
       {
         "slot": 2,
-        "trainer": "New Team sprint 3",
-        "locked": false,
+        "trainer": "Houseknight",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Inari One",
+          "rating": "S+",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1146,
+            "stamina": 635,
+            "power": 1234,
+            "guts": 418,
+            "wisdom": 986
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Now We're Cruisin'!",
+            "Let's Pump Some Iron!",
+            "Louder! Tracen Cheer!",
+            "Professor of Curvature",
+            "It's On!",
+            "Straightaway Spurt",
+            "Sprint Straightaways",
+            "Sprint Corners",
+            "End Closer Straightaways",
+            "Tail Nine",
+            "Forward, March!",
+            "Daring Strike"
+          ],
+          "spriteId": 103401,
+          "spritePath": "assets/characters/chara_stand_1034_103401.png"
         }
       }
     ],
     "mile": [
       {
         "slot": 0,
-        "trainer": "iluvtomboy2",
+        "trainer": "iluvtommboy2",
         "locked": true,
         "uma": {
           "name": "Sweep Tosho",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "end",
           "aptitudes": {
             "terrain": "A",
@@ -241,7 +253,7 @@
         "locked": true,
         "uma": {
           "name": "T.M. Opera O",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -332,28 +344,47 @@
     "long": [
       {
         "slot": 0,
-        "trainer": "New Team long 1",
-        "locked": false,
+        "trainer": "Ultra",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Kitasan Black",
+          "rating": "UG9",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1229,
+            "stamina": 1148,
+            "power": 1263,
+            "guts": 583,
+            "wisdom": 1219
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Victory Cheer!",
+            "Angling and Scheming",
+            "Non-Standard Distance",
+            "Spring Runner",
+            "Corner Adept",
+            "Prudent Positioning",
+            "It's On!",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Cooldown",
+            "Blast Forward",
+            "Dodging Danger",
+            "Top Runner",
+            "Front Runner Savvy",
+            "Groundwork",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 106801,
+          "spritePath": "assets/characters/chara_stand_1068_106801.png"
         }
       },
       {
@@ -416,7 +447,7 @@
         "locked": true,
         "uma": {
           "name": "El Condor Pasa",
-          "rating": "UG",
+          "rating": "UG6",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -455,11 +486,11 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team dirt 2",
-        "locked": false,
+        "trainer": "Scrub",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Smart Falcon",
+          "rating": "SS",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -467,16 +498,35 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1237,
+            "stamina": 536,
+            "power": 1224,
+            "guts": 453,
+            "wisdom": 1160
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "SPARKLY☆STARDOM",
+            "Victoria por plancha ☆",
+            "Angling and Scheming",
+            "Right-Handed",
+            "Wet Conditions",
+            "Fall Runner",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Prudent Positioning",
+            "It's On!",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Front Runner Corners",
+            "Top Runner",
+            "Groundwork",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Top Pick",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 104601,
+          "spritePath": "assets/characters/chara_stand_1046_104601.png"
         }
       },
       {

@@ -8,54 +8,87 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "New Team sprint 1",
-        "locked": false,
+        "trainer": "ChooChoo",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Mayano Top Gun",
+          "rating": "SS+",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1253,
+            "stamina": 618,
+            "power": 1204,
+            "guts": 631,
+            "wisdom": 980
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Flowery☆Maneuver",
+            "Let's Pump Some Iron!",
+            "Budding Blossom",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Position Pilfer",
+            "On Your Left!",
+            "Late Surger Straightaways",
+            "Late Surger Corners",
+            "Uma Stan",
+            "Tail Held High",
+            "Risky Business",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS"
+          ],
+          "spriteId": 102402,
+          "spritePath": "assets/characters/chara_stand_1024_102402.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
-        "locked": false,
+        "trainer": "Hikaru Kogane",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Nishino Flower",
+          "rating": "SS+",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1306,
+            "stamina": 428,
+            "power": 1228,
+            "guts": 372,
+            "wisdom": 1248
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Budding Blossom",
+            "Shooting for Victory!",
+            "I Never Goof Up!",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Beeline Burst",
+            "It's On!",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Pace Chaser Corners",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Neck and Neck",
+            "On the Attack"
+          ],
+          "spriteId": 105101,
+          "spritePath": "assets/characters/chara_stand_1051_105101.png"
         }
       },
       {
@@ -88,28 +121,47 @@
     "mile": [
       {
         "slot": 0,
-        "trainer": "New Team mile 1",
-        "locked": false,
+        "trainer": "Dragon",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Daiwa Scarlet",
+          "rating": "S+",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
-            "style": "A"
+            "distance": "S",
+            "style": "S"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1270,
+            "stamina": 516,
+            "power": 1250,
+            "guts": 362,
+            "wisdom": 840
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Resplendent Red Ace",
+            "The Duty of Dignity Calls",
+            "All Charged! It's Go Time!",
+            "Operation Cacao",
+            "Summer Runner",
+            "Competitive Spirit",
+            "Corner Adept",
+            "Focus",
+            "Prudent Positioning",
+            "Ramp Up",
+            "Final Push",
+            "Unyielding Spirit",
+            "Top Runner",
+            "Second Wind",
+            "Front Runner Savvy",
+            "Lucky Seven",
+            "Groundwork",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 100901,
+          "spritePath": "assets/characters/chara_stand_1009_100901.png"
         }
       },
       {
@@ -172,7 +224,7 @@
         "locked": false,
         "uma": {
           "name": "Tamamo Cross",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "late",
           "aptitudes": {
             "terrain": "S",

@@ -12,7 +12,7 @@
         "locked": true,
         "uma": {
           "name": "Fuji Kiseki",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -58,7 +58,7 @@
         "locked": true,
         "uma": {
           "name": "Bamboo Memory",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -131,7 +131,7 @@
         "locked": true,
         "uma": {
           "name": "Symboli Rudolf",
-          "rating": "UG",
+          "rating": "UG3",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -173,7 +173,7 @@
         "locked": true,
         "uma": {
           "name": "Nishino Flower",
-          "rating": "UG",
+          "rating": "UG3",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -413,10 +413,10 @@
       {
         "slot": 0,
         "trainer": "OJ",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Smart Falcon",
-          "rating": "SS",
+          "rating": "UG3",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -424,15 +424,30 @@
             "style": "A"
           },
           "stats": {
-            "speed": 1010,
-            "stamina": 990,
-            "power": 1080,
-            "guts": 870,
-            "wisdom": 760
+            "speed": 1235,
+            "stamina": 528,
+            "power": 1265,
+            "guts": 606,
+            "wisdom": 1318
           },
           "skills": [
-            "Dirt Savvy ◎",
-            "Pace Chaser Straightaways ◎"
+            "SPARKLY☆STARDOM",
+            "Angling and Scheming",
+            "Oi Racecourse",
+            "Wet Conditions",
+            "Fall Runner",
+            "Center Stage",
+            "It's On!",
+            "No Stopping Me!",
+            "Go with the Flow",
+            "Early Lead",
+            "Fast-Paced",
+            "Front Runner Straightaways",
+            "Front Runner Corners",
+            "Top Runner",
+            "Groundwork",
+            "Trending in the Charts!",
+            "Risky Business"
           ],
           "spriteId": 104601,
           "spritePath": "assets/characters/chara_stand_1046_104601.png"

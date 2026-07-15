@@ -8,54 +8,83 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "New Team sprint 1",
-        "locked": false,
+        "trainer": "Rose",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Nishino Flower",
+          "rating": "UG4",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1305,
+            "stamina": 593,
+            "power": 1295,
+            "guts": 515,
+            "wisdom": 1305
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Budding Blossom",
+            "Shooting for Victory!",
+            "Corner Acceleration",
+            "Straightaway Acceleration",
+            "It's On!",
+            "Homestretch Haste",
+            "Speed Star",
+            "Turbo Sprint",
+            "Sprint Straightaways",
+            "Pace Chaser Corners",
+            "Determined Descent",
+            "Highlander",
+            "Tail Held High",
+            "Neck and Neck"
+          ],
+          "spriteId": 105101,
+          "spritePath": "assets/characters/chara_stand_1051_105101.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
-        "locked": false,
+        "trainer": "Oguging",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Sakura Bakushin O",
+          "rating": "UG3",
+          "style": "pace",
           "aptitudes": {
-            "terrain": "A",
+            "terrain": "S",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1300,
+            "stamina": 501,
+            "power": 1234,
+            "guts": 426,
+            "wisdom": 1325
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Genius x Bakushin = Victory",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Prepared to Pass",
+            "Turbo Sprint",
+            "Countermeasure",
+            "Meticulous Measures",
+            "Pace Chaser Straightaways",
+            "Straight Descent",
+            "Neck and Neck",
+            "On the Attack",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 104101,
+          "spritePath": "assets/characters/chara_stand_1041_104101.png"
         }
       },
       {
@@ -92,7 +121,7 @@
         "locked": true,
         "uma": {
           "name": "Maruzensky",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -136,28 +165,46 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team mile 2",
-        "locked": false,
+        "trainer": "Fluwid",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Silence Suzuka",
+          "rating": "UG2",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1219,
+            "stamina": 870,
+            "power": 1219,
+            "guts": 707,
+            "wisdom": 1004
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "The View from the Lead is Mine!",
+            "Angling and Scheming",
+            "Operation Cacao",
+            "Runaway",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Concentration",
+            "Taking the Lead",
+            "Escape Artist",
+            "Mile Straightaways",
+            "Front Runner Straightaways",
+            "Front Runner Corners",
+            "Front Runner Savvy",
+            "Groundwork",
+            "Playtime's Over!",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 100201,
+          "spritePath": "assets/characters/chara_stand_1002_100201.png"
         }
       },
       {
@@ -194,7 +241,7 @@
         "locked": true,
         "uma": {
           "name": "Mejiro Ardan",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -234,28 +281,46 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team medium 2",
-        "locked": false,
+        "trainer": "North",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Mihono Bourbon",
+          "rating": "UG4",
           "style": "front",
           "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
+            "terrain": "S",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1302,
+            "stamina": 741,
+            "power": 1194,
+            "guts": 503,
+            "wisdom": 1285
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Operation Cacao",
+            "Angling and Scheming",
+            "Right-Handed",
+            "Wet Conditions",
+            "Spring Runner",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "Straightaway Adept",
+            "Prudent Positioning",
+            "Early Lead",
+            "Escape Artist",
+            "Medium Straightaways",
+            "Medium Corners",
+            "Dodging Danger",
+            "Top Runner",
+            "Groundwork",
+            "Tail Held High",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 102602,
+          "spritePath": "assets/characters/chara_stand_1026_102602.png"
         }
       },
       {
@@ -288,28 +353,47 @@
     "long": [
       {
         "slot": 0,
-        "trainer": "New Team long 1",
-        "locked": false,
+        "trainer": "Sharky",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Kitasan Black",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
+            "terrain": "S",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1281,
+            "stamina": 921,
+            "power": 1103,
+            "guts": 508,
+            "wisdom": 1024
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Victory Cheer!",
+            "Break It Down!",
+            "Right-Handed",
+            "Wet Conditions",
+            "Spring Runner",
+            "Outer Post Proficiency",
+            "Swinging Maestro",
+            "Prudent Positioning",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Cooldown",
+            "Blast Forward",
+            "Keeping the Lead",
+            "Front Runner Corners",
+            "Dodging Danger",
+            "Top Runner",
+            "Groundwork",
+            "Firm Resolve",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 106801,
+          "spritePath": "assets/characters/chara_stand_1068_106801.png"
         }
       },
       {
@@ -372,7 +456,7 @@
         "locked": true,
         "uma": {
           "name": "Haru Urara",
-          "rating": "UG",
+          "rating": "UG6",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -415,28 +499,48 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team dirt 2",
-        "locked": false,
+        "trainer": "Yasue",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Taiki Shuttle",
+          "rating": "UG5",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1229,
+            "stamina": 381,
+            "power": 1146,
+            "guts": 1049,
+            "wisdom": 1240
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Joyful Voyage",
+            "Shooting Star",
+            "Victoria por plancha ☆",
+            "Budding Blossom",
+            "Right-Handed",
+            "Wet Conditions",
+            "Fall Runner",
+            "Professor of Curvature",
+            "Corner Acceleration",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "Sprinting Gear",
+            "Sprint Corners",
+            "Pace Chaser Corners",
+            "Neck and Neck",
+            "In High Spirits",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS"
+          ],
+          "spriteId": 101002,
+          "spritePath": "assets/characters/chara_stand_1010_101002.png"
         }
       },
       {
