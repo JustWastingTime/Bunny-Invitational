@@ -91,7 +91,9 @@ export function resolveMatchRacers(root, matchId, category) {
   const match = loadMatch(root, matchId);
   const entries = match.races?.[category] ?? [];
   const spriteLookup = buildSpriteLookup(root);
-  return entries.map((entry) => resolveRacer(root, entry, category, spriteLookup));
+  return entries
+    .filter((entry) => entry?.teamId)
+    .map((entry) => resolveRacer(root, entry, category, spriteLookup));
 }
 
 export function resolveMatchTeams(root, matchId, category) {
@@ -99,6 +101,9 @@ export function resolveMatchTeams(root, matchId, category) {
   const racers = resolveMatchRacers(root, matchId, category);
 
   return match.teams.map((teamId) => {
+    if (!teamId) {
+      return { id: "", name: "TBD", color: "#666666", racers: [] };
+    }
     const team = loadTeam(root, teamId);
     return {
       id: team.id,
@@ -115,6 +120,9 @@ export function resolveOverlayTeams(root, match, category) {
   const spriteLookup = buildSpriteLookup(root);
 
   return match.teams.map((teamId) => {
+    if (!teamId) {
+      return { id: "", name: "TBD", color: "#666666", entries: [] };
+    }
     const team = loadTeam(root, teamId);
     const entries = raceEntries
       .filter((entry) => entry.teamId === teamId)

@@ -5,52 +5,62 @@
   "categories": {
     "sprint": [
       { "trainer": "Phedro",
+        "locked": true,
         "uma": { "name": "Fuji Kiseki",
           "spriteId": 100501,
-          "rating": "SS",
-          "style": "front",
-          "stats": { "speed": 1170, "stamina": 700, "power": 880, "guts": 680, "wisdom": 710 },
-          "skills": ["Sprint Straightaways ◎","Pace Chaser Savvy ◎"] }
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1254, "stamina": 549, "power": 1241, "guts": 565, "wisdom": 1273 },
+          "skills": ["Ravissant","Shooting for Victory!","Budding Blossom","Right-Handed","Competitive Spirit","Professor of Curvature","Focus","Nimble Navigator","Speed Star","Sprinting Gear","Sprint Straightaways","Shrewd Step","Straight Descent","Shatterproof","Pace Chaser Savvy","Uma Stan","Tail Held High","Lone Wolf","Neck and Neck","Ignited Spirit PWR"] }
       },
-      { "trainer": "Skarpx",
+      { "trainer": "Skrapx",
+        "locked": true,
         "uma": { "name": "Bamboo Memory",
           "spriteId": 105301,
-          "rating": "S",
-          "style": "runaway",
-          "stats": { "speed": 1140, "stamina": 670, "power": 840, "guts": 720, "wisdom": 690 },
-          "skills": ["Front Runner Corners ◎","Focus"] }
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1300, "stamina": 454, "power": 1317, "guts": 435, "wisdom": 1115 },
+          "skills": ["Red-Hot Discipline!","Triumphant Pulse","Behold Thine Emperor's Divine Might","Let's Pump Some Iron!","Wet Conditions","Fall Runner","It's On!","Nimble Navigator","Homestretch Haste","On Your Left!","Rising Dragon","Sprint Straightaways","Sprint Corners","Late Surger Straightaways","Uma Stan","Playtime's Over!","Dauntless","Burning Spirit SPD"] }
       },
       { "trainer": "Squid",
         "uma": { "name": "Narita Brian",
           "spriteId": 101601,
           "rating": "S",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1120, "stamina": 720, "power": 800, "guts": 700, "wisdom": 700 },
           "skills": ["Late Surger Straightaways ◎"] }
       }
     ],
     "mile": [
       { "trainer": "Lykos",
+        "locked": true,
         "uma": { "name": "Symboli Rudolf",
-          "characterId": "symboli-rudolf",
-          "rating": "SS",
-          "style": "pace",
-          "stats": { "speed": 1090, "stamina": 920, "power": 870, "guts": 750, "wisdom": 820 },
-          "skills": ["Mile Savvy ◎","Late Surger Corners ◎"] }
+          "spriteId": 101701,
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 1322, "stamina": 665, "power": 1216, "guts": 598, "wisdom": 1250 },
+          "skills": ["Behold Thine Emperor's Divine Might","Let's Pump Some Iron!","Moving Past, and Beyond","Outer Post Proficiency","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","Mile Straightaways","Mile Corners","Fighter","Tail Held High","Be Still","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
-      { "trainer": "TopCut",
+      { "trainer": "Jackson",
+        "locked": true,
         "uma": { "name": "Nishino Flower",
-          "characterId": "nishino-flower",
-          "rating": "SS",
-          "style": "end",
-          "stats": { "speed": 1070, "stamina": 900, "power": 860, "guts": 800, "wisdom": 780 },
-          "skills": ["Closer Savvy ◎","Mile Straightaways ◎"] }
+          "spriteId": 105101,
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1303, "stamina": 660, "power": 1245, "guts": 458, "wisdom": 1247 },
+          "skills": ["Budding Blossom","Shooting for Victory!","Right-Handed","Wet Conditions","Winter Runner","Professor of Curvature","Beeline Burst","It's On!","Nimble Navigator","Mile Maven","Mile Straightaways","Shifting Gears","Pace Chaser Corners","Slipstream","Head-On","Burning Spirit SPD","Glittering Star"] }
       },
       { "trainer": "DarrylT",
         "uma": { "name": "Maruzensky",
-          "characterId": "maruzensky",
+          "spriteId": 100401,
           "rating": "SS",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1050, "stamina": 980, "power": 840, "guts": 720, "wisdom": 800 },
           "skills": ["Pace Chaser Straightaways ◎","Mile Corners ◎"] }
       }
@@ -61,6 +71,7 @@
           "spriteId": 103001,
           "rating": "SS",
           "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1000, "stamina": 1080, "power": 880, "guts": 820, "wisdom": 840 },
           "skills": ["Closer Savvy ◎","Medium Corners ◎"] }
       },
@@ -69,6 +80,7 @@
           "spriteId": 100601,
           "rating": "SS",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 980, "stamina": 1120, "power": 860, "guts": 780, "wisdom": 860 },
           "skills": ["Late Surger Savvy ◎","Medium Straightaways ◎"] }
       },
@@ -77,6 +89,7 @@
           "spriteId": 103201,
           "rating": "SS",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1040, "stamina": 1040, "power": 950, "guts": 850, "wisdom": 750 },
           "skills": ["Pace Chaser Savvy ◎","Ramp Up"] }
       }
@@ -87,6 +100,7 @@
           "spriteId": 100101,
           "rating": "UG",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1318, "stamina": 779, "power": 1064, "guts": 582, "wisdom": 1208 },
           "skills": [] }
       },
@@ -95,6 +109,7 @@
           "spriteId": 100201,
           "rating": "SS",
           "style": "runaway",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1100, "stamina": 1050, "power": 820, "guts": 700, "wisdom": 900 },
           "skills": ["Front Runner Savvy ◎","Long Corners ◎","Steadfast"] }
       },
@@ -103,6 +118,7 @@
           "spriteId": 102501,
           "rating": "SS",
           "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 990, "stamina": 1140, "power": 900, "guts": 780, "wisdom": 920 },
           "skills": ["Closer Savvy ◎","Corner Recovery ◎"] }
       }
@@ -113,6 +129,7 @@
           "spriteId": 104601,
           "rating": "SS",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1010, "stamina": 990, "power": 1080, "guts": 870, "wisdom": 760 },
           "skills": ["Dirt Savvy ◎","Pace Chaser Straightaways ◎"] }
       },
@@ -121,6 +138,7 @@
           "spriteId": 101001,
           "rating": "S",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 980, "stamina": 960, "power": 1020, "guts": 850, "wisdom": 740 },
           "skills": ["Dirt Corners ◎","Late Surger Savvy ○"] }
       },
@@ -129,6 +147,7 @@
           "spriteId": 101401,
           "rating": "S",
           "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 960, "stamina": 940, "power": 1000, "guts": 800, "wisdom": 800 },
           "skills": ["Closer Corners ◎","Luck Genius"] }
       }

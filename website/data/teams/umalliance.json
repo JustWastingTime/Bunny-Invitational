@@ -9,26 +9,44 @@
       {
         "slot": 0,
         "trainer": "Phedro",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Fuji Kiseki",
-          "rating": "SS",
-          "style": "front",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 1170,
-            "stamina": 700,
-            "power": 880,
-            "guts": 680,
-            "wisdom": 710
+            "speed": 1254,
+            "stamina": 549,
+            "power": 1241,
+            "guts": 565,
+            "wisdom": 1273
           },
           "skills": [
-            "Sprint Straightaways ◎",
-            "Pace Chaser Savvy ◎"
+            "Ravissant",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Right-Handed",
+            "Competitive Spirit",
+            "Professor of Curvature",
+            "Focus",
+            "Nimble Navigator",
+            "Speed Star",
+            "Sprinting Gear",
+            "Sprint Straightaways",
+            "Shrewd Step",
+            "Straight Descent",
+            "Shatterproof",
+            "Pace Chaser Savvy",
+            "Uma Stan",
+            "Tail Held High",
+            "Lone Wolf",
+            "Neck and Neck",
+            "Ignited Spirit PWR"
           ],
           "spriteId": 100501,
           "spritePath": "assets/characters/chara_stand_1005_100501.png"
@@ -36,27 +54,43 @@
       },
       {
         "slot": 1,
-        "trainer": "Skarpx",
-        "locked": false,
+        "trainer": "Skrapx",
+        "locked": true,
         "uma": {
           "name": "Bamboo Memory",
-          "rating": "S",
-          "style": "runaway",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 1140,
-            "stamina": 670,
-            "power": 840,
-            "guts": 720,
-            "wisdom": 690
+            "speed": 1300,
+            "stamina": 454,
+            "power": 1317,
+            "guts": 435,
+            "wisdom": 1115
           },
           "skills": [
-            "Front Runner Corners ◎",
-            "Focus"
+            "Red-Hot Discipline!",
+            "Triumphant Pulse",
+            "Behold Thine Emperor's Divine Might",
+            "Let's Pump Some Iron!",
+            "Wet Conditions",
+            "Fall Runner",
+            "It's On!",
+            "Nimble Navigator",
+            "Homestretch Haste",
+            "On Your Left!",
+            "Rising Dragon",
+            "Sprint Straightaways",
+            "Sprint Corners",
+            "Late Surger Straightaways",
+            "Uma Stan",
+            "Playtime's Over!",
+            "Dauntless",
+            "Burning Spirit SPD"
           ],
           "spriteId": 105301,
           "spritePath": "assets/characters/chara_stand_1053_105301.png"
@@ -94,58 +128,85 @@
       {
         "slot": 0,
         "trainer": "Lykos",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Symboli Rudolf",
-          "rating": "SS",
-          "style": "pace",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1090,
-            "stamina": 920,
-            "power": 870,
-            "guts": 750,
-            "wisdom": 820
+            "speed": 1322,
+            "stamina": 665,
+            "power": 1216,
+            "guts": 598,
+            "wisdom": 1250
           },
           "skills": [
-            "Mile Savvy ◎",
-            "Late Surger Corners ◎"
+            "Behold Thine Emperor's Divine Might",
+            "Let's Pump Some Iron!",
+            "Moving Past, and Beyond",
+            "Outer Post Proficiency",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Mile Straightaways",
+            "Mile Corners",
+            "Fighter",
+            "Tail Held High",
+            "Be Still",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
           ],
-          "characterId": "symboli-rudolf",
-          "spriteId": "symboli-rudolf",
+          "spriteId": 101701,
           "spritePath": "assets/characters/chara_stand_1017_101701.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "TopCut",
-        "locked": false,
+        "trainer": "Jackson",
+        "locked": true,
         "uma": {
           "name": "Nishino Flower",
-          "rating": "SS",
-          "style": "end",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 1070,
-            "stamina": 900,
-            "power": 860,
-            "guts": 800,
-            "wisdom": 780
+            "speed": 1303,
+            "stamina": 660,
+            "power": 1245,
+            "guts": 458,
+            "wisdom": 1247
           },
           "skills": [
-            "Closer Savvy ◎",
-            "Mile Straightaways ◎"
+            "Budding Blossom",
+            "Shooting for Victory!",
+            "Right-Handed",
+            "Wet Conditions",
+            "Winter Runner",
+            "Professor of Curvature",
+            "Beeline Burst",
+            "It's On!",
+            "Nimble Navigator",
+            "Mile Maven",
+            "Mile Straightaways",
+            "Shifting Gears",
+            "Pace Chaser Corners",
+            "Slipstream",
+            "Head-On",
+            "Burning Spirit SPD",
+            "Glittering Star"
           ],
-          "characterId": "nishino-flower",
-          "spriteId": "nishino-flower",
+          "spriteId": 105101,
           "spritePath": "assets/characters/chara_stand_1051_105101.png"
         }
       },
@@ -173,8 +234,7 @@
             "Pace Chaser Straightaways ◎",
             "Mile Corners ◎"
           ],
-          "characterId": "maruzensky",
-          "spriteId": "maruzensky",
+          "spriteId": 100401,
           "spritePath": "assets/characters/chara_stand_1004_100401.png"
         }
       }

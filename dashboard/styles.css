@@ -839,6 +839,26 @@ button:hover { filter: brightness(1.05); }
   box-shadow: 0 0 0 2px rgba(255, 207, 138, 0.45);
 }
 
+#match-save.needs-save {
+  box-shadow: 0 0 0 2px rgba(255, 207, 138, 0.45);
+}
+
+.match-slots {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.match-slots label {
+  display: grid;
+  gap: 6px;
+}
+
+.match-slots select {
+  width: 100%;
+  max-width: 420px;
+}
+
 .team-save-hint {
   margin-top: 6px;
 }

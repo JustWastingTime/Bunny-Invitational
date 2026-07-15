@@ -21,6 +21,7 @@ import {
   STYLES as TEAM_STYLES,
   CATEGORIES as TEAM_CATEGORIES,
 } from "./team-editor.js";
+import { listMatches, getMatch, saveMatch } from "./match-editor.js";
 import { listCharacterCatalog } from "./sprite-resolver.js";
 import { listSkills } from "./skills.js";
 
@@ -249,6 +250,44 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  if (url.pathname === "/api/matches") {
+    try {
+      if (req.method === "GET") {
+        sendJson(res, 200, { matches: listMatches(ROOT), teams: listTeams(ROOT) });
+        return;
+      }
+      sendJson(res, 405, { error: "Method not allowed" });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname.startsWith("/api/matches/")) {
+    const matchId = decodeURIComponent(url.pathname.slice("/api/matches/".length));
+    if (!matchId || matchId.includes("/") || matchId.includes("..")) {
+      sendJson(res, 400, { error: "Invalid match id" });
+      return;
+    }
+    try {
+      if (req.method === "GET") {
+        sendJson(res, 200, { match: getMatch(ROOT, matchId), teams: listTeams(ROOT) });
+        return;
+      }
+      if (req.method === "PUT") {
+        const body = await readRequestBody(req);
+        const match = saveMatch(ROOT, matchId, body);
+        refreshWebsitePublic();
+        sendJson(res, 200, { ok: true, match });
+        return;
+      }
+      sendJson(res, 405, { error: "Method not allowed" });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
   if (url.pathname === "/api/teams") {
     try {
       if (req.method === "GET") {
@@ -391,6 +430,8 @@ const server = http.createServer(async (req, res) => {
     filePath = path.join(ROOT, "dashboard", "index.html");
   } else if (url.pathname === "/dashboard/teams") {
     filePath = path.join(ROOT, "dashboard", "teams.html");
+  } else if (url.pathname === "/dashboard/matches") {
+    filePath = path.join(ROOT, "dashboard", "matches.html");
   } else if (url.pathname.startsWith("/dashboard/")) {
     filePath = path.join(ROOT, url.pathname);
   } else if (url.pathname.startsWith("/overlay/")) {
@@ -415,6 +456,7 @@ server.listen(PORT, () => {
   console.log(`  Overlay:    http://localhost:${PORT}/overlay`);
   console.log(`  Dashboard:  http://localhost:${PORT}/dashboard`);
   console.log(`  Teams:      http://localhost:${PORT}/dashboard/teams`);
+  console.log(`  Matches:    http://localhost:${PORT}/dashboard/matches`);
   console.log(`  API:        http://localhost:${PORT}/api/overlay`);
   console.log(`\nEdit JSON in data/ — overlay auto-refreshes every second.`);
 });

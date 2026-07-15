@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bunny Invitational — Match Editor</title>
+  <link rel="stylesheet" href="/dashboard/styles.css" />
+</head>
+<body>
+  <div class="page page-wide">
+    <header class="header">
+      <div>
+        <h1>Match Editor</h1>
+        <p class="sub">Assign who fights who for each bracket slot. Saves to <code>data/matches/</code>.</p>
+      </div>
+      <nav class="dash-nav">
+        <a href="/dashboard">Live Control</a>
+        <a href="/dashboard/teams">Teams</a>
+        <a class="active" href="/dashboard/matches">Matches</a>
+      </nav>
+    </header>
+
+    <section class="panel team-editor-panel">
+      <div class="team-editor-top">
+        <p class="hint" style="margin:0">Select a match to set its three competing teams.</p>
+      </div>
+
+      <div class="team-editor-layout">
+        <aside class="team-list-pane">
+          <div class="team-list" id="match-list"></div>
+        </aside>
+
+        <div class="team-form-pane" id="match-form-pane">
+          <p class="hint" id="match-form-empty">Select a match to edit.</p>
+          <form id="match-form" class="team-form hidden">
+            <div class="team-meta-grid">
+              <label>
+                Match id
+                <input id="match-id" name="id" type="text" readonly />
+              </label>
+              <label>
+                Round label
+                <input id="match-round" name="round" type="text" required />
+              </label>
+              <label>
+                Day
+                <input id="match-day" name="day" type="number" min="1" required />
+              </label>
+              <label>
+                Match #
+                <input id="match-number" name="matchNumber" type="number" min="1" required />
+              </label>
+            </div>
+
+            <div class="match-slots" id="match-slots">
+              <label>
+                Team 1 (left)
+                <select id="match-team-0" data-slot="0"></select>
+              </label>
+              <label>
+                Team 2 (center)
+                <select id="match-team-1" data-slot="1"></select>
+              </label>
+              <label>
+                Team 3 (right)
+                <select id="match-team-2" data-slot="2"></select>
+              </label>
+            </div>
+
+            <div class="team-form-actions">
+              <button type="submit" id="match-save">Save to JSON</button>
+              <span class="team-editor-status" id="match-editor-status"></span>
+            </div>
+            <p class="hint team-save-hint">Changes are written to <code>data/matches/</code> when you save. Shortcut: Ctrl+S</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/dashboard/match-editor.js" type="module"></script>
+</body>
+</html>

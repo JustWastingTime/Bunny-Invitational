@@ -290,17 +290,16 @@ export function ensureStandingsForMatch(root, matchId) {
   };
 
   for (const teamId of match.teams) {
-    if (!standings.teams[teamId]) {
-      const team = loadTeam(root, teamId);
-      standings.teams[teamId] = {
-        name: team.name,
-        color: team.color,
-        firsts: 0,
-        seconds: 0,
-        thirds: 0,
-        points: 0,
-      };
-    }
+    if (!teamId || standings.teams[teamId]) continue;
+    const team = loadTeam(root, teamId);
+    standings.teams[teamId] = {
+      name: team.name,
+      color: team.color,
+      firsts: 0,
+      seconds: 0,
+      thirds: 0,
+      points: 0,
+    };
   }
 
   writeStandings(root, standings);
