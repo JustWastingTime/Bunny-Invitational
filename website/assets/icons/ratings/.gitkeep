@@ -1,2 +1,2 @@
-Place rating badge PNGs here using the rating string as the filename
-(e.g. S.png, SS.png, UG.png).
+Rating badge PNGs — filename must match the rating string exactly
+(e.g. S.png, S+.png, SS.png, SS+.png, UG.png, UG1.png … UG9.png).

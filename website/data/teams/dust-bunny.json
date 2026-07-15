@@ -12,7 +12,7 @@
         "locked": true,
         "uma": {
           "name": "Sakura Bakushin O",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "S",
@@ -98,7 +98,7 @@
         "locked": true,
         "uma": {
           "name": "Symboli Rudolf",
-          "rating": "UG",
+          "rating": "UG3",
           "style": "late",
           "aptitudes": {
             "terrain": "A",
@@ -142,7 +142,7 @@
         "locked": true,
         "uma": {
           "name": "Hishi Amazon",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "end",
           "aptitudes": {
             "terrain": "A",
@@ -314,7 +314,7 @@
         "locked": true,
         "uma": {
           "name": "Daiwa Scarlet",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -359,7 +359,7 @@
         "locked": true,
         "uma": {
           "name": "Oguri Cap",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -405,7 +405,7 @@
         "locked": true,
         "uma": {
           "name": "Special Week",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -488,7 +488,7 @@
         "locked": true,
         "uma": {
           "name": "Kitasan Black",
-          "rating": "UG",
+          "rating": "UG1",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -537,7 +537,7 @@
         "locked": true,
         "uma": {
           "name": "Taiki Shuttle",
-          "rating": "UG",
+          "rating": "UG5",
           "style": "pace",
           "aptitudes": {
             "terrain": "S",
@@ -581,7 +581,7 @@
         "locked": true,
         "uma": {
           "name": "Haru Urara",
-          "rating": "UG",
+          "rating": "UG2",
           "style": "late",
           "aptitudes": {
             "terrain": "A",

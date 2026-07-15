@@ -751,13 +751,14 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 }
 
 .uma-sheet-rating {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .uma-rating-icon {
-  height: 22px;
+  height: 28px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 .uma-rating-icon.fallback,
