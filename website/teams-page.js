@@ -345,10 +345,10 @@ function renderUmaDetail(member, team, category, slot) {
           }
         </div>
         <div class="uma-sheet-titles">
-          <div class="uma-sheet-rating">${iconImg("ratings", rating, "uma-rating-icon", rating)}</div>
           <h3 class="uma-sheet-name">${escapeHtml(uma.name ?? "Unknown")}</h3>
           <p class="uma-sheet-trainer">${escapeHtml(member.trainer)} · ${escapeHtml(team.name)}</p>
         </div>
+        <div class="uma-sheet-rating">${iconImg("ratings", rating, "uma-rating-icon", rating)}</div>
       </header>
 
       <details class="uma-section" open>

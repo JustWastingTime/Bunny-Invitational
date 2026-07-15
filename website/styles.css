@@ -720,9 +720,9 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 
 .uma-sheet-head {
   display: grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
   gap: 12px;
-  align-items: center;
+  align-items: start;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -750,13 +750,21 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   font-weight: 900;
 }
 
+.uma-sheet-titles {
+  min-width: 0;
+  padding-top: 4px;
+}
+
 .uma-sheet-rating {
-  margin-bottom: 6px;
+  margin: 0;
+  justify-self: end;
+  align-self: start;
 }
 
 .uma-rating-icon {
-  height: 28px;
+  height: 64px;
   width: auto;
+  max-width: 96px;
   display: block;
   object-fit: contain;
 }
@@ -766,12 +774,12 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 .uma-stat-icon.fallback {
   display: inline-grid;
   place-items: center;
-  min-width: 28px;
-  height: 22px;
-  padding: 0 6px;
-  border-radius: 6px;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 10px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 800;
 }
 
