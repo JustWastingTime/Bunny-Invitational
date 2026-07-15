@@ -722,7 +722,7 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   display: grid;
   grid-template-columns: 92px minmax(0, 1fr) auto;
   gap: 12px;
-  align-items: start;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -752,13 +752,14 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 
 .uma-sheet-titles {
   min-width: 0;
-  padding-top: 4px;
 }
 
 .uma-sheet-rating {
   margin: 0;
   justify-self: end;
-  align-self: start;
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 .uma-rating-icon {
