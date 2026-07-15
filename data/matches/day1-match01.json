@@ -4,243 +4,243 @@
   "matchNumber": 1,
   "round": "Group A Match 1",
   "teams": [
-    "",
-    "",
-    ""
+    "dust-bunny",
+    "cabal",
+    "falena"
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       }

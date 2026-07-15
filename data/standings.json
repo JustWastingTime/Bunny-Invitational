@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-15T09:26:26.093Z",
+  "updatedAt": "2026-07-15T13:13:39.879Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -15,16 +15,25 @@
       "matchNumber": 1,
       "round": "Group A Match 1",
       "teams": [
-        "",
-        "",
-        ""
+        "dust-bunny",
+        "cabal",
+        "falena"
       ],
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "cabal",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "slot": 1
+            }
           }
         },
         "mile": {

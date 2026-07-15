@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-15T09:26:26.093Z",
+  "updatedAt": "2026-07-15T13:13:39.879Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -5989,21 +5989,272 @@
       "matchNumber": 1,
       "round": "Group A Match 1",
       "teams": [
-        "",
-        "",
-        ""
+        "dust-bunny",
+        "cabal",
+        "falena"
       ],
       "categories": {
         "sprint": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Jlew",
+              "umaName": "Sakura Bakushin O",
+              "spritePath": "assets/characters/chara_stand_1041_104101.png",
+              "style": "front",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Banana",
+              "umaName": "Curren Chan",
+              "spritePath": "assets/characters/chara_stand_1038_103801.png",
+              "style": "pace",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Nightfish",
+              "umaName": "Symboli Rudolf",
+              "spritePath": "assets/characters/chara_stand_1017_101701.png",
+              "style": "late",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "0hqw",
+              "umaName": "King Halo",
+              "spritePath": "assets/characters/chara_stand_1061_106101.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "New Team sprint 2",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "New Team sprint 3",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:2"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Swaejudinoli",
+              "umaName": "Curren Chan",
+              "spritePath": "assets/characters/chara_stand_1038_103802.png",
+              "style": "pace",
+              "key": "falena:0"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 1,
+              "gate": null,
+              "trainer": "XV11@FLNA",
+              "umaName": "Meisho Doto",
+              "spritePath": "assets/characters/chara_stand_1058_105801.png",
+              "style": "pace",
+              "key": "falena:1"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Zera",
+              "umaName": "Mayano Top Gun",
+              "spritePath": "assets/characters/chara_stand_1024_102401.png",
+              "style": "pace",
+              "key": "falena:2"
+            }
+          ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Jlew",
+              "umaName": "Sakura Bakushin O",
+              "spritePath": "assets/characters/chara_stand_1041_104101.png",
+              "style": "front",
+              "key": "dust-bunny:0"
+            },
+            "2": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "0hqw",
+              "umaName": "King Halo",
+              "spritePath": "assets/characters/chara_stand_1061_106101.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Banana",
+              "umaName": "Curren Chan",
+              "spritePath": "assets/characters/chara_stand_1038_103801.png",
+              "style": "pace",
+              "key": "dust-bunny:1"
+            }
           }
         },
         "mile": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Bane@BUNS",
+              "umaName": "Hishi Amazon",
+              "spritePath": "assets/characters/chara_stand_1012_101201.png",
+              "style": "end",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Spurs@BUNS",
+              "umaName": "Grass Wonder",
+              "spritePath": "assets/characters/chara_stand_1011_101101.png",
+              "style": "late",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "DadSmoocher",
+              "umaName": "Nice Nature",
+              "spritePath": "assets/characters/chara_stand_1060_106001.png",
+              "style": "end",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "KittyChloe",
+              "umaName": "Admire Vega",
+              "spritePath": "assets/characters/chara_stand_1033_103301.png",
+              "style": "end",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "New Team mile 2",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "New Team mile 3",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:2"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 0,
+              "gate": null,
+              "trainer": "StarryNightlight",
+              "umaName": "Manhattan Cafe",
+              "spritePath": "assets/characters/chara_stand_1025_102501.png",
+              "style": "late",
+              "key": "falena:0"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Clowngeta",
+              "umaName": "Mejiro McQueen",
+              "spritePath": "assets/characters/chara_stand_1013_101301.png",
+              "style": "front",
+              "key": "falena:1"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Cyndexv@FLNA",
+              "umaName": "Oguri Cap",
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "falena:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -6011,7 +6262,116 @@
           }
         },
         "medium": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Crabpeople",
+              "umaName": "Gold Ship",
+              "spritePath": "assets/characters/chara_stand_1007_100702.png",
+              "style": "end",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Hans Pferdemann",
+              "umaName": "Daiwa Scarlet",
+              "spritePath": "assets/characters/chara_stand_1009_100901.png",
+              "style": "front",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Minh@BUNS",
+              "umaName": "Oguri Cap",
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "WildCat",
+              "umaName": "Tokai Teio",
+              "spritePath": "assets/characters/chara_stand_1003_100301.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Tn",
+              "umaName": "Agnes Digital",
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "end",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Horsefight",
+              "umaName": "Oguri Cap",
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "cabal:2"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Haiji",
+              "umaName": "Kitasan Black",
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
+              "style": "front",
+              "key": "falena:0"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Yechers",
+              "umaName": "Eishin Flash",
+              "spritePath": "assets/characters/chara_stand_1037_103701.png",
+              "style": "late",
+              "key": "falena:1"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Uprob",
+              "umaName": "Air Shakur",
+              "spritePath": "assets/characters/chara_stand_1036_103601.png",
+              "style": "front",
+              "key": "falena:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -6019,7 +6379,116 @@
           }
         },
         "long": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Legi",
+              "umaName": "Special Week",
+              "spritePath": "assets/characters/chara_stand_1001_100101.png",
+              "style": "pace",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Hi! Im Aru!@BUNS",
+              "umaName": "Narita Taishin",
+              "spritePath": "assets/characters/chara_stand_1050_105001.png",
+              "style": "end",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "KaiAiya@BUNS",
+              "umaName": "Kitasan Black",
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
+              "style": "front",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "New Team long 1",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "New Team long 2",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "New Team long 3",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:2"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Korie",
+              "umaName": "Satono Diamond",
+              "spritePath": "assets/characters/chara_stand_1067_106701.png",
+              "style": "front",
+              "key": "falena:0"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Omatsuri Mambo !",
+              "umaName": "Matikanetannhauser",
+              "spritePath": "assets/characters/chara_stand_1062_106201.png",
+              "style": "end",
+              "key": "falena:1"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Lazarus",
+              "umaName": "Gold Ship",
+              "spritePath": "assets/characters/chara_stand_1007_100701.png",
+              "style": "front",
+              "key": "falena:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -6027,7 +6496,116 @@
           }
         },
         "dirt": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Vivi@BUNS",
+              "umaName": "Taiki Shuttle",
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
+              "style": "pace",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Plnk@BUNS",
+              "umaName": "Haru Urara",
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Buttered@BUNS",
+              "umaName": "Agnes Digital",
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "end",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Haruru",
+              "umaName": "Haru Urara",
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "New Team dirt 2",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "New Team dirt 3",
+              "umaName": "Uma Name",
+              "spritePath": null,
+              "style": "front",
+              "key": "cabal:2"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Plazma",
+              "umaName": "Taiki Shuttle",
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
+              "style": "front",
+              "key": "falena:0"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Flem",
+              "umaName": "Smart Falcon",
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
+              "style": "front",
+              "key": "falena:1"
+            },
+            {
+              "teamId": "falena",
+              "teamName": "Falena",
+              "teamColor": "#2e65cf",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Nati",
+              "umaName": "El Condor Pasa",
+              "spritePath": "assets/characters/chara_stand_1014_101401.png",
+              "style": "front",
+              "key": "falena:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -6622,10 +7200,217 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 0,
-    "mostCommonUma": null,
-    "bestWinRateUma": null,
-    "uniqueUmas": [],
-    "popularity": []
+    "uniqueUmaCount": 29,
+    "mostCommonUma": {
+      "umaName": "Uma Name",
+      "starts": 9,
+      "wins": 0,
+      "winRate": 0
+    },
+    "bestWinRateUma": {
+      "umaName": "Sakura Bakushin O",
+      "starts": 1,
+      "wins": 1,
+      "winRate": 1
+    },
+    "uniqueUmas": [
+      "Sakura Bakushin O",
+      "Admire Vega",
+      "Air Shakur",
+      "Daiwa Scarlet",
+      "Eishin Flash",
+      "El Condor Pasa",
+      "Grass Wonder",
+      "Hishi Amazon",
+      "King Halo",
+      "Manhattan Cafe",
+      "Matikanetannhauser",
+      "Mayano Top Gun",
+      "Meisho Doto",
+      "Mejiro McQueen",
+      "Narita Taishin",
+      "Nice Nature",
+      "Satono Diamond",
+      "Smart Falcon",
+      "Special Week",
+      "Symboli Rudolf",
+      "Tokai Teio"
+    ],
+    "popularity": [
+      {
+        "umaName": "Uma Name",
+        "starts": 9,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Oguri Cap",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Agnes Digital",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Curren Chan",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Gold Ship",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Haru Urara",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Kitasan Black",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Taiki Shuttle",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Sakura Bakushin O",
+        "starts": 1,
+        "wins": 1,
+        "winRate": 1
+      },
+      {
+        "umaName": "Admire Vega",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Air Shakur",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Daiwa Scarlet",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Eishin Flash",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "El Condor Pasa",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Grass Wonder",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Hishi Amazon",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "King Halo",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Manhattan Cafe",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Matikanetannhauser",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Mayano Top Gun",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Meisho Doto",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Mejiro McQueen",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Narita Taishin",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Nice Nature",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Satono Diamond",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Smart Falcon",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Special Week",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Symboli Rudolf",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Tokai Teio",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      }
+    ]
   }
 }

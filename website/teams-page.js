@@ -33,6 +33,54 @@ const openTeamIds = new Set();
 let selectedMemberKey = null;
 let teamsBooted = false;
 let skillRarityByName = new Map();
+/** @type {Record<string, { firsts: number, seconds: number, thirds: number, races: number }>} */
+let racerRecords = {};
+
+function emptyRecord() {
+  return { firsts: 0, seconds: 0, thirds: 0, races: 0 };
+}
+
+function raceHasResults(placements) {
+  return Boolean(placements?.["1"] || placements?.["2"] || placements?.["3"]);
+}
+
+/** Build per-member career stats from public match results. Key: teamId:category:slot */
+function buildRacerRecords(matches) {
+  const out = {};
+  const bump = (key, field) => {
+    if (!out[key]) out[key] = emptyRecord();
+    out[key][field] += 1;
+  };
+
+  for (const match of matches ?? []) {
+    for (const category of CATEGORY_ORDER) {
+      const race = match.categories?.[category];
+      if (!race || !raceHasResults(race.placements)) continue;
+
+      for (const racer of race.racers ?? []) {
+        if (!racer?.teamId || racer.slot == null) continue;
+        bump(memberKey(racer.teamId, category, racer.slot), "races");
+      }
+
+      const placeFields = [
+        ["1", "firsts"],
+        ["2", "seconds"],
+        ["3", "thirds"],
+      ];
+      for (const [place, field] of placeFields) {
+        const pick = race.placements?.[place];
+        if (!pick?.teamId || pick.slot == null) continue;
+        bump(memberKey(pick.teamId, category, pick.slot), field);
+      }
+    }
+  }
+
+  return out;
+}
+
+function getRacerRecord(teamId, category, slot) {
+  return racerRecords[memberKey(teamId, category, slot)] ?? emptyRecord();
+}
 
 function normalizeSkillKey(value) {
   return String(value ?? "")
@@ -105,6 +153,17 @@ async function loadSkillRarities() {
     return map;
   } catch {
     return new Map();
+  }
+}
+
+async function loadPublicMatches() {
+  try {
+    const res = await fetch("./data/public.json", { cache: "no-store" });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data.matches) ? data.matches : [];
+  } catch {
+    return [];
   }
 }
 
@@ -223,7 +282,7 @@ function renderSkillChip(skill, index = 0) {
   return `<span class="uma-skill-chip rarity-${tone}" title="${escapeHtml(skill)} (${escapeHtml(rarity)})">${escapeHtml(skill)}</span>`;
 }
 
-function renderUmaDetail(member, team) {
+function renderUmaDetail(member, team, category, slot) {
   const uma = member?.uma ?? {};
   const stats = uma.stats ?? {};
   const aptitudes = uma.aptitudes ?? {};
@@ -232,6 +291,7 @@ function renderUmaDetail(member, team) {
   const rating = String(uma.rating ?? "—");
   const styleKey = String(uma.style ?? "pace").toLowerCase();
   const styleLabel = STYLE_LABELS[styleKey] ?? uma.style ?? "—";
+  const record = getRacerRecord(team.id, category, slot);
 
   const statCards = STAT_KEYS.map(
     ({ key, label, icon }) => `
@@ -257,6 +317,22 @@ function renderUmaDetail(member, team) {
   const skillGrid = skills.length
     ? `<div class="uma-skill-grid">${skills.map((skill, index) => renderSkillChip(skill, index)).join("")}</div>`
     : `<p class="hint uma-empty">No skills listed.</p>`;
+
+  const recordCards = [
+    { label: "1st", value: record.firsts },
+    { label: "2nd", value: record.seconds },
+    { label: "3rd", value: record.thirds },
+    { label: "Races Run", value: record.races },
+  ]
+    .map(
+      ({ label, value }) => `
+      <article class="uma-record-card">
+        <div class="uma-record-label">${label}</div>
+        <div class="uma-record-value">${value}</div>
+      </article>
+    `
+    )
+    .join("");
 
   return `
     <article class="uma-sheet">
@@ -300,6 +376,13 @@ function renderUmaDetail(member, team) {
         <summary>Skills <span class="uma-skill-count">${skills.length}</span></summary>
         <div class="uma-section-body">${skillGrid}</div>
       </details>
+
+      <details class="uma-section" open>
+        <summary>Record</summary>
+        <div class="uma-section-body">
+          <div class="uma-record-grid">${recordCards}</div>
+        </div>
+      </details>
     </article>
   `;
 }
@@ -325,7 +408,7 @@ function renderUmaPanel() {
     return;
   }
 
-  panel.innerHTML = renderUmaDetail(member, team);
+  panel.innerHTML = renderUmaDetail(member, team, parsed.category, parsed.slot);
 }
 
 function syncTrainerSelection() {
@@ -381,8 +464,13 @@ async function hydrateOpenTeams() {
 
 export async function refreshTeamsPage({ force = false } = {}) {
   try {
-    const [nextIndex, rarities] = await Promise.all([loadTeamIndex(), loadSkillRarities()]);
+    const [nextIndex, rarities, matches] = await Promise.all([
+      loadTeamIndex(),
+      loadSkillRarities(),
+      loadPublicMatches(),
+    ]);
     skillRarityByName = rarities;
+    racerRecords = buildRacerRecords(matches);
 
     // Always drop cached team JSON so dashboard edits show up on poll/refresh.
     teamCache.clear();
