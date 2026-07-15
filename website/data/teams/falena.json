@@ -3,80 +3,137 @@
   "name": "Falena",
   "shortName": "FLNA",
   "tagline": "falena club",
-  "color": "#7c4dff",
+  "color": "#2e65cf",
   "categories": {
     "sprint": [
       {
         "slot": 0,
         "trainer": "Swaejudinoli",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Curren Chan",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1278,
+            "stamina": 635,
+            "power": 1168,
+            "guts": 534,
+            "wisdom": 1267
           },
-          "skills": [],
+          "skills": [
+            "One True Color",
+            "Shooting for Victory!",
+            "Blazing Pride",
+            "Budding Blossom",
+            "Hakodate Racecourse",
+            "Cloudy Days",
+            "Professor of Curvature",
+            "It's On!",
+            "Nimble Navigator",
+            "Prepared to Pass",
+            "Turbo Sprint",
+            "Sprint Corners",
+            "Pace Chaser Corners",
+            "Pace Chaser Savvy",
+            "Groundwork",
+            "Neck and Neck",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Racing Spirit: Wit"
+          ],
           "spriteId": 103802,
           "spritePath": "assets/characters/chara_stand_1038_103802.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "XV11",
-        "locked": false,
+        "trainer": "XV11@FLNA",
+        "locked": true,
         "uma": {
           "name": "Meisho Doto",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
-            "terrain": "A",
+            "terrain": "S",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1290,
+            "stamina": 569,
+            "power": 1227,
+            "guts": 436,
+            "wisdom": 1275
           },
-          "skills": [],
+          "skills": [
+            "I Never Goof Up!",
+            "Triumphant Pulse",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Right-Handed",
+            "Competitive Spirit",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "Speed Star",
+            "Pace Chaser Corners",
+            "Straight Descent",
+            "Slipstream",
+            "Neck and Neck",
+            "Burning Spirit SPD"
+          ],
           "spriteId": 105801,
           "spritePath": "assets/characters/chara_stand_1058_105801.png"
         }
       },
       {
         "slot": 2,
-        "trainer": "zera",
-        "locked": false,
+        "trainer": "Zera",
+        "locked": true,
         "uma": {
           "name": "Mayano Top Gun",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1283,
+            "stamina": 638,
+            "power": 1248,
+            "guts": 482,
+            "wisdom": 1158
           },
-          "skills": [],
+          "skills": [
+            "Flashy☆Landing",
+            "Angling and Scheming",
+            "Budding Blossom",
+            "Right-Handed",
+            "Fall Runner",
+            "Professor of Curvature",
+            "Focus",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Plan X",
+            "Meticulous Measures",
+            "Pace Chaser Savvy",
+            "Uma Stan",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Head-On",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
           "spriteId": 102401,
           "spritePath": "assets/characters/chara_stand_1024_102401.png"
         }
@@ -86,24 +143,41 @@
       {
         "slot": 0,
         "trainer": "StarryNightlight",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Manhattan Cafe",
-          "rating": "S",
-          "style": "front",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1202,
+            "stamina": 665,
+            "power": 1066,
+            "guts": 384,
+            "wisdom": 1238
           },
-          "skills": [],
+          "skills": [
+            "Chasing After You",
+            "Triumphant Pulse",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Winter Runner",
+            "Rainy Days",
+            "Professor of Curvature",
+            "It's On!",
+            "No Stopping Me!",
+            "Outer Swell",
+            "Mile Straightaways",
+            "Mile Corners",
+            "Late Surger Straightaways",
+            "Uma Stan",
+            "Tail Held High",
+            "Burning Spirit SPD"
+          ],
           "spriteId": 102501,
           "spritePath": "assets/characters/chara_stand_1025_102501.png"
         }
@@ -135,25 +209,47 @@
       },
       {
         "slot": 2,
-        "trainer": "Cyndexv",
-        "locked": false,
+        "trainer": "Cyndexv@FLNA",
+        "locked": true,
         "uma": {
           "name": "Oguri Cap",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1299,
+            "stamina": 586,
+            "power": 1268,
+            "guts": 488,
+            "wisdom": 1180
           },
-          "skills": [],
+          "skills": [
+            "Festive Miracle",
+            "Angling and Scheming",
+            "U=ma2",
+            "Non-Standard Distance",
+            "Winter Runner",
+            "Professor of Curvature",
+            "Corner Recovery",
+            "Straightaway Adept",
+            "Focus",
+            "It's On!",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Shifting Gears",
+            "Shrewd Step",
+            "Triple 7s",
+            "Groundwork",
+            "Shake It Out",
+            "Neck and Neck",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS"
+          ],
           "spriteId": 100602,
           "spritePath": "assets/characters/chara_stand_1006_100602.png"
         }
@@ -187,25 +283,42 @@
       },
       {
         "slot": 1,
-        "trainer": "Chan",
-        "locked": false,
+        "trainer": "Yechers",
+        "locked": true,
         "uma": {
           "name": "Eishin Flash",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
+            "terrain": "S",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1231,
+            "stamina": 832,
+            "power": 1201,
+            "guts": 520,
+            "wisdom": 1211
           },
-          "skills": [],
+          "skills": [
+            "Schwarzes Schwert",
+            "Let's Pump Some Iron!",
+            "Moving Past, and Beyond",
+            "Professor of Curvature",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Position Pilfer",
+            "On Your Left!",
+            "Medium Corners",
+            "Late Surger Savvy",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Fighting Spirit",
+            "Latch On",
+            "Ignited Spirit SPD"
+          ],
           "spriteId": 103701,
           "spritePath": "assets/characters/chara_stand_1037_103701.png"
         }
@@ -264,25 +377,47 @@
       },
       {
         "slot": 1,
-        "trainer": "Omatsuri Mambo!",
-        "locked": false,
+        "trainer": "Omatsuri Mambo !",
+        "locked": true,
         "uma": {
           "name": "Matikanetannhauser",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1205,
+            "stamina": 822,
+            "power": 1220,
+            "guts": 565,
+            "wisdom": 1013
           },
-          "skills": [],
+          "skills": [
+            "Go, Go, Mun!",
+            "Triumphant Pulse",
+            "Behold Thine Emperor's Divine Might",
+            "Non-Standard Distance",
+            "Spring Runner",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Unruffled",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Straightaway Spurt",
+            "Long Corners",
+            "Overwhelming Pressure",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Daring Strike",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Racing Spirit: Power",
+            "Racing Spirit: Wit"
+          ],
           "spriteId": 106201,
           "spritePath": "assets/characters/chara_stand_1062_106201.png"
         }
@@ -341,25 +476,49 @@
       },
       {
         "slot": 1,
-        "trainer": "Flemm",
-        "locked": false,
+        "trainer": "Flem",
+        "locked": true,
         "uma": {
           "name": "Smart Falcon",
-          "rating": "S",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1302,
+            "stamina": 486,
+            "power": 1209,
+            "guts": 462,
+            "wisdom": 1145
           },
-          "skills": [],
+          "skills": [
+            "SPARKLY☆STARDOM",
+            "Triumphant Pulse",
+            "Victoria por plancha ☆",
+            "Budding Blossom",
+            "Wet Conditions",
+            "Outer Post Proficiency",
+            "Competitive Spirit",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Prudent Positioning",
+            "It's On!",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Pace Chaser Corners",
+            "Groundwork",
+            "Lone Wolf",
+            "Trending in the Charts!",
+            "Forward, March!",
+            "Light as a Feather",
+            "Sunny Sign",
+            "Got the Spirit",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
           "spriteId": 104601,
           "spritePath": "assets/characters/chara_stand_1046_104601.png"
         }

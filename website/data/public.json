@@ -92,10 +92,10 @@
           {
             "slot": 1,
             "trainer": "Banana",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Curren Chan",
-              "rating": "SS",
+              "rating": "SS+",
               "style": "pace",
               "aptitudes": {
                 "terrain": "A",
@@ -103,13 +103,31 @@
                 "style": "A"
               },
               "stats": {
-                "speed": 1200,
-                "stamina": 680,
-                "power": 850,
-                "guts": 700,
-                "wisdom": 680
+                "speed": 1314,
+                "stamina": 391,
+                "power": 1200,
+                "guts": 438,
+                "wisdom": 1224
               },
-              "skills": [],
+              "skills": [
+                "#LookatCurren",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Sprint Corners",
+                "Meticulous Measures",
+                "Pace Chaser Straightaways",
+                "Pace Chaser Corners",
+                "Straight Descent",
+                "Tail Held High",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR"
+              ],
               "spriteId": 103801,
               "spritePath": "assets/characters/chara_stand_1038_103801.png"
             }
@@ -207,10 +225,10 @@
             "locked": false,
             "uma": {
               "name": "Grass Wonder",
-              "rating": "SS",
+              "rating": "S+",
               "style": "late",
               "aptitudes": {
-                "terrain": "A",
+                "terrain": "S",
                 "distance": "A",
                 "style": "A"
               },
@@ -221,7 +239,22 @@
                 "guts": 720,
                 "wisdom": 780
               },
-              "skills": [],
+              "skills": [
+                "Where There's a Will, There's a Way",
+                "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+                "Flashy☆Landing",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Non-Standard Distance",
+                "Wet Conditions",
+                "Ramp Up",
+                "No Stopping Me!",
+                "Position Pilfer",
+                "On Your Left!",
+                "Mile Straightaways",
+                "Late Surger Straightaways",
+                "Late Surger Corners"
+              ],
               "spriteId": 101101,
               "spritePath": "assets/characters/chara_stand_1011_101101.png"
             }
@@ -232,7 +265,7 @@
             "locked": false,
             "uma": {
               "name": "Nice Nature",
-              "rating": "S",
+              "rating": "UG",
               "style": "end",
               "aptitudes": {
                 "terrain": "A",
@@ -246,10 +279,7 @@
                 "guts": 680,
                 "wisdom": 750
               },
-              "skills": [
-                "Closer Straightaways ◎",
-                "Medium Straightaways ○"
-              ],
+              "skills": [],
               "spriteId": 106001,
               "spritePath": "assets/characters/chara_stand_1060_106001.png"
             }
@@ -434,28 +464,39 @@
           },
           {
             "slot": 1,
-            "trainer": "Hai! Aku Aru!",
-            "locked": false,
+            "trainer": "Hi! Im Aru!@BUNS",
+            "locked": true,
             "uma": {
               "name": "Narita Taishin",
-              "rating": "SS",
-              "style": "pace",
+              "rating": "SS+",
+              "style": "end",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 960,
-                "stamina": 1180,
-                "power": 880,
-                "guts": 820,
-                "wisdom": 880
+                "speed": 1200,
+                "stamina": 1109,
+                "power": 1202,
+                "guts": 624,
+                "wisdom": 776
               },
               "skills": [
-                "Long Corners ◎",
-                "Homestretch Haste",
-                "Outer Swell"
+                "Nemesis",
+                "Shadow Break",
+                "∴win Q.E.D.",
+                "Professor of Curvature",
+                "Corner Recovery",
+                "Sleeping Lion",
+                "Encroaching Shadow",
+                "Long Corners",
+                "Pressure",
+                "End Closer Straightaways",
+                "Lone Wolf",
+                "Daring Strike",
+                "Best In Japan",
+                "Breakin' Out"
               ],
               "spriteId": 105001,
               "spritePath": "assets/characters/chara_stand_1050_105001.png"
@@ -605,31 +646,32 @@
               "rating": "SS",
               "style": "end",
               "aptitudes": {
-                "terrain": "S",
-                "distance": "A",
+                "terrain": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 1241,
-                "stamina": 542,
-                "power": 1141,
-                "guts": 543,
-                "wisdom": 1123
+                "speed": 1227,
+                "stamina": 539,
+                "power": 1160,
+                "guts": 568,
+                "wisdom": 1124
               },
               "skills": [
                 "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
                 "Triumphant Pulse",
                 "Louder! Tracen Cheer!",
-                "Wet Conditions",
                 "Professor of Curvature",
+                "It's On!",
                 "No Stopping Me!",
                 "Straightaway Spurt",
                 "Turbo Sprint",
-                "End Closer Corners",
+                "Sprint Corners",
                 "Superstan",
-                "Top Pick",
+                "Forward, March!",
                 "Daring Strike",
-                "Nothing Ventured",
+                "Risky Business",
+                "Rapid Gain",
                 "Burning Spirit SPD"
               ],
               "spriteId": 101901,
@@ -649,28 +691,41 @@
         "sprint": [
           {
             "slot": 0,
-            "trainer": "New Team sprint 1",
-            "locked": false,
+            "trainer": "0hqw",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "King Halo",
+              "rating": "SS",
+              "style": "late",
               "aptitudes": {
-                "terrain": "A",
-                "distance": "A",
+                "terrain": "S",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1229,
+                "stamina": 336,
+                "power": 1149,
+                "guts": 773,
+                "wisdom": 1248
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "Prideful King",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Gap Closer",
+                "Late Surger Straightaways",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Ignited Spirit WIT"
+              ],
+              "spriteId": 106101,
+              "spritePath": "assets/characters/chara_stand_1061_106101.png"
             }
           },
           {
@@ -729,28 +784,43 @@
         "mile": [
           {
             "slot": 0,
-            "trainer": "New Team mile 1",
-            "locked": false,
+            "trainer": "KittyChloe",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "Admire Vega",
+              "rating": "SS+",
+              "style": "end",
               "aptitudes": {
-                "terrain": "A",
+                "terrain": "S",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1338,
+                "stamina": 535,
+                "power": 1267,
+                "guts": 400,
+                "wisdom": 1140
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "Shooting Star of Dioskouroi",
+                "Triumphant Pulse",
+                "Right-Handed",
+                "Wet Conditions",
+                "Professor of Curvature",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Sturm und Drang",
+                "Straightaway Spurt",
+                "Updrafters",
+                "Mile Corners",
+                "Lucky Seven",
+                "Uma Stan",
+                "Daring Strike",
+                "Leap Forward"
+              ],
+              "spriteId": 103301,
+              "spritePath": "assets/characters/chara_stand_1033_103301.png"
             }
           },
           {
@@ -1020,28 +1090,44 @@
         "dirt": [
           {
             "slot": 0,
-            "trainer": "New Team dirt 1",
-            "locked": false,
+            "trainer": "Haruru",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "Haru Urara",
+              "rating": "SS",
+              "style": "late",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1260,
+                "stamina": 459,
+                "power": 1203,
+                "guts": 758,
+                "wisdom": 1066
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "114th Time's the Charm",
+                "Barcarole of Blessings",
+                "Louder! Tracen Cheer!",
+                "Nakayama Racecourse",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "No Stopping Me!",
+                "On Your Left!",
+                "Hard Worker",
+                "Tail Held High",
+                "Slipstream",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Racing Spirit: Stamina",
+                "Racing Spirit: Mood"
+              ],
+              "spriteId": 105202,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png"
             }
           },
           {
@@ -1478,25 +1564,47 @@
           },
           {
             "slot": 1,
-            "trainer": "Omatsuri Mambo!",
-            "locked": false,
+            "trainer": "Omatsuri Mambo !",
+            "locked": true,
             "uma": {
               "name": "Matikanetannhauser",
-              "rating": "S",
-              "style": "front",
+              "rating": "UG",
+              "style": "end",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1205,
+                "stamina": 822,
+                "power": 1220,
+                "guts": 565,
+                "wisdom": 1013
               },
-              "skills": [],
+              "skills": [
+                "Go, Go, Mun!",
+                "Triumphant Pulse",
+                "Behold Thine Emperor's Divine Might",
+                "Non-Standard Distance",
+                "Spring Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "Unruffled",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Straightaway Spurt",
+                "Long Corners",
+                "Overwhelming Pressure",
+                "Tail Held High",
+                "Playtime's Over!",
+                "Daring Strike",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Racing Spirit: Power",
+                "Racing Spirit: Wit"
+              ],
               "spriteId": 106201,
               "spritePath": "assets/characters/chara_stand_1062_106201.png"
             }
@@ -1567,30 +1675,35 @@
                 "style": "A"
               },
               "stats": {
-                "speed": 1307,
-                "stamina": 595,
-                "power": 1257,
-                "guts": 728,
-                "wisdom": 1188
+                "speed": 1302,
+                "stamina": 486,
+                "power": 1209,
+                "guts": 462,
+                "wisdom": 1145
               },
               "skills": [
                 "SPARKLY☆STARDOM",
                 "Triumphant Pulse",
                 "Victoria por plancha ☆",
+                "Budding Blossom",
                 "Wet Conditions",
-                "Fall Runner",
+                "Outer Post Proficiency",
+                "Competitive Spirit",
                 "Professor of Curvature",
                 "Straightaway Adept",
                 "Prudent Positioning",
                 "It's On!",
                 "No Stopping Me!",
-                "Sprinting Gear",
-                "Sprint Straightaways",
-                "Sprint Corners",
+                "Prepared to Pass",
+                "Pace Chaser Corners",
                 "Groundwork",
-                "Tail Held High",
-                "Slipstream",
+                "Lone Wolf",
                 "Trending in the Charts!",
+                "Forward, March!",
+                "Light as a Feather",
+                "Sunny Sign",
+                "Got the Spirit",
+                "Ignited Spirit PWR",
                 "Ignited Spirit WIT"
               ],
               "spriteId": 104601,
@@ -3905,10 +4018,10 @@
               "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
-              "trainer": "Hai! Aku Aru!",
+              "trainer": "Hi! Im Aru!@BUNS",
               "umaName": "Narita Taishin",
               "spritePath": "assets/characters/chara_stand_1050_105001.png",
-              "style": "pace",
+              "style": "end",
               "key": "dust-bunny:1"
             },
             {
@@ -3941,10 +4054,10 @@
               "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
-              "trainer": "Omatsuri Mambo!",
+              "trainer": "Omatsuri Mambo !",
               "umaName": "Matikanetannhauser",
               "spritePath": "assets/characters/chara_stand_1062_106201.png",
-              "style": "front",
+              "style": "end",
               "key": "falena:1"
             },
             {
@@ -3979,10 +4092,10 @@
               "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
-              "trainer": "Omatsuri Mambo!",
+              "trainer": "Omatsuri Mambo !",
               "umaName": "Matikanetannhauser",
               "spritePath": "assets/characters/chara_stand_1062_106201.png",
-              "style": "front",
+              "style": "end",
               "key": "falena:1"
             },
             "3": {

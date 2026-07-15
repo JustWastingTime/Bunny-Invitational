@@ -1,37 +1,61 @@
-[
-  {
-    "id": "dust-bunny",
-    "name": "Dust Bunny",
-    "shortName": "BUNS",
-    "tagline": "",
-    "color": "#e91e8c"
-  },
-  {
-    "id": "falena",
-    "name": "Falena",
-    "shortName": "FLNA",
-    "tagline": "falena club",
-    "color": "#7c4dff"
-  },
-  {
-    "id": "king",
-    "name": "King",
-    "shortName": "KING",
-    "tagline": "",
-    "color": "#359b62"
-  },
-  {
-    "id": "ritto-dorm-dropouts",
-    "name": "Ritto Dorm Dropouts",
-    "shortName": "RDD",
-    "tagline": "",
-    "color": "#992724"
-  },
-  {
-    "id": "umalliance",
-    "name": "UMAlliance",
-    "shortName": "ALLI",
-    "tagline": "",
-    "color": "#2c49c9"
-  }
-]
+{
+  "updatedAt": "2026-07-15T08:42:38.828Z",
+  "teams": [
+    {
+      "id": "dust-bunny",
+      "name": "BUNS",
+      "shortName": "BUNS",
+      "tagline": "",
+      "color": "#e91e45",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "shortName": "CABAL",
+      "tagline": "",
+      "color": "#c0fa3b",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "falena",
+      "name": "Falena",
+      "shortName": "FLNA",
+      "tagline": "falena club",
+      "color": "#2e65cf",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "king",
+      "name": "King",
+      "shortName": "KING",
+      "tagline": "",
+      "color": "#359b62",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "shortName": "RILL",
+      "tagline": "",
+      "color": "#da49b8",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "ritto-dorm-dropouts",
+      "name": "Ritto Dorm Dropouts",
+      "shortName": "RDD",
+      "tagline": "",
+      "color": "#992724",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    },
+    {
+      "id": "umalliance",
+      "name": "UMAlliance",
+      "shortName": "ALLI",
+      "tagline": "",
+      "color": "#2c49c9",
+      "updatedAt": "2026-07-15T08:42:38.828Z"
+    }
+  ]
+}

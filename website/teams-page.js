@@ -88,7 +88,9 @@ function firstMemberOf(team) {
 async function loadTeamIndex() {
   const res = await fetch("./data/teams/index.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Could not load website/data/teams/index.json");
-  return res.json();
+  const data = await res.json();
+  if (Array.isArray(data)) return data;
+  return Array.isArray(data.teams) ? data.teams : [];
 }
 
 async function loadSkillRarities() {
@@ -381,6 +383,10 @@ export async function refreshTeamsPage({ force = false } = {}) {
   try {
     const [nextIndex, rarities] = await Promise.all([loadTeamIndex(), loadSkillRarities()]);
     skillRarityByName = rarities;
+
+    // Always drop cached team JSON so dashboard edits show up on poll/refresh.
+    teamCache.clear();
+
     const indexChanged =
       force ||
       !teamsBooted ||
@@ -390,10 +396,10 @@ export async function refreshTeamsPage({ force = false } = {}) {
 
     if (indexChanged) {
       renderTeamsList();
-      await hydrateOpenTeams();
       teamsBooted = true;
     }
 
+    await hydrateOpenTeams();
     renderUmaPanel();
   } catch (err) {
     const list = document.getElementById("teams-list");

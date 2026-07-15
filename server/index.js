@@ -9,6 +9,7 @@ import {
   recordPlacement,
   clearPlacement,
   ensureStandingsForMatch,
+  rebuildWebsitePublic,
 } from "./tournament.js";
 import {
   listTeams,
@@ -28,6 +29,14 @@ const ROOT = path.resolve(__dirname, "..");
 const PORT = Number(process.env.PORT) || 3456;
 const OVERLAY_STATE_REL = "data/overlay-state.json";
 const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
+
+function refreshWebsitePublic() {
+  try {
+    rebuildWebsitePublic(ROOT);
+  } catch (err) {
+    console.warn("Failed to refresh website public data:", err.message);
+  }
+}
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -249,6 +258,7 @@ const server = http.createServer(async (req, res) => {
       if (req.method === "POST") {
         const body = await readRequestBody(req);
         const team = createTeam(ROOT, body);
+        refreshWebsitePublic();
         sendJson(res, 201, { ok: true, team });
         return;
       }
@@ -278,11 +288,14 @@ const server = http.createServer(async (req, res) => {
       if (req.method === "PUT") {
         const body = await readRequestBody(req);
         const team = saveTeam(ROOT, teamId, body);
+        refreshWebsitePublic();
         sendJson(res, 200, { ok: true, team });
         return;
       }
       if (req.method === "DELETE") {
-        sendJson(res, 200, deleteTeam(ROOT, teamId));
+        const result = deleteTeam(ROOT, teamId);
+        refreshWebsitePublic();
+        sendJson(res, 200, result);
         return;
       }
       sendJson(res, 405, { error: "Method not allowed" });

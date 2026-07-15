@@ -148,6 +148,7 @@ export function publishWebsiteTeams(root) {
 
   const copied = new Map();
   const index = [];
+  const updatedAt = new Date().toISOString();
 
   for (const row of listTeams(root)) {
     const team = enrichTeamForWebsite(getTeam(root, row.id), spriteLookup);
@@ -173,11 +174,15 @@ export function publishWebsiteTeams(root) {
       shortName: team.shortName,
       tagline: team.tagline,
       color: team.color,
+      updatedAt,
     });
   }
 
   index.sort((a, b) => a.name.localeCompare(b.name));
-  fs.writeFileSync(path.join(destDir, "index.json"), JSON.stringify(index, null, 2) + "\n");
+  fs.writeFileSync(
+    path.join(destDir, "index.json"),
+    JSON.stringify({ updatedAt, teams: index }, null, 2) + "\n"
+  );
   return { teams: index.length, sprites: copied.size, destDir };
 }
 
