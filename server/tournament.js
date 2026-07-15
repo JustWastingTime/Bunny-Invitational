@@ -7,12 +7,20 @@ import {
   loadMatch,
   resolveMatchRacers,
   resolveMatchTeams,
+  getTeamMember,
+  umaIdentityKey,
 } from "./team-resolver.js";
 import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, publishWebsiteSkills, buildWebsiteTeams } from "./website-publish.js";
 import { buildSpriteLookup } from "./sprite-resolver.js";
+import { listTeams } from "./team-editor.js";
 const STANDINGS_REL = "data/standings.json";
 const WEBSITE_STANDINGS_REL = "website/data/standings.json";
 const WEBSITE_PUBLIC_REL = "website/data/public.json";
+
+const DEFAULT_SCORING = {
+  place: { "1": 5, "2": 3, "3": 1 },
+  uniqueBonus: 1,
+};
 
 export function listMatchFiles(matchesDir) {
   if (!fs.existsSync(matchesDir)) return [];
@@ -37,7 +45,7 @@ function defaultStandings() {
   return {
     tournament: "Bunny Invitational",
     updatedAt: null,
-    scoring: { place: { "1": 5, "2": 3, "3": 1 } },
+    scoring: { ...DEFAULT_SCORING, place: { ...DEFAULT_SCORING.place } },
     teams: {},
     matches: {},
   };
@@ -70,7 +78,9 @@ function migrateRaceResult(raceResult) {
 
 function migrateStandings(standings) {
   if (!standings.scoring?.place) {
-    standings.scoring = { place: { "1": 5, "2": 3, "3": 1 } };
+    standings.scoring = { ...DEFAULT_SCORING, place: { ...DEFAULT_SCORING.place } };
+  } else if (standings.scoring.uniqueBonus == null) {
+    standings.scoring.uniqueBonus = DEFAULT_SCORING.uniqueBonus;
   }
   for (const match of Object.values(standings.matches ?? {})) {
     for (const cat of CATEGORIES) {
@@ -84,10 +94,65 @@ function migrateStandings(standings) {
     team.firsts = team.firsts ?? 0;
     team.seconds = team.seconds ?? 0;
     team.thirds = team.thirds ?? 0;
+    team.uniqueBonuses = team.uniqueBonuses ?? 0;
     delete team.raceWins;
     delete team.matchWins;
   }
   return standings;
+}
+
+/**
+ * Unique = appears exactly once across every team's full roster (all categories).
+ * Identity is costume spriteId when present, otherwise display name.
+ */
+export function buildRosterUniqueIndex(root) {
+  const counts = new Map();
+  const samples = new Map();
+
+  for (const summary of listTeams(root)) {
+    let team;
+    try {
+      team = loadTeam(root, summary.id);
+    } catch {
+      continue;
+    }
+    for (const roster of Object.values(team.categories ?? {})) {
+      for (const member of roster ?? []) {
+        const key = umaIdentityKey(member?.uma ?? {});
+        if (!key) continue;
+        counts.set(key, (counts.get(key) ?? 0) + 1);
+        if (!samples.has(key)) {
+          samples.set(key, {
+            umaKey: key,
+            umaName: member.uma?.name ?? "Unknown",
+            spriteId: member.uma?.spriteId ?? member.uma?.characterId ?? null,
+          });
+        }
+      }
+    }
+  }
+
+  const uniqueKeys = new Set();
+  const uniqueUmas = [];
+  for (const [key, count] of counts.entries()) {
+    if (count !== 1) continue;
+    uniqueKeys.add(key);
+    uniqueUmas.push(samples.get(key));
+  }
+
+  uniqueUmas.sort((a, b) => a.umaName.localeCompare(b.umaName));
+  return { uniqueKeys, uniqueUmas, counts };
+}
+
+function isUniqueMember(root, uniqueKeys, teamId, category, slot) {
+  if (!teamId) return false;
+  try {
+    const { member } = getTeamMember(root, teamId, category, slot);
+    const key = umaIdentityKey(member?.uma ?? {});
+    return Boolean(key && uniqueKeys.has(key));
+  } catch {
+    return false;
+  }
 }
 
 function writeStandings(root, standings) {
@@ -130,6 +195,7 @@ export function rebuildWebsitePublic(root) {
 
 function buildWebsiteData(root, standings) {
   const spriteLookup = buildSpriteLookup(root);
+  const { uniqueKeys, uniqueUmas } = buildRosterUniqueIndex(root);
   const teams = buildWebsiteTeams(root).map((team) => ({
     id: team.id,
     name: team.name,
@@ -153,6 +219,8 @@ function buildWebsiteData(root, standings) {
           gate: racer.gate,
           trainer: racer.trainer,
           umaName: racer.umaName,
+          umaKey: racer.umaKey,
+          isUnique: Boolean(racer.umaKey && uniqueKeys.has(racer.umaKey)),
           spritePath: racer.uma.spritePath,
           style: racer.uma.style ?? null,
           key: racer.key,
@@ -183,14 +251,12 @@ function buildWebsiteData(root, standings) {
 
   const startsByUma = new Map();
   const winsByUma = new Map();
-  const uniqueUmas = new Set();
 
   for (const match of matches) {
     for (const category of CATEGORIES) {
       const race = match.categories[category];
       for (const racer of race.racers) {
         const name = racer.umaName;
-        uniqueUmas.add(name);
         startsByUma.set(name, (startsByUma.get(name) ?? 0) + 1);
       }
       const winner = race.placements["1"];
@@ -227,10 +293,11 @@ function buildWebsiteData(root, standings) {
     matches,
     stats: {
       totalMatches: matches.length,
-      uniqueUmaCount: uniqueUmas.size,
+      uniqueUmaCount: uniqueUmas.length,
       mostCommonUma,
       bestWinRateUma,
-      uniqueUmas: popularity.filter((row) => row.starts === 1).map((row) => row.umaName),
+      uniqueUmas: uniqueUmas.map((row) => row.umaName),
+      uniqueUmaKeys: uniqueUmas.map((row) => row.umaKey),
       popularity,
     },
   };
@@ -275,21 +342,47 @@ function validateRacer(root, matchId, category, teamId, slot) {
 
 export function ensureStandingsForMatch(root, matchId) {
   const standings = readStandings(root);
-  if (standings.matches[matchId]) return standings;
-
   const matchPath = path.join(root, "data", "matches", `${matchId}.json`);
   if (!fs.existsSync(matchPath)) throw new Error(`Match not found: ${matchId}`);
 
   const match = JSON.parse(fs.readFileSync(matchPath, "utf8"));
-  standings.matches[matchId] = {
-    day: match.day,
-    matchNumber: match.matchNumber,
-    round: match.round,
-    teams: match.teams,
-    raceResults: emptyRaceResults(),
-  };
+  let dirty = false;
 
-  for (const teamId of match.teams) {
+  if (!standings.matches[matchId]) {
+    standings.matches[matchId] = {
+      day: match.day,
+      matchNumber: match.matchNumber,
+      round: match.round,
+      teams: match.teams,
+      raceResults: emptyRaceResults(),
+    };
+    dirty = true;
+  } else {
+    const row = standings.matches[matchId];
+    if (
+      row.day !== match.day ||
+      row.matchNumber !== match.matchNumber ||
+      row.round !== match.round ||
+      JSON.stringify(row.teams) !== JSON.stringify(match.teams)
+    ) {
+      row.day = match.day;
+      row.matchNumber = match.matchNumber;
+      row.round = match.round;
+      row.teams = match.teams;
+      dirty = true;
+    }
+  }
+
+  const beforeTeams = Object.keys(standings.teams).length;
+  ensureTeamRows(root, standings, match.teams);
+  if (Object.keys(standings.teams).length !== beforeTeams) dirty = true;
+
+  if (dirty) writeStandings(root, standings);
+  return standings;
+}
+
+function ensureTeamRows(root, standings, teamIds) {
+  for (const teamId of teamIds ?? []) {
     if (!teamId || standings.teams[teamId]) continue;
     const team = loadTeam(root, teamId);
     standings.teams[teamId] = {
@@ -298,23 +391,35 @@ export function ensureStandingsForMatch(root, matchId) {
       firsts: 0,
       seconds: 0,
       thirds: 0,
+      uniqueBonuses: 0,
       points: 0,
     };
   }
-
-  writeStandings(root, standings);
-  return standings;
 }
 
-function recalculateStandings(standings) {
+function recalculateStandings(root, standings) {
+  for (const match of Object.values(standings.matches ?? {})) {
+    ensureTeamRows(root, standings, match.teams);
+    for (const category of CATEGORIES) {
+      const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
+      for (const place of ["1", "2", "3"]) {
+        const pick = placements[place];
+        if (pick?.teamId) ensureTeamRows(root, standings, [pick.teamId]);
+      }
+    }
+  }
+
   for (const teamId of Object.keys(standings.teams)) {
     standings.teams[teamId].firsts = 0;
     standings.teams[teamId].seconds = 0;
     standings.teams[teamId].thirds = 0;
+    standings.teams[teamId].uniqueBonuses = 0;
     standings.teams[teamId].points = 0;
   }
 
   const placePoints = standings.scoring.place;
+  const uniqueBonus = Number(standings.scoring.uniqueBonus ?? DEFAULT_SCORING.uniqueBonus) || 0;
+  const { uniqueKeys } = buildRosterUniqueIndex(root);
 
   for (const match of Object.values(standings.matches)) {
     for (const category of CATEGORIES) {
@@ -323,7 +428,12 @@ function recalculateStandings(standings) {
         const pick = placements[place];
         if (!pick?.teamId || !standings.teams[pick.teamId]) continue;
 
-        const pts = placePoints[place] ?? 0;
+        let pts = placePoints[place] ?? 0;
+        if (uniqueBonus > 0 && isUniqueMember(root, uniqueKeys, pick.teamId, category, pick.slot)) {
+          pts += uniqueBonus;
+          standings.teams[pick.teamId].uniqueBonuses += 1;
+        }
+
         standings.teams[pick.teamId].points += pts;
         if (place === "1") standings.teams[pick.teamId].firsts += 1;
         if (place === "2") standings.teams[pick.teamId].seconds += 1;
@@ -354,7 +464,7 @@ export function recordPlacement(root, matchId, category, place, teamId, slot) {
   }
 
   race.placements[String(place)] = pick;
-  recalculateStandings(standings);
+  recalculateStandings(root, standings);
   writeStandings(root, standings);
   return standings;
 }
@@ -366,7 +476,7 @@ export function clearPlacement(root, matchId, category, place) {
   } else {
     standings.matches[matchId].raceResults[category].placements = emptyPlacements();
   }
-  recalculateStandings(standings);
+  recalculateStandings(root, standings);
   writeStandings(root, standings);
   return standings;
 }

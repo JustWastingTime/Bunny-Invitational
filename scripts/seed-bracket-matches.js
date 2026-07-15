@@ -16,7 +16,7 @@ function clearStandings() {
   const standings = {
     tournament: "Bunny Invitational",
     updatedAt: new Date().toISOString(),
-    scoring: { place: { "1": 5, "2": 3, "3": 1 } },
+    scoring: { place: { "1": 5, "2": 3, "3": 1 }, uniqueBonus: 1 },
     teams: {},
     matches: {},
   };

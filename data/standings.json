@@ -1,14 +1,43 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-15T13:13:39.879Z",
+  "updatedAt": "2026-07-15T14:36:35.243Z",
   "scoring": {
     "place": {
       "1": 5,
       "2": 3,
       "3": 1
+    },
+    "uniqueBonus": 1
+  },
+  "teams": {
+    "dust-bunny": {
+      "name": "BUNS",
+      "color": "#e91e45",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 1,
+      "uniqueBonuses": 2,
+      "points": 8
+    },
+    "cabal": {
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 0,
+      "seconds": 1,
+      "thirds": 0,
+      "uniqueBonuses": 1,
+      "points": 4
+    },
+    "falena": {
+      "name": "Falena",
+      "color": "#2e65cf",
+      "firsts": 0,
+      "seconds": 0,
+      "thirds": 0,
+      "uniqueBonuses": 0,
+      "points": 0
     }
   },
-  "teams": {},
   "matches": {
     "day1-match01": {
       "day": 1,

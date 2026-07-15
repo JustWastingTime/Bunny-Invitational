@@ -1,14 +1,46 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-15T13:13:39.879Z",
+  "updatedAt": "2026-07-15T14:36:35.243Z",
   "scoring": {
     "place": {
       "1": 5,
       "2": 3,
       "3": 1
-    }
+    },
+    "uniqueBonus": 1
   },
-  "standings": [],
+  "standings": [
+    {
+      "id": "dust-bunny",
+      "name": "BUNS",
+      "color": "#e91e45",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 1,
+      "uniqueBonuses": 2,
+      "points": 8
+    },
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 0,
+      "seconds": 1,
+      "thirds": 0,
+      "uniqueBonuses": 1,
+      "points": 4
+    },
+    {
+      "id": "falena",
+      "name": "Falena",
+      "color": "#2e65cf",
+      "firsts": 0,
+      "seconds": 0,
+      "thirds": 0,
+      "uniqueBonuses": 0,
+      "points": 0
+    }
+  ],
   "teams": [
     {
       "id": "dust-bunny",
@@ -25,7 +57,7 @@
             "uma": {
               "name": "Sakura Bakushin O",
               "rating": "SS",
-              "style": "front",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "S",
                 "distance": "S",
@@ -6004,8 +6036,10 @@
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
+              "umaKey": "sprite:104101",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "front",
+              "style": "pace",
               "key": "dust-bunny:0"
             },
             {
@@ -6016,6 +6050,8 @@
               "gate": null,
               "trainer": "Banana",
               "umaName": "Curren Chan",
+              "umaKey": "sprite:103801",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1038_103801.png",
               "style": "pace",
               "key": "dust-bunny:1"
@@ -6028,6 +6064,8 @@
               "gate": null,
               "trainer": "Nightfish",
               "umaName": "Symboli Rudolf",
+              "umaKey": "sprite:101701",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1017_101701.png",
               "style": "late",
               "key": "dust-bunny:2"
@@ -6040,6 +6078,8 @@
               "gate": null,
               "trainer": "0hqw",
               "umaName": "King Halo",
+              "umaKey": "sprite:106101",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1061_106101.png",
               "style": "late",
               "key": "cabal:0"
@@ -6052,6 +6092,8 @@
               "gate": null,
               "trainer": "New Team sprint 2",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:1"
@@ -6064,6 +6106,8 @@
               "gate": null,
               "trainer": "New Team sprint 3",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:2"
@@ -6076,6 +6120,8 @@
               "gate": null,
               "trainer": "Swaejudinoli",
               "umaName": "Curren Chan",
+              "umaKey": "sprite:103802",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1038_103802.png",
               "style": "pace",
               "key": "falena:0"
@@ -6088,6 +6134,8 @@
               "gate": null,
               "trainer": "XV11@FLNA",
               "umaName": "Meisho Doto",
+              "umaKey": "sprite:105801",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1058_105801.png",
               "style": "pace",
               "key": "falena:1"
@@ -6100,6 +6148,8 @@
               "gate": null,
               "trainer": "Zera",
               "umaName": "Mayano Top Gun",
+              "umaKey": "sprite:102401",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1024_102401.png",
               "style": "pace",
               "key": "falena:2"
@@ -6114,8 +6164,10 @@
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
+              "umaKey": "sprite:104101",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "front",
+              "style": "pace",
               "key": "dust-bunny:0"
             },
             "2": {
@@ -6126,6 +6178,8 @@
               "gate": null,
               "trainer": "0hqw",
               "umaName": "King Halo",
+              "umaKey": "sprite:106101",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1061_106101.png",
               "style": "late",
               "key": "cabal:0"
@@ -6138,6 +6192,8 @@
               "gate": null,
               "trainer": "Banana",
               "umaName": "Curren Chan",
+              "umaKey": "sprite:103801",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1038_103801.png",
               "style": "pace",
               "key": "dust-bunny:1"
@@ -6154,6 +6210,8 @@
               "gate": null,
               "trainer": "Bane@BUNS",
               "umaName": "Hishi Amazon",
+              "umaKey": "sprite:101201",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1012_101201.png",
               "style": "end",
               "key": "dust-bunny:0"
@@ -6166,6 +6224,8 @@
               "gate": null,
               "trainer": "Spurs@BUNS",
               "umaName": "Grass Wonder",
+              "umaKey": "sprite:101101",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1011_101101.png",
               "style": "late",
               "key": "dust-bunny:1"
@@ -6178,6 +6238,8 @@
               "gate": null,
               "trainer": "DadSmoocher",
               "umaName": "Nice Nature",
+              "umaKey": "sprite:106001",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1060_106001.png",
               "style": "end",
               "key": "dust-bunny:2"
@@ -6190,6 +6252,8 @@
               "gate": null,
               "trainer": "KittyChloe",
               "umaName": "Admire Vega",
+              "umaKey": "sprite:103301",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1033_103301.png",
               "style": "end",
               "key": "cabal:0"
@@ -6202,6 +6266,8 @@
               "gate": null,
               "trainer": "New Team mile 2",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:1"
@@ -6214,6 +6280,8 @@
               "gate": null,
               "trainer": "New Team mile 3",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:2"
@@ -6226,6 +6294,8 @@
               "gate": null,
               "trainer": "StarryNightlight",
               "umaName": "Manhattan Cafe",
+              "umaKey": "sprite:102501",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1025_102501.png",
               "style": "late",
               "key": "falena:0"
@@ -6238,6 +6308,8 @@
               "gate": null,
               "trainer": "Clowngeta",
               "umaName": "Mejiro McQueen",
+              "umaKey": "sprite:101301",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1013_101301.png",
               "style": "front",
               "key": "falena:1"
@@ -6250,6 +6322,8 @@
               "gate": null,
               "trainer": "Cyndexv@FLNA",
               "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1006_100602.png",
               "style": "pace",
               "key": "falena:2"
@@ -6271,6 +6345,8 @@
               "gate": null,
               "trainer": "Crabpeople",
               "umaName": "Gold Ship",
+              "umaKey": "sprite:100702",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1007_100702.png",
               "style": "end",
               "key": "dust-bunny:0"
@@ -6283,6 +6359,8 @@
               "gate": null,
               "trainer": "Hans Pferdemann",
               "umaName": "Daiwa Scarlet",
+              "umaKey": "sprite:100901",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1009_100901.png",
               "style": "front",
               "key": "dust-bunny:1"
@@ -6295,6 +6373,8 @@
               "gate": null,
               "trainer": "Minh@BUNS",
               "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1006_100602.png",
               "style": "pace",
               "key": "dust-bunny:2"
@@ -6307,6 +6387,8 @@
               "gate": null,
               "trainer": "WildCat",
               "umaName": "Tokai Teio",
+              "umaKey": "sprite:100301",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1003_100301.png",
               "style": "late",
               "key": "cabal:0"
@@ -6319,6 +6401,8 @@
               "gate": null,
               "trainer": "Tn",
               "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1019_101901.png",
               "style": "end",
               "key": "cabal:1"
@@ -6331,6 +6415,8 @@
               "gate": null,
               "trainer": "Horsefight",
               "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1006_100602.png",
               "style": "pace",
               "key": "cabal:2"
@@ -6343,6 +6429,8 @@
               "gate": null,
               "trainer": "Haiji",
               "umaName": "Kitasan Black",
+              "umaKey": "sprite:106801",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1068_106801.png",
               "style": "front",
               "key": "falena:0"
@@ -6355,6 +6443,8 @@
               "gate": null,
               "trainer": "Yechers",
               "umaName": "Eishin Flash",
+              "umaKey": "sprite:103701",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1037_103701.png",
               "style": "late",
               "key": "falena:1"
@@ -6367,6 +6457,8 @@
               "gate": null,
               "trainer": "Uprob",
               "umaName": "Air Shakur",
+              "umaKey": "sprite:103601",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1036_103601.png",
               "style": "front",
               "key": "falena:2"
@@ -6388,6 +6480,8 @@
               "gate": null,
               "trainer": "Legi",
               "umaName": "Special Week",
+              "umaKey": "sprite:100101",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1001_100101.png",
               "style": "pace",
               "key": "dust-bunny:0"
@@ -6400,6 +6494,8 @@
               "gate": null,
               "trainer": "Hi! Im Aru!@BUNS",
               "umaName": "Narita Taishin",
+              "umaKey": "sprite:105001",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1050_105001.png",
               "style": "end",
               "key": "dust-bunny:1"
@@ -6412,6 +6508,8 @@
               "gate": null,
               "trainer": "KaiAiya@BUNS",
               "umaName": "Kitasan Black",
+              "umaKey": "sprite:106801",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1068_106801.png",
               "style": "front",
               "key": "dust-bunny:2"
@@ -6424,6 +6522,8 @@
               "gate": null,
               "trainer": "New Team long 1",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:0"
@@ -6436,6 +6536,8 @@
               "gate": null,
               "trainer": "New Team long 2",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:1"
@@ -6448,6 +6550,8 @@
               "gate": null,
               "trainer": "New Team long 3",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:2"
@@ -6460,6 +6564,8 @@
               "gate": null,
               "trainer": "Korie",
               "umaName": "Satono Diamond",
+              "umaKey": "sprite:106701",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1067_106701.png",
               "style": "front",
               "key": "falena:0"
@@ -6472,6 +6578,8 @@
               "gate": null,
               "trainer": "Omatsuri Mambo !",
               "umaName": "Matikanetannhauser",
+              "umaKey": "sprite:106201",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1062_106201.png",
               "style": "end",
               "key": "falena:1"
@@ -6484,6 +6592,8 @@
               "gate": null,
               "trainer": "Lazarus",
               "umaName": "Gold Ship",
+              "umaKey": "sprite:100701",
+              "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1007_100701.png",
               "style": "front",
               "key": "falena:2"
@@ -6505,6 +6615,8 @@
               "gate": null,
               "trainer": "Vivi@BUNS",
               "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101001",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1010_101001.png",
               "style": "pace",
               "key": "dust-bunny:0"
@@ -6517,6 +6629,8 @@
               "gate": null,
               "trainer": "Plnk@BUNS",
               "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1052_105202.png",
               "style": "late",
               "key": "dust-bunny:1"
@@ -6529,6 +6643,8 @@
               "gate": null,
               "trainer": "Buttered@BUNS",
               "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1019_101901.png",
               "style": "end",
               "key": "dust-bunny:2"
@@ -6541,6 +6657,8 @@
               "gate": null,
               "trainer": "Haruru",
               "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1052_105202.png",
               "style": "late",
               "key": "cabal:0"
@@ -6553,6 +6671,8 @@
               "gate": null,
               "trainer": "New Team dirt 2",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:1"
@@ -6565,6 +6685,8 @@
               "gate": null,
               "trainer": "New Team dirt 3",
               "umaName": "Uma Name",
+              "umaKey": "name:Uma Name",
+              "isUnique": false,
               "spritePath": null,
               "style": "front",
               "key": "cabal:2"
@@ -6577,6 +6699,8 @@
               "gate": null,
               "trainer": "Plazma",
               "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101001",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1010_101001.png",
               "style": "front",
               "key": "falena:0"
@@ -6589,6 +6713,8 @@
               "gate": null,
               "trainer": "Flem",
               "umaName": "Smart Falcon",
+              "umaKey": "sprite:104601",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1046_104601.png",
               "style": "front",
               "key": "falena:1"
@@ -6601,6 +6727,8 @@
               "gate": null,
               "trainer": "Nati",
               "umaName": "El Condor Pasa",
+              "umaKey": "sprite:101401",
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1014_101401.png",
               "style": "front",
               "key": "falena:2"
@@ -7200,7 +7328,7 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 29,
+    "uniqueUmaCount": 34,
     "mostCommonUma": {
       "umaName": "Uma Name",
       "starts": 9,
@@ -7214,27 +7342,76 @@
       "winRate": 1
     },
     "uniqueUmas": [
-      "Sakura Bakushin O",
       "Admire Vega",
+      "Agnes Tachyon",
       "Air Shakur",
+      "Bamboo Memory",
+      "Curren Chan",
       "Daiwa Scarlet",
       "Eishin Flash",
       "El Condor Pasa",
-      "Grass Wonder",
-      "Hishi Amazon",
+      "Fuji Kiseki",
+      "Gold Ship",
+      "Gold Ship",
       "King Halo",
-      "Manhattan Cafe",
+      "King Halo",
+      "Maruzensky",
+      "Matikanefukukitaru",
       "Matikanetannhauser",
       "Mayano Top Gun",
       "Meisho Doto",
       "Mejiro McQueen",
+      "Narita Brian",
       "Narita Taishin",
       "Nice Nature",
+      "Nishino Flower",
+      "Rice Shower",
+      "Sakura Bakushin O",
       "Satono Diamond",
-      "Smart Falcon",
-      "Special Week",
-      "Symboli Rudolf",
-      "Tokai Teio"
+      "Seiun Sky",
+      "Silence Suzuka",
+      "Sweep Tosho",
+      "T.M. Opera O",
+      "Tamamo Cross",
+      "Tokai Teio",
+      "Vodka",
+      "Yaeno Muteki"
+    ],
+    "uniqueUmaKeys": [
+      "sprite:103301",
+      "sprite:103201",
+      "sprite:103601",
+      "sprite:105301",
+      "sprite:103801",
+      "sprite:100901",
+      "sprite:103701",
+      "sprite:101402",
+      "sprite:100501",
+      "sprite:100702",
+      "sprite:100701",
+      "sprite:106101",
+      "sprite:106102",
+      "sprite:100401",
+      "sprite:105601",
+      "sprite:106201",
+      "sprite:102401",
+      "sprite:105801",
+      "sprite:101301",
+      "sprite:101601",
+      "sprite:105001",
+      "sprite:106001",
+      "sprite:105101",
+      "sprite:103001",
+      "sprite:104101",
+      "sprite:106701",
+      "sprite:102001",
+      "sprite:100201",
+      "sprite:104401",
+      "sprite:101502",
+      "sprite:102101",
+      "sprite:100301",
+      "sprite:100801",
+      "sprite:107201"
     ],
     "popularity": [
       {

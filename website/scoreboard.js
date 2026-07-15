@@ -37,13 +37,16 @@ function formatUpdatedAt(value) {
 function matchTeamRows(match) {
   const pointsByTeam = new Map(match.teams.map((teamId) => [teamId, 0]));
   const scoring = state.scoring?.place ?? { "1": 5, "2": 3, "3": 1 };
+  const uniqueBonus = Number(state.scoring?.uniqueBonus ?? 1) || 0;
 
   for (const category of Object.keys(match.categories ?? {})) {
     const race = match.categories[category];
     for (const place of ["1", "2", "3"]) {
       const pick = race.placements?.[place];
       if (!pick?.teamId) continue;
-      pointsByTeam.set(pick.teamId, (pointsByTeam.get(pick.teamId) ?? 0) + (scoring[place] ?? 0));
+      let pts = scoring[place] ?? 0;
+      if (uniqueBonus > 0 && pick.isUnique) pts += uniqueBonus;
+      pointsByTeam.set(pick.teamId, (pointsByTeam.get(pick.teamId) ?? 0) + pts);
     }
   }
 
@@ -89,19 +92,19 @@ function resolveAssetPath(spritePath) {
   return file ? `./assets/characters/${file}` : null;
 }
 
-function renderRacerCard(racer, podium, uniqueSet) {
+function renderRacerCard(racer, podium) {
   const key = racerKeyOf(racer);
   const place = podium.get(key) ?? null;
   const podiumClass = place ? `place-${place}` : "";
   const placeTitle = place === 1 ? "1st place" : place === 2 ? "2nd place" : place === 3 ? "3rd place" : "";
-  const isUnique = uniqueSet.has(racer.umaName);
+  const isUnique = Boolean(racer.isUnique);
   const uniquePodiumBonus = Boolean(place && isUnique);
   const initial = (racer.umaName ?? "?").charAt(0).toUpperCase();
   const portraitSrc = resolveAssetPath(racer.spritePath);
   const titleParts = [
     racer.trainer,
     placeTitle || null,
-    isUnique ? (uniquePodiumBonus ? "Unique (podium bonus)" : "Unique uma") : null,
+    isUnique ? (uniquePodiumBonus ? "Unique (+1 podium bonus)" : "Unique uma") : null,
   ].filter(Boolean);
   return `
     <article class="race-card ${podiumClass}${isUnique ? " is-unique" : ""}" title="${titleParts.join(" · ")}">
@@ -112,7 +115,7 @@ function renderRacerCard(racer, podium, uniqueSet) {
             : `<div class="race-portrait fallback">${initial}</div>`
         }
         ${place ? `<span class="podium-badge ${podiumClass}" title="${placeTitle}">${ICON_CROWN}</span>` : ""}
-        ${isUnique ? `<span class="race-icon race-icon-star" title="${uniquePodiumBonus ? "Unique podium bonus" : "Unique uma"}">${ICON_STAR}</span>` : ""}
+        ${isUnique ? `<span class="race-icon race-icon-star" title="${uniquePodiumBonus ? "Unique podium bonus (+1)" : "Unique uma"}">${ICON_STAR}</span>` : ""}
       </div>
       <div class="race-card-divider" aria-hidden="true"></div>
       <div class="race-trainer">${racer.trainer}</div>
@@ -274,7 +277,6 @@ function renderMatchDetail(matchId) {
   }
 
   const teamRows = matchTeamRows(match);
-  const uniqueSet = new Set(state.stats?.uniqueUmas ?? []);
   const rankByTeam = new Map(teamRows.map((team, idx) => [team.id, idx + 1]));
   const pointsByTeam = new Map(teamRows.map((team) => [team.id, team.matchPoints]));
 
@@ -294,7 +296,7 @@ function renderMatchDetail(matchId) {
           const racers = (race.racers ?? [])
             .filter((racer) => racer.teamId === teamId)
             .sort((a, b) => a.slot - b.slot);
-          const cards = racers.map((racer) => renderRacerCard(racer, podium, uniqueSet)).join("");
+          const cards = racers.map((racer) => renderRacerCard(racer, podium)).join("");
           return `
             <div class="team-col-race">
               <div class="team-col-race-label">${category}</div>

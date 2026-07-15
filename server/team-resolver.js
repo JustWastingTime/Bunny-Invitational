@@ -65,6 +65,15 @@ function enrichUma(uma, spriteLookup) {
   };
 }
 
+/** Stable identity for uniqueness: costume spriteId first, else display name (skins differ). */
+export function umaIdentityKey(uma) {
+  const sid = uma?.spriteId ?? uma?.characterId ?? uma?.id;
+  if (sid != null && String(sid).trim() !== "") return `sprite:${String(sid).trim()}`;
+  const name = String(uma?.name ?? "").trim();
+  if (name) return `name:${name}`;
+  return null;
+}
+
 /**
  * Match files only store teamId + slot (+ gate).
  * Trainer names, uma stats, sprites, etc. always come from data/teams/*.json.
@@ -82,6 +91,7 @@ export function resolveRacer(root, matchEntry, category, spriteLookup = null) {
     teamColor: team.color,
     trainer: member.trainer,
     umaName: uma.name ?? "Unknown",
+    umaKey: umaIdentityKey(uma),
     uma,
     key: entryKey(matchEntry.teamId, matchEntry.slot),
   };

@@ -105,7 +105,8 @@ function renderStandings(standings, scoring) {
     .join("");
 
   const p = scoring?.place ?? {};
-  $("scoring-hint").textContent = `Scoring: 1st = ${p["1"] ?? "?"}pt, 2nd = ${p["2"] ?? "?"}pt, 3rd = ${p["3"] ?? "?"}pt (editable in data/standings.json)`;
+  const uniqueBonus = scoring?.uniqueBonus ?? 1;
+  $("scoring-hint").textContent = `Scoring: 1st = ${p["1"] ?? "?"}pt, 2nd = ${p["2"] ?? "?"}pt, 3rd = ${p["3"] ?? "?"}pt, unique podium = +${uniqueBonus}pt`;
 }
 
 function renderMatchSelect(state) {
