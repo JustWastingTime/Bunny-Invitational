@@ -382,7 +382,7 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
 
   const topSkills = skillRows.slice(0, 5);
   const rarestSkills = [...skillRows]
-    .filter((row) => row.count >= 1)
+    .filter((row) => row.count >= 1 && row.rarity !== "unique")
     .sort((a, b) => a.count - b.count || a.name.localeCompare(b.name))
     .slice(0, 5);
 
