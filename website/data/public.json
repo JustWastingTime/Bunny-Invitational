@@ -56,7 +56,7 @@
             "locked": true,
             "uma": {
               "name": "Sakura Bakushin O",
-              "rating": "SS",
+              "rating": "UG",
               "style": "pace",
               "aptitudes": {
                 "terrain": "S",
@@ -229,7 +229,7 @@
             "locked": true,
             "uma": {
               "name": "Grass Wonder",
-              "rating": "S+",
+              "rating": "SS",
               "style": "late",
               "aptitudes": {
                 "terrain": "S",
@@ -237,31 +237,31 @@
                 "style": "A"
               },
               "stats": {
-                "speed": 1211,
-                "stamina": 686,
-                "power": 1143,
-                "guts": 826,
-                "wisdom": 831
+                "speed": 1300,
+                "stamina": 685,
+                "power": 1174,
+                "guts": 500,
+                "wisdom": 1102
               },
               "skills": [
                 "Where There's a Will, There's a Way",
-                "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
-                "Flashy☆Landing",
+                "Let's Pump Some Iron!",
                 "Moving Past, and Beyond",
                 "Right-Handed",
-                "Non-Standard Distance",
                 "Wet Conditions",
-                "Ramp Up",
+                "Winter Runner",
+                "Corner Adept",
+                "It's On!",
                 "No Stopping Me!",
                 "Position Pilfer",
                 "On Your Left!",
-                "Mile Straightaways",
                 "Late Surger Straightaways",
-                "Late Surger Corners",
-                "1,500,000 CC",
                 "A Small Breather",
                 "Uma Stan",
-                "Playtime's Over!"
+                "Slipstream",
+                "Be Still",
+                "Risky Business",
+                "Burning Spirit SPD"
               ],
               "spriteId": 101101,
               "spritePath": "assets/characters/chara_stand_1011_101101.png"
