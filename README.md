@@ -75,7 +75,6 @@ Switch race category quickly:
 ```
 data/
   config.json          ← which match is currently live
-  courses.json         ← track + conditions per category (shared across all matches)
   teams/               ← one JSON per club (15 players × 5 categories)
   matches/             ← one JSON per 3v3v3 matchup (gates only)
   schema/              ← JSON schemas for validation
@@ -109,22 +108,9 @@ Each team file (`data/teams/dust-bunny.json`) holds 15 members split across 5 ca
 
 Copy `data/teams/_template.json` when adding a new club. `spriteId` must match digits in a file in `assets/characters/`, including names like `chara_stand_1001_100101.png`.
 
-## Courses (`data/courses.json`)
-
-Track and weather data is defined once per category — every match uses the same course for sprint, mile, etc. Edit this single file when venues are finalized:
-
-```json
-{ "conditions": { "season": "TBD", "weather": "Sunny", "ground": "Firm" },
-  "categories": {
-    "sprint": { "course": "Nakayama Racecourse", "surface": "Turf", "distance": 1200, "direction": "right" },
-    "mile": { "course": "Tokyo Racecourse", "surface": "Turf", "distance": 1600, "direction": "left" }
-  }
-}
-```
-
 ## Match JSON
 
-Each match file only holds **who is racing** and **gate numbers** — no track data. Each category is a flat array of 9 entries (3 per team):
+Each match file only holds **who is racing** and **gate numbers**. Each category is a flat array of 9 entries (3 per team):
 
 ```json
 { "id": "day1-match01",
@@ -146,7 +132,6 @@ Each match file only holds **who is racing** and **gate numbers** — no track d
 | `data/config.json` → `activeMatch` | Switch to a different match file |
 | `activeCategory` | Switch sprint → mile → medium → long → dirt |
 | `races.<category>[].gate` | Set gate numbers (1–9) when the draw is announced |
-| `data/courses.json` | Update venue/conditions (rare — usually once before the event) |
 
 Example gate edit:
 

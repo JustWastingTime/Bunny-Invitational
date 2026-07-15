@@ -95,7 +95,6 @@ function writeOverlayState(patch) {
 
 function buildOverlayPayload() {
   const config = readJson("data/config.json");
-  const courses = readJson("data/courses.json");
   const match = readJson(`data/matches/${config.activeMatch}.json`);
   const category = match.activeCategory;
   const overlayState = readOverlayState();
@@ -108,8 +107,6 @@ function buildOverlayPayload() {
     matchNumber: match.matchNumber,
     round: match.round,
     category,
-    track: courses.categories[category],
-    conditions: courses.conditions,
     teams: resolveOverlayTeams(ROOT, match, category),
   };
 }

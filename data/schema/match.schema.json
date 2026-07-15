@@ -30,7 +30,7 @@
         "long": { "$ref": "#/$defs/entries" },
         "dirt": { "$ref": "#/$defs/entries" }
       },
-      "description": "Each category is an array of 9 entries (3 per team). Track data lives in data/courses.json."
+      "description": "Each category is an array of 9 entries (3 per team)."
     }
   },
   "$defs": {

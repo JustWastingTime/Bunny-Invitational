@@ -5,44 +5,52 @@
   "categories": {
     "sprint": [
       { "trainer": "VannesGreave",
+        "locked": true,
         "uma": { "name": "King Halo",
           "spriteId": 106102,
-          "rating": "S",
+          "rating": "UG",
           "style": "late",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
           "stats": { "speed": 1271, "stamina": 608, "power": 1213, "guts": 496, "wisdom": 1213 },
-          "skills": [] }
+          "skills": ["Louder! Tracen Cheer!","Shooting for Victory!","Let's Pump Some Iron!","Right-Handed","Professor of Curvature","No Stopping Me!","Fast & Furious","On Your Left!","Rising Dragon","Sprinting Gear","Late Surger Straightaways","Tail Held High","Playtime's Over!","Fearless","Full Throttle","Ignited Spirit SPD","Ignited Spirit PWR"] }
       },
-      { "trainer": "New Team sprint 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "ProteinBar",
+        "locked": true,
+        "uma": { "name": "Curren Chan",
+          "spriteId": 103802,
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
+          "stats": { "speed": 1230, "stamina": 511, "power": 1226, "guts": 739, "wisdom": 1232 },
+          "skills": ["One True Color","Shooting for Victory!","Budding Blossom","Wet Conditions","Fall Runner","It's On!","Homestretch Haste","Speed Star","Turbo Sprint","Sprint Corners","Pace Chaser Corners","Straight Descent","Pace Chaser Savvy","Groundwork","Tail Held High","Playtime's Over!","Risky Business","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
       { "trainer": "New Team sprint 3",
         "uma": { "name": "Uma Name",
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
     ],
     "mile": [
-      { "trainer": "New Team mile 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Dollow",
+        "locked": true,
+        "uma": { "name": "Grass Wonder",
+          "spriteId": 101101,
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1328, "stamina": 741, "power": 1278, "guts": 615, "wisdom": 1234 },
+          "skills": ["Where There's a Will, There's a Way","Let's Pump Some Iron!","Moving Past, and Beyond","Hakodate Racecourse","Wet Conditions","Professor of Curvature","It's On!","No Stopping Me!","Fast & Furious","On Your Left!","Updrafters","Mile Straightaways","1,500,000 CC","Late Surger Savvy","Tail Held High","Ignited Spirit PWR","Racing Spirit: Mood"] }
       },
       { "trainer": "New Team mile 2",
         "uma": { "name": "Uma Name",
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -51,50 +59,60 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
     ],
     "medium": [
       { "trainer": "eef",
+        "locked": true,
         "uma": { "name": "Matikanefukukitaru",
           "spriteId": 105601,
           "rating": "UG",
           "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1311, "stamina": 699, "power": 1211, "guts": 488, "wisdom": 1129 },
-          "skills": [] }
+          "skills": ["I See Victory in My Future!","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Standard Distance","Corner Recovery","Straightaway Adept","It's On!","No Stopping Me!","Fast & Furious","Slick Surge","Medium Straightaways","Medium Corners","Late Surger Straightaways","Late Surger Corners","1,500,000 CC","Uma Stan","Lone Wolf","Take the Chance","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "dnh",
+        "locked": true,
         "uma": { "name": "Mejiro Dober",
           "spriteId": 105902,
           "rating": "SS+",
           "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "S" },
           "stats": { "speed": 1231, "stamina": 738, "power": 1179, "guts": 501, "wisdom": 1118 },
-          "skills": [] }
+          "skills": ["Wherever This Wonder Leads","Triumphant Pulse","Kyoto Racecourse","Spring Runner","Professor of Curvature","Corner Recovery","Straightaway Adept","Ramp Up","Nimble Navigator","On Your Left!","Medium Straightaways","Late Surger Corners","Uma Stan","Tail Held High","From the Brink","Fearless","Downhill Speedster","Pedal to the Metal","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
-      { "trainer": "New Team medium 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Hines",
+        "locked": true,
+        "uma": { "name": "Fine Motion",
+          "spriteId": 102201,
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1235, "stamina": 776, "power": 1153, "guts": 766, "wisdom": 1082 },
+          "skills": ["Fairy Tale","Angling and Scheming","Right-Handed","Sunny Days","Straightaway Adept","Focus","It's On!","No Stopping Me!","Homestretch Haste","Killer Tunes","Refraction Arc","Determined Descent","Uma Stan","Groundwork","Tail Held High","All I've Got","Head-On","Fighting Spirit","Burning Spirit SPD"] }
       }
     ],
     "long": [
-      { "trainer": "New Team long 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Darth bobcat",
+        "locked": true,
+        "uma": { "name": "Super Creek",
+          "spriteId": 104501,
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
+          "stats": { "speed": 1318, "stamina": 779, "power": 1064, "guts": 582, "wisdom": 1208 },
+          "skills": ["Pure Heart","Triumphant Pulse","Shadow Break","Barcarole of Blessings","Corner Adept","Swinging Maestro","Straightaway Adept","It's On!","No Stopping Me!","Speed Star","Straight Descent","Uma Stan","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "New Team long 2",
         "uma": { "name": "Uma Name",
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -103,6 +121,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
@@ -113,6 +132,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -121,6 +141,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -129,6 +150,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }

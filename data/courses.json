@@ -1,9 +1,0 @@
-{ "conditions": { "season": "TBD", "weather": "Sunny", "ground": "Firm" },
-  "categories": {
-    "sprint": { "course": "Nakayama Racecourse", "surface": "Turf", "distance": 1200, "direction": "right" },
-    "mile": { "course": "Tokyo Racecourse", "surface": "Turf", "distance": 1600, "direction": "left" },
-    "medium": { "course": "TBD", "surface": "Turf", "distance": 0, "direction": "left" },
-    "long": { "course": "TBD", "surface": "Turf", "distance": 0, "direction": "left" },
-    "dirt": { "course": "TBD", "surface": "Dirt", "distance": 0, "direction": "right" }
-  }
-}

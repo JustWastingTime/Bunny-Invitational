@@ -1,54 +1,35 @@
 {
-  "id": "umazing-hotspring",
-  "name": "Umazing Hotsprings",
-  "shortName": "HOTS",
+  "id": "the-shadow-clones",
+  "name": "The Shadow Clones",
+  "shortName": "TSC",
   "tagline": "",
-  "color": "#c1e1f1",
+  "color": "#646364",
   "categories": {
     "sprint": [
       {
         "slot": 0,
-        "trainer": "chocomoto.",
-        "locked": true,
+        "trainer": "New Team sprint 1",
+        "locked": false,
         "uma": {
-          "name": "Mejiro Ardan",
-          "rating": "UG",
-          "style": "pace",
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1304,
-            "stamina": 552,
-            "power": 1227,
-            "guts": 393,
-            "wisdom": 1270
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
           },
-          "skills": [
-            "A Lifelong Dream, A Moment's Flight",
-            "Shooting for Victory!",
-            "Budding Blossom",
-            "Outer Post Proficiency",
-            "Competitive Spirit",
-            "Professor of Curvature",
-            "Straightaway Adept",
-            "Ramp Up",
-            "Nimble Navigator",
-            "Sprinting Gear",
-            "Sprint Straightaways",
-            "Pace Chaser Corners",
-            "Slipstream",
-            "Playtime's Over!",
-            "Neck and Neck",
-            "Ignited Spirit SPD",
-            "Ignited Spirit PWR",
-            "Ignited Spirit WIT",
-            "Racing Spirit: Stamina"
-          ],
-          "spriteId": 107101,
-          "spritePath": "assets/characters/chara_stand_1071_107101.png"
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
         }
       },
       {
@@ -107,88 +88,54 @@
     "mile": [
       {
         "slot": 0,
-        "trainer": "iluvtomboy2",
-        "locked": true,
+        "trainer": "New Team mile 1",
+        "locked": false,
         "uma": {
-          "name": "Sweep Tosho",
-          "rating": "UG",
-          "style": "end",
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "S",
+            "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1302,
-            "stamina": 669,
-            "power": 1265,
-            "guts": 445,
-            "wisdom": 1228
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
           },
-          "skills": [
-            "Victory belongs to me—Strelitzia! ☆",
-            "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
-            "Let's Pump Some Iron!",
-            "Moving Past, and Beyond",
-            "Right-Handed",
-            "Professor of Curvature",
-            "Straightaway Adept",
-            "It's On!",
-            "No Stopping Me!",
-            "Homestretch Haste",
-            "End Closer Corners",
-            "Tail Held High",
-            "Slipstream",
-            "Playtime's Over!",
-            "Daring Strike",
-            "Restraint",
-            "Ignited Spirit SPD"
-          ],
-          "spriteId": 104401,
-          "spritePath": "assets/characters/chara_stand_1044_104401.png"
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
         }
       },
       {
         "slot": 1,
-        "trainer": "Zardimi",
-        "locked": true,
+        "trainer": "New Team mile 2",
+        "locked": false,
         "uma": {
-          "name": "Hishi Amazon",
-          "rating": "SS",
-          "style": "end",
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "S",
+            "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1238,
-            "stamina": 666,
-            "power": 1202,
-            "guts": 485,
-            "wisdom": 1061
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
           },
-          "skills": [
-            "You and Me! One-on-One!",
-            "Triumphant Pulse",
-            "Let's Pump Some Iron!",
-            "Moving Past, and Beyond",
-            "Professor of Curvature",
-            "Corner Recovery",
-            "Straightaway Adept",
-            "It's On!",
-            "No Stopping Me!",
-            "Homestretch Haste",
-            "End Closer Straightaways",
-            "End Closer Corners",
-            "Tail Held High",
-            "Slipstream",
-            "Playtime's Over!",
-            "Daring Strike",
-            "Leap Forward"
-          ],
-          "spriteId": 101201,
-          "spritePath": "assets/characters/chara_stand_1012_101201.png"
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
         }
       },
       {
@@ -221,43 +168,28 @@
     "medium": [
       {
         "slot": 0,
-        "trainer": "mysticnut",
-        "locked": true,
+        "trainer": "New Team medium 1",
+        "locked": false,
         "uma": {
-          "name": "T.M. Opera O",
-          "rating": "UG",
-          "style": "pace",
+          "name": "Uma Name",
+          "rating": "S",
+          "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "S",
+            "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1265,
-            "stamina": 834,
-            "power": 1211,
-            "guts": 616,
-            "wisdom": 1165
+            "speed": 0,
+            "stamina": 0,
+            "power": 0,
+            "guts": 0,
+            "wisdom": 0
           },
-          "skills": [
-            "Barcarole of Blessings",
-            "Red Shift/LP1211-M",
-            "Right-Handed",
-            "Spring Runner",
-            "Professor of Curvature",
-            "It's On!",
-            "No Stopping Me!",
-            "Prepared to Pass",
-            "Killer Tunes",
-            "Pace Chaser Corners",
-            "Determined Descent",
-            "Uma Stan",
-            "Burning Spirit SPD",
-            "Ignited Spirit PWR",
-            "Racing Spirit: Guts"
-          ],
-          "spriteId": 101502,
-          "spritePath": "assets/characters/chara_stand_1015_101502.png"
+          "skills": [],
+          "characterId": "",
+          "spriteId": "",
+          "spritePath": null
         }
       },
       {
