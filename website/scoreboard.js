@@ -518,6 +518,28 @@ function renderUmaStatsTable() {
 
 function renderStats() {
   const stats = state.stats ?? {};
+  const hasUmaTable = Array.isArray(stats.umas);
+
+  if (!hasUmaTable) {
+    const highlights = document.getElementById("stats-highlights");
+    if (highlights) {
+      highlights.innerHTML = `
+        <article class="stat-spotlight" style="grid-column: 1 / -1">
+          <span class="stat-spotlight-label">Stats unavailable</span>
+          <strong class="stat-spotlight-value text-sm">Website data is out of date</strong>
+          <span class="stat-spotlight-note">Restart the local server, or run <code>npm run build:website</code>, then refresh.</span>
+        </article>
+      `;
+    }
+    const body = document.getElementById("uma-stats-body");
+    if (body) body.innerHTML = `<tr><td colspan="8" class="stats-empty">Waiting for rebuilt stats…</td></tr>`;
+    renderSkillRankList("top-skills-list", []);
+    renderSkillRankList("rarest-skills-list", []);
+    renderTeamRankList("team-stats-list", [], "totalStats");
+    renderTeamRankList("team-skills-list", [], "skillScore");
+    return;
+  }
+
   const highlights = document.getElementById("stats-highlights");
   if (highlights) {
     const mostCommon = stats.mostCommonUma;

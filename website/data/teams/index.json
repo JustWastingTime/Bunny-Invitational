@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T22:04:01.530Z",
+  "updatedAt": "2026-07-15T22:19:08.287Z",
   "teams": [
     {
       "id": "dust-bunny",
@@ -7,7 +7,7 @@
       "shortName": "BUNS",
       "tagline": "",
       "color": "#e91e45",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "cabal",
@@ -15,7 +15,7 @@
       "shortName": "CABAL",
       "tagline": "",
       "color": "#c0fa3b",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "falena",
@@ -23,7 +23,7 @@
       "shortName": "FLNA",
       "tagline": "falena club",
       "color": "#2e65cf",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "king",
@@ -31,7 +31,7 @@
       "shortName": "KING",
       "tagline": "",
       "color": "#359b62",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "kita-trauma",
@@ -39,7 +39,7 @@
       "shortName": "KITA",
       "tagline": "",
       "color": "#eb5153",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "rilliance",
@@ -47,7 +47,7 @@
       "shortName": "RILL",
       "tagline": "",
       "color": "#da49b8",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "ritto-dorm-dropouts",
@@ -55,7 +55,7 @@
       "shortName": "RDD",
       "tagline": "",
       "color": "#992724",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "the-shadow-clones",
@@ -63,7 +63,7 @@
       "shortName": "TSC",
       "tagline": "",
       "color": "#646364",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "uma-love",
@@ -71,7 +71,7 @@
       "shortName": "LOVE",
       "tagline": "",
       "color": "#f66a9b",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "umalliance",
@@ -79,7 +79,7 @@
       "shortName": "ALLI",
       "tagline": "",
       "color": "#2c49c9",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "umamusuko",
@@ -87,7 +87,7 @@
       "shortName": "USK",
       "tagline": "",
       "color": "#f1c41f",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     },
     {
       "id": "umazing-hotspring",
@@ -95,7 +95,7 @@
       "shortName": "HOTS",
       "tagline": "",
       "color": "#c1e1f1",
-      "updatedAt": "2026-07-15T22:04:01.530Z"
+      "updatedAt": "2026-07-15T22:19:08.287Z"
     }
   ]
 }
