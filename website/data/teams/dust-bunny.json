@@ -182,7 +182,7 @@
       {
         "slot": 1,
         "trainer": "Spurs@BUNS",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Grass Wonder",
           "rating": "S+",
@@ -213,7 +213,11 @@
             "On Your Left!",
             "Mile Straightaways",
             "Late Surger Straightaways",
-            "Late Surger Corners"
+            "Late Surger Corners",
+            "1,500,000 CC",
+            "A Small Breather",
+            "Uma Stan",
+            "Playtime's Over!"
           ],
           "spriteId": 101101,
           "spritePath": "assets/characters/chara_stand_1011_101101.png"

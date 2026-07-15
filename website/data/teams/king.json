@@ -455,11 +455,11 @@
     "dirt": [
       {
         "slot": 0,
-        "trainer": "New Team dirt 1",
-        "locked": false,
+        "trainer": "Button Masher",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Smart Falcon",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -467,16 +467,34 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1253,
+            "stamina": 606,
+            "power": 1187,
+            "guts": 521,
+            "wisdom": 1193
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "SPARKLY☆STARDOM",
+            "Angling and Scheming",
+            "Oi Racecourse",
+            "Wet Conditions",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Prudent Positioning",
+            "Ramp Up",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Front Runner Straightaways",
+            "Top Runner",
+            "Groundwork",
+            "Trending in the Charts!",
+            "Forward, March!",
+            "Nothing Ventured",
+            "Burning Spirit SPD",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 104601,
+          "spritePath": "assets/characters/chara_stand_1046_104601.png"
         }
       },
       {

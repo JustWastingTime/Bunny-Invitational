@@ -396,11 +396,11 @@
     "dirt": [
       {
         "slot": 0,
-        "trainer": "New Team dirt 1",
-        "locked": false,
+        "trainer": "Morazur",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "El Condor Pasa",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -408,16 +408,33 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1284,
+            "stamina": 527,
+            "power": 1242,
+            "guts": 426,
+            "wisdom": 1404
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Victoria por plancha ☆",
+            "Budding Blossom",
+            "Right-Handed",
+            "Outer Post Proficiency",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "Speed Star",
+            "Turbo Sprint",
+            "Pace Chaser Straightaways",
+            "Pace Chaser Corners",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Neck and Neck",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 101401,
+          "spritePath": "assets/characters/chara_stand_1014_101401.png"
         }
       },
       {

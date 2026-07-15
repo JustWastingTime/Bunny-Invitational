@@ -168,28 +168,42 @@
     "medium": [
       {
         "slot": 0,
-        "trainer": "New Team medium 1",
+        "trainer": "arene_",
         "locked": false,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Tamamo Cross",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
-            "terrain": "A",
+            "terrain": "S",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1252,
+            "stamina": 814,
+            "power": 1226,
+            "guts": 546,
+            "wisdom": 1171
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "White Lightning Comin' Through!",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Spring Runner",
+            "Professor of Curvature",
+            "It's On!",
+            "No Stopping Me!",
+            "Fast & Furious",
+            "Late Surger Straightaways",
+            "Late Surger Corners",
+            "Uma Stan",
+            "Tail Nine",
+            "All I've Got",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 102101,
+          "spritePath": "assets/characters/chara_stand_1021_102101.png"
         }
       },
       {

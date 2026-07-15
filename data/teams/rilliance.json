@@ -4,14 +4,15 @@
   "color": "#da49b8",
   "categories": {
     "sprint": [
-      { "trainer": "New Team sprint 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Varrukas",
+        "locked": true,
+        "uma": { "name": "Maruzensky",
+          "spriteId": 100402,
+          "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1276, "stamina": 493, "power": 1224, "guts": 529, "wisdom": 1356 },
+          "skills": ["A Kiss for Courage","Shooting for Victory!","Angling and Scheming","Professor of Curvature","Corner Recovery","Straightaway Adept","Straightaway Acceleration","Prudent Positioning","It's On!","No Stopping Me!","Taking the Lead","Fast-Paced","Front Runner Straightaways","Dodging Danger","Front Runner Savvy","Groundwork","Tail Held High","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
       { "trainer": "New Team sprint 2",
         "uma": { "name": "Uma Name",
@@ -33,23 +34,25 @@
       }
     ],
     "mile": [
-      { "trainer": "New Team mile 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Seraphos",
+        "locked": true,
+        "uma": { "name": "Seiun Sky",
+          "spriteId": 102001,
+          "rating": "UG",
           "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1212, "stamina": 746, "power": 1170, "guts": 561, "wisdom": 1215 },
+          "skills": ["Angling and Scheming","Operation Cacao","Right-Handed","Non-Standard Distance","Focus","Taking the Lead","Escape Artist","Mile Maven","Mile Straightaways","Mile Corners","Shifting Gears","Unyielding Spirit","Front Runner Straightaways","Front Runner Corners","Dodging Danger","Top Runner","Front Runner Savvy","Groundwork","Tail Held High","Ignited Spirit SPD","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team mile 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "BeatThisStone",
+        "locked": true,
+        "uma": { "name": "Special Week",
+          "spriteId": 100101,
+          "rating": "SS",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1259, "stamina": 575, "power": 1156, "guts": 450, "wisdom": 1215 },
+          "skills": ["Shooting Star","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Hakodate Racecourse","Professor of Curvature","Corner Recovery","Straightaway Adept","Ramp Up","No Stopping Me!","Homestretch Haste","On Your Left!","Updrafters","1,500,000 CC","Uma Stan","Playtime's Over!","Ignited Spirit PWR"] }
       },
       { "trainer": "New Team mile 3",
         "uma": { "name": "Uma Name",
@@ -62,14 +65,15 @@
       }
     ],
     "medium": [
-      { "trainer": "New Team medium 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Reimixqt",
+        "locked": true,
+        "uma": { "name": "Mejiro Dober",
+          "spriteId": 105902,
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1224, "stamina": 809, "power": 1152, "guts": 530, "wisdom": 1230 },
+          "skills": ["Wherever This Wonder Leads","Let's Pump Some Iron!","Moving Past, and Beyond","Eternal Encompassing Shine","Straightaway Adept","It's On!","No Stopping Me!","Slick Surge","Medium Straightaways","Medium Corners","Late Surger Straightaways","Tail Held High","All I've Got","Nothing Ventured","Dauntless","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "New Team medium 2",
         "uma": { "name": "Uma Name",
@@ -120,14 +124,15 @@
       }
     ],
     "dirt": [
-      { "trainer": "New Team dirt 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "GimmeKiss",
+        "locked": true,
+        "uma": { "name": "El Condor Pasa",
+          "spriteId": 101401,
+          "rating": "SS",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1238, "stamina": 686, "power": 1141, "guts": 643, "wisdom": 1087 },
+          "skills": ["Victoria por plancha ☆","Triumphant Pulse","Right-Handed","Wet Conditions","Fall Runner","Professor of Curvature","Straightaway Adept","It's On!","Prepared to Pass","Sprint Straightaways","Perfect Prep!","Tail Held High","Slipstream","Playtime's Over!","Full Tilt","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS"] }
       },
       { "trainer": "New Team dirt 2",
         "uma": { "name": "Uma Name",

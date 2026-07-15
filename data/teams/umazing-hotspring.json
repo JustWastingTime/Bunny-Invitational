@@ -124,14 +124,15 @@
       }
     ],
     "dirt": [
-      { "trainer": "New Team dirt 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Morazur",
+        "locked": true,
+        "uma": { "name": "El Condor Pasa",
+          "spriteId": 101401,
+          "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1284, "stamina": 527, "power": 1242, "guts": 426, "wisdom": 1404 },
+          "skills": ["Victoria por plancha ☆","Budding Blossom","Right-Handed","Outer Post Proficiency","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Speed Star","Turbo Sprint","Pace Chaser Straightaways","Pace Chaser Corners","Tail Held High","Playtime's Over!","Neck and Neck","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "New Team dirt 2",
         "uma": { "name": "Uma Name",

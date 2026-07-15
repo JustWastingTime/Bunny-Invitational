@@ -47,13 +47,14 @@
           "skills": ["You and Me! One-on-One!","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Wet Conditions","It's On!","No Stopping Me!","Mile Straightaways","Unyielding Spirit","End Closer Straightaways","End Closer Corners","Tail Held High","Slipstream","Playtime's Over!","Daring Strike","Leap Forward","Ignited Spirit PWR"] }
       },
       { "trainer": "Spurs@BUNS",
+        "locked": true,
         "uma": { "name": "Grass Wonder",
           "spriteId": 101101,
           "rating": "S+",
           "style": "late",
           "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
           "stats": { "speed": 1211, "stamina": 686, "power": 1143, "guts": 826, "wisdom": 831 },
-          "skills": ["Where There's a Will, There's a Way","OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Flashy☆Landing","Moving Past, and Beyond","Right-Handed","Non-Standard Distance","Wet Conditions","Ramp Up","No Stopping Me!","Position Pilfer","On Your Left!","Mile Straightaways","Late Surger Straightaways","Late Surger Corners"] }
+          "skills": ["Where There's a Will, There's a Way","OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Flashy☆Landing","Moving Past, and Beyond","Right-Handed","Non-Standard Distance","Wet Conditions","Ramp Up","No Stopping Me!","Position Pilfer","On Your Left!","Mile Straightaways","Late Surger Straightaways","Late Surger Corners","1,500,000 CC","A Small Breather","Uma Stan","Playtime's Over!"] }
       },
       { "trainer": "DadSmoocher",
         "uma": { "name": "Nice Nature",

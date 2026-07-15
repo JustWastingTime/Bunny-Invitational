@@ -8,11 +8,11 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "New Team sprint 1",
-        "locked": false,
+        "trainer": "Varrukas",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Maruzensky",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -20,16 +20,36 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1276,
+            "stamina": 493,
+            "power": 1224,
+            "guts": 529,
+            "wisdom": 1356
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "A Kiss for Courage",
+            "Shooting for Victory!",
+            "Angling and Scheming",
+            "Professor of Curvature",
+            "Corner Recovery",
+            "Straightaway Adept",
+            "Straightaway Acceleration",
+            "Prudent Positioning",
+            "It's On!",
+            "No Stopping Me!",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Front Runner Straightaways",
+            "Dodging Danger",
+            "Front Runner Savvy",
+            "Groundwork",
+            "Tail Held High",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 100402,
+          "spritePath": "assets/characters/chara_stand_1004_100402.png"
         }
       },
       {
@@ -88,54 +108,92 @@
     "mile": [
       {
         "slot": 0,
-        "trainer": "New Team mile 1",
-        "locked": false,
+        "trainer": "Seraphos",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Seiun Sky",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1212,
+            "stamina": 746,
+            "power": 1170,
+            "guts": 561,
+            "wisdom": 1215
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Angling and Scheming",
+            "Operation Cacao",
+            "Right-Handed",
+            "Non-Standard Distance",
+            "Focus",
+            "Taking the Lead",
+            "Escape Artist",
+            "Mile Maven",
+            "Mile Straightaways",
+            "Mile Corners",
+            "Shifting Gears",
+            "Unyielding Spirit",
+            "Front Runner Straightaways",
+            "Front Runner Corners",
+            "Dodging Danger",
+            "Top Runner",
+            "Front Runner Savvy",
+            "Groundwork",
+            "Tail Held High",
+            "Ignited Spirit SPD",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 102001,
+          "spritePath": "assets/characters/chara_stand_1020_102001.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "New Team mile 2",
-        "locked": false,
+        "trainer": "BeatThisStone",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Special Week",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1259,
+            "stamina": 575,
+            "power": 1156,
+            "guts": 450,
+            "wisdom": 1215
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Shooting Star",
+            "Let's Pump Some Iron!",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Hakodate Racecourse",
+            "Professor of Curvature",
+            "Corner Recovery",
+            "Straightaway Adept",
+            "Ramp Up",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "On Your Left!",
+            "Updrafters",
+            "1,500,000 CC",
+            "Uma Stan",
+            "Playtime's Over!",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 100101,
+          "spritePath": "assets/characters/chara_stand_1001_100101.png"
         }
       },
       {
@@ -168,28 +226,45 @@
     "medium": [
       {
         "slot": 0,
-        "trainer": "New Team medium 1",
-        "locked": false,
+        "trainer": "Reimixqt",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Mejiro Dober",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1224,
+            "stamina": 809,
+            "power": 1152,
+            "guts": 530,
+            "wisdom": 1230
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Wherever This Wonder Leads",
+            "Let's Pump Some Iron!",
+            "Moving Past, and Beyond",
+            "Eternal Encompassing Shine",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "Slick Surge",
+            "Medium Straightaways",
+            "Medium Corners",
+            "Late Surger Straightaways",
+            "Tail Held High",
+            "All I've Got",
+            "Nothing Ventured",
+            "Dauntless",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 105902,
+          "spritePath": "assets/characters/chara_stand_1059_105902.png"
         }
       },
       {
@@ -328,28 +403,46 @@
     "dirt": [
       {
         "slot": 0,
-        "trainer": "New Team dirt 1",
-        "locked": false,
+        "trainer": "GimmeKiss",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "El Condor Pasa",
+          "rating": "SS",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1238,
+            "stamina": 686,
+            "power": 1141,
+            "guts": 643,
+            "wisdom": 1087
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Victoria por plancha ☆",
+            "Triumphant Pulse",
+            "Right-Handed",
+            "Wet Conditions",
+            "Fall Runner",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Prepared to Pass",
+            "Sprint Straightaways",
+            "Perfect Prep!",
+            "Tail Held High",
+            "Slipstream",
+            "Playtime's Over!",
+            "Full Tilt",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS"
+          ],
+          "spriteId": 101401,
+          "spritePath": "assets/characters/chara_stand_1014_101401.png"
         }
       },
       {

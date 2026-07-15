@@ -33,14 +33,15 @@
       }
     ],
     "mile": [
-      { "trainer": "New Team mile 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Elita",
+        "locked": true,
+        "uma": { "name": "Maruzensky",
+          "spriteId": 100402,
+          "rating": "UG",
           "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1302, "stamina": 611, "power": 1220, "guts": 535, "wisdom": 1314 },
+          "skills": ["A Kiss for Courage","Angling and Scheming","Operation Cacao","Non-Standard Distance","Wet Conditions","Professor of Curvature","Corner Recovery","Straightaway Adept","Homestretch Haste","Taking the Lead","Fast-Paced","Mile Maven","Mile Straightaways","Mile Corners","Shifting Gears","Front Runner Corners","Dodging Danger","Groundwork","Tail Held High","Lone Wolf","Burning Spirit SPD","Ignited Spirit WIT"] }
       },
       { "trainer": "New Team mile 2",
         "uma": { "name": "Uma Name",
@@ -121,14 +122,15 @@
       }
     ],
     "dirt": [
-      { "trainer": "New Team dirt 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Nutrition",
+        "locked": true,
+        "uma": { "name": "Haru Urara",
+          "spriteId": 105202,
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1262, "stamina": 556, "power": 1238, "guts": 746, "wisdom": 1292 },
+          "skills": ["114th Time's the Charm","Budding Blossom","Louder! Tracen Cheer!","Right-Handed","Rainy Days","Outer Post Proficiency","Straightaway Acceleration","It's On!","No Stopping Me!","Fast & Furious","On Your Left!","Turbo Sprint","Meticulous Measures","Late Surger Corners","Lucky Seven","Tail Held High","Full Throttle","Burning Spirit PWR","Racing Spirit: Speed","Racing Spirit: Stamina","Racing Spirit: Wit"] }
       },
       { "trainer": "New Team dirt 2",
         "uma": { "name": "Uma Name",
