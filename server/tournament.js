@@ -7,12 +7,14 @@ import {
   loadMatch,
   resolveMatchRacers,
   resolveMatchTeams,
+  resolveRacer,
   getTeamMember,
   umaIdentityKey,
 } from "./team-resolver.js";
 import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, publishWebsiteSkills, buildWebsiteTeams } from "./website-publish.js";
-import { buildSpriteLookup } from "./sprite-resolver.js";
+import { buildSpriteLookup, resolveSpritePath } from "./sprite-resolver.js";
 import { listTeams } from "./team-editor.js";
+import { listSkills } from "./skills.js";
 const STANDINGS_REL = "data/standings.json";
 const WEBSITE_STANDINGS_REL = "website/data/standings.json";
 const WEBSITE_PUBLIC_REL = "website/data/public.json";
@@ -21,6 +23,9 @@ const DEFAULT_SCORING = {
   place: { "1": 5, "2": 3, "3": 1 },
   uniqueBonus: 1,
 };
+
+const STAT_KEYS = ["speed", "stamina", "power", "guts", "wisdom"];
+const HAKODATE_SKILL_KEYS = new Set(["hakodateracecourse", "hakodateracecoursex"]);
 
 export function listMatchFiles(matchesDir) {
   if (!fs.existsSync(matchesDir)) return [];
@@ -155,6 +160,272 @@ function isUniqueMember(root, uniqueKeys, teamId, category, slot) {
   }
 }
 
+function normalizeSkillKey(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/[◎○◯★☆♪]/g, "")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function isPlaceholderUma(uma) {
+  const name = String(uma?.name ?? "").trim();
+  if (!name || name === "Uma Name") return true;
+  return false;
+}
+
+function sumUmaStats(uma) {
+  const stats = uma?.stats ?? {};
+  return STAT_KEYS.reduce((sum, key) => sum + (Number(stats[key]) || 0), 0);
+}
+
+function skillWeight(rarity) {
+  const tone = String(rarity ?? "normal").toLowerCase();
+  // Gold (rare) skills count double; unique/normal count as 1.
+  return tone === "rare" ? 2 : 1;
+}
+
+function buildSkillRarityLookup() {
+  const byKey = new Map();
+  for (const skill of listSkills()) {
+    const rarity = String(skill.rarity ?? "normal").toLowerCase() || "normal";
+    byKey.set(normalizeSkillKey(skill.name), rarity);
+    for (const alias of skill.aliases ?? []) {
+      byKey.set(normalizeSkillKey(alias), rarity);
+    }
+  }
+  return byKey;
+}
+
+function lookupSkillRarity(skillName, rarityByKey) {
+  const key = normalizeSkillKey(skillName);
+  if (rarityByKey.has(key)) return rarityByKey.get(key);
+  for (const [known, rarity] of rarityByKey.entries()) {
+    if (known.includes(key) || key.includes(known)) return rarity;
+  }
+  return "normal";
+}
+
+function emptyRaceTally() {
+  return { starts: 0, wins: 0, top3: 0 };
+}
+
+/**
+ * Roster + race analytics for the website Stats page.
+ * Population is tournament-wide roster count (skins = distinct identities).
+ */
+function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) {
+  const spriteLookup = buildSpriteLookup(root);
+  const rarityByKey = buildSkillRarityLookup();
+
+  const rosterByKey = new Map();
+  const skillCounts = new Map();
+  const teamPower = [];
+  let hakodateUmas = 0;
+  let filledUmaCount = 0;
+
+  for (const summary of listTeams(root)) {
+    let team;
+    try {
+      team = loadTeam(root, summary.id);
+    } catch {
+      continue;
+    }
+
+    let totalStats = 0;
+    let skillScore = 0;
+    let skillCount = 0;
+    let umaCount = 0;
+
+    for (const roster of Object.values(team.categories ?? {})) {
+      for (const member of roster ?? []) {
+        const uma = member?.uma ?? {};
+        if (isPlaceholderUma(uma)) continue;
+
+        umaCount += 1;
+        filledUmaCount += 1;
+        totalStats += sumUmaStats(uma);
+
+        const skills = Array.isArray(uma.skills) ? uma.skills.filter(Boolean) : [];
+        let hasHakodate = false;
+        for (const skillName of skills) {
+          const skillKey = normalizeSkillKey(skillName);
+          const rarity = lookupSkillRarity(skillName, rarityByKey);
+          skillCount += 1;
+          skillScore += skillWeight(rarity);
+
+          const prev = skillCounts.get(skillKey) ?? {
+            name: skillName,
+            count: 0,
+            rarity,
+          };
+          prev.count += 1;
+          if (!prev.name || prev.name.length < String(skillName).length) prev.name = skillName;
+          prev.rarity = rarity;
+          skillCounts.set(skillKey, prev);
+
+          if (HAKODATE_SKILL_KEYS.has(skillKey)) hasHakodate = true;
+        }
+        if (hasHakodate) hakodateUmas += 1;
+
+        const umaKey = umaIdentityKey(uma);
+        if (!umaKey) continue;
+        const enriched = {
+          ...uma,
+          spriteId: uma.spriteId ?? uma.characterId ?? null,
+          spritePath: resolveSpritePath(uma, spriteLookup),
+        };
+        const row = rosterByKey.get(umaKey) ?? {
+          umaKey,
+          umaName: enriched.name ?? "Unknown",
+          spritePath: enriched.spritePath ?? null,
+          population: 0,
+          isUnique: uniqueKeys.has(umaKey),
+          starts: 0,
+          wins: 0,
+          top3: 0,
+        };
+        row.population += 1;
+        if (!row.spritePath && enriched.spritePath) row.spritePath = enriched.spritePath;
+        if (enriched.name) row.umaName = enriched.name;
+        rosterByKey.set(umaKey, row);
+      }
+    }
+
+    teamPower.push({
+      id: team.id,
+      name: team.name,
+      shortName: team.shortName ?? team.name,
+      color: team.color,
+      umaCount,
+      totalStats,
+      skillCount,
+      skillScore,
+      avgStats: umaCount > 0 ? totalStats / umaCount : 0,
+    });
+  }
+
+  // Race results from standings (works even if match lineup was cleared).
+  const raceByKey = new Map();
+  const bumpRace = (umaKey, field) => {
+    if (!umaKey) return;
+    const tally = raceByKey.get(umaKey) ?? emptyRaceTally();
+    tally[field] += 1;
+    raceByKey.set(umaKey, tally);
+  };
+  const resolvePickKey = (teamId, category, slot) => {
+    try {
+      const { member } = getTeamMember(root, teamId, category, slot);
+      return umaIdentityKey(member?.uma ?? {});
+    } catch {
+      return null;
+    }
+  };
+
+  for (const [matchId, matchStandings] of Object.entries(standings?.matches ?? {})) {
+    for (const category of CATEGORIES) {
+      const placements = matchStandings?.raceResults?.[category]?.placements ?? emptyPlacements();
+      const ran = Boolean(placements["1"] || placements["2"] || placements["3"]);
+      if (!ran) continue;
+
+      const matchPublic = matches.find((row) => row.id === matchId);
+      const fieldRacers = matchPublic?.categories?.[category]?.racers ?? [];
+      if (fieldRacers.length) {
+        for (const racer of fieldRacers) bumpRace(racer.umaKey, "starts");
+      } else {
+        for (const place of ["1", "2", "3"]) {
+          const pick = placements[place];
+          if (!pick?.teamId) continue;
+          bumpRace(resolvePickKey(pick.teamId, category, pick.slot), "starts");
+        }
+      }
+
+      for (const place of ["1", "2", "3"]) {
+        const pick = placements[place];
+        if (!pick?.teamId) continue;
+        const umaKey = resolvePickKey(pick.teamId, category, pick.slot);
+        if (place === "1") bumpRace(umaKey, "wins");
+        bumpRace(umaKey, "top3");
+      }
+    }
+  }
+
+  const umas = [...rosterByKey.values()]
+    .map((row) => {
+      const race = raceByKey.get(row.umaKey) ?? emptyRaceTally();
+      const starts = race.starts;
+      const wins = race.wins;
+      const top3 = race.top3;
+      return {
+        ...row,
+        starts,
+        wins,
+        top3,
+        winRate: starts > 0 ? wins / starts : 0,
+        top3Rate: starts > 0 ? top3 / starts : 0,
+      };
+    })
+    .sort(
+      (a, b) =>
+        b.population - a.population ||
+        b.starts - a.starts ||
+        b.wins - a.wins ||
+        a.umaName.localeCompare(b.umaName)
+    );
+
+  const skillRows = [...skillCounts.values()]
+    .map((row) => ({
+      name: row.name,
+      count: row.count,
+      rarity: row.rarity,
+    }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+
+  const topSkills = skillRows.slice(0, 5);
+  const rarestSkills = [...skillRows]
+    .filter((row) => row.count >= 1)
+    .sort((a, b) => a.count - b.count || a.name.localeCompare(b.name))
+    .slice(0, 5);
+
+  const teamsByStats = [...teamPower].sort(
+    (a, b) => b.totalStats - a.totalStats || b.skillScore - a.skillScore || a.name.localeCompare(b.name)
+  );
+  const teamsBySkills = [...teamPower].sort(
+    (a, b) => b.skillScore - a.skillScore || b.totalStats - a.totalStats || a.name.localeCompare(b.name)
+  );
+
+  const mostCommonUma = umas[0] ?? null;
+  const bestWinRateUma =
+    [...umas]
+      .filter((row) => row.starts > 0)
+      .sort((a, b) => b.winRate - a.winRate || b.wins - a.wins || b.population - a.population || a.umaName.localeCompare(b.umaName))[0] ??
+    null;
+
+  return {
+    totalMatches: matches.length,
+    uniqueUmaCount: uniqueUmas.length,
+    filledUmaCount,
+    hakodateUmas,
+    mostCommonUma,
+    bestWinRateUma,
+    uniqueUmas: uniqueUmas.map((row) => row.umaName),
+    uniqueUmaKeys: uniqueUmas.map((row) => row.umaKey),
+    umas,
+    // Keep legacy popularity shape for any old consumers.
+    popularity: umas.map((row) => ({
+      umaName: row.umaName,
+      starts: row.starts || row.population,
+      wins: row.wins,
+      winRate: row.winRate,
+    })),
+    topSkills,
+    rarestSkills,
+    teamsByStats,
+    teamsBySkills,
+    statsLeader: teamsByStats[0] ?? null,
+    skillsLeader: teamsBySkills[0] ?? null,
+  };
+}
+
 function writeStandings(root, standings) {
   standings.updatedAt = new Date().toISOString();
   const full = path.join(root, STANDINGS_REL);
@@ -230,8 +501,31 @@ function buildWebsiteData(root, standings) {
         const enrichedPlacements = Object.fromEntries(
           ["1", "2", "3"].map((place) => {
             const pick = placements?.[place];
-            if (!pick) return [place, null];
-            return [place, racerByKey[entryKey(pick.teamId, pick.slot)] ?? null];
+            if (!pick?.teamId) return [place, null];
+            const key = entryKey(pick.teamId, pick.slot);
+            if (racerByKey[key]) return [place, racerByKey[key]];
+            try {
+              const racer = resolveRacer(root, pick, category, spriteLookup);
+              return [
+                place,
+                {
+                  teamId: racer.teamId,
+                  teamName: racer.teamName,
+                  teamColor: racer.teamColor,
+                  slot: racer.slot,
+                  gate: racer.gate,
+                  trainer: racer.trainer,
+                  umaName: racer.umaName,
+                  umaKey: racer.umaKey,
+                  isUnique: Boolean(racer.umaKey && uniqueKeys.has(racer.umaKey)),
+                  spritePath: racer.uma.spritePath,
+                  style: racer.uma.style ?? null,
+                  key: racer.key,
+                },
+              ];
+            } catch {
+              return [place, null];
+            }
           })
         );
 
@@ -249,39 +543,6 @@ function buildWebsiteData(root, standings) {
     };
   });
 
-  const startsByUma = new Map();
-  const winsByUma = new Map();
-
-  for (const match of matches) {
-    for (const category of CATEGORIES) {
-      const race = match.categories[category];
-      for (const racer of race.racers) {
-        const name = racer.umaName;
-        startsByUma.set(name, (startsByUma.get(name) ?? 0) + 1);
-      }
-      const winner = race.placements["1"];
-      if (winner?.umaName) {
-        winsByUma.set(winner.umaName, (winsByUma.get(winner.umaName) ?? 0) + 1);
-      }
-    }
-  }
-
-  const popularity = [...startsByUma.entries()]
-    .map(([umaName, starts]) => ({
-      umaName,
-      starts,
-      wins: winsByUma.get(umaName) ?? 0,
-      winRate: starts > 0 ? (winsByUma.get(umaName) ?? 0) / starts : 0,
-    }))
-    .sort((a, b) => b.starts - a.starts || b.wins - a.wins || a.umaName.localeCompare(b.umaName));
-
-  const mostCommonUma = popularity[0] ?? null;
-  const bestWinRateUma =
-    [...popularity]
-      .filter((row) => row.starts > 0)
-      .sort((a, b) => b.winRate - a.winRate || b.wins - a.wins || a.umaName.localeCompare(b.umaName))[0] ??
-    null;
-
   return {
     tournament: standings.tournament ?? "Bunny Invitational",
     updatedAt: standings.updatedAt,
@@ -291,15 +552,7 @@ function buildWebsiteData(root, standings) {
       .sort((a, b) => b.points - a.points || b.firsts - a.firsts),
     teams,
     matches,
-    stats: {
-      totalMatches: matches.length,
-      uniqueUmaCount: uniqueUmas.length,
-      mostCommonUma,
-      bestWinRateUma,
-      uniqueUmas: uniqueUmas.map((row) => row.umaName),
-      uniqueUmaKeys: uniqueUmas.map((row) => row.umaKey),
-      popularity,
-    },
+    stats: buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings),
   };
 }
 

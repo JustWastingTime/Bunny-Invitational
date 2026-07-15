@@ -421,28 +421,146 @@ function renderTeams() {
   refreshTeamsPage();
 }
 
+let umaFilter = "all";
+
+function pct(value) {
+  return `${Math.round((Number(value) || 0) * 100)}%`;
+}
+
+function formatInt(value) {
+  return Number(value || 0).toLocaleString();
+}
+
+function renderSkillRankList(targetId, rows) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  if (!rows?.length) {
+    el.innerHTML = `<li class="stats-rank-empty">No skill data yet.</li>`;
+    return;
+  }
+  el.innerHTML = rows
+    .map((row, idx) => {
+      const rarity = String(row.rarity ?? "normal").toLowerCase();
+      return `<li class="stats-rank-item">
+        <span class="stats-rank-pos">${idx + 1}</span>
+        <span class="stats-rank-main">
+          <strong>${row.name}</strong>
+          <small class="skill-rarity-tag rarity-${rarity}">${rarity}</small>
+        </span>
+        <span class="stats-rank-value">${row.count}</span>
+      </li>`;
+    })
+    .join("");
+}
+
+function renderTeamRankList(targetId, rows, valueKey, suffix = "") {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  if (!rows?.length) {
+    el.innerHTML = `<li class="stats-rank-empty">No team data yet.</li>`;
+    return;
+  }
+  el.innerHTML = rows
+    .slice(0, 5)
+    .map((row, idx) => {
+      return `<li class="stats-rank-item" style="--team:${row.color}">
+        <span class="stats-rank-pos">${idx + 1}</span>
+        <span class="stats-rank-swatch" aria-hidden="true"></span>
+        <span class="stats-rank-main">
+          <strong>${row.name}</strong>
+          <small>${row.umaCount ?? 0} umas</small>
+        </span>
+        <span class="stats-rank-value">${formatInt(row[valueKey])}${suffix}</span>
+      </li>`;
+    })
+    .join("");
+}
+
+function renderUmaStatsTable() {
+  const body = document.getElementById("uma-stats-body");
+  if (!body) return;
+  const rows = (state.stats?.umas ?? []).filter((row) => (umaFilter === "unique" ? row.isUnique : true));
+
+  if (!rows.length) {
+    body.innerHTML = `<tr><td colspan="8" class="stats-empty">No uma data yet.</td></tr>`;
+    return;
+  }
+
+  body.innerHTML = rows
+    .map((row, idx) => {
+      const portrait = resolveAssetPath(row.spritePath);
+      const initial = (row.umaName ?? "?").charAt(0).toUpperCase();
+      return `<tr class="${row.isUnique ? "is-unique-row" : ""}">
+        <td class="stats-num">${idx + 1}</td>
+        <td>
+          <div class="uma-stat-identity">
+            ${
+              portrait
+                ? `<img class="uma-stat-thumb" src="${portrait}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'uma-stat-thumb fallback',textContent:'${initial}'}))" />`
+                : `<span class="uma-stat-thumb fallback">${initial}</span>`
+            }
+            <div>
+              <strong>${row.umaName}</strong>
+              ${row.isUnique ? `<span class="unique-pill">Unique</span>` : ""}
+            </div>
+          </div>
+        </td>
+        <td class="stats-num">${row.population}</td>
+        <td class="stats-num">${row.starts}</td>
+        <td class="stats-num">${row.wins}</td>
+        <td class="stats-num">${row.top3}</td>
+        <td class="stats-num">${row.starts ? pct(row.winRate) : "—"}</td>
+        <td class="stats-num">${row.starts ? pct(row.top3Rate) : "—"}</td>
+      </tr>`;
+    })
+    .join("");
+}
+
 function renderStats() {
   const stats = state.stats ?? {};
-  const mostCommon = stats.mostCommonUma;
-  const bestWinRate = stats.bestWinRateUma;
-  document.getElementById("stats-grid").innerHTML = `
-    <article class="stat-card"><h3>Unique Umas</h3><p>${stats.uniqueUmaCount ?? 0}</p></article>
-    <article class="stat-card"><h3>Total Matches</h3><p>${stats.totalMatches ?? 0}</p></article>
-    <article class="stat-card"><h3>Most Common Uma</h3><p>${mostCommon ? `${mostCommon.umaName} (${mostCommon.starts})` : "—"}</p></article>
-    <article class="stat-card"><h3>Highest Win Rate</h3><p>${bestWinRate ? `${bestWinRate.umaName} (${Math.round(bestWinRate.winRate * 100)}%)` : "—"}</p></article>
-  `;
+  const highlights = document.getElementById("stats-highlights");
+  if (highlights) {
+    const mostCommon = stats.mostCommonUma;
+    const statsLeader = stats.statsLeader;
+    const skillsLeader = stats.skillsLeader;
+    highlights.innerHTML = `
+      <article class="stat-spotlight">
+        <span class="stat-spotlight-label">Unique Umas</span>
+        <strong class="stat-spotlight-value">${stats.uniqueUmaCount ?? 0}</strong>
+        <span class="stat-spotlight-note">Only one of their kind in the field</span>
+      </article>
+      <article class="stat-spotlight accent-hakodate">
+        <span class="stat-spotlight-label">Hakodate Racecourse</span>
+        <strong class="stat-spotlight-value">${stats.hakodateUmas ?? 0}</strong>
+        <span class="stat-spotlight-note">Umas packing the course skill</span>
+      </article>
+      <article class="stat-spotlight">
+        <span class="stat-spotlight-label">Most Common Uma</span>
+        <strong class="stat-spotlight-value text-sm">${mostCommon?.umaName ?? "—"}</strong>
+        <span class="stat-spotlight-note">${mostCommon ? `${mostCommon.population} on roster` : "Waiting on rosters"}</span>
+      </article>
+      <article class="stat-spotlight">
+        <span class="stat-spotlight-label">Stats Leader</span>
+        <strong class="stat-spotlight-value text-sm">${statsLeader?.name ?? "—"}</strong>
+        <span class="stat-spotlight-note">${statsLeader ? `${formatInt(statsLeader.totalStats)} total stats` : "—"}</span>
+      </article>
+      <article class="stat-spotlight">
+        <span class="stat-spotlight-label">Skills Leader</span>
+        <strong class="stat-spotlight-value text-sm">${skillsLeader?.name ?? "—"}</strong>
+        <span class="stat-spotlight-note">${skillsLeader ? `${formatInt(skillsLeader.skillScore)} skill score` : "—"}</span>
+      </article>
+    `;
+  }
 
-  document.getElementById("popularity-body").innerHTML = (stats.popularity ?? [])
-    .slice(0, 20)
-    .map(
-      (row) => `<tr>
-        <td>${row.umaName}</td>
-        <td>${row.starts}</td>
-        <td>${row.wins}</td>
-        <td>${Math.round((row.winRate ?? 0) * 100)}%</td>
-      </tr>`
-    )
-    .join("");
+  document.querySelectorAll("[data-uma-filter]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.umaFilter === umaFilter);
+  });
+
+  renderUmaStatsTable();
+  renderSkillRankList("top-skills-list", stats.topSkills);
+  renderSkillRankList("rarest-skills-list", stats.rarestSkills);
+  renderTeamRankList("team-stats-list", stats.teamsByStats, "totalStats");
+  renderTeamRankList("team-skills-list", stats.teamsBySkills, "skillScore");
 }
 
 function render() {
@@ -475,6 +593,16 @@ function setupInteractions() {
     document.querySelectorAll(".match-box.chart-node").forEach((node) => {
       node.classList.toggle("selected", node.dataset.matchId === selectedMatchId);
     });
+  });
+
+  document.getElementById("view-stats")?.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-uma-filter]");
+    if (!btn) return;
+    umaFilter = btn.dataset.umaFilter === "unique" ? "unique" : "all";
+    document.querySelectorAll("[data-uma-filter]").forEach((el) => {
+      el.classList.toggle("active", el.dataset.umaFilter === umaFilter);
+    });
+    renderUmaStatsTable();
   });
 }
 

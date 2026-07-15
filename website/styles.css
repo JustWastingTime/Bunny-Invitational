@@ -1046,6 +1046,302 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   margin-top: 4px;
 }
 
+.stats-hero {
+  margin-bottom: 14px;
+}
+
+.stats-hero-copy {
+  max-width: 60ch;
+}
+
+.stats-highlights {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-spotlight {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  background:
+    linear-gradient(160deg, rgba(255, 207, 138, 0.12), transparent 55%),
+    rgba(0, 0, 0, 0.22);
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-spotlight.accent-hakodate {
+  background:
+    linear-gradient(160deg, rgba(120, 210, 255, 0.16), transparent 55%),
+    rgba(0, 0, 0, 0.22);
+}
+
+.stat-spotlight-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.stat-spotlight-value {
+  font-size: 34px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.stat-spotlight-value.text-sm {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.stat-spotlight-note {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.stats-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 12px;
+}
+
+.stats-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 14px;
+}
+
+.stats-panel-wide {
+  grid-column: 1 / -1;
+}
+
+.stats-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.stats-filter {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.stats-filter-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.stats-filter-btn.active {
+  color: #2a1b12;
+  background: var(--accent);
+}
+
+.stats-table-wrap {
+  overflow: auto;
+  max-height: 520px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stats-table {
+  margin: 0;
+}
+
+.stats-table th {
+  position: sticky;
+  top: 0;
+  background: #3a2c52;
+  z-index: 1;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stats-table td {
+  font-size: 13px;
+}
+
+.stats-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.uma-stat-identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uma-stat-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top;
+  background: rgba(255, 255, 255, 0.08);
+  flex: 0 0 auto;
+}
+
+.uma-stat-thumb.fallback {
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.unique-pill {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffe9b8;
+  background: rgba(244, 193, 93, 0.22);
+  border: 1px solid rgba(244, 193, 93, 0.45);
+  vertical-align: middle;
+}
+
+.is-unique-row td {
+  background: rgba(244, 193, 93, 0.04);
+}
+
+.stats-subhead {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.skill-meta-grid,
+.team-power-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.stats-rank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.stats-rank-item {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.team-rank-list .stats-rank-item {
+  grid-template-columns: 28px 10px minmax(0, 1fr) auto;
+}
+
+.stats-rank-pos {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 12px;
+  background: rgba(255, 207, 138, 0.14);
+  color: var(--accent);
+}
+
+.stats-rank-swatch {
+  width: 10px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--team, var(--accent));
+}
+
+.stats-rank-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stats-rank-main strong {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stats-rank-main small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.stats-rank-value {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.skill-rarity-tag {
+  display: inline-block;
+  width: fit-content;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.skill-rarity-tag.rarity-rare {
+  color: #ffe9b8;
+  border-color: rgba(244, 193, 93, 0.55);
+  background: rgba(244, 193, 93, 0.16);
+}
+
+.skill-rarity-tag.rarity-unique {
+  color: #f7d7ff;
+  border-color: rgba(230, 167, 255, 0.5);
+  background: rgba(230, 167, 255, 0.14);
+}
+
+.stats-rank-empty,
+.stats-empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
 @media (max-width: 960px) {
   .teams-layout {
     grid-template-columns: 1fr;
@@ -1061,5 +1357,21 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 
   .uma-record-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-layout,
+  .skill-meta-grid,
+  .team-power-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-highlights {
+    grid-template-columns: 1fr;
   }
 }

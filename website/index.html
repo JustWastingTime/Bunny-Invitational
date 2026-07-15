@@ -57,21 +57,75 @@
     </section>
 
     <section id="view-stats" class="view card hidden">
-      <h2>Tournament Statistics</h2>
-      <div id="stats-grid" class="stats-grid"></div>
-      <div class="card nested">
-        <h3>Most Used Umas</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Uma</th>
-              <th>Starts</th>
-              <th>Wins</th>
-              <th>Win rate</th>
-            </tr>
-          </thead>
-          <tbody id="popularity-body"></tbody>
-        </table>
+      <div class="stats-hero">
+        <div>
+          <h2>Tournament Statistics</h2>
+          <p class="stats-hero-copy">Roster depth, race results, skill trends, and team power — refreshed from live tournament data.</p>
+        </div>
+      </div>
+
+      <div id="stats-highlights" class="stats-highlights"></div>
+
+      <div class="stats-layout">
+        <section class="stats-panel stats-panel-wide">
+          <div class="stats-panel-head">
+            <div>
+              <h3>Uma Population</h3>
+              <p class="hint">Sorted by roster count. Skins count as separate umas.</p>
+            </div>
+            <div class="stats-filter" role="group" aria-label="Uma filter">
+              <button type="button" class="stats-filter-btn active" data-uma-filter="all">All</button>
+              <button type="button" class="stats-filter-btn" data-uma-filter="unique">Unique only</button>
+            </div>
+          </div>
+          <div class="stats-table-wrap">
+            <table class="stats-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Uma</th>
+                  <th>Pop</th>
+                  <th>Starts</th>
+                  <th>Wins</th>
+                  <th>Top 3</th>
+                  <th>Win %</th>
+                  <th>Top 3 %</th>
+                </tr>
+              </thead>
+              <tbody id="uma-stats-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="stats-panel">
+          <h3>Skill Meta</h3>
+          <p class="hint">Most taken vs rarest taken (at least once).</p>
+          <div class="skill-meta-grid">
+            <div>
+              <h4 class="stats-subhead">Top 5 Common</h4>
+              <ol id="top-skills-list" class="stats-rank-list"></ol>
+            </div>
+            <div>
+              <h4 class="stats-subhead">Top 5 Rarest</h4>
+              <ol id="rarest-skills-list" class="stats-rank-list"></ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-panel">
+          <h3>Team Power</h3>
+          <p class="hint">Gold (rare) skills count as 2 toward skill score.</p>
+          <div class="team-power-grid">
+            <div>
+              <h4 class="stats-subhead">Most Total Stats</h4>
+              <ol id="team-stats-list" class="stats-rank-list team-rank-list"></ol>
+            </div>
+            <div>
+              <h4 class="stats-subhead">Most Skills</h4>
+              <ol id="team-skills-list" class="stats-rank-list team-rank-list"></ol>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   </main>
