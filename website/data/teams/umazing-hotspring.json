@@ -53,28 +53,44 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
-        "locked": false,
+        "trainer": "AzureLight",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Sakura Chiyono O",
+          "rating": "SS",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1204,
+            "stamina": 555,
+            "power": 1201,
+            "guts": 446,
+            "wisdom": 1222
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Ambition to Surpass the Sakura",
+            "Triumphant Pulse",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Standard Distance",
+            "Professor of Curvature",
+            "It's On!",
+            "Nimble Navigator",
+            "Speed Star",
+            "Sprint Straightaways",
+            "Countermeasure",
+            "Meticulous Measures",
+            "Pace Chaser Corners",
+            "Highlander",
+            "Tail Held High",
+            "Playtime's Over!"
+          ],
+          "spriteId": 106901,
+          "spritePath": "assets/characters/chara_stand_1069_106901.png"
         }
       },
       {

@@ -225,25 +225,41 @@
       },
       {
         "slot": 2,
-        "trainer": "DadSmoocher",
-        "locked": false,
+        "trainer": "Kylian Umappé",
+        "locked": true,
         "uma": {
           "name": "Nice Nature",
-          "rating": "UG",
-          "style": "end",
+          "rating": "SS+",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
-            "style": "A"
+            "distance": "S",
+            "style": "S"
           },
           "stats": {
-            "speed": 1050,
-            "stamina": 880,
-            "power": 800,
-            "guts": 680,
-            "wisdom": 750
+            "speed": 1239,
+            "stamina": 758,
+            "power": 1208,
+            "guts": 649,
+            "wisdom": 1027
           },
-          "skills": [],
+          "skills": [
+            "Just a Little Farther!",
+            "Let's Pump Some Iron!",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Professor of Curvature",
+            "It's On!",
+            "Position Pilfer",
+            "On Your Left!",
+            "Outer Swell",
+            "Mile Straightaways",
+            "Late Surger Corners",
+            "Uma Stan",
+            "Tail Held High",
+            "Fearless",
+            "Burning Spirit SPD"
+          ],
           "spriteId": 106001,
           "spritePath": "assets/characters/chara_stand_1060_106001.png"
         }

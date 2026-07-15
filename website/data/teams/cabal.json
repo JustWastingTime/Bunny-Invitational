@@ -47,11 +47,11 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
+        "trainer": "Nekata",
         "locked": false,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Maruzensky",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -59,16 +59,30 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1260,
+            "stamina": 500,
+            "power": 1217,
+            "guts": 696,
+            "wisdom": 1203
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "A Kiss for Courage",
+            "Angling and Scheming",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Corner Recovery",
+            "Focus",
+            "It's On!",
+            "Taking the Lead",
+            "Unrestrained",
+            "Sprint Corners",
+            "Dodging Danger",
+            "Groundwork",
+            "Tail Held High",
+            "In High Spirits"
+          ],
+          "spriteId": 100402,
+          "spritePath": "assets/characters/chara_stand_1004_100402.png"
         }
       },
       {

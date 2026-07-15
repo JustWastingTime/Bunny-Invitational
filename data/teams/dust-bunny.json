@@ -56,14 +56,15 @@
           "stats": { "speed": 1211, "stamina": 686, "power": 1143, "guts": 826, "wisdom": 831 },
           "skills": ["Where There's a Will, There's a Way","OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Flashy☆Landing","Moving Past, and Beyond","Right-Handed","Non-Standard Distance","Wet Conditions","Ramp Up","No Stopping Me!","Position Pilfer","On Your Left!","Mile Straightaways","Late Surger Straightaways","Late Surger Corners","1,500,000 CC","A Small Breather","Uma Stan","Playtime's Over!"] }
       },
-      { "trainer": "DadSmoocher",
+      { "trainer": "Kylian Umappé",
+        "locked": true,
         "uma": { "name": "Nice Nature",
           "spriteId": 106001,
-          "rating": "UG",
-          "style": "end",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1050, "stamina": 880, "power": 800, "guts": 680, "wisdom": 750 },
-          "skills": [] }
+          "rating": "SS+",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "S" },
+          "stats": { "speed": 1239, "stamina": 758, "power": 1208, "guts": 649, "wisdom": 1027 },
+          "skills": ["Just a Little Farther!","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Professor of Curvature","It's On!","Position Pilfer","On Your Left!","Outer Swell","Mile Straightaways","Late Surger Corners","Uma Stan","Tail Held High","Fearless","Burning Spirit SPD"] }
       }
     ],
     "medium": [

@@ -14,14 +14,14 @@
           "stats": { "speed": 1229, "stamina": 336, "power": 1149, "guts": 773, "wisdom": 1248 },
           "skills": ["Prideful King","Shooting for Victory!","Budding Blossom","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","Gap Closer","Late Surger Straightaways","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team sprint 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Nekata",
+        "uma": { "name": "Maruzensky",
+          "spriteId": 100402,
+          "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1260, "stamina": 500, "power": 1217, "guts": 696, "wisdom": 1203 },
+          "skills": ["A Kiss for Courage","Angling and Scheming","Right-Handed","Professor of Curvature","Corner Recovery","Focus","It's On!","Taking the Lead","Unrestrained","Sprint Corners","Dodging Danger","Groundwork","Tail Held High","In High Spirits"] }
       },
       { "trainer": "New Team sprint 3",
         "uma": { "name": "Uma Name",

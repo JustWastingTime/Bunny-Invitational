@@ -269,25 +269,41 @@
           },
           {
             "slot": 2,
-            "trainer": "DadSmoocher",
-            "locked": false,
+            "trainer": "Kylian Umappé",
+            "locked": true,
             "uma": {
               "name": "Nice Nature",
-              "rating": "UG",
-              "style": "end",
+              "rating": "SS+",
+              "style": "late",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
-                "style": "A"
+                "distance": "S",
+                "style": "S"
               },
               "stats": {
-                "speed": 1050,
-                "stamina": 880,
-                "power": 800,
-                "guts": 680,
-                "wisdom": 750
+                "speed": 1239,
+                "stamina": 758,
+                "power": 1208,
+                "guts": 649,
+                "wisdom": 1027
               },
-              "skills": [],
+              "skills": [
+                "Just a Little Farther!",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Professor of Curvature",
+                "It's On!",
+                "Position Pilfer",
+                "On Your Left!",
+                "Outer Swell",
+                "Mile Straightaways",
+                "Late Surger Corners",
+                "Uma Stan",
+                "Tail Held High",
+                "Fearless",
+                "Burning Spirit SPD"
+              ],
               "spriteId": 106001,
               "spritePath": "assets/characters/chara_stand_1060_106001.png"
             }
@@ -738,11 +754,11 @@
           },
           {
             "slot": 1,
-            "trainer": "New Team sprint 2",
+            "trainer": "Nekata",
             "locked": false,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
+              "name": "Maruzensky",
+              "rating": "UG",
               "style": "front",
               "aptitudes": {
                 "terrain": "A",
@@ -750,16 +766,30 @@
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1260,
+                "stamina": 500,
+                "power": 1217,
+                "guts": 696,
+                "wisdom": 1203
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "A Kiss for Courage",
+                "Angling and Scheming",
+                "Right-Handed",
+                "Professor of Curvature",
+                "Corner Recovery",
+                "Focus",
+                "It's On!",
+                "Taking the Lead",
+                "Unrestrained",
+                "Sprint Corners",
+                "Dodging Danger",
+                "Groundwork",
+                "Tail Held High",
+                "In High Spirits"
+              ],
+              "spriteId": 100402,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png"
             }
           },
           {
@@ -5574,28 +5604,44 @@
           },
           {
             "slot": 1,
-            "trainer": "New Team sprint 2",
-            "locked": false,
+            "trainer": "AzureLight",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "Sakura Chiyono O",
+              "rating": "SS",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1204,
+                "stamina": 555,
+                "power": 1201,
+                "guts": 446,
+                "wisdom": 1222
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "Ambition to Surpass the Sakura",
+                "Triumphant Pulse",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Standard Distance",
+                "Professor of Curvature",
+                "It's On!",
+                "Nimble Navigator",
+                "Speed Star",
+                "Sprint Straightaways",
+                "Countermeasure",
+                "Meticulous Measures",
+                "Pace Chaser Corners",
+                "Highlander",
+                "Tail Held High",
+                "Playtime's Over!"
+              ],
+              "spriteId": 106901,
+              "spritePath": "assets/characters/chara_stand_1069_106901.png"
             }
           },
           {
@@ -6090,11 +6136,11 @@
               "teamColor": "#c0fa3b",
               "slot": 1,
               "gate": null,
-              "trainer": "New Team sprint 2",
-              "umaName": "Uma Name",
-              "umaKey": "name:Uma Name",
+              "trainer": "Nekata",
+              "umaName": "Maruzensky",
+              "umaKey": "sprite:100402",
               "isUnique": false,
-              "spritePath": null,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png",
               "style": "front",
               "key": "cabal:1"
             },
@@ -6236,12 +6282,12 @@
               "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
-              "trainer": "DadSmoocher",
+              "trainer": "Kylian Umappé",
               "umaName": "Nice Nature",
               "umaKey": "sprite:106001",
               "isUnique": true,
               "spritePath": "assets/characters/chara_stand_1060_106001.png",
-              "style": "end",
+              "style": "late",
               "key": "dust-bunny:2"
             },
             {
@@ -7328,10 +7374,10 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 34,
+    "uniqueUmaCount": 35,
     "mostCommonUma": {
       "umaName": "Uma Name",
-      "starts": 9,
+      "starts": 8,
       "wins": 0,
       "winRate": 0
     },
@@ -7367,6 +7413,7 @@
       "Nishino Flower",
       "Rice Shower",
       "Sakura Bakushin O",
+      "Sakura Chiyono O",
       "Satono Diamond",
       "Seiun Sky",
       "Silence Suzuka",
@@ -7403,6 +7450,7 @@
       "sprite:105101",
       "sprite:103001",
       "sprite:104101",
+      "sprite:106901",
       "sprite:106701",
       "sprite:102001",
       "sprite:100201",
@@ -7416,7 +7464,7 @@
     "popularity": [
       {
         "umaName": "Uma Name",
-        "starts": 9,
+        "starts": 8,
         "wins": 0,
         "winRate": 0
       },
@@ -7518,6 +7566,12 @@
       },
       {
         "umaName": "Manhattan Cafe",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Maruzensky",
         "starts": 1,
         "wins": 0,
         "winRate": 0

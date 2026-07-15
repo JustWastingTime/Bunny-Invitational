@@ -14,14 +14,15 @@
           "stats": { "speed": 1304, "stamina": 552, "power": 1227, "guts": 393, "wisdom": 1270 },
           "skills": ["A Lifelong Dream, A Moment's Flight","Shooting for Victory!","Budding Blossom","Outer Post Proficiency","Competitive Spirit","Professor of Curvature","Straightaway Adept","Ramp Up","Nimble Navigator","Sprinting Gear","Sprint Straightaways","Pace Chaser Corners","Slipstream","Playtime's Over!","Neck and Neck","Ignited Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT","Racing Spirit: Stamina"] }
       },
-      { "trainer": "New Team sprint 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "AzureLight",
+        "locked": true,
+        "uma": { "name": "Sakura Chiyono O",
+          "spriteId": 106901,
+          "rating": "SS",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1204, "stamina": 555, "power": 1201, "guts": 446, "wisdom": 1222 },
+          "skills": ["Ambition to Surpass the Sakura","Triumphant Pulse","Shooting for Victory!","Budding Blossom","Standard Distance","Professor of Curvature","It's On!","Nimble Navigator","Speed Star","Sprint Straightaways","Countermeasure","Meticulous Measures","Pace Chaser Corners","Highlander","Tail Held High","Playtime's Over!"] }
       },
       { "trainer": "New Team sprint 3",
         "uma": { "name": "Uma Name",
