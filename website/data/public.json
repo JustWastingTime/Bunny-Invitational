@@ -40,10 +40,10 @@
   "teams": [
     {
       "id": "dust-bunny",
-      "name": "Dust Bunny",
+      "name": "BUNS",
       "shortName": "BUNS",
       "tagline": "",
-      "color": "#e91e8c",
+      "color": "#e91e45",
       "categories": {
         "sprint": [
           {
@@ -53,7 +53,7 @@
             "uma": {
               "name": "Sakura Bakushin O",
               "rating": "SS",
-              "style": "pace",
+              "style": "front",
               "aptitudes": {
                 "terrain": "S",
                 "distance": "S",
@@ -259,7 +259,7 @@
           {
             "slot": 0,
             "trainer": "Crabpeople",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Gold Ship",
               "rating": "UG",
@@ -277,7 +277,22 @@
                 "wisdom": 1168
               },
               "skills": [
-                "564 Escapades"
+                "564 Escapades",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "Rushing Gale!",
+                "Nimble Navigator",
+                "Homestretch Haste",
+                "Innate Experience",
+                "Medium Straightaways",
+                "Uma Stan",
+                "Tail Held High",
+                "Daring Strike",
+                "Take the Chance",
+                "Elated",
+                "Burning Spirit SPD"
               ],
               "spriteId": 100702,
               "spritePath": "assets/characters/chara_stand_1007_100702.png"
@@ -625,19 +640,19 @@
       }
     },
     {
-      "id": "falena",
-      "name": "Falena",
-      "shortName": "FLNA",
-      "tagline": "falena club",
-      "color": "#7c4dff",
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "shortName": "CABAL",
+      "tagline": "",
+      "color": "#c0fa3b",
       "categories": {
         "sprint": [
           {
             "slot": 0,
-            "trainer": "Swaejudinoli",
+            "trainer": "New Team sprint 1",
             "locked": false,
             "uma": {
-              "name": "Curren Chan",
+              "name": "Uma Name",
               "rating": "S",
               "style": "front",
               "aptitudes": {
@@ -653,56 +668,573 @@
                 "wisdom": 0
               },
               "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team sprint 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team sprint 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "mile": [
+          {
+            "slot": 0,
+            "trainer": "New Team mile 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team mile 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team mile 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "medium": [
+          {
+            "slot": 0,
+            "trainer": "WildCat",
+            "locked": true,
+            "uma": {
+              "name": "Tokai Teio",
+              "rating": "UG",
+              "style": "late",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 1312,
+                "stamina": 921,
+                "power": 1228,
+                "guts": 655,
+                "wisdom": 990
+              },
+              "skills": [
+                "Sky-High Teio Step",
+                "Red Shift/LP1211-M",
+                "Behold Thine Emperor's Divine Might",
+                "Moving Past, and Beyond",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Fast & Furious",
+                "On Your Left!",
+                "Medium Straightaways",
+                "Late Surger Corners",
+                "Triple 7s",
+                "Burning Spirit SPD",
+                "Racing Spirit: Stamina"
+              ],
+              "spriteId": 100301,
+              "spritePath": "assets/characters/chara_stand_1003_100301.png"
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "Tn",
+            "locked": true,
+            "uma": {
+              "name": "Agnes Digital",
+              "rating": "UG",
+              "style": "end",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 1306,
+                "stamina": 840,
+                "power": 1222,
+                "guts": 531,
+                "wisdom": 1001
+              },
+              "skills": [
+                "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+                "Moving Past, and Beyond",
+                "Spring Runner",
+                "Corner Adept",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Straightaway Spurt",
+                "Medium Straightaways",
+                "Medium Corners",
+                "Superstan",
+                "Tail Held High",
+                "Playtime's Over!",
+                "Daring Strike",
+                "Risky Business",
+                "Burning Spirit SPD",
+                "Ignited Spirit STA",
+                "Ignited Spirit PWR"
+              ],
+              "spriteId": 101901,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png"
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "Horsefight",
+            "locked": true,
+            "uma": {
+              "name": "Oguri Cap",
+              "rating": "UG",
+              "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 1314,
+                "stamina": 696,
+                "power": 1278,
+                "guts": 536,
+                "wisdom": 1254
+              },
+              "skills": [
+                "Festive Miracle",
+                "Right-Handed",
+                "Standard Distance",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "Focus",
+                "It's On!",
+                "No Stopping Me!",
+                "Gourmand",
+                "Triple 7s",
+                "Uma Stan",
+                "Groundwork",
+                "Playtime's Over!",
+                "Nothing Ventured",
+                "Burning Spirit SPD",
+                "Ignited Spirit STA",
+                "Ignited Spirit PWR"
+              ],
+              "spriteId": 100602,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png"
+            }
+          }
+        ],
+        "long": [
+          {
+            "slot": 0,
+            "trainer": "New Team long 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team long 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team long 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "dirt": [
+          {
+            "slot": 0,
+            "trainer": "New Team dirt 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team dirt 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team dirt 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "falena",
+      "name": "Falena",
+      "shortName": "FLNA",
+      "tagline": "falena club",
+      "color": "#2e65cf",
+      "categories": {
+        "sprint": [
+          {
+            "slot": 0,
+            "trainer": "Swaejudinoli",
+            "locked": true,
+            "uma": {
+              "name": "Curren Chan",
+              "rating": "UG",
+              "style": "pace",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "S",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 1278,
+                "stamina": 635,
+                "power": 1168,
+                "guts": 534,
+                "wisdom": 1267
+              },
+              "skills": [
+                "One True Color",
+                "Shooting for Victory!",
+                "Blazing Pride",
+                "Budding Blossom",
+                "Hakodate Racecourse",
+                "Cloudy Days",
+                "Professor of Curvature",
+                "It's On!",
+                "Nimble Navigator",
+                "Prepared to Pass",
+                "Turbo Sprint",
+                "Sprint Corners",
+                "Pace Chaser Corners",
+                "Pace Chaser Savvy",
+                "Groundwork",
+                "Neck and Neck",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Racing Spirit: Wit"
+              ],
               "spriteId": 103802,
               "spritePath": "assets/characters/chara_stand_1038_103802.png"
             }
           },
           {
             "slot": 1,
-            "trainer": "XV11",
-            "locked": false,
+            "trainer": "XV11@FLNA",
+            "locked": true,
             "uma": {
               "name": "Meisho Doto",
-              "rating": "S",
-              "style": "front",
+              "rating": "UG",
+              "style": "pace",
               "aptitudes": {
-                "terrain": "A",
+                "terrain": "S",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1290,
+                "stamina": 569,
+                "power": 1227,
+                "guts": 436,
+                "wisdom": 1275
               },
-              "skills": [],
+              "skills": [
+                "I Never Goof Up!",
+                "Triumphant Pulse",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Right-Handed",
+                "Competitive Spirit",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "Nimble Navigator",
+                "Speed Star",
+                "Pace Chaser Corners",
+                "Straight Descent",
+                "Slipstream",
+                "Neck and Neck",
+                "Burning Spirit SPD"
+              ],
               "spriteId": 105801,
               "spritePath": "assets/characters/chara_stand_1058_105801.png"
             }
           },
           {
             "slot": 2,
-            "trainer": "zera",
-            "locked": false,
+            "trainer": "Zera",
+            "locked": true,
             "uma": {
               "name": "Mayano Top Gun",
-              "rating": "S",
-              "style": "front",
+              "rating": "UG",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1283,
+                "stamina": 638,
+                "power": 1248,
+                "guts": 482,
+                "wisdom": 1158
               },
-              "skills": [],
+              "skills": [
+                "Flashy☆Landing",
+                "Angling and Scheming",
+                "Budding Blossom",
+                "Right-Handed",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Focus",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Plan X",
+                "Meticulous Measures",
+                "Pace Chaser Savvy",
+                "Uma Stan",
+                "Tail Held High",
+                "Playtime's Over!",
+                "Head-On",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Ignited Spirit WIT"
+              ],
               "spriteId": 102401,
               "spritePath": "assets/characters/chara_stand_1024_102401.png"
             }
@@ -712,24 +1244,41 @@
           {
             "slot": 0,
             "trainer": "StarryNightlight",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Manhattan Cafe",
-              "rating": "S",
-              "style": "front",
+              "rating": "SS",
+              "style": "late",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1202,
+                "stamina": 665,
+                "power": 1066,
+                "guts": 384,
+                "wisdom": 1238
               },
-              "skills": [],
+              "skills": [
+                "Chasing After You",
+                "Triumphant Pulse",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Winter Runner",
+                "Rainy Days",
+                "Professor of Curvature",
+                "It's On!",
+                "No Stopping Me!",
+                "Outer Swell",
+                "Mile Straightaways",
+                "Mile Corners",
+                "Late Surger Straightaways",
+                "Uma Stan",
+                "Tail Held High",
+                "Burning Spirit SPD"
+              ],
               "spriteId": 102501,
               "spritePath": "assets/characters/chara_stand_1025_102501.png"
             }
@@ -761,25 +1310,47 @@
           },
           {
             "slot": 2,
-            "trainer": "Cyndexv",
-            "locked": false,
+            "trainer": "Cyndexv@FLNA",
+            "locked": true,
             "uma": {
               "name": "Oguri Cap",
-              "rating": "S",
-              "style": "front",
+              "rating": "UG",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1299,
+                "stamina": 586,
+                "power": 1268,
+                "guts": 488,
+                "wisdom": 1180
               },
-              "skills": [],
+              "skills": [
+                "Festive Miracle",
+                "Angling and Scheming",
+                "U=ma2",
+                "Non-Standard Distance",
+                "Winter Runner",
+                "Professor of Curvature",
+                "Corner Recovery",
+                "Straightaway Adept",
+                "Focus",
+                "It's On!",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Shifting Gears",
+                "Shrewd Step",
+                "Triple 7s",
+                "Groundwork",
+                "Shake It Out",
+                "Neck and Neck",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR",
+                "Ignited Spirit GUTS"
+              ],
               "spriteId": 100602,
               "spritePath": "assets/characters/chara_stand_1006_100602.png"
             }
@@ -813,25 +1384,42 @@
           },
           {
             "slot": 1,
-            "trainer": "Chan",
-            "locked": false,
+            "trainer": "Yechers",
+            "locked": true,
             "uma": {
               "name": "Eishin Flash",
-              "rating": "S",
-              "style": "front",
+              "rating": "UG",
+              "style": "late",
               "aptitudes": {
-                "terrain": "A",
-                "distance": "A",
+                "terrain": "S",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1231,
+                "stamina": 832,
+                "power": 1201,
+                "guts": 520,
+                "wisdom": 1211
               },
-              "skills": [],
+              "skills": [
+                "Schwarzes Schwert",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Professor of Curvature",
+                "It's On!",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Position Pilfer",
+                "On Your Left!",
+                "Medium Corners",
+                "Late Surger Savvy",
+                "Tail Held High",
+                "Playtime's Over!",
+                "Fighting Spirit",
+                "Latch On",
+                "Ignited Spirit SPD"
+              ],
               "spriteId": 103701,
               "spritePath": "assets/characters/chara_stand_1037_103701.png"
             }
@@ -967,25 +1555,44 @@
           },
           {
             "slot": 1,
-            "trainer": "Flemm",
-            "locked": false,
+            "trainer": "Flem",
+            "locked": true,
             "uma": {
               "name": "Smart Falcon",
-              "rating": "S",
+              "rating": "UG",
               "style": "front",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1307,
+                "stamina": 595,
+                "power": 1257,
+                "guts": 728,
+                "wisdom": 1188
               },
-              "skills": [],
+              "skills": [
+                "SPARKLY☆STARDOM",
+                "Triumphant Pulse",
+                "Victoria por plancha ☆",
+                "Wet Conditions",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "Prudent Positioning",
+                "It's On!",
+                "No Stopping Me!",
+                "Sprinting Gear",
+                "Sprint Straightaways",
+                "Sprint Corners",
+                "Groundwork",
+                "Tail Held High",
+                "Slipstream",
+                "Trending in the Charts!",
+                "Ignited Spirit WIT"
+              ],
               "spriteId": 104601,
               "spritePath": "assets/characters/chara_stand_1046_104601.png"
             }
@@ -1425,6 +2032,415 @@
       }
     },
     {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "shortName": "RILL",
+      "tagline": "",
+      "color": "#da49b8",
+      "categories": {
+        "sprint": [
+          {
+            "slot": 0,
+            "trainer": "New Team sprint 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team sprint 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team sprint 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "mile": [
+          {
+            "slot": 0,
+            "trainer": "New Team mile 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team mile 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team mile 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "medium": [
+          {
+            "slot": 0,
+            "trainer": "New Team medium 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team medium 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team medium 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "long": [
+          {
+            "slot": 0,
+            "trainer": "New Team long 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team long 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team long 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ],
+        "dirt": [
+          {
+            "slot": 0,
+            "trainer": "New Team dirt 1",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 1,
+            "trainer": "New Team dirt 2",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          },
+          {
+            "slot": 2,
+            "trainer": "New Team dirt 3",
+            "locked": false,
+            "uma": {
+              "name": "Uma Name",
+              "rating": "S",
+              "style": "front",
+              "aptitudes": {
+                "terrain": "A",
+                "distance": "A",
+                "style": "A"
+              },
+              "stats": {
+                "speed": 0,
+                "stamina": 0,
+                "power": 0,
+                "guts": 0,
+                "wisdom": 0
+              },
+              "skills": [],
+              "characterId": "",
+              "spriteId": "",
+              "spritePath": null
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "ritto-dorm-dropouts",
       "name": "Ritto Dorm Dropouts",
       "shortName": "RDD",
@@ -1515,14 +2531,14 @@
           {
             "slot": 0,
             "trainer": "RDD | Simon",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Vodka",
               "rating": "SS+",
               "style": "late",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
@@ -1532,7 +2548,27 @@
                 "guts": 513,
                 "wisdom": 1159
               },
-              "skills": [],
+              "skills": [
+                "Cut and Drive!",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Outer Post Proficiency",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "Straightaway Acceleration",
+                "It's On!",
+                "No Stopping Me!",
+                "On Your Left!",
+                "Furious Feat",
+                "Mile Straightaways",
+                "Late Surger Corners",
+                "1,500,000 CC",
+                "Uma Stan",
+                "Tail Held High",
+                "Playtime's Over!",
+                "Ignited Spirit PWR"
+              ],
               "spriteId": 100801,
               "spritePath": "assets/characters/chara_stand_1008_100801.png"
             }
@@ -1540,7 +2576,7 @@
           {
             "slot": 1,
             "trainer": "RDD||Lyonn",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Yaeno Muteki",
               "rating": "UG",
@@ -1557,63 +2593,115 @@
                 "guts": 559,
                 "wisdom": 1151
               },
-              "skills": [],
+              "skills": [
+                "Peerless Dance of Flowering Flames",
+                "Triumphant Pulse",
+                "Moving Past, and Beyond",
+                "Right-Handed",
+                "Summer Runner",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Mile Maven",
+                "Shifting Gears",
+                "Unyielding Spirit",
+                "Pace Chaser Corners",
+                "Tail Held High",
+                "Head-On",
+                "Burning Spirit SPD"
+              ],
               "spriteId": 107201,
               "spritePath": "assets/characters/chara_stand_1072_107201.png"
             }
           },
           {
             "slot": 2,
-            "trainer": "New Team mile 3",
-            "locked": false,
+            "trainer": "RDD ||| Mento",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "El Condor Pasa",
+              "rating": "SS",
+              "style": "late",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1301,
+                "stamina": 527,
+                "power": 1063,
+                "guts": 599,
+                "wisdom": 1285
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "Condor's Fury",
+                "Let's Pump Some Iron!",
+                "Moving Past, and Beyond",
+                "Professor of Curvature",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Homestretch Haste",
+                "Rising Dragon",
+                "Updrafters",
+                "Mile Straightaways",
+                "Late Surger Corners",
+                "Uma Stan",
+                "Tail Held High",
+                "Full Throttle"
+              ],
+              "spriteId": 101402,
+              "spritePath": "assets/characters/chara_stand_1014_101402.png"
             }
           }
         ],
         "medium": [
           {
             "slot": 0,
-            "trainer": "New Team medium 1",
-            "locked": false,
+            "trainer": "RDD | Augo",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "Fine Motion",
+              "rating": "UG",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1185,
+                "stamina": 757,
+                "power": 1174,
+                "guts": 551,
+                "wisdom": 1250
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "Fairy Tale",
+                "Barcarole of Blessings",
+                "Right-Handed",
+                "Focus",
+                "It's On!",
+                "No Stopping Me!",
+                "Speed Star",
+                "Up-Tempo",
+                "Medium Straightaways",
+                "Medium Corners",
+                "Pace Chaser Corners",
+                "Determined Descent",
+                "Uma Stan",
+                "Groundwork",
+                "Tail Held High",
+                "Lone Wolf",
+                "Neck and Neck",
+                "Ignited Spirit SPD",
+                "Ignited Spirit GUTS"
+              ],
+              "spriteId": 102201,
+              "spritePath": "assets/characters/chara_stand_1022_102201.png"
             }
           },
           {
@@ -1752,14 +2840,14 @@
           {
             "slot": 0,
             "trainer": "BajaBlast",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Oguri Cap",
               "rating": "UG",
               "style": "pace",
               "aptitudes": {
                 "terrain": "A",
-                "distance": "A",
+                "distance": "S",
                 "style": "A"
               },
               "stats": {
@@ -1769,35 +2857,65 @@
                 "guts": 491,
                 "wisdom": 1269
               },
-              "skills": [],
+              "skills": [
+                "Triumphant Pulse",
+                "Shadow Break",
+                "Budding Blossom",
+                "Fall Runner",
+                "Professor of Curvature",
+                "Corner Connoisseur",
+                "Straightaway Adept",
+                "It's On!",
+                "No Stopping Me!",
+                "Speed Star",
+                "Pace Chaser Corners",
+                "Tail Held High",
+                "Lone Wolf",
+                "Neck and Neck",
+                "Ignited Spirit PWR"
+              ],
               "spriteId": 100601,
               "spritePath": "assets/characters/chara_stand_1006_100601.png"
             }
           },
           {
             "slot": 1,
-            "trainer": "New Team dirt 2",
-            "locked": false,
+            "trainer": "Yuri",
+            "locked": true,
             "uma": {
-              "name": "Uma Name",
-              "rating": "S",
-              "style": "front",
+              "name": "Agnes Digital",
+              "rating": "UG",
+              "style": "end",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
                 "style": "A"
               },
               "stats": {
-                "speed": 0,
-                "stamina": 0,
-                "power": 0,
-                "guts": 0,
-                "wisdom": 0
+                "speed": 1296,
+                "stamina": 470,
+                "power": 1222,
+                "guts": 575,
+                "wisdom": 1291
               },
-              "skills": [],
-              "characterId": "",
-              "spriteId": "",
-              "spritePath": null
+              "skills": [
+                "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+                "Shooting for Victory!",
+                "Budding Blossom",
+                "Wet Conditions",
+                "Professor of Curvature",
+                "It's On!",
+                "No Stopping Me!",
+                "Prepared to Pass",
+                "Sprint Straightaways",
+                "Superstan",
+                "Groundwork",
+                "Top Pick",
+                "Forward, March!",
+                "Burning Spirit SPD"
+              ],
+              "spriteId": 101901,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png"
             }
           },
           {
@@ -2321,20 +3439,20 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "pace",
+              "style": "front",
               "key": "dust-bunny:0"
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Banana",
@@ -2345,8 +3463,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "Nightfish",
@@ -2358,37 +3476,37 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Swaejudinoli",
               "umaName": "Curren Chan",
               "spritePath": "assets/characters/chara_stand_1038_103802.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:0"
             },
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
-              "trainer": "XV11",
+              "trainer": "XV11@FLNA",
               "umaName": "Meisho Doto",
               "spritePath": "assets/characters/chara_stand_1058_105801.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:1"
             },
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 2,
               "gate": null,
-              "trainer": "zera",
+              "trainer": "Zera",
               "umaName": "Mayano Top Gun",
               "spritePath": "assets/characters/chara_stand_1024_102401.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:2"
             }
           ],
@@ -2407,26 +3525,26 @@
             },
             "2": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Jlew",
               "umaName": "Sakura Bakushin O",
               "spritePath": "assets/characters/chara_stand_1041_104101.png",
-              "style": "pace",
+              "style": "front",
               "key": "dust-bunny:0"
             },
             "3": {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Swaejudinoli",
               "umaName": "Curren Chan",
               "spritePath": "assets/characters/chara_stand_1038_103802.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:0"
             }
           }
@@ -2471,8 +3589,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Bane@BUNS",
@@ -2483,8 +3601,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Spurs@BUNS",
@@ -2495,8 +3613,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "DadSmoocher",
@@ -2508,19 +3626,19 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "StarryNightlight",
               "umaName": "Manhattan Cafe",
               "spritePath": "assets/characters/chara_stand_1025_102501.png",
-              "style": "front",
+              "style": "late",
               "key": "falena:0"
             },
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
               "trainer": "Clowngeta",
@@ -2532,13 +3650,13 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 2,
               "gate": null,
-              "trainer": "Cyndexv",
+              "trainer": "Cyndexv@FLNA",
               "umaName": "Oguri Cap",
               "spritePath": "assets/characters/chara_stand_1006_100602.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:2"
             }
           ],
@@ -2557,8 +3675,8 @@
             },
             "2": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Bane@BUNS",
@@ -2570,13 +3688,13 @@
             "3": {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "StarryNightlight",
               "umaName": "Manhattan Cafe",
               "spritePath": "assets/characters/chara_stand_1025_102501.png",
-              "style": "front",
+              "style": "late",
               "key": "falena:0"
             }
           }
@@ -2621,8 +3739,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Crabpeople",
@@ -2633,8 +3751,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Hans Pferdemann",
@@ -2645,8 +3763,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "Minh@BUNS",
@@ -2658,7 +3776,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Haiji",
@@ -2670,19 +3788,19 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
-              "trainer": "Chan",
+              "trainer": "Yechers",
               "umaName": "Eishin Flash",
               "spritePath": "assets/characters/chara_stand_1037_103701.png",
-              "style": "front",
+              "style": "late",
               "key": "falena:1"
             },
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 2,
               "gate": null,
               "trainer": "Uprob",
@@ -2695,8 +3813,8 @@
           "placements": {
             "1": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Hans Pferdemann",
@@ -2707,8 +3825,8 @@
             },
             "2": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Crabpeople",
@@ -2771,8 +3889,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Legi",
@@ -2783,8 +3901,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Hai! Aku Aru!",
@@ -2795,8 +3913,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "KaiAiya@BUNS",
@@ -2808,7 +3926,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Korie",
@@ -2820,7 +3938,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
               "trainer": "Omatsuri Mambo!",
@@ -2832,7 +3950,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 2,
               "gate": null,
               "trainer": "Lazarus",
@@ -2858,7 +3976,7 @@
             "2": {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
               "trainer": "Omatsuri Mambo!",
@@ -2870,7 +3988,7 @@
             "3": {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Korie",
@@ -2921,8 +4039,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Vivi@BUNS",
@@ -2933,8 +4051,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Plnk@BUNS",
@@ -2945,8 +4063,8 @@
             },
             {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "Buttered@BUNS",
@@ -2958,7 +4076,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 0,
               "gate": null,
               "trainer": "Plazma",
@@ -2970,10 +4088,10 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 1,
               "gate": null,
-              "trainer": "Flemm",
+              "trainer": "Flem",
               "umaName": "Smart Falcon",
               "spritePath": "assets/characters/chara_stand_1046_104601.png",
               "style": "front",
@@ -2982,7 +4100,7 @@
             {
               "teamId": "falena",
               "teamName": "Falena",
-              "teamColor": "#7c4dff",
+              "teamColor": "#2e65cf",
               "slot": 2,
               "gate": null,
               "trainer": "Nati",
@@ -2995,8 +4113,8 @@
           "placements": {
             "1": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
               "trainer": "Vivi@BUNS",
@@ -3007,8 +4125,8 @@
             },
             "2": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
               "trainer": "Plnk@BUNS",
@@ -3019,8 +4137,8 @@
             },
             "3": {
               "teamId": "dust-bunny",
-              "teamName": "Dust Bunny",
-              "teamColor": "#e91e8c",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
               "slot": 2,
               "gate": null,
               "trainer": "Buttered@BUNS",

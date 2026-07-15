@@ -4,14 +4,15 @@
   "color": "#c0fa3b",
   "categories": {
     "sprint": [
-      { "trainer": "New Team sprint 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "0hqw",
+        "locked": true,
+        "uma": { "name": "King Halo",
+          "spriteId": 106101,
+          "rating": "SS",
+          "style": "late",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
+          "stats": { "speed": 1229, "stamina": 336, "power": 1149, "guts": 773, "wisdom": 1248 },
+          "skills": ["Prideful King","Shooting for Victory!","Budding Blossom","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","Gap Closer","Late Surger Straightaways","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
       { "trainer": "New Team sprint 2",
         "uma": { "name": "Uma Name",
@@ -33,14 +34,15 @@
       }
     ],
     "mile": [
-      { "trainer": "New Team mile 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "KittyChloe",
+        "locked": true,
+        "uma": { "name": "Admire Vega",
+          "spriteId": 103301,
+          "rating": "SS+",
+          "style": "end",
+          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
+          "stats": { "speed": 1338, "stamina": 535, "power": 1267, "guts": 400, "wisdom": 1140 },
+          "skills": ["Shooting Star of Dioskouroi","Triumphant Pulse","Right-Handed","Wet Conditions","Professor of Curvature","No Stopping Me!","Homestretch Haste","Sturm und Drang","Straightaway Spurt","Updrafters","Mile Corners","Lucky Seven","Uma Stan","Daring Strike","Leap Forward"] }
       },
       { "trainer": "New Team mile 2",
         "uma": { "name": "Uma Name",
@@ -123,14 +125,15 @@
       }
     ],
     "dirt": [
-      { "trainer": "New Team dirt 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
+      { "trainer": "Haruru",
+        "locked": true,
+        "uma": { "name": "Haru Urara",
+          "spriteId": 105202,
+          "rating": "SS",
+          "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1260, "stamina": 459, "power": 1203, "guts": 758, "wisdom": 1066 },
+          "skills": ["114th Time's the Charm","Barcarole of Blessings","Louder! Tracen Cheer!","Nakayama Racecourse","Fall Runner","Professor of Curvature","Straightaway Adept","No Stopping Me!","On Your Left!","Hard Worker","Tail Held High","Slipstream","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Stamina","Racing Spirit: Mood"] }
       },
       { "trainer": "New Team dirt 2",
         "uma": { "name": "Uma Name",

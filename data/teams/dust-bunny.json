@@ -15,13 +15,14 @@
           "skills": ["Genius x Bakushin = Victory","Shooting for Victory!","Budding Blossom","Long Shot","Professor of Curvature","Nimble Navigator","Prepared to Pass","Turbo Sprint","Sprint Straightaways","Countermeasure","Perfect Prep!","Pace Chaser Corners","Straight Descent","Risky Business","Light as a Feather","Aspire","Burning Spirit SPD"] }
       },
       { "trainer": "Banana",
+        "locked": true,
         "uma": { "name": "Curren Chan",
           "spriteId": 103801,
-          "rating": "SS",
+          "rating": "SS+",
           "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1200, "stamina": 680, "power": 850, "guts": 700, "wisdom": 680 },
-          "skills": [] }
+          "stats": { "speed": 1314, "stamina": 391, "power": 1200, "guts": 438, "wisdom": 1224 },
+          "skills": ["#LookatCurren","Shooting for Victory!","Budding Blossom","Fall Runner","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Prepared to Pass","Sprint Corners","Meticulous Measures","Pace Chaser Straightaways","Pace Chaser Corners","Straight Descent","Tail Held High","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Nightfish",
         "locked": true,
@@ -48,20 +49,20 @@
       { "trainer": "Spurs@BUNS",
         "uma": { "name": "Grass Wonder",
           "spriteId": 101101,
-          "rating": "SS",
+          "rating": "S+",
           "style": "late",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
           "stats": { "speed": 1080, "stamina": 950, "power": 880, "guts": 720, "wisdom": 780 },
-          "skills": [] }
+          "skills": ["Where There's a Will, There's a Way","OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Flashy☆Landing","Moving Past, and Beyond","Right-Handed","Non-Standard Distance","Wet Conditions","Ramp Up","No Stopping Me!","Position Pilfer","On Your Left!","Mile Straightaways","Late Surger Straightaways","Late Surger Corners"] }
       },
       { "trainer": "DadSmoocher",
         "uma": { "name": "Nice Nature",
           "spriteId": 106001,
-          "rating": "S",
+          "rating": "UG",
           "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1050, "stamina": 880, "power": 800, "guts": 680, "wisdom": 750 },
-          "skills": ["Closer Straightaways ◎","Medium Straightaways ○"] }
+          "skills": [] }
       }
     ],
     "medium": [
@@ -107,14 +108,15 @@
           "stats": { "speed": 1250, "stamina": 1222, "power": 1009, "guts": 816, "wisdom": 861 },
           "skills": ["Shooting Star","Shadow Break","Barcarole of Blessings","Wet Conditions","Corner Adept","Corner Recovery","Straightaway Adept","It's On!","No Stopping Me!","In Body and Mind","Prepared to Pass","Pace Chaser Corners","Gourmand","Tail Held High","Ignited Spirit SPD","Ignited Spirit STA","Ignited Spirit PWR"] }
       },
-      { "trainer": "Hai! Aku Aru!",
+      { "trainer": "Hi! Im Aru!@BUNS",
+        "locked": true,
         "uma": { "name": "Narita Taishin",
           "spriteId": 105001,
-          "rating": "SS",
-          "style": "pace",
+          "rating": "SS+",
+          "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 960, "stamina": 1180, "power": 880, "guts": 820, "wisdom": 880 },
-          "skills": ["Long Corners ◎","Homestretch Haste","Outer Swell"] }
+          "stats": { "speed": 1200, "stamina": 1109, "power": 1202, "guts": 624, "wisdom": 776 },
+          "skills": ["Nemesis","Shadow Break","∴win Q.E.D.","Professor of Curvature","Corner Recovery","Sleeping Lion","Encroaching Shadow","Long Corners","Pressure","End Closer Straightaways","Lone Wolf","Daring Strike","Best In Japan","Breakin' Out"] }
       },
       { "trainer": "KaiAiya@BUNS",
         "locked": true,
@@ -154,9 +156,9 @@
           "spriteId": 101901,
           "rating": "SS",
           "style": "end",
-          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
-          "stats": { "speed": 1241, "stamina": 542, "power": 1141, "guts": 543, "wisdom": 1123 },
-          "skills": ["OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Triumphant Pulse","Louder! Tracen Cheer!","Wet Conditions","Professor of Curvature","No Stopping Me!","Straightaway Spurt","Turbo Sprint","End Closer Corners","Superstan","Top Pick","Daring Strike","Nothing Ventured","Burning Spirit SPD"] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1227, "stamina": 539, "power": 1160, "guts": 568, "wisdom": 1124 },
+          "skills": ["OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Triumphant Pulse","Louder! Tracen Cheer!","Professor of Curvature","It's On!","No Stopping Me!","Straightaway Spurt","Turbo Sprint","Sprint Corners","Superstan","Forward, March!","Daring Strike","Risky Business","Rapid Gain","Burning Spirit SPD"] }
       }
     ]
   }

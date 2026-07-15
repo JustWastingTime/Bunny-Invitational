@@ -107,14 +107,15 @@
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
-      { "trainer": "Omatsuri Mambo!",
+      { "trainer": "Omatsuri Mambo !",
+        "locked": true,
         "uma": { "name": "Matikanetannhauser",
           "spriteId": 106201,
-          "rating": "S",
-          "style": "front",
+          "rating": "UG",
+          "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1205, "stamina": 822, "power": 1220, "guts": 565, "wisdom": 1013 },
+          "skills": ["Go, Go, Mun!","Triumphant Pulse","Behold Thine Emperor's Divine Might","Non-Standard Distance","Spring Runner","Professor of Curvature","Straightaway Adept","It's On!","Unruffled","No Stopping Me!","Homestretch Haste","Straightaway Spurt","Long Corners","Overwhelming Pressure","Tail Held High","Playtime's Over!","Daring Strike","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Power","Racing Spirit: Wit"] }
       },
       { "trainer": "Lazarus",
         "uma": { "name": "Gold Ship",
@@ -143,8 +144,8 @@
           "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
-          "stats": { "speed": 1307, "stamina": 595, "power": 1257, "guts": 728, "wisdom": 1188 },
-          "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Victoria por plancha ☆","Wet Conditions","Fall Runner","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","No Stopping Me!","Sprinting Gear","Sprint Straightaways","Sprint Corners","Groundwork","Tail Held High","Slipstream","Trending in the Charts!","Ignited Spirit WIT"] }
+          "stats": { "speed": 1302, "stamina": 486, "power": 1209, "guts": 462, "wisdom": 1145 },
+          "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Victoria por plancha ☆","Budding Blossom","Wet Conditions","Outer Post Proficiency","Competitive Spirit","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","No Stopping Me!","Prepared to Pass","Pace Chaser Corners","Groundwork","Lone Wolf","Trending in the Charts!","Forward, March!","Light as a Feather","Sunny Sign","Got the Spirit","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
       { "trainer": "Nati",
         "uma": { "name": "El Condor Pasa",
