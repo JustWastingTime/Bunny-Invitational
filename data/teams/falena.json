@@ -2,58 +2,69 @@
   "name": "Falena",
   "shortName": "FLNA",
   "tagline": "falena club",
-  "color": "#7c4dff",
+  "color": "#2e65cf",
   "categories": {
     "sprint": [
       { "trainer": "Swaejudinoli",
+        "locked": true,
         "uma": { "name": "Curren Chan",
           "spriteId": 103802,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1278, "stamina": 635, "power": 1168, "guts": 534, "wisdom": 1267 },
+          "skills": ["One True Color","Shooting for Victory!","Blazing Pride","Budding Blossom","Hakodate Racecourse","Cloudy Days","Professor of Curvature","It's On!","Nimble Navigator","Prepared to Pass","Turbo Sprint","Sprint Corners","Pace Chaser Corners","Pace Chaser Savvy","Groundwork","Neck and Neck","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Wit"] }
       },
-      { "trainer": "XV11",
+      { "trainer": "XV11@FLNA",
+        "locked": true,
         "uma": { "name": "Meisho Doto",
           "spriteId": 105801,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
+          "stats": { "speed": 1290, "stamina": 569, "power": 1227, "guts": 436, "wisdom": 1275 },
+          "skills": ["I Never Goof Up!","Triumphant Pulse","Shooting for Victory!","Budding Blossom","Right-Handed","Competitive Spirit","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Speed Star","Pace Chaser Corners","Straight Descent","Slipstream","Neck and Neck","Burning Spirit SPD"] }
       },
-      { "trainer": "zera",
+      { "trainer": "Zera",
+        "locked": true,
         "uma": { "name": "Mayano Top Gun",
           "spriteId": 102401,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 1283, "stamina": 638, "power": 1248, "guts": 482, "wisdom": 1158 },
+          "skills": ["Flashy☆Landing","Angling and Scheming","Budding Blossom","Right-Handed","Fall Runner","Professor of Curvature","Focus","No Stopping Me!","Prepared to Pass","Plan X","Meticulous Measures","Pace Chaser Savvy","Uma Stan","Tail Held High","Playtime's Over!","Head-On","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       }
     ],
     "mile": [
       { "trainer": "StarryNightlight",
+        "locked": true,
         "uma": { "name": "Manhattan Cafe",
           "spriteId": 102501,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "SS",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1202, "stamina": 665, "power": 1066, "guts": 384, "wisdom": 1238 },
+          "skills": ["Chasing After You","Triumphant Pulse","Moving Past, and Beyond","Right-Handed","Winter Runner","Rainy Days","Professor of Curvature","It's On!","No Stopping Me!","Outer Swell","Mile Straightaways","Mile Corners","Late Surger Straightaways","Uma Stan","Tail Held High","Burning Spirit SPD"] }
       },
       { "trainer": "Clowngeta",
         "uma": { "name": "Mejiro McQueen",
           "spriteId": 101301,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
-      { "trainer": "Cyndexv",
+      { "trainer": "Cyndexv@FLNA",
+        "locked": true,
         "uma": { "name": "Oguri Cap",
           "spriteId": 100602,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1299, "stamina": 586, "power": 1268, "guts": 488, "wisdom": 1180 },
+          "skills": ["Festive Miracle","Angling and Scheming","U=ma2","Non-Standard Distance","Winter Runner","Professor of Curvature","Corner Recovery","Straightaway Adept","Focus","It's On!","No Stopping Me!","Prepared to Pass","Shifting Gears","Shrewd Step","Triple 7s","Groundwork","Shake It Out","Neck and Neck","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS"] }
       }
     ],
     "medium": [
@@ -62,22 +73,26 @@
           "spriteId": 106801,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
-      { "trainer": "Chan",
+      { "trainer": "Yechers",
+        "locked": true,
         "uma": { "name": "Eishin Flash",
           "spriteId": 103701,
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG",
+          "style": "late",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
+          "stats": { "speed": 1231, "stamina": 832, "power": 1201, "guts": 520, "wisdom": 1211 },
+          "skills": ["Schwarzes Schwert","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","It's On!","No Stopping Me!","Homestretch Haste","Position Pilfer","On Your Left!","Medium Corners","Late Surger Savvy","Tail Held High","Playtime's Over!","Fighting Spirit","Latch On","Ignited Spirit SPD"] }
       },
       { "trainer": "Uprob",
         "uma": { "name": "Air Shakur",
           "spriteId": 103601,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
@@ -88,6 +103,7 @@
           "spriteId": 106701,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -96,6 +112,7 @@
           "spriteId": 106201,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -104,6 +121,7 @@
           "spriteId": 100701,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
@@ -114,22 +132,26 @@
           "spriteId": 101001,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
-      { "trainer": "Flemm",
+      { "trainer": "Flem",
+        "locked": true,
         "uma": { "name": "Smart Falcon",
           "spriteId": 104601,
-          "rating": "S",
+          "rating": "UG",
           "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1307, "stamina": 595, "power": 1257, "guts": 728, "wisdom": 1188 },
+          "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Victoria por plancha ☆","Wet Conditions","Fall Runner","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","No Stopping Me!","Sprinting Gear","Sprint Straightaways","Sprint Corners","Groundwork","Tail Held High","Slipstream","Trending in the Charts!","Ignited Spirit WIT"] }
       },
       { "trainer": "Nati",
         "uma": { "name": "El Condor Pasa",
           "spriteId": 101401,
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }

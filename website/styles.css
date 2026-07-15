@@ -688,14 +688,11 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   place-items: center;
   width: 28px;
   height: 28px;
-  border-radius: 7px;
-  background: rgba(0, 0, 0, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .trainer-pick-style-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 

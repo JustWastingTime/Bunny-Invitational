@@ -1,0 +1,152 @@
+{ "id": "rilliance",
+  "name": "Rilliance",
+  "shortName": "RILL",
+  "color": "#da49b8",
+  "categories": {
+    "sprint": [
+      { "trainer": "New Team sprint 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team sprint 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team sprint 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "mile": [
+      { "trainer": "New Team mile 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team mile 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team mile 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "medium": [
+      { "trainer": "New Team medium 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team medium 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team medium 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "long": [
+      { "trainer": "New Team long 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team long 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team long 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ],
+    "dirt": [
+      { "trainer": "New Team dirt 1",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team dirt 2",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      },
+      { "trainer": "New Team dirt 3",
+        "uma": { "name": "Uma Name",
+          "characterId": "",
+          "rating": "S",
+          "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "skills": [] }
+      }
+    ]
+  }
+}

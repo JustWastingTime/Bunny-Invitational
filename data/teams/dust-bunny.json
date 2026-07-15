@@ -1,7 +1,7 @@
 { "id": "dust-bunny",
-  "name": "Dust Bunny",
+  "name": "BUNS",
   "shortName": "BUNS",
-  "color": "#e91e8c",
+  "color": "#e91e45",
   "categories": {
     "sprint": [
       { "trainer": "Jlew",
@@ -9,7 +9,7 @@
         "uma": { "name": "Sakura Bakushin O",
           "spriteId": 104101,
           "rating": "SS",
-          "style": "pace",
+          "style": "front",
           "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
           "stats": { "speed": 1328, "stamina": 495, "power": 1229, "guts": 406, "wisdom": 1259 },
           "skills": ["Genius x Bakushin = Victory","Shooting for Victory!","Budding Blossom","Long Shot","Professor of Curvature","Nimble Navigator","Prepared to Pass","Turbo Sprint","Sprint Straightaways","Countermeasure","Perfect Prep!","Pace Chaser Corners","Straight Descent","Risky Business","Light as a Feather","Aspire","Burning Spirit SPD"] }
@@ -66,13 +66,14 @@
     ],
     "medium": [
       { "trainer": "Crabpeople",
+        "locked": true,
         "uma": { "name": "Gold Ship",
           "spriteId": 100702,
           "rating": "UG",
           "style": "end",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1199, "stamina": 828, "power": 1081, "guts": 687, "wisdom": 1168 },
-          "skills": ["564 Escapades"] }
+          "skills": ["564 Escapades","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","Straightaway Adept","Rushing Gale!","Nimble Navigator","Homestretch Haste","Innate Experience","Medium Straightaways","Uma Stan","Tail Held High","Daring Strike","Take the Chance","Elated","Burning Spirit SPD"] }
       },
       { "trainer": "Hans Pferdemann",
         "locked": true,

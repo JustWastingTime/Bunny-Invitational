@@ -9,6 +9,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -17,6 +18,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -25,50 +27,60 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
     ],
     "mile": [
       { "trainer": "RDD | Simon",
+        "locked": true,
         "uma": { "name": "Vodka",
           "spriteId": 100801,
           "rating": "SS+",
           "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1220, "stamina": 595, "power": 1169, "guts": 513, "wisdom": 1159 },
-          "skills": [] }
+          "skills": ["Cut and Drive!","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Outer Post Proficiency","Professor of Curvature","Straightaway Adept","Straightaway Acceleration","It's On!","No Stopping Me!","On Your Left!","Furious Feat","Mile Straightaways","Late Surger Corners","1,500,000 CC","Uma Stan","Tail Held High","Playtime's Over!","Ignited Spirit PWR"] }
       },
       { "trainer": "RDD||Lyonn",
+        "locked": true,
         "uma": { "name": "Yaeno Muteki",
           "spriteId": 107201,
           "rating": "UG",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1234, "stamina": 707, "power": 1198, "guts": 559, "wisdom": 1151 },
-          "skills": [] }
+          "skills": ["Peerless Dance of Flowering Flames","Triumphant Pulse","Moving Past, and Beyond","Right-Handed","Summer Runner","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Prepared to Pass","Mile Maven","Shifting Gears","Unyielding Spirit","Pace Chaser Corners","Tail Held High","Head-On","Burning Spirit SPD"] }
       },
-      { "trainer": "New Team mile 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "RDD ||| Mento",
+        "locked": true,
+        "uma": { "name": "El Condor Pasa",
+          "spriteId": 101402,
+          "rating": "SS",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1301, "stamina": 527, "power": 1063, "guts": 599, "wisdom": 1285 },
+          "skills": ["Condor's Fury","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","Rising Dragon","Updrafters","Mile Straightaways","Late Surger Corners","Uma Stan","Tail Held High","Full Throttle"] }
       }
     ],
     "medium": [
-      { "trainer": "New Team medium 1",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "RDD | Augo",
+        "locked": true,
+        "uma": { "name": "Fine Motion",
+          "spriteId": 102201,
+          "rating": "UG",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 1185, "stamina": 757, "power": 1174, "guts": 551, "wisdom": 1250 },
+          "skills": ["Fairy Tale","Barcarole of Blessings","Right-Handed","Focus","It's On!","No Stopping Me!","Speed Star","Up-Tempo","Medium Straightaways","Medium Corners","Pace Chaser Corners","Determined Descent","Uma Stan","Groundwork","Tail Held High","Lone Wolf","Neck and Neck","Ignited Spirit SPD","Ignited Spirit GUTS"] }
       },
       { "trainer": "New Team medium 2",
         "uma": { "name": "Uma Name",
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -77,6 +89,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
@@ -87,6 +100,7 @@
           "spriteId": 104501,
           "rating": "UG",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1318, "stamina": 779, "power": 1064, "guts": 582, "wisdom": 1208 },
           "skills": [] }
       },
@@ -95,6 +109,7 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       },
@@ -103,32 +118,38 @@
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
     ],
     "dirt": [
       { "trainer": "BajaBlast",
+        "locked": true,
         "uma": { "name": "Oguri Cap",
           "spriteId": 100601,
           "rating": "UG",
           "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1250, "stamina": 493, "power": 1217, "guts": 491, "wisdom": 1269 },
-          "skills": [] }
+          "skills": ["Triumphant Pulse","Shadow Break","Budding Blossom","Fall Runner","Professor of Curvature","Corner Connoisseur","Straightaway Adept","It's On!","No Stopping Me!","Speed Star","Pace Chaser Corners","Tail Held High","Lone Wolf","Neck and Neck","Ignited Spirit PWR"] }
       },
-      { "trainer": "New Team dirt 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Yuri",
+        "locked": true,
+        "uma": { "name": "Agnes Digital",
+          "spriteId": 101901,
+          "rating": "UG",
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
+          "stats": { "speed": 1296, "stamina": 470, "power": 1222, "guts": 575, "wisdom": 1291 },
+          "skills": ["OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Shooting for Victory!","Budding Blossom","Wet Conditions","Professor of Curvature","It's On!","No Stopping Me!","Prepared to Pass","Sprint Straightaways","Superstan","Groundwork","Top Pick","Forward, March!","Burning Spirit SPD"] }
       },
       { "trainer": "New Team dirt 3",
         "uma": { "name": "Uma Name",
           "characterId": "",
           "rating": "S",
           "style": "front",
+          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
           "skills": [] }
       }
