@@ -138,7 +138,7 @@
           "spriteId": 100601,
           "rating": "UG2",
           "style": "pace",
-          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "aptitudes": { "terrain": "B", "distance": "S", "style": "A" },
           "stats": { "speed": 1303, "stamina": 483, "power": 1214, "guts": 942, "wisdom": 1037 },
           "skills": ["Triumphant Pulse","Shooting for Victory!","Budding Blossom","Right-Handed","Firm Conditions","Wet Conditions","Summer Runner","Corner Adept","It's On!","Sprinting Gear","Sprint Straightaways","Pace Chaser Corners","Pace Chaser Savvy","Uma Stan","Groundwork","Slipstream","Nothing Ventured","In High Spirits","Burning Spirit SPD","Ignited Spirit PWR"] }
       },

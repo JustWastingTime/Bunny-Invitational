@@ -147,7 +147,7 @@
         "uma": { "name": "Agnes Digital",
           "spriteId": 101901,
           "rating": "UG1",
-          "style": "end",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1296, "stamina": 470, "power": 1222, "guts": 575, "wisdom": 1291 },
           "skills": ["OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Shooting for Victory!","Budding Blossom","Wet Conditions","Professor of Curvature","It's On!","No Stopping Me!","Prepared to Pass","Sprint Straightaways","Superstan","Groundwork","Top Pick","Forward, March!","Burning Spirit SPD"] }

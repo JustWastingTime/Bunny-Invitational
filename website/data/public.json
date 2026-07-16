@@ -4735,7 +4735,7 @@
             "uma": {
               "name": "Agnes Digital",
               "rating": "UG1",
-              "style": "end",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
@@ -6622,7 +6622,7 @@
                 "style": "S"
               },
               "stats": {
-                "speed": 9901214,
+                "speed": 1214,
                 "stamina": 1122,
                 "power": 1033,
                 "guts": 733,
@@ -7322,7 +7322,7 @@
               "rating": "UG2",
               "style": "pace",
               "aptitudes": {
-                "terrain": "A",
+                "terrain": "B",
                 "distance": "S",
                 "style": "A"
               },
@@ -8688,7 +8688,7 @@
               "umaKey": "sprite:101901",
               "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1019_101901.png",
-              "style": "end",
+              "style": "pace",
               "key": "ritto-dorm-dropouts:1"
             },
             {
@@ -12735,17 +12735,6 @@
     ],
     "teamsByStats": [
       {
-        "id": "umalliance",
-        "name": "UMAlliance",
-        "shortName": "ALLI",
-        "color": "#2c49c9",
-        "umaCount": 15,
-        "totalStats": 10963855.8,
-        "skillCount": 251,
-        "skillScore": 320,
-        "avgStats": 730923.7200000001
-      },
-      {
         "id": "umamusuko",
         "name": "Umamusuko",
         "shortName": "USK",
@@ -12821,6 +12810,17 @@
         "skillCount": 255,
         "skillScore": 331,
         "avgStats": 4934.993333333334
+      },
+      {
+        "id": "umalliance",
+        "name": "UMAlliance",
+        "shortName": "ALLI",
+        "color": "#2c49c9",
+        "umaCount": 15,
+        "totalStats": 73855.8,
+        "skillCount": 251,
+        "skillScore": 320,
+        "avgStats": 4923.72
       },
       {
         "id": "ritto-dorm-dropouts",
@@ -12962,10 +12962,10 @@
         "shortName": "ALLI",
         "color": "#2c49c9",
         "umaCount": 15,
-        "totalStats": 10963855.8,
+        "totalStats": 73855.8,
         "skillCount": 251,
         "skillScore": 320,
-        "avgStats": 730923.7200000001
+        "avgStats": 4923.72
       },
       {
         "id": "ritto-dorm-dropouts",
@@ -13002,15 +13002,15 @@
       }
     ],
     "statsLeader": {
-      "id": "umalliance",
-      "name": "UMAlliance",
-      "shortName": "ALLI",
-      "color": "#2c49c9",
+      "id": "umamusuko",
+      "name": "Umamusuko",
+      "shortName": "USK",
+      "color": "#f1c41f",
       "umaCount": 15,
-      "totalStats": 10963855.8,
-      "skillCount": 251,
-      "skillScore": 320,
-      "avgStats": 730923.7200000001
+      "totalStats": 76523.20000000001,
+      "skillCount": 253,
+      "skillScore": 329,
+      "avgStats": 5101.546666666667
     },
     "skillsLeader": {
       "id": "kita-trauma",

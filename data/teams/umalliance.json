@@ -126,7 +126,7 @@
           "rating": "UG4",
           "style": "end",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "S" },
-          "stats": { "speed": 9901214, "stamina": 1122, "power": 1033, "guts": 733, "wisdom": 1144 },
+          "stats": { "speed": 1214, "stamina": 1122, "power": 1033, "guts": 733, "wisdom": 1144 },
           "skills": ["Chasing After You","Behold Thine Emperor's Divine Might","Right-Handed","Firm Conditions","Spring Runner","Corner Recovery","Beeline Burst","It's On!","No Stopping Me!","Masterful Gambit","Straightaway Spurt","Long Straightaways","Long Corners","Tail Held High","Playtime's Over!","Daring Strike","Burning Spirit SPD","Ignited Spirit STA"] }
       }
     ],
