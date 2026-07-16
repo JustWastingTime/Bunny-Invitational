@@ -148,7 +148,7 @@
         "uma": { "name": "Smart Falcon",
           "spriteId": 104601,
           "rating": "UG",
-          "style": "front",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1302, "stamina": 486, "power": 1209, "guts": 462, "wisdom": 1145 },
           "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Victoria por plancha ☆","Budding Blossom","Wet Conditions","Outer Post Proficiency","Competitive Spirit","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","No Stopping Me!","Prepared to Pass","Pace Chaser Corners","Groundwork","Lone Wolf","Trending in the Charts!","Forward, March!","Light as a Feather","Sunny Sign","Got the Spirit","Ignited Spirit PWR","Ignited Spirit WIT"] }

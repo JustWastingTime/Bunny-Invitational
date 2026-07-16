@@ -358,7 +358,7 @@
         "trainer": "Ori",
         "locked": true,
         "uma": {
-          "name": "Mejiro McQueen",
+          "name": "Mejiro Palmer",
           "rating": "UG",
           "style": "front",
           "aptitudes": {
@@ -392,8 +392,8 @@
             "Ignited Spirit SPD",
             "Ignited Spirit PWR"
           ],
-          "spriteId": 101303,
-          "spritePath": "assets/characters/chara_stand_1013_101303.png"
+          "spriteId": 106401,
+          "spritePath": "assets/characters/chara_stand_1064_106401.png"
         }
       }
     ],

@@ -2037,7 +2037,7 @@
             "uma": {
               "name": "Smart Falcon",
               "rating": "UG",
-              "style": "front",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "S",
@@ -2452,7 +2452,7 @@
               "aptitudes": {
                 "terrain": "A",
                 "distance": "S",
-                "style": "S"
+                "style": "A"
               },
               "stats": {
                 "speed": 1231,
@@ -5823,7 +5823,7 @@
             "trainer": "Ori",
             "locked": true,
             "uma": {
-              "name": "Mejiro McQueen",
+              "name": "Mejiro Palmer",
               "rating": "UG",
               "style": "front",
               "aptitudes": {
@@ -5857,8 +5857,8 @@
                 "Ignited Spirit SPD",
                 "Ignited Spirit PWR"
               ],
-              "spriteId": 101303,
-              "spritePath": "assets/characters/chara_stand_1013_101303.png"
+              "spriteId": 106401,
+              "spritePath": "assets/characters/chara_stand_1064_106401.png"
             }
           }
         ],
@@ -9376,7 +9376,7 @@
               "umaKey": "sprite:104601",
               "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1046_104601.png",
-              "style": "front",
+              "style": "pace",
               "key": "falena:1"
             },
             {
@@ -10576,10 +10576,10 @@
               "slot": 2,
               "gate": null,
               "trainer": "Ori",
-              "umaName": "Mejiro McQueen",
-              "umaKey": "sprite:101303",
-              "isUnique": false,
-              "spritePath": "assets/characters/chara_stand_1013_101303.png",
+              "umaName": "Mejiro Palmer",
+              "umaKey": "sprite:106401",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1064_106401.png",
               "style": "front",
               "key": "uma-love:2"
             }
@@ -11289,7 +11289,7 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 26,
+    "uniqueUmaCount": 27,
     "filledUmaCount": 180,
     "hakodateUmas": 8,
     "mostCommonUma": {
@@ -11322,6 +11322,7 @@
       "Mejiro Dober",
       "Mejiro McQueen",
       "Mejiro McQueen",
+      "Mejiro Palmer",
       "Mejiro Ryan",
       "Nice Nature",
       "Nice Nature",
@@ -11350,6 +11351,7 @@
       "sprite:105901",
       "sprite:101302",
       "sprite:101301",
+      "sprite:106401",
       "sprite:102701",
       "sprite:106001",
       "sprite:106002",
@@ -11495,18 +11497,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:101303",
-        "umaName": "Mejiro McQueen",
-        "spritePath": "assets/characters/chara_stand_1013_101303.png",
-        "population": 4,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:102602",
         "umaName": "Mihono Bourbon",
         "spritePath": "assets/characters/chara_stand_1026_102602.png",
@@ -11594,6 +11584,18 @@
         "umaKey": "sprite:107101",
         "umaName": "Mejiro Ardan",
         "spritePath": "assets/characters/chara_stand_1071_107101.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:101303",
+        "umaName": "Mejiro McQueen",
+        "spritePath": "assets/characters/chara_stand_1013_101303.png",
         "population": 3,
         "isUnique": false,
         "starts": 0,
@@ -12119,6 +12121,18 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:106401",
+        "umaName": "Mejiro Palmer",
+        "spritePath": "assets/characters/chara_stand_1064_106401.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:102701",
         "umaName": "Mejiro Ryan",
         "spritePath": "assets/characters/chara_stand_1027_102701.png",
@@ -12307,12 +12321,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Mejiro McQueen",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Mihono Bourbon",
         "starts": 4,
         "wins": 0,
@@ -12356,6 +12364,12 @@
       },
       {
         "umaName": "Mejiro Ardan",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Mejiro McQueen",
         "starts": 3,
         "wins": 0,
         "winRate": 0
@@ -12619,6 +12633,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Mejiro Palmer",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Mejiro Ryan",
         "starts": 1,
         "wins": 0,
@@ -12795,10 +12815,10 @@
         "shortName": "KING",
         "color": "#359b62",
         "umaCount": 15,
-        "totalStats": 74358.3,
+        "totalStats": 74246.5,
         "skillCount": 256,
         "skillScore": 331,
-        "avgStats": 4957.22
+        "avgStats": 4949.766666666666
       },
       {
         "id": "uma-love",
@@ -12907,10 +12927,10 @@
         "shortName": "KING",
         "color": "#359b62",
         "umaCount": 15,
-        "totalStats": 74358.3,
+        "totalStats": 74246.5,
         "skillCount": 256,
         "skillScore": 331,
-        "avgStats": 4957.22
+        "avgStats": 4949.766666666666
       },
       {
         "id": "uma-love",

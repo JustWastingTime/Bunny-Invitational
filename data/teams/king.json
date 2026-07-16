@@ -84,7 +84,7 @@
           "spriteId": 105902,
           "rating": "SS+",
           "style": "late",
-          "aptitudes": { "terrain": "A", "distance": "S", "style": "S" },
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1231, "stamina": 738, "power": 1179, "guts": 501, "wisdom": 1118 },
           "skills": ["Wherever This Wonder Leads","Triumphant Pulse","Kyoto Racecourse","Spring Runner","Professor of Curvature","Corner Recovery","Straightaway Adept","Ramp Up","Nimble Navigator","On Your Left!","Medium Straightaways","Late Surger Corners","Uma Stan","Tail Held High","From the Brink","Fearless","Downhill Speedster","Pedal to the Metal","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
