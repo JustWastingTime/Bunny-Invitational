@@ -143,9 +143,8 @@
           "skills": ["SPARKLY☆STARDOM","Angling and Scheming","Right-Handed","Oi Racecourse","Standard Distance","Professor of Curvature","Focus","Center Stage","Taking the Lead","Fast-Paced","Final Push","Top Runner","Front Runner Savvy","Groundwork","Trending in the Charts!","Light as a Feather"] }
       },
       { "trainer": "CDT929",
-        "locked": true,
         "uma": { "name": "Haru Urara",
-          "spriteId": 105201,
+          "spriteId": 105202,
           "rating": "SS",
           "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },

@@ -7,7 +7,7 @@
       { "trainer": "Phedro",
         "locked": true,
         "uma": { "name": "Fuji Kiseki",
-          "spriteId": 100501,
+          "spriteId": 100502,
           "rating": "UG2",
           "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },

@@ -5258,7 +5258,7 @@
           {
             "slot": 1,
             "trainer": "CDT929",
-            "locked": true,
+            "locked": false,
             "uma": {
               "name": "Haru Urara",
               "rating": "SS",
@@ -5295,8 +5295,8 @@
                 "Hard Worker",
                 "Full Throttle"
               ],
-              "spriteId": 105201,
-              "spritePath": "assets/characters/chara_stand_1052_105201.png"
+              "spriteId": 105202,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png"
             }
           },
           {
@@ -6056,8 +6056,8 @@
                 "Neck and Neck",
                 "Ignited Spirit PWR"
               ],
-              "spriteId": 100501,
-              "spritePath": "assets/characters/chara_stand_1005_100501.png"
+              "spriteId": 100502,
+              "spritePath": "assets/characters/chara_stand_1005_100502.png"
             }
           },
           {
@@ -7078,10 +7078,10 @@
               "aptitudes": {
                 "terrain": "A",
                 "distance": "S",
-                "style": "A"
+                "style": "B"
               },
               "stats": {
-                "speed": 12940,
+                "speed": 1294,
                 "stamina": 1086,
                 "power": 951,
                 "guts": 606,
@@ -9428,9 +9428,9 @@
               "gate": null,
               "trainer": "Phedro",
               "umaName": "Fuji Kiseki",
-              "umaKey": "sprite:100501",
+              "umaKey": "sprite:100502",
               "isUnique": false,
-              "spritePath": "assets/characters/chara_stand_1005_100501.png",
+              "spritePath": "assets/characters/chara_stand_1005_100502.png",
               "style": "pace",
               "key": "umalliance:0"
             },
@@ -9940,9 +9940,9 @@
               "gate": null,
               "trainer": "CDT929",
               "umaName": "Haru Urara",
-              "umaKey": "sprite:105201",
-              "isUnique": true,
-              "spritePath": "assets/characters/chara_stand_1052_105201.png",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
               "style": "late",
               "key": "the-shadow-clones:1"
             },
@@ -10025,7 +10025,7 @@
               "trainer": "Jameson",
               "umaName": "Fuji Kiseki",
               "umaKey": "sprite:100502",
-              "isUnique": true,
+              "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1005_100502.png",
               "style": "pace",
               "key": "king:1"
@@ -11168,7 +11168,7 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 28,
+    "uniqueUmaCount": 26,
     "filledUmaCount": 180,
     "hakodateUmas": 8,
     "mostCommonUma": {
@@ -11189,9 +11189,7 @@
       "Biwa Hayahide",
       "Eishin Flash",
       "El Condor Pasa",
-      "Fuji Kiseki",
       "Gold City",
-      "Haru Urara",
       "Inari One",
       "Ines Fujin",
       "King Halo",
@@ -11219,9 +11217,7 @@
       "sprite:102302",
       "sprite:103701",
       "sprite:101402",
-      "sprite:100502",
       "sprite:104001",
-      "sprite:105201",
       "sprite:103401",
       "sprite:103101",
       "sprite:106101",
@@ -11282,6 +11278,18 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:105202",
+        "umaName": "Haru Urara",
+        "spritePath": "assets/characters/chara_stand_1052_105202.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
         "spritePath": "assets/characters/chara_stand_1010_101001.png",
@@ -11309,18 +11317,6 @@
         "umaKey": "sprite:101901",
         "umaName": "Agnes Digital",
         "spritePath": "assets/characters/chara_stand_1019_101901.png",
-        "population": 5,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:105202",
-        "umaName": "Haru Urara",
-        "spritePath": "assets/characters/chara_stand_1052_105202.png",
         "population": 5,
         "isUnique": false,
         "starts": 0,
@@ -11450,18 +11446,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:100501",
-        "umaName": "Fuji Kiseki",
-        "spritePath": "assets/characters/chara_stand_1005_100501.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:100701",
         "umaName": "Gold Ship",
         "spritePath": "assets/characters/chara_stand_1007_100701.png",
@@ -11573,6 +11557,30 @@
         "umaKey": "sprite:102201",
         "umaName": "Fine Motion",
         "spritePath": "assets/characters/chara_stand_1022_102201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:100502",
+        "umaName": "Fuji Kiseki",
+        "spritePath": "assets/characters/chara_stand_1005_100502.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:100501",
+        "umaName": "Fuji Kiseki",
+        "spritePath": "assets/characters/chara_stand_1005_100501.png",
         "population": 2,
         "isUnique": false,
         "starts": 0,
@@ -11846,33 +11854,9 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:100502",
-        "umaName": "Fuji Kiseki",
-        "spritePath": "assets/characters/chara_stand_1005_100502.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:104001",
         "umaName": "Gold City",
         "spritePath": "assets/characters/chara_stand_1040_104001.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:105201",
-        "umaName": "Haru Urara",
-        "spritePath": "assets/characters/chara_stand_1052_105201.png",
         "population": 1,
         "isUnique": true,
         "starts": 0,
@@ -12154,6 +12138,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Haru Urara",
+        "starts": 6,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Taiki Shuttle",
         "starts": 6,
         "wins": 0,
@@ -12167,12 +12157,6 @@
       },
       {
         "umaName": "Agnes Digital",
-        "starts": 5,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Haru Urara",
         "starts": 5,
         "wins": 0,
         "winRate": 0
@@ -12238,12 +12222,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Fuji Kiseki",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Gold Ship",
         "starts": 3,
         "wins": 0,
@@ -12299,6 +12277,18 @@
       },
       {
         "umaName": "Fine Motion",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Fuji Kiseki",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Fuji Kiseki",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -12436,19 +12426,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Fuji Kiseki",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Gold City",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Haru Urara",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -12652,10 +12630,10 @@
         "shortName": "USK",
         "color": "#f1c41f",
         "umaCount": 15,
-        "totalStats": 89333.8,
+        "totalStats": 76523.20000000001,
         "skillCount": 253,
         "skillScore": 329,
-        "avgStats": 5955.586666666667
+        "avgStats": 5101.546666666667
       },
       {
         "id": "kita-trauma",
@@ -12830,10 +12808,10 @@
         "shortName": "USK",
         "color": "#f1c41f",
         "umaCount": 15,
-        "totalStats": 89333.8,
+        "totalStats": 76523.20000000001,
         "skillCount": 253,
         "skillScore": 329,
-        "avgStats": 5955.586666666667
+        "avgStats": 5101.546666666667
       },
       {
         "id": "dust-bunny",

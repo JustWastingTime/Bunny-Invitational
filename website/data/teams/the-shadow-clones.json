@@ -566,7 +566,7 @@
       {
         "slot": 1,
         "trainer": "CDT929",
-        "locked": true,
+        "locked": false,
         "uma": {
           "name": "Haru Urara",
           "rating": "SS",
@@ -603,8 +603,8 @@
             "Hard Worker",
             "Full Throttle"
           ],
-          "spriteId": 105201,
-          "spritePath": "assets/characters/chara_stand_1052_105201.png"
+          "spriteId": 105202,
+          "spritePath": "assets/characters/chara_stand_1052_105202.png"
         }
       },
       {

@@ -106,8 +106,8 @@
           "spriteId": 102401,
           "rating": "UG1",
           "style": "end",
-          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
-          "stats": { "speed": 12940, "stamina": 1086, "power": 951, "guts": 606, "wisdom": 1166 },
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "B" },
+          "stats": { "speed": 1294, "stamina": 1086, "power": 951, "guts": 606, "wisdom": 1166 },
           "skills": ["Flashy☆Landing","Triumphant Pulse","Let's Pump Some Iron!","Right-Handed","Spring Runner","Sunny Days","Corner Recovery","Rushing Gale!","It's On!","No Stopping Me!","Straightaway Spurt","Long Corners","Daring Strike","Burning Spirit SPD","Ignited Spirit GUTS"] }
       },
       { "trainer": "Shin",

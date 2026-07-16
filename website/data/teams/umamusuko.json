@@ -410,10 +410,10 @@
           "aptitudes": {
             "terrain": "A",
             "distance": "S",
-            "style": "A"
+            "style": "B"
           },
           "stats": {
-            "speed": 12940,
+            "speed": 1294,
             "stamina": 1086,
             "power": 951,
             "guts": 606,
