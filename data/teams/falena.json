@@ -108,7 +108,7 @@
           "rating": "UG2",
           "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
+          "stats": { "speed": 1206, "stamina": 946, "power": 1208, "guts": 455, "wisdom": 1245 },
           "skills": ["Eternal Encompassing Shine","Shooting Star","Superior Heal","Right-Handed Demon","Outer Post Proficiency","Professor of Curvature","Swinging Maestro","It's On!","No Stopping Me!","Standing By","Straightaway Spurt","Long Straightaways","Lone Wolf","Slipstream","Ignited Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Omatsuri Mambo !",
