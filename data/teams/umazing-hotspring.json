@@ -136,7 +136,7 @@
         "uma": { "name": "El Condor Pasa",
           "spriteId": 101401,
           "rating": "UG6",
-          "style": "front",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1284, "stamina": 527, "power": 1242, "guts": 426, "wisdom": 1404 },
           "skills": ["Victoria por plancha ☆","Budding Blossom","Right-Handed","Outer Post Proficiency","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Speed Star","Turbo Sprint","Pace Chaser Straightaways","Pace Chaser Corners","Tail Held High","Playtime's Over!","Neck and Neck","Burning Spirit SPD","Ignited Spirit PWR"] }

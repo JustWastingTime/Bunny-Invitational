@@ -7987,7 +7987,7 @@
             "uma": {
               "name": "El Condor Pasa",
               "rating": "UG6",
-              "style": "front",
+              "style": "pace",
               "aptitudes": {
                 "terrain": "A",
                 "distance": "A",
@@ -8759,7 +8759,7 @@
               "umaKey": "sprite:101401",
               "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1014_101401.png",
-              "style": "front",
+              "style": "pace",
               "key": "umazing-hotspring:0"
             },
             {
