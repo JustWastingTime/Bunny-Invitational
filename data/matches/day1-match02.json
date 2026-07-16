@@ -4,243 +4,243 @@
   "matchNumber": 2,
   "round": "Group A Match 2",
   "teams": [
-    "",
-    "",
-    ""
+    "falena",
+    "umamusuko",
+    "cabal"
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }

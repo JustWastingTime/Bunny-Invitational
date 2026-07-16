@@ -4,243 +4,243 @@
   "matchNumber": 4,
   "round": "Group B Match 2",
   "teams": [
-    "",
-    "",
-    ""
+    "rilliance",
+    "kita-trauma",
+    "uma-love"
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       }
