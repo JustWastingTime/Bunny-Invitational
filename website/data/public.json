@@ -7008,8 +7008,8 @@
                 "Tail Held High",
                 "Ignited Spirit SPD"
               ],
-              "spriteId": 100401,
-              "spritePath": "assets/characters/chara_stand_1004_100401.png"
+              "spriteId": 100402,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png"
             }
           },
           {
@@ -9011,9 +9011,9 @@
               "gate": null,
               "trainer": "Special Needs",
               "umaName": "Maruzensky",
-              "umaKey": "sprite:100401",
-              "isUnique": true,
-              "spritePath": "assets/characters/chara_stand_1004_100401.png",
+              "umaKey": "sprite:100402",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png",
               "style": "front",
               "key": "umamusuko:1"
             },
@@ -11290,7 +11290,7 @@
   ],
   "stats": {
     "totalMatches": 12,
-    "uniqueUmaCount": 27,
+    "uniqueUmaCount": 26,
     "filledUmaCount": 180,
     "hakodateUmas": 8,
     "mostCommonUma": {
@@ -11315,7 +11315,6 @@
       "Inari One",
       "Ines Fujin",
       "King Halo",
-      "Maruzensky",
       "Matikanetannhauser",
       "Mayano Top Gun",
       "Meisho Doto",
@@ -11344,7 +11343,6 @@
       "sprite:103401",
       "sprite:103101",
       "sprite:106101",
-      "sprite:100401",
       "sprite:106201",
       "sprite:102402",
       "sprite:105801",
@@ -11414,6 +11412,18 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:100402",
+        "umaName": "Maruzensky",
+        "spritePath": "assets/characters/chara_stand_1004_100402.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 0,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
         "spritePath": "assets/characters/chara_stand_1010_101001.png",
@@ -11441,18 +11451,6 @@
         "umaKey": "sprite:101901",
         "umaName": "Agnes Digital",
         "spritePath": "assets/characters/chara_stand_1019_101901.png",
-        "population": 5,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:100402",
-        "umaName": "Maruzensky",
-        "spritePath": "assets/characters/chara_stand_1004_100402.png",
         "population": 5,
         "isUnique": false,
         "starts": 0,
@@ -12026,18 +12024,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:100401",
-        "umaName": "Maruzensky",
-        "spritePath": "assets/characters/chara_stand_1004_100401.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:106201",
         "umaName": "Matikanetannhauser",
         "spritePath": "assets/characters/chara_stand_1062_106201.png",
@@ -12280,6 +12266,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Maruzensky",
+        "starts": 6,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Taiki Shuttle",
         "starts": 6,
         "wins": 0,
@@ -12293,12 +12285,6 @@
       },
       {
         "umaName": "Agnes Digital",
-        "starts": 5,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Maruzensky",
         "starts": 5,
         "wins": 0,
         "winRate": 0
@@ -12581,12 +12567,6 @@
       },
       {
         "umaName": "King Halo",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Maruzensky",
         "starts": 1,
         "wins": 0,
         "winRate": 0
