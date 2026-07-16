@@ -185,26 +185,41 @@
       {
         "slot": 1,
         "trainer": "Clowngeta",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Mejiro McQueen",
-          "rating": "S",
-          "style": "front",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1291,
+            "stamina": 709,
+            "power": 1241,
+            "guts": 522,
+            "wisdom": 1031
           },
-          "skills": [],
-          "spriteId": 101301,
-          "spritePath": "assets/characters/chara_stand_1013_101301.png"
+          "skills": [
+            "Legacy of the Strong",
+            "Let's Pump Some Iron!",
+            "Budding Blossom",
+            "Right-Handed",
+            "Rainy Days",
+            "Beeline Burst",
+            "It's On!",
+            "No Stopping Me!",
+            "Late Surger Corners",
+            "Uma Stan",
+            "Groundwork",
+            "Playtime's Over!",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 101302,
+          "spritePath": "assets/characters/chara_stand_1013_101302.png"
         }
       },
       {
@@ -258,11 +273,11 @@
     "medium": [
       {
         "slot": 0,
-        "trainer": "Haiji",
-        "locked": false,
+        "trainer": "Haiji@FALENA",
+        "locked": true,
         "uma": {
           "name": "Kitasan Black",
-          "rating": "S",
+          "rating": "UG",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -270,13 +285,33 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1272,
+            "stamina": 675,
+            "power": 1149,
+            "guts": 530,
+            "wisdom": 1208
           },
-          "skills": [],
+          "skills": [
+            "Victory Cheer!",
+            "Angling and Scheming",
+            "Standard Distance",
+            "Corner Adept",
+            "Straightaway Adept",
+            "Straightaway Recovery",
+            "Focus",
+            "Taking the Lead",
+            "Up-Tempo",
+            "Medium Straightaways",
+            "Front Runner Corners",
+            "Top Runner",
+            "Moxie",
+            "Triple 7s",
+            "Groundwork",
+            "Playtime's Over!",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit WIT"
+          ],
           "spriteId": 106801,
           "spritePath": "assets/characters/chara_stand_1068_106801.png"
         }
@@ -326,24 +361,41 @@
       {
         "slot": 2,
         "trainer": "Uprob",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Air Shakur",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG2",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1267,
+            "stamina": 811,
+            "power": 1201,
+            "guts": 570,
+            "wisdom": 1180
           },
-          "skills": [],
+          "skills": [
+            "trigger:BEAT",
+            "Let's Pump Some Iron!",
+            "Right-Handed",
+            "Spring Runner",
+            "Corner Adept",
+            "Corner Acceleration",
+            "It's On!",
+            "No Stopping Me!",
+            "Medium Straightaways",
+            "Moonlit Flash",
+            "Tail Held High",
+            "Slipstream",
+            "Daring Strike",
+            "Fighting Spirit",
+            "Elated",
+            "Burning Spirit SPD"
+          ],
           "spriteId": 103601,
           "spritePath": "assets/characters/chara_stand_1036_103601.png"
         }
@@ -352,12 +404,12 @@
     "long": [
       {
         "slot": 0,
-        "trainer": "Korie",
-        "locked": false,
+        "trainer": "Korie@Falena",
+        "locked": true,
         "uma": {
           "name": "Satono Diamond",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG2",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
@@ -370,7 +422,24 @@
             "guts": 0,
             "wisdom": 0
           },
-          "skills": [],
+          "skills": [
+            "Eternal Encompassing Shine",
+            "Shooting Star",
+            "Superior Heal",
+            "Right-Handed Demon",
+            "Outer Post Proficiency",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "It's On!",
+            "No Stopping Me!",
+            "Standing By",
+            "Straightaway Spurt",
+            "Long Straightaways",
+            "Lone Wolf",
+            "Slipstream",
+            "Ignited Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
           "spriteId": 106701,
           "spritePath": "assets/characters/chara_stand_1067_106701.png"
         }
@@ -424,25 +493,40 @@
       },
       {
         "slot": 2,
-        "trainer": "Lazarus",
-        "locked": false,
+        "trainer": "lazarus - FLNA",
+        "locked": true,
         "uma": {
           "name": "Gold Ship",
-          "rating": "S",
-          "style": "front",
+          "rating": "SS",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1041,
+            "stamina": 931,
+            "power": 1197,
+            "guts": 495,
+            "wisdom": 1053
           },
-          "skills": [],
+          "skills": [
+            "Anchors Aweigh!",
+            "Shooting Star",
+            "Barcarole of Blessings",
+            "Non-Standard Distance",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Go-Home Specialist",
+            "End Closer Savvy",
+            "Uma Stan",
+            "Tail Held High",
+            "Daring Strike"
+          ],
           "spriteId": 100701,
           "spritePath": "assets/characters/chara_stand_1007_100701.png"
         }
@@ -452,24 +536,44 @@
       {
         "slot": 0,
         "trainer": "Plazma",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Taiki Shuttle",
-          "rating": "S",
-          "style": "front",
+          "rating": "UG1",
+          "style": "pace",
           "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
+            "terrain": "S",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1302,
+            "stamina": 668,
+            "power": 1274,
+            "guts": 807,
+            "wisdom": 962
           },
-          "skills": [],
+          "skills": [
+            "Shooting for Victory!",
+            "Triumphant Pulse",
+            "Budding Blossom",
+            "Condor's Fury",
+            "Rainy Days",
+            "Outer Post Proficiency",
+            "Professor of Curvature",
+            "Focus",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Prepared to Pass",
+            "Sprint Corners",
+            "Pace Chaser Savvy",
+            "Uma Stan",
+            "Tail Held High",
+            "Playtime's Over!",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
           "spriteId": 101001,
           "spritePath": "assets/characters/chara_stand_1010_101001.png"
         }
@@ -525,27 +629,47 @@
       },
       {
         "slot": 2,
-        "trainer": "Nati",
-        "locked": false,
+        "trainer": "TheOddNati",
+        "locked": true,
         "uma": {
-          "name": "El Condor Pasa",
-          "rating": "S",
-          "style": "front",
+          "name": "Haru Urara",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1204,
+            "stamina": 489,
+            "power": 1201,
+            "guts": 431,
+            "wisdom": 1238
           },
-          "skills": [],
-          "spriteId": 101401,
-          "spritePath": "assets/characters/chara_stand_1014_101401.png"
+          "skills": [
+            "114th Time's the Charm",
+            "Behold Thine Emperor's Divine Might",
+            "Let's Pump Some Iron!",
+            "Right-Handed",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "On Your Left!",
+            "Turbo Sprint",
+            "Sprint Corners",
+            "Meticulous Measures",
+            "Late Surger Straightaways",
+            "Uma Stan",
+            "Fearless",
+            "Ignited Spirit SPD",
+            "Ignited Spirit PWR",
+            "Ignited Spirit GUTS",
+            "Glittering Star",
+            "Eyes on the Goal"
+          ],
+          "spriteId": 105202,
+          "spritePath": "assets/characters/chara_stand_1052_105202.png"
         }
       }
     ]

@@ -4,7 +4,7 @@
   "color": "#c1e1f1",
   "categories": {
     "sprint": [
-      { "trainer": "chocomoto.",
+      { "trainer": "Chocomoto",
         "locked": true,
         "uma": { "name": "Mejiro Ardan",
           "spriteId": 107101,
@@ -24,15 +24,15 @@
           "stats": { "speed": 1204, "stamina": 555, "power": 1201, "guts": 446, "wisdom": 1222 },
           "skills": ["Ambition to Surpass the Sakura","Triumphant Pulse","Shooting for Victory!","Budding Blossom","Standard Distance","Professor of Curvature","It's On!","Nimble Navigator","Speed Star","Sprint Straightaways","Countermeasure","Meticulous Measures","Pace Chaser Corners","Highlander","Tail Held High","Playtime's Over!"] }
       },
-      { "trainer": "Houseknight",
+      { "trainer": "Ren",
         "locked": true,
-        "uma": { "name": "Inari One",
-          "spriteId": 103401,
-          "rating": "S+",
-          "style": "end",
+        "uma": { "name": "Oguri Cap",
+          "spriteId": 100601,
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1146, "stamina": 635, "power": 1234, "guts": 418, "wisdom": 986 },
-          "skills": ["Now We're Cruisin'!","Let's Pump Some Iron!","Louder! Tracen Cheer!","Professor of Curvature","It's On!","Straightaway Spurt","Sprint Straightaways","Sprint Corners","End Closer Straightaways","Tail Nine","Forward, March!","Daring Strike"] }
+          "stats": { "speed": 1260, "stamina": 569, "power": 1217, "guts": 526, "wisdom": 1142 },
+          "skills": ["Triumphant Pulse","Shooting for Victory!","Budding Blossom","Right-Handed","Nakayama Racecourse","Firm Conditions","Wet Conditions","Professor of Curvature","Straightaway Adept","It's On!","Speed Star","Countermeasure","Pace Chaser Straightaways","Pace Chaser Corners","Straight Descent","Groundwork","Neck and Neck","Light as a Feather","Burning Spirit SPD"] }
       }
     ],
     "mile": [
@@ -56,14 +56,14 @@
           "stats": { "speed": 1238, "stamina": 666, "power": 1202, "guts": 485, "wisdom": 1061 },
           "skills": ["You and Me! One-on-One!","Triumphant Pulse","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","Corner Recovery","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","End Closer Straightaways","End Closer Corners","Tail Held High","Slipstream","Playtime's Over!","Daring Strike","Leap Forward"] }
       },
-      { "trainer": "New Team mile 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
+      { "trainer": "harry",
+        "uma": { "name": "Mejiro Dober",
+          "spriteId": 105901,
+          "rating": "UG",
+          "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1262, "stamina": 636, "power": 1266, "guts": 431, "wisdom": 1158 },
+          "skills": ["Moving Past, and Beyond","Triumphant Pulse","Let's Pump Some Iron!","Peerless Dance of Flowering Flames","Right-Handed","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Homestretch Haste","Fast & Furious","On Your Left!","Outer Swell","Unyielding Spirit"] }
       }
     ],
     "medium": [
@@ -77,23 +77,25 @@
           "stats": { "speed": 1265, "stamina": 834, "power": 1211, "guts": 616, "wisdom": 1165 },
           "skills": ["Barcarole of Blessings","Red Shift/LP1211-M","Right-Handed","Spring Runner","Professor of Curvature","It's On!","No Stopping Me!","Prepared to Pass","Killer Tunes","Pace Chaser Corners","Determined Descent","Uma Stan","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Guts"] }
       },
-      { "trainer": "New Team medium 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
+      { "trainer": "Teako",
+        "locked": true,
+        "uma": { "name": "Symboli Rudolf",
+          "spriteId": 101702,
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1287, "stamina": 912, "power": 911, "guts": 462, "wisdom": 1333 },
+          "skills": ["Arrows Whistle, Shadows Disperse","Shooting Star","Standard Distance","Spring Runner","Outer Post Proficiency","Corner Recovery","Straightaway Adept","Rushing Gale!","It's On!","No Stopping Me!","Prepared to Pass","Pace Chaser Straightaways","Pace Chaser Corners","Determined Descent","Groundwork","Playtime's Over!","Ignited Spirit SPD"] }
       },
-      { "trainer": "New Team medium 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "UltimateShah",
+        "locked": true,
+        "uma": { "name": "Narita Brian",
+          "spriteId": 101601,
+          "rating": "SS",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1243, "stamina": 837, "power": 926, "guts": 466, "wisdom": 1148 },
+          "skills": ["Shadow Break","Triumphant Pulse","Sunny Days","Corner Adept","Corner Recovery","Beeline Burst","It's On!","Nimble Navigator","In Body and Mind","Prepared to Pass","Up-Tempo","Medium Straightaways","Pace Chaser Corners","Determined Descent","Lone Wolf","Head-On","Ignited Spirit SPD"] }
       }
     ],
     "long": [
@@ -107,23 +109,25 @@
           "stats": { "speed": 1229, "stamina": 1148, "power": 1263, "guts": 583, "wisdom": 1219 },
           "skills": ["Victory Cheer!","Angling and Scheming","Non-Standard Distance","Spring Runner","Corner Adept","Prudent Positioning","It's On!","Taking the Lead","Fast-Paced","Cooldown","Blast Forward","Dodging Danger","Top Runner","Front Runner Savvy","Groundwork","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team long 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Khaile",
+        "locked": true,
+        "uma": { "name": "Mejiro McQueen",
+          "spriteId": 101303,
+          "rating": "UG7",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1287, "stamina": 1075, "power": 1188, "guts": 525, "wisdom": 1165 },
+          "skills": ["Your Smile Sparkles as the Waves","564 Escapades","Wet Conditions","Spring Runner","Professor of Curvature","Focus","It's On!","Calm in a Crowd","No Stopping Me!","Prepared to Pass","Pace Chaser Straightaways","Hydrate","Groundwork","Lone Wolf","Slipstream","Playtime's Over!","Headliner","Heart All Set","Burning Spirit SPD","Ignited Spirit STA","Ignited Spirit PWR"] }
       },
-      { "trainer": "New Team long 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "UUC|FishPineApl",
+        "locked": true,
+        "uma": { "name": "Silence Suzuka",
+          "spriteId": 100201,
+          "rating": "SS",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1075, "stamina": 550, "power": 384, "guts": 437, "wisdom": 1658 },
+          "skills": ["The View from the Lead is Mine!","Runaway","Right-Handed","Left-Handed","Outer Post Proficiency","Concentration","Center Stage","Taking the Lead","Dodging Danger","Groundwork","Burning Spirit WIT"] }
       }
     ],
     "dirt": [
@@ -147,14 +151,15 @@
           "stats": { "speed": 1237, "stamina": 536, "power": 1224, "guts": 453, "wisdom": 1160 },
           "skills": ["SPARKLY☆STARDOM","Victoria por plancha ☆","Angling and Scheming","Right-Handed","Wet Conditions","Fall Runner","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","Taking the Lead","Fast-Paced","Front Runner Corners","Top Runner","Groundwork","Tail Held High","Playtime's Over!","Top Pick","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team dirt 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
+      { "trainer": "Houseknight",
+        "locked": true,
+        "uma": { "name": "Inari One",
+          "spriteId": 103401,
+          "rating": "S+",
+          "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1146, "stamina": 635, "power": 1234, "guts": 418, "wisdom": 986 },
+          "skills": ["Now We're Cruisin'!","Let's Pump Some Iron!","Louder! Tracen Cheer!","Professor of Curvature","It's On!","Straightaway Spurt","Sprint Straightaways","Sprint Corners","End Closer Straightaways","Tail Nine","Forward, March!","Daring Strike"] }
       }
     ]
   }

@@ -24,14 +24,15 @@
           "stats": { "speed": 1260, "stamina": 500, "power": 1217, "guts": 696, "wisdom": 1203 },
           "skills": ["A Kiss for Courage","Angling and Scheming","Right-Handed","Professor of Curvature","Corner Recovery","Focus","It's On!","Taking the Lead","Unrestrained","Sprint Corners","Dodging Danger","Groundwork","Tail Held High","In High Spirits","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team sprint 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "@Curren",
+        "locked": true,
+        "uma": { "name": "Curren Chan",
+          "spriteId": 103802,
+          "rating": "SS",
+          "style": "pace",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1344, "stamina": 376, "power": 1174, "guts": 497, "wisdom": 1172 },
+          "skills": ["One True Color","Shooting for Victory!","Budding Blossom","Right-Handed","Nakayama Racecourse","Firm Conditions","Professor of Curvature","Straightaway Adept","Straightaway Acceleration","It's On!","Nimble Navigator","Turbo Sprint","Sprint Straightaways","Sprint Corners","Groundwork","Burning Spirit SPD"] }
       }
     ],
     "mile": [
@@ -55,14 +56,15 @@
           "stats": { "speed": 1289, "stamina": 654, "power": 1070, "guts": 575, "wisdom": 1271 },
           "skills": ["Operation Cacao","Angling and Scheming","Right-Handed","Hakodate Racecourse","Wet Conditions","Professor of Curvature","Straightaway Adept","Concentration","Prudent Positioning","It's On!","Early Lead","Escape Artist","Front Runner Straightaways","Top Runner","Groundwork","Tail Held High","Playtime's Over!","Ignited Spirit WIT","Racing Spirit: Stamina"] }
       },
-      { "trainer": "New Team mile 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Salty",
+        "locked": true,
+        "uma": { "name": "Vodka",
+          "spriteId": 100801,
+          "rating": "SS+",
+          "style": "late",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
+          "stats": { "speed": 1292, "stamina": 596, "power": 1304, "guts": 633, "wisdom": 944 },
+          "skills": ["Cut and Drive!","Let's Pump Some Iron!","Winter Runner","Corner Adept","Corner Acceleration","Straightaway Acceleration","It's On!","No Stopping Me!","Slick Surge","Mile Straightaways","Late Surger Straightaways","Late Surger Corners","Late Surger Savvy","Burning Spirit SPD"] }
       }
     ],
     "medium": [
@@ -108,23 +110,25 @@
           "stats": { "speed": 1302, "stamina": 952, "power": 1199, "guts": 546, "wisdom": 1208 },
           "skills": ["Flashy☆Landing","Moving Past, and Beyond","Right-Handed","Professor of Curvature","Corner Recovery","Straightaway Adept","Breath of Fresh Air","Focus","It's On!","No Stopping Me!","Homestretch Haste","Straightaway Spurt","Long Corners","Strategist","Super Lucky Seven","Tail Held High","Daring Strike","Burning Spirit SPD","Ignited Spirit WIT"] }
       },
-      { "trainer": "New Team long 2",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "StirFryYutaka",
+        "locked": true,
+        "uma": { "name": "Tamamo Cross",
+          "spriteId": 102101,
+          "rating": "UG3",
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1284, "stamina": 1024, "power": 1024, "guts": 621, "wisdom": 1225 },
+          "skills": ["White Lightning Comin' Through!","Behold Thine Emperor's Divine Might","Barcarole of Blessings","Outer Post Proficiency","Professor of Curvature","Swinging Maestro","Straightaway Adept","It's On!","No Stopping Me!","Straightaway Spurt","Tail Nine","Daring Strike","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
-      { "trainer": "New Team long 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Chungus Truther",
+        "locked": true,
+        "uma": { "name": "Hishi Amazon",
+          "spriteId": 101201,
+          "rating": "UG1",
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1224, "stamina": 1030, "power": 1117, "guts": 653, "wisdom": 1166 },
+          "skills": ["You and Me! One-on-One!","Triumphant Pulse","Barcarole of Blessings","Right-Handed","Competitive Spirit","Swinging Maestro","Straightaway Adept","Straightaway Acceleration","Straightaway Recovery","No Stopping Me!","Sturm und Drang","Straightaway Spurt","Uma Stan","Tail Held High","Daring Strike","Ignited Spirit PWR"] }
       }
     ],
     "dirt": [
@@ -138,24 +142,25 @@
           "stats": { "speed": 1260, "stamina": 459, "power": 1203, "guts": 758, "wisdom": 1066 },
           "skills": ["114th Time's the Charm","Barcarole of Blessings","Louder! Tracen Cheer!","Nakayama Racecourse","Fall Runner","Professor of Curvature","Straightaway Adept","No Stopping Me!","On Your Left!","Hard Worker","Tail Held High","Slipstream","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Stamina","Racing Spirit: Mood"] }
       },
-      { "trainer": "Panda28",
+      { "trainer": "Kyrone",
         "locked": true,
-        "uma": { "name": "Bamboo Memory",
-          "spriteId": 105301,
-          "rating": "S+",
-          "style": "late",
-          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
-          "stats": { "speed": 1289, "stamina": 380, "power": 1021, "guts": 467, "wisdom": 1064 },
-          "skills": ["Red-Hot Discipline!","Tokyo Racecourse","Hanshin Racecourse","Kyoto Racecourse","Standard Distance","Corner Adept","Straightaway Adept","Center Stage","It's On!","No Stopping Me!","Rising Dragon","Sprint Straightaways","Sprint Corners","Plan X"] }
-      },
-      { "trainer": "New Team dirt 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+        "uma": { "name": "Smart Falcon",
+          "spriteId": 104601,
+          "rating": "SS+",
           "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "S", "distance": "A", "style": "A" },
+          "stats": { "speed": 1262, "stamina": 485, "power": 1198, "guts": 469, "wisdom": 1182 },
+          "skills": ["SPARKLY☆STARDOM","Angling and Scheming","Oi Racecourse","Wet Conditions","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","Early Lead","Fast-Paced","Sprint Straightaways","Huge Lead","Countermeasure","Front Runner Savvy","Groundwork","In High Spirits","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
+      },
+      { "trainer": "hoki",
+        "locked": true,
+        "uma": { "name": "Mejiro McQueen",
+          "spriteId": 101303,
+          "rating": "UG1",
+          "style": "pace",
+          "aptitudes": { "terrain": "C", "distance": "A", "style": "A" },
+          "stats": { "speed": 1338, "stamina": 845, "power": 1169, "guts": 732, "wisdom": 872 },
+          "skills": ["Your Smile Sparkles as the Waves","Victoria por plancha ☆","One True Color","Fall Runner","Rushing Gale!","Focus","It's On!","No Stopping Me!","Turbo Sprint","Sprint Corners","Countermeasure","Pace Chaser Savvy","Uma Stan","Groundwork","Burning Spirit SPD","Ignited Spirit GUTS","Ignited Spirit WIT"] }
       }
     ]
   }

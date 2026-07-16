@@ -48,13 +48,14 @@
           "skills": ["Chasing After You","Triumphant Pulse","Moving Past, and Beyond","Right-Handed","Winter Runner","Rainy Days","Professor of Curvature","It's On!","No Stopping Me!","Outer Swell","Mile Straightaways","Mile Corners","Late Surger Straightaways","Uma Stan","Tail Held High","Burning Spirit SPD"] }
       },
       { "trainer": "Clowngeta",
+        "locked": true,
         "uma": { "name": "Mejiro McQueen",
-          "spriteId": 101301,
-          "rating": "S",
-          "style": "front",
+          "spriteId": 101302,
+          "rating": "SS",
+          "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1291, "stamina": 709, "power": 1241, "guts": 522, "wisdom": 1031 },
+          "skills": ["Legacy of the Strong","Let's Pump Some Iron!","Budding Blossom","Right-Handed","Rainy Days","Beeline Burst","It's On!","No Stopping Me!","Late Surger Corners","Uma Stan","Groundwork","Playtime's Over!","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Cyndexv@FLNA",
         "locked": true,
@@ -68,14 +69,15 @@
       }
     ],
     "medium": [
-      { "trainer": "Haiji",
+      { "trainer": "Haiji@FALENA",
+        "locked": true,
         "uma": { "name": "Kitasan Black",
           "spriteId": 106801,
-          "rating": "S",
+          "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1272, "stamina": 675, "power": 1149, "guts": 530, "wisdom": 1208 },
+          "skills": ["Victory Cheer!","Angling and Scheming","Standard Distance","Corner Adept","Straightaway Adept","Straightaway Recovery","Focus","Taking the Lead","Up-Tempo","Medium Straightaways","Front Runner Corners","Top Runner","Moxie","Triple 7s","Groundwork","Playtime's Over!","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
       { "trainer": "Yechers",
         "locked": true,
@@ -88,24 +90,26 @@
           "skills": ["Schwarzes Schwert","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","It's On!","No Stopping Me!","Homestretch Haste","Position Pilfer","On Your Left!","Medium Corners","Late Surger Savvy","Tail Held High","Playtime's Over!","Fighting Spirit","Latch On","Ignited Spirit SPD"] }
       },
       { "trainer": "Uprob",
+        "locked": true,
         "uma": { "name": "Air Shakur",
           "spriteId": 103601,
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG2",
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1267, "stamina": 811, "power": 1201, "guts": 570, "wisdom": 1180 },
+          "skills": ["trigger:BEAT","Let's Pump Some Iron!","Right-Handed","Spring Runner","Corner Adept","Corner Acceleration","It's On!","No Stopping Me!","Medium Straightaways","Moonlit Flash","Tail Held High","Slipstream","Daring Strike","Fighting Spirit","Elated","Burning Spirit SPD"] }
       }
     ],
     "long": [
-      { "trainer": "Korie",
+      { "trainer": "Korie@Falena",
+        "locked": true,
         "uma": { "name": "Satono Diamond",
           "spriteId": 106701,
-          "rating": "S",
-          "style": "front",
+          "rating": "UG2",
+          "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "skills": ["Eternal Encompassing Shine","Shooting Star","Superior Heal","Right-Handed Demon","Outer Post Proficiency","Professor of Curvature","Swinging Maestro","It's On!","No Stopping Me!","Standing By","Straightaway Spurt","Long Straightaways","Lone Wolf","Slipstream","Ignited Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Omatsuri Mambo !",
         "locked": true,
@@ -117,25 +121,27 @@
           "stats": { "speed": 1205, "stamina": 822, "power": 1220, "guts": 565, "wisdom": 1013 },
           "skills": ["Go, Go, Mun!","Triumphant Pulse","Behold Thine Emperor's Divine Might","Non-Standard Distance","Spring Runner","Professor of Curvature","Straightaway Adept","It's On!","Unruffled","No Stopping Me!","Homestretch Haste","Straightaway Spurt","Long Corners","Overwhelming Pressure","Tail Held High","Playtime's Over!","Daring Strike","Burning Spirit SPD","Ignited Spirit PWR","Racing Spirit: Power","Racing Spirit: Wit"] }
       },
-      { "trainer": "Lazarus",
+      { "trainer": "lazarus - FLNA",
+        "locked": true,
         "uma": { "name": "Gold Ship",
           "spriteId": 100701,
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "SS",
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1041, "stamina": 931, "power": 1197, "guts": 495, "wisdom": 1053 },
+          "skills": ["Anchors Aweigh!","Shooting Star","Barcarole of Blessings","Non-Standard Distance","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","Go-Home Specialist","End Closer Savvy","Uma Stan","Tail Held High","Daring Strike"] }
       }
     ],
     "dirt": [
       { "trainer": "Plazma",
+        "locked": true,
         "uma": { "name": "Taiki Shuttle",
           "spriteId": 101001,
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "rating": "UG1",
+          "style": "pace",
+          "aptitudes": { "terrain": "S", "distance": "S", "style": "A" },
+          "stats": { "speed": 1302, "stamina": 668, "power": 1274, "guts": 807, "wisdom": 962 },
+          "skills": ["Shooting for Victory!","Triumphant Pulse","Budding Blossom","Condor's Fury","Rainy Days","Outer Post Proficiency","Professor of Curvature","Focus","It's On!","No Stopping Me!","Homestretch Haste","Prepared to Pass","Sprint Corners","Pace Chaser Savvy","Uma Stan","Tail Held High","Playtime's Over!","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Flem",
         "locked": true,
@@ -147,14 +153,15 @@
           "stats": { "speed": 1302, "stamina": 486, "power": 1209, "guts": 462, "wisdom": 1145 },
           "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Victoria por plancha ☆","Budding Blossom","Wet Conditions","Outer Post Proficiency","Competitive Spirit","Professor of Curvature","Straightaway Adept","Prudent Positioning","It's On!","No Stopping Me!","Prepared to Pass","Pace Chaser Corners","Groundwork","Lone Wolf","Trending in the Charts!","Forward, March!","Light as a Feather","Sunny Sign","Got the Spirit","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
-      { "trainer": "Nati",
-        "uma": { "name": "El Condor Pasa",
-          "spriteId": 101401,
-          "rating": "S",
-          "style": "front",
+      { "trainer": "TheOddNati",
+        "locked": true,
+        "uma": { "name": "Haru Urara",
+          "spriteId": 105202,
+          "rating": "SS",
+          "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1204, "stamina": 489, "power": 1201, "guts": 431, "wisdom": 1238 },
+          "skills": ["114th Time's the Charm","Behold Thine Emperor's Divine Might","Let's Pump Some Iron!","Right-Handed","Straightaway Adept","It's On!","Nimble Navigator","On Your Left!","Turbo Sprint","Sprint Corners","Meticulous Measures","Late Surger Straightaways","Uma Stan","Fearless","Ignited Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS","Glittering Star","Eyes on the Goal"] }
       }
     ]
   }

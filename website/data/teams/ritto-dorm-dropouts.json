@@ -8,80 +8,131 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "New Team sprint 1",
-        "locked": false,
+        "trainer": "RDD | Ethan",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Curren Chan",
+          "rating": "UG1",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1252,
+            "stamina": 639,
+            "power": 1207,
+            "guts": 518,
+            "wisdom": 1222
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "#LookatCurren",
+            "Shadow Break",
+            "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+            "Budding Blossom",
+            "Right-Handed",
+            "Firm Conditions",
+            "Corner Adept",
+            "Straightaway Adept",
+            "It's On!",
+            "Speed Star",
+            "Shifting Gears",
+            "Pace Chaser Straightaways",
+            "Tail Held High",
+            "Sympathy",
+            "Slipstream",
+            "Playtime's Over!",
+            "Head-On",
+            "Risky Business",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 103801,
+          "spritePath": "assets/characters/chara_stand_1038_103801.png"
         }
       },
       {
         "slot": 1,
-        "trainer": "New Team sprint 2",
-        "locked": false,
+        "trainer": "Sayuri",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Kawakami Princess",
+          "rating": "UG2",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1289,
+            "stamina": 493,
+            "power": 1224,
+            "guts": 545,
+            "wisdom": 1252
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "A Princess Must Seize Victory!",
+            "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+            "Budding Blossom",
+            "Firm Conditions",
+            "Professor of Curvature",
+            "It's On!",
+            "No Stopping Me!",
+            "Rising Dragon",
+            "Gap Closer",
+            "Sprint Straightaways",
+            "Meticulous Measures",
+            "Late Surger Straightaways",
+            "Late Surger Corners",
+            "Playtime's Over!",
+            "Full Throttle",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 103901,
+          "spritePath": "assets/characters/chara_stand_1039_103901.png"
         }
       },
       {
         "slot": 2,
-        "trainer": "New Team sprint 3",
-        "locked": false,
+        "trainer": "Icyjelly",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Tamamo Cross",
+          "rating": "SS",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1234,
+            "stamina": 506,
+            "power": 1105,
+            "guts": 423,
+            "wisdom": 1240
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "White Lightning Comin' Through!",
+            "Triumphant Pulse",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "Fast & Furious",
+            "On Your Left!",
+            "Late Surger Corners",
+            "Tail Nine",
+            "Slipstream",
+            "Playtime's Over!",
+            "Leap Forward",
+            "Burning Spirit SPD"
+          ],
+          "spriteId": 102101,
+          "spritePath": "assets/characters/chara_stand_1021_102101.png"
         }
       }
     ],
@@ -264,65 +315,11 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team medium 2",
-        "locked": false,
+        "trainer": "RDD | Hime",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
-            "style": "A"
-          },
-          "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
-          },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
-        }
-      },
-      {
-        "slot": 2,
-        "trainer": "New Team medium 3",
-        "locked": false,
-        "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
-            "style": "A"
-          },
-          "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
-          },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
-        }
-      }
-    ],
-    "long": [
-      {
-        "slot": 0,
-        "trainer": "Darth bobcat",
-        "locked": false,
-        "uma": {
-          "name": "Super Creek",
-          "rating": "UG",
+          "name": "Mejiro Ardan",
+          "rating": "UG2",
           "style": "pace",
           "aptitudes": {
             "terrain": "A",
@@ -330,67 +327,205 @@
             "style": "A"
           },
           "stats": {
-            "speed": 1318,
-            "stamina": 779,
-            "power": 1064,
-            "guts": 582,
-            "wisdom": 1208
+            "speed": 1276,
+            "stamina": 693,
+            "power": 1157,
+            "guts": 564,
+            "wisdom": 1270
           },
-          "skills": [],
-          "spriteId": 104501,
-          "spritePath": "assets/characters/chara_stand_1045_104501.png"
-        }
-      },
-      {
-        "slot": 1,
-        "trainer": "New Team long 2",
-        "locked": false,
-        "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": {
-            "terrain": "A",
-            "distance": "A",
-            "style": "A"
-          },
-          "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
-          },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "A Lifelong Dream, A Moment's Flight",
+            "Triumphant Pulse",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "Straightaway Adept",
+            "Focus",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Prepared to Pass",
+            "Up-Tempo",
+            "Medium Corners",
+            "Pace Chaser Corners",
+            "Determined Descent",
+            "Come What May",
+            "Ignited Spirit PWR",
+            "Racing Spirit: Power"
+          ],
+          "spriteId": 107101,
+          "spritePath": "assets/characters/chara_stand_1071_107101.png"
         }
       },
       {
         "slot": 2,
-        "trainer": "New Team long 3",
-        "locked": false,
+        "trainer": "RDD | cbaced",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Symboli Rudolf",
+          "rating": "SS",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1282,
+            "stamina": 737,
+            "power": 1205,
+            "guts": 440,
+            "wisdom": 1024
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Behold Thine Emperor's Divine Might",
+            "Moving Past, and Beyond",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "Straightaway Recovery",
+            "It's On!",
+            "No Stopping Me!",
+            "Homestretch Haste",
+            "Masterful Gambit",
+            "Tail Held High",
+            "Playtime's Over!",
+            "From the Brink",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 101701,
+          "spritePath": "assets/characters/chara_stand_1017_101701.png"
+        }
+      }
+    ],
+    "long": [
+      {
+        "slot": 0,
+        "trainer": "RDD | LittlePup",
+        "locked": true,
+        "uma": {
+          "name": "Agnes Tachyon",
+          "rating": "UG5",
+          "style": "pace",
+          "aptitudes": {
+            "terrain": "S",
+            "distance": "S",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 1293,
+            "stamina": 951,
+            "power": 1287,
+            "guts": 713,
+            "wisdom": 1090
+          },
+          "skills": [
+            "U=ma2",
+            "Triumphant Pulse",
+            "Spring Runner",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "No Stopping Me!",
+            "Race Planner",
+            "Speed Star",
+            "Long Corners",
+            "Pace Chaser Corners",
+            "Neck and Neck",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 103201,
+          "spritePath": "assets/characters/chara_stand_1032_103201.png"
+        }
+      },
+      {
+        "slot": 1,
+        "trainer": "RDD | Rozkoszny",
+        "locked": true,
+        "uma": {
+          "name": "Kitasan Black",
+          "rating": "SS+",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "S",
+            "style": "A"
+          },
+          "stats": {
+            "speed": 1203,
+            "stamina": 1172,
+            "power": 825,
+            "guts": 721,
+            "wisdom": 1024
+          },
+          "skills": [
+            "Victory Cheer!",
+            "A Kiss for Courage",
+            "Operation Cacao",
+            "Right-Handed",
+            "Spring Runner",
+            "Corner Recovery",
+            "Prudent Positioning",
+            "Ramp Up",
+            "Homestretch Haste",
+            "Taking the Lead",
+            "Fast-Paced",
+            "Long Straightaways",
+            "Front Runner Straightaways",
+            "Front Runner Corners",
+            "Top Runner",
+            "Groundwork",
+            "Slipstream",
+            "Playtime's Over!",
+            "Feature Act",
+            "Firm Resolve",
+            "Ignited Spirit WIT"
+          ],
+          "spriteId": 106801,
+          "spritePath": "assets/characters/chara_stand_1068_106801.png"
+        }
+      },
+      {
+        "slot": 2,
+        "trainer": "RDD | Falchion",
+        "locked": true,
+        "uma": {
+          "name": "Biwa Hayahide",
+          "rating": "UG",
+          "style": "front",
+          "aptitudes": {
+            "terrain": "A",
+            "distance": "A",
+            "style": "S"
+          },
+          "stats": {
+            "speed": 1270,
+            "stamina": 801,
+            "power": 1120,
+            "guts": 463,
+            "wisdom": 1216
+          },
+          "skills": [
+            "Presents from X",
+            "Victory Cheer!",
+            "Right-Handed",
+            "Sunny Days",
+            "Professor of Curvature",
+            "Swinging Maestro",
+            "Focus",
+            "In Body and Mind",
+            "Early Lead",
+            "VIP Pass",
+            "Top Runner",
+            "Triple 7s",
+            "Groundwork",
+            "Slipstream",
+            "Ignited Spirit SPD",
+            "Ignited Spirit WIT",
+            "Glittering Star"
+          ],
+          "spriteId": 102302,
+          "spritePath": "assets/characters/chara_stand_1023_102302.png"
         }
       }
     ],
@@ -478,28 +613,42 @@
       },
       {
         "slot": 2,
-        "trainer": "New Team dirt 3",
+        "trainer": "Archam",
         "locked": false,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Taiki Shuttle",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1282,
+            "stamina": 432,
+            "power": 1250,
+            "guts": 457,
+            "wisdom": 1267
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Joyful Voyage",
+            "Victoria por plancha ☆",
+            "Budding Blossom",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Homestretch Haste",
+            "Speed Star",
+            "Turbo Sprint",
+            "Pace Chaser Corners",
+            "Tail Held High",
+            "Neck and Neck",
+            "Light as a Feather"
+          ],
+          "spriteId": 101002,
+          "spritePath": "assets/characters/chara_stand_1010_101002.png"
         }
       }
     ]

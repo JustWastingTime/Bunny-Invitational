@@ -24,7 +24,6 @@ const DEFAULT_SCORING = {
   uniqueBonus: 1,
 };
 
-const STAT_KEYS = ["speed", "stamina", "power", "guts", "wisdom"];
 const HAKODATE_SKILL_KEYS = new Set(["hakodateracecourse", "hakodateracecoursex"]);
 
 export function listMatchFiles(matchesDir) {
@@ -173,9 +172,25 @@ function isPlaceholderUma(uma) {
   return false;
 }
 
-function sumUmaStats(uma) {
+function aptitudeIsS(aptitudes, key) {
+  return String(aptitudes?.[key] ?? "").trim().toUpperCase() === "S";
+}
+
+/** Weighted stat total for team power rankings only (sheet numbers stay raw). */
+function sumUmaStatsForTeamPower(uma) {
   const stats = uma?.stats ?? {};
-  return STAT_KEYS.reduce((sum, key) => sum + (Number(stats[key]) || 0), 0);
+  const aptitudes = uma?.aptitudes ?? {};
+  const speedMul = aptitudeIsS(aptitudes, "distance") ? 1.1 : 1;
+  const powerMul = aptitudeIsS(aptitudes, "terrain") ? 1.1 : 1;
+  const witMul = aptitudeIsS(aptitudes, "style") ? 1.1 : 1;
+
+  return (
+    (Number(stats.speed) || 0) * speedMul +
+    (Number(stats.stamina) || 0) +
+    (Number(stats.power) || 0) * powerMul +
+    (Number(stats.guts) || 0) +
+    (Number(stats.wisdom) || 0) * witMul
+  );
 }
 
 function skillWeight(rarity) {
@@ -243,7 +258,7 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
 
         umaCount += 1;
         filledUmaCount += 1;
-        totalStats += sumUmaStats(uma);
+        totalStats += sumUmaStatsForTeamPower(uma);
 
         const skills = Array.isArray(uma.skills) ? uma.skills.filter(Boolean) : [];
         let hasHakodate = false;

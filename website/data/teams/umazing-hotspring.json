@@ -8,7 +8,7 @@
     "sprint": [
       {
         "slot": 0,
-        "trainer": "chocomoto.",
+        "trainer": "Chocomoto",
         "locked": true,
         "uma": {
           "name": "Mejiro Ardan",
@@ -95,40 +95,47 @@
       },
       {
         "slot": 2,
-        "trainer": "Houseknight",
+        "trainer": "Ren",
         "locked": true,
         "uma": {
-          "name": "Inari One",
-          "rating": "S+",
-          "style": "end",
+          "name": "Oguri Cap",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 1146,
-            "stamina": 635,
-            "power": 1234,
-            "guts": 418,
-            "wisdom": 986
+            "speed": 1260,
+            "stamina": 569,
+            "power": 1217,
+            "guts": 526,
+            "wisdom": 1142
           },
           "skills": [
-            "Now We're Cruisin'!",
-            "Let's Pump Some Iron!",
-            "Louder! Tracen Cheer!",
+            "Triumphant Pulse",
+            "Shooting for Victory!",
+            "Budding Blossom",
+            "Right-Handed",
+            "Nakayama Racecourse",
+            "Firm Conditions",
+            "Wet Conditions",
             "Professor of Curvature",
+            "Straightaway Adept",
             "It's On!",
-            "Straightaway Spurt",
-            "Sprint Straightaways",
-            "Sprint Corners",
-            "End Closer Straightaways",
-            "Tail Nine",
-            "Forward, March!",
-            "Daring Strike"
+            "Speed Star",
+            "Countermeasure",
+            "Pace Chaser Straightaways",
+            "Pace Chaser Corners",
+            "Straight Descent",
+            "Groundwork",
+            "Neck and Neck",
+            "Light as a Feather",
+            "Burning Spirit SPD"
           ],
-          "spriteId": 103401,
-          "spritePath": "assets/characters/chara_stand_1034_103401.png"
+          "spriteId": 100601,
+          "spritePath": "assets/characters/chara_stand_1006_100601.png"
         }
       }
     ],
@@ -221,28 +228,42 @@
       },
       {
         "slot": 2,
-        "trainer": "New Team mile 3",
+        "trainer": "harry",
         "locked": false,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Mejiro Dober",
+          "rating": "UG",
+          "style": "late",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1262,
+            "stamina": 636,
+            "power": 1266,
+            "guts": 431,
+            "wisdom": 1158
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Moving Past, and Beyond",
+            "Triumphant Pulse",
+            "Let's Pump Some Iron!",
+            "Peerless Dance of Flowering Flames",
+            "Right-Handed",
+            "Professor of Curvature",
+            "Straightaway Adept",
+            "It's On!",
+            "Nimble Navigator",
+            "Homestretch Haste",
+            "Fast & Furious",
+            "On Your Left!",
+            "Outer Swell",
+            "Unyielding Spirit"
+          ],
+          "spriteId": 105901,
+          "spritePath": "assets/characters/chara_stand_1059_105901.png"
         }
       }
     ],
@@ -290,54 +311,88 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team medium 2",
-        "locked": false,
+        "trainer": "Teako",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Symboli Rudolf",
+          "rating": "UG",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1287,
+            "stamina": 912,
+            "power": 911,
+            "guts": 462,
+            "wisdom": 1333
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Arrows Whistle, Shadows Disperse",
+            "Shooting Star",
+            "Standard Distance",
+            "Spring Runner",
+            "Outer Post Proficiency",
+            "Corner Recovery",
+            "Straightaway Adept",
+            "Rushing Gale!",
+            "It's On!",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Pace Chaser Straightaways",
+            "Pace Chaser Corners",
+            "Determined Descent",
+            "Groundwork",
+            "Playtime's Over!",
+            "Ignited Spirit SPD"
+          ],
+          "spriteId": 101702,
+          "spritePath": "assets/characters/chara_stand_1017_101702.png"
         }
       },
       {
         "slot": 2,
-        "trainer": "New Team medium 3",
-        "locked": false,
+        "trainer": "UltimateShah",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Narita Brian",
+          "rating": "SS",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1243,
+            "stamina": 837,
+            "power": 926,
+            "guts": 466,
+            "wisdom": 1148
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Shadow Break",
+            "Triumphant Pulse",
+            "Sunny Days",
+            "Corner Adept",
+            "Corner Recovery",
+            "Beeline Burst",
+            "It's On!",
+            "Nimble Navigator",
+            "In Body and Mind",
+            "Prepared to Pass",
+            "Up-Tempo",
+            "Medium Straightaways",
+            "Pace Chaser Corners",
+            "Determined Descent",
+            "Lone Wolf",
+            "Head-On",
+            "Ignited Spirit SPD"
+          ],
+          "spriteId": 101601,
+          "spritePath": "assets/characters/chara_stand_1016_101601.png"
         }
       }
     ],
@@ -389,37 +444,58 @@
       },
       {
         "slot": 1,
-        "trainer": "New Team long 2",
-        "locked": false,
+        "trainer": "Khaile",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Mejiro McQueen",
+          "rating": "UG7",
+          "style": "pace",
           "aptitudes": {
             "terrain": "A",
-            "distance": "A",
+            "distance": "S",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1287,
+            "stamina": 1075,
+            "power": 1188,
+            "guts": 525,
+            "wisdom": 1165
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Your Smile Sparkles as the Waves",
+            "564 Escapades",
+            "Wet Conditions",
+            "Spring Runner",
+            "Professor of Curvature",
+            "Focus",
+            "It's On!",
+            "Calm in a Crowd",
+            "No Stopping Me!",
+            "Prepared to Pass",
+            "Pace Chaser Straightaways",
+            "Hydrate",
+            "Groundwork",
+            "Lone Wolf",
+            "Slipstream",
+            "Playtime's Over!",
+            "Headliner",
+            "Heart All Set",
+            "Burning Spirit SPD",
+            "Ignited Spirit STA",
+            "Ignited Spirit PWR"
+          ],
+          "spriteId": 101303,
+          "spritePath": "assets/characters/chara_stand_1013_101303.png"
         }
       },
       {
         "slot": 2,
-        "trainer": "New Team long 3",
-        "locked": false,
+        "trainer": "UUC|FishPineApl",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
+          "name": "Silence Suzuka",
+          "rating": "SS",
           "style": "front",
           "aptitudes": {
             "terrain": "A",
@@ -427,16 +503,27 @@
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1075,
+            "stamina": 550,
+            "power": 384,
+            "guts": 437,
+            "wisdom": 1658
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "The View from the Lead is Mine!",
+            "Runaway",
+            "Right-Handed",
+            "Left-Handed",
+            "Outer Post Proficiency",
+            "Concentration",
+            "Center Stage",
+            "Taking the Lead",
+            "Dodging Danger",
+            "Groundwork",
+            "Burning Spirit WIT"
+          ],
+          "spriteId": 100201,
+          "spritePath": "assets/characters/chara_stand_1002_100201.png"
         }
       }
     ],
@@ -531,28 +618,40 @@
       },
       {
         "slot": 2,
-        "trainer": "New Team dirt 3",
-        "locked": false,
+        "trainer": "Houseknight",
+        "locked": true,
         "uma": {
-          "name": "Uma Name",
-          "rating": "S",
-          "style": "front",
+          "name": "Inari One",
+          "rating": "S+",
+          "style": "end",
           "aptitudes": {
             "terrain": "A",
             "distance": "A",
             "style": "A"
           },
           "stats": {
-            "speed": 0,
-            "stamina": 0,
-            "power": 0,
-            "guts": 0,
-            "wisdom": 0
+            "speed": 1146,
+            "stamina": 635,
+            "power": 1234,
+            "guts": 418,
+            "wisdom": 986
           },
-          "skills": [],
-          "characterId": "",
-          "spriteId": "",
-          "spritePath": null
+          "skills": [
+            "Now We're Cruisin'!",
+            "Let's Pump Some Iron!",
+            "Louder! Tracen Cheer!",
+            "Professor of Curvature",
+            "It's On!",
+            "Straightaway Spurt",
+            "Sprint Straightaways",
+            "Sprint Corners",
+            "End Closer Straightaways",
+            "Tail Nine",
+            "Forward, March!",
+            "Daring Strike"
+          ],
+          "spriteId": 103401,
+          "spritePath": "assets/characters/chara_stand_1034_103401.png"
         }
       }
     ]

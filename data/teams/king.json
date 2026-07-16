@@ -24,14 +24,15 @@
           "stats": { "speed": 1230, "stamina": 511, "power": 1226, "guts": 739, "wisdom": 1232 },
           "skills": ["One True Color","Shooting for Victory!","Budding Blossom","Wet Conditions","Fall Runner","It's On!","Homestretch Haste","Speed Star","Turbo Sprint","Sprint Corners","Pace Chaser Corners","Straight Descent","Pace Chaser Savvy","Groundwork","Tail Held High","Playtime's Over!","Risky Business","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
-      { "trainer": "New Team sprint 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
+      { "trainer": "Inigo",
+        "locked": true,
+        "uma": { "name": "Taiki Shuttle",
+          "spriteId": 101002,
+          "rating": "SS+",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1222, "stamina": 638, "power": 1259, "guts": 700, "wisdom": 1016 },
+          "skills": ["Joyful Voyage","Triumphant Pulse","Budding Blossom","Right-Handed","Outer Post Proficiency","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Speed Star","Sprint Corners","Pace Chaser Corners","Shrewd Step","Lone Wolf","Playtime's Over!","Neck and Neck","In High Spirits"] }
       }
     ],
     "mile": [
@@ -55,14 +56,15 @@
           "stats": { "speed": 1199, "stamina": 655, "power": 1183, "guts": 351, "wisdom": 1016 },
           "skills": ["Cut and Drive!","Shooting Star","Triumphant Pulse","Moving Past, and Beyond","It's On!","No Stopping Me!","Homestretch Haste","On Your Left!","Furious Feat","Mile Straightaways","Late Surger Corners","Late Surger Savvy","Slipstream","Burning Spirit SPD","Ignited Spirit GUTS"] }
       },
-      { "trainer": "New Team mile 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Yugian",
+        "locked": true,
+        "uma": { "name": "Mejiro Ryan",
+          "spriteId": 102701,
+          "rating": "SS+",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1216, "stamina": 704, "power": 1283, "guts": 558, "wisdom": 1072 },
+          "skills": ["Let's Pump Some Iron!","Triumphant Pulse","Moving Past, and Beyond","Professor of Curvature","Straightaway Adept","Position Pilfer","On Your Left!","Rising Dragon","Fighter","1,500,000 CC","Triple 7s","Fearless","Ignited Spirit SPD","Burning Spirit PWR"] }
       }
     ],
     "medium": [
@@ -76,7 +78,7 @@
           "stats": { "speed": 1311, "stamina": 699, "power": 1211, "guts": 488, "wisdom": 1129 },
           "skills": ["I See Victory in My Future!","Let's Pump Some Iron!","Moving Past, and Beyond","Right-Handed","Standard Distance","Corner Recovery","Straightaway Adept","It's On!","No Stopping Me!","Fast & Furious","Slick Surge","Medium Straightaways","Medium Corners","Late Surger Straightaways","Late Surger Corners","1,500,000 CC","Uma Stan","Lone Wolf","Take the Chance","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
-      { "trainer": "dnh",
+      { "trainer": "dnh8",
         "locked": true,
         "uma": { "name": "Mejiro Dober",
           "spriteId": 105902,
@@ -87,6 +89,7 @@
           "skills": ["Wherever This Wonder Leads","Triumphant Pulse","Kyoto Racecourse","Spring Runner","Professor of Curvature","Corner Recovery","Straightaway Adept","Ramp Up","Nimble Navigator","On Your Left!","Medium Straightaways","Late Surger Corners","Uma Stan","Tail Held High","From the Brink","Fearless","Downhill Speedster","Pedal to the Metal","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
       { "trainer": "Hines",
+        "locked": true,
         "uma": { "name": "Fine Motion",
           "spriteId": 102201,
           "rating": "UG1",
@@ -117,14 +120,15 @@
           "stats": { "speed": 1206, "stamina": 1075, "power": 1129, "guts": 451, "wisdom": 1091 },
           "skills": ["Go☆Go☆Goal!","White Lightning Comin' Through!","Right-Handed","Wet Conditions","Spring Runner","Professor of Curvature","Swinging Maestro","It's On!","No Stopping Me!","Homestretch Haste","Straightaway Spurt","Cooldown","End Closer Corners","Tail Held High","Daring Strike"] }
       },
-      { "trainer": "New Team long 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "qontroL",
+        "locked": true,
+        "uma": { "name": "Kitasan Black",
+          "spriteId": 106801,
+          "rating": "UG",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "stats": { "speed": 1291, "stamina": 928, "power": 1154, "guts": 590, "wisdom": 927 },
+          "skills": ["Victory Cheer!","Barcarole of Blessings","Break It Down!","Right-Handed","Spring Runner","Swinging Maestro","It's On!","Taking the Lead","Fast-Paced","Blast Forward","Front Runner Straightaways","Dodging Danger","Top Runner","Triple 7s","Groundwork","Firm Resolve","Ignited Spirit WIT","Racing Spirit: Stamina"] }
       }
     ],
     "dirt": [
@@ -148,14 +152,15 @@
           "stats": { "speed": 1115, "stamina": 664, "power": 1289, "guts": 570, "wisdom": 960 },
           "skills": ["Ravissant","Triumphant Pulse","Prideful King","Presents from X","Right-Handed","Wet Conditions","Beeline Burst","It's On!","Speed Star","Sprint Corners","Pace Chaser Corners","Shrewd Step","Slipstream","Neck and Neck","Burning Spirit PWR"] }
       },
-      { "trainer": "New Team dirt 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
-          "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+      { "trainer": "Nub Nubson",
+        "locked": true,
+        "uma": { "name": "Bamboo Memory",
+          "spriteId": 105301,
+          "rating": "UG3",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1285, "stamina": 608, "power": 1218, "guts": 547, "wisdom": 1203 },
+          "skills": ["Red-Hot Discipline!","Triumphant Pulse","Louder! Tracen Cheer!","Professor of Curvature","Straightaway Adept","It's On!","Fast & Furious","On Your Left!","Rising Dragon","Sprinting Gear","Sprint Straightaways","Sprint Corners","Uma Stan","Full Throttle","Leap Forward","Burning Spirit SPD","Racing Spirit: Stamina"] }
       }
     ]
   }

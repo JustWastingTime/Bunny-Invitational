@@ -25,13 +25,14 @@
           "skills": ["Red-Hot Discipline!","Triumphant Pulse","Behold Thine Emperor's Divine Might","Let's Pump Some Iron!","Wet Conditions","Fall Runner","It's On!","Nimble Navigator","Homestretch Haste","On Your Left!","Rising Dragon","Sprint Straightaways","Sprint Corners","Late Surger Straightaways","Uma Stan","Playtime's Over!","Dauntless","Burning Spirit SPD"] }
       },
       { "trainer": "Squid",
+        "locked": true,
         "uma": { "name": "Narita Brian",
           "spriteId": 101601,
-          "rating": "S",
+          "rating": "UG1",
           "style": "pace",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1120, "stamina": 720, "power": 800, "guts": 700, "wisdom": 700 },
-          "skills": ["Late Surger Straightaways ◎"] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1225, "stamina": 689, "power": 1220, "guts": 645, "wisdom": 1165 },
+          "skills": ["Shadow Break","Lights of Vaudeville","Shooting for Victory!","Budding Blossom","Professor of Curvature","It's On!","Nimble Navigator","In Body and Mind","Speed Star","Sprinting Gear","Straight Descent","Neck and Neck","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       }
     ],
     "mile": [
@@ -55,72 +56,78 @@
           "stats": { "speed": 1303, "stamina": 660, "power": 1245, "guts": 458, "wisdom": 1247 },
           "skills": ["Budding Blossom","Shooting for Victory!","Right-Handed","Wet Conditions","Winter Runner","Professor of Curvature","Beeline Burst","It's On!","Nimble Navigator","Mile Maven","Mile Straightaways","Shifting Gears","Pace Chaser Corners","Slipstream","Head-On","Burning Spirit SPD","Glittering Star"] }
       },
-      { "trainer": "DarrylT",
+      { "trainer": "Takamori",
+        "locked": true,
         "uma": { "name": "Maruzensky",
-          "spriteId": 100401,
-          "rating": "SS",
+          "spriteId": 100402,
+          "rating": "UG4",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1050, "stamina": 980, "power": 840, "guts": 720, "wisdom": 800 },
-          "skills": ["Pace Chaser Straightaways ◎","Mile Corners ◎"] }
+          "stats": { "speed": 1295, "stamina": 755, "power": 1227, "guts": 424, "wisdom": 1299 },
+          "skills": ["A Kiss for Courage","Angling and Scheming","Operation Cacao","Right-Handed","Wet Conditions","Long Shot","Professor of Curvature","Focus","Prudent Positioning","Taking the Lead","Escape Artist","Mile Maven","Mile Corners","Shifting Gears","Front Runner Straightaways","Triple 7s","Groundwork","Ignited Spirit SPD","Ignited Spirit PWR","Glittering Star"] }
       }
     ],
     "medium": [
-      { "trainer": "Toad",
-        "uma": { "name": "Rice Shower",
-          "spriteId": 103001,
-          "rating": "SS",
-          "style": "end",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1000, "stamina": 1080, "power": 880, "guts": 820, "wisdom": 840 },
-          "skills": ["Closer Savvy ◎","Medium Corners ◎"] }
+      { "trainer": "Toad_33",
+        "locked": true,
+        "uma": { "name": "Winning Ticket",
+          "spriteId": 103501,
+          "rating": "S+",
+          "style": "late",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1278, "stamina": 806, "power": 1077, "guts": 496, "wisdom": 996 },
+          "skills": ["Our Ticket to Win!","Behold Thine Emperor's Divine Might","Let's Pump Some Iron!","Right-Handed","Straightaway Adept","It's On!","No Stopping Me!","Fast & Furious","Late Surger Straightaways","Late Surger Corners","Playtime's Over!","Fighting Spirit","Burning Spirit SPD"] }
       },
       { "trainer": "Brendan",
+        "locked": true,
         "uma": { "name": "Oguri Cap",
-          "spriteId": 100601,
-          "rating": "SS",
-          "style": "pace",
+          "spriteId": 100602,
+          "rating": "UG2",
+          "style": "end",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 980, "stamina": 1120, "power": 860, "guts": 780, "wisdom": 860 },
-          "skills": ["Late Surger Savvy ◎","Medium Straightaways ◎"] }
+          "stats": { "speed": 1268, "stamina": 607, "power": 1256, "guts": 421, "wisdom": 1262 },
+          "skills": ["Festive Miracle","Let's Pump Some Iron!","Moving Past, and Beyond","Spring Runner","Professor of Curvature","Corner Recovery","Straightaway Recovery","It's On!","No Stopping Me!","Refraction Arc","Uma Stan","Tail Held High","Daring Strike","Burning Spirit SPD","Ignited Spirit STA"] }
       },
-      { "trainer": "Big Moj",
+      { "trainer": "Mochi",
+        "locked": true,
         "uma": { "name": "Agnes Tachyon",
           "spriteId": 103201,
-          "rating": "SS",
-          "style": "front",
+          "rating": "UG2",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1040, "stamina": 1040, "power": 950, "guts": 850, "wisdom": 750 },
-          "skills": ["Pace Chaser Savvy ◎","Ramp Up"] }
+          "stats": { "speed": 1232, "stamina": 783, "power": 1212, "guts": 492, "wisdom": 1165 },
+          "skills": ["U=ma2","Sky-High Teio Step","Barcarole of Blessings","Kyoto Racecourse","Sunny Days","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Speed Star","Killer Tunes","Medium Straightaways","Medium Corners","Pace Chaser Corners","Pace Chaser Savvy","Groundwork","Tail Held High","Neck and Neck","Ignited Spirit PWR"] }
       }
     ],
     "long": [
       { "trainer": "Hades",
-        "uma": { "name": "Special Week",
-          "spriteId": 100101,
+        "locked": true,
+        "uma": { "name": "Tamamo Cross",
+          "spriteId": 102101,
           "rating": "UG",
-          "style": "pace",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1318, "stamina": 779, "power": 1064, "guts": 582, "wisdom": 1208 },
-          "skills": [] }
+          "style": "end",
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1250, "stamina": 1043, "power": 1200, "guts": 471, "wisdom": 1034 },
+          "skills": ["White Lightning Comin' Through!","Triumphant Pulse","∴win Q.E.D.","Certain Victory","Professor of Curvature","Swinging Maestro","Ramp Up","No Stopping Me!","Straightaway Spurt","Long Corners","Pressure","Uma Stan","Tail Nine","Playtime's Over!"] }
       },
       { "trainer": "Fafa",
-        "uma": { "name": "Silence Suzuka",
-          "spriteId": 100201,
+        "uma": { "name": "Mejiro Bright",
+          "spriteId": 107401,
           "rating": "SS",
-          "style": "runaway",
+          "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 1100, "stamina": 1050, "power": 820, "guts": 700, "wisdom": 900 },
-          "skills": ["Front Runner Savvy ◎","Long Corners ◎","Steadfast"] }
+          "stats": { "speed": 1046, "stamina": 1085, "power": 1042, "guts": 749, "wisdom": 890 },
+          "skills": ["Lovely Spring Breeze","Triumphant Pulse","Let's Pump Some Iron!","Swinging Maestro","It's On!","No Stopping Me!","Homestretch Haste","On Your Left!","Inside Scoop","Long Corners","Late Surger Straightaways","Sympathy","Risky Business","Scramble"] }
       },
       { "trainer": "Shenezle",
+        "locked": true,
         "uma": { "name": "Manhattan Cafe",
           "spriteId": 102501,
-          "rating": "SS",
+          "rating": "UG4",
           "style": "end",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 990, "stamina": 1140, "power": 900, "guts": 780, "wisdom": 920 },
-          "skills": ["Closer Savvy ◎","Corner Recovery ◎"] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "S" },
+          "stats": { "speed": 9901214, "stamina": 1122, "power": 1033, "guts": 733, "wisdom": 1144 },
+          "skills": ["Chasing After You","Behold Thine Emperor's Divine Might","Right-Handed","Firm Conditions","Spring Runner","Corner Recovery","Beeline Burst","It's On!","No Stopping Me!","Masterful Gambit","Straightaway Spurt","Long Straightaways","Long Corners","Tail Held High","Playtime's Over!","Daring Strike","Burning Spirit SPD","Ignited Spirit STA"] }
       }
     ],
     "dirt": [
@@ -135,22 +142,24 @@
           "skills": ["SPARKLY☆STARDOM","Angling and Scheming","Oi Racecourse","Wet Conditions","Fall Runner","Center Stage","It's On!","No Stopping Me!","Go with the Flow","Early Lead","Fast-Paced","Front Runner Straightaways","Front Runner Corners","Top Runner","Groundwork","Trending in the Charts!","Risky Business"] }
       },
       { "trainer": "eachcorpse",
+        "locked": true,
         "uma": { "name": "Taiki Shuttle",
           "spriteId": 101001,
-          "rating": "S",
-          "style": "pace",
+          "rating": "SS",
+          "style": "front",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 980, "stamina": 960, "power": 1020, "guts": 850, "wisdom": 740 },
-          "skills": ["Dirt Corners ◎","Late Surger Savvy ○"] }
+          "stats": { "speed": 1238, "stamina": 550, "power": 1044, "guts": 850, "wisdom": 740 },
+          "skills": ["Shooting for Victory!","Angling and Scheming","Operation Cacao","Oi Racecourse","Straightaway Adept","Focus","Prudent Positioning","It's On!","Perfect Prep!","Front Runner Corners","Dodging Danger","Top Runner","Front Runner Savvy","Groundwork","Tail Held High","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS","Ignited Spirit WIT"] }
       },
       { "trainer": "Value",
+        "locked": true,
         "uma": { "name": "El Condor Pasa",
           "spriteId": 101401,
-          "rating": "S",
-          "style": "end",
+          "rating": "SS",
+          "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 960, "stamina": 940, "power": 1000, "guts": 800, "wisdom": 800 },
-          "skills": ["Closer Corners ◎","Luck Genius"] }
+          "stats": { "speed": 1205, "stamina": 604, "power": 1100, "guts": 660, "wisdom": 1098 },
+          "skills": ["Victoria por plancha ☆","Shooting for Victory!","Budding Blossom","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Prepared to Pass","Pace Chaser Straightaways","Tail Held High","Slipstream","Forward, March!","In High Spirits","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit GUTS"] }
       }
     ]
   }

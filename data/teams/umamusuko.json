@@ -120,14 +120,15 @@
           "stats": { "speed": 1226, "stamina": 1178, "power": 1177, "guts": 688, "wisdom": 983 },
           "skills": ["The Duty of Dignity Calls","Triumphant Pulse","Barcarole of Blessings","Right-Handed","Firm Conditions","Professor of Curvature","Swinging Maestro","Rushing Gale!","It's On!","Nimble Navigator","Long Corners","Neck and Neck","Burning Spirit SPD"] }
       },
-      { "trainer": "New Team long 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "loliぺdofin",
+        "locked": true,
+        "uma": { "name": "Kitasan Black",
+          "spriteId": 106801,
+          "rating": "UG2",
           "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1203, "stamina": 1173, "power": 1053, "guts": 768, "wisdom": 1005 },
+          "skills": ["Victory Cheer!","Barcarole of Blessings","Right-Handed","Wet Conditions","Spring Runner","Swinging Maestro","Focus","Prudent Positioning","It's On!","Taking the Lead","Blast Forward","Vanguard Spirit","Front Runner Corners","Top Runner","Groundwork","Tail Held High","Firm Resolve"] }
       }
     ],
     "dirt": [
@@ -151,14 +152,15 @@
           "stats": { "speed": 1182, "stamina": 575, "power": 1233, "guts": 513, "wisdom": 1270 },
           "skills": ["Shooting for Victory!","Triumphant Pulse","Budding Blossom","564 Escapades","It's On!","No Stopping Me!","Homestretch Haste","Prepared to Pass","Sprinting Gear","Sprint Straightaways","Pace Chaser Corners","Straight Descent","Tail Held High","Forward, March!","Neck and Neck","Sunny Sign","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
-      { "trainer": "New Team dirt 3",
-        "uma": { "name": "Uma Name",
-          "characterId": "",
-          "rating": "S",
+      { "trainer": "Clyne",
+        "locked": true,
+        "uma": { "name": "Smart Falcon",
+          "spriteId": 104601,
+          "rating": "SS+",
           "style": "front",
-          "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
-          "stats": { "speed": 0, "stamina": 0, "power": 0, "guts": 0, "wisdom": 0 },
-          "skills": [] }
+          "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
+          "stats": { "speed": 1271, "stamina": 566, "power": 1112, "guts": 637, "wisdom": 1212 },
+          "skills": ["SPARKLY☆STARDOM","Triumphant Pulse","Angling and Scheming","Right-Handed","Wet Conditions","Taking the Lead","Fast-Paced","Unrestrained","Countermeasure","Front Runner Corners","Top Runner","Front Runner Savvy","Groundwork","Light as a Feather","Sunny Sign","Full Tilt","Burning Spirit SPD"] }
       }
     ]
   }
