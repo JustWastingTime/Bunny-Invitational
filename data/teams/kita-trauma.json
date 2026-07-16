@@ -56,7 +56,7 @@
           "stats": { "speed": 1219, "stamina": 870, "power": 1219, "guts": 707, "wisdom": 1004 },
           "skills": ["The View from the Lead is Mine!","Angling and Scheming","Operation Cacao","Runaway","Right-Handed","Professor of Curvature","Concentration","Taking the Lead","Escape Artist","Mile Straightaways","Front Runner Straightaways","Front Runner Corners","Front Runner Savvy","Groundwork","Playtime's Over!","Burning Spirit SPD","Ignited Spirit PWR","Ignited Spirit WIT"] }
       },
-      { "trainer": "Yoyo",
+      { "trainer": "aShinyYoyo",
         "locked": true,
         "uma": { "name": "Matikanefukukitaru",
           "spriteId": 105601,

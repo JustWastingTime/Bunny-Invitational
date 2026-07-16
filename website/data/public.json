@@ -3023,7 +3023,7 @@
           },
           {
             "slot": 2,
-            "trainer": "Yoyo",
+            "trainer": "aShinyYoyo",
             "locked": true,
             "uma": {
               "name": "Matikanefukukitaru",
@@ -10398,7 +10398,7 @@
               "teamColor": "#eb5153",
               "slot": 2,
               "gate": null,
-              "trainer": "Yoyo",
+              "trainer": "aShinyYoyo",
               "umaName": "Matikanefukukitaru",
               "umaKey": "sprite:105601",
               "isUnique": false,
