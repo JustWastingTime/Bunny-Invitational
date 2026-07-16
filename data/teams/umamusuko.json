@@ -49,7 +49,7 @@
       { "trainer": "Special Needs",
         "locked": true,
         "uma": { "name": "Maruzensky",
-          "spriteId": 100401,
+          "spriteId": 100402,
           "rating": "UG2",
           "style": "front",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },

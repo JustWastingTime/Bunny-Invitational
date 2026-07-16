@@ -153,13 +153,14 @@
           "skills": ["OMG! (ﾟ∀ﾟ) The Final Sprint! ☆","Shooting for Victory!","Budding Blossom","Wet Conditions","Professor of Curvature","It's On!","No Stopping Me!","Prepared to Pass","Sprint Straightaways","Superstan","Groundwork","Top Pick","Forward, March!","Burning Spirit SPD"] }
       },
       { "trainer": "Archam",
+        "locked": true,
         "uma": { "name": "Taiki Shuttle",
           "spriteId": 101002,
           "rating": "UG",
           "style": "pace",
           "aptitudes": { "terrain": "A", "distance": "S", "style": "A" },
           "stats": { "speed": 1282, "stamina": 432, "power": 1250, "guts": 457, "wisdom": 1267 },
-          "skills": ["Joyful Voyage","Victoria por plancha ☆","Budding Blossom","Right-Handed","Professor of Curvature","Straightaway Adept","It's On!","Homestretch Haste","Speed Star","Turbo Sprint","Pace Chaser Corners","Tail Held High","Neck and Neck","Light as a Feather"] }
+          "skills": ["Joyful Voyage","Victoria por plancha ☆","Budding Blossom","Right-Handed","Professor of Curvature","Straightaway Adept","It's On!","Homestretch Haste","Speed Star","Turbo Sprint","Pace Chaser Corners","Tail Held High","Neck and Neck","Light as a Feather","Ignited Spirit PWR"] }
       }
     ]
   }

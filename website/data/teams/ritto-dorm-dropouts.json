@@ -614,7 +614,7 @@
       {
         "slot": 2,
         "trainer": "Archam",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Taiki Shuttle",
           "rating": "UG",
@@ -645,7 +645,8 @@
             "Pace Chaser Corners",
             "Tail Held High",
             "Neck and Neck",
-            "Light as a Feather"
+            "Light as a Feather",
+            "Ignited Spirit PWR"
           ],
           "spriteId": 101002,
           "spritePath": "assets/characters/chara_stand_1010_101002.png"
