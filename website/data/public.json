@@ -2536,7 +2536,7 @@
         "long": [
           {
             "slot": 0,
-            "trainer": "Darth bobcat",
+            "trainer": "Snrubman",
             "locked": true,
             "uma": {
               "name": "Super Creek",
@@ -10000,7 +10000,7 @@
               "teamColor": "#359b62",
               "slot": 0,
               "gate": null,
-              "trainer": "Darth bobcat",
+              "trainer": "Snrubman",
               "umaName": "Super Creek",
               "umaKey": "sprite:104501",
               "isUnique": true,
