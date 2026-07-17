@@ -142,7 +142,7 @@
         "sprint": [
           {
             "slot": 0,
-            "trainer": "JLew",
+            "trainer": "JLew@BUNS",
             "locked": true,
             "uma": {
               "name": "Sakura Bakushin O",
@@ -185,7 +185,7 @@
           },
           {
             "slot": 1,
-            "trainer": "Banana",
+            "trainer": "Banana@BUNS",
             "locked": true,
             "uma": {
               "name": "Curren Chan",
@@ -3711,7 +3711,7 @@
           },
           {
             "slot": 2,
-            "trainer": "freakkiem",
+            "trainer": "FREAK",
             "locked": true,
             "uma": {
               "name": "Smart Falcon",
@@ -4384,7 +4384,7 @@
           },
           {
             "slot": 2,
-            "trainer": "RDD ||| Mento",
+            "trainer": "Goober",
             "locked": true,
             "uma": {
               "name": "El Condor Pasa",
@@ -4644,7 +4644,7 @@
           },
           {
             "slot": 2,
-            "trainer": "RDD | Falchion",
+            "trainer": "Karina",
             "locked": true,
             "uma": {
               "name": "Biwa Hayahide",
@@ -8177,7 +8177,7 @@
               "teamColor": "#e91e45",
               "slot": 0,
               "gate": null,
-              "trainer": "JLew",
+              "trainer": "JLew@BUNS",
               "umaName": "Sakura Bakushin O",
               "umaKey": "sprite:104101",
               "isUnique": false,
@@ -8191,7 +8191,7 @@
               "teamColor": "#e91e45",
               "slot": 1,
               "gate": null,
-              "trainer": "Banana",
+              "trainer": "Banana@BUNS",
               "umaName": "Curren Chan",
               "umaKey": "sprite:103801",
               "isUnique": false,
@@ -8298,7 +8298,7 @@
               "teamColor": "#992724",
               "slot": 2,
               "gate": null,
-              "trainer": "RDD ||| Mento",
+              "trainer": "Goober",
               "umaName": "El Condor Pasa",
               "umaKey": "sprite:101402",
               "isUnique": true,
@@ -8568,7 +8568,7 @@
               "teamColor": "#992724",
               "slot": 2,
               "gate": null,
-              "trainer": "RDD | Falchion",
+              "trainer": "Karina",
               "umaName": "Biwa Hayahide",
               "umaKey": "sprite:102302",
               "isUnique": true,
@@ -10362,7 +10362,7 @@
               "teamColor": "#da49b8",
               "slot": 2,
               "gate": null,
-              "trainer": "freakkiem",
+              "trainer": "FREAK",
               "umaName": "Smart Falcon",
               "umaKey": "sprite:104601",
               "isUnique": false,

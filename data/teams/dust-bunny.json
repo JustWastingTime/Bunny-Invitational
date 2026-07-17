@@ -4,7 +4,7 @@
   "color": "#e91e45",
   "categories": {
     "sprint": [
-      { "trainer": "JLew",
+      { "trainer": "JLew@BUNS",
         "locked": true,
         "uma": { "name": "Sakura Bakushin O",
           "spriteId": 104101,
@@ -14,7 +14,7 @@
           "stats": { "speed": 1328, "stamina": 495, "power": 1229, "guts": 406, "wisdom": 1259 },
           "skills": ["Genius x Bakushin = Victory","Shooting for Victory!","Budding Blossom","Long Shot","Professor of Curvature","Nimble Navigator","Prepared to Pass","Turbo Sprint","Sprint Straightaways","Countermeasure","Perfect Prep!","Pace Chaser Corners","Straight Descent","Risky Business","Light as a Feather","Aspire","Burning Spirit SPD"] }
       },
-      { "trainer": "Banana",
+      { "trainer": "Banana@BUNS",
         "locked": true,
         "uma": { "name": "Curren Chan",
           "spriteId": 103801,
