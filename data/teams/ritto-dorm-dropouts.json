@@ -56,7 +56,7 @@
           "stats": { "speed": 1234, "stamina": 707, "power": 1198, "guts": 559, "wisdom": 1151 },
           "skills": ["Peerless Dance of Flowering Flames","Triumphant Pulse","Moving Past, and Beyond","Right-Handed","Summer Runner","Professor of Curvature","Straightaway Adept","It's On!","No Stopping Me!","Prepared to Pass","Mile Maven","Shifting Gears","Unyielding Spirit","Pace Chaser Corners","Tail Held High","Head-On","Burning Spirit SPD"] }
       },
-      { "trainer": "RDD ||| Mento",
+      { "trainer": "Goober",
         "locked": true,
         "uma": { "name": "El Condor Pasa",
           "spriteId": 101402,
@@ -120,7 +120,7 @@
           "stats": { "speed": 1203, "stamina": 1172, "power": 825, "guts": 721, "wisdom": 1024 },
           "skills": ["Victory Cheer!","A Kiss for Courage","Operation Cacao","Right-Handed","Spring Runner","Corner Recovery","Prudent Positioning","Ramp Up","Homestretch Haste","Taking the Lead","Fast-Paced","Long Straightaways","Front Runner Straightaways","Front Runner Corners","Top Runner","Groundwork","Slipstream","Playtime's Over!","Feature Act","Firm Resolve","Ignited Spirit WIT"] }
       },
-      { "trainer": "RDD | Falchion",
+      { "trainer": "Karina",
         "locked": true,
         "uma": { "name": "Biwa Hayahide",
           "spriteId": 102302,
