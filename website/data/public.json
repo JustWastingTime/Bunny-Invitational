@@ -11330,6 +11330,8 @@
       "skillScore": 336,
       "uniquePickCount": 6,
       "hasOguri": true,
+      "hasSmartFalcon": true,
+      "hasKitasan": true,
       "avgStats": 4910.693333333333
     },
     "mostPopularStyle": {
@@ -13276,6 +13278,8 @@
         "skillScore": 330,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 5101.546666666667
       },
       {
@@ -13289,6 +13293,8 @@
         "skillScore": 351,
         "uniquePickCount": 0,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5076.08
       },
       {
@@ -13302,6 +13308,8 @@
         "skillScore": 325,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5012.293333333334
       },
       {
@@ -13315,6 +13323,8 @@
         "skillScore": 321,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 5006.013333333333
       },
       {
@@ -13328,6 +13338,8 @@
         "skillScore": 336,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4995.1866666666665
       },
       {
@@ -13341,6 +13353,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": false,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4949.766666666666
       },
       {
@@ -13354,6 +13368,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4934.993333333334
       },
       {
@@ -13367,6 +13383,8 @@
         "skillScore": 325,
         "uniquePickCount": 2,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4923.72
       },
       {
@@ -13380,6 +13398,8 @@
         "skillScore": 336,
         "uniquePickCount": 6,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4910.693333333333
       },
       {
@@ -13393,6 +13413,8 @@
         "skillScore": 321,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 4902.606666666666
       },
       {
@@ -13406,6 +13428,8 @@
         "skillScore": 310,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4884.8
       },
       {
@@ -13419,6 +13443,8 @@
         "skillScore": 320,
         "uniquePickCount": 4,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4839.5199999999995
       }
     ],
@@ -13434,6 +13460,8 @@
         "skillScore": 351,
         "uniquePickCount": 0,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5076.08
       },
       {
@@ -13447,6 +13475,8 @@
         "skillScore": 336,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4995.1866666666665
       },
       {
@@ -13460,6 +13490,8 @@
         "skillScore": 336,
         "uniquePickCount": 6,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4910.693333333333
       },
       {
@@ -13473,6 +13505,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": false,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4949.766666666666
       },
       {
@@ -13486,6 +13520,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4934.993333333334
       },
       {
@@ -13499,6 +13535,8 @@
         "skillScore": 330,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 5101.546666666667
       },
       {
@@ -13512,6 +13550,8 @@
         "skillScore": 325,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5012.293333333334
       },
       {
@@ -13525,6 +13565,8 @@
         "skillScore": 325,
         "uniquePickCount": 2,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4923.72
       },
       {
@@ -13538,6 +13580,8 @@
         "skillScore": 321,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 5006.013333333333
       },
       {
@@ -13551,6 +13595,8 @@
         "skillScore": 321,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 4902.606666666666
       },
       {
@@ -13564,6 +13610,8 @@
         "skillScore": 320,
         "uniquePickCount": 4,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4839.5199999999995
       },
       {
@@ -13577,6 +13625,8 @@
         "skillScore": 310,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4884.8
       }
     ],
@@ -13592,6 +13642,8 @@
         "skillScore": 336,
         "uniquePickCount": 6,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4910.693333333333
       },
       {
@@ -13605,6 +13657,8 @@
         "skillScore": 320,
         "uniquePickCount": 4,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4839.5199999999995
       },
       {
@@ -13618,6 +13672,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": false,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4949.766666666666
       },
       {
@@ -13631,6 +13687,8 @@
         "skillScore": 321,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 4902.606666666666
       },
       {
@@ -13644,6 +13702,8 @@
         "skillScore": 331,
         "uniquePickCount": 3,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4934.993333333334
       },
       {
@@ -13657,6 +13717,8 @@
         "skillScore": 325,
         "uniquePickCount": 2,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4923.72
       },
       {
@@ -13670,6 +13732,8 @@
         "skillScore": 325,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5012.293333333334
       },
       {
@@ -13683,6 +13747,8 @@
         "skillScore": 321,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 5006.013333333333
       },
       {
@@ -13696,6 +13762,8 @@
         "skillScore": 336,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": false,
         "avgStats": 4995.1866666666665
       },
       {
@@ -13709,6 +13777,8 @@
         "skillScore": 310,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 4884.8
       },
       {
@@ -13722,6 +13792,8 @@
         "skillScore": 330,
         "uniquePickCount": 1,
         "hasOguri": true,
+        "hasSmartFalcon": true,
+        "hasKitasan": true,
         "avgStats": 5101.546666666667
       },
       {
@@ -13735,6 +13807,8 @@
         "skillScore": 351,
         "uniquePickCount": 0,
         "hasOguri": true,
+        "hasSmartFalcon": false,
+        "hasKitasan": true,
         "avgStats": 5076.08
       }
     ],
@@ -13749,6 +13823,8 @@
       "skillScore": 330,
       "uniquePickCount": 1,
       "hasOguri": true,
+      "hasSmartFalcon": true,
+      "hasKitasan": true,
       "avgStats": 5101.546666666667
     },
     "skillsLeader": {
@@ -13762,6 +13838,8 @@
       "skillScore": 351,
       "uniquePickCount": 0,
       "hasOguri": true,
+      "hasSmartFalcon": false,
+      "hasKitasan": true,
       "avgStats": 5076.08
     },
     "topRatedTrainers": [
@@ -13829,31 +13907,178 @@
         "shortName": "KING"
       }
     ],
+    "teamsWithoutSmartFalcon": [
+      {
+        "id": "dust-bunny",
+        "name": "BUNS",
+        "color": "#e91e45",
+        "shortName": "BUNS"
+      },
+      {
+        "id": "kita-trauma",
+        "name": "KitaTrauma",
+        "color": "#eb5153",
+        "shortName": "KITA"
+      },
+      {
+        "id": "ritto-dorm-dropouts",
+        "name": "Ritto Dorm Dropouts",
+        "color": "#992724",
+        "shortName": "RDD"
+      }
+    ],
+    "teamsWithoutKitasan": [
+      {
+        "id": "cabal",
+        "name": "Cabal Agency",
+        "color": "#c0fa3b",
+        "shortName": "CABAL"
+      },
+      {
+        "id": "rilliance",
+        "name": "Rilliance",
+        "color": "#da49b8",
+        "shortName": "RILL"
+      },
+      {
+        "id": "uma-love",
+        "name": "Uma Love",
+        "color": "#f66a9b",
+        "shortName": "LOVE"
+      },
+      {
+        "id": "umalliance",
+        "name": "UMAlliance",
+        "color": "#2c49c9",
+        "shortName": "ALLI"
+      }
+    ],
     "unpickedUmas": [
       {
         "umaName": "Air Groove",
         "variant": "Original",
+        "label": "Air Groove (Original)",
+        "spriteId": "101801",
         "spritePath": "assets/characters/chara_stand_1018_101801.png"
       },
       {
-        "umaName": "Copano Rickey",
-        "variant": "Original",
-        "spritePath": null
+        "umaName": "Air Groove",
+        "variant": "Wedding",
+        "label": "Air Groove (Wedding)",
+        "spriteId": "101802",
+        "spritePath": "assets/characters/chara_stand_1018_101802.png"
       },
       {
-        "umaName": "Seeking the Pearl",
+        "umaName": "Biwa Hayahide",
         "variant": "Original",
-        "spritePath": null
+        "label": "Biwa Hayahide (Original)",
+        "spriteId": "102301",
+        "spritePath": "assets/characters/chara_stand_1023_102301.png"
+      },
+      {
+        "umaName": "Eishin Flash",
+        "variant": "Valentines",
+        "label": "Eishin Flash (Valentines)",
+        "spriteId": "103702",
+        "spritePath": "assets/characters/chara_stand_1037_103702.png"
+      },
+      {
+        "umaName": "Fine Motion",
+        "variant": "Wedding",
+        "label": "Fine Motion (Wedding)",
+        "spriteId": "102202",
+        "spritePath": "assets/characters/chara_stand_1022_102202.png"
+      },
+      {
+        "umaName": "Gold City",
+        "variant": "Festival",
+        "label": "Gold City (Festival)",
+        "spriteId": "104002",
+        "spritePath": "assets/characters/chara_stand_1040_104002.png"
+      },
+      {
+        "umaName": "Grass Wonder",
+        "variant": "Fantasy",
+        "label": "Grass Wonder (Fantasy)",
+        "spriteId": "101102",
+        "spritePath": "assets/characters/chara_stand_1011_101102.png"
+      },
+      {
+        "umaName": "Haru Urara",
+        "variant": "Original",
+        "label": "Haru Urara (Original)",
+        "spriteId": "105201",
+        "spritePath": "assets/characters/chara_stand_1052_105201.png"
+      },
+      {
+        "umaName": "Maruzensky",
+        "variant": "Original",
+        "label": "Maruzensky (Original)",
+        "spriteId": "100401",
+        "spritePath": "assets/characters/chara_stand_1004_100401.png"
+      },
+      {
+        "umaName": "Matikanefukukitaru",
+        "variant": "Full Armor",
+        "label": "Matikanefukukitaru (Full Armor)",
+        "spriteId": "105602",
+        "spritePath": "assets/characters/chara_stand_1056_105602.png"
+      },
+      {
+        "umaName": "Mihono Bourbon",
+        "variant": "Original",
+        "label": "Mihono Bourbon (Original)",
+        "spriteId": "102601",
+        "spritePath": "assets/characters/chara_stand_1026_102601.png"
+      },
+      {
+        "umaName": "Seiun Sky",
+        "variant": "Ballroom",
+        "label": "Seiun Sky (Ballroom)",
+        "spriteId": "102002",
+        "spritePath": "assets/characters/chara_stand_1020_102002.png"
+      },
+      {
+        "umaName": "Special Week",
+        "variant": "Commander",
+        "label": "Special Week (Commander)",
+        "spriteId": "100103",
+        "spritePath": "assets/characters/chara_stand_1001_100103.png"
+      },
+      {
+        "umaName": "Special Week",
+        "variant": "Summer",
+        "label": "Special Week (Summer)",
+        "spriteId": "100102",
+        "spritePath": "assets/characters/chara_stand_1001_100102.png"
+      },
+      {
+        "umaName": "Super Creek",
+        "variant": "Halloween",
+        "label": "Super Creek (Halloween)",
+        "spriteId": "104502",
+        "spritePath": "assets/characters/chara_stand_1045_104502.png"
+      },
+      {
+        "umaName": "T.M. Opera O",
+        "variant": "Original",
+        "label": "T.M. Opera O (Original)",
+        "spriteId": "101501",
+        "spritePath": "assets/characters/chara_stand_1015_101501.png"
+      },
+      {
+        "umaName": "Tokai Teio",
+        "variant": "Anime Collab",
+        "label": "Tokai Teio (Anime Collab)",
+        "spriteId": "100302",
+        "spritePath": "assets/characters/chara_stand_1003_100302.png"
       },
       {
         "umaName": "Tosen Jordan",
         "variant": "Original",
+        "label": "Tosen Jordan (Original)",
+        "spriteId": "104801",
         "spritePath": "assets/characters/chara_stand_1048_104801.png"
-      },
-      {
-        "umaName": "Yukino Bijin",
-        "variant": "Original",
-        "spritePath": null
       }
     ]
   }

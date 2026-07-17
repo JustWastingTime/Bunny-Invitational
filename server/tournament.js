@@ -52,6 +52,19 @@ const STYLE_LABELS = {
   end: "End Closer",
 };
 
+/** Catalog characters that are not in the live game yet — hide from Unpicked. */
+const UNPICKED_EXCLUDE_NAMES = new Set([
+  "copanorickey",
+  "seekingthepearl",
+  "yukinobijin",
+]);
+
+function normalizeCharacterKey(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
 export function listMatchFiles(matchesDir) {
   if (!fs.existsSync(matchesDir)) return [];
   return fs
@@ -277,7 +290,7 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
   const styleCounts = new Map();
   const teamPower = [];
   const trainerRows = [];
-  const pickedBaseNames = new Set();
+  const pickedSpriteIds = new Set();
   let filledUmaCount = 0;
   let distanceSCount = 0;
   let ugOrHigherCount = 0;
@@ -296,6 +309,8 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     let umaCount = 0;
     let uniquePickCount = 0;
     let hasOguri = false;
+    let hasSmartFalcon = false;
+    let hasKitasan = false;
 
     for (const [category, roster] of Object.entries(team.categories ?? {})) {
       (roster ?? []).forEach((member, slot) => {
@@ -316,8 +331,15 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
         if (styleKey) styleCounts.set(styleKey, (styleCounts.get(styleKey) ?? 0) + 1);
 
         const baseName = baseCharacterName(uma.name);
+        const baseKey = normalizeCharacterKey(baseName);
         if (/oguri/i.test(baseName)) hasOguri = true;
-        if (baseName) pickedBaseNames.add(baseName.toLowerCase());
+        if (/smartfalcon/i.test(baseKey)) hasSmartFalcon = true;
+        if (/kitasanblack/i.test(baseKey)) hasKitasan = true;
+
+        const sid = uma.spriteId ?? uma.characterId ?? null;
+        if (sid != null && String(sid).trim() !== "") {
+          pickedSpriteIds.add(String(sid).trim());
+        }
 
         const skills = Array.isArray(uma.skills) ? uma.skills.filter(Boolean) : [];
         for (const skillName of skills) {
@@ -408,6 +430,8 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
       skillScore,
       uniquePickCount,
       hasOguri,
+      hasSmartFalcon,
+      hasKitasan,
       avgStats: umaCount > 0 ? totalStats / umaCount : 0,
     });
   }
@@ -531,31 +555,52 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     .slice(0, 5)
     .map(({ ratingRank: _rank, ...row }) => row);
 
-  const teamsWithoutOguri = teamPower
-    .filter((team) => !team.hasOguri)
-    .map((team) => ({ id: team.id, name: team.name, color: team.color, shortName: team.shortName }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const teamSummary = (team) => ({
+    id: team.id,
+    name: team.name,
+    color: team.color,
+    shortName: team.shortName,
+  });
+  const teamsWithout = (predicate) =>
+    teamPower
+      .filter(predicate)
+      .map(teamSummary)
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-  // Unpicked = catalog base characters never used on any roster (any skin).
-  const catalogByBase = new Map();
-  for (const entry of catalog) {
-    const base = baseCharacterName(entry.name || entry.label);
-    if (!base || /^Sprite\s+/i.test(base)) continue;
-    const key = base.toLowerCase();
-    const isOriginal = String(entry.variant ?? "").toLowerCase() === "original";
-    const prev = catalogByBase.get(key);
-    if (!prev || isOriginal) {
-      catalogByBase.set(key, {
+  const teamsWithoutOguri = teamsWithout((team) => !team.hasOguri);
+  const teamsWithoutSmartFalcon = teamsWithout((team) => !team.hasSmartFalcon);
+  const teamsWithoutKitasan = teamsWithout((team) => !team.hasKitasan);
+
+  // Unpicked = catalog skins never used on any roster.
+  const unpickedUmas = catalog
+    .filter((entry) => {
+      const base = baseCharacterName(entry.name || entry.label);
+      if (!base || /^Sprite\s+/i.test(base)) return false;
+      if (UNPICKED_EXCLUDE_NAMES.has(normalizeCharacterKey(base))) return false;
+      const spriteId = entry.spriteId == null ? "" : String(entry.spriteId).trim();
+      if (!spriteId || pickedSpriteIds.has(spriteId)) return false;
+      return true;
+    })
+    .map((entry) => {
+      const base = baseCharacterName(entry.name || entry.label);
+      const variant = String(entry.variant || "Original").trim() || "Original";
+      const label =
+        entry.label ||
+        (variant.toLowerCase() === "original" ? base : `${base} (${variant})`);
+      return {
         umaName: base,
-        variant: entry.variant || "Original",
+        variant,
+        label,
+        spriteId: String(entry.spriteId),
         spritePath: entry.spritePath ?? null,
-      });
-    }
-  }
-  const unpickedUmas = [...catalogByBase.entries()]
-    .filter(([key]) => !pickedBaseNames.has(key))
-    .map(([, row]) => row)
-    .sort((a, b) => a.umaName.localeCompare(b.umaName));
+      };
+    })
+    .sort(
+      (a, b) =>
+        a.umaName.localeCompare(b.umaName) ||
+        a.variant.localeCompare(b.variant) ||
+        a.label.localeCompare(b.label)
+    );
 
   const mostPopularStyle =
     [...styleCounts.entries()]
@@ -596,6 +641,8 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     skillsLeader: teamsBySkills[0] ?? null,
     topRatedTrainers,
     teamsWithoutOguri,
+    teamsWithoutSmartFalcon,
+    teamsWithoutKitasan,
     unpickedUmas,
   };
 }

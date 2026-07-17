@@ -520,18 +520,33 @@ function renderUnpickedGrid(rows) {
   }
   el.innerHTML = rows
     .map((row) => {
+      const title = row.label || row.umaName;
       const portrait = resolveAssetPath(row.spritePath);
       const initial = (row.umaName ?? "?").charAt(0).toUpperCase();
-      return `<article class="unpicked-card" title="${row.umaName}">
+      const variant = row.variant && String(row.variant).toLowerCase() !== "original" ? row.variant : "";
+      return `<article class="unpicked-card" title="${title}">
         ${
           portrait
             ? `<img class="unpicked-thumb" src="${portrait}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'unpicked-thumb fallback',textContent:'${initial}'}))" />`
             : `<div class="unpicked-thumb fallback">${initial}</div>`
         }
         <span class="unpicked-name">${row.umaName}</span>
+        ${variant ? `<span class="unpicked-variant">${variant}</span>` : ""}
       </article>`;
     })
     .join("");
+}
+
+function renderAbsentTeamGroup(label, teams, everyoneMessage) {
+  const chips = teams?.length
+    ? teams.map((team) => `<span class="side-team-chip" style="--team:${team.color}">${team.name}</span>`).join("")
+    : `<span class="hint">${everyoneMessage}</span>`;
+  return `
+    <div class="absent-team-group">
+      <h4 class="stats-subhead">${label}</h4>
+      <div class="side-team-chip-row">${chips}</div>
+    </div>
+  `;
 }
 
 function renderSideStats(stats) {
@@ -540,7 +555,6 @@ function renderSideStats(stats) {
 
   const uniqueTeam = stats.mostUniqueTeam;
   const trainers = stats.topRatedTrainers ?? [];
-  const noOguri = stats.teamsWithoutOguri ?? [];
   const style = stats.mostPopularStyle;
 
   const trainerCards = trainers.length
@@ -565,12 +579,6 @@ function renderSideStats(stats) {
         .join("")
     : `<li class="stats-rank-empty">No rated trainers yet.</li>`;
 
-  const noOguriChips = noOguri.length
-    ? noOguri
-        .map((team) => `<span class="side-team-chip" style="--team:${team.color}">${team.name}</span>`)
-        .join("")
-    : `<span class="hint">Every team brought an Oguri. Absolute cinema.</span>`;
-
   el.innerHTML = `
     <article class="side-stat-card">
       <span class="stat-spotlight-label">Most Unique Picks</span>
@@ -583,7 +591,7 @@ function renderSideStats(stats) {
       <span class="stat-spotlight-note">Aptitude S on distance</span>
     </article>
     <article class="side-stat-card">
-      <span class="stat-spotlight-label">UG+ Club</span>
+      <span class="stat-spotlight-label">UG+ Umas</span>
       <strong class="stat-spotlight-value">${stats.ugOrHigherCount ?? 0}</strong>
       <span class="stat-spotlight-note">Rated UG or higher</span>
     </article>
@@ -597,8 +605,12 @@ function renderSideStats(stats) {
       <ol class="stats-rank-list side-trainer-list">${trainerCards}</ol>
     </article>
     <article class="side-stat-card side-stat-wide">
-      <span class="stat-spotlight-label">Teams Without An Oguri</span>
-      <div class="side-team-chip-row">${noOguriChips}</div>
+      <span class="stat-spotlight-label">Missing Meta Picks</span>
+      <div class="absent-team-stack">
+        ${renderAbsentTeamGroup("Without Oguri Cap", stats.teamsWithoutOguri, "Every team brought an Oguri.")}
+        ${renderAbsentTeamGroup("Without Smart Falcon", stats.teamsWithoutSmartFalcon, "Every team brought a Smart Falcon.")}
+        ${renderAbsentTeamGroup("Without Kitasan Black", stats.teamsWithoutKitasan, "Every team brought a Kitasan.")}
+      </div>
     </article>
   `;
 }
