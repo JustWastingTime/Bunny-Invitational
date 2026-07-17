@@ -29,9 +29,8 @@ async function loadBracketLayout() {
   }
 }
 
-function formatUpdatedAt(value) {
-  if (!value) return "Waiting for first result";
-  return `Updated ${new Date(value).toLocaleString()}`;
+function formatInt(value) {
+  return Number(value || 0).toLocaleString();
 }
 
 function matchTeamRows(match) {
@@ -427,10 +426,6 @@ function pct(value) {
   return `${Math.round((Number(value) || 0) * 100)}%`;
 }
 
-function formatInt(value) {
-  return Number(value || 0).toLocaleString();
-}
-
 function renderSkillRankList(targetId, rows) {
   const el = document.getElementById(targetId);
   if (!el) return;
@@ -461,7 +456,7 @@ function renderTeamRankList(targetId, rows, valueKey, suffix = "") {
     return;
   }
   el.innerHTML = rows
-    .slice(0, 5)
+    .slice(0, 12)
     .map((row, idx) => {
       return `<li class="stats-rank-item" style="--team:${row.color}">
         <span class="stats-rank-pos">${idx + 1}</span>
@@ -516,6 +511,98 @@ function renderUmaStatsTable() {
     .join("");
 }
 
+function renderUnpickedGrid(rows) {
+  const el = document.getElementById("unpicked-grid");
+  if (!el) return;
+  if (!rows?.length) {
+    el.innerHTML = `<p class="hint">Everyone got picked. The gacha gods weep.</p>`;
+    return;
+  }
+  el.innerHTML = rows
+    .map((row) => {
+      const portrait = resolveAssetPath(row.spritePath);
+      const initial = (row.umaName ?? "?").charAt(0).toUpperCase();
+      return `<article class="unpicked-card" title="${row.umaName}">
+        ${
+          portrait
+            ? `<img class="unpicked-thumb" src="${portrait}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'unpicked-thumb fallback',textContent:'${initial}'}))" />`
+            : `<div class="unpicked-thumb fallback">${initial}</div>`
+        }
+        <span class="unpicked-name">${row.umaName}</span>
+      </article>`;
+    })
+    .join("");
+}
+
+function renderSideStats(stats) {
+  const el = document.getElementById("side-stats");
+  if (!el) return;
+
+  const uniqueTeam = stats.mostUniqueTeam;
+  const trainers = stats.topRatedTrainers ?? [];
+  const noOguri = stats.teamsWithoutOguri ?? [];
+  const style = stats.mostPopularStyle;
+
+  const trainerCards = trainers.length
+    ? trainers
+        .map((row, idx) => {
+          const portrait = resolveAssetPath(row.spritePath);
+          const initial = (row.umaName ?? "?").charAt(0).toUpperCase();
+          return `<li class="side-trainer-item" style="--team:${row.teamColor}">
+            <span class="stats-rank-pos">${idx + 1}</span>
+            ${
+              portrait
+                ? `<img class="side-trainer-thumb" src="${portrait}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'side-trainer-thumb fallback',textContent:'${initial}'}))" />`
+                : `<span class="side-trainer-thumb fallback">${initial}</span>`
+            }
+            <span class="stats-rank-main">
+              <strong>${row.trainer}</strong>
+              <small>${row.umaName} · ${row.teamName}</small>
+            </span>
+            <span class="side-rating-badge">${row.rating}</span>
+          </li>`;
+        })
+        .join("")
+    : `<li class="stats-rank-empty">No rated trainers yet.</li>`;
+
+  const noOguriChips = noOguri.length
+    ? noOguri
+        .map((team) => `<span class="side-team-chip" style="--team:${team.color}">${team.name}</span>`)
+        .join("")
+    : `<span class="hint">Every team brought an Oguri. Absolute cinema.</span>`;
+
+  el.innerHTML = `
+    <article class="side-stat-card">
+      <span class="stat-spotlight-label">Most Unique Picks</span>
+      <strong class="stat-spotlight-value text-sm">${uniqueTeam?.name ?? "—"}</strong>
+      <span class="stat-spotlight-note">${uniqueTeam ? `${uniqueTeam.uniquePickCount} tournament-unique umas` : "—"}</span>
+    </article>
+    <article class="side-stat-card">
+      <span class="stat-spotlight-label">Distance S Umas</span>
+      <strong class="stat-spotlight-value">${stats.distanceSCount ?? 0}</strong>
+      <span class="stat-spotlight-note">Aptitude S on distance</span>
+    </article>
+    <article class="side-stat-card">
+      <span class="stat-spotlight-label">UG+ Club</span>
+      <strong class="stat-spotlight-value">${stats.ugOrHigherCount ?? 0}</strong>
+      <span class="stat-spotlight-note">Rated UG or higher</span>
+    </article>
+    <article class="side-stat-card">
+      <span class="stat-spotlight-label">Meta Run Style</span>
+      <strong class="stat-spotlight-value text-sm">${style?.label ?? "—"}</strong>
+      <span class="stat-spotlight-note">${style ? `${style.count} umas running it` : "—"}</span>
+    </article>
+    <article class="side-stat-card side-stat-wide">
+      <span class="stat-spotlight-label">Top 5 Highest Ranked Trainers</span>
+      <ol class="stats-rank-list side-trainer-list">${trainerCards}</ol>
+    </article>
+    <article class="side-stat-card side-stat-wide">
+      <span class="stat-spotlight-label">Teams Without An Oguri</span>
+      <div class="side-team-chip-row">${noOguriChips}</div>
+    </article>
+  `;
+}
+
 function renderStats() {
   const stats = state.stats ?? {};
   const hasUmaTable = Array.isArray(stats.umas);
@@ -537,12 +624,15 @@ function renderStats() {
     renderSkillRankList("rarest-skills-list", []);
     renderTeamRankList("team-stats-list", [], "totalStats");
     renderTeamRankList("team-skills-list", [], "skillScore");
+    renderUnpickedGrid([]);
+    renderSideStats({});
     return;
   }
 
   const highlights = document.getElementById("stats-highlights");
   if (highlights) {
     const mostCommon = stats.mostCommonUma;
+    const mostCombined = stats.mostCommonUmaCombined;
     const statsLeader = stats.statsLeader;
     const skillsLeader = stats.skillsLeader;
     highlights.innerHTML = `
@@ -551,15 +641,19 @@ function renderStats() {
         <strong class="stat-spotlight-value">${stats.uniqueUmaCount ?? 0}</strong>
         <span class="stat-spotlight-note">Only one of their kind in the field</span>
       </article>
-      <article class="stat-spotlight accent-hakodate">
-        <span class="stat-spotlight-label">Hakodate Racecourse</span>
-        <strong class="stat-spotlight-value">${stats.hakodateUmas ?? 0}</strong>
-        <span class="stat-spotlight-note">Umas packing the course skill</span>
-      </article>
       <article class="stat-spotlight">
         <span class="stat-spotlight-label">Most Common Uma</span>
         <strong class="stat-spotlight-value text-sm">${mostCommon?.umaName ?? "—"}</strong>
-        <span class="stat-spotlight-note">${mostCommon ? `${mostCommon.population} on roster` : "Waiting on rosters"}</span>
+        <span class="stat-spotlight-note">${mostCommon ? `${mostCommon.population} on roster (by skin)` : "Waiting on rosters"}</span>
+      </article>
+      <article class="stat-spotlight">
+        <span class="stat-spotlight-label">Most Common Uma (Combined)</span>
+        <strong class="stat-spotlight-value text-sm">${mostCombined?.umaName ?? "—"}</strong>
+        <span class="stat-spotlight-note">${
+          mostCombined
+            ? `${mostCombined.population} picks · ${mostCombined.skinCount} skin${mostCombined.skinCount === 1 ? "" : "s"}`
+            : "Waiting on rosters"
+        }</span>
       </article>
       <article class="stat-spotlight">
         <span class="stat-spotlight-label">Stats Leader</span>
@@ -583,11 +677,12 @@ function renderStats() {
   renderSkillRankList("rarest-skills-list", stats.rarestSkills);
   renderTeamRankList("team-stats-list", stats.teamsByStats, "totalStats");
   renderTeamRankList("team-skills-list", stats.teamsBySkills, "skillScore");
+  renderUnpickedGrid(stats.unpickedUmas);
+  renderSideStats(stats);
 }
 
 function render() {
   document.getElementById("tournament-name").textContent = state.tournament ?? "Bunny Invitational";
-  document.getElementById("updated-at").textContent = formatUpdatedAt(state.updatedAt);
   renderBracket();
   renderMatchDetail(selectedMatchId);
   renderResults();
@@ -636,7 +731,8 @@ async function tick() {
     render();
     activateView(window.location.hash.replace("#", ""));
   } catch (err) {
-    document.getElementById("updated-at").textContent = "Website data unavailable";
+    const title = document.getElementById("tournament-name");
+    if (title) title.textContent = "Bunny Invitational";
     console.warn(err);
   }
 }

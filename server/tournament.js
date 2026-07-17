@@ -12,7 +12,7 @@ import {
   umaIdentityKey,
 } from "./team-resolver.js";
 import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, publishWebsiteSkills, buildWebsiteTeams } from "./website-publish.js";
-import { buildSpriteLookup, resolveSpritePath } from "./sprite-resolver.js";
+import { buildSpriteLookup, resolveSpritePath, listCharacterCatalog } from "./sprite-resolver.js";
 import { listTeams } from "./team-editor.js";
 import { listSkills } from "./skills.js";
 const STANDINGS_REL = "data/standings.json";
@@ -24,7 +24,33 @@ const DEFAULT_SCORING = {
   uniqueBonus: 1,
 };
 
-const HAKODATE_SKILL_KEYS = new Set(["hakodateracecourse", "hakodateracecoursex"]);
+/** Highest → lowest uma rating for trainer leaderboard. */
+const RATING_ORDER = [
+  "UF",
+  "UG9",
+  "UG8",
+  "UG7",
+  "UG6",
+  "UG5",
+  "UG4",
+  "UG3",
+  "UG2",
+  "UG1",
+  "UG",
+  "SS+",
+  "SS",
+  "S+",
+  "S",
+];
+const RATING_RANK = new Map(RATING_ORDER.map((rating, index) => [rating, index]));
+
+const STYLE_LABELS = {
+  runaway: "Runaway",
+  front: "Front Runner",
+  pace: "Pace Chaser",
+  late: "Late Surger",
+  end: "End Closer",
+};
 
 export function listMatchFiles(matchesDir) {
   if (!fs.existsSync(matchesDir)) return [];
@@ -172,6 +198,18 @@ function isPlaceholderUma(uma) {
   return false;
 }
 
+/** Strip costume parentheses so skins share one combined identity. */
+function baseCharacterName(name) {
+  return String(name ?? "")
+    .replace(/\s*\([^)]*\)\s*$/u, "")
+    .trim();
+}
+
+function ratingRank(rating) {
+  const key = String(rating ?? "").trim().toUpperCase();
+  return RATING_RANK.has(key) ? RATING_RANK.get(key) : RATING_ORDER.length + 50;
+}
+
 function aptitudeIsS(aptitudes, key) {
   return String(aptitudes?.[key] ?? "").trim().toUpperCase() === "S";
 }
@@ -231,12 +269,18 @@ function emptyRaceTally() {
 function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) {
   const spriteLookup = buildSpriteLookup(root);
   const rarityByKey = buildSkillRarityLookup();
+  const catalog = listCharacterCatalog(root);
 
   const rosterByKey = new Map();
+  const combinedByBase = new Map();
   const skillCounts = new Map();
+  const styleCounts = new Map();
   const teamPower = [];
-  let hakodateUmas = 0;
+  const trainerRows = [];
+  const pickedBaseNames = new Set();
   let filledUmaCount = 0;
+  let distanceSCount = 0;
+  let ugOrHigherCount = 0;
 
   for (const summary of listTeams(root)) {
     let team;
@@ -250,18 +294,32 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     let skillScore = 0;
     let skillCount = 0;
     let umaCount = 0;
+    let uniquePickCount = 0;
+    let hasOguri = false;
 
-    for (const roster of Object.values(team.categories ?? {})) {
-      for (const member of roster ?? []) {
+    for (const [category, roster] of Object.entries(team.categories ?? {})) {
+      (roster ?? []).forEach((member, slot) => {
         const uma = member?.uma ?? {};
-        if (isPlaceholderUma(uma)) continue;
+        if (isPlaceholderUma(uma)) return;
 
         umaCount += 1;
         filledUmaCount += 1;
         totalStats += sumUmaStatsForTeamPower(uma);
 
+        const aptitudes = uma.aptitudes ?? {};
+        if (aptitudeIsS(aptitudes, "distance")) distanceSCount += 1;
+
+        const rating = String(uma.rating ?? "").trim().toUpperCase();
+        if (ratingRank(rating) <= ratingRank("UG")) ugOrHigherCount += 1;
+
+        const styleKey = String(uma.style ?? "").toLowerCase();
+        if (styleKey) styleCounts.set(styleKey, (styleCounts.get(styleKey) ?? 0) + 1);
+
+        const baseName = baseCharacterName(uma.name);
+        if (/oguri/i.test(baseName)) hasOguri = true;
+        if (baseName) pickedBaseNames.add(baseName.toLowerCase());
+
         const skills = Array.isArray(uma.skills) ? uma.skills.filter(Boolean) : [];
-        let hasHakodate = false;
         for (const skillName of skills) {
           const skillKey = normalizeSkillKey(skillName);
           const rarity = lookupSkillRarity(skillName, rarityByKey);
@@ -277,33 +335,66 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
           if (!prev.name || prev.name.length < String(skillName).length) prev.name = skillName;
           prev.rarity = rarity;
           skillCounts.set(skillKey, prev);
-
-          if (HAKODATE_SKILL_KEYS.has(skillKey)) hasHakodate = true;
         }
-        if (hasHakodate) hakodateUmas += 1;
 
         const umaKey = umaIdentityKey(uma);
-        if (!umaKey) continue;
         const enriched = {
           ...uma,
           spriteId: uma.spriteId ?? uma.characterId ?? null,
           spritePath: resolveSpritePath(uma, spriteLookup),
         };
-        const row = rosterByKey.get(umaKey) ?? {
-          umaKey,
+
+        if (umaKey && uniqueKeys.has(umaKey)) uniquePickCount += 1;
+
+        if (umaKey) {
+          const row = rosterByKey.get(umaKey) ?? {
+            umaKey,
+            umaName: enriched.name ?? "Unknown",
+            baseName: baseName || enriched.name || "Unknown",
+            spritePath: enriched.spritePath ?? null,
+            population: 0,
+            isUnique: uniqueKeys.has(umaKey),
+            starts: 0,
+            wins: 0,
+            top3: 0,
+          };
+          row.population += 1;
+          if (!row.spritePath && enriched.spritePath) row.spritePath = enriched.spritePath;
+          if (enriched.name) row.umaName = enriched.name;
+          rosterByKey.set(umaKey, row);
+        }
+
+        if (baseName) {
+          const combined = combinedByBase.get(baseName.toLowerCase()) ?? {
+            umaName: baseName,
+            population: 0,
+            skinCount: 0,
+            skins: new Set(),
+            spritePath: null,
+          };
+          combined.population += 1;
+          const skinId = String(enriched.spriteId ?? enriched.name ?? "");
+          if (skinId && !combined.skins.has(skinId)) {
+            combined.skins.add(skinId);
+            combined.skinCount = combined.skins.size;
+          }
+          if (!combined.spritePath && enriched.spritePath) combined.spritePath = enriched.spritePath;
+          combinedByBase.set(baseName.toLowerCase(), combined);
+        }
+
+        trainerRows.push({
+          teamId: team.id,
+          teamName: team.name,
+          teamColor: team.color,
+          trainer: member.trainer ?? "Trainer",
+          category,
+          slot,
           umaName: enriched.name ?? "Unknown",
+          rating: rating || "—",
+          ratingRank: ratingRank(rating),
           spritePath: enriched.spritePath ?? null,
-          population: 0,
-          isUnique: uniqueKeys.has(umaKey),
-          starts: 0,
-          wins: 0,
-          top3: 0,
-        };
-        row.population += 1;
-        if (!row.spritePath && enriched.spritePath) row.spritePath = enriched.spritePath;
-        if (enriched.name) row.umaName = enriched.name;
-        rosterByKey.set(umaKey, row);
-      }
+        });
+      });
     }
 
     teamPower.push({
@@ -315,6 +406,8 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
       totalStats,
       skillCount,
       skillScore,
+      uniquePickCount,
+      hasOguri,
       avgStats: umaCount > 0 ? totalStats / umaCount : 0,
     });
   }
@@ -387,6 +480,15 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
         a.umaName.localeCompare(b.umaName)
     );
 
+  const combinedUmas = [...combinedByBase.values()]
+    .map((row) => ({
+      umaName: row.umaName,
+      population: row.population,
+      skinCount: row.skinCount,
+      spritePath: row.spritePath,
+    }))
+    .sort((a, b) => b.population - a.population || a.umaName.localeCompare(b.umaName));
+
   const skillRows = [...skillCounts.values()]
     .map((row) => ({
       name: row.name,
@@ -395,11 +497,11 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     }))
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-  const topSkills = skillRows.slice(0, 5);
+  const topSkills = skillRows.slice(0, 12);
   const rarestSkills = [...skillRows]
     .filter((row) => row.count >= 1 && row.rarity !== "unique")
     .sort((a, b) => a.count - b.count || a.name.localeCompare(b.name))
-    .slice(0, 5);
+    .slice(0, 12);
 
   const teamsByStats = [...teamPower].sort(
     (a, b) => b.totalStats - a.totalStats || b.skillScore - a.skillScore || a.name.localeCompare(b.name)
@@ -407,25 +509,78 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
   const teamsBySkills = [...teamPower].sort(
     (a, b) => b.skillScore - a.skillScore || b.totalStats - a.totalStats || a.name.localeCompare(b.name)
   );
+  const teamsByUniquePicks = [...teamPower].sort(
+    (a, b) => b.uniquePickCount - a.uniquePickCount || a.name.localeCompare(b.name)
+  );
 
   const mostCommonUma = umas[0] ?? null;
+  const mostCommonUmaCombined = combinedUmas[0] ?? null;
   const bestWinRateUma =
     [...umas]
       .filter((row) => row.starts > 0)
       .sort((a, b) => b.winRate - a.winRate || b.wins - a.wins || b.population - a.population || a.umaName.localeCompare(b.umaName))[0] ??
     null;
 
+  const topRatedTrainers = [...trainerRows]
+    .sort(
+      (a, b) =>
+        a.ratingRank - b.ratingRank ||
+        a.teamName.localeCompare(b.teamName) ||
+        a.trainer.localeCompare(b.trainer)
+    )
+    .slice(0, 5)
+    .map(({ ratingRank: _rank, ...row }) => row);
+
+  const teamsWithoutOguri = teamPower
+    .filter((team) => !team.hasOguri)
+    .map((team) => ({ id: team.id, name: team.name, color: team.color, shortName: team.shortName }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  // Unpicked = catalog base characters never used on any roster (any skin).
+  const catalogByBase = new Map();
+  for (const entry of catalog) {
+    const base = baseCharacterName(entry.name || entry.label);
+    if (!base || /^Sprite\s+/i.test(base)) continue;
+    const key = base.toLowerCase();
+    const isOriginal = String(entry.variant ?? "").toLowerCase() === "original";
+    const prev = catalogByBase.get(key);
+    if (!prev || isOriginal) {
+      catalogByBase.set(key, {
+        umaName: base,
+        variant: entry.variant || "Original",
+        spritePath: entry.spritePath ?? null,
+      });
+    }
+  }
+  const unpickedUmas = [...catalogByBase.entries()]
+    .filter(([key]) => !pickedBaseNames.has(key))
+    .map(([, row]) => row)
+    .sort((a, b) => a.umaName.localeCompare(b.umaName));
+
+  const mostPopularStyle =
+    [...styleCounts.entries()]
+      .map(([style, count]) => ({
+        style,
+        label: STYLE_LABELS[style] ?? style,
+        count,
+      }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))[0] ?? null;
+
   return {
     totalMatches: matches.length,
     uniqueUmaCount: uniqueUmas.length,
     filledUmaCount,
-    hakodateUmas,
+    distanceSCount,
+    ugOrHigherCount,
     mostCommonUma,
+    mostCommonUmaCombined,
     bestWinRateUma,
+    mostUniqueTeam: teamsByUniquePicks[0] ?? null,
+    mostPopularStyle,
     uniqueUmas: uniqueUmas.map((row) => row.umaName),
     uniqueUmaKeys: uniqueUmas.map((row) => row.umaKey),
     umas,
-    // Keep legacy popularity shape for any old consumers.
+    combinedUmas,
     popularity: umas.map((row) => ({
       umaName: row.umaName,
       starts: row.starts || row.population,
@@ -436,8 +591,12 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
     rarestSkills,
     teamsByStats,
     teamsBySkills,
+    teamsByUniquePicks,
     statsLeader: teamsByStats[0] ?? null,
     skillsLeader: teamsBySkills[0] ?? null,
+    topRatedTrainers,
+    teamsWithoutOguri,
+    unpickedUmas,
   };
 }
 

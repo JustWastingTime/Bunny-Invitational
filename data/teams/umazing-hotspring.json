@@ -57,13 +57,14 @@
           "skills": ["You and Me! One-on-One!","Triumphant Pulse","Let's Pump Some Iron!","Moving Past, and Beyond","Professor of Curvature","Corner Recovery","Straightaway Adept","It's On!","No Stopping Me!","Homestretch Haste","End Closer Straightaways","End Closer Corners","Tail Held High","Slipstream","Playtime's Over!","Daring Strike","Leap Forward"] }
       },
       { "trainer": "harry",
+        "locked": true,
         "uma": { "name": "Mejiro Dober",
           "spriteId": 105901,
           "rating": "UG",
           "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1262, "stamina": 636, "power": 1266, "guts": 431, "wisdom": 1158 },
-          "skills": ["Moving Past, and Beyond","Triumphant Pulse","Let's Pump Some Iron!","Peerless Dance of Flowering Flames","Right-Handed","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Homestretch Haste","Fast & Furious","On Your Left!","Outer Swell","Unyielding Spirit"] }
+          "skills": ["Moving Past, and Beyond","Triumphant Pulse","Let's Pump Some Iron!","Peerless Dance of Flowering Flames","Right-Handed","Professor of Curvature","Straightaway Adept","It's On!","Nimble Navigator","Homestretch Haste","Fast & Furious","On Your Left!","Outer Swell","Unyielding Spirit","Late Surger Straightaways","Tail Held High","Ignited Spirit PWR"] }
       }
     ],
     "medium": [

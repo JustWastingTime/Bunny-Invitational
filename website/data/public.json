@@ -1454,7 +1454,7 @@
       "id": "falena",
       "name": "Falena",
       "shortName": "FLNA",
-      "tagline": "falena club",
+      "tagline": "",
       "color": "#2e65cf",
       "categories": {
         "sprint": [
@@ -5380,7 +5380,7 @@
           {
             "slot": 1,
             "trainer": "CDT929",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Haru Urara",
               "rating": "SS",
@@ -6572,7 +6572,7 @@
           {
             "slot": 1,
             "trainer": "Fafa",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Mejiro Bright",
               "rating": "SS",
@@ -6603,7 +6603,9 @@
                 "Late Surger Straightaways",
                 "Sympathy",
                 "Risky Business",
-                "Scramble"
+                "Scramble",
+                "Burning Spirit SPD",
+                "Ignited Spirit PWR"
               ],
               "spriteId": 107401,
               "spritePath": "assets/characters/chara_stand_1074_107401.png"
@@ -7681,7 +7683,7 @@
           {
             "slot": 2,
             "trainer": "harry",
-            "locked": false,
+            "locked": true,
             "uma": {
               "name": "Mejiro Dober",
               "rating": "UG",
@@ -7712,7 +7714,10 @@
                 "Fast & Furious",
                 "On Your Left!",
                 "Outer Swell",
-                "Unyielding Spirit"
+                "Unyielding Spirit",
+                "Late Surger Straightaways",
+                "Tail Held High",
+                "Ignited Spirit PWR"
               ],
               "spriteId": 105901,
               "spritePath": "assets/characters/chara_stand_1059_105901.png"
@@ -11292,10 +11297,12 @@
     "totalMatches": 12,
     "uniqueUmaCount": 26,
     "filledUmaCount": 180,
-    "hakodateUmas": 8,
+    "distanceSCount": 107,
+    "ugOrHigherCount": 127,
     "mostCommonUma": {
       "umaKey": "sprite:104601",
       "umaName": "Smart Falcon",
+      "baseName": "Smart Falcon",
       "spritePath": "assets/characters/chara_stand_1046_104601.png",
       "population": 9,
       "isUnique": false,
@@ -11305,7 +11312,31 @@
       "winRate": 0,
       "top3Rate": 0
     },
+    "mostCommonUmaCombined": {
+      "umaName": "Oguri Cap",
+      "population": 11,
+      "skinCount": 2,
+      "spritePath": "assets/characters/chara_stand_1006_100602.png"
+    },
     "bestWinRateUma": null,
+    "mostUniqueTeam": {
+      "id": "falena",
+      "name": "Falena",
+      "shortName": "FLNA",
+      "color": "#2e65cf",
+      "umaCount": 15,
+      "totalStats": 73660.4,
+      "skillCount": 268,
+      "skillScore": 336,
+      "uniquePickCount": 6,
+      "hasOguri": true,
+      "avgStats": 4910.693333333333
+    },
+    "mostPopularStyle": {
+      "style": "pace",
+      "label": "Pace Chaser",
+      "count": 72
+    },
     "uniqueUmas": [
       "Air Shakur",
       "Biwa Hayahide",
@@ -11366,6 +11397,7 @@
       {
         "umaKey": "sprite:104601",
         "umaName": "Smart Falcon",
+        "baseName": "Smart Falcon",
         "spritePath": "assets/characters/chara_stand_1046_104601.png",
         "population": 9,
         "isUnique": false,
@@ -11378,6 +11410,7 @@
       {
         "umaKey": "sprite:106801",
         "umaName": "Kitasan Black",
+        "baseName": "Kitasan Black",
         "spritePath": "assets/characters/chara_stand_1068_106801.png",
         "population": 8,
         "isUnique": false,
@@ -11390,6 +11423,7 @@
       {
         "umaKey": "sprite:100602",
         "umaName": "Oguri Cap",
+        "baseName": "Oguri Cap",
         "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
@@ -11402,6 +11436,7 @@
       {
         "umaKey": "sprite:105202",
         "umaName": "Haru Urara",
+        "baseName": "Haru Urara",
         "spritePath": "assets/characters/chara_stand_1052_105202.png",
         "population": 6,
         "isUnique": false,
@@ -11414,6 +11449,7 @@
       {
         "umaKey": "sprite:100402",
         "umaName": "Maruzensky",
+        "baseName": "Maruzensky",
         "spritePath": "assets/characters/chara_stand_1004_100402.png",
         "population": 6,
         "isUnique": false,
@@ -11426,6 +11462,7 @@
       {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
+        "baseName": "Taiki Shuttle",
         "spritePath": "assets/characters/chara_stand_1010_101001.png",
         "population": 6,
         "isUnique": false,
@@ -11438,6 +11475,7 @@
       {
         "umaKey": "sprite:102101",
         "umaName": "Tamamo Cross",
+        "baseName": "Tamamo Cross",
         "spritePath": "assets/characters/chara_stand_1021_102101.png",
         "population": 6,
         "isUnique": false,
@@ -11450,6 +11488,7 @@
       {
         "umaKey": "sprite:101901",
         "umaName": "Agnes Digital",
+        "baseName": "Agnes Digital",
         "spritePath": "assets/characters/chara_stand_1019_101901.png",
         "population": 5,
         "isUnique": false,
@@ -11462,6 +11501,7 @@
       {
         "umaKey": "sprite:102401",
         "umaName": "Mayano Top Gun",
+        "baseName": "Mayano Top Gun",
         "spritePath": "assets/characters/chara_stand_1024_102401.png",
         "population": 5,
         "isUnique": false,
@@ -11474,6 +11514,7 @@
       {
         "umaKey": "sprite:105101",
         "umaName": "Nishino Flower",
+        "baseName": "Nishino Flower",
         "spritePath": "assets/characters/chara_stand_1051_105101.png",
         "population": 5,
         "isUnique": false,
@@ -11486,6 +11527,7 @@
       {
         "umaKey": "sprite:103802",
         "umaName": "Curren Chan",
+        "baseName": "Curren Chan",
         "spritePath": "assets/characters/chara_stand_1038_103802.png",
         "population": 4,
         "isUnique": false,
@@ -11498,6 +11540,7 @@
       {
         "umaKey": "sprite:102602",
         "umaName": "Mihono Bourbon",
+        "baseName": "Mihono Bourbon",
         "spritePath": "assets/characters/chara_stand_1026_102602.png",
         "population": 4,
         "isUnique": false,
@@ -11510,6 +11553,7 @@
       {
         "umaKey": "sprite:101002",
         "umaName": "Taiki Shuttle",
+        "baseName": "Taiki Shuttle",
         "spritePath": "assets/characters/chara_stand_1010_101002.png",
         "population": 4,
         "isUnique": false,
@@ -11522,6 +11566,7 @@
       {
         "umaKey": "sprite:103801",
         "umaName": "Curren Chan",
+        "baseName": "Curren Chan",
         "spritePath": "assets/characters/chara_stand_1038_103801.png",
         "population": 3,
         "isUnique": false,
@@ -11534,6 +11579,7 @@
       {
         "umaKey": "sprite:100901",
         "umaName": "Daiwa Scarlet",
+        "baseName": "Daiwa Scarlet",
         "spritePath": "assets/characters/chara_stand_1009_100901.png",
         "population": 3,
         "isUnique": false,
@@ -11546,6 +11592,7 @@
       {
         "umaKey": "sprite:101401",
         "umaName": "El Condor Pasa",
+        "baseName": "El Condor Pasa",
         "spritePath": "assets/characters/chara_stand_1014_101401.png",
         "population": 3,
         "isUnique": false,
@@ -11558,6 +11605,7 @@
       {
         "umaKey": "sprite:100701",
         "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
         "spritePath": "assets/characters/chara_stand_1007_100701.png",
         "population": 3,
         "isUnique": false,
@@ -11570,6 +11618,7 @@
       {
         "umaKey": "sprite:101201",
         "umaName": "Hishi Amazon",
+        "baseName": "Hishi Amazon",
         "spritePath": "assets/characters/chara_stand_1012_101201.png",
         "population": 3,
         "isUnique": false,
@@ -11582,6 +11631,7 @@
       {
         "umaKey": "sprite:107101",
         "umaName": "Mejiro Ardan",
+        "baseName": "Mejiro Ardan",
         "spritePath": "assets/characters/chara_stand_1071_107101.png",
         "population": 3,
         "isUnique": false,
@@ -11594,6 +11644,7 @@
       {
         "umaKey": "sprite:101303",
         "umaName": "Mejiro McQueen",
+        "baseName": "Mejiro McQueen",
         "spritePath": "assets/characters/chara_stand_1013_101303.png",
         "population": 3,
         "isUnique": false,
@@ -11606,6 +11657,7 @@
       {
         "umaKey": "sprite:100601",
         "umaName": "Oguri Cap",
+        "baseName": "Oguri Cap",
         "spritePath": "assets/characters/chara_stand_1006_100601.png",
         "population": 3,
         "isUnique": false,
@@ -11618,6 +11670,7 @@
       {
         "umaKey": "sprite:101701",
         "umaName": "Symboli Rudolf",
+        "baseName": "Symboli Rudolf",
         "spritePath": "assets/characters/chara_stand_1017_101701.png",
         "population": 3,
         "isUnique": false,
@@ -11630,6 +11683,7 @@
       {
         "umaKey": "sprite:100801",
         "umaName": "Vodka",
+        "baseName": "Vodka",
         "spritePath": "assets/characters/chara_stand_1008_100801.png",
         "population": 3,
         "isUnique": false,
@@ -11642,6 +11696,7 @@
       {
         "umaKey": "sprite:103301",
         "umaName": "Admire Vega",
+        "baseName": "Admire Vega",
         "spritePath": "assets/characters/chara_stand_1033_103301.png",
         "population": 2,
         "isUnique": false,
@@ -11654,6 +11709,7 @@
       {
         "umaKey": "sprite:103201",
         "umaName": "Agnes Tachyon",
+        "baseName": "Agnes Tachyon",
         "spritePath": "assets/characters/chara_stand_1032_103201.png",
         "population": 2,
         "isUnique": false,
@@ -11666,6 +11722,7 @@
       {
         "umaKey": "sprite:105301",
         "umaName": "Bamboo Memory",
+        "baseName": "Bamboo Memory",
         "spritePath": "assets/characters/chara_stand_1053_105301.png",
         "population": 2,
         "isUnique": false,
@@ -11678,6 +11735,7 @@
       {
         "umaKey": "sprite:102201",
         "umaName": "Fine Motion",
+        "baseName": "Fine Motion",
         "spritePath": "assets/characters/chara_stand_1022_102201.png",
         "population": 2,
         "isUnique": false,
@@ -11690,6 +11748,7 @@
       {
         "umaKey": "sprite:100502",
         "umaName": "Fuji Kiseki",
+        "baseName": "Fuji Kiseki",
         "spritePath": "assets/characters/chara_stand_1005_100502.png",
         "population": 2,
         "isUnique": false,
@@ -11702,6 +11761,7 @@
       {
         "umaKey": "sprite:100501",
         "umaName": "Fuji Kiseki",
+        "baseName": "Fuji Kiseki",
         "spritePath": "assets/characters/chara_stand_1005_100501.png",
         "population": 2,
         "isUnique": false,
@@ -11714,6 +11774,7 @@
       {
         "umaKey": "sprite:100702",
         "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
         "spritePath": "assets/characters/chara_stand_1007_100702.png",
         "population": 2,
         "isUnique": false,
@@ -11726,6 +11787,7 @@
       {
         "umaKey": "sprite:101101",
         "umaName": "Grass Wonder",
+        "baseName": "Grass Wonder",
         "spritePath": "assets/characters/chara_stand_1011_101101.png",
         "population": 2,
         "isUnique": false,
@@ -11738,6 +11800,7 @@
       {
         "umaKey": "sprite:102801",
         "umaName": "Hishi Akebono",
+        "baseName": "Hishi Akebono",
         "spritePath": "assets/characters/chara_stand_1028_102801.png",
         "population": 2,
         "isUnique": false,
@@ -11750,6 +11813,7 @@
       {
         "umaKey": "sprite:103901",
         "umaName": "Kawakami Princess",
+        "baseName": "Kawakami Princess",
         "spritePath": "assets/characters/chara_stand_1039_103901.png",
         "population": 2,
         "isUnique": false,
@@ -11762,6 +11826,7 @@
       {
         "umaKey": "sprite:106102",
         "umaName": "King Halo",
+        "baseName": "King Halo",
         "spritePath": "assets/characters/chara_stand_1061_106102.png",
         "population": 2,
         "isUnique": false,
@@ -11774,6 +11839,7 @@
       {
         "umaKey": "sprite:102501",
         "umaName": "Manhattan Cafe",
+        "baseName": "Manhattan Cafe",
         "spritePath": "assets/characters/chara_stand_1025_102501.png",
         "population": 2,
         "isUnique": false,
@@ -11786,6 +11852,7 @@
       {
         "umaKey": "sprite:105601",
         "umaName": "Matikanefukukitaru",
+        "baseName": "Matikanefukukitaru",
         "spritePath": "assets/characters/chara_stand_1056_105601.png",
         "population": 2,
         "isUnique": false,
@@ -11798,6 +11865,7 @@
       {
         "umaKey": "sprite:105902",
         "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
         "spritePath": "assets/characters/chara_stand_1059_105902.png",
         "population": 2,
         "isUnique": false,
@@ -11810,6 +11878,7 @@
       {
         "umaKey": "sprite:101601",
         "umaName": "Narita Brian",
+        "baseName": "Narita Brian",
         "spritePath": "assets/characters/chara_stand_1016_101601.png",
         "population": 2,
         "isUnique": false,
@@ -11822,6 +11891,7 @@
       {
         "umaKey": "sprite:105001",
         "umaName": "Narita Taishin",
+        "baseName": "Narita Taishin",
         "spritePath": "assets/characters/chara_stand_1050_105001.png",
         "population": 2,
         "isUnique": false,
@@ -11834,6 +11904,7 @@
       {
         "umaKey": "sprite:103001",
         "umaName": "Rice Shower",
+        "baseName": "Rice Shower",
         "spritePath": "assets/characters/chara_stand_1030_103001.png",
         "population": 2,
         "isUnique": false,
@@ -11846,6 +11917,7 @@
       {
         "umaKey": "sprite:103002",
         "umaName": "Rice Shower",
+        "baseName": "Rice Shower",
         "spritePath": "assets/characters/chara_stand_1030_103002.png",
         "population": 2,
         "isUnique": false,
@@ -11858,6 +11930,7 @@
       {
         "umaKey": "sprite:104101",
         "umaName": "Sakura Bakushin O",
+        "baseName": "Sakura Bakushin O",
         "spritePath": "assets/characters/chara_stand_1041_104101.png",
         "population": 2,
         "isUnique": false,
@@ -11870,6 +11943,7 @@
       {
         "umaKey": "sprite:106901",
         "umaName": "Sakura Chiyono O",
+        "baseName": "Sakura Chiyono O",
         "spritePath": "assets/characters/chara_stand_1069_106901.png",
         "population": 2,
         "isUnique": false,
@@ -11882,6 +11956,7 @@
       {
         "umaKey": "sprite:100201",
         "umaName": "Silence Suzuka",
+        "baseName": "Silence Suzuka",
         "spritePath": "assets/characters/chara_stand_1002_100201.png",
         "population": 2,
         "isUnique": false,
@@ -11894,6 +11969,7 @@
       {
         "umaKey": "sprite:100101",
         "umaName": "Special Week",
+        "baseName": "Special Week",
         "spritePath": "assets/characters/chara_stand_1001_100101.png",
         "population": 2,
         "isUnique": false,
@@ -11906,6 +11982,7 @@
       {
         "umaKey": "sprite:104401",
         "umaName": "Sweep Tosho",
+        "baseName": "Sweep Tosho",
         "spritePath": "assets/characters/chara_stand_1044_104401.png",
         "population": 2,
         "isUnique": false,
@@ -11918,6 +11995,7 @@
       {
         "umaKey": "sprite:100301",
         "umaName": "Tokai Teio",
+        "baseName": "Tokai Teio",
         "spritePath": "assets/characters/chara_stand_1003_100301.png",
         "population": 2,
         "isUnique": false,
@@ -11930,6 +12008,7 @@
       {
         "umaKey": "sprite:103601",
         "umaName": "Air Shakur",
+        "baseName": "Air Shakur",
         "spritePath": "assets/characters/chara_stand_1036_103601.png",
         "population": 1,
         "isUnique": true,
@@ -11942,6 +12021,7 @@
       {
         "umaKey": "sprite:102302",
         "umaName": "Biwa Hayahide",
+        "baseName": "Biwa Hayahide",
         "spritePath": "assets/characters/chara_stand_1023_102302.png",
         "population": 1,
         "isUnique": true,
@@ -11954,6 +12034,7 @@
       {
         "umaKey": "sprite:103701",
         "umaName": "Eishin Flash",
+        "baseName": "Eishin Flash",
         "spritePath": "assets/characters/chara_stand_1037_103701.png",
         "population": 1,
         "isUnique": true,
@@ -11966,6 +12047,7 @@
       {
         "umaKey": "sprite:101402",
         "umaName": "El Condor Pasa",
+        "baseName": "El Condor Pasa",
         "spritePath": "assets/characters/chara_stand_1014_101402.png",
         "population": 1,
         "isUnique": true,
@@ -11978,6 +12060,7 @@
       {
         "umaKey": "sprite:104001",
         "umaName": "Gold City",
+        "baseName": "Gold City",
         "spritePath": "assets/characters/chara_stand_1040_104001.png",
         "population": 1,
         "isUnique": true,
@@ -11990,6 +12073,7 @@
       {
         "umaKey": "sprite:103401",
         "umaName": "Inari One",
+        "baseName": "Inari One",
         "spritePath": "assets/characters/chara_stand_1034_103401.png",
         "population": 1,
         "isUnique": true,
@@ -12002,6 +12086,7 @@
       {
         "umaKey": "sprite:103101",
         "umaName": "Ines Fujin",
+        "baseName": "Ines Fujin",
         "spritePath": "assets/characters/chara_stand_1031_103101.png",
         "population": 1,
         "isUnique": true,
@@ -12014,6 +12099,7 @@
       {
         "umaKey": "sprite:106101",
         "umaName": "King Halo",
+        "baseName": "King Halo",
         "spritePath": "assets/characters/chara_stand_1061_106101.png",
         "population": 1,
         "isUnique": true,
@@ -12026,6 +12112,7 @@
       {
         "umaKey": "sprite:106201",
         "umaName": "Matikanetannhauser",
+        "baseName": "Matikanetannhauser",
         "spritePath": "assets/characters/chara_stand_1062_106201.png",
         "population": 1,
         "isUnique": true,
@@ -12038,6 +12125,7 @@
       {
         "umaKey": "sprite:102402",
         "umaName": "Mayano Top Gun",
+        "baseName": "Mayano Top Gun",
         "spritePath": "assets/characters/chara_stand_1024_102402.png",
         "population": 1,
         "isUnique": true,
@@ -12050,6 +12138,7 @@
       {
         "umaKey": "sprite:105801",
         "umaName": "Meisho Doto",
+        "baseName": "Meisho Doto",
         "spritePath": "assets/characters/chara_stand_1058_105801.png",
         "population": 1,
         "isUnique": true,
@@ -12062,6 +12151,7 @@
       {
         "umaKey": "sprite:107401",
         "umaName": "Mejiro Bright",
+        "baseName": "Mejiro Bright",
         "spritePath": "assets/characters/chara_stand_1074_107401.png",
         "population": 1,
         "isUnique": true,
@@ -12074,6 +12164,7 @@
       {
         "umaKey": "sprite:105901",
         "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
         "spritePath": "assets/characters/chara_stand_1059_105901.png",
         "population": 1,
         "isUnique": true,
@@ -12086,6 +12177,7 @@
       {
         "umaKey": "sprite:101302",
         "umaName": "Mejiro McQueen",
+        "baseName": "Mejiro McQueen",
         "spritePath": "assets/characters/chara_stand_1013_101302.png",
         "population": 1,
         "isUnique": true,
@@ -12098,6 +12190,7 @@
       {
         "umaKey": "sprite:101301",
         "umaName": "Mejiro McQueen",
+        "baseName": "Mejiro McQueen",
         "spritePath": "assets/characters/chara_stand_1013_101301.png",
         "population": 1,
         "isUnique": true,
@@ -12110,6 +12203,7 @@
       {
         "umaKey": "sprite:106401",
         "umaName": "Mejiro Palmer",
+        "baseName": "Mejiro Palmer",
         "spritePath": "assets/characters/chara_stand_1064_106401.png",
         "population": 1,
         "isUnique": true,
@@ -12122,6 +12216,7 @@
       {
         "umaKey": "sprite:102701",
         "umaName": "Mejiro Ryan",
+        "baseName": "Mejiro Ryan",
         "spritePath": "assets/characters/chara_stand_1027_102701.png",
         "population": 1,
         "isUnique": true,
@@ -12134,6 +12229,7 @@
       {
         "umaKey": "sprite:106001",
         "umaName": "Nice Nature",
+        "baseName": "Nice Nature",
         "spritePath": "assets/characters/chara_stand_1060_106001.png",
         "population": 1,
         "isUnique": true,
@@ -12146,6 +12242,7 @@
       {
         "umaKey": "sprite:106002",
         "umaName": "Nice Nature",
+        "baseName": "Nice Nature",
         "spritePath": "assets/characters/chara_stand_1060_106002.png",
         "population": 1,
         "isUnique": true,
@@ -12158,6 +12255,7 @@
       {
         "umaKey": "sprite:106701",
         "umaName": "Satono Diamond",
+        "baseName": "Satono Diamond",
         "spritePath": "assets/characters/chara_stand_1067_106701.png",
         "population": 1,
         "isUnique": true,
@@ -12170,6 +12268,7 @@
       {
         "umaKey": "sprite:102001",
         "umaName": "Seiun Sky",
+        "baseName": "Seiun Sky",
         "spritePath": "assets/characters/chara_stand_1020_102001.png",
         "population": 1,
         "isUnique": true,
@@ -12182,6 +12281,7 @@
       {
         "umaKey": "sprite:104501",
         "umaName": "Super Creek",
+        "baseName": "Super Creek",
         "spritePath": "assets/characters/chara_stand_1045_104501.png",
         "population": 1,
         "isUnique": true,
@@ -12194,6 +12294,7 @@
       {
         "umaKey": "sprite:101702",
         "umaName": "Symboli Rudolf",
+        "baseName": "Symboli Rudolf",
         "spritePath": "assets/characters/chara_stand_1017_101702.png",
         "population": 1,
         "isUnique": true,
@@ -12206,6 +12307,7 @@
       {
         "umaKey": "sprite:101502",
         "umaName": "T.M. Opera O",
+        "baseName": "T.M. Opera O",
         "spritePath": "assets/characters/chara_stand_1015_101502.png",
         "population": 1,
         "isUnique": true,
@@ -12218,6 +12320,7 @@
       {
         "umaKey": "sprite:103501",
         "umaName": "Winning Ticket",
+        "baseName": "Winning Ticket",
         "spritePath": "assets/characters/chara_stand_1035_103501.png",
         "population": 1,
         "isUnique": true,
@@ -12230,6 +12333,7 @@
       {
         "umaKey": "sprite:107201",
         "umaName": "Yaeno Muteki",
+        "baseName": "Yaeno Muteki",
         "spritePath": "assets/characters/chara_stand_1072_107201.png",
         "population": 1,
         "isUnique": true,
@@ -12238,6 +12342,362 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
+      }
+    ],
+    "combinedUmas": [
+      {
+        "umaName": "Oguri Cap",
+        "population": 11,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1006_100602.png"
+      },
+      {
+        "umaName": "Taiki Shuttle",
+        "population": 10,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1010_101001.png"
+      },
+      {
+        "umaName": "Smart Falcon",
+        "population": 9,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1046_104601.png"
+      },
+      {
+        "umaName": "Kitasan Black",
+        "population": 8,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1068_106801.png"
+      },
+      {
+        "umaName": "Curren Chan",
+        "population": 7,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1038_103801.png"
+      },
+      {
+        "umaName": "Haru Urara",
+        "population": 6,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1052_105202.png"
+      },
+      {
+        "umaName": "Maruzensky",
+        "population": 6,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1004_100402.png"
+      },
+      {
+        "umaName": "Mayano Top Gun",
+        "population": 6,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1024_102401.png"
+      },
+      {
+        "umaName": "Tamamo Cross",
+        "population": 6,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1021_102101.png"
+      },
+      {
+        "umaName": "Agnes Digital",
+        "population": 5,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1019_101901.png"
+      },
+      {
+        "umaName": "Gold Ship",
+        "population": 5,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1007_100702.png"
+      },
+      {
+        "umaName": "Mejiro McQueen",
+        "population": 5,
+        "skinCount": 3,
+        "spritePath": "assets/characters/chara_stand_1013_101303.png"
+      },
+      {
+        "umaName": "Nishino Flower",
+        "population": 5,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1051_105101.png"
+      },
+      {
+        "umaName": "El Condor Pasa",
+        "population": 4,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1014_101401.png"
+      },
+      {
+        "umaName": "Fuji Kiseki",
+        "population": 4,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1005_100502.png"
+      },
+      {
+        "umaName": "Mihono Bourbon",
+        "population": 4,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1026_102602.png"
+      },
+      {
+        "umaName": "Rice Shower",
+        "population": 4,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1030_103001.png"
+      },
+      {
+        "umaName": "Symboli Rudolf",
+        "population": 4,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1017_101701.png"
+      },
+      {
+        "umaName": "Daiwa Scarlet",
+        "population": 3,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1009_100901.png"
+      },
+      {
+        "umaName": "Hishi Amazon",
+        "population": 3,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1012_101201.png"
+      },
+      {
+        "umaName": "King Halo",
+        "population": 3,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1061_106101.png"
+      },
+      {
+        "umaName": "Mejiro Ardan",
+        "population": 3,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1071_107101.png"
+      },
+      {
+        "umaName": "Mejiro Dober",
+        "population": 3,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1059_105902.png"
+      },
+      {
+        "umaName": "Vodka",
+        "population": 3,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1008_100801.png"
+      },
+      {
+        "umaName": "Admire Vega",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1033_103301.png"
+      },
+      {
+        "umaName": "Agnes Tachyon",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1032_103201.png"
+      },
+      {
+        "umaName": "Bamboo Memory",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1053_105301.png"
+      },
+      {
+        "umaName": "Fine Motion",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1022_102201.png"
+      },
+      {
+        "umaName": "Grass Wonder",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1011_101101.png"
+      },
+      {
+        "umaName": "Hishi Akebono",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1028_102801.png"
+      },
+      {
+        "umaName": "Kawakami Princess",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1039_103901.png"
+      },
+      {
+        "umaName": "Manhattan Cafe",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1025_102501.png"
+      },
+      {
+        "umaName": "Matikanefukukitaru",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1056_105601.png"
+      },
+      {
+        "umaName": "Narita Brian",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1016_101601.png"
+      },
+      {
+        "umaName": "Narita Taishin",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1050_105001.png"
+      },
+      {
+        "umaName": "Nice Nature",
+        "population": 2,
+        "skinCount": 2,
+        "spritePath": "assets/characters/chara_stand_1060_106001.png"
+      },
+      {
+        "umaName": "Sakura Bakushin O",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1041_104101.png"
+      },
+      {
+        "umaName": "Sakura Chiyono O",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1069_106901.png"
+      },
+      {
+        "umaName": "Silence Suzuka",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1002_100201.png"
+      },
+      {
+        "umaName": "Special Week",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1001_100101.png"
+      },
+      {
+        "umaName": "Sweep Tosho",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1044_104401.png"
+      },
+      {
+        "umaName": "Tokai Teio",
+        "population": 2,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1003_100301.png"
+      },
+      {
+        "umaName": "Air Shakur",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1036_103601.png"
+      },
+      {
+        "umaName": "Biwa Hayahide",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1023_102302.png"
+      },
+      {
+        "umaName": "Eishin Flash",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1037_103701.png"
+      },
+      {
+        "umaName": "Gold City",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1040_104001.png"
+      },
+      {
+        "umaName": "Inari One",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1034_103401.png"
+      },
+      {
+        "umaName": "Ines Fujin",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1031_103101.png"
+      },
+      {
+        "umaName": "Matikanetannhauser",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1062_106201.png"
+      },
+      {
+        "umaName": "Meisho Doto",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1058_105801.png"
+      },
+      {
+        "umaName": "Mejiro Bright",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1074_107401.png"
+      },
+      {
+        "umaName": "Mejiro Palmer",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1064_106401.png"
+      },
+      {
+        "umaName": "Mejiro Ryan",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1027_102701.png"
+      },
+      {
+        "umaName": "Satono Diamond",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1067_106701.png"
+      },
+      {
+        "umaName": "Seiun Sky",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1020_102001.png"
+      },
+      {
+        "umaName": "Super Creek",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1045_104501.png"
+      },
+      {
+        "umaName": "T.M. Opera O",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1015_101502.png"
+      },
+      {
+        "umaName": "Winning Ticket",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1035_103501.png"
+      },
+      {
+        "umaName": "Yaeno Muteki",
+        "population": 1,
+        "skinCount": 1,
+        "spritePath": "assets/characters/chara_stand_1072_107201.png"
       }
     ],
     "popularity": [
@@ -12693,7 +13153,7 @@
       },
       {
         "name": "Burning Spirit SPD",
-        "count": 108,
+        "count": 109,
         "rarity": "rare"
       },
       {
@@ -12704,6 +13164,41 @@
       {
         "name": "Right-Handed",
         "count": 93,
+        "rarity": "normal"
+      },
+      {
+        "name": "Straightaway Adept",
+        "count": 87,
+        "rarity": "normal"
+      },
+      {
+        "name": "Ignited Spirit PWR",
+        "count": 81,
+        "rarity": "normal"
+      },
+      {
+        "name": "Tail Held High",
+        "count": 81,
+        "rarity": "normal"
+      },
+      {
+        "name": "Groundwork",
+        "count": 57,
+        "rarity": "normal"
+      },
+      {
+        "name": "Uma Stan",
+        "count": 48,
+        "rarity": "normal"
+      },
+      {
+        "name": "Budding Blossom",
+        "count": 47,
+        "rarity": "unique"
+      },
+      {
+        "name": "Playtime's Over!",
+        "count": 46,
         "rarity": "normal"
       }
     ],
@@ -12732,6 +13227,41 @@
         "name": "Calm in a Crowd",
         "count": 1,
         "rarity": "normal"
+      },
+      {
+        "name": "Cloudy Days",
+        "count": 1,
+        "rarity": "normal"
+      },
+      {
+        "name": "Corner Connoisseur",
+        "count": 1,
+        "rarity": "rare"
+      },
+      {
+        "name": "Crusader",
+        "count": 1,
+        "rarity": "rare"
+      },
+      {
+        "name": "Deep Breaths",
+        "count": 1,
+        "rarity": "normal"
+      },
+      {
+        "name": "Down in the Dirt",
+        "count": 1,
+        "rarity": "normal"
+      },
+      {
+        "name": "Downhill Speedster",
+        "count": 1,
+        "rarity": "normal"
+      },
+      {
+        "name": "Go with the Flow",
+        "count": 1,
+        "rarity": "normal"
       }
     ],
     "teamsByStats": [
@@ -12743,7 +13273,9 @@
         "umaCount": 15,
         "totalStats": 76523.20000000001,
         "skillCount": 253,
-        "skillScore": 329,
+        "skillScore": 330,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5101.546666666667
       },
       {
@@ -12754,7 +13286,9 @@
         "umaCount": 15,
         "totalStats": 76141.2,
         "skillCount": 270,
-        "skillScore": 350,
+        "skillScore": 351,
+        "uniquePickCount": 0,
+        "hasOguri": true,
         "avgStats": 5076.08
       },
       {
@@ -12766,6 +13300,8 @@
         "totalStats": 75184.40000000001,
         "skillCount": 254,
         "skillScore": 325,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5012.293333333334
       },
       {
@@ -12777,6 +13313,8 @@
         "totalStats": 75090.2,
         "skillCount": 246,
         "skillScore": 321,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5006.013333333333
       },
       {
@@ -12787,7 +13325,9 @@
         "umaCount": 15,
         "totalStats": 74927.8,
         "skillCount": 275,
-        "skillScore": 335,
+        "skillScore": 336,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 4995.1866666666665
       },
       {
@@ -12799,6 +13339,8 @@
         "totalStats": 74246.5,
         "skillCount": 256,
         "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": false,
         "avgStats": 4949.766666666666
       },
       {
@@ -12810,6 +13352,8 @@
         "totalStats": 74024.90000000001,
         "skillCount": 255,
         "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": true,
         "avgStats": 4934.993333333334
       },
       {
@@ -12819,8 +13363,10 @@
         "color": "#2c49c9",
         "umaCount": 15,
         "totalStats": 73855.8,
-        "skillCount": 251,
-        "skillScore": 320,
+        "skillCount": 253,
+        "skillScore": 325,
+        "uniquePickCount": 2,
+        "hasOguri": true,
         "avgStats": 4923.72
       },
       {
@@ -12832,6 +13378,8 @@
         "totalStats": 73660.4,
         "skillCount": 268,
         "skillScore": 336,
+        "uniquePickCount": 6,
+        "hasOguri": true,
         "avgStats": 4910.693333333333
       },
       {
@@ -12842,7 +13390,9 @@
         "umaCount": 15,
         "totalStats": 73539.09999999999,
         "skillCount": 248,
-        "skillScore": 320,
+        "skillScore": 321,
+        "uniquePickCount": 3,
+        "hasOguri": true,
         "avgStats": 4902.606666666666
       },
       {
@@ -12853,7 +13403,9 @@
         "umaCount": 15,
         "totalStats": 73272,
         "skillCount": 243,
-        "skillScore": 308,
+        "skillScore": 310,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 4884.8
       },
       {
@@ -12863,8 +13415,10 @@
         "color": "#c1e1f1",
         "umaCount": 15,
         "totalStats": 72592.79999999999,
-        "skillCount": 250,
-        "skillScore": 317,
+        "skillCount": 253,
+        "skillScore": 320,
+        "uniquePickCount": 4,
+        "hasOguri": true,
         "avgStats": 4839.5199999999995
       }
     ],
@@ -12877,8 +13431,23 @@
         "umaCount": 15,
         "totalStats": 76141.2,
         "skillCount": 270,
-        "skillScore": 350,
+        "skillScore": 351,
+        "uniquePickCount": 0,
+        "hasOguri": true,
         "avgStats": 5076.08
+      },
+      {
+        "id": "rilliance",
+        "name": "Rilliance",
+        "shortName": "RILL",
+        "color": "#da49b8",
+        "umaCount": 15,
+        "totalStats": 74927.8,
+        "skillCount": 275,
+        "skillScore": 336,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 4995.1866666666665
       },
       {
         "id": "falena",
@@ -12889,18 +13458,9 @@
         "totalStats": 73660.4,
         "skillCount": 268,
         "skillScore": 336,
+        "uniquePickCount": 6,
+        "hasOguri": true,
         "avgStats": 4910.693333333333
-      },
-      {
-        "id": "rilliance",
-        "name": "Rilliance",
-        "shortName": "RILL",
-        "color": "#da49b8",
-        "umaCount": 15,
-        "totalStats": 74927.8,
-        "skillCount": 275,
-        "skillScore": 335,
-        "avgStats": 4995.1866666666665
       },
       {
         "id": "king",
@@ -12911,6 +13471,8 @@
         "totalStats": 74246.5,
         "skillCount": 256,
         "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": false,
         "avgStats": 4949.766666666666
       },
       {
@@ -12922,6 +13484,8 @@
         "totalStats": 74024.90000000001,
         "skillCount": 255,
         "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": true,
         "avgStats": 4934.993333333334
       },
       {
@@ -12932,7 +13496,9 @@
         "umaCount": 15,
         "totalStats": 76523.20000000001,
         "skillCount": 253,
-        "skillScore": 329,
+        "skillScore": 330,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5101.546666666667
       },
       {
@@ -12944,6 +13510,166 @@
         "totalStats": 75184.40000000001,
         "skillCount": 254,
         "skillScore": 325,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 5012.293333333334
+      },
+      {
+        "id": "umalliance",
+        "name": "UMAlliance",
+        "shortName": "ALLI",
+        "color": "#2c49c9",
+        "umaCount": 15,
+        "totalStats": 73855.8,
+        "skillCount": 253,
+        "skillScore": 325,
+        "uniquePickCount": 2,
+        "hasOguri": true,
+        "avgStats": 4923.72
+      },
+      {
+        "id": "cabal",
+        "name": "Cabal Agency",
+        "shortName": "CABAL",
+        "color": "#c0fa3b",
+        "umaCount": 15,
+        "totalStats": 75090.2,
+        "skillCount": 246,
+        "skillScore": 321,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 5006.013333333333
+      },
+      {
+        "id": "ritto-dorm-dropouts",
+        "name": "Ritto Dorm Dropouts",
+        "shortName": "RDD",
+        "color": "#992724",
+        "umaCount": 15,
+        "totalStats": 73539.09999999999,
+        "skillCount": 248,
+        "skillScore": 321,
+        "uniquePickCount": 3,
+        "hasOguri": true,
+        "avgStats": 4902.606666666666
+      },
+      {
+        "id": "umazing-hotspring",
+        "name": "Umazing Hotsprings",
+        "shortName": "HOTS",
+        "color": "#c1e1f1",
+        "umaCount": 15,
+        "totalStats": 72592.79999999999,
+        "skillCount": 253,
+        "skillScore": 320,
+        "uniquePickCount": 4,
+        "hasOguri": true,
+        "avgStats": 4839.5199999999995
+      },
+      {
+        "id": "the-shadow-clones",
+        "name": "The Shadow Clones",
+        "shortName": "TSC",
+        "color": "#646364",
+        "umaCount": 15,
+        "totalStats": 73272,
+        "skillCount": 243,
+        "skillScore": 310,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 4884.8
+      }
+    ],
+    "teamsByUniquePicks": [
+      {
+        "id": "falena",
+        "name": "Falena",
+        "shortName": "FLNA",
+        "color": "#2e65cf",
+        "umaCount": 15,
+        "totalStats": 73660.4,
+        "skillCount": 268,
+        "skillScore": 336,
+        "uniquePickCount": 6,
+        "hasOguri": true,
+        "avgStats": 4910.693333333333
+      },
+      {
+        "id": "umazing-hotspring",
+        "name": "Umazing Hotsprings",
+        "shortName": "HOTS",
+        "color": "#c1e1f1",
+        "umaCount": 15,
+        "totalStats": 72592.79999999999,
+        "skillCount": 253,
+        "skillScore": 320,
+        "uniquePickCount": 4,
+        "hasOguri": true,
+        "avgStats": 4839.5199999999995
+      },
+      {
+        "id": "king",
+        "name": "King",
+        "shortName": "KING",
+        "color": "#359b62",
+        "umaCount": 15,
+        "totalStats": 74246.5,
+        "skillCount": 256,
+        "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": false,
+        "avgStats": 4949.766666666666
+      },
+      {
+        "id": "ritto-dorm-dropouts",
+        "name": "Ritto Dorm Dropouts",
+        "shortName": "RDD",
+        "color": "#992724",
+        "umaCount": 15,
+        "totalStats": 73539.09999999999,
+        "skillCount": 248,
+        "skillScore": 321,
+        "uniquePickCount": 3,
+        "hasOguri": true,
+        "avgStats": 4902.606666666666
+      },
+      {
+        "id": "uma-love",
+        "name": "Uma Love",
+        "shortName": "LOVE",
+        "color": "#f66a9b",
+        "umaCount": 15,
+        "totalStats": 74024.90000000001,
+        "skillCount": 255,
+        "skillScore": 331,
+        "uniquePickCount": 3,
+        "hasOguri": true,
+        "avgStats": 4934.993333333334
+      },
+      {
+        "id": "umalliance",
+        "name": "UMAlliance",
+        "shortName": "ALLI",
+        "color": "#2c49c9",
+        "umaCount": 15,
+        "totalStats": 73855.8,
+        "skillCount": 253,
+        "skillScore": 325,
+        "uniquePickCount": 2,
+        "hasOguri": true,
+        "avgStats": 4923.72
+      },
+      {
+        "id": "dust-bunny",
+        "name": "BUNS",
+        "shortName": "BUNS",
+        "color": "#e91e45",
+        "umaCount": 15,
+        "totalStats": 75184.40000000001,
+        "skillCount": 254,
+        "skillScore": 325,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5012.293333333334
       },
       {
@@ -12955,40 +13681,22 @@
         "totalStats": 75090.2,
         "skillCount": 246,
         "skillScore": 321,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 5006.013333333333
       },
       {
-        "id": "umalliance",
-        "name": "UMAlliance",
-        "shortName": "ALLI",
-        "color": "#2c49c9",
+        "id": "rilliance",
+        "name": "Rilliance",
+        "shortName": "RILL",
+        "color": "#da49b8",
         "umaCount": 15,
-        "totalStats": 73855.8,
-        "skillCount": 251,
-        "skillScore": 320,
-        "avgStats": 4923.72
-      },
-      {
-        "id": "ritto-dorm-dropouts",
-        "name": "Ritto Dorm Dropouts",
-        "shortName": "RDD",
-        "color": "#992724",
-        "umaCount": 15,
-        "totalStats": 73539.09999999999,
-        "skillCount": 248,
-        "skillScore": 320,
-        "avgStats": 4902.606666666666
-      },
-      {
-        "id": "umazing-hotspring",
-        "name": "Umazing Hotsprings",
-        "shortName": "HOTS",
-        "color": "#c1e1f1",
-        "umaCount": 15,
-        "totalStats": 72592.79999999999,
-        "skillCount": 250,
-        "skillScore": 317,
-        "avgStats": 4839.5199999999995
+        "totalStats": 74927.8,
+        "skillCount": 275,
+        "skillScore": 336,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 4995.1866666666665
       },
       {
         "id": "the-shadow-clones",
@@ -12998,8 +13706,36 @@
         "umaCount": 15,
         "totalStats": 73272,
         "skillCount": 243,
-        "skillScore": 308,
+        "skillScore": 310,
+        "uniquePickCount": 1,
+        "hasOguri": true,
         "avgStats": 4884.8
+      },
+      {
+        "id": "umamusuko",
+        "name": "Umamusuko",
+        "shortName": "USK",
+        "color": "#f1c41f",
+        "umaCount": 15,
+        "totalStats": 76523.20000000001,
+        "skillCount": 253,
+        "skillScore": 330,
+        "uniquePickCount": 1,
+        "hasOguri": true,
+        "avgStats": 5101.546666666667
+      },
+      {
+        "id": "kita-trauma",
+        "name": "KitaTrauma",
+        "shortName": "KITA",
+        "color": "#eb5153",
+        "umaCount": 15,
+        "totalStats": 76141.2,
+        "skillCount": 270,
+        "skillScore": 351,
+        "uniquePickCount": 0,
+        "hasOguri": true,
+        "avgStats": 5076.08
       }
     ],
     "statsLeader": {
@@ -13010,7 +13746,9 @@
       "umaCount": 15,
       "totalStats": 76523.20000000001,
       "skillCount": 253,
-      "skillScore": 329,
+      "skillScore": 330,
+      "uniquePickCount": 1,
+      "hasOguri": true,
       "avgStats": 5101.546666666667
     },
     "skillsLeader": {
@@ -13021,8 +13759,102 @@
       "umaCount": 15,
       "totalStats": 76141.2,
       "skillCount": 270,
-      "skillScore": 350,
+      "skillScore": 351,
+      "uniquePickCount": 0,
+      "hasOguri": true,
       "avgStats": 5076.08
-    }
+    },
+    "topRatedTrainers": [
+      {
+        "teamId": "umazing-hotspring",
+        "teamName": "Umazing Hotsprings",
+        "teamColor": "#c1e1f1",
+        "trainer": "Ultra",
+        "category": "long",
+        "slot": 0,
+        "umaName": "Kitasan Black",
+        "rating": "UG9",
+        "spritePath": "assets/characters/chara_stand_1068_106801.png"
+      },
+      {
+        "teamId": "rilliance",
+        "teamName": "Rilliance",
+        "teamColor": "#da49b8",
+        "trainer": "RipPeR",
+        "category": "medium",
+        "slot": 1,
+        "umaName": "Oguri Cap",
+        "rating": "UG7",
+        "spritePath": "assets/characters/chara_stand_1006_100602.png"
+      },
+      {
+        "teamId": "uma-love",
+        "teamName": "Uma Love",
+        "teamColor": "#f66a9b",
+        "trainer": "Powd",
+        "category": "mile",
+        "slot": 0,
+        "umaName": "Mihono Bourbon",
+        "rating": "UG7",
+        "spritePath": "assets/characters/chara_stand_1026_102602.png"
+      },
+      {
+        "teamId": "umazing-hotspring",
+        "teamName": "Umazing Hotsprings",
+        "teamColor": "#c1e1f1",
+        "trainer": "Khaile",
+        "category": "long",
+        "slot": 1,
+        "umaName": "Mejiro McQueen",
+        "rating": "UG7",
+        "spritePath": "assets/characters/chara_stand_1013_101303.png"
+      },
+      {
+        "teamId": "cabal",
+        "teamName": "Cabal Agency",
+        "teamColor": "#c0fa3b",
+        "trainer": "ONEWINGEDANGEL",
+        "category": "long",
+        "slot": 0,
+        "umaName": "Mayano Top Gun",
+        "rating": "UG6",
+        "spritePath": "assets/characters/chara_stand_1024_102401.png"
+      }
+    ],
+    "teamsWithoutOguri": [
+      {
+        "id": "king",
+        "name": "King",
+        "color": "#359b62",
+        "shortName": "KING"
+      }
+    ],
+    "unpickedUmas": [
+      {
+        "umaName": "Air Groove",
+        "variant": "Original",
+        "spritePath": "assets/characters/chara_stand_1018_101801.png"
+      },
+      {
+        "umaName": "Copano Rickey",
+        "variant": "Original",
+        "spritePath": null
+      },
+      {
+        "umaName": "Seeking the Pearl",
+        "variant": "Original",
+        "spritePath": null
+      },
+      {
+        "umaName": "Tosen Jordan",
+        "variant": "Original",
+        "spritePath": "assets/characters/chara_stand_1048_104801.png"
+      },
+      {
+        "umaName": "Yukino Bijin",
+        "variant": "Original",
+        "spritePath": null
+      }
+    ]
   }
 }

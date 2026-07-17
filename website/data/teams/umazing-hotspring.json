@@ -229,7 +229,7 @@
       {
         "slot": 2,
         "trainer": "harry",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Mejiro Dober",
           "rating": "UG",
@@ -260,7 +260,10 @@
             "Fast & Furious",
             "On Your Left!",
             "Outer Swell",
-            "Unyielding Spirit"
+            "Unyielding Spirit",
+            "Late Surger Straightaways",
+            "Tail Held High",
+            "Ignited Spirit PWR"
           ],
           "spriteId": 105901,
           "spritePath": "assets/characters/chara_stand_1059_105901.png"

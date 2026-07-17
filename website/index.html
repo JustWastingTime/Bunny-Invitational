@@ -11,7 +11,6 @@
     <header class="top">
       <div>
         <h1 id="tournament-name">Bunny Invitational</h1>
-        <p id="updated-at">Loading data...</p>
       </div>
       <nav class="tabs" id="tabs">
         <a href="#bracket" data-tab="bracket">Bracket</a>
@@ -99,14 +98,14 @@
 
         <section class="stats-panel">
           <h3>Skill Meta</h3>
-          <p class="hint">Most taken vs rarest taken (at least once).</p>
+          <p class="hint stats-panel-desc">Most taken vs rarest taken (at least once). Unique skills excluded from rarest.</p>
           <div class="skill-meta-grid">
             <div>
-              <h4 class="stats-subhead">Top 5 Common</h4>
+              <h4 class="stats-subhead">Top 12 Common</h4>
               <ol id="top-skills-list" class="stats-rank-list"></ol>
             </div>
             <div>
-              <h4 class="stats-subhead">Top 5 Rarest</h4>
+              <h4 class="stats-subhead">Top 12 Rarest</h4>
               <ol id="rarest-skills-list" class="stats-rank-list"></ol>
             </div>
           </div>
@@ -114,7 +113,7 @@
 
         <section class="stats-panel">
           <h3>Team Power</h3>
-          <p class="hint">Gold (rare) skills count as 2. Distance S boosts speed ×1.1, terrain S boosts power ×1.1, style S boosts wit ×1.1.</p>
+          <p class="hint stats-panel-desc">Gold (rare) skills count as 2. Distance S boosts speed ×1.1, terrain S boosts power ×1.1, style S boosts wit ×1.1.</p>
           <div class="team-power-grid">
             <div>
               <h4 class="stats-subhead">Most Total Stats</h4>
@@ -125,6 +124,18 @@
               <ol id="team-skills-list" class="stats-rank-list team-rank-list"></ol>
             </div>
           </div>
+        </section>
+
+        <section class="stats-panel stats-panel-wide">
+          <h3>Unpicked</h3>
+          <p class="hint stats-panel-desc">Catalog characters nobody brought — any skin counts as picked.</p>
+          <div id="unpicked-grid" class="unpicked-grid"></div>
+        </section>
+
+        <section class="stats-panel stats-panel-wide">
+          <h3>Side Stats</h3>
+          <p class="hint stats-panel-desc">The fun leftovers.</p>
+          <div id="side-stats" class="side-stats-grid"></div>
         </section>
       </div>
     </section>

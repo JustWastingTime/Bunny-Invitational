@@ -566,7 +566,7 @@
       {
         "slot": 1,
         "trainer": "CDT929",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Haru Urara",
           "rating": "SS",

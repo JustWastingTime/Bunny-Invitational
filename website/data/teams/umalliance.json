@@ -442,7 +442,7 @@
       {
         "slot": 1,
         "trainer": "Fafa",
-        "locked": false,
+        "locked": true,
         "uma": {
           "name": "Mejiro Bright",
           "rating": "SS",
@@ -473,7 +473,9 @@
             "Late Surger Straightaways",
             "Sympathy",
             "Risky Business",
-            "Scramble"
+            "Scramble",
+            "Burning Spirit SPD",
+            "Ignited Spirit PWR"
           ],
           "spriteId": 107401,
           "spritePath": "assets/characters/chara_stand_1074_107401.png"

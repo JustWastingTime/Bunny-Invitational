@@ -111,13 +111,14 @@
           "skills": ["White Lightning Comin' Through!","Triumphant Pulse","∴win Q.E.D.","Certain Victory","Professor of Curvature","Swinging Maestro","Ramp Up","No Stopping Me!","Straightaway Spurt","Long Corners","Pressure","Uma Stan","Tail Nine","Playtime's Over!"] }
       },
       { "trainer": "Fafa",
+        "locked": true,
         "uma": { "name": "Mejiro Bright",
           "spriteId": 107401,
           "rating": "SS",
           "style": "late",
           "aptitudes": { "terrain": "A", "distance": "A", "style": "A" },
           "stats": { "speed": 1046, "stamina": 1085, "power": 1042, "guts": 749, "wisdom": 890 },
-          "skills": ["Lovely Spring Breeze","Triumphant Pulse","Let's Pump Some Iron!","Swinging Maestro","It's On!","No Stopping Me!","Homestretch Haste","On Your Left!","Inside Scoop","Long Corners","Late Surger Straightaways","Sympathy","Risky Business","Scramble"] }
+          "skills": ["Lovely Spring Breeze","Triumphant Pulse","Let's Pump Some Iron!","Swinging Maestro","It's On!","No Stopping Me!","Homestretch Haste","On Your Left!","Inside Scoop","Long Corners","Late Surger Straightaways","Sympathy","Risky Business","Scramble","Burning Spirit SPD","Ignited Spirit PWR"] }
       },
       { "trainer": "Shenezle",
         "locked": true,
