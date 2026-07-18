@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T15:10:29.623Z",
+  "updatedAt": "2026-07-18T15:14:54.946Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -14,10 +14,20 @@
       "id": "umazing-hotspring",
       "name": "Umazing Hotsprings",
       "color": "#c1e1f1",
+      "firsts": 2,
+      "seconds": 1,
+      "thirds": 1,
+      "uniqueBonuses": 2,
+      "points": 16
+    },
+    {
+      "id": "dust-bunny",
+      "name": "BUNS",
+      "color": "#e91e45",
       "firsts": 1,
       "seconds": 0,
-      "thirds": 1,
-      "uniqueBonuses": 1,
+      "thirds": 2,
+      "uniqueBonuses": 0,
       "points": 7
     },
     {
@@ -29,16 +39,6 @@
       "thirds": 0,
       "uniqueBonuses": 1,
       "points": 7
-    },
-    {
-      "id": "dust-bunny",
-      "name": "BUNS",
-      "color": "#e91e45",
-      "firsts": 1,
-      "seconds": 0,
-      "thirds": 1,
-      "uniqueBonuses": 0,
-      "points": 6
     },
     {
       "id": "falena",
@@ -8605,9 +8605,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umazing-hotspring",
+              "teamName": "Umazing Hotsprings",
+              "teamColor": "#c1e1f1",
+              "slot": 2,
+              "gate": 4,
+              "trainer": "UltimateShah",
+              "umaName": "Narita Brian",
+              "umaKey": "sprite:101601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1016_101601.png",
+              "style": "pace",
+              "key": "umazing-hotspring:2"
+            },
+            "2": {
+              "teamId": "umazing-hotspring",
+              "teamName": "Umazing Hotsprings",
+              "teamColor": "#c1e1f1",
+              "slot": 0,
+              "gate": 8,
+              "trainer": "mysticnut",
+              "umaName": "T.M. Opera O",
+              "umaKey": "sprite:101502",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1015_101502.png",
+              "style": "pace",
+              "key": "umazing-hotspring:0"
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "Crabpeople",
+              "umaName": "Gold Ship",
+              "umaKey": "sprite:100702",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1007_100702.png",
+              "style": "end",
+              "key": "dust-bunny:0"
+            }
           }
         },
         "long": {
@@ -11397,11 +11436,11 @@
       "spritePath": "assets/characters/chara_stand_1006_100602.png"
     },
     "bestWinRateUma": {
-      "umaKey": "sprite:101701",
-      "umaName": "Symboli Rudolf",
-      "baseName": "Symboli Rudolf",
-      "spritePath": "assets/characters/chara_stand_1017_101701.png",
-      "population": 3,
+      "umaKey": "sprite:101601",
+      "umaName": "Narita Brian",
+      "baseName": "Narita Brian",
+      "spritePath": "assets/characters/chara_stand_1016_101601.png",
+      "population": 2,
       "isUnique": false,
       "starts": 1,
       "wins": 1,
@@ -11500,23 +11539,23 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:106801",
-        "umaName": "Kitasan Black",
-        "baseName": "Kitasan Black",
-        "spritePath": "assets/characters/chara_stand_1068_106801.png",
+        "umaKey": "sprite:100602",
+        "umaName": "Oguri Cap",
+        "baseName": "Oguri Cap",
+        "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
-        "starts": 0,
+        "starts": 1,
         "wins": 0,
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:100602",
-        "umaName": "Oguri Cap",
-        "baseName": "Oguri Cap",
-        "spritePath": "assets/characters/chara_stand_1006_100602.png",
+        "umaKey": "sprite:106801",
+        "umaName": "Kitasan Black",
+        "baseName": "Kitasan Black",
+        "spritePath": "assets/characters/chara_stand_1068_106801.png",
         "population": 8,
         "isUnique": false,
         "starts": 0,
@@ -11656,6 +11695,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:101701",
+        "umaName": "Symboli Rudolf",
+        "baseName": "Symboli Rudolf",
+        "spritePath": "assets/characters/chara_stand_1017_101701.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.5,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:103801",
         "umaName": "Curren Chan",
         "baseName": "Curren Chan",
@@ -11682,23 +11734,23 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:101701",
-        "umaName": "Symboli Rudolf",
-        "baseName": "Symboli Rudolf",
-        "spritePath": "assets/characters/chara_stand_1017_101701.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 1,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 1,
-        "top3Rate": 1
-      },
-      {
         "umaKey": "sprite:107101",
         "umaName": "Mejiro Ardan",
         "baseName": "Mejiro Ardan",
         "spritePath": "assets/characters/chara_stand_1071_107101.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:100901",
+        "umaName": "Daiwa Scarlet",
+        "baseName": "Daiwa Scarlet",
+        "spritePath": "assets/characters/chara_stand_1009_100901.png",
         "population": 3,
         "isUnique": false,
         "starts": 1,
@@ -11728,19 +11780,6 @@
         "population": 3,
         "isUnique": false,
         "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:100901",
-        "umaName": "Daiwa Scarlet",
-        "baseName": "Daiwa Scarlet",
-        "spritePath": "assets/characters/chara_stand_1009_100901.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 0,
         "wins": 0,
         "top3": 0,
         "winRate": 0,
@@ -11784,6 +11823,45 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:101601",
+        "umaName": "Narita Brian",
+        "baseName": "Narita Brian",
+        "spritePath": "assets/characters/chara_stand_1016_101601.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 1,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 1,
+        "top3Rate": 1
+      },
+      {
+        "umaKey": "sprite:102201",
+        "umaName": "Fine Motion",
+        "baseName": "Fine Motion",
+        "spritePath": "assets/characters/chara_stand_1022_102201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 1,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:100702",
+        "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
+        "spritePath": "assets/characters/chara_stand_1007_100702.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 1,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 1
       },
       {
         "umaKey": "sprite:101101",
@@ -11890,19 +11968,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:102201",
-        "umaName": "Fine Motion",
-        "baseName": "Fine Motion",
-        "spritePath": "assets/characters/chara_stand_1022_102201.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:100502",
         "umaName": "Fuji Kiseki",
         "baseName": "Fuji Kiseki",
@@ -11920,19 +11985,6 @@
         "umaName": "Fuji Kiseki",
         "baseName": "Fuji Kiseki",
         "spritePath": "assets/characters/chara_stand_1005_100501.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:100702",
-        "umaName": "Gold Ship",
-        "baseName": "Gold Ship",
-        "spritePath": "assets/characters/chara_stand_1007_100702.png",
         "population": 2,
         "isUnique": false,
         "starts": 0,
@@ -11998,19 +12050,6 @@
         "umaName": "Mejiro Dober",
         "baseName": "Mejiro Dober",
         "spritePath": "assets/characters/chara_stand_1059_105902.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101601",
-        "umaName": "Narita Brian",
-        "baseName": "Narita Brian",
-        "spritePath": "assets/characters/chara_stand_1016_101601.png",
         "population": 2,
         "isUnique": false,
         "starts": 0,
@@ -12135,6 +12174,32 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:101702",
+        "umaName": "Symboli Rudolf",
+        "baseName": "Symboli Rudolf",
+        "spritePath": "assets/characters/chara_stand_1017_101702.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 1,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:101502",
+        "umaName": "T.M. Opera O",
+        "baseName": "T.M. Opera O",
+        "spritePath": "assets/characters/chara_stand_1015_101502.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 1,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 1
       },
       {
         "umaKey": "sprite:107201",
@@ -12388,32 +12453,6 @@
         "umaName": "Super Creek",
         "baseName": "Super Creek",
         "spritePath": "assets/characters/chara_stand_1045_104501.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101702",
-        "umaName": "Symboli Rudolf",
-        "baseName": "Symboli Rudolf",
-        "spritePath": "assets/characters/chara_stand_1017_101702.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101502",
-        "umaName": "T.M. Opera O",
-        "baseName": "T.M. Opera O",
-        "spritePath": "assets/characters/chara_stand_1015_101502.png",
         "population": 1,
         "isUnique": true,
         "starts": 0,
@@ -12800,13 +12839,13 @@
         "winRate": 0
       },
       {
-        "umaName": "Kitasan Black",
-        "starts": 8,
+        "umaName": "Oguri Cap",
+        "starts": 1,
         "wins": 0,
         "winRate": 0
       },
       {
-        "umaName": "Oguri Cap",
+        "umaName": "Kitasan Black",
         "starts": 8,
         "wins": 0,
         "winRate": 0
@@ -12872,6 +12911,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Symboli Rudolf",
+        "starts": 2,
+        "wins": 1,
+        "winRate": 0.5
+      },
+      {
         "umaName": "Curren Chan",
         "starts": 2,
         "wins": 0,
@@ -12884,13 +12929,13 @@
         "winRate": 0
       },
       {
-        "umaName": "Symboli Rudolf",
-        "starts": 1,
-        "wins": 1,
-        "winRate": 1
+        "umaName": "Mejiro Ardan",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
       },
       {
-        "umaName": "Mejiro Ardan",
+        "umaName": "Daiwa Scarlet",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -12904,12 +12949,6 @@
       {
         "umaName": "Vodka",
         "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Daiwa Scarlet",
-        "starts": 3,
         "wins": 0,
         "winRate": 0
       },
@@ -12928,6 +12967,24 @@
       {
         "umaName": "Mejiro McQueen",
         "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Narita Brian",
+        "starts": 1,
+        "wins": 1,
+        "winRate": 1
+      },
+      {
+        "umaName": "Fine Motion",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Gold Ship",
+        "starts": 1,
         "wins": 0,
         "winRate": 0
       },
@@ -12980,12 +13037,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Fine Motion",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Fuji Kiseki",
         "starts": 2,
         "wins": 0,
@@ -12993,12 +13044,6 @@
       },
       {
         "umaName": "Fuji Kiseki",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Gold Ship",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -13029,12 +13074,6 @@
       },
       {
         "umaName": "Mejiro Dober",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Narita Brian",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -13089,6 +13128,18 @@
       },
       {
         "umaName": "Nice Nature",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Symboli Rudolf",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "T.M. Opera O",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -13209,18 +13260,6 @@
       },
       {
         "umaName": "Super Creek",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Symboli Rudolf",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "T.M. Opera O",
         "starts": 1,
         "wins": 0,
         "winRate": 0
