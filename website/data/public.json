@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T17:14:54.065Z",
+  "updatedAt": "2026-07-18T17:19:24.187Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -51,6 +51,16 @@
       "points": 30
     },
     {
+      "id": "uma-love",
+      "name": "Uma Love",
+      "color": "#f66a9b",
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 27
+    },
+    {
       "id": "umamusuko",
       "name": "Umamusuko",
       "color": "#f1c41f",
@@ -89,16 +99,6 @@
       "thirds": 1,
       "uniqueBonuses": 2,
       "points": 19
-    },
-    {
-      "id": "uma-love",
-      "name": "Uma Love",
-      "color": "#f66a9b",
-      "firsts": 3,
-      "seconds": 0,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 18
     },
     {
       "id": "the-shadow-clones",
@@ -12867,7 +12867,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 0,
-              "gate": null,
+              "gate": 5,
               "trainer": "OJ",
               "umaName": "Smart Falcon",
               "umaKey": "sprite:104601",
@@ -12881,7 +12881,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "eachcorpse",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101001",
@@ -12895,7 +12895,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 2,
-              "gate": null,
+              "gate": 8,
               "trainer": "Value",
               "umaName": "El Condor Pasa",
               "umaKey": "sprite:101401",
@@ -12909,7 +12909,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "Penou",
               "umaName": "Haru Urara",
               "umaKey": "sprite:105202",
@@ -12923,7 +12923,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Hobo",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101002",
@@ -12937,7 +12937,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "Kuro",
               "umaName": "Smart Falcon",
               "umaKey": "sprite:104601",
@@ -12948,9 +12948,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "uma-love",
+              "teamName": "Uma Love",
+              "teamColor": "#f66a9b",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "Penou",
+              "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "end",
+              "key": "uma-love:0"
+            },
+            "2": {
+              "teamId": "uma-love",
+              "teamName": "Uma Love",
+              "teamColor": "#f66a9b",
+              "slot": 2,
+              "gate": 3,
+              "trainer": "Kuro",
+              "umaName": "Smart Falcon",
+              "umaKey": "sprite:104601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
+              "style": "pace",
+              "key": "uma-love:2"
+            },
+            "3": {
+              "teamId": "uma-love",
+              "teamName": "Uma Love",
+              "teamColor": "#f66a9b",
+              "slot": 1,
+              "gate": 2,
+              "trainer": "Hobo",
+              "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101002",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1010_101002.png",
+              "style": "pace",
+              "key": "uma-love:1"
+            }
           }
         }
       }
@@ -13287,11 +13326,11 @@
       "spritePath": "assets/characters/chara_stand_1046_104601.png",
       "population": 9,
       "isUnique": false,
-      "starts": 10,
+      "starts": 12,
       "wins": 1,
-      "top3": 3,
-      "winRate": 0.1,
-      "top3Rate": 0.3
+      "top3": 4,
+      "winRate": 0.08333333333333333,
+      "top3Rate": 0.3333333333333333
     },
     "mostCommonUmaCombined": {
       "umaName": "Oguri Cap",
@@ -13396,11 +13435,11 @@
         "spritePath": "assets/characters/chara_stand_1046_104601.png",
         "population": 9,
         "isUnique": false,
-        "starts": 10,
+        "starts": 12,
         "wins": 1,
-        "top3": 3,
-        "winRate": 0.1,
-        "top3Rate": 0.3
+        "top3": 4,
+        "winRate": 0.08333333333333333,
+        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:100602",
@@ -13442,6 +13481,19 @@
         "top3Rate": 0.2222222222222222
       },
       {
+        "umaKey": "sprite:105202",
+        "umaName": "Haru Urara",
+        "baseName": "Haru Urara",
+        "spritePath": "assets/characters/chara_stand_1052_105202.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 8,
+        "wins": 1,
+        "top3": 4,
+        "winRate": 0.125,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:100402",
         "umaName": "Maruzensky",
         "baseName": "Maruzensky",
@@ -13455,30 +13507,17 @@
         "top3Rate": 0.375
       },
       {
-        "umaKey": "sprite:105202",
-        "umaName": "Haru Urara",
-        "baseName": "Haru Urara",
-        "spritePath": "assets/characters/chara_stand_1052_105202.png",
-        "population": 6,
-        "isUnique": false,
-        "starts": 7,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
-        "top3Rate": 0.42857142857142855
-      },
-      {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
         "baseName": "Taiki Shuttle",
         "spritePath": "assets/characters/chara_stand_1010_101001.png",
         "population": 6,
         "isUnique": false,
-        "starts": 6,
+        "starts": 7,
         "wins": 1,
         "top3": 2,
-        "winRate": 0.16666666666666666,
-        "top3Rate": 0.3333333333333333
+        "winRate": 0.14285714285714285,
+        "top3Rate": 0.2857142857142857
       },
       {
         "umaKey": "sprite:102401",
@@ -13520,6 +13559,19 @@
         "top3Rate": 0.5714285714285714
       },
       {
+        "umaKey": "sprite:101002",
+        "umaName": "Taiki Shuttle",
+        "baseName": "Taiki Shuttle",
+        "spritePath": "assets/characters/chara_stand_1010_101002.png",
+        "population": 4,
+        "isUnique": false,
+        "starts": 6,
+        "wins": 1,
+        "top3": 3,
+        "winRate": 0.16666666666666666,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:102602",
         "umaName": "Mihono Bourbon",
         "baseName": "Mihono Bourbon",
@@ -13544,19 +13596,6 @@
         "top3": 3,
         "winRate": 0.2,
         "top3Rate": 0.6
-      },
-      {
-        "umaKey": "sprite:101002",
-        "umaName": "Taiki Shuttle",
-        "baseName": "Taiki Shuttle",
-        "spritePath": "assets/characters/chara_stand_1010_101002.png",
-        "population": 4,
-        "isUnique": false,
-        "starts": 5,
-        "wins": 1,
-        "top3": 2,
-        "winRate": 0.2,
-        "top3Rate": 0.4
       },
       {
         "umaKey": "sprite:101701",
@@ -13624,6 +13663,19 @@
         "top3Rate": 0.25
       },
       {
+        "umaKey": "sprite:101401",
+        "umaName": "El Condor Pasa",
+        "baseName": "El Condor Pasa",
+        "spritePath": "assets/characters/chara_stand_1014_101401.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 4,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.25
+      },
+      {
         "umaKey": "sprite:101201",
         "umaName": "Hishi Amazon",
         "baseName": "Hishi Amazon",
@@ -13674,19 +13726,6 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101401",
-        "umaName": "El Condor Pasa",
-        "baseName": "El Condor Pasa",
-        "spritePath": "assets/characters/chara_stand_1014_101401.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:103201",
@@ -14698,9 +14737,9 @@
     "popularity": [
       {
         "umaName": "Smart Falcon",
-        "starts": 10,
+        "starts": 12,
         "wins": 1,
-        "winRate": 0.1
+        "winRate": 0.08333333333333333
       },
       {
         "umaName": "Oguri Cap",
@@ -14721,22 +14760,22 @@
         "winRate": 0
       },
       {
+        "umaName": "Haru Urara",
+        "starts": 8,
+        "wins": 1,
+        "winRate": 0.125
+      },
+      {
         "umaName": "Maruzensky",
         "starts": 8,
         "wins": 0,
         "winRate": 0
       },
       {
-        "umaName": "Haru Urara",
-        "starts": 7,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Taiki Shuttle",
-        "starts": 6,
+        "starts": 7,
         "wins": 1,
-        "winRate": 0.16666666666666666
+        "winRate": 0.14285714285714285
       },
       {
         "umaName": "Mayano Top Gun",
@@ -14757,6 +14796,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Taiki Shuttle",
+        "starts": 6,
+        "wins": 1,
+        "winRate": 0.16666666666666666
+      },
+      {
         "umaName": "Mihono Bourbon",
         "starts": 6,
         "wins": 0,
@@ -14764,12 +14809,6 @@
       },
       {
         "umaName": "Curren Chan",
-        "starts": 5,
-        "wins": 1,
-        "winRate": 0.2
-      },
-      {
-        "umaName": "Taiki Shuttle",
         "starts": 5,
         "wins": 1,
         "winRate": 0.2
@@ -14805,6 +14844,12 @@
         "winRate": 0
       },
       {
+        "umaName": "El Condor Pasa",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Hishi Amazon",
         "starts": 4,
         "wins": 0,
@@ -14824,12 +14869,6 @@
       },
       {
         "umaName": "Daiwa Scarlet",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "El Condor Pasa",
         "starts": 3,
         "wins": 0,
         "winRate": 0

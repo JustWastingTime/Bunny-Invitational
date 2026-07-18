@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T17:14:54.065Z",
+  "updatedAt": "2026-07-18T17:19:24.187Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -112,11 +112,11 @@
     "uma-love": {
       "name": "Uma Love",
       "color": "#f66a9b",
-      "firsts": 3,
-      "seconds": 0,
-      "thirds": 3,
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 18
+      "points": 27
     }
   },
   "matches": {
@@ -656,9 +656,18 @@
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "uma-love",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "uma-love",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "uma-love",
+              "slot": 1
+            }
           }
         }
       }

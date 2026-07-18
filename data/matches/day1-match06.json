@@ -202,32 +202,32 @@
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "",
