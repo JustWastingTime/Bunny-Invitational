@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:16:59.827Z",
+  "updatedAt": "2026-07-18T16:20:20.269Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -11499,7 +11499,7 @@
       "round": "Group A Match 3 (MIDDLE)",
       "teams": [
         "ritto-dorm-dropouts",
-        "",
+        "cabal",
         ""
       ],
       "categories": {
@@ -11546,6 +11546,48 @@
               "spritePath": "assets/characters/chara_stand_1021_102101.png",
               "style": "late",
               "key": "ritto-dorm-dropouts:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "0hqw",
+              "umaName": "King Halo",
+              "umaKey": "sprite:106101",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1061_106101.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Nekata",
+              "umaName": "Maruzensky",
+              "umaKey": "sprite:100402",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png",
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "@Curren",
+              "umaName": "Curren Chan",
+              "umaKey": "sprite:103802",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1038_103802.png",
+              "style": "pace",
+              "key": "cabal:2"
             }
           ],
           "placements": {
@@ -11597,6 +11639,48 @@
               "spritePath": "assets/characters/chara_stand_1014_101402.png",
               "style": "late",
               "key": "ritto-dorm-dropouts:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "KittyChloe",
+              "umaName": "Admire Vega",
+              "umaKey": "sprite:103301",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1033_103301.png",
+              "style": "end",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Sapphire",
+              "umaName": "Mihono Bourbon",
+              "umaKey": "sprite:102602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1026_102602.png",
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Salty",
+              "umaName": "Vodka",
+              "umaKey": "sprite:100801",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1008_100801.png",
+              "style": "late",
+              "key": "cabal:2"
             }
           ],
           "placements": {
@@ -11648,6 +11732,48 @@
               "spritePath": "assets/characters/chara_stand_1017_101701.png",
               "style": "end",
               "key": "ritto-dorm-dropouts:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "WildCat",
+              "umaName": "Tokai Teio",
+              "umaKey": "sprite:100301",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1003_100301.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Tn",
+              "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "end",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Horsefight",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "cabal:2"
             }
           ],
           "placements": {
@@ -11699,6 +11825,48 @@
               "spritePath": "assets/characters/chara_stand_1023_102302.png",
               "style": "front",
               "key": "ritto-dorm-dropouts:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "ONEWINGEDANGEL",
+              "umaName": "Mayano Top Gun",
+              "umaKey": "sprite:102401",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1024_102401.png",
+              "style": "end",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "StirFryYutaka",
+              "umaName": "Tamamo Cross",
+              "umaKey": "sprite:102101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1021_102101.png",
+              "style": "end",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Chungus Truther",
+              "umaName": "Hishi Amazon",
+              "umaKey": "sprite:101201",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1012_101201.png",
+              "style": "end",
+              "key": "cabal:2"
             }
           ],
           "placements": {
@@ -11750,6 +11918,48 @@
               "spritePath": "assets/characters/chara_stand_1010_101002.png",
               "style": "pace",
               "key": "ritto-dorm-dropouts:2"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Haruru",
+              "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Kyrone",
+              "umaName": "Smart Falcon",
+              "umaKey": "sprite:104601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
+              "style": "front",
+              "key": "cabal:1"
+            },
+            {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": null,
+              "trainer": "hoki",
+              "umaName": "Mejiro McQueen",
+              "umaKey": "sprite:101303",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1013_101303.png",
+              "style": "pace",
+              "key": "cabal:2"
             }
           ],
           "placements": {
@@ -11766,13 +11976,56 @@
       "matchNumber": 6,
       "round": "Group B Middle 3 (MIDDLE)",
       "teams": [
-        "",
+        "umalliance",
         "",
         ""
       ],
       "categories": {
         "sprint": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Phedro",
+              "umaName": "Fuji Kiseki",
+              "umaKey": "sprite:100502",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1005_100502.png",
+              "style": "pace",
+              "key": "umalliance:0"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Skrapx",
+              "umaName": "Bamboo Memory",
+              "umaKey": "sprite:105301",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1053_105301.png",
+              "style": "late",
+              "key": "umalliance:1"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Squid",
+              "umaName": "Narita Brian",
+              "umaKey": "sprite:101601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1016_101601.png",
+              "style": "pace",
+              "key": "umalliance:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -11780,7 +12033,50 @@
           }
         },
         "mile": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Lykos",
+              "umaName": "Symboli Rudolf",
+              "umaKey": "sprite:101701",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1017_101701.png",
+              "style": "late",
+              "key": "umalliance:0"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Jackson",
+              "umaName": "Nishino Flower",
+              "umaKey": "sprite:105101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1051_105101.png",
+              "style": "pace",
+              "key": "umalliance:1"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Takamori",
+              "umaName": "Maruzensky",
+              "umaKey": "sprite:100402",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1004_100402.png",
+              "style": "front",
+              "key": "umalliance:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -11788,7 +12084,50 @@
           }
         },
         "medium": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Toad_33",
+              "umaName": "Winning Ticket",
+              "umaKey": "sprite:103501",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1035_103501.png",
+              "style": "late",
+              "key": "umalliance:0"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Brendan",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "end",
+              "key": "umalliance:1"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Mochi",
+              "umaName": "Agnes Tachyon",
+              "umaKey": "sprite:103201",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1032_103201.png",
+              "style": "pace",
+              "key": "umalliance:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -11796,7 +12135,50 @@
           }
         },
         "long": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Hades",
+              "umaName": "Tamamo Cross",
+              "umaKey": "sprite:102101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1021_102101.png",
+              "style": "end",
+              "key": "umalliance:0"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Fafa",
+              "umaName": "Mejiro Bright",
+              "umaKey": "sprite:107401",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1074_107401.png",
+              "style": "late",
+              "key": "umalliance:1"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Shenezle",
+              "umaName": "Manhattan Cafe",
+              "umaKey": "sprite:102501",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1025_102501.png",
+              "style": "end",
+              "key": "umalliance:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,
@@ -11804,7 +12186,50 @@
           }
         },
         "dirt": {
-          "racers": [],
+          "racers": [
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 0,
+              "gate": null,
+              "trainer": "OJ",
+              "umaName": "Smart Falcon",
+              "umaKey": "sprite:104601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
+              "style": "front",
+              "key": "umalliance:0"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 1,
+              "gate": null,
+              "trainer": "eachcorpse",
+              "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101001",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
+              "style": "front",
+              "key": "umalliance:1"
+            },
+            {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Value",
+              "umaName": "El Condor Pasa",
+              "umaKey": "sprite:101401",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1014_101401.png",
+              "style": "pace",
+              "key": "umalliance:2"
+            }
+          ],
           "placements": {
             "1": null,
             "2": null,

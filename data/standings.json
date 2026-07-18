@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:16:59.827Z",
+  "updatedAt": "2026-07-18T16:20:20.269Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -458,7 +458,7 @@
       "round": "Group A Match 3 (MIDDLE)",
       "teams": [
         "ritto-dorm-dropouts",
-        "",
+        "cabal",
         ""
       ],
       "raceResults": {
@@ -504,7 +504,7 @@
       "matchNumber": 6,
       "round": "Group B Middle 3 (MIDDLE)",
       "teams": [
-        "",
+        "umalliance",
         "",
         ""
       ],

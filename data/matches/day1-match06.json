@@ -4,7 +4,7 @@
   "matchNumber": 6,
   "round": "Group B Middle 3 (MIDDLE)",
   "teams": [
-    "",
+    "umalliance",
     "",
     ""
   ],
@@ -12,17 +12,17 @@
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
@@ -59,17 +59,17 @@
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
@@ -106,17 +106,17 @@
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
@@ -153,17 +153,17 @@
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
@@ -200,17 +200,17 @@
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       },
