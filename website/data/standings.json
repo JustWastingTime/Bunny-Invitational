@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:16:59.827Z",
+  "updatedAt": "2026-07-18T16:21:00.263Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -94,20 +94,20 @@
     "rilliance": {
       "name": "Rilliance",
       "color": "#da49b8",
-      "firsts": 0,
+      "firsts": 1,
       "seconds": 0,
       "thirds": 0,
-      "uniqueBonuses": 0,
-      "points": 0
+      "uniqueBonuses": 1,
+      "points": 6
     },
     "kita-trauma": {
       "name": "KitaTrauma",
       "color": "#eb5153",
       "firsts": 1,
-      "seconds": 1,
-      "thirds": 1,
+      "seconds": 2,
+      "thirds": 2,
       "uniqueBonuses": 0,
-      "points": 9
+      "points": 13
     },
     "uma-love": {
       "name": "Uma Love",
@@ -424,9 +424,18 @@
         },
         "mile": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "rilliance",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "slot": 2
+            }
           }
         },
         "medium": {
@@ -458,7 +467,7 @@
       "round": "Group A Match 3 (MIDDLE)",
       "teams": [
         "ritto-dorm-dropouts",
-        "",
+        "cabal",
         ""
       ],
       "raceResults": {
@@ -504,7 +513,7 @@
       "matchNumber": 6,
       "round": "Group B Middle 3 (MIDDLE)",
       "teams": [
-        "",
+        "umalliance",
         "",
         ""
       ],
