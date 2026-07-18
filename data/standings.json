@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:48:35.822Z",
+  "updatedAt": "2026-07-18T16:57:03.596Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -14,10 +14,10 @@
       "name": "Ritto Dorm Dropouts",
       "color": "#992724",
       "firsts": 0,
-      "seconds": 4,
+      "seconds": 6,
       "thirds": 2,
       "uniqueBonuses": 2,
-      "points": 16
+      "points": 22
     },
     "dust-bunny": {
       "name": "BUNS",
@@ -58,11 +58,11 @@
     "cabal": {
       "name": "Cabal Agency",
       "color": "#c0fa3b",
-      "firsts": 3,
+      "firsts": 5,
       "seconds": 3,
-      "thirds": 1,
+      "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 25
+      "points": 37
     },
     "the-shadow-clones": {
       "name": "The Shadow Clones",
@@ -532,16 +532,34 @@
         },
         "medium": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "cabal",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "cabal",
+              "slot": 1
+            }
           }
         },
         "long": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "cabal",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "cabal",
+              "slot": 2
+            }
           }
         },
         "dirt": {
