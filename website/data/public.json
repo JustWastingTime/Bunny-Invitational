@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:12:28.931Z",
+  "updatedAt": "2026-07-18T16:16:59.827Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -101,19 +101,19 @@
       "points": 9
     },
     {
-      "id": "rilliance",
-      "name": "Rilliance",
-      "color": "#da49b8",
-      "firsts": 0,
-      "seconds": 0,
-      "thirds": 0,
-      "uniqueBonuses": 0,
-      "points": 0
-    },
-    {
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
+      "firsts": 1,
+      "seconds": 1,
+      "thirds": 1,
+      "uniqueBonuses": 0,
+      "points": 9
+    },
+    {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "color": "#da49b8",
       "firsts": 0,
       "seconds": 0,
       "thirds": 0,
@@ -10783,7 +10783,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 0,
-              "gate": null,
+              "gate": 2,
               "trainer": "Varrukas",
               "umaName": "Maruzensky",
               "umaKey": "sprite:100402",
@@ -10797,7 +10797,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 1,
-              "gate": null,
+              "gate": 1,
               "trainer": "Lak",
               "umaName": "Hishi Akebono",
               "umaKey": "sprite:102801",
@@ -10811,7 +10811,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 2,
-              "gate": null,
+              "gate": 6,
               "trainer": "swellmate",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101001",
@@ -10825,7 +10825,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 9,
               "trainer": "Rose",
               "umaName": "Nishino Flower",
               "umaKey": "sprite:105101",
@@ -10839,7 +10839,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 5,
               "trainer": "Oguging",
               "umaName": "Sakura Bakushin O",
               "umaKey": "sprite:104101",
@@ -10853,7 +10853,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "Deimos",
               "umaName": "Mayano Top Gun",
               "umaKey": "sprite:102401",
@@ -10867,7 +10867,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 0,
-              "gate": null,
+              "gate": 4,
               "trainer": "Orion",
               "umaName": "Fuji Kiseki",
               "umaKey": "sprite:100501",
@@ -10881,7 +10881,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 1,
-              "gate": null,
+              "gate": 8,
               "trainer": "Jaydeneggs",
               "umaName": "Hishi Akebono",
               "umaKey": "sprite:102801",
@@ -10895,7 +10895,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 2,
-              "gate": null,
+              "gate": 7,
               "trainer": "Kurczak",
               "umaName": "Nishino Flower",
               "umaKey": "sprite:105101",
@@ -10906,9 +10906,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": 5,
+              "trainer": "Oguging",
+              "umaName": "Sakura Bakushin O",
+              "umaKey": "sprite:104101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1041_104101.png",
+              "style": "pace",
+              "key": "kita-trauma:1"
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 0,
+              "gate": 9,
+              "trainer": "Rose",
+              "umaName": "Nishino Flower",
+              "umaKey": "sprite:105101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1051_105101.png",
+              "style": "pace",
+              "key": "kita-trauma:0"
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 2,
+              "gate": 3,
+              "trainer": "Deimos",
+              "umaName": "Mayano Top Gun",
+              "umaKey": "sprite:102401",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1024_102401.png",
+              "style": "pace",
+              "key": "kita-trauma:2"
+            }
           }
         },
         "mile": {
@@ -10918,7 +10957,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 0,
-              "gate": null,
+              "gate": 5,
               "trainer": "Seraphos",
               "umaName": "Seiun Sky",
               "umaKey": "sprite:102001",
@@ -10932,7 +10971,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 1,
-              "gate": null,
+              "gate": 9,
               "trainer": "BeatThisStone",
               "umaName": "Special Week",
               "umaKey": "sprite:100101",
@@ -10946,7 +10985,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 2,
-              "gate": null,
+              "gate": 7,
               "trainer": "FREAK",
               "umaName": "Smart Falcon",
               "umaKey": "sprite:104601",
@@ -10960,7 +10999,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 8,
               "trainer": "Elita",
               "umaName": "Maruzensky",
               "umaKey": "sprite:100402",
@@ -10974,7 +11013,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 6,
               "trainer": "Fluwid",
               "umaName": "Silence Suzuka",
               "umaKey": "sprite:100201",
@@ -10988,7 +11027,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 2,
               "trainer": "aShinyYoyo",
               "umaName": "Matikanefukukitaru",
               "umaKey": "sprite:105601",
@@ -11002,7 +11041,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 0,
-              "gate": null,
+              "gate": 3,
               "trainer": "Powd",
               "umaName": "Mihono Bourbon",
               "umaKey": "sprite:102602",
@@ -11016,7 +11055,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "Asha",
               "umaName": "Gold City",
               "umaKey": "sprite:104001",
@@ -11030,7 +11069,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 2,
-              "gate": null,
+              "gate": 1,
               "trainer": "Bananamjohn",
               "umaName": "Ines Fujin",
               "umaKey": "sprite:103101",
@@ -12254,11 +12293,24 @@
         "spritePath": "assets/characters/chara_stand_1010_101001.png",
         "population": 6,
         "isUnique": false,
-        "starts": 5,
+        "starts": 6,
         "wins": 1,
         "top3": 2,
-        "winRate": 0.2,
-        "top3Rate": 0.4
+        "winRate": 0.16666666666666666,
+        "top3Rate": 0.3333333333333333
+      },
+      {
+        "umaKey": "sprite:100402",
+        "umaName": "Maruzensky",
+        "baseName": "Maruzensky",
+        "spritePath": "assets/characters/chara_stand_1004_100402.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.2
       },
       {
         "umaKey": "sprite:102101",
@@ -12287,17 +12339,17 @@
         "top3Rate": 0.5
       },
       {
-        "umaKey": "sprite:100402",
-        "umaName": "Maruzensky",
-        "baseName": "Maruzensky",
-        "spritePath": "assets/characters/chara_stand_1004_100402.png",
-        "population": 6,
+        "umaKey": "sprite:105101",
+        "umaName": "Nishino Flower",
+        "baseName": "Nishino Flower",
+        "spritePath": "assets/characters/chara_stand_1051_105101.png",
+        "population": 5,
         "isUnique": false,
-        "starts": 4,
+        "starts": 5,
         "wins": 0,
-        "top3": 1,
+        "top3": 3,
         "winRate": 0,
-        "top3Rate": 0.25
+        "top3Rate": 0.6
       },
       {
         "umaKey": "sprite:101901",
@@ -12319,24 +12371,11 @@
         "spritePath": "assets/characters/chara_stand_1024_102401.png",
         "population": 5,
         "isUnique": false,
-        "starts": 3,
+        "starts": 4,
         "wins": 0,
-        "top3": 0,
+        "top3": 1,
         "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:105101",
-        "umaName": "Nishino Flower",
-        "baseName": "Nishino Flower",
-        "spritePath": "assets/characters/chara_stand_1051_105101.png",
-        "population": 5,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.6666666666666666
+        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:103802",
@@ -12573,6 +12612,19 @@
         "top3Rate": 0.5
       },
       {
+        "umaKey": "sprite:104101",
+        "umaName": "Sakura Bakushin O",
+        "baseName": "Sakura Bakushin O",
+        "spritePath": "assets/characters/chara_stand_1041_104101.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.5,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:106901",
         "umaName": "Sakura Chiyono O",
         "baseName": "Sakura Chiyono O",
@@ -12590,6 +12642,19 @@
         "umaName": "Agnes Tachyon",
         "baseName": "Agnes Tachyon",
         "spritePath": "assets/characters/chara_stand_1032_103201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:102801",
+        "umaName": "Hishi Akebono",
+        "baseName": "Hishi Akebono",
+        "spritePath": "assets/characters/chara_stand_1028_102801.png",
         "population": 2,
         "isUnique": false,
         "starts": 2,
@@ -12629,6 +12694,19 @@
         "umaName": "Admire Vega",
         "baseName": "Admire Vega",
         "spritePath": "assets/characters/chara_stand_1033_103301.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 1,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:100501",
+        "umaName": "Fuji Kiseki",
+        "baseName": "Fuji Kiseki",
+        "spritePath": "assets/characters/chara_stand_1005_100501.png",
         "population": 2,
         "isUnique": false,
         "starts": 1,
@@ -12742,19 +12820,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:104101",
-        "umaName": "Sakura Bakushin O",
-        "baseName": "Sakura Bakushin O",
-        "spritePath": "assets/characters/chara_stand_1041_104101.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:100201",
         "umaName": "Silence Suzuka",
         "baseName": "Silence Suzuka",
@@ -12788,32 +12853,6 @@
         "population": 2,
         "isUnique": false,
         "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:100501",
-        "umaName": "Fuji Kiseki",
-        "baseName": "Fuji Kiseki",
-        "spritePath": "assets/characters/chara_stand_1005_100501.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 0,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:102801",
-        "umaName": "Hishi Akebono",
-        "baseName": "Hishi Akebono",
-        "spritePath": "assets/characters/chara_stand_1028_102801.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 0,
         "wins": 0,
         "top3": 0,
         "winRate": 0,
@@ -13535,9 +13574,15 @@
       },
       {
         "umaName": "Taiki Shuttle",
-        "starts": 5,
+        "starts": 6,
         "wins": 1,
-        "winRate": 0.2
+        "winRate": 0.16666666666666666
+      },
+      {
+        "umaName": "Maruzensky",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
       },
       {
         "umaName": "Tamamo Cross",
@@ -13552,8 +13597,8 @@
         "winRate": 0
       },
       {
-        "umaName": "Maruzensky",
-        "starts": 4,
+        "umaName": "Nishino Flower",
+        "starts": 5,
         "wins": 0,
         "winRate": 0
       },
@@ -13565,13 +13610,7 @@
       },
       {
         "umaName": "Mayano Top Gun",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Nishino Flower",
-        "starts": 3,
+        "starts": 4,
         "wins": 0,
         "winRate": 0
       },
@@ -13684,6 +13723,12 @@
         "winRate": 0.5
       },
       {
+        "umaName": "Sakura Bakushin O",
+        "starts": 2,
+        "wins": 1,
+        "winRate": 0.5
+      },
+      {
         "umaName": "Sakura Chiyono O",
         "starts": 2,
         "wins": 1,
@@ -13691,6 +13736,12 @@
       },
       {
         "umaName": "Agnes Tachyon",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Hishi Akebono",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -13709,6 +13760,12 @@
       },
       {
         "umaName": "Admire Vega",
+        "starts": 1,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Fuji Kiseki",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -13762,12 +13819,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Sakura Bakushin O",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Silence Suzuka",
         "starts": 1,
         "wins": 0,
@@ -13782,18 +13833,6 @@
       {
         "umaName": "Sweep Tosho",
         "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Fuji Kiseki",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Hishi Akebono",
-        "starts": 2,
         "wins": 0,
         "winRate": 0
       },

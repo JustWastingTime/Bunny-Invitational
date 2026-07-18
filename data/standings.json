@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:12:28.931Z",
+  "updatedAt": "2026-07-18T16:16:59.827Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -103,11 +103,11 @@
     "kita-trauma": {
       "name": "KitaTrauma",
       "color": "#eb5153",
-      "firsts": 0,
-      "seconds": 0,
-      "thirds": 0,
+      "firsts": 1,
+      "seconds": 1,
+      "thirds": 1,
       "uniqueBonuses": 0,
-      "points": 0
+      "points": 9
     },
     "uma-love": {
       "name": "Uma Love",
@@ -408,9 +408,18 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "slot": 2
+            }
           }
         },
         "mile": {
