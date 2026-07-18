@@ -8,7 +8,7 @@
     "kita-trauma",
     "uma-love"
   ],
-  "activeCategory": "mile",
+  "activeCategory": "long",
   "races": {
     "sprint": [
       {
@@ -108,94 +108,94 @@
       {
         "teamId": "rilliance",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "rilliance",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "rilliance",
         "slot": 2,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 7
       }
     ],
     "long": [
       {
         "teamId": "rilliance",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "rilliance",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "rilliance",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 8
       }
     ],
     "dirt": [
