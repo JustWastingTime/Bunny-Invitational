@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T15:55:49.973Z",
+  "updatedAt": "2026-07-18T16:00:23.010Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -68,10 +68,10 @@
       "name": "The Shadow Clones",
       "color": "#646364",
       "firsts": 0,
-      "seconds": 1,
+      "seconds": 2,
       "thirds": 0,
       "uniqueBonuses": 0,
-      "points": 3
+      "points": 6
     },
     "umalliance": {
       "name": "UMAlliance",
@@ -85,11 +85,11 @@
     "king": {
       "name": "King",
       "color": "#359b62",
-      "firsts": 1,
+      "firsts": 2,
       "seconds": 1,
-      "thirds": 1,
+      "thirds": 2,
       "uniqueBonuses": 0,
-      "points": 9
+      "points": 15
     },
     "rilliance": {
       "name": "Rilliance",
@@ -348,9 +348,18 @@
         },
         "medium": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "king",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "the-shadow-clones",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "king",
+              "slot": 0
+            }
           }
         },
         "long": {
