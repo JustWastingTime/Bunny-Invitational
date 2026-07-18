@@ -8,100 +8,100 @@
     "umalliance",
     "king"
   ],
-  "activeCategory": "sprint",
+  "activeCategory": "mile",
   "races": {
     "sprint": [
       {
         "teamId": "the-shadow-clones",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 2,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 2
       }
     ],
     "mile": [
       {
         "teamId": "the-shadow-clones",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 2,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 6
       }
     ],
     "medium": [
