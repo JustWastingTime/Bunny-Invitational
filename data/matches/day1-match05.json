@@ -8,38 +8,38 @@
     "cabal",
     ""
   ],
-  "activeCategory": "sprint",
+  "activeCategory": "mile",
   "races": {
     "sprint": [
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "",
@@ -61,32 +61,32 @@
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 2,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "",

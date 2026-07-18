@@ -1,5 +1,5 @@
 {
-  "visible": false,
-  "sceneTransition": true,
+  "visible": true,
+  "sceneTransition": false,
   "startingSoon": false
 }
