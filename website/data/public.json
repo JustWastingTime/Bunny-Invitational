@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T17:25:53.333Z",
+  "updatedAt": "2026-07-18T18:44:30.825Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -11,36 +11,6 @@
   },
   "standings": [
     {
-      "id": "cabal",
-      "name": "Cabal Agency",
-      "color": "#c0fa3b",
-      "firsts": 5,
-      "seconds": 3,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 37
-    },
-    {
-      "id": "umalliance",
-      "name": "UMAlliance",
-      "color": "#2c49c9",
-      "firsts": 3,
-      "seconds": 5,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 33
-    },
-    {
-      "id": "ritto-dorm-dropouts",
-      "name": "Ritto Dorm Dropouts",
-      "color": "#992724",
-      "firsts": 1,
-      "seconds": 7,
-      "thirds": 3,
-      "uniqueBonuses": 2,
-      "points": 31
-    },
-    {
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
@@ -48,17 +18,9 @@
       "seconds": 4,
       "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 30
-    },
-    {
-      "id": "uma-love",
-      "name": "Uma Love",
-      "color": "#f66a9b",
-      "firsts": 4,
-      "seconds": 1,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 27
+      "points": 30,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 30
     },
     {
       "id": "umamusuko",
@@ -68,7 +30,9 @@
       "seconds": 3,
       "thirds": 2,
       "uniqueBonuses": 0,
-      "points": 21
+      "points": 21,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 21
     },
     {
       "id": "king",
@@ -78,7 +42,9 @@
       "seconds": 1,
       "thirds": 2,
       "uniqueBonuses": 0,
-      "points": 20
+      "points": 20,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 20
     },
     {
       "id": "dust-bunny",
@@ -88,7 +54,9 @@
       "seconds": 0,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 19
+      "points": 19,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 19
     },
     {
       "id": "umazing-hotspring",
@@ -98,7 +66,33 @@
       "seconds": 2,
       "thirds": 1,
       "uniqueBonuses": 2,
-      "points": 19
+      "points": 19,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 19
+    },
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 5,
+      "seconds": 3,
+      "thirds": 3,
+      "uniqueBonuses": 0,
+      "points": 37,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 18.5
+    },
+    {
+      "id": "umalliance",
+      "name": "UMAlliance",
+      "color": "#2c49c9",
+      "firsts": 3,
+      "seconds": 5,
+      "thirds": 3,
+      "uniqueBonuses": 0,
+      "points": 33,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 16.5
     },
     {
       "id": "the-shadow-clones",
@@ -108,7 +102,21 @@
       "seconds": 3,
       "thirds": 2,
       "uniqueBonuses": 0,
-      "points": 16
+      "points": 16,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 16
+    },
+    {
+      "id": "ritto-dorm-dropouts",
+      "name": "Ritto Dorm Dropouts",
+      "color": "#992724",
+      "firsts": 1,
+      "seconds": 7,
+      "thirds": 3,
+      "uniqueBonuses": 2,
+      "points": 31,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 15.5
     },
     {
       "id": "falena",
@@ -118,7 +126,21 @@
       "seconds": 0,
       "thirds": 2,
       "uniqueBonuses": 2,
-      "points": 14
+      "points": 14,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 14
+    },
+    {
+      "id": "uma-love",
+      "name": "Uma Love",
+      "color": "#f66a9b",
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 27,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13.5
     },
     {
       "id": "rilliance",
@@ -128,7 +150,9 @@
       "seconds": 1,
       "thirds": 1,
       "uniqueBonuses": 1,
-      "points": 10
+      "points": 10,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 10
     }
   ],
   "teams": [

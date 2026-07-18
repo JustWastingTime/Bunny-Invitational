@@ -401,15 +401,22 @@ function renderBracket() {
   `;
 }
 
+function formatPpm(value) {
+  const n = Number(value) || 0;
+  return Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/\.?0+$/, "") || "0";
+}
+
 function renderResults() {
   document.getElementById("standings-body").innerHTML = state.standings
     .map(
       (team, idx) => `<tr>
         <td>${idx + 1}</td>
         <td>${team.name}</td>
+        <td>${team.matchesPlayed ?? 0}</td>
         <td>${team.firsts ?? 0}</td>
         <td>${team.seconds ?? 0}</td>
         <td>${team.thirds ?? 0}</td>
+        <td><strong>${formatPpm(team.pointsPerMatch)}</strong></td>
         <td>${team.points ?? 0}</td>
       </tr>`
     )

@@ -138,6 +138,8 @@ function migrateStandings(standings) {
     team.seconds = team.seconds ?? 0;
     team.thirds = team.thirds ?? 0;
     team.uniqueBonuses = team.uniqueBonuses ?? 0;
+    team.matchesPlayed = team.matchesPlayed ?? 0;
+    team.pointsPerMatch = team.pointsPerMatch ?? 0;
     delete team.raceWins;
     delete team.matchWins;
   }
@@ -669,6 +671,16 @@ function writeWebsitePublic(root, standings) {
 
 export function rebuildWebsitePublic(root) {
   const standings = readStandings(root);
+  recalculateStandings(root, standings);
+  standings.updatedAt = new Date().toISOString();
+
+  const standingsPath = path.join(root, STANDINGS_REL);
+  fs.writeFileSync(standingsPath, JSON.stringify(standings, null, 2) + "\n");
+
+  const websiteStandingsPath = path.join(root, WEBSITE_STANDINGS_REL);
+  fs.mkdirSync(path.dirname(websiteStandingsPath), { recursive: true });
+  fs.writeFileSync(websiteStandingsPath, JSON.stringify(standings, null, 2) + "\n");
+
   const publicPath = path.join(root, WEBSITE_PUBLIC_REL);
   fs.mkdirSync(path.dirname(publicPath), { recursive: true });
   const data = buildWebsiteData(root, standings);
@@ -768,9 +780,9 @@ function buildWebsiteData(root, standings) {
     tournament: standings.tournament ?? "Bunny Invitational",
     updatedAt: standings.updatedAt,
     scoring: standings.scoring,
-    standings: Object.entries(standings.teams ?? {})
-      .map(([id, row]) => ({ id, ...row }))
-      .sort((a, b) => b.points - a.points || b.firsts - a.firsts),
+    standings: sortStandingsRows(
+      Object.entries(standings.teams ?? {}).map(([id, row]) => ({ id, ...row }))
+    ),
     teams,
     matches,
     stats: buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings),
@@ -869,8 +881,28 @@ function ensureTeamRows(root, standings, teamIds) {
       thirds: 0,
       uniqueBonuses: 0,
       points: 0,
+      matchesPlayed: 0,
+      pointsPerMatch: 0,
     };
   }
+}
+
+function matchHasScoredRace(match) {
+  for (const category of CATEGORIES) {
+    const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
+    if (placements["1"] || placements["2"] || placements["3"]) return true;
+  }
+  return false;
+}
+
+function sortStandingsRows(rows) {
+  return [...rows].sort(
+    (a, b) =>
+      (b.pointsPerMatch ?? 0) - (a.pointsPerMatch ?? 0) ||
+      (b.points ?? 0) - (a.points ?? 0) ||
+      (b.firsts ?? 0) - (a.firsts ?? 0) ||
+      String(a.name ?? "").localeCompare(String(b.name ?? ""))
+  );
 }
 
 function recalculateStandings(root, standings) {
@@ -891,13 +923,24 @@ function recalculateStandings(root, standings) {
     standings.teams[teamId].thirds = 0;
     standings.teams[teamId].uniqueBonuses = 0;
     standings.teams[teamId].points = 0;
+    standings.teams[teamId].matchesPlayed = 0;
+    standings.teams[teamId].pointsPerMatch = 0;
   }
 
   const placePoints = standings.scoring.place;
   const uniqueBonus = Number(standings.scoring.uniqueBonus ?? DEFAULT_SCORING.uniqueBonus) || 0;
   const { uniqueKeys } = buildRosterUniqueIndex(root);
+  const matchesPlayed = new Map();
 
   for (const match of Object.values(standings.matches)) {
+    const scored = matchHasScoredRace(match);
+    if (scored) {
+      for (const teamId of match.teams ?? []) {
+        if (!teamId || !standings.teams[teamId]) continue;
+        matchesPlayed.set(teamId, (matchesPlayed.get(teamId) ?? 0) + 1);
+      }
+    }
+
     for (const category of CATEGORIES) {
       const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
       for (const place of ["1", "2", "3"]) {
@@ -916,6 +959,12 @@ function recalculateStandings(root, standings) {
         if (place === "3") standings.teams[pick.teamId].thirds += 1;
       }
     }
+  }
+
+  for (const [teamId, team] of Object.entries(standings.teams)) {
+    const played = matchesPlayed.get(teamId) ?? 0;
+    team.matchesPlayed = played;
+    team.pointsPerMatch = played > 0 ? Number((team.points / played).toFixed(2)) : 0;
   }
 
   return standings;
@@ -1033,9 +1082,9 @@ export function buildDashboardState(root, extras = {}) {
     standings: {
       tournament: standings.tournament,
       updatedAt: standings.updatedAt,
-      teams: Object.entries(standings.teams)
-        .map(([id, row]) => ({ id, ...row }))
-        .sort((a, b) => b.points - a.points || b.firsts - a.firsts),
+      teams: sortStandingsRows(
+        Object.entries(standings.teams).map(([id, row]) => ({ id, ...row }))
+      ),
     },
   };
 }

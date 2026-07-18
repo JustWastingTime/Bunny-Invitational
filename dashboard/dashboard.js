@@ -104,22 +104,29 @@ function renderTeamColumns(state) {
     .join("");
 }
 
+function formatPpm(value) {
+  const n = Number(value) || 0;
+  return Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/\.?0+$/, "") || "0";
+}
+
 function renderStandings(standings, scoring) {
   $("standings-body").innerHTML = standings.teams
     .map(
       (team) => `<tr>
       <td>${team.name}</td>
+      <td>${team.matchesPlayed ?? 0}</td>
       <td>${team.firsts ?? 0}</td>
       <td>${team.seconds ?? 0}</td>
       <td>${team.thirds ?? 0}</td>
-      <td>${team.points}</td>
+      <td><strong>${formatPpm(team.pointsPerMatch)}</strong></td>
+      <td>${team.points ?? 0}</td>
     </tr>`
     )
     .join("");
 
   const p = scoring?.place ?? {};
   const uniqueBonus = scoring?.uniqueBonus ?? 1;
-  $("scoring-hint").textContent = `Scoring: 1st = ${p["1"] ?? "?"}pt, 2nd = ${p["2"] ?? "?"}pt, 3rd = ${p["3"] ?? "?"}pt, unique podium = +${uniqueBonus}pt`;
+  $("scoring-hint").textContent = `Ranked by pts/match. Scoring: 1st = ${p["1"] ?? "?"}pt, 2nd = ${p["2"] ?? "?"}pt, 3rd = ${p["3"] ?? "?"}pt, unique podium = +${uniqueBonus}pt`;
 }
 
 function renderMatchSelect(state) {
