@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T15:14:54.946Z",
+  "updatedAt": "2026-07-18T15:23:43.312Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -14,28 +14,28 @@
       "name": "Ritto Dorm Dropouts",
       "color": "#992724",
       "firsts": 0,
-      "seconds": 2,
+      "seconds": 3,
       "thirds": 0,
       "uniqueBonuses": 1,
-      "points": 7
+      "points": 10
     },
     "dust-bunny": {
       "name": "BUNS",
       "color": "#e91e45",
-      "firsts": 1,
+      "firsts": 3,
       "seconds": 0,
-      "thirds": 2,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 7
+      "points": 19
     },
     "umazing-hotspring": {
       "name": "Umazing Hotsprings",
       "color": "#c1e1f1",
       "firsts": 2,
-      "seconds": 1,
+      "seconds": 2,
       "thirds": 1,
       "uniqueBonuses": 2,
-      "points": 16
+      "points": 19
     },
     "falena": {
       "name": "Falena",
@@ -180,16 +180,34 @@
         },
         "long": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "umazing-hotspring",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "slot": 1
+            }
           }
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "slot": 1
+            }
           }
         }
       }
