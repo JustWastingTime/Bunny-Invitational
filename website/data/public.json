@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:30:09.593Z",
+  "updatedAt": "2026-07-18T16:33:52.027Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -16,9 +16,9 @@
       "color": "#eb5153",
       "firsts": 3,
       "seconds": 4,
-      "thirds": 2,
+      "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 29
+      "points": 30
     },
     {
       "id": "umamusuko",
@@ -91,6 +91,16 @@
       "points": 12
     },
     {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "color": "#da49b8",
+      "firsts": 1,
+      "seconds": 1,
+      "thirds": 1,
+      "uniqueBonuses": 1,
+      "points": 10
+    },
+    {
       "id": "ritto-dorm-dropouts",
       "name": "Ritto Dorm Dropouts",
       "color": "#992724",
@@ -111,24 +121,14 @@
       "points": 9
     },
     {
-      "id": "rilliance",
-      "name": "Rilliance",
-      "color": "#da49b8",
-      "firsts": 1,
-      "seconds": 0,
-      "thirds": 1,
-      "uniqueBonuses": 1,
-      "points": 7
-    },
-    {
       "id": "uma-love",
       "name": "Uma Love",
       "color": "#f66a9b",
-      "firsts": 0,
+      "firsts": 1,
       "seconds": 0,
       "thirds": 1,
       "uniqueBonuses": 0,
-      "points": 1
+      "points": 6
     }
   ],
   "teams": [
@@ -11479,7 +11479,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 0,
-              "gate": null,
+              "gate": 1,
               "trainer": "GimmeKiss",
               "umaName": "El Condor Pasa",
               "umaKey": "sprite:101401",
@@ -11493,7 +11493,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 1,
-              "gate": null,
+              "gate": 9,
               "trainer": "Turnip",
               "umaName": "Agnes Digital",
               "umaKey": "sprite:101901",
@@ -11507,7 +11507,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 2,
-              "gate": null,
+              "gate": 8,
               "trainer": "Duke",
               "umaName": "Fuji Kiseki",
               "umaKey": "sprite:100501",
@@ -11521,7 +11521,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "Nutrition",
               "umaName": "Haru Urara",
               "umaKey": "sprite:105202",
@@ -11535,7 +11535,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "Yasue",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101002",
@@ -11549,7 +11549,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "luigo_14",
               "umaName": "King Halo",
               "umaKey": "sprite:106102",
@@ -11563,7 +11563,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 0,
-              "gate": null,
+              "gate": 2,
               "trainer": "Penou",
               "umaName": "Haru Urara",
               "umaKey": "sprite:105202",
@@ -11577,7 +11577,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 1,
-              "gate": null,
+              "gate": 5,
               "trainer": "Hobo",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101002",
@@ -11591,7 +11591,7 @@
               "teamName": "Uma Love",
               "teamColor": "#f66a9b",
               "slot": 2,
-              "gate": null,
+              "gate": 6,
               "trainer": "Kuro",
               "umaName": "Smart Falcon",
               "umaKey": "sprite:104601",
@@ -11602,9 +11602,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "uma-love",
+              "teamName": "Uma Love",
+              "teamColor": "#f66a9b",
+              "slot": 1,
+              "gate": 5,
+              "trainer": "Hobo",
+              "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101002",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1010_101002.png",
+              "style": "pace",
+              "key": "uma-love:1"
+            },
+            "2": {
+              "teamId": "rilliance",
+              "teamName": "Rilliance",
+              "teamColor": "#da49b8",
+              "slot": 0,
+              "gate": 1,
+              "trainer": "GimmeKiss",
+              "umaName": "El Condor Pasa",
+              "umaKey": "sprite:101401",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1014_101401.png",
+              "style": "pace",
+              "key": "rilliance:0"
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "Nutrition",
+              "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "kita-trauma:0"
+            }
           }
         }
       }
@@ -12687,11 +12726,11 @@
       "spritePath": "assets/characters/chara_stand_1046_104601.png",
       "population": 9,
       "isUnique": false,
-      "starts": 8,
+      "starts": 9,
       "wins": 1,
       "top3": 3,
-      "winRate": 0.125,
-      "top3Rate": 0.375
+      "winRate": 0.1111111111111111,
+      "top3Rate": 0.3333333333333333
     },
     "mostCommonUmaCombined": {
       "umaName": "Oguri Cap",
@@ -12796,11 +12835,11 @@
         "spritePath": "assets/characters/chara_stand_1046_104601.png",
         "population": 9,
         "isUnique": false,
-        "starts": 8,
+        "starts": 9,
         "wins": 1,
         "top3": 3,
-        "winRate": 0.125,
-        "top3Rate": 0.375
+        "winRate": 0.1111111111111111,
+        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:106801",
@@ -12842,6 +12881,19 @@
         "top3Rate": 0.3333333333333333
       },
       {
+        "umaKey": "sprite:105202",
+        "umaName": "Haru Urara",
+        "baseName": "Haru Urara",
+        "spritePath": "assets/characters/chara_stand_1052_105202.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 6,
+        "wins": 0,
+        "top3": 3,
+        "winRate": 0,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:100402",
         "umaName": "Maruzensky",
         "baseName": "Maruzensky",
@@ -12868,17 +12920,17 @@
         "top3Rate": 0.16666666666666666
       },
       {
-        "umaKey": "sprite:105202",
-        "umaName": "Haru Urara",
-        "baseName": "Haru Urara",
-        "spritePath": "assets/characters/chara_stand_1052_105202.png",
-        "population": 6,
+        "umaKey": "sprite:101901",
+        "umaName": "Agnes Digital",
+        "baseName": "Agnes Digital",
+        "spritePath": "assets/characters/chara_stand_1019_101901.png",
+        "population": 5,
         "isUnique": false,
-        "starts": 4,
+        "starts": 5,
         "wins": 0,
-        "top3": 2,
+        "top3": 1,
         "winRate": 0,
-        "top3Rate": 0.5
+        "top3Rate": 0.2
       },
       {
         "umaKey": "sprite:102401",
@@ -12907,16 +12959,16 @@
         "top3Rate": 0.6
       },
       {
-        "umaKey": "sprite:101901",
-        "umaName": "Agnes Digital",
-        "baseName": "Agnes Digital",
-        "spritePath": "assets/characters/chara_stand_1019_101901.png",
-        "population": 5,
+        "umaKey": "sprite:101002",
+        "umaName": "Taiki Shuttle",
+        "baseName": "Taiki Shuttle",
+        "spritePath": "assets/characters/chara_stand_1010_101002.png",
+        "population": 4,
         "isUnique": false,
         "starts": 4,
-        "wins": 0,
+        "wins": 1,
         "top3": 1,
-        "winRate": 0,
+        "winRate": 0.25,
         "top3Rate": 0.25
       },
       {
@@ -12944,19 +12996,6 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.25
-      },
-      {
-        "umaKey": "sprite:101002",
-        "umaName": "Taiki Shuttle",
-        "baseName": "Taiki Shuttle",
-        "spritePath": "assets/characters/chara_stand_1010_101002.png",
-        "population": 4,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:100701",
@@ -13037,6 +13076,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:101401",
+        "umaName": "El Condor Pasa",
+        "baseName": "El Condor Pasa",
+        "spritePath": "assets/characters/chara_stand_1014_101401.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 3,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.3333333333333333
+      },
+      {
         "umaKey": "sprite:101201",
         "umaName": "Hishi Amazon",
         "baseName": "Hishi Amazon",
@@ -13074,19 +13126,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.6666666666666666
-      },
-      {
-        "umaKey": "sprite:101401",
-        "umaName": "El Condor Pasa",
-        "baseName": "El Condor Pasa",
-        "spritePath": "assets/characters/chara_stand_1014_101401.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:105301",
@@ -13206,6 +13245,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:100501",
+        "umaName": "Fuji Kiseki",
+        "baseName": "Fuji Kiseki",
+        "spritePath": "assets/characters/chara_stand_1005_100501.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:100702",
         "umaName": "Gold Ship",
         "baseName": "Gold Ship",
@@ -13236,6 +13288,19 @@
         "umaName": "Kawakami Princess",
         "baseName": "Kawakami Princess",
         "spritePath": "assets/characters/chara_stand_1039_103901.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 2,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.5
+      },
+      {
+        "umaKey": "sprite:106102",
+        "umaName": "King Halo",
+        "baseName": "King Halo",
+        "spritePath": "assets/characters/chara_stand_1061_106102.png",
         "population": 2,
         "isUnique": false,
         "starts": 2,
@@ -13373,32 +13438,6 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:100501",
-        "umaName": "Fuji Kiseki",
-        "baseName": "Fuji Kiseki",
-        "spritePath": "assets/characters/chara_stand_1005_100501.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:106102",
-        "umaName": "King Halo",
-        "baseName": "King Halo",
-        "spritePath": "assets/characters/chara_stand_1061_106102.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 1,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 1
       },
       {
         "umaKey": "sprite:103601",
@@ -14098,9 +14137,9 @@
     "popularity": [
       {
         "umaName": "Smart Falcon",
-        "starts": 8,
+        "starts": 9,
         "wins": 1,
-        "winRate": 0.125
+        "winRate": 0.1111111111111111
       },
       {
         "umaName": "Kitasan Black",
@@ -14121,6 +14160,12 @@
         "winRate": 0.16666666666666666
       },
       {
+        "umaName": "Haru Urara",
+        "starts": 6,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Maruzensky",
         "starts": 6,
         "wins": 0,
@@ -14133,8 +14178,8 @@
         "winRate": 0
       },
       {
-        "umaName": "Haru Urara",
-        "starts": 4,
+        "umaName": "Agnes Digital",
+        "starts": 5,
         "wins": 0,
         "winRate": 0
       },
@@ -14151,10 +14196,10 @@
         "winRate": 0
       },
       {
-        "umaName": "Agnes Digital",
+        "umaName": "Taiki Shuttle",
         "starts": 4,
-        "wins": 0,
-        "winRate": 0
+        "wins": 1,
+        "winRate": 0.25
       },
       {
         "umaName": "Curren Chan",
@@ -14165,12 +14210,6 @@
       {
         "umaName": "Mihono Bourbon",
         "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Taiki Shuttle",
-        "starts": 2,
         "wins": 0,
         "winRate": 0
       },
@@ -14211,6 +14250,12 @@
         "winRate": 0
       },
       {
+        "umaName": "El Condor Pasa",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Hishi Amazon",
         "starts": 3,
         "wins": 0,
@@ -14225,12 +14270,6 @@
       {
         "umaName": "Oguri Cap",
         "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "El Condor Pasa",
-        "starts": 2,
         "wins": 0,
         "winRate": 0
       },
@@ -14289,6 +14328,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Fuji Kiseki",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Gold Ship",
         "starts": 2,
         "wins": 0,
@@ -14302,6 +14347,12 @@
       },
       {
         "umaName": "Kawakami Princess",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "King Halo",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -14363,18 +14414,6 @@
       {
         "umaName": "Tokai Teio",
         "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Fuji Kiseki",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "King Halo",
-        "starts": 1,
         "wins": 0,
         "winRate": 0
       },
