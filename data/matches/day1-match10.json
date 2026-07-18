@@ -4,40 +4,40 @@
   "matchNumber": 10,
   "round": "Group B Semi",
   "teams": [
-    "",
-    "",
+    "king",
+    "kita-trauma",
     ""
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
@@ -59,32 +59,32 @@
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
@@ -106,32 +106,32 @@
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
@@ -153,32 +153,32 @@
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },
@@ -200,32 +200,32 @@
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "kita-trauma",
         "slot": 2,
         "gate": null
       },

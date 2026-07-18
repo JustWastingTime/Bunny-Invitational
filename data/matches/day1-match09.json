@@ -4,40 +4,40 @@
   "matchNumber": 9,
   "round": "Group A Semi",
   "teams": [
-    "",
-    "",
+    "dust-bunny",
+    "umamusuko",
     ""
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
@@ -59,32 +59,32 @@
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
@@ -106,32 +106,32 @@
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
@@ -153,32 +153,32 @@
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },
@@ -200,32 +200,32 @@
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "dust-bunny",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umamusuko",
         "slot": 2,
         "gate": null
       },

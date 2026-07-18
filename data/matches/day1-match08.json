@@ -4,243 +4,243 @@
   "matchNumber": 8,
   "round": "Group B Second Stage",
   "teams": [
-    "",
-    "",
-    ""
+    "the-shadow-clones",
+    "rilliance",
+    "cabal"
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "the-shadow-clones",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "rilliance",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "cabal",
         "slot": 2,
         "gate": null
       }

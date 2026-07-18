@@ -4,243 +4,243 @@
   "matchNumber": 7,
   "round": "Group A Second Stage",
   "teams": [
-    "",
-    "",
-    ""
+    "umazing-hotspring",
+    "falena",
+    "umalliance"
   ],
   "activeCategory": "sprint",
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       }
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       }
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       }
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       }
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umazing-hotspring",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "falena",
         "slot": 2,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "umalliance",
         "slot": 2,
         "gate": null
       }

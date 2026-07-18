@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T17:19:24.187Z",
+  "updatedAt": "2026-07-18T17:25:53.333Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -677,9 +677,9 @@
       "matchNumber": 7,
       "round": "Group A Second Stage",
       "teams": [
-        "",
-        "",
-        ""
+        "umazing-hotspring",
+        "falena",
+        "umalliance"
       ],
       "raceResults": {
         "sprint": {
@@ -724,9 +724,9 @@
       "matchNumber": 8,
       "round": "Group B Second Stage",
       "teams": [
-        "",
-        "",
-        ""
+        "the-shadow-clones",
+        "rilliance",
+        "cabal"
       ],
       "raceResults": {
         "sprint": {
@@ -771,8 +771,8 @@
       "matchNumber": 9,
       "round": "Group A Semi",
       "teams": [
-        "",
-        "",
+        "dust-bunny",
+        "umamusuko",
         ""
       ],
       "raceResults": {
@@ -818,8 +818,8 @@
       "matchNumber": 10,
       "round": "Group B Semi",
       "teams": [
-        "",
-        "",
+        "king",
+        "kita-trauma",
         ""
       ],
       "raceResults": {
