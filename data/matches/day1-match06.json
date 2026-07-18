@@ -5,7 +5,7 @@
   "round": "Group B Middle 3 (MIDDLE)",
   "teams": [
     "umalliance",
-    "",
+    "uma-love",
     ""
   ],
   "activeCategory": "sprint",
@@ -27,17 +27,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       },
@@ -74,17 +74,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       },
@@ -121,17 +121,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       },
@@ -168,17 +168,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       },
@@ -215,17 +215,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "uma-love",
         "slot": 2,
         "gate": null
       },
