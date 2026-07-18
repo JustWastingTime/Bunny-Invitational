@@ -8,38 +8,38 @@
     "uma-love",
     ""
   ],
-  "activeCategory": "sprint",
+  "activeCategory": "dirt",
   "races": {
     "sprint": [
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "",
@@ -61,32 +61,32 @@
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "",
@@ -108,32 +108,32 @@
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "",
@@ -155,32 +155,32 @@
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "uma-love",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "uma-love",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "uma-love",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "",

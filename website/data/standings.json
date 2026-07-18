@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:57:03.596Z",
+  "updatedAt": "2026-07-18T17:14:54.065Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -13,11 +13,11 @@
     "ritto-dorm-dropouts": {
       "name": "Ritto Dorm Dropouts",
       "color": "#992724",
-      "firsts": 0,
-      "seconds": 6,
-      "thirds": 2,
+      "firsts": 1,
+      "seconds": 7,
+      "thirds": 3,
       "uniqueBonuses": 2,
-      "points": 22
+      "points": 31
     },
     "dust-bunny": {
       "name": "BUNS",
@@ -76,11 +76,11 @@
     "umalliance": {
       "name": "UMAlliance",
       "color": "#2c49c9",
-      "firsts": 1,
-      "seconds": 1,
-      "thirds": 1,
+      "firsts": 3,
+      "seconds": 5,
+      "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 9
+      "points": 33
     },
     "king": {
       "name": "King",
@@ -112,11 +112,11 @@
     "uma-love": {
       "name": "Uma Love",
       "color": "#f66a9b",
-      "firsts": 1,
+      "firsts": 3,
       "seconds": 0,
-      "thirds": 1,
+      "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 6
+      "points": 18
     }
   },
   "matches": {
@@ -564,9 +564,18 @@
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "ritto-dorm-dropouts",
+              "slot": 1
+            }
           }
         }
       }
@@ -583,30 +592,66 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umalliance",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "umalliance",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "uma-love",
+              "slot": 2
+            }
           }
         },
         "mile": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umalliance",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "umalliance",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "uma-love",
+              "slot": 0
+            }
           }
         },
         "medium": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "uma-love",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "umalliance",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "umalliance",
+              "slot": 1
+            }
           }
         },
         "long": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "uma-love",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "umalliance",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "umalliance",
+              "slot": 0
+            }
           }
         },
         "dirt": {
