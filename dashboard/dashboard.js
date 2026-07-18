@@ -59,6 +59,12 @@ function renderPodium(state) {
 }
 
 function renderTeamColumns(state) {
+  // Don't clobber an in-progress gate edit when the poll refreshes.
+  const focusedGate = document.activeElement?.classList?.contains("gate-input")
+    ? document.activeElement
+    : null;
+  if (focusedGate) return;
+
   const assigned = new Set();
   for (const place of ["1", "2", "3"]) {
     const pick = state.currentRace.placements[place];
@@ -74,15 +80,22 @@ function renderTeamColumns(state) {
             .map((racer) => {
               const key = racerKey(racer.teamId, racer.slot);
               const isAssigned = assigned.has(key);
-              return `<button type="button" class="racer-btn ${isAssigned ? "assigned" : ""}"
+              const gateValue = racer.gate == null ? "" : racer.gate;
+              const trainer = racer.trainer || "—";
+              const umaName = racer.umaName || "—";
+              return `<div class="racer-card ${isAssigned ? "assigned" : ""}"
                 data-team="${racer.teamId}" data-slot="${racer.slot}"
-                title="${racer.trainer} — ${racer.umaName}">
+                title="${trainer} — ${umaName}">
                 ${portraitHtml(racer)}
-                <span class="racer-text">
-                  <span class="racer-trainer">${racer.trainer}</span>
-                  <span class="racer-uma">${racer.umaName}</span>
-                </span>
-              </button>`;
+                <div class="racer-text">
+                  <div class="racer-trainer">${trainer}</div>
+                  <div class="racer-uma">${umaName}</div>
+                </div>
+                <input class="gate-input" type="number" min="1" max="9" inputmode="numeric"
+                  data-team="${racer.teamId}" data-slot="${racer.slot}"
+                  value="${gateValue}" placeholder="#" aria-label="Gate"
+                  title="Gate (1–9)" />
+              </div>`;
             })
             .join("")}
         </div>
@@ -136,6 +149,10 @@ function render(state) {
   const transitionBtn = $("scene-transition-toggle");
   transitionBtn.classList.toggle("active", Boolean(state.sceneTransition));
   transitionBtn.textContent = state.sceneTransition ? "End Scene Transition" : "Scene Transition";
+
+  const startingSoonBtn = $("starting-soon-toggle");
+  startingSoonBtn.classList.toggle("active", Boolean(state.startingSoon));
+  startingSoonBtn.textContent = state.startingSoon ? "Hide Starting Soon" : "Starting Soon";
 
   document.querySelectorAll(".place-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.place === selectedPlace);
@@ -191,8 +208,9 @@ $("podium-slots").addEventListener("click", async (event) => {
 });
 
 $("team-columns").addEventListener("click", async (event) => {
-  const btn = event.target.closest(".racer-btn");
-  if (!btn) return;
+  if (event.target.closest(".gate-input")) return;
+  const card = event.target.closest(".racer-card");
+  if (!card) return;
   const state = await api("/api/dashboard");
   await api("/api/dashboard/placement", {
     method: "POST",
@@ -201,11 +219,49 @@ $("team-columns").addEventListener("click", async (event) => {
       matchId: state.activeMatch,
       category: state.activeCategory,
       place: selectedPlace,
-      teamId: btn.dataset.team,
-      slot: Number(btn.dataset.slot),
+      teamId: card.dataset.team,
+      slot: Number(card.dataset.slot),
     }),
   });
   await refresh();
+});
+
+async function saveGateFromInput(input) {
+  if (!input?.classList?.contains("gate-input")) return;
+  const raw = String(input.value ?? "").trim();
+  const gate = raw === "" ? null : Number(raw);
+  if (raw !== "" && (!Number.isInteger(gate) || gate < 1 || gate > 9)) {
+    input.classList.add("invalid");
+    return;
+  }
+  input.classList.remove("invalid");
+  const state = await api("/api/dashboard");
+  await api("/api/dashboard/gate", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      matchId: state.activeMatch,
+      category: state.activeCategory,
+      teamId: input.dataset.team,
+      slot: Number(input.dataset.slot),
+      gate,
+    }),
+  });
+  await refresh();
+}
+
+$("team-columns").addEventListener("change", async (event) => {
+  if (event.target.classList.contains("gate-input")) {
+    await saveGateFromInput(event.target);
+  }
+});
+
+$("team-columns").addEventListener("keydown", async (event) => {
+  if (!event.target.classList.contains("gate-input")) return;
+  if (event.key === "Enter") {
+    event.preventDefault();
+    event.target.blur();
+  }
 });
 
 $("clear-placements").addEventListener("click", async () => {
@@ -233,6 +289,11 @@ $("overlay-show").addEventListener("click", async () => {
 
 $("scene-transition-toggle").addEventListener("click", async () => {
   await api("/api/overlay/scene-transition?action=toggle", { method: "POST" });
+  await refresh();
+});
+
+$("starting-soon-toggle").addEventListener("click", async () => {
+  await api("/api/overlay/starting-soon?action=toggle", { method: "POST" });
   await refresh();
 });
 

@@ -134,7 +134,8 @@ button {
 
 button:hover { filter: brightness(1.05); }
 
-#scene-transition-toggle.active {
+#scene-transition-toggle.active,
+#starting-soon-toggle.active {
   background: linear-gradient(135deg, #7cb342, #aed581);
   box-shadow: 0 0 0 2px rgba(174, 213, 129, 0.35);
 }
@@ -286,21 +287,64 @@ button:hover { filter: brightness(1.05); }
   padding: 8px;
 }
 
-.racer-btn {
-  text-align: left;
+.racer-card {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border);
   border-left: 3px solid var(--team-color, var(--accent));
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.racer-btn.assigned {
+.racer-card.assigned {
   opacity: 0.55;
   box-shadow: inset 0 0 0 1px rgba(67, 160, 71, 0.45);
+}
+
+.racer-card:hover {
+  filter: brightness(1.06);
+}
+
+.gate-input {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0;
+  cursor: text;
+  -moz-appearance: textfield;
+}
+
+.gate-input::-webkit-outer-spin-button,
+.gate-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.gate-input:focus {
+  outline: none;
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+}
+
+.gate-input.invalid {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.gate-input::placeholder {
+  color: rgba(255, 255, 255, 0.28);
+  font-weight: 700;
 }
 
 .racer-portrait {
@@ -319,31 +363,34 @@ button:hover { filter: brightness(1.05); }
   background: linear-gradient(145deg, var(--team-color, #e91e8c), #7b1fa2);
   font-weight: 900;
   font-size: 16px;
+  color: #fff;
 }
 
 .racer-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
   min-width: 0;
+  overflow: hidden;
 }
 
 .racer-trainer {
+  display: block;
   font-size: 13px;
   font-weight: 800;
-  color: var(--text);
+  color: #f4f0f8;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.25;
 }
 
 .racer-uma {
+  display: block;
   font-weight: 600;
   font-size: 12px;
-  color: var(--muted);
+  color: #b9b0c4;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.25;
 }
 
 .podium-pick {

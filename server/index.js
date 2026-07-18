@@ -21,7 +21,7 @@ import {
   STYLES as TEAM_STYLES,
   CATEGORIES as TEAM_CATEGORIES,
 } from "./team-editor.js";
-import { listMatches, getMatch, saveMatch } from "./match-editor.js";
+import { listMatches, getMatch, saveMatch, setRaceGate } from "./match-editor.js";
 import { listCharacterCatalog } from "./sprite-resolver.js";
 import { listSkills } from "./skills.js";
 
@@ -64,33 +64,31 @@ function writeJson(relPath, data) {
 function readOverlayState() {
   const fullPath = path.join(ROOT, OVERLAY_STATE_REL);
   if (!fs.existsSync(fullPath)) {
-    return { visible: true, sceneTransition: false };
+    return { visible: true, sceneTransition: false, startingSoon: false };
   }
   try {
     const data = JSON.parse(fs.readFileSync(fullPath, "utf8"));
     return {
       visible: data.visible !== false,
       sceneTransition: data.sceneTransition === true,
+      startingSoon: data.startingSoon === true,
     };
   } catch {
-    return { visible: true, sceneTransition: false };
+    return { visible: true, sceneTransition: false, startingSoon: false };
   }
 }
 
 function writeOverlayState(patch) {
   const fullPath = path.join(ROOT, OVERLAY_STATE_REL);
   const next = { ...readOverlayState(), ...patch };
-  fs.writeFileSync(
-    fullPath,
-    JSON.stringify(
-      {
-        visible: next.visible !== false,
-        sceneTransition: next.sceneTransition === true,
-      },
-      null,
-      2
-    ) + "\n"
-  );
+  const payload = {
+    visible: next.visible !== false,
+    sceneTransition: next.sceneTransition === true,
+    startingSoon: next.startingSoon === true,
+  };
+  const tmpPath = `${fullPath}.tmp`;
+  fs.writeFileSync(tmpPath, JSON.stringify(payload, null, 2) + "\n");
+  fs.renameSync(tmpPath, fullPath);
 }
 
 function buildOverlayPayload() {
@@ -102,6 +100,7 @@ function buildOverlayPayload() {
   return {
     visible: overlayState.visible,
     sceneTransition: overlayState.sceneTransition,
+    startingSoon: overlayState.startingSoon,
     matchId: match.id,
     day: match.day,
     matchNumber: match.matchNumber,
@@ -173,6 +172,7 @@ const server = http.createServer(async (req, res) => {
       sendJson(res, 200, buildDashboardState(ROOT, {
         overlayVisible: overlayState.visible,
         sceneTransition: overlayState.sceneTransition,
+        startingSoon: overlayState.startingSoon,
       }));
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
@@ -213,6 +213,24 @@ const server = http.createServer(async (req, res) => {
       const body = await readRequestBody(req);
       const standings = clearPlacement(ROOT, body.matchId, body.category, body.place ?? null);
       sendJson(res, 200, { ok: true, updatedAt: standings.updatedAt });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/dashboard/gate" && req.method === "POST") {
+    try {
+      const body = await readRequestBody(req);
+      const result = setRaceGate(
+        ROOT,
+        body.matchId,
+        body.category,
+        body.teamId,
+        body.slot,
+        body.gate
+      );
+      sendJson(res, 200, { ok: true, ...result });
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
     }
@@ -385,6 +403,26 @@ const server = http.createServer(async (req, res) => {
         return;
       }
       sendJson(res, 200, { sceneTransition: state.sceneTransition });
+    } catch (err) {
+      sendJson(res, 500, { error: String(err.message) });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/overlay/starting-soon") {
+    try {
+      const state = readOverlayState();
+      if (req.method === "POST") {
+        const action = String(url.searchParams.get("action") ?? "").toLowerCase();
+        let nextActive = state.startingSoon;
+        if (action === "on") nextActive = true;
+        else if (action === "off") nextActive = false;
+        else if (action === "toggle") nextActive = !state.startingSoon;
+        writeOverlayState({ startingSoon: nextActive });
+        sendJson(res, 200, { startingSoon: nextActive });
+        return;
+      }
+      sendJson(res, 200, { startingSoon: state.startingSoon });
     } catch (err) {
       sendJson(res, 500, { error: String(err.message) });
     }

@@ -258,7 +258,7 @@ body {
 
 .entry-row {
   display: grid;
-  grid-template-columns: 58px 1fr 50px;
+  grid-template-columns: 58px 1fr 32px 50px;
   align-items: center;
   gap: 8px;
   background: rgba(255, 255, 255, 0.12);
@@ -322,7 +322,6 @@ body {
 .trainer-row {
   display: flex;
   align-items: center;
-  gap: 5px;
   margin-top: 2px;
   min-height: 16px;
 }
@@ -337,29 +336,31 @@ body {
 }
 
 .style-icon-wrap {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: none;
+  border: none;
+  border-radius: 0;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.55));
 }
 
 .style-icon {
-  width: 14px;
-  height: 14px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
 .style-icon-fallback {
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 900;
   line-height: 1;
   color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .style-icon + .style-icon-fallback {

@@ -782,6 +782,7 @@ function loadMatchRacers(root, matchId, category) {
   return resolveMatchRacers(root, matchId, category).map((racer) => ({
     teamId: racer.teamId,
     slot: racer.slot,
+    gate: racer.gate ?? null,
     teamName: racer.teamName,
     teamColor: racer.teamColor,
     trainer: racer.trainer,
@@ -797,6 +798,7 @@ function loadMatchTeams(root, matchId, category) {
     racers: team.racers.map((racer) => ({
       teamId: racer.teamId,
       slot: racer.slot,
+      gate: racer.gate ?? null,
       teamName: racer.teamName,
       teamColor: racer.teamColor,
       trainer: racer.trainer,
@@ -1016,6 +1018,7 @@ export function buildDashboardState(root, extras = {}) {
     activeCategory: category,
     overlayVisible: extras.overlayVisible ?? true,
     sceneTransition: extras.sceneTransition ?? false,
+    startingSoon: extras.startingSoon ?? false,
     scoring: standings.scoring,
     matches: matchIds.map((id) => {
       const m = JSON.parse(fs.readFileSync(path.join(root, "data", "matches", `${id}.json`), "utf8"));

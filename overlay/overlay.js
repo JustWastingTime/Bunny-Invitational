@@ -200,10 +200,10 @@ function entryRow(entry, teamIndex, rowIndex) {
       <div class="entry-info">
         <div class="uma-name">${entry.uma.name}</div>
         <div class="trainer-row">
-          ${runstyleIconHtml(entry.uma.style)}
           <span class="trainer-name">${entry.trainer}</span>
         </div>
       </div>
+      ${runstyleIconHtml(entry.uma.style)}
       <div class="slot-wrap">
         <div class="slot-label">Slot</div>
         <div class="gate-badge ${gateClass(slotValue)}">${slotValue}</div>
@@ -212,11 +212,10 @@ function entryRow(entry, teamIndex, rowIndex) {
 }
 
 function teamColumn(team, teamIndex) {
-  const sortedEntries = [...team.entries].sort((a, b) => {
-    const aOrder = a.gate ?? a.slot ?? 99;
-    const bOrder = b.gate ?? b.slot ?? 99;
-    return aOrder - bOrder;
-  });
+  // Keep roster/slot order (same as dashboard) — do not sort by gate.
+  const entries = [...team.entries].sort(
+    (a, b) => (a.slot ?? 99) - (b.slot ?? 99)
+  );
 
   return `
     <section class="team-column" style="--team-color: ${team.color}">
@@ -224,7 +223,7 @@ function teamColumn(team, teamIndex) {
         <div class="team-name">${team.name}</div>
       </header>
       <div class="entries">
-        ${sortedEntries.map((entry, idx) => entryRow(entry, teamIndex, idx)).join("")}
+        ${entries.map((entry, idx) => entryRow(entry, teamIndex, idx)).join("")}
       </div>
     </section>`;
 }
@@ -325,6 +324,9 @@ let lastTransitionState = null;
 let transitionShown = false;
 let transitionAnimating = false;
 let pendingTransitionState = null;
+let lastStartingSoonState = null;
+let startingSoonShown = false;
+let startingSoonAnimTimer = null;
 
 function initSceneTransition() {
   const stage = document.querySelector(".scene-transition-stage");
@@ -390,6 +392,35 @@ function updateSceneTransition(shouldShow) {
   }
 }
 
+function updateStartingSoon(shouldShow) {
+  const el = $("starting-soon");
+  if (!el) return;
+
+  if (startingSoonAnimTimer) {
+    clearTimeout(startingSoonAnimTimer);
+    startingSoonAnimTimer = null;
+  }
+
+  if (shouldShow && !startingSoonShown) {
+    startingSoonShown = true;
+    el.classList.remove("is-leaving");
+    el.classList.add("is-active");
+    el.setAttribute("aria-hidden", "false");
+    return;
+  }
+
+  if (!shouldShow && startingSoonShown) {
+    startingSoonShown = false;
+    el.classList.remove("is-active");
+    el.classList.add("is-leaving");
+    el.setAttribute("aria-hidden", "true");
+    startingSoonAnimTimer = window.setTimeout(() => {
+      el.classList.remove("is-leaving");
+      startingSoonAnimTimer = null;
+    }, 560);
+  }
+}
+
 async function tick() {
   const data = await fetchOverlay();
   if (!data) return;
@@ -406,7 +437,16 @@ async function tick() {
     updateSceneTransition(serverTransition);
   }
 
-  const { sceneTransition: _sceneTransition, ...content } = data;
+  const serverStartingSoon = data.startingSoon === true;
+  if (lastStartingSoonState === null) {
+    lastStartingSoonState = serverStartingSoon;
+    if (serverStartingSoon) updateStartingSoon(true);
+  } else if (serverStartingSoon !== lastStartingSoonState) {
+    lastStartingSoonState = serverStartingSoon;
+    updateStartingSoon(serverStartingSoon);
+  }
+
+  const { sceneTransition: _sceneTransition, startingSoon: _startingSoon, ...content } = data;
   const json = JSON.stringify(content);
   if (json !== lastJson) {
     lastJson = json;

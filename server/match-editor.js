@@ -60,6 +60,36 @@ export function buildRaceEntries(teams, previousRaces = null) {
   );
 }
 
+/** Live-edit a post-draw gate (1–9) on a race entry. Empty clears to null. */
+export function setRaceGate(root, matchId, category, teamId, slot, gate) {
+  if (!CATEGORIES.includes(category)) throw new Error(`Invalid category: ${category}`);
+  if (!teamId) throw new Error("teamId is required");
+
+  const filePath = matchPath(root, matchId);
+  if (!fs.existsSync(filePath)) throw new Error(`Match not found: ${matchId}`);
+
+  let normalizedGate = null;
+  if (gate !== null && gate !== undefined && String(gate).trim() !== "") {
+    const n = Number(gate);
+    if (!Number.isInteger(n) || n < 1 || n > 9) {
+      throw new Error("Gate must be an integer from 1 to 9, or empty");
+    }
+    normalizedGate = n;
+  }
+
+  const match = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  const entries = match.races?.[category];
+  if (!Array.isArray(entries)) throw new Error(`No race entries for ${category}`);
+
+  const slotNum = Number(slot);
+  const entry = entries.find((row) => row.teamId === teamId && Number(row.slot) === slotNum);
+  if (!entry) throw new Error(`Entry not found: ${teamId} slot ${slot}`);
+
+  entry.gate = normalizedGate;
+  fs.writeFileSync(filePath, serializeMatch(match));
+  return { matchId, category, teamId, slot: slotNum, gate: normalizedGate };
+}
+
 export function emptyMatch({ id, day, matchNumber, round, teams = ["", "", ""] }) {
   const roster = [teams[0] || "", teams[1] || "", teams[2] || ""];
   return {

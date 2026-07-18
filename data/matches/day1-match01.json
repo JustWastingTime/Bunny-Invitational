@@ -8,53 +8,53 @@
     "dust-bunny",
     "umazing-hotspring"
   ],
-  "activeCategory": "sprint",
+  "activeCategory": "mile",
   "races": {
     "sprint": [
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "dust-bunny",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "dust-bunny",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "dust-bunny",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 2
       }
     ],
     "mile": [
@@ -155,94 +155,94 @@
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "dust-bunny",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "dust-bunny",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "dust-bunny",
         "slot": 2,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 1
       }
     ],
     "dirt": [
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 0,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "ritto-dorm-dropouts",
         "slot": 2,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "dust-bunny",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "dust-bunny",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "dust-bunny",
         "slot": 2,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 4
       }
     ]
   }
