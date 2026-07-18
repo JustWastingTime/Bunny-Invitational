@@ -4,7 +4,7 @@
   "matchNumber": 5,
   "round": "Group A Match 3 (MIDDLE)",
   "teams": [
-    "",
+    "ritto-dorm-dropouts",
     "",
     ""
   ],
@@ -12,17 +12,17 @@
   "races": {
     "sprint": [
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 2,
         "gate": null
       },
@@ -59,17 +59,17 @@
     ],
     "mile": [
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 2,
         "gate": null
       },
@@ -106,17 +106,17 @@
     ],
     "medium": [
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 2,
         "gate": null
       },
@@ -153,17 +153,17 @@
     ],
     "long": [
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 2,
         "gate": null
       },
@@ -200,17 +200,17 @@
     ],
     "dirt": [
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "ritto-dorm-dropouts",
         "slot": 2,
         "gate": null
       },
