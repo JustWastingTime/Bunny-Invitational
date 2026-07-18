@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T16:46:31.689Z",
+  "updatedAt": "2026-07-18T16:48:35.822Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -19,6 +19,16 @@
       "thirds": 3,
       "uniqueBonuses": 0,
       "points": 30
+    },
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 3,
+      "seconds": 3,
+      "thirds": 1,
+      "uniqueBonuses": 0,
+      "points": 25
     },
     {
       "id": "umamusuko",
@@ -61,16 +71,6 @@
       "points": 19
     },
     {
-      "id": "cabal",
-      "name": "Cabal Agency",
-      "color": "#c0fa3b",
-      "firsts": 2,
-      "seconds": 2,
-      "thirds": 1,
-      "uniqueBonuses": 0,
-      "points": 17
-    },
-    {
       "id": "the-shadow-clones",
       "name": "The Shadow Clones",
       "color": "#646364",
@@ -81,6 +81,16 @@
       "points": 16
     },
     {
+      "id": "ritto-dorm-dropouts",
+      "name": "Ritto Dorm Dropouts",
+      "color": "#992724",
+      "firsts": 0,
+      "seconds": 4,
+      "thirds": 2,
+      "uniqueBonuses": 2,
+      "points": 16
+    },
+    {
       "id": "falena",
       "name": "Falena",
       "color": "#2e65cf",
@@ -88,16 +98,6 @@
       "seconds": 0,
       "thirds": 2,
       "uniqueBonuses": 2,
-      "points": 14
-    },
-    {
-      "id": "ritto-dorm-dropouts",
-      "name": "Ritto Dorm Dropouts",
-      "color": "#992724",
-      "firsts": 0,
-      "seconds": 4,
-      "thirds": 1,
-      "uniqueBonuses": 1,
       "points": 14
     },
     {
@@ -11879,9 +11879,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": 9,
+              "trainer": "Salty",
+              "umaName": "Vodka",
+              "umaKey": "sprite:100801",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1008_100801.png",
+              "style": "late",
+              "key": "cabal:2"
+            },
+            "2": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 1,
+              "gate": 6,
+              "trainer": "Sapphire",
+              "umaName": "Mihono Bourbon",
+              "umaKey": "sprite:102602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1026_102602.png",
+              "style": "front",
+              "key": "cabal:1"
+            },
+            "3": {
+              "teamId": "ritto-dorm-dropouts",
+              "teamName": "Ritto Dorm Dropouts",
+              "teamColor": "#992724",
+              "slot": 1,
+              "gate": 5,
+              "trainer": "RDD||Lyonn",
+              "umaName": "Yaeno Muteki",
+              "umaKey": "sprite:107201",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1072_107201.png",
+              "style": "pace",
+              "key": "ritto-dorm-dropouts:1"
+            }
           }
         },
         "medium": {
@@ -13221,6 +13260,19 @@
         "top3Rate": 0.6
       },
       {
+        "umaKey": "sprite:102602",
+        "umaName": "Mihono Bourbon",
+        "baseName": "Mihono Bourbon",
+        "spritePath": "assets/characters/chara_stand_1026_102602.png",
+        "population": 4,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.4
+      },
+      {
         "umaKey": "sprite:101002",
         "umaName": "Taiki Shuttle",
         "baseName": "Taiki Shuttle",
@@ -13234,17 +13286,17 @@
         "top3Rate": 0.25
       },
       {
-        "umaKey": "sprite:102602",
-        "umaName": "Mihono Bourbon",
-        "baseName": "Mihono Bourbon",
-        "spritePath": "assets/characters/chara_stand_1026_102602.png",
-        "population": 4,
+        "umaKey": "sprite:100801",
+        "umaName": "Vodka",
+        "baseName": "Vodka",
+        "spritePath": "assets/characters/chara_stand_1008_100801.png",
+        "population": 3,
         "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 0.25
+        "starts": 5,
+        "wins": 2,
+        "top3": 2,
+        "winRate": 0.4,
+        "top3Rate": 0.4
       },
       {
         "umaKey": "sprite:103801",
@@ -13290,19 +13342,6 @@
         "umaName": "Symboli Rudolf",
         "baseName": "Symboli Rudolf",
         "spritePath": "assets/characters/chara_stand_1017_101701.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.3333333333333333,
-        "top3Rate": 0.3333333333333333
-      },
-      {
-        "umaKey": "sprite:100801",
-        "umaName": "Vodka",
-        "baseName": "Vodka",
-        "spritePath": "assets/characters/chara_stand_1008_100801.png",
         "population": 3,
         "isUnique": false,
         "starts": 3,
@@ -13375,6 +13414,19 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.6666666666666666
+      },
+      {
+        "umaKey": "sprite:103301",
+        "umaName": "Admire Vega",
+        "baseName": "Admire Vega",
+        "spritePath": "assets/characters/chara_stand_1033_103301.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 3,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
       },
       {
         "umaKey": "sprite:103901",
@@ -13479,19 +13531,6 @@
         "top3": 1,
         "winRate": 0.5,
         "top3Rate": 0.5
-      },
-      {
-        "umaKey": "sprite:103301",
-        "umaName": "Admire Vega",
-        "baseName": "Admire Vega",
-        "spritePath": "assets/characters/chara_stand_1033_103301.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:103201",
@@ -13689,6 +13728,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:101402",
+        "umaName": "El Condor Pasa",
+        "baseName": "El Condor Pasa",
+        "spritePath": "assets/characters/chara_stand_1014_101402.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:106101",
         "umaName": "King Halo",
         "baseName": "King Halo",
@@ -13700,6 +13752,19 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:107201",
+        "umaName": "Yaeno Muteki",
+        "baseName": "Yaeno Muteki",
+        "spritePath": "assets/characters/chara_stand_1072_107201.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 1
       },
       {
         "umaKey": "sprite:103601",
@@ -13771,19 +13836,6 @@
         "umaName": "Eishin Flash",
         "baseName": "Eishin Flash",
         "spritePath": "assets/characters/chara_stand_1037_103701.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101402",
-        "umaName": "El Condor Pasa",
-        "baseName": "El Condor Pasa",
-        "spritePath": "assets/characters/chara_stand_1014_101402.png",
         "population": 1,
         "isUnique": true,
         "starts": 1,
@@ -14012,19 +14064,6 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:107201",
-        "umaName": "Yaeno Muteki",
-        "baseName": "Yaeno Muteki",
-        "spritePath": "assets/characters/chara_stand_1072_107201.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 1
       }
     ],
     "combinedUmas": [
@@ -14451,16 +14490,22 @@
         "winRate": 0.2
       },
       {
+        "umaName": "Mihono Bourbon",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Taiki Shuttle",
         "starts": 4,
         "wins": 1,
         "winRate": 0.25
       },
       {
-        "umaName": "Mihono Bourbon",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
+        "umaName": "Vodka",
+        "starts": 5,
+        "wins": 2,
+        "winRate": 0.4
       },
       {
         "umaName": "Curren Chan",
@@ -14482,12 +14527,6 @@
       },
       {
         "umaName": "Symboli Rudolf",
-        "starts": 3,
-        "wins": 1,
-        "winRate": 0.3333333333333333
-      },
-      {
-        "umaName": "Vodka",
         "starts": 3,
         "wins": 1,
         "winRate": 0.3333333333333333
@@ -14518,6 +14557,12 @@
       },
       {
         "umaName": "Oguri Cap",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Admire Vega",
         "starts": 3,
         "wins": 0,
         "winRate": 0
@@ -14569,12 +14614,6 @@
         "starts": 2,
         "wins": 1,
         "winRate": 0.5
-      },
-      {
-        "umaName": "Admire Vega",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Agnes Tachyon",
@@ -14667,7 +14706,19 @@
         "winRate": 0
       },
       {
+        "umaName": "El Condor Pasa",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "King Halo",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Yaeno Muteki",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -14704,12 +14755,6 @@
       },
       {
         "umaName": "Eishin Flash",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "El Condor Pasa",
         "starts": 1,
         "wins": 0,
         "winRate": 0
@@ -14812,12 +14857,6 @@
       },
       {
         "umaName": "Winning Ticket",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Yaeno Muteki",
         "starts": 1,
         "wins": 0,
         "winRate": 0
