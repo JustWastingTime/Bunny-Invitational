@@ -8,7 +8,7 @@
     "kita-trauma",
     "king"
   ],
-  "activeCategory": "mile",
+  "activeCategory": "medium",
   "races": {
     "sprint": [
       {
@@ -108,47 +108,47 @@
       {
         "teamId": "dust-bunny",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "dust-bunny",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "dust-bunny",
         "slot": 2,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 9
       }
     ],
     "long": [
