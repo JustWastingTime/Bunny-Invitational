@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:16:49.846Z",
+  "updatedAt": "2026-07-19T16:17:57.214Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -1024,7 +1024,7 @@
       "matchNumber": 11,
       "round": "Lower Finals",
       "teams": [
-        "",
+        "umamusuko",
         "",
         ""
       ],
@@ -1071,7 +1071,7 @@
       "matchNumber": 12,
       "round": "Finals",
       "teams": [
-        "",
+        "dust-bunny",
         "",
         ""
       ],

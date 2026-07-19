@@ -14,47 +14,47 @@
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 8
       }
     ],
     "mile": [
