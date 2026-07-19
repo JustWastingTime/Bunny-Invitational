@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:12:07.570Z",
+  "updatedAt": "2026-07-19T15:16:11.239Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -16,9 +16,9 @@
       "color": "#2c49c9",
       "firsts": 4,
       "seconds": 6,
-      "thirds": 3,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 41,
+      "points": 42,
       "matchesPlayed": 2,
       "pointsPerMatch": 16.5
     },
@@ -33,6 +33,18 @@
       "points": 37,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
+    },
+    {
+      "id": "umazing-hotspring",
+      "name": "Umazing Hotsprings",
+      "color": "#c1e1f1",
+      "firsts": 3,
+      "seconds": 4,
+      "thirds": 2,
+      "uniqueBonuses": 3,
+      "points": 32,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 19
     },
     {
       "id": "ritto-dorm-dropouts",
@@ -69,18 +81,6 @@
       "points": 27,
       "matchesPlayed": 2,
       "pointsPerMatch": 13.5
-    },
-    {
-      "id": "umazing-hotspring",
-      "name": "Umazing Hotsprings",
-      "color": "#c1e1f1",
-      "firsts": 2,
-      "seconds": 3,
-      "thirds": 2,
-      "uniqueBonuses": 2,
-      "points": 23,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
     },
     {
       "id": "umamusuko",
@@ -13507,9 +13507,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umazing-hotspring",
+              "teamName": "Umazing Hotsprings",
+              "teamColor": "#c1e1f1",
+              "slot": 0,
+              "gate": 9,
+              "trainer": "mysticnut",
+              "umaName": "T.M. Opera O",
+              "umaKey": "sprite:101502",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1015_101502.png",
+              "style": "pace",
+              "key": "umazing-hotspring:0"
+            },
+            "2": {
+              "teamId": "umazing-hotspring",
+              "teamName": "Umazing Hotsprings",
+              "teamColor": "#c1e1f1",
+              "slot": 2,
+              "gate": 4,
+              "trainer": "UltimateShah",
+              "umaName": "Narita Brian",
+              "umaKey": "sprite:101601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1016_101601.png",
+              "style": "pace",
+              "key": "umazing-hotspring:2"
+            },
+            "3": {
+              "teamId": "umalliance",
+              "teamName": "UMAlliance",
+              "teamColor": "#2c49c9",
+              "slot": 2,
+              "gate": 5,
+              "trainer": "Mochi",
+              "umaName": "Agnes Tachyon",
+              "umaKey": "sprite:103201",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1032_103201.png",
+              "style": "pace",
+              "key": "umalliance:2"
+            }
           }
         },
         "long": {
@@ -13519,7 +13558,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "Ultra",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -13533,7 +13572,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 1,
-              "gate": null,
+              "gate": 8,
               "trainer": "Khaile",
               "umaName": "Mejiro McQueen",
               "umaKey": "sprite:101303",
@@ -13547,7 +13586,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "UUC|FishPineApl",
               "umaName": "Silence Suzuka",
               "umaKey": "sprite:100201",
@@ -13561,7 +13600,7 @@
               "teamName": "Falena",
               "teamColor": "#2e65cf",
               "slot": 0,
-              "gate": null,
+              "gate": 1,
               "trainer": "Korie@Falena",
               "umaName": "Satono Diamond",
               "umaKey": "sprite:106701",
@@ -13575,7 +13614,7 @@
               "teamName": "Falena",
               "teamColor": "#2e65cf",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "Omatsuri Mambo !",
               "umaName": "Matikanetannhauser",
               "umaKey": "sprite:106201",
@@ -13589,7 +13628,7 @@
               "teamName": "Falena",
               "teamColor": "#2e65cf",
               "slot": 2,
-              "gate": null,
+              "gate": 5,
               "trainer": "lazarus - FLNA",
               "umaName": "Gold Ship",
               "umaKey": "sprite:100701",
@@ -13603,7 +13642,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 0,
-              "gate": null,
+              "gate": 6,
               "trainer": "Hades",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -13617,7 +13656,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 1,
-              "gate": null,
+              "gate": 9,
               "trainer": "Fafa",
               "umaName": "Mejiro Bright",
               "umaKey": "sprite:107401",
@@ -13631,7 +13670,7 @@
               "teamName": "UMAlliance",
               "teamColor": "#2c49c9",
               "slot": 2,
-              "gate": null,
+              "gate": 2,
               "trainer": "Shenezle",
               "umaName": "Manhattan Cafe",
               "umaKey": "sprite:102501",
@@ -15561,10 +15600,10 @@
       "spritePath": "assets/characters/chara_stand_1006_100602.png"
     },
     "bestWinRateUma": {
-      "umaKey": "sprite:103601",
-      "umaName": "Air Shakur",
-      "baseName": "Air Shakur",
-      "spritePath": "assets/characters/chara_stand_1036_103601.png",
+      "umaKey": "sprite:106201",
+      "umaName": "Matikanetannhauser",
+      "baseName": "Matikanetannhauser",
+      "spritePath": "assets/characters/chara_stand_1062_106201.png",
       "population": 1,
       "isUnique": true,
       "starts": 1,
@@ -15670,11 +15709,11 @@
         "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
-        "starts": 12,
+        "starts": 13,
         "wins": 4,
         "top3": 8,
-        "winRate": 0.3333333333333333,
-        "top3Rate": 0.6666666666666666
+        "winRate": 0.3076923076923077,
+        "top3Rate": 0.6153846153846154
       },
       {
         "umaKey": "sprite:106801",
@@ -15683,11 +15722,11 @@
         "spritePath": "assets/characters/chara_stand_1068_106801.png",
         "population": 8,
         "isUnique": false,
-        "starts": 9,
+        "starts": 10,
         "wins": 1,
         "top3": 4,
-        "winRate": 0.1111111111111111,
-        "top3Rate": 0.4444444444444444
+        "winRate": 0.1,
+        "top3Rate": 0.4
       },
       {
         "umaKey": "sprite:100402",
@@ -15950,23 +15989,36 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:105301",
-        "umaName": "Bamboo Memory",
-        "baseName": "Bamboo Memory",
-        "spritePath": "assets/characters/chara_stand_1053_105301.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 2,
-        "top3": 2,
-        "winRate": 0.5,
-        "top3Rate": 0.5
-      },
-      {
         "umaKey": "sprite:101601",
         "umaName": "Narita Brian",
         "baseName": "Narita Brian",
         "spritePath": "assets/characters/chara_stand_1016_101601.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 2,
+        "top3": 3,
+        "winRate": 0.4,
+        "top3Rate": 0.6
+      },
+      {
+        "umaKey": "sprite:103201",
+        "umaName": "Agnes Tachyon",
+        "baseName": "Agnes Tachyon",
+        "spritePath": "assets/characters/chara_stand_1032_103201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 3,
+        "winRate": 0,
+        "top3Rate": 0.6
+      },
+      {
+        "umaKey": "sprite:105301",
+        "umaName": "Bamboo Memory",
+        "baseName": "Bamboo Memory",
+        "spritePath": "assets/characters/chara_stand_1053_105301.png",
         "population": 2,
         "isUnique": false,
         "starts": 4,
@@ -15987,19 +16039,6 @@
         "top3": 3,
         "winRate": 0.25,
         "top3Rate": 0.75
-      },
-      {
-        "umaKey": "sprite:103201",
-        "umaName": "Agnes Tachyon",
-        "baseName": "Agnes Tachyon",
-        "spritePath": "assets/characters/chara_stand_1032_103201.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.5
       },
       {
         "umaKey": "sprite:103901",
@@ -16262,6 +16301,32 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:103501",
+        "umaName": "Winning Ticket",
+        "baseName": "Winning Ticket",
+        "spritePath": "assets/characters/chara_stand_1035_103501.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 3,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:103601",
+        "umaName": "Air Shakur",
+        "baseName": "Air Shakur",
+        "spritePath": "assets/characters/chara_stand_1036_103601.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.5,
+        "top3Rate": 0.5
+      },
+      {
         "umaKey": "sprite:105901",
         "umaName": "Mejiro Dober",
         "baseName": "Mejiro Dober",
@@ -16275,10 +16340,36 @@
         "top3Rate": 0.5
       },
       {
+        "umaKey": "sprite:101502",
+        "umaName": "T.M. Opera O",
+        "baseName": "T.M. Opera O",
+        "spritePath": "assets/characters/chara_stand_1015_101502.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 1,
+        "top3": 2,
+        "winRate": 0.5,
+        "top3Rate": 1
+      },
+      {
         "umaKey": "sprite:102302",
         "umaName": "Biwa Hayahide",
         "baseName": "Biwa Hayahide",
         "spritePath": "assets/characters/chara_stand_1023_102302.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:103701",
+        "umaName": "Eishin Flash",
+        "baseName": "Eishin Flash",
+        "spritePath": "assets/characters/chara_stand_1037_103701.png",
         "population": 1,
         "isUnique": true,
         "starts": 2,
@@ -16392,10 +16483,10 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:103501",
-        "umaName": "Winning Ticket",
-        "baseName": "Winning Ticket",
-        "spritePath": "assets/characters/chara_stand_1035_103501.png",
+        "umaKey": "sprite:101702",
+        "umaName": "Symboli Rudolf",
+        "baseName": "Symboli Rudolf",
+        "spritePath": "assets/characters/chara_stand_1017_101702.png",
         "population": 1,
         "isUnique": true,
         "starts": 2,
@@ -16415,19 +16506,6 @@
         "wins": 0,
         "top3": 2,
         "winRate": 0,
-        "top3Rate": 1
-      },
-      {
-        "umaKey": "sprite:103601",
-        "umaName": "Air Shakur",
-        "baseName": "Air Shakur",
-        "spritePath": "assets/characters/chara_stand_1036_103601.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 1,
         "top3Rate": 1
       },
       {
@@ -16455,19 +16533,6 @@
         "top3": 1,
         "winRate": 1,
         "top3Rate": 1
-      },
-      {
-        "umaKey": "sprite:103701",
-        "umaName": "Eishin Flash",
-        "baseName": "Eishin Flash",
-        "spritePath": "assets/characters/chara_stand_1037_103701.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:103401",
@@ -16572,32 +16637,6 @@
         "top3": 0,
         "winRate": 0,
         "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101702",
-        "umaName": "Symboli Rudolf",
-        "baseName": "Symboli Rudolf",
-        "spritePath": "assets/characters/chara_stand_1017_101702.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:101502",
-        "umaName": "T.M. Opera O",
-        "baseName": "T.M. Opera O",
-        "spritePath": "assets/characters/chara_stand_1015_101502.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 1
       }
     ],
     "combinedUmas": [
@@ -16965,15 +17004,15 @@
       },
       {
         "umaName": "Oguri Cap",
-        "starts": 12,
+        "starts": 13,
         "wins": 4,
-        "winRate": 0.3333333333333333
+        "winRate": 0.3076923076923077
       },
       {
         "umaName": "Kitasan Black",
-        "starts": 9,
+        "starts": 10,
         "wins": 1,
-        "winRate": 0.1111111111111111
+        "winRate": 0.1
       },
       {
         "umaName": "Maruzensky",
@@ -17096,13 +17135,19 @@
         "winRate": 0
       },
       {
-        "umaName": "Bamboo Memory",
-        "starts": 4,
+        "umaName": "Narita Brian",
+        "starts": 5,
         "wins": 2,
-        "winRate": 0.5
+        "winRate": 0.4
       },
       {
-        "umaName": "Narita Brian",
+        "umaName": "Agnes Tachyon",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Bamboo Memory",
         "starts": 4,
         "wins": 2,
         "winRate": 0.5
@@ -17112,12 +17157,6 @@
         "starts": 4,
         "wins": 1,
         "winRate": 0.25
-      },
-      {
-        "umaName": "Agnes Tachyon",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Kawakami Princess",
@@ -17240,13 +17279,37 @@
         "winRate": 0
       },
       {
+        "umaName": "Winning Ticket",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Air Shakur",
+        "starts": 2,
+        "wins": 1,
+        "winRate": 0.5
+      },
+      {
         "umaName": "Mejiro Dober",
         "starts": 2,
         "wins": 1,
         "winRate": 0.5
       },
       {
+        "umaName": "T.M. Opera O",
+        "starts": 2,
+        "wins": 1,
+        "winRate": 0.5
+      },
+      {
         "umaName": "Biwa Hayahide",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Eishin Flash",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -17300,7 +17363,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Winning Ticket",
+        "umaName": "Symboli Rudolf",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -17310,12 +17373,6 @@
         "starts": 2,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Air Shakur",
-        "starts": 1,
-        "wins": 1,
-        "winRate": 1
       },
       {
         "umaName": "Matikanetannhauser",
@@ -17328,12 +17385,6 @@
         "starts": 1,
         "wins": 1,
         "winRate": 1
-      },
-      {
-        "umaName": "Eishin Flash",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Inari One",
@@ -17379,18 +17430,6 @@
       },
       {
         "umaName": "Super Creek",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Symboli Rudolf",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "T.M. Opera O",
         "starts": 1,
         "wins": 0,
         "winRate": 0
