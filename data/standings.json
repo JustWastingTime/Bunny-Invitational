@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:39:23.073Z",
+  "updatedAt": "2026-07-19T16:44:02.372Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -59,9 +59,9 @@
       "color": "#f1c41f",
       "firsts": 4,
       "seconds": 3,
-      "thirds": 6,
+      "thirds": 7,
       "uniqueBonuses": 1,
-      "points": 36,
+      "points": 37,
       "matchesPlayed": 1,
       "pointsPerMatch": 21
     },
@@ -101,11 +101,11 @@
     "king": {
       "name": "King",
       "color": "#359b62",
-      "firsts": 5,
-      "seconds": 1,
+      "firsts": 6,
+      "seconds": 2,
       "thirds": 6,
       "uniqueBonuses": 0,
-      "points": 34,
+      "points": 42,
       "matchesPlayed": 1,
       "pointsPerMatch": 20
     },
@@ -1076,9 +1076,18 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "king",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "king",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "umamusuko",
+              "slot": 1
+            }
           }
         },
         "mile": {
