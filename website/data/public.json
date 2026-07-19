@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:47:50.530Z",
+  "updatedAt": "2026-07-19T16:51:17.211Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -23,6 +23,18 @@
       "pointsPerMatch": 18.5
     },
     {
+      "id": "king",
+      "name": "King",
+      "color": "#359b62",
+      "firsts": 8,
+      "seconds": 4,
+      "thirds": 6,
+      "uniqueBonuses": 1,
+      "points": 59,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 20
+    },
+    {
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
@@ -33,18 +45,6 @@
       "points": 53,
       "matchesPlayed": 1,
       "pointsPerMatch": 30
-    },
-    {
-      "id": "king",
-      "name": "King",
-      "color": "#359b62",
-      "firsts": 7,
-      "seconds": 3,
-      "thirds": 6,
-      "uniqueBonuses": 1,
-      "points": 51,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 20
     },
     {
       "id": "umazing-hotspring",
@@ -88,9 +88,9 @@
       "color": "#f1c41f",
       "firsts": 4,
       "seconds": 3,
-      "thirds": 8,
+      "thirds": 9,
       "uniqueBonuses": 1,
-      "points": 38,
+      "points": 39,
       "matchesPlayed": 1,
       "pointsPerMatch": 21
     },
@@ -16832,7 +16832,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 0,
-              "gate": null,
+              "gate": 6,
               "trainer": "Toly",
               "umaName": "Rice Shower",
               "umaKey": "sprite:103001",
@@ -16846,7 +16846,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Crownsliver",
               "umaName": "Gold Ship",
               "umaKey": "sprite:100701",
@@ -16860,7 +16860,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 2,
-              "gate": null,
+              "gate": 1,
               "trainer": "Zerreth",
               "umaName": "Daiwa Scarlet",
               "umaKey": "sprite:100901",
@@ -16874,7 +16874,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "eef",
               "umaName": "Matikanefukukitaru",
               "umaKey": "sprite:105601",
@@ -16888,7 +16888,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 8,
               "trainer": "dnh8",
               "umaName": "Mejiro Dober",
               "umaKey": "sprite:105902",
@@ -16902,7 +16902,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "Hines",
               "umaName": "Fine Motion",
               "umaKey": "sprite:102201",
@@ -16913,9 +16913,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "eef",
+              "umaName": "Matikanefukukitaru",
+              "umaKey": "sprite:105601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1056_105601.png",
+              "style": "late",
+              "key": "king:0"
+            },
+            "2": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 2,
+              "gate": 3,
+              "trainer": "Hines",
+              "umaName": "Fine Motion",
+              "umaKey": "sprite:102201",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1022_102201.png",
+              "style": "pace",
+              "key": "king:2"
+            },
+            "3": {
+              "teamId": "umamusuko",
+              "teamName": "Umamusuko",
+              "teamColor": "#f1c41f",
+              "slot": 1,
+              "gate": 2,
+              "trainer": "Crownsliver",
+              "umaName": "Gold Ship",
+              "umaKey": "sprite:100701",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1007_100701.png",
+              "style": "end",
+              "key": "umamusuko:1"
+            }
           }
         },
         "long": {
@@ -16925,7 +16964,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 0,
-              "gate": null,
+              "gate": 1,
               "trainer": "Yozu",
               "umaName": "Mayano Top Gun",
               "umaKey": "sprite:102401",
@@ -16939,7 +16978,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 1,
-              "gate": null,
+              "gate": 6,
               "trainer": "Shin",
               "umaName": "Mejiro McQueen",
               "umaKey": "sprite:101301",
@@ -16953,7 +16992,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 2,
-              "gate": null,
+              "gate": 7,
               "trainer": "loliぺdofin",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -16967,7 +17006,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 3,
               "trainer": "Snrubman",
               "umaName": "Super Creek",
               "umaKey": "sprite:104501",
@@ -16981,7 +17020,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Jaya",
               "umaName": "Nice Nature",
               "umaKey": "sprite:106002",
@@ -16995,7 +17034,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 8,
               "trainer": "qontroL",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -17935,6 +17974,19 @@
         "top3Rate": 0.42857142857142855
       },
       {
+        "umaKey": "sprite:100701",
+        "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
+        "spritePath": "assets/characters/chara_stand_1007_100701.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 7,
+        "wins": 1,
+        "top3": 4,
+        "winRate": 0.14285714285714285,
+        "top3Rate": 0.5714285714285714
+      },
+      {
         "umaKey": "sprite:100601",
         "umaName": "Oguri Cap",
         "baseName": "Oguri Cap",
@@ -17946,6 +17998,19 @@
         "top3": 5,
         "winRate": 0.14285714285714285,
         "top3Rate": 0.7142857142857143
+      },
+      {
+        "umaKey": "sprite:100901",
+        "umaName": "Daiwa Scarlet",
+        "baseName": "Daiwa Scarlet",
+        "spritePath": "assets/characters/chara_stand_1009_100901.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 7,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.14285714285714285
       },
       {
         "umaKey": "sprite:107101",
@@ -17961,36 +18026,10 @@
         "top3Rate": 0.14285714285714285
       },
       {
-        "umaKey": "sprite:100701",
-        "umaName": "Gold Ship",
-        "baseName": "Gold Ship",
-        "spritePath": "assets/characters/chara_stand_1007_100701.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 6,
-        "wins": 1,
-        "top3": 3,
-        "winRate": 0.16666666666666666,
-        "top3Rate": 0.5
-      },
-      {
         "umaKey": "sprite:103801",
         "umaName": "Curren Chan",
         "baseName": "Curren Chan",
         "spritePath": "assets/characters/chara_stand_1038_103801.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 6,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 0.16666666666666666
-      },
-      {
-        "umaKey": "sprite:100901",
-        "umaName": "Daiwa Scarlet",
-        "baseName": "Daiwa Scarlet",
-        "spritePath": "assets/characters/chara_stand_1009_100901.png",
         "population": 3,
         "isUnique": false,
         "starts": 6,
@@ -18078,10 +18117,36 @@
         "top3Rate": 0.8
       },
       {
+        "umaKey": "sprite:102201",
+        "umaName": "Fine Motion",
+        "baseName": "Fine Motion",
+        "spritePath": "assets/characters/chara_stand_1022_102201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 1,
+        "top3": 2,
+        "winRate": 0.2,
+        "top3Rate": 0.4
+      },
+      {
         "umaKey": "sprite:100502",
         "umaName": "Fuji Kiseki",
         "baseName": "Fuji Kiseki",
         "spritePath": "assets/characters/chara_stand_1005_100502.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 1,
+        "top3": 4,
+        "winRate": 0.2,
+        "top3Rate": 0.8
+      },
+      {
+        "umaKey": "sprite:105601",
+        "umaName": "Matikanefukukitaru",
+        "baseName": "Matikanefukukitaru",
+        "spritePath": "assets/characters/chara_stand_1056_105601.png",
         "population": 2,
         "isUnique": false,
         "starts": 5,
@@ -18130,6 +18195,32 @@
         "top3Rate": 0.8
       },
       {
+        "umaKey": "sprite:105902",
+        "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
+        "spritePath": "assets/characters/chara_stand_1059_105902.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:103001",
+        "umaName": "Rice Shower",
+        "baseName": "Rice Shower",
+        "spritePath": "assets/characters/chara_stand_1030_103001.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:100201",
         "umaName": "Silence Suzuka",
         "baseName": "Silence Suzuka",
@@ -18154,19 +18245,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.4
-      },
-      {
-        "umaKey": "sprite:102201",
-        "umaName": "Fine Motion",
-        "baseName": "Fine Motion",
-        "spritePath": "assets/characters/chara_stand_1022_102201.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.25,
-        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:100501",
@@ -18260,32 +18338,6 @@
         "top3Rate": 0.5
       },
       {
-        "umaKey": "sprite:105601",
-        "umaName": "Matikanefukukitaru",
-        "baseName": "Matikanefukukitaru",
-        "spritePath": "assets/characters/chara_stand_1056_105601.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
-        "top3Rate": 0.75
-      },
-      {
-        "umaKey": "sprite:105902",
-        "umaName": "Mejiro Dober",
-        "baseName": "Mejiro Dober",
-        "spritePath": "assets/characters/chara_stand_1059_105902.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:105001",
         "umaName": "Narita Taishin",
         "baseName": "Narita Taishin",
@@ -18297,19 +18349,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.5
-      },
-      {
-        "umaKey": "sprite:103001",
-        "umaName": "Rice Shower",
-        "baseName": "Rice Shower",
-        "spritePath": "assets/characters/chara_stand_1030_103001.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:106101",
@@ -19116,10 +19155,22 @@
         "winRate": 0.2857142857142857
       },
       {
+        "umaName": "Gold Ship",
+        "starts": 7,
+        "wins": 1,
+        "winRate": 0.14285714285714285
+      },
+      {
         "umaName": "Oguri Cap",
         "starts": 7,
         "wins": 1,
         "winRate": 0.14285714285714285
+      },
+      {
+        "umaName": "Daiwa Scarlet",
+        "starts": 7,
+        "wins": 0,
+        "winRate": 0
       },
       {
         "umaName": "Mejiro Ardan",
@@ -19128,19 +19179,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Gold Ship",
-        "starts": 6,
-        "wins": 1,
-        "winRate": 0.16666666666666666
-      },
-      {
         "umaName": "Curren Chan",
-        "starts": 6,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Daiwa Scarlet",
         "starts": 6,
         "wins": 0,
         "winRate": 0
@@ -19182,7 +19221,19 @@
         "winRate": 0.6
       },
       {
+        "umaName": "Fine Motion",
+        "starts": 5,
+        "wins": 1,
+        "winRate": 0.2
+      },
+      {
         "umaName": "Fuji Kiseki",
+        "starts": 5,
+        "wins": 1,
+        "winRate": 0.2
+      },
+      {
+        "umaName": "Matikanefukukitaru",
         "starts": 5,
         "wins": 1,
         "winRate": 0.2
@@ -19206,6 +19257,18 @@
         "winRate": 0
       },
       {
+        "umaName": "Mejiro Dober",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Rice Shower",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Silence Suzuka",
         "starts": 5,
         "wins": 0,
@@ -19216,12 +19279,6 @@
         "starts": 5,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Fine Motion",
-        "starts": 4,
-        "wins": 1,
-        "winRate": 0.25
       },
       {
         "umaName": "Fuji Kiseki",
@@ -19266,25 +19323,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Matikanefukukitaru",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Mejiro Dober",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Narita Taishin",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Rice Shower",
         "starts": 4,
         "wins": 0,
         "winRate": 0
