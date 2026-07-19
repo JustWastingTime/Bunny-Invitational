@@ -8,7 +8,7 @@
     "king",
     ""
   ],
-  "activeCategory": "long",
+  "activeCategory": "dirt",
   "races": {
     "sprint": [
       {
@@ -202,32 +202,32 @@
       {
         "teamId": "umamusuko",
         "slot": 0,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "umamusuko",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "umamusuko",
         "slot": 2,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "",
