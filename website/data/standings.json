@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:53:59.865Z",
+  "updatedAt": "2026-07-19T15:59:02.059Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -25,10 +25,10 @@
       "name": "BUNS",
       "color": "#e91e45",
       "firsts": 3,
-      "seconds": 0,
+      "seconds": 1,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 19,
+      "points": 22,
       "matchesPlayed": 1,
       "pointsPerMatch": 19
     },
@@ -57,11 +57,11 @@
     "umamusuko": {
       "name": "Umamusuko",
       "color": "#f1c41f",
-      "firsts": 2,
+      "firsts": 3,
       "seconds": 3,
-      "thirds": 2,
+      "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 21,
+      "points": 27,
       "matchesPlayed": 1,
       "pointsPerMatch": 21
     },
@@ -892,9 +892,18 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umamusuko",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "dust-bunny",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "umamusuko",
+              "slot": 2
+            }
           }
         },
         "mile": {
@@ -934,7 +943,7 @@
       "teams": [
         "king",
         "kita-trauma",
-        ""
+        "cabal"
       ],
       "raceResults": {
         "sprint": {
