@@ -6,7 +6,7 @@
   "teams": [
     "dust-bunny",
     "kita-trauma",
-    ""
+    "king"
   ],
   "activeCategory": "sprint",
   "races": {
@@ -42,17 +42,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       }
@@ -89,17 +89,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       }
@@ -136,17 +136,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       }
@@ -183,17 +183,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       }
@@ -230,17 +230,17 @@
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 0,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 1,
         "gate": null
       },
       {
-        "teamId": "",
+        "teamId": "king",
         "slot": 2,
         "gate": null
       }

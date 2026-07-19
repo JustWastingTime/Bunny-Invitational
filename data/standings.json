@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:56:36.104Z",
+  "updatedAt": "2026-07-19T16:59:29.514Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -57,11 +57,11 @@
     "umamusuko": {
       "name": "Umamusuko",
       "color": "#f1c41f",
-      "firsts": 5,
+      "firsts": 6,
       "seconds": 4,
       "thirds": 10,
       "uniqueBonuses": 2,
-      "points": 49,
+      "points": 54,
       "matchesPlayed": 1,
       "pointsPerMatch": 21
     },
@@ -102,10 +102,10 @@
       "name": "King",
       "color": "#359b62",
       "firsts": 8,
-      "seconds": 4,
-      "thirds": 6,
+      "seconds": 5,
+      "thirds": 7,
       "uniqueBonuses": 1,
-      "points": 59,
+      "points": 63,
       "matchesPlayed": 1,
       "pointsPerMatch": 20
     },
@@ -1140,9 +1140,18 @@
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umamusuko",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "king",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "king",
+              "slot": 1
+            }
           }
         }
       }
@@ -1154,7 +1163,7 @@
       "teams": [
         "dust-bunny",
         "kita-trauma",
-        ""
+        "king"
       ],
       "raceResults": {
         "sprint": {
