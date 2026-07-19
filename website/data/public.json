@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T17:22:51.379Z",
+  "updatedAt": "2026-07-19T17:28:01.142Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -14,13 +14,13 @@
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
-      "firsts": 6,
-      "seconds": 9,
-      "thirds": 4,
+      "firsts": 7,
+      "seconds": 10,
+      "thirds": 5,
       "uniqueBonuses": 0,
-      "points": 61,
+      "points": 70,
       "matchesPlayed": 3,
-      "pointsPerMatch": 20.33
+      "pointsPerMatch": 23.33
     },
     {
       "id": "king",
@@ -17822,7 +17822,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 0,
-              "gate": null,
+              "gate": 9,
               "trainer": "Legi",
               "umaName": "Special Week",
               "umaKey": "sprite:100101",
@@ -17836,7 +17836,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Hi! Im Aru!@BUNS",
               "umaName": "Narita Taishin",
               "umaKey": "sprite:105001",
@@ -17850,7 +17850,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 2,
-              "gate": null,
+              "gate": 5,
               "trainer": "KaiAiya@BUNS",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -17864,7 +17864,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 6,
               "trainer": "Sharky",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -17878,7 +17878,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "evo",
               "umaName": "Gold Ship",
               "umaKey": "sprite:100701",
@@ -17892,7 +17892,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 7,
               "trainer": "Izaya",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -17906,7 +17906,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 8,
               "trainer": "Snrubman",
               "umaName": "Super Creek",
               "umaKey": "sprite:104501",
@@ -17920,7 +17920,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 1,
               "trainer": "Jaya",
               "umaName": "Nice Nature",
               "umaKey": "sprite:106002",
@@ -17934,7 +17934,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "qontroL",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -17945,9 +17945,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 2,
+              "gate": 7,
+              "trainer": "Izaya",
+              "umaName": "Tamamo Cross",
+              "umaKey": "sprite:102101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1021_102101.png",
+              "style": "end",
+              "key": "kita-trauma:2"
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": 4,
+              "trainer": "evo",
+              "umaName": "Gold Ship",
+              "umaKey": "sprite:100701",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1007_100701.png",
+              "style": "end",
+              "key": "kita-trauma:1"
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 0,
+              "gate": 6,
+              "trainer": "Sharky",
+              "umaName": "Kitasan Black",
+              "umaKey": "sprite:106801",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
+              "style": "front",
+              "key": "kita-trauma:0"
+            }
           }
         },
         "dirt": {
@@ -18490,6 +18529,19 @@
         "top3Rate": 0.25
       },
       {
+        "umaKey": "sprite:106801",
+        "umaName": "Kitasan Black",
+        "baseName": "Kitasan Black",
+        "spritePath": "assets/characters/chara_stand_1068_106801.png",
+        "population": 8,
+        "isUnique": false,
+        "starts": 22,
+        "wins": 3,
+        "top3": 10,
+        "winRate": 0.13636363636363635,
+        "top3Rate": 0.45454545454545453
+      },
+      {
         "umaKey": "sprite:100602",
         "umaName": "Oguri Cap",
         "baseName": "Oguri Cap",
@@ -18501,19 +18553,6 @@
         "top3": 12,
         "winRate": 0.2857142857142857,
         "top3Rate": 0.5714285714285714
-      },
-      {
-        "umaKey": "sprite:106801",
-        "umaName": "Kitasan Black",
-        "baseName": "Kitasan Black",
-        "spritePath": "assets/characters/chara_stand_1068_106801.png",
-        "population": 8,
-        "isUnique": false,
-        "starts": 19,
-        "wins": 3,
-        "top3": 9,
-        "winRate": 0.15789473684210525,
-        "top3Rate": 0.47368421052631576
       },
       {
         "umaKey": "sprite:100402",
@@ -18535,11 +18574,11 @@
         "spritePath": "assets/characters/chara_stand_1021_102101.png",
         "population": 6,
         "isUnique": false,
-        "starts": 16,
-        "wins": 1,
-        "top3": 4,
-        "winRate": 0.0625,
-        "top3Rate": 0.25
+        "starts": 17,
+        "wins": 2,
+        "top3": 5,
+        "winRate": 0.11764705882352941,
+        "top3Rate": 0.29411764705882354
       },
       {
         "umaKey": "sprite:105202",
@@ -18724,6 +18763,19 @@
         "top3Rate": 0.25
       },
       {
+        "umaKey": "sprite:100701",
+        "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
+        "spritePath": "assets/characters/chara_stand_1007_100701.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 8,
+        "wins": 1,
+        "top3": 5,
+        "winRate": 0.125,
+        "top3Rate": 0.625
+      },
+      {
         "umaKey": "sprite:100901",
         "umaName": "Daiwa Scarlet",
         "baseName": "Daiwa Scarlet",
@@ -18748,19 +18800,6 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.125
-      },
-      {
-        "umaKey": "sprite:100701",
-        "umaName": "Gold Ship",
-        "baseName": "Gold Ship",
-        "spritePath": "assets/characters/chara_stand_1007_100701.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 7,
-        "wins": 1,
-        "top3": 4,
-        "winRate": 0.14285714285714285,
-        "top3Rate": 0.5714285714285714
       },
       {
         "umaKey": "sprite:103801",
@@ -18945,6 +18984,19 @@
         "top3Rate": 0.16666666666666666
       },
       {
+        "umaKey": "sprite:100101",
+        "umaName": "Special Week",
+        "baseName": "Special Week",
+        "spritePath": "assets/characters/chara_stand_1001_100101.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.2,
+        "top3Rate": 0.2
+      },
+      {
         "umaKey": "sprite:103201",
         "umaName": "Agnes Tachyon",
         "baseName": "Agnes Tachyon",
@@ -18982,6 +19034,19 @@
         "top3": 4,
         "winRate": 0,
         "top3Rate": 0.8
+      },
+      {
+        "umaKey": "sprite:105001",
+        "umaName": "Narita Taishin",
+        "baseName": "Narita Taishin",
+        "spritePath": "assets/characters/chara_stand_1050_105001.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.4
       },
       {
         "umaKey": "sprite:103001",
@@ -19036,19 +19101,6 @@
         "top3Rate": 0.25
       },
       {
-        "umaKey": "sprite:100101",
-        "umaName": "Special Week",
-        "baseName": "Special Week",
-        "spritePath": "assets/characters/chara_stand_1001_100101.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.25,
-        "top3Rate": 0.25
-      },
-      {
         "umaKey": "sprite:102801",
         "umaName": "Hishi Akebono",
         "baseName": "Hishi Akebono",
@@ -19066,19 +19118,6 @@
         "umaName": "Kawakami Princess",
         "baseName": "Kawakami Princess",
         "spritePath": "assets/characters/chara_stand_1039_103901.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.5
-      },
-      {
-        "umaKey": "sprite:105001",
-        "umaName": "Narita Taishin",
-        "baseName": "Narita Taishin",
-        "spritePath": "assets/characters/chara_stand_1050_105001.png",
         "population": 2,
         "isUnique": false,
         "starts": 4,
@@ -19112,6 +19151,32 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.25
+      },
+      {
+        "umaKey": "sprite:106002",
+        "umaName": "Nice Nature",
+        "baseName": "Nice Nature",
+        "spritePath": "assets/characters/chara_stand_1060_106002.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 4,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:104501",
+        "umaName": "Super Creek",
+        "baseName": "Super Creek",
+        "spritePath": "assets/characters/chara_stand_1045_104501.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 4,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
       },
       {
         "umaKey": "sprite:105901",
@@ -19190,32 +19255,6 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.3333333333333333
-      },
-      {
-        "umaKey": "sprite:106002",
-        "umaName": "Nice Nature",
-        "baseName": "Nice Nature",
-        "spritePath": "assets/characters/chara_stand_1060_106002.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 3,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:104501",
-        "umaName": "Super Creek",
-        "baseName": "Super Creek",
-        "spritePath": "assets/characters/chara_stand_1045_104501.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 3,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:101702",
@@ -19790,16 +19829,16 @@
         "winRate": 0.041666666666666664
       },
       {
+        "umaName": "Kitasan Black",
+        "starts": 22,
+        "wins": 3,
+        "winRate": 0.13636363636363635
+      },
+      {
         "umaName": "Oguri Cap",
         "starts": 21,
         "wins": 6,
         "winRate": 0.2857142857142857
-      },
-      {
-        "umaName": "Kitasan Black",
-        "starts": 19,
-        "wins": 3,
-        "winRate": 0.15789473684210525
       },
       {
         "umaName": "Maruzensky",
@@ -19809,9 +19848,9 @@
       },
       {
         "umaName": "Tamamo Cross",
-        "starts": 16,
-        "wins": 1,
-        "winRate": 0.0625
+        "starts": 17,
+        "wins": 2,
+        "winRate": 0.11764705882352941
       },
       {
         "umaName": "Haru Urara",
@@ -19898,6 +19937,12 @@
         "winRate": 0.125
       },
       {
+        "umaName": "Gold Ship",
+        "starts": 8,
+        "wins": 1,
+        "winRate": 0.125
+      },
+      {
         "umaName": "Daiwa Scarlet",
         "starts": 8,
         "wins": 0,
@@ -19908,12 +19953,6 @@
         "starts": 8,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Gold Ship",
-        "starts": 7,
-        "wins": 1,
-        "winRate": 0.14285714285714285
       },
       {
         "umaName": "Curren Chan",
@@ -20000,6 +20039,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Special Week",
+        "starts": 5,
+        "wins": 1,
+        "winRate": 0.2
+      },
+      {
         "umaName": "Agnes Tachyon",
         "starts": 5,
         "wins": 0,
@@ -20013,6 +20058,12 @@
       },
       {
         "umaName": "Manhattan Cafe",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Narita Taishin",
         "starts": 5,
         "wins": 0,
         "winRate": 0
@@ -20042,12 +20093,6 @@
         "winRate": 0.25
       },
       {
-        "umaName": "Special Week",
-        "starts": 4,
-        "wins": 1,
-        "winRate": 0.25
-      },
-      {
         "umaName": "Hishi Akebono",
         "starts": 4,
         "wins": 0,
@@ -20060,12 +20105,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Narita Taishin",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "King Halo",
         "starts": 4,
         "wins": 0,
@@ -20073,6 +20112,18 @@
       },
       {
         "umaName": "Mejiro Ryan",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Nice Nature",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Super Creek",
         "starts": 4,
         "wins": 0,
         "winRate": 0
@@ -20109,18 +20160,6 @@
       },
       {
         "umaName": "Nice Nature",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Nice Nature",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Super Creek",
         "starts": 3,
         "wins": 0,
         "winRate": 0
