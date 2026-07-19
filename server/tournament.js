@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   CATEGORIES,
+  ALL_RACE_KEYS,
   entryKey,
   loadTeam,
   loadMatch,
@@ -10,6 +11,9 @@ import {
   resolveRacer,
   getTeamMember,
   umaIdentityKey,
+  raceKeysForMatch,
+  isValidRaceKey,
+  raceLabel,
 } from "./team-resolver.js";
 import { publishWebsiteSprites, publishWebsiteTeams, publishWebsiteRunstyles, publishWebsiteSkills, buildWebsiteTeams } from "./website-publish.js";
 import { buildSpriteLookup, resolveSpritePath, listCharacterCatalog } from "./sprite-resolver.js";
@@ -98,8 +102,13 @@ function emptyPlacements() {
   return { "1": null, "2": null, "3": null };
 }
 
-function emptyRaceResults() {
-  return Object.fromEntries(CATEGORIES.map((cat) => [cat, { placements: emptyPlacements() }]));
+function emptyRaceResults(raceKeys = CATEGORIES) {
+  return Object.fromEntries(raceKeys.map((cat) => [cat, { placements: emptyPlacements() }]));
+}
+
+function raceKeysFromStandingsMatch(matchRow) {
+  const keys = Object.keys(matchRow?.raceResults ?? {});
+  return keys.length ? ALL_RACE_KEYS.filter((key) => keys.includes(key)) : [...CATEGORIES];
 }
 
 function migrateRaceResult(raceResult) {
@@ -456,12 +465,15 @@ function buildTournamentStats(root, matches, uniqueKeys, uniqueUmas, standings) 
   };
 
   for (const [matchId, matchStandings] of Object.entries(standings?.matches ?? {})) {
-    for (const category of CATEGORIES) {
+    const matchPublic = matches.find((row) => row.id === matchId);
+    const raceKeys = matchPublic?.categories
+      ? Object.keys(matchPublic.categories)
+      : raceKeysFromStandingsMatch(matchStandings);
+    for (const category of raceKeys) {
       const placements = matchStandings?.raceResults?.[category]?.placements ?? emptyPlacements();
       const ran = Boolean(placements["1"] || placements["2"] || placements["3"]);
       if (!ran) continue;
 
-      const matchPublic = matches.find((row) => row.id === matchId);
       const fieldRacers = matchPublic?.categories?.[category]?.racers ?? [];
       if (fieldRacers.length) {
         for (const racer of fieldRacers) bumpRace(racer.umaKey, "starts");
@@ -714,7 +726,7 @@ function buildWebsiteData(root, standings) {
     const raceResults = standings.matches?.[matchId]?.raceResults ?? {};
 
     const categories = Object.fromEntries(
-      CATEGORIES.map((category) => {
+      raceKeysForMatch(match).map((category) => {
         const racers = resolveMatchRacers(root, matchId, category).map((racer) => ({
           teamId: racer.teamId,
           teamName: racer.teamName,
@@ -762,7 +774,7 @@ function buildWebsiteData(root, standings) {
           })
         );
 
-        return [category, { racers, placements: enrichedPlacements }];
+        return [category, { label: raceLabel(category), racers, placements: enrichedPlacements }];
       })
     );
 
@@ -835,6 +847,7 @@ export function ensureStandingsForMatch(root, matchId) {
 
   const match = JSON.parse(fs.readFileSync(matchPath, "utf8"));
   let dirty = false;
+  const raceKeys = raceKeysForMatch(match);
 
   if (!standings.matches[matchId]) {
     standings.matches[matchId] = {
@@ -842,7 +855,7 @@ export function ensureStandingsForMatch(root, matchId) {
       matchNumber: match.matchNumber,
       round: match.round,
       teams: match.teams,
-      raceResults: emptyRaceResults(),
+      raceResults: emptyRaceResults(raceKeys),
     };
     dirty = true;
   } else {
@@ -858,6 +871,17 @@ export function ensureStandingsForMatch(root, matchId) {
       row.round = match.round;
       row.teams = match.teams;
       dirty = true;
+    }
+    if (!row.raceResults) {
+      row.raceResults = emptyRaceResults(raceKeys);
+      dirty = true;
+    } else {
+      for (const cat of raceKeys) {
+        if (!row.raceResults[cat]) {
+          row.raceResults[cat] = { placements: emptyPlacements() };
+          dirty = true;
+        }
+      }
     }
   }
 
@@ -888,7 +912,7 @@ function ensureTeamRows(root, standings, teamIds) {
 }
 
 function matchHasScoredRace(match) {
-  for (const category of CATEGORIES) {
+  for (const category of raceKeysFromStandingsMatch(match)) {
     const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
     if (placements["1"] || placements["2"] || placements["3"]) return true;
   }
@@ -908,7 +932,7 @@ function sortStandingsRows(rows) {
 function recalculateStandings(root, standings) {
   for (const match of Object.values(standings.matches ?? {})) {
     ensureTeamRows(root, standings, match.teams);
-    for (const category of CATEGORIES) {
+    for (const category of raceKeysFromStandingsMatch(match)) {
       const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
       for (const place of ["1", "2", "3"]) {
         const pick = placements[place];
@@ -941,7 +965,7 @@ function recalculateStandings(root, standings) {
       }
     }
 
-    for (const category of CATEGORIES) {
+    for (const category of raceKeysFromStandingsMatch(match)) {
       const placements = match.raceResults?.[category]?.placements ?? emptyPlacements();
       for (const place of ["1", "2", "3"]) {
         const pick = placements[place];
@@ -971,7 +995,7 @@ function recalculateStandings(root, standings) {
 }
 
 export function recordPlacement(root, matchId, category, place, teamId, slot) {
-  if (!CATEGORIES.includes(category)) throw new Error(`Invalid category: ${category}`);
+  if (!isValidRaceKey(category)) throw new Error(`Invalid category: ${category}`);
   if (!["1", "2", "3"].includes(String(place))) throw new Error(`Place must be 1, 2, or 3`);
 
   validateRacer(root, matchId, category, teamId, slot);

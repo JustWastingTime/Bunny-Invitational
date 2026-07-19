@@ -2,7 +2,7 @@ import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { resolveOverlayTeams } from "./team-resolver.js";
+import { resolveOverlayTeams, isValidRaceKey, ALL_RACE_KEYS } from "./team-resolver.js";
 import {
   buildDashboardState,
   setActiveMatch,
@@ -29,7 +29,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const PORT = Number(process.env.PORT) || 3456;
 const OVERLAY_STATE_REL = "data/overlay-state.json";
-const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
 
 function refreshWebsitePublic() {
   try {
@@ -129,8 +128,8 @@ function readRequestBody(req) {
 }
 
 function setActiveCategory(category) {
-  if (!CATEGORIES.includes(category)) {
-    throw new Error(`Invalid category "${category}". Expected one of: ${CATEGORIES.join(", ")}`);
+  if (!isValidRaceKey(category)) {
+    throw new Error(`Invalid category "${category}". Expected one of: ${ALL_RACE_KEYS.join(", ")}`);
   }
   const config = readJson("data/config.json");
   const matchRel = `data/matches/${config.activeMatch}.json`;

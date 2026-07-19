@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:59:29.514Z",
+  "updatedAt": "2026-07-19T17:07:32.932Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -11,42 +11,6 @@
   },
   "standings": [
     {
-      "id": "cabal",
-      "name": "Cabal Agency",
-      "color": "#c0fa3b",
-      "firsts": 8,
-      "seconds": 7,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 65,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 18.5
-    },
-    {
-      "id": "king",
-      "name": "King",
-      "color": "#359b62",
-      "firsts": 8,
-      "seconds": 5,
-      "thirds": 7,
-      "uniqueBonuses": 1,
-      "points": 63,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 20
-    },
-    {
-      "id": "umamusuko",
-      "name": "Umamusuko",
-      "color": "#f1c41f",
-      "firsts": 6,
-      "seconds": 4,
-      "thirds": 10,
-      "uniqueBonuses": 2,
-      "points": 54,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 21
-    },
-    {
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
@@ -55,20 +19,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 53,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 30
-    },
-    {
-      "id": "umazing-hotspring",
-      "name": "Umazing Hotsprings",
-      "color": "#c1e1f1",
-      "firsts": 5,
-      "seconds": 5,
-      "thirds": 4,
-      "uniqueBonuses": 4,
-      "points": 48,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
+      "matchesPlayed": 2,
+      "pointsPerMatch": 26.5
     },
     {
       "id": "dust-bunny",
@@ -79,20 +31,56 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 46,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
+      "matchesPlayed": 2,
+      "pointsPerMatch": 23
     },
     {
-      "id": "umalliance",
-      "name": "UMAlliance",
-      "color": "#2c49c9",
-      "firsts": 4,
+      "id": "king",
+      "name": "King",
+      "color": "#359b62",
+      "firsts": 8,
+      "seconds": 5,
+      "thirds": 7,
+      "uniqueBonuses": 1,
+      "points": 63,
+      "matchesPlayed": 3,
+      "pointsPerMatch": 21
+    },
+    {
+      "id": "umamusuko",
+      "name": "Umamusuko",
+      "color": "#f1c41f",
+      "firsts": 6,
+      "seconds": 4,
+      "thirds": 10,
+      "uniqueBonuses": 2,
+      "points": 54,
+      "matchesPlayed": 3,
+      "pointsPerMatch": 18
+    },
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 8,
       "seconds": 7,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 45,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 16.5
+      "points": 65,
+      "matchesPlayed": 4,
+      "pointsPerMatch": 16.25
+    },
+    {
+      "id": "umazing-hotspring",
+      "name": "Umazing Hotsprings",
+      "color": "#c1e1f1",
+      "firsts": 5,
+      "seconds": 5,
+      "thirds": 4,
+      "uniqueBonuses": 4,
+      "points": 48,
+      "matchesPlayed": 3,
+      "pointsPerMatch": 16
     },
     {
       "id": "ritto-dorm-dropouts",
@@ -105,6 +93,18 @@
       "points": 31,
       "matchesPlayed": 2,
       "pointsPerMatch": 15.5
+    },
+    {
+      "id": "umalliance",
+      "name": "UMAlliance",
+      "color": "#2c49c9",
+      "firsts": 4,
+      "seconds": 7,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 45,
+      "matchesPlayed": 3,
+      "pointsPerMatch": 15
     },
     {
       "id": "uma-love",
@@ -127,8 +127,8 @@
       "thirds": 4,
       "uniqueBonuses": 1,
       "points": 27,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 16
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13.5
     },
     {
       "id": "rilliance",
@@ -139,8 +139,8 @@
       "thirds": 3,
       "uniqueBonuses": 2,
       "points": 26,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 10
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13
     },
     {
       "id": "falena",
@@ -151,8 +151,8 @@
       "thirds": 4,
       "uniqueBonuses": 3,
       "points": 25,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 14
+      "matchesPlayed": 2,
+      "pointsPerMatch": 12.5
     }
   ],
   "teams": [
@@ -8152,6 +8152,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -8326,6 +8327,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -8500,6 +8502,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -8674,6 +8677,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -8848,6 +8852,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -9035,6 +9040,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "falena",
@@ -9209,6 +9215,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "falena",
@@ -9383,6 +9390,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "falena",
@@ -9557,6 +9565,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "falena",
@@ -9731,6 +9740,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "falena",
@@ -9918,6 +9928,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -10092,6 +10103,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -10266,6 +10278,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -10440,6 +10453,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -10614,6 +10628,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -10801,6 +10816,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "rilliance",
@@ -10975,6 +10991,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "rilliance",
@@ -11149,6 +11166,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "rilliance",
@@ -11323,6 +11341,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "rilliance",
@@ -11497,6 +11516,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "rilliance",
@@ -11684,6 +11704,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -11816,6 +11837,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -11948,6 +11970,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -12080,6 +12103,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -12212,6 +12236,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "ritto-dorm-dropouts",
@@ -12357,6 +12382,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "umalliance",
@@ -12489,6 +12515,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "umalliance",
@@ -12621,6 +12648,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "umalliance",
@@ -12753,6 +12781,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "umalliance",
@@ -12885,6 +12914,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "umalliance",
@@ -13030,6 +13060,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "umazing-hotspring",
@@ -13204,6 +13235,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "umazing-hotspring",
@@ -13378,6 +13410,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "umazing-hotspring",
@@ -13552,6 +13585,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "umazing-hotspring",
@@ -13726,6 +13760,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "umazing-hotspring",
@@ -13913,6 +13948,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -14087,6 +14123,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -14261,6 +14298,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -14435,6 +14473,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -14609,6 +14648,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "the-shadow-clones",
@@ -14796,6 +14836,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -14970,6 +15011,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -15144,6 +15186,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -15318,6 +15361,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -15492,6 +15536,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -15679,6 +15724,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "king",
@@ -15853,6 +15899,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "king",
@@ -16027,6 +16074,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "king",
@@ -16201,6 +16249,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "king",
@@ -16375,6 +16424,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "king",
@@ -16562,6 +16612,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "umamusuko",
@@ -16694,6 +16745,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "umamusuko",
@@ -16826,6 +16878,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "umamusuko",
@@ -16958,6 +17011,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "umamusuko",
@@ -17090,6 +17144,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "umamusuko",
@@ -17235,6 +17290,7 @@
       ],
       "categories": {
         "sprint": {
+          "label": "Sprint",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -17370,6 +17426,7 @@
           }
         },
         "mile": {
+          "label": "Mile",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -17505,6 +17562,7 @@
           }
         },
         "medium": {
+          "label": "Medium",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -17640,6 +17698,7 @@
           }
         },
         "long": {
+          "label": "Long",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -17775,6 +17834,7 @@
           }
         },
         "dirt": {
+          "label": "Dirt",
           "racers": [
             {
               "teamId": "dust-bunny",
@@ -17900,6 +17960,278 @@
               "isUnique": false,
               "spritePath": "assets/characters/chara_stand_1053_105301.png",
               "style": "late",
+              "key": "king:2"
+            }
+          ],
+          "placements": {
+            "1": null,
+            "2": null,
+            "3": null
+          }
+        },
+        "dirt2": {
+          "label": "Dirt 2",
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Vivi@BUNS",
+              "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101001",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1010_101001.png",
+              "style": "pace",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Plnk@BUNS",
+              "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Buttered@BUNS",
+              "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "end",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Nutrition",
+              "umaName": "Haru Urara",
+              "umaKey": "sprite:105202",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1052_105202.png",
+              "style": "late",
+              "key": "kita-trauma:0"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Yasue",
+              "umaName": "Taiki Shuttle",
+              "umaKey": "sprite:101002",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1010_101002.png",
+              "style": "pace",
+              "key": "kita-trauma:1"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 2,
+              "gate": null,
+              "trainer": "luigo_14",
+              "umaName": "King Halo",
+              "umaKey": "sprite:106102",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1061_106102.png",
+              "style": "late",
+              "key": "kita-trauma:2"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Button Masher",
+              "umaName": "Smart Falcon",
+              "umaKey": "sprite:104601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1046_104601.png",
+              "style": "front",
+              "key": "king:0"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Jameson",
+              "umaName": "Fuji Kiseki",
+              "umaKey": "sprite:100502",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1005_100502.png",
+              "style": "pace",
+              "key": "king:1"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Nub Nubson",
+              "umaName": "Bamboo Memory",
+              "umaKey": "sprite:105301",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1053_105301.png",
+              "style": "late",
+              "key": "king:2"
+            }
+          ],
+          "placements": {
+            "1": null,
+            "2": null,
+            "3": null
+          }
+        },
+        "medium2": {
+          "label": "Medium 2",
+          "racers": [
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 0,
+              "gate": null,
+              "trainer": "Crabpeople",
+              "umaName": "Gold Ship",
+              "umaKey": "sprite:100702",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1007_100702.png",
+              "style": "end",
+              "key": "dust-bunny:0"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": null,
+              "trainer": "Hans Pferdemann",
+              "umaName": "Daiwa Scarlet",
+              "umaKey": "sprite:100901",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1009_100901.png",
+              "style": "front",
+              "key": "dust-bunny:1"
+            },
+            {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Minh@BUNS",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "dust-bunny:2"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 0,
+              "gate": null,
+              "trainer": "ThatGuyMark",
+              "umaName": "Mejiro Ardan",
+              "umaKey": "sprite:107101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1071_107101.png",
+              "style": "pace",
+              "key": "kita-trauma:0"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": null,
+              "trainer": "North",
+              "umaName": "Mihono Bourbon",
+              "umaKey": "sprite:102602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1026_102602.png",
+              "style": "front",
+              "key": "kita-trauma:1"
+            },
+            {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 2,
+              "gate": null,
+              "trainer": "mollusc",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "kita-trauma:2"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 0,
+              "gate": null,
+              "trainer": "eef",
+              "umaName": "Matikanefukukitaru",
+              "umaKey": "sprite:105601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1056_105601.png",
+              "style": "late",
+              "key": "king:0"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 1,
+              "gate": null,
+              "trainer": "dnh8",
+              "umaName": "Mejiro Dober",
+              "umaKey": "sprite:105902",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1059_105902.png",
+              "style": "late",
+              "key": "king:1"
+            },
+            {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 2,
+              "gate": null,
+              "trainer": "Hines",
+              "umaName": "Fine Motion",
+              "umaKey": "sprite:102201",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1022_102201.png",
+              "style": "pace",
               "key": "king:2"
             }
           ],

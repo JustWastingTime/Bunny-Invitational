@@ -122,7 +122,21 @@ function renderRacerCard(racer, podium) {
   `;
 }
 
-const CATEGORY_ORDER = ["sprint", "mile", "medium", "long", "dirt"];
+const CATEGORY_ORDER = ["sprint", "mile", "medium", "long", "dirt", "dirt2", "medium2"];
+
+const CATEGORY_LABELS = {
+  sprint: "Sprint",
+  mile: "Mile",
+  medium: "Medium",
+  long: "Long",
+  dirt: "Dirt",
+  dirt2: "Dirt 2",
+  medium2: "Medium 2",
+};
+
+function categoryLabel(key, race) {
+  return race?.label || CATEGORY_LABELS[key] || key;
+}
 
 function orderedCategoryEntries(categories) {
   const rows = CATEGORY_ORDER.filter((key) => categories?.[key]).map((key) => [key, categories[key]]);
@@ -298,7 +312,7 @@ function renderMatchDetail(matchId) {
           const cards = racers.map((racer) => renderRacerCard(racer, podium)).join("");
           return `
             <div class="team-col-race">
-              <div class="team-col-race-label">${category}</div>
+              <div class="team-col-race-label">${categoryLabel(category, race)}</div>
               <div class="team-col-racers">${cards}</div>
             </div>
           `;

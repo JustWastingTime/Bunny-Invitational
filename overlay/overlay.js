@@ -89,6 +89,8 @@ const CATEGORY_LABELS = {
   medium: "Medium",
   long: "Long",
   dirt: "Dirt",
+  dirt2: "Dirt 2",
+  medium2: "Medium 2",
 };
 
 const STYLE_SHORT = {

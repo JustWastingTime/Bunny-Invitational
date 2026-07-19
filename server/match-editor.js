@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
-import { loadMatch } from "./team-resolver.js";
+import { loadMatch, CATEGORIES, ALL_RACE_KEYS, isValidRaceKey, raceKeysForMatch } from "./team-resolver.js";
 import { listTeams } from "./team-editor.js";
 
-export const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
+export { CATEGORIES, ALL_RACE_KEYS, raceKeysForMatch } from "./team-resolver.js";
 
 /** Bracket slots → match files (order matches website bracket). */
 export const BRACKET_MATCHES = [
@@ -31,11 +31,12 @@ function matchPath(root, matchId) {
   return path.join(matchesDir(root), `${matchId}.json`);
 }
 
-export function buildRaceEntries(teams, previousRaces = null) {
+export function buildRaceEntries(teams, previousRaces = null, raceKeys = CATEGORIES) {
   const roster = [teams[0] || "", teams[1] || "", teams[2] || ""];
+  const keys = raceKeys?.length ? raceKeys : CATEGORIES;
   const gateLookup = new Map();
   if (previousRaces && typeof previousRaces === "object") {
-    for (const cat of CATEGORIES) {
+    for (const cat of Object.keys(previousRaces)) {
       for (const entry of previousRaces[cat] ?? []) {
         if (!entry?.teamId) continue;
         gateLookup.set(`${cat}:${entry.teamId}:${entry.slot}`, entry.gate ?? null);
@@ -44,7 +45,7 @@ export function buildRaceEntries(teams, previousRaces = null) {
   }
 
   return Object.fromEntries(
-    CATEGORIES.map((cat) => {
+    keys.map((cat) => {
       const entries = [];
       for (const teamId of roster) {
         for (let slot = 0; slot < 3; slot += 1) {
@@ -62,7 +63,7 @@ export function buildRaceEntries(teams, previousRaces = null) {
 
 /** Live-edit a post-draw gate (1–9) on a race entry. Empty clears to null. */
 export function setRaceGate(root, matchId, category, teamId, slot, gate) {
-  if (!CATEGORIES.includes(category)) throw new Error(`Invalid category: ${category}`);
+  if (!isValidRaceKey(category)) throw new Error(`Invalid category: ${category}`);
   if (!teamId) throw new Error("teamId is required");
 
   const filePath = matchPath(root, matchId);
@@ -92,14 +93,17 @@ export function setRaceGate(root, matchId, category, teamId, slot, gate) {
 
 export function emptyMatch({ id, day, matchNumber, round, teams = ["", "", ""] }) {
   const roster = [teams[0] || "", teams[1] || "", teams[2] || ""];
-  return {
+  const draft = {
     id,
     day: Number(day) || 1,
     matchNumber: Number(matchNumber) || 1,
     round: round || "TBD",
     teams: roster,
     activeCategory: "sprint",
-    races: buildRaceEntries(roster),
+  };
+  return {
+    ...draft,
+    races: buildRaceEntries(roster, null, raceKeysForMatch(draft)),
   };
 }
 
@@ -187,18 +191,24 @@ export function saveMatch(root, matchId, payload) {
   const availableIds = new Set(listTeams(root).map((t) => t.id));
   const teams = normalizeTeamsPayload(payload?.teams ?? existing.teams, availableIds);
 
-  const activeCategory = CATEGORIES.includes(payload?.activeCategory)
-    ? payload.activeCategory
-    : existing.activeCategory || "sprint";
-
-  const match = {
+  const draft = {
     id: matchId,
     day: Number(payload?.day ?? existing.day) || 1,
     matchNumber: Number(payload?.matchNumber ?? existing.matchNumber) || 1,
     round: String(payload?.round ?? existing.round ?? "TBD").trim() || "TBD",
     teams,
+  };
+  const raceKeys = raceKeysForMatch(draft);
+  const activeCategory = isValidRaceKey(payload?.activeCategory)
+    ? payload.activeCategory
+    : isValidRaceKey(existing.activeCategory)
+      ? existing.activeCategory
+      : "sprint";
+
+  const match = {
+    ...draft,
     activeCategory,
-    races: buildRaceEntries(teams, existing.races),
+    races: buildRaceEntries(teams, existing.races, raceKeys),
   };
 
   fs.writeFileSync(filePath, serializeMatch(match));

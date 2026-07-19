@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:59:29.514Z",
+  "updatedAt": "2026-07-19T17:07:32.932Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -29,8 +29,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 46,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
+      "matchesPlayed": 2,
+      "pointsPerMatch": 23
     },
     "umazing-hotspring": {
       "name": "Umazing Hotsprings",
@@ -40,8 +40,8 @@
       "thirds": 4,
       "uniqueBonuses": 4,
       "points": 48,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
+      "matchesPlayed": 3,
+      "pointsPerMatch": 16
     },
     "falena": {
       "name": "Falena",
@@ -51,8 +51,8 @@
       "thirds": 4,
       "uniqueBonuses": 3,
       "points": 25,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 14
+      "matchesPlayed": 2,
+      "pointsPerMatch": 12.5
     },
     "umamusuko": {
       "name": "Umamusuko",
@@ -62,8 +62,8 @@
       "thirds": 10,
       "uniqueBonuses": 2,
       "points": 54,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 21
+      "matchesPlayed": 3,
+      "pointsPerMatch": 18
     },
     "cabal": {
       "name": "Cabal Agency",
@@ -73,8 +73,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 65,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 18.5
+      "matchesPlayed": 4,
+      "pointsPerMatch": 16.25
     },
     "the-shadow-clones": {
       "name": "The Shadow Clones",
@@ -84,8 +84,8 @@
       "thirds": 4,
       "uniqueBonuses": 1,
       "points": 27,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 16
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13.5
     },
     "umalliance": {
       "name": "UMAlliance",
@@ -95,8 +95,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 45,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 16.5
+      "matchesPlayed": 3,
+      "pointsPerMatch": 15
     },
     "king": {
       "name": "King",
@@ -106,8 +106,8 @@
       "thirds": 7,
       "uniqueBonuses": 1,
       "points": 63,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 20
+      "matchesPlayed": 3,
+      "pointsPerMatch": 21
     },
     "rilliance": {
       "name": "Rilliance",
@@ -117,8 +117,8 @@
       "thirds": 3,
       "uniqueBonuses": 2,
       "points": 26,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 10
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13
     },
     "kita-trauma": {
       "name": "KitaTrauma",
@@ -128,8 +128,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 53,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 30
+      "matchesPlayed": 2,
+      "pointsPerMatch": 26.5
     },
     "uma-love": {
       "name": "Uma Love",
@@ -1195,6 +1195,20 @@
           }
         },
         "dirt": {
+          "placements": {
+            "1": null,
+            "2": null,
+            "3": null
+          }
+        },
+        "dirt2": {
+          "placements": {
+            "1": null,
+            "2": null,
+            "3": null
+          }
+        },
+        "medium2": {
           "placements": {
             "1": null,
             "2": null,

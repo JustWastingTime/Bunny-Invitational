@@ -17,7 +17,7 @@
     },
     "activeCategory": {
       "type": "string",
-      "enum": ["sprint", "mile", "medium", "long", "dirt"],
+      "enum": ["sprint", "mile", "medium", "long", "dirt", "dirt2", "medium2"],
       "description": "Which race the overlay currently displays"
     },
     "races": {
@@ -28,9 +28,11 @@
         "mile": { "$ref": "#/$defs/entries" },
         "medium": { "$ref": "#/$defs/entries" },
         "long": { "$ref": "#/$defs/entries" },
-        "dirt": { "$ref": "#/$defs/entries" }
+        "dirt": { "$ref": "#/$defs/entries" },
+        "dirt2": { "$ref": "#/$defs/entries", "description": "Grand Finals race 6 — reuses Dirt roster" },
+        "medium2": { "$ref": "#/$defs/entries", "description": "Grand Finals race 7 — reuses Medium roster" }
       },
-      "description": "Each category is an array of 9 entries (3 per team)."
+      "description": "Each category is an array of 9 entries (3 per team). Finals may also include dirt2 and medium2."
     }
   },
   "$defs": {

@@ -244,6 +244,100 @@
         "slot": 2,
         "gate": null
       }
+    ],
+    "dirt2": [
+      {
+        "teamId": "dust-bunny",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "dust-bunny",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "dust-bunny",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 2,
+        "gate": null
+      }
+    ],
+    "medium2": [
+      {
+        "teamId": "dust-bunny",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "dust-bunny",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "dust-bunny",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "kita-trauma",
+        "slot": 2,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 0,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 1,
+        "gate": null
+      },
+      {
+        "teamId": "king",
+        "slot": 2,
+        "gate": null
+      }
     ]
   }
 }

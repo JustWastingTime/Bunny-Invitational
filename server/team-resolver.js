@@ -2,7 +2,50 @@ import fs from "node:fs";
 import path from "node:path";
 import { buildSpriteLookup, resolveSpritePath } from "./sprite-resolver.js";
 
+/** Roster categories on team JSON files. */
 export const CATEGORIES = ["sprint", "mile", "medium", "long", "dirt"];
+
+/** Grand Finals extras — reuse an existing roster category. */
+export const RACE_ALIASES = {
+  dirt2: "dirt",
+  medium2: "medium",
+};
+
+/** All race keys that can appear on a match (base + finals extras). */
+export const ALL_RACE_KEYS = [...CATEGORIES, "dirt2", "medium2"];
+
+export const RACE_LABELS = {
+  sprint: "Sprint",
+  mile: "Mile",
+  medium: "Medium",
+  long: "Long",
+  dirt: "Dirt",
+  dirt2: "Dirt 2",
+  medium2: "Medium 2",
+};
+
+export function isValidRaceKey(raceKey) {
+  return ALL_RACE_KEYS.includes(raceKey);
+}
+
+/** Map a race key to the team roster category it pulls umas from. */
+export function rosterCategory(raceKey) {
+  return RACE_ALIASES[raceKey] ?? raceKey;
+}
+
+export function raceLabel(raceKey) {
+  return RACE_LABELS[raceKey] ?? String(raceKey ?? "");
+}
+
+/** Race list for a match — Grand Finals gets Dirt 2 + Medium 2. */
+export function raceKeysForMatch(match) {
+  const id = String(match?.id ?? "");
+  const round = String(match?.round ?? "").trim().toLowerCase();
+  if (id === "day1-match12" || round === "finals") {
+    return [...ALL_RACE_KEYS];
+  }
+  return [...CATEGORIES];
+}
 
 function teamFileCandidates(root, teamId) {
   return [
@@ -42,14 +85,15 @@ export function entryKey(teamId, slot) {
 /** Resolve trainer + uma for one slot from the team JSON roster. */
 export function getTeamMember(root, teamId, category, slot) {
   const team = loadTeam(root, teamId);
-  const roster = team.categories?.[category];
+  const rosterKey = rosterCategory(category);
+  const roster = team.categories?.[rosterKey];
   if (!Array.isArray(roster)) {
-    throw new Error(`Team "${teamId}" has no "${category}" roster in data/teams`);
+    throw new Error(`Team "${teamId}" has no "${rosterKey}" roster in data/teams`);
   }
 
   const member = roster[slot];
   if (!member) {
-    throw new Error(`Team "${teamId}" ${category} slot ${slot} not found in data/teams`);
+    throw new Error(`Team "${teamId}" ${rosterKey} slot ${slot} not found in data/teams`);
   }
 
   return { team, member };

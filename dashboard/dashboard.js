@@ -4,7 +4,18 @@ const CATEGORIES = [
   { key: "medium", label: "Medium" },
   { key: "long", label: "Long" },
   { key: "dirt", label: "Dirt" },
+  { key: "dirt2", label: "Dirt 2" },
+  { key: "medium2", label: "Medium 2" },
 ];
+
+const BASE_CATEGORY_KEYS = new Set(["sprint", "mile", "medium", "long", "dirt"]);
+
+function categoriesForMatch(state) {
+  const match = state.matches?.find((m) => m.id === state.activeMatch);
+  const round = String(match?.round ?? "").trim().toLowerCase();
+  const isFinals = state.activeMatch === "day1-match12" || round === "finals";
+  return CATEGORIES.filter((cat) => BASE_CATEGORY_KEYS.has(cat.key) || isFinals);
+}
 
 const $ = (id) => document.getElementById(id);
 let selectedPlace = "1";
@@ -27,10 +38,15 @@ function portraitHtml(racer) {
   return `<div class="racer-portrait fallback">${initial}</div>`;
 }
 
-function renderCategoryButtons(activeCategory) {
-  $("category-buttons").innerHTML = CATEGORIES.map(
-    (cat) => `<button type="button" data-category="${cat.key}" class="${cat.key === activeCategory ? "active" : ""}">${cat.label}</button>`
-  ).join("");
+function renderCategoryButtons(state) {
+  const activeCategory = state.activeCategory;
+  const cats = categoriesForMatch(state);
+  $("category-buttons").innerHTML = cats
+    .map(
+      (cat) =>
+        `<button type="button" data-category="${cat.key}" class="${cat.key === activeCategory ? "active" : ""}">${cat.label}</button>`
+    )
+    .join("");
 }
 
 function renderPodium(state) {
@@ -141,7 +157,7 @@ function renderMatchSelect(state) {
 
 function render(state) {
   renderMatchSelect(state);
-  renderCategoryButtons(state.activeCategory);
+  renderCategoryButtons(state);
   renderPodium(state);
   renderTeamColumns(state);
   renderStandings(state.standings, state.scoring);
