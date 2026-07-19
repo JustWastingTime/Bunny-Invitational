@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:32:59.960Z",
+  "updatedAt": "2026-07-19T15:35:37.694Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -40,9 +40,9 @@
       "color": "#c0fa3b",
       "firsts": 5,
       "seconds": 4,
-      "thirds": 3,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 40,
+      "points": 41,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
     },
@@ -131,6 +131,18 @@
       "pointsPerMatch": 20
     },
     {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "color": "#da49b8",
+      "firsts": 2,
+      "seconds": 2,
+      "thirds": 2,
+      "uniqueBonuses": 2,
+      "points": 20,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 10
+    },
+    {
       "id": "dust-bunny",
       "name": "BUNS",
       "color": "#e91e45",
@@ -141,18 +153,6 @@
       "points": 19,
       "matchesPlayed": 1,
       "pointsPerMatch": 19
-    },
-    {
-      "id": "rilliance",
-      "name": "Rilliance",
-      "color": "#da49b8",
-      "firsts": 1,
-      "seconds": 1,
-      "thirds": 2,
-      "uniqueBonuses": 1,
-      "points": 11,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 10
     }
   ],
   "teams": [
@@ -14216,9 +14216,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "rilliance",
+              "teamName": "Rilliance",
+              "teamColor": "#da49b8",
+              "slot": 1,
+              "gate": 7,
+              "trainer": "BeatThisStone",
+              "umaName": "Special Week",
+              "umaKey": "sprite:100101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1001_100101.png",
+              "style": "late",
+              "key": "rilliance:1"
+            },
+            "2": {
+              "teamId": "rilliance",
+              "teamName": "Rilliance",
+              "teamColor": "#da49b8",
+              "slot": 0,
+              "gate": 4,
+              "trainer": "Seraphos",
+              "umaName": "Seiun Sky",
+              "umaKey": "sprite:102001",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1020_102001.png",
+              "style": "front",
+              "key": "rilliance:0"
+            },
+            "3": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": 3,
+              "trainer": "Salty",
+              "umaName": "Vodka",
+              "umaKey": "sprite:100801",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1008_100801.png",
+              "style": "late",
+              "key": "cabal:2"
+            }
           }
         },
         "medium": {
@@ -15914,11 +15953,11 @@
       "spritePath": "assets/characters/chara_stand_1046_104601.png",
       "population": 9,
       "isUnique": false,
-      "starts": 15,
+      "starts": 16,
       "wins": 1,
       "top3": 5,
-      "winRate": 0.06666666666666667,
-      "top3Rate": 0.3333333333333333
+      "winRate": 0.0625,
+      "top3Rate": 0.3125
     },
     "mostCommonUmaCombined": {
       "umaName": "Oguri Cap",
@@ -15927,17 +15966,17 @@
       "spritePath": "assets/characters/chara_stand_1006_100602.png"
     },
     "bestWinRateUma": {
-      "umaKey": "sprite:102001",
-      "umaName": "Seiun Sky",
-      "baseName": "Seiun Sky",
-      "spritePath": "assets/characters/chara_stand_1020_102001.png",
-      "population": 1,
-      "isUnique": true,
-      "starts": 1,
-      "wins": 1,
-      "top3": 1,
-      "winRate": 1,
-      "top3Rate": 1
+      "umaKey": "sprite:105301",
+      "umaName": "Bamboo Memory",
+      "baseName": "Bamboo Memory",
+      "spritePath": "assets/characters/chara_stand_1053_105301.png",
+      "population": 2,
+      "isUnique": false,
+      "starts": 4,
+      "wins": 2,
+      "top3": 2,
+      "winRate": 0.5,
+      "top3Rate": 0.5
     },
     "mostUniqueTeam": {
       "id": "falena",
@@ -16023,11 +16062,11 @@
         "spritePath": "assets/characters/chara_stand_1046_104601.png",
         "population": 9,
         "isUnique": false,
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
         "top3": 5,
-        "winRate": 0.06666666666666667,
-        "top3Rate": 0.3333333333333333
+        "winRate": 0.0625,
+        "top3Rate": 0.3125
       },
       {
         "umaKey": "sprite:100602",
@@ -16036,11 +16075,11 @@
         "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
-        "starts": 13,
+        "starts": 14,
         "wins": 4,
         "top3": 8,
-        "winRate": 0.3076923076923077,
-        "top3Rate": 0.6153846153846154
+        "winRate": 0.2857142857142857,
+        "top3Rate": 0.5714285714285714
       },
       {
         "umaKey": "sprite:106801",
@@ -16062,11 +16101,11 @@
         "spritePath": "assets/characters/chara_stand_1004_100402.png",
         "population": 6,
         "isUnique": false,
-        "starts": 11,
+        "starts": 12,
         "wins": 0,
         "top3": 4,
         "winRate": 0,
-        "top3Rate": 0.36363636363636365
+        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:101001",
@@ -16160,6 +16199,19 @@
         "top3Rate": 0.42857142857142855
       },
       {
+        "umaKey": "sprite:102602",
+        "umaName": "Mihono Bourbon",
+        "baseName": "Mihono Bourbon",
+        "spritePath": "assets/characters/chara_stand_1026_102602.png",
+        "population": 4,
+        "isUnique": false,
+        "starts": 7,
+        "wins": 0,
+        "top3": 3,
+        "winRate": 0,
+        "top3Rate": 0.42857142857142855
+      },
+      {
         "umaKey": "sprite:101002",
         "umaName": "Taiki Shuttle",
         "baseName": "Taiki Shuttle",
@@ -16173,23 +16225,23 @@
         "top3Rate": 0.5
       },
       {
-        "umaKey": "sprite:102602",
-        "umaName": "Mihono Bourbon",
-        "baseName": "Mihono Bourbon",
-        "spritePath": "assets/characters/chara_stand_1026_102602.png",
-        "population": 4,
-        "isUnique": false,
-        "starts": 6,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
-        "top3Rate": 0.5
-      },
-      {
         "umaKey": "sprite:101701",
         "umaName": "Symboli Rudolf",
         "baseName": "Symboli Rudolf",
         "spritePath": "assets/characters/chara_stand_1017_101701.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 6,
+        "wins": 2,
+        "top3": 3,
+        "winRate": 0.3333333333333333,
+        "top3Rate": 0.5
+      },
+      {
+        "umaKey": "sprite:100801",
+        "umaName": "Vodka",
+        "baseName": "Vodka",
+        "spritePath": "assets/characters/chara_stand_1008_100801.png",
         "population": 3,
         "isUnique": false,
         "starts": 6,
@@ -16210,19 +16262,6 @@
         "top3": 2,
         "winRate": 0.16666666666666666,
         "top3Rate": 0.3333333333333333
-      },
-      {
-        "umaKey": "sprite:100801",
-        "umaName": "Vodka",
-        "baseName": "Vodka",
-        "spritePath": "assets/characters/chara_stand_1008_100801.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 5,
-        "wins": 2,
-        "top3": 2,
-        "winRate": 0.4,
-        "top3Rate": 0.4
       },
       {
         "umaKey": "sprite:101303",
@@ -16309,7 +16348,7 @@
         "spritePath": "assets/characters/chara_stand_1009_100901.png",
         "population": 3,
         "isUnique": false,
-        "starts": 3,
+        "starts": 4,
         "wins": 0,
         "top3": 0,
         "winRate": 0,
@@ -16381,6 +16420,19 @@
         "top3Rate": 0.75
       },
       {
+        "umaKey": "sprite:103301",
+        "umaName": "Admire Vega",
+        "baseName": "Admire Vega",
+        "spritePath": "assets/characters/chara_stand_1033_103301.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 4,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:102801",
         "umaName": "Hishi Akebono",
         "baseName": "Hishi Akebono",
@@ -16446,17 +16498,17 @@
         "top3Rate": 0.3333333333333333
       },
       {
-        "umaKey": "sprite:103301",
-        "umaName": "Admire Vega",
-        "baseName": "Admire Vega",
-        "spritePath": "assets/characters/chara_stand_1033_103301.png",
+        "umaKey": "sprite:100101",
+        "umaName": "Special Week",
+        "baseName": "Special Week",
+        "spritePath": "assets/characters/chara_stand_1001_100101.png",
         "population": 2,
         "isUnique": false,
         "starts": 3,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.3333333333333333,
+        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:100501",
@@ -16615,19 +16667,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:100101",
-        "umaName": "Special Week",
-        "baseName": "Special Week",
-        "spritePath": "assets/characters/chara_stand_1001_100101.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:106101",
         "umaName": "King Halo",
         "baseName": "King Halo",
@@ -16717,6 +16756,19 @@
         "top3": 1,
         "winRate": 0.5,
         "top3Rate": 0.5
+      },
+      {
+        "umaKey": "sprite:102001",
+        "umaName": "Seiun Sky",
+        "baseName": "Seiun Sky",
+        "spritePath": "assets/characters/chara_stand_1020_102001.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 1,
+        "top3": 2,
+        "winRate": 0.5,
+        "top3Rate": 1
       },
       {
         "umaKey": "sprite:101502",
@@ -16885,19 +16937,6 @@
         "wins": 0,
         "top3": 2,
         "winRate": 0,
-        "top3Rate": 1
-      },
-      {
-        "umaKey": "sprite:102001",
-        "umaName": "Seiun Sky",
-        "baseName": "Seiun Sky",
-        "spritePath": "assets/characters/chara_stand_1020_102001.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 1,
         "top3Rate": 1
       },
       {
@@ -17325,15 +17364,15 @@
     "popularity": [
       {
         "umaName": "Smart Falcon",
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
-        "winRate": 0.06666666666666667
+        "winRate": 0.0625
       },
       {
         "umaName": "Oguri Cap",
-        "starts": 13,
+        "starts": 14,
         "wins": 4,
-        "winRate": 0.3076923076923077
+        "winRate": 0.2857142857142857
       },
       {
         "umaName": "Kitasan Black",
@@ -17343,7 +17382,7 @@
       },
       {
         "umaName": "Maruzensky",
-        "starts": 11,
+        "starts": 12,
         "wins": 0,
         "winRate": 0
       },
@@ -17390,19 +17429,25 @@
         "winRate": 0.14285714285714285
       },
       {
+        "umaName": "Mihono Bourbon",
+        "starts": 7,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Taiki Shuttle",
         "starts": 6,
         "wins": 1,
         "winRate": 0.16666666666666666
       },
       {
-        "umaName": "Mihono Bourbon",
+        "umaName": "Symboli Rudolf",
         "starts": 6,
-        "wins": 0,
-        "winRate": 0
+        "wins": 2,
+        "winRate": 0.3333333333333333
       },
       {
-        "umaName": "Symboli Rudolf",
+        "umaName": "Vodka",
         "starts": 6,
         "wins": 2,
         "winRate": 0.3333333333333333
@@ -17412,12 +17457,6 @@
         "starts": 6,
         "wins": 1,
         "winRate": 0.16666666666666666
-      },
-      {
-        "umaName": "Vodka",
-        "starts": 5,
-        "wins": 2,
-        "winRate": 0.4
       },
       {
         "umaName": "Mejiro McQueen",
@@ -17457,7 +17496,7 @@
       },
       {
         "umaName": "Daiwa Scarlet",
-        "starts": 3,
+        "starts": 4,
         "wins": 0,
         "winRate": 0
       },
@@ -17492,6 +17531,12 @@
         "winRate": 0.25
       },
       {
+        "umaName": "Admire Vega",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Hishi Akebono",
         "starts": 4,
         "wins": 0,
@@ -17522,10 +17567,10 @@
         "winRate": 0.3333333333333333
       },
       {
-        "umaName": "Admire Vega",
+        "umaName": "Special Week",
         "starts": 3,
-        "wins": 0,
-        "winRate": 0
+        "wins": 1,
+        "winRate": 0.3333333333333333
       },
       {
         "umaName": "Fuji Kiseki",
@@ -17600,12 +17645,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Special Week",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "King Halo",
         "starts": 3,
         "wins": 0,
@@ -17643,6 +17682,12 @@
       },
       {
         "umaName": "Mejiro Dober",
+        "starts": 2,
+        "wins": 1,
+        "winRate": 0.5
+      },
+      {
+        "umaName": "Seiun Sky",
         "starts": 2,
         "wins": 1,
         "winRate": 0.5
@@ -17724,12 +17769,6 @@
         "starts": 2,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Seiun Sky",
-        "starts": 1,
-        "wins": 1,
-        "winRate": 1
       },
       {
         "umaName": "Mejiro McQueen",

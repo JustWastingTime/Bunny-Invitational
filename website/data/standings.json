@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:32:43.618Z",
+  "updatedAt": "2026-07-19T15:35:37.694Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -70,9 +70,9 @@
       "color": "#c0fa3b",
       "firsts": 5,
       "seconds": 4,
-      "thirds": 3,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 40,
+      "points": 41,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
     },
@@ -112,11 +112,11 @@
     "rilliance": {
       "name": "Rilliance",
       "color": "#da49b8",
-      "firsts": 1,
-      "seconds": 1,
+      "firsts": 2,
+      "seconds": 2,
       "thirds": 2,
-      "uniqueBonuses": 1,
-      "points": 11,
+      "uniqueBonuses": 2,
+      "points": 20,
       "matchesPlayed": 1,
       "pointsPerMatch": 10
     },
@@ -816,9 +816,18 @@
         },
         "mile": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "rilliance",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "rilliance",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "cabal",
+              "slot": 2
+            }
           }
         },
         "medium": {
@@ -851,7 +860,7 @@
       "teams": [
         "dust-bunny",
         "umamusuko",
-        ""
+        "umazing-hotspring"
       ],
       "raceResults": {
         "sprint": {
