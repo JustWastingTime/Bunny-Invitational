@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:44:02.372Z",
+  "updatedAt": "2026-07-19T16:47:50.530Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -33,6 +33,18 @@
       "points": 53,
       "matchesPlayed": 1,
       "pointsPerMatch": 30
+    },
+    {
+      "id": "king",
+      "name": "King",
+      "color": "#359b62",
+      "firsts": 7,
+      "seconds": 3,
+      "thirds": 6,
+      "uniqueBonuses": 1,
+      "points": 51,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 20
     },
     {
       "id": "umazing-hotspring",
@@ -71,26 +83,14 @@
       "pointsPerMatch": 16.5
     },
     {
-      "id": "king",
-      "name": "King",
-      "color": "#359b62",
-      "firsts": 6,
-      "seconds": 2,
-      "thirds": 6,
-      "uniqueBonuses": 0,
-      "points": 42,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 20
-    },
-    {
       "id": "umamusuko",
       "name": "Umamusuko",
       "color": "#f1c41f",
       "firsts": 4,
       "seconds": 3,
-      "thirds": 7,
+      "thirds": 8,
       "uniqueBonuses": 1,
-      "points": 37,
+      "points": 38,
       "matchesPlayed": 1,
       "pointsPerMatch": 21
     },
@@ -16700,7 +16700,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 0,
-              "gate": null,
+              "gate": 6,
               "trainer": "AzimDaQuixote",
               "umaName": "Agnes Digital",
               "umaKey": "sprite:101901",
@@ -16714,7 +16714,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Special Needs",
               "umaName": "Maruzensky",
               "umaKey": "sprite:100402",
@@ -16728,7 +16728,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 2,
-              "gate": null,
+              "gate": 5,
               "trainer": "InfinitumX",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -16742,7 +16742,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 3,
               "trainer": "Dollow",
               "umaName": "Grass Wonder",
               "umaKey": "sprite:101101",
@@ -16756,7 +16756,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 8,
               "trainer": "BitBoi",
               "umaName": "Vodka",
               "umaKey": "sprite:100801",
@@ -16770,7 +16770,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 7,
               "trainer": "Yugian",
               "umaName": "Mejiro Ryan",
               "umaKey": "sprite:102701",
@@ -16781,9 +16781,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 0,
+              "gate": 3,
+              "trainer": "Dollow",
+              "umaName": "Grass Wonder",
+              "umaKey": "sprite:101101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1011_101101.png",
+              "style": "late",
+              "key": "king:0"
+            },
+            "2": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 2,
+              "gate": 7,
+              "trainer": "Yugian",
+              "umaName": "Mejiro Ryan",
+              "umaKey": "sprite:102701",
+              "isUnique": true,
+              "spritePath": "assets/characters/chara_stand_1027_102701.png",
+              "style": "late",
+              "key": "king:2"
+            },
+            "3": {
+              "teamId": "umamusuko",
+              "teamName": "Umamusuko",
+              "teamColor": "#f1c41f",
+              "slot": 0,
+              "gate": 6,
+              "trainer": "AzimDaQuixote",
+              "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "late",
+              "key": "umamusuko:0"
+            }
           }
         },
         "medium": {
@@ -17707,11 +17746,11 @@
         "spritePath": "assets/characters/chara_stand_1004_100402.png",
         "population": 6,
         "isUnique": false,
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
         "top3": 5,
-        "winRate": 0.06666666666666667,
-        "top3Rate": 0.3333333333333333
+        "winRate": 0.0625,
+        "top3Rate": 0.3125
       },
       {
         "umaKey": "sprite:102101",
@@ -17720,11 +17759,11 @@
         "spritePath": "assets/characters/chara_stand_1021_102101.png",
         "population": 6,
         "isUnique": false,
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
         "top3": 4,
-        "winRate": 0.06666666666666667,
-        "top3Rate": 0.26666666666666666
+        "winRate": 0.0625,
+        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:105202",
@@ -17753,6 +17792,19 @@
         "top3Rate": 0.23076923076923078
       },
       {
+        "umaKey": "sprite:101901",
+        "umaName": "Agnes Digital",
+        "baseName": "Agnes Digital",
+        "spritePath": "assets/characters/chara_stand_1019_101901.png",
+        "population": 5,
+        "isUnique": false,
+        "starts": 13,
+        "wins": 1,
+        "top3": 6,
+        "winRate": 0.07692307692307693,
+        "top3Rate": 0.46153846153846156
+      },
+      {
         "umaKey": "sprite:102401",
         "umaName": "Mayano Top Gun",
         "baseName": "Mayano Top Gun",
@@ -17764,19 +17816,6 @@
         "top3": 3,
         "winRate": 0.16666666666666666,
         "top3Rate": 0.25
-      },
-      {
-        "umaKey": "sprite:101901",
-        "umaName": "Agnes Digital",
-        "baseName": "Agnes Digital",
-        "spritePath": "assets/characters/chara_stand_1019_101901.png",
-        "population": 5,
-        "isUnique": false,
-        "starts": 12,
-        "wins": 1,
-        "top3": 5,
-        "winRate": 0.08333333333333333,
-        "top3Rate": 0.4166666666666667
       },
       {
         "umaKey": "sprite:105101",
@@ -17831,6 +17870,19 @@
         "top3Rate": 0.4444444444444444
       },
       {
+        "umaKey": "sprite:100801",
+        "umaName": "Vodka",
+        "baseName": "Vodka",
+        "spritePath": "assets/characters/chara_stand_1008_100801.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 9,
+        "wins": 2,
+        "top3": 4,
+        "winRate": 0.2222222222222222,
+        "top3Rate": 0.4444444444444444
+      },
+      {
         "umaKey": "sprite:101303",
         "umaName": "Mejiro McQueen",
         "baseName": "Mejiro McQueen",
@@ -17855,19 +17907,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.2222222222222222
-      },
-      {
-        "umaKey": "sprite:100801",
-        "umaName": "Vodka",
-        "baseName": "Vodka",
-        "spritePath": "assets/characters/chara_stand_1008_100801.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 8,
-        "wins": 2,
-        "top3": 4,
-        "winRate": 0.25,
-        "top3Rate": 0.5
       },
       {
         "umaKey": "sprite:101401",
@@ -18026,6 +18065,19 @@
         "top3Rate": 0.6
       },
       {
+        "umaKey": "sprite:101101",
+        "umaName": "Grass Wonder",
+        "baseName": "Grass Wonder",
+        "spritePath": "assets/characters/chara_stand_1011_101101.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 3,
+        "top3": 4,
+        "winRate": 0.6,
+        "top3Rate": 0.8
+      },
+      {
         "umaKey": "sprite:100502",
         "umaName": "Fuji Kiseki",
         "baseName": "Fuji Kiseki",
@@ -18102,19 +18154,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.4
-      },
-      {
-        "umaKey": "sprite:101101",
-        "umaName": "Grass Wonder",
-        "baseName": "Grass Wonder",
-        "spritePath": "assets/characters/chara_stand_1011_101101.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 4,
-        "wins": 2,
-        "top3": 3,
-        "winRate": 0.5,
-        "top3Rate": 0.75
       },
       {
         "umaKey": "sprite:102201",
@@ -18338,6 +18377,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:102701",
+        "umaName": "Mejiro Ryan",
+        "baseName": "Mejiro Ryan",
+        "spritePath": "assets/characters/chara_stand_1027_102701.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 3,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.3333333333333333
+      },
+      {
         "umaKey": "sprite:101702",
         "umaName": "Symboli Rudolf",
         "baseName": "Symboli Rudolf",
@@ -18524,19 +18576,6 @@
         "umaName": "Mejiro Palmer",
         "baseName": "Mejiro Palmer",
         "spritePath": "assets/characters/chara_stand_1064_106401.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:102701",
-        "umaName": "Mejiro Ryan",
-        "baseName": "Mejiro Ryan",
-        "spritePath": "assets/characters/chara_stand_1027_102701.png",
         "population": 1,
         "isUnique": true,
         "starts": 2,
@@ -18988,15 +19027,15 @@
       },
       {
         "umaName": "Maruzensky",
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
-        "winRate": 0.06666666666666667
+        "winRate": 0.0625
       },
       {
         "umaName": "Tamamo Cross",
-        "starts": 15,
+        "starts": 16,
         "wins": 1,
-        "winRate": 0.06666666666666667
+        "winRate": 0.0625
       },
       {
         "umaName": "Haru Urara",
@@ -19011,16 +19050,16 @@
         "winRate": 0.07692307692307693
       },
       {
+        "umaName": "Agnes Digital",
+        "starts": 13,
+        "wins": 1,
+        "winRate": 0.07692307692307693
+      },
+      {
         "umaName": "Mayano Top Gun",
         "starts": 12,
         "wins": 2,
         "winRate": 0.16666666666666666
-      },
-      {
-        "umaName": "Agnes Digital",
-        "starts": 12,
-        "wins": 1,
-        "winRate": 0.08333333333333333
       },
       {
         "umaName": "Nishino Flower",
@@ -19047,6 +19086,12 @@
         "winRate": 0.1111111111111111
       },
       {
+        "umaName": "Vodka",
+        "starts": 9,
+        "wins": 2,
+        "winRate": 0.2222222222222222
+      },
+      {
         "umaName": "Mejiro McQueen",
         "starts": 9,
         "wins": 1,
@@ -19057,12 +19102,6 @@
         "starts": 9,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Vodka",
-        "starts": 8,
-        "wins": 2,
-        "winRate": 0.25
       },
       {
         "umaName": "El Condor Pasa",
@@ -19137,6 +19176,12 @@
         "winRate": 0.6
       },
       {
+        "umaName": "Grass Wonder",
+        "starts": 5,
+        "wins": 3,
+        "winRate": 0.6
+      },
+      {
         "umaName": "Fuji Kiseki",
         "starts": 5,
         "wins": 1,
@@ -19171,12 +19216,6 @@
         "starts": 5,
         "wins": 0,
         "winRate": 0
-      },
-      {
-        "umaName": "Grass Wonder",
-        "starts": 4,
-        "wins": 2,
-        "winRate": 0.5
       },
       {
         "umaName": "Fine Motion",
@@ -19281,6 +19320,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Mejiro Ryan",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Symboli Rudolf",
         "starts": 3,
         "wins": 0,
@@ -19366,12 +19411,6 @@
       },
       {
         "umaName": "Mejiro Palmer",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Mejiro Ryan",
         "starts": 2,
         "wins": 0,
         "winRate": 0
