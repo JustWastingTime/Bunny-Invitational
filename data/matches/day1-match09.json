@@ -202,47 +202,47 @@
       {
         "teamId": "dust-bunny",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "dust-bunny",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "dust-bunny",
         "slot": 2,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "umamusuko",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umamusuko",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umamusuko",
         "slot": 2,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 2
       }
     ]
   }
