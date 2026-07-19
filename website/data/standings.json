@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:22:37.064Z",
+  "updatedAt": "2026-07-19T16:25:54.739Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -69,10 +69,10 @@
       "name": "Cabal Agency",
       "color": "#c0fa3b",
       "firsts": 7,
-      "seconds": 6,
+      "seconds": 7,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 57,
+      "points": 60,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
     },
@@ -123,11 +123,11 @@
     "kita-trauma": {
       "name": "KitaTrauma",
       "color": "#eb5153",
-      "firsts": 3,
+      "firsts": 4,
       "seconds": 5,
-      "thirds": 3,
+      "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 33,
+      "points": 39,
       "matchesPlayed": 1,
       "pointsPerMatch": 30
     },
@@ -1000,9 +1000,18 @@
         },
         "mile": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "slot": 0
+            },
+            "2": {
+              "teamId": "cabal",
+              "slot": 2
+            },
+            "3": {
+              "teamId": "kita-trauma",
+              "slot": 1
+            }
           }
         },
         "medium": {
