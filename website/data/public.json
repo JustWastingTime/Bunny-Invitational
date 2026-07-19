@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:35:37.694Z",
+  "updatedAt": "2026-07-19T15:40:01.689Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -10,6 +10,18 @@
     "uniqueBonus": 1
   },
   "standings": [
+    {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 6,
+      "seconds": 4,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 46,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 18.5
+    },
     {
       "id": "umalliance",
       "name": "UMAlliance",
@@ -33,18 +45,6 @@
       "points": 43,
       "matchesPlayed": 1,
       "pointsPerMatch": 19
-    },
-    {
-      "id": "cabal",
-      "name": "Cabal Agency",
-      "color": "#c0fa3b",
-      "firsts": 5,
-      "seconds": 4,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 41,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 18.5
     },
     {
       "id": "ritto-dorm-dropouts",
@@ -99,10 +99,10 @@
       "name": "The Shadow Clones",
       "color": "#646364",
       "firsts": 2,
-      "seconds": 3,
+      "seconds": 4,
       "thirds": 2,
       "uniqueBonuses": 1,
-      "points": 22,
+      "points": 25,
       "matchesPlayed": 1,
       "pointsPerMatch": 16
     },
@@ -119,6 +119,18 @@
       "pointsPerMatch": 21
     },
     {
+      "id": "rilliance",
+      "name": "Rilliance",
+      "color": "#da49b8",
+      "firsts": 2,
+      "seconds": 2,
+      "thirds": 3,
+      "uniqueBonuses": 2,
+      "points": 21,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 10
+    },
+    {
       "id": "king",
       "name": "King",
       "color": "#359b62",
@@ -129,18 +141,6 @@
       "points": 20,
       "matchesPlayed": 1,
       "pointsPerMatch": 20
-    },
-    {
-      "id": "rilliance",
-      "name": "Rilliance",
-      "color": "#da49b8",
-      "firsts": 2,
-      "seconds": 2,
-      "thirds": 2,
-      "uniqueBonuses": 2,
-      "points": 20,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 10
     },
     {
       "id": "dust-bunny",
@@ -14267,7 +14267,7 @@
               "teamName": "The Shadow Clones",
               "teamColor": "#646364",
               "slot": 0,
-              "gate": null,
+              "gate": 9,
               "trainer": "arene_",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -14281,7 +14281,7 @@
               "teamName": "The Shadow Clones",
               "teamColor": "#646364",
               "slot": 1,
-              "gate": null,
+              "gate": 1,
               "trainer": "Swylar",
               "umaName": "Tokai Teio",
               "umaKey": "sprite:100301",
@@ -14295,7 +14295,7 @@
               "teamName": "The Shadow Clones",
               "teamColor": "#646364",
               "slot": 2,
-              "gate": null,
+              "gate": 3,
               "trainer": "Imperial",
               "umaName": "Mihono Bourbon",
               "umaKey": "sprite:102602",
@@ -14309,7 +14309,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 0,
-              "gate": null,
+              "gate": 4,
               "trainer": "Reimixqt",
               "umaName": "Mejiro Dober",
               "umaKey": "sprite:105902",
@@ -14323,7 +14323,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 1,
-              "gate": null,
+              "gate": 8,
               "trainer": "RipPeR",
               "umaName": "Oguri Cap",
               "umaKey": "sprite:100602",
@@ -14337,7 +14337,7 @@
               "teamName": "Rilliance",
               "teamColor": "#da49b8",
               "slot": 2,
-              "gate": null,
+              "gate": 6,
               "trainer": "End365",
               "umaName": "Rice Shower",
               "umaKey": "sprite:103001",
@@ -14351,7 +14351,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "WildCat",
               "umaName": "Tokai Teio",
               "umaKey": "sprite:100301",
@@ -14365,7 +14365,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Tn",
               "umaName": "Agnes Digital",
               "umaKey": "sprite:101901",
@@ -14379,7 +14379,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 2,
-              "gate": null,
+              "gate": 5,
               "trainer": "Horsefight",
               "umaName": "Oguri Cap",
               "umaKey": "sprite:100602",
@@ -14390,9 +14390,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "WildCat",
+              "umaName": "Tokai Teio",
+              "umaKey": "sprite:100301",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1003_100301.png",
+              "style": "late",
+              "key": "cabal:0"
+            },
+            "2": {
+              "teamId": "the-shadow-clones",
+              "teamName": "The Shadow Clones",
+              "teamColor": "#646364",
+              "slot": 2,
+              "gate": 3,
+              "trainer": "Imperial",
+              "umaName": "Mihono Bourbon",
+              "umaKey": "sprite:102602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1026_102602.png",
+              "style": "front",
+              "key": "the-shadow-clones:2"
+            },
+            "3": {
+              "teamId": "rilliance",
+              "teamName": "Rilliance",
+              "teamColor": "#da49b8",
+              "slot": 1,
+              "gate": 8,
+              "trainer": "RipPeR",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "late",
+              "key": "rilliance:1"
+            }
           }
         },
         "long": {
@@ -16075,11 +16114,11 @@
         "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
-        "starts": 14,
+        "starts": 16,
         "wins": 4,
-        "top3": 8,
-        "winRate": 0.2857142857142857,
-        "top3Rate": 0.5714285714285714
+        "top3": 9,
+        "winRate": 0.25,
+        "top3Rate": 0.5625
       },
       {
         "umaKey": "sprite:106801",
@@ -16108,6 +16147,19 @@
         "top3Rate": 0.3333333333333333
       },
       {
+        "umaKey": "sprite:102101",
+        "umaName": "Tamamo Cross",
+        "baseName": "Tamamo Cross",
+        "spritePath": "assets/characters/chara_stand_1021_102101.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 11,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.18181818181818182
+      },
+      {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
         "baseName": "Taiki Shuttle",
@@ -16119,19 +16171,6 @@
         "top3": 3,
         "winRate": 0.1,
         "top3Rate": 0.3
-      },
-      {
-        "umaKey": "sprite:102101",
-        "umaName": "Tamamo Cross",
-        "baseName": "Tamamo Cross",
-        "spritePath": "assets/characters/chara_stand_1021_102101.png",
-        "population": 6,
-        "isUnique": false,
-        "starts": 10,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.2
       },
       {
         "umaKey": "sprite:105202",
@@ -16179,11 +16218,24 @@
         "spritePath": "assets/characters/chara_stand_1019_101901.png",
         "population": 5,
         "isUnique": false,
-        "starts": 7,
+        "starts": 8,
         "wins": 0,
         "top3": 3,
         "winRate": 0,
-        "top3Rate": 0.42857142857142855
+        "top3Rate": 0.375
+      },
+      {
+        "umaKey": "sprite:102602",
+        "umaName": "Mihono Bourbon",
+        "baseName": "Mihono Bourbon",
+        "spritePath": "assets/characters/chara_stand_1026_102602.png",
+        "population": 4,
+        "isUnique": false,
+        "starts": 8,
+        "wins": 0,
+        "top3": 4,
+        "winRate": 0,
+        "top3Rate": 0.5
       },
       {
         "umaKey": "sprite:103802",
@@ -16196,19 +16248,6 @@
         "wins": 1,
         "top3": 3,
         "winRate": 0.14285714285714285,
-        "top3Rate": 0.42857142857142855
-      },
-      {
-        "umaKey": "sprite:102602",
-        "umaName": "Mihono Bourbon",
-        "baseName": "Mihono Bourbon",
-        "spritePath": "assets/characters/chara_stand_1026_102602.png",
-        "population": 4,
-        "isUnique": false,
-        "starts": 7,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
         "top3Rate": 0.42857142857142855
       },
       {
@@ -16366,6 +16405,19 @@
         "top3": 3,
         "winRate": 0.4,
         "top3Rate": 0.6
+      },
+      {
+        "umaKey": "sprite:100301",
+        "umaName": "Tokai Teio",
+        "baseName": "Tokai Teio",
+        "spritePath": "assets/characters/chara_stand_1003_100301.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.2,
+        "top3Rate": 0.2
       },
       {
         "umaKey": "sprite:103201",
@@ -16537,6 +16589,32 @@
         "top3Rate": 0.3333333333333333
       },
       {
+        "umaKey": "sprite:105902",
+        "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
+        "spritePath": "assets/characters/chara_stand_1059_105902.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 3,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:103001",
+        "umaName": "Rice Shower",
+        "baseName": "Rice Shower",
+        "spritePath": "assets/characters/chara_stand_1030_103001.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 3,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:100201",
         "umaName": "Silence Suzuka",
         "baseName": "Silence Suzuka",
@@ -16561,19 +16639,6 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.3333333333333333
-      },
-      {
-        "umaKey": "sprite:100301",
-        "umaName": "Tokai Teio",
-        "baseName": "Tokai Teio",
-        "spritePath": "assets/characters/chara_stand_1003_100301.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:101101",
@@ -16628,19 +16693,6 @@
         "top3Rate": 1
       },
       {
-        "umaKey": "sprite:105902",
-        "umaName": "Mejiro Dober",
-        "baseName": "Mejiro Dober",
-        "spritePath": "assets/characters/chara_stand_1059_105902.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
         "umaKey": "sprite:105001",
         "umaName": "Narita Taishin",
         "baseName": "Narita Taishin",
@@ -16652,19 +16704,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 1
-      },
-      {
-        "umaKey": "sprite:103001",
-        "umaName": "Rice Shower",
-        "baseName": "Rice Shower",
-        "spritePath": "assets/characters/chara_stand_1030_103001.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:106101",
@@ -17370,9 +17409,9 @@
       },
       {
         "umaName": "Oguri Cap",
-        "starts": 14,
+        "starts": 16,
         "wins": 4,
-        "winRate": 0.2857142857142857
+        "winRate": 0.25
       },
       {
         "umaName": "Kitasan Black",
@@ -17387,16 +17426,16 @@
         "winRate": 0
       },
       {
+        "umaName": "Tamamo Cross",
+        "starts": 11,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Taiki Shuttle",
         "starts": 10,
         "wins": 1,
         "winRate": 0.1
-      },
-      {
-        "umaName": "Tamamo Cross",
-        "starts": 10,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Haru Urara",
@@ -17418,7 +17457,13 @@
       },
       {
         "umaName": "Agnes Digital",
-        "starts": 7,
+        "starts": 8,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Mihono Bourbon",
+        "starts": 8,
         "wins": 0,
         "winRate": 0
       },
@@ -17427,12 +17472,6 @@
         "starts": 7,
         "wins": 1,
         "winRate": 0.14285714285714285
-      },
-      {
-        "umaName": "Mihono Bourbon",
-        "starts": 7,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Taiki Shuttle",
@@ -17505,6 +17544,12 @@
         "starts": 5,
         "wins": 2,
         "winRate": 0.4
+      },
+      {
+        "umaName": "Tokai Teio",
+        "starts": 5,
+        "wins": 1,
+        "winRate": 0.2
       },
       {
         "umaName": "Agnes Tachyon",
@@ -17585,6 +17630,18 @@
         "winRate": 0
       },
       {
+        "umaName": "Mejiro Dober",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Rice Shower",
+        "starts": 3,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Silence Suzuka",
         "starts": 3,
         "wins": 0,
@@ -17592,12 +17649,6 @@
       },
       {
         "umaName": "Sweep Tosho",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Tokai Teio",
         "starts": 3,
         "wins": 0,
         "winRate": 0
@@ -17627,19 +17678,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Mejiro Dober",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Narita Taishin",
-        "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Rice Shower",
         "starts": 2,
         "wins": 0,
         "winRate": 0

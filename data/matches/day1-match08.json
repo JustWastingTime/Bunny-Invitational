@@ -8,7 +8,7 @@
     "rilliance",
     "cabal"
   ],
-  "activeCategory": "medium",
+  "activeCategory": "long",
   "races": {
     "sprint": [
       {
@@ -108,47 +108,47 @@
       {
         "teamId": "the-shadow-clones",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "the-shadow-clones",
         "slot": 2,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "rilliance",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "rilliance",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "rilliance",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 5
       }
     ],
     "long": [
