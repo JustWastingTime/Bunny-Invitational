@@ -8,7 +8,7 @@
     "kita-trauma",
     "cabal"
   ],
-  "activeCategory": "medium",
+  "activeCategory": "dirt",
   "races": {
     "sprint": [
       {
@@ -108,94 +108,94 @@
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 9
       }
     ],
     "long": [
       {
         "teamId": "king",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "king",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "king",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "kita-trauma",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "kita-trauma",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "kita-trauma",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "cabal",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "cabal",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "cabal",
         "slot": 2,
-        "gate": null
+        "gate": 9
       }
     ],
     "dirt": [

@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T16:25:54.739Z",
+  "updatedAt": "2026-07-19T16:35:02.901Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -14,13 +14,25 @@
       "id": "cabal",
       "name": "Cabal Agency",
       "color": "#c0fa3b",
-      "firsts": 7,
+      "firsts": 8,
       "seconds": 7,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 60,
+      "points": 65,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
+    },
+    {
+      "id": "kita-trauma",
+      "name": "KitaTrauma",
+      "color": "#eb5153",
+      "firsts": 5,
+      "seconds": 7,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 50,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 30
     },
     {
       "id": "umazing-hotspring",
@@ -59,18 +71,6 @@
       "pointsPerMatch": 16.5
     },
     {
-      "id": "kita-trauma",
-      "name": "KitaTrauma",
-      "color": "#eb5153",
-      "firsts": 4,
-      "seconds": 5,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 39,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 30
-    },
-    {
       "id": "umamusuko",
       "name": "Umamusuko",
       "color": "#f1c41f",
@@ -95,6 +95,18 @@
       "pointsPerMatch": 15.5
     },
     {
+      "id": "king",
+      "name": "King",
+      "color": "#359b62",
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 5,
+      "uniqueBonuses": 0,
+      "points": 28,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 20
+    },
+    {
       "id": "uma-love",
       "name": "Uma Love",
       "color": "#f66a9b",
@@ -117,18 +129,6 @@
       "points": 27,
       "matchesPlayed": 1,
       "pointsPerMatch": 16
-    },
-    {
-      "id": "king",
-      "name": "King",
-      "color": "#359b62",
-      "firsts": 4,
-      "seconds": 1,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 26,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 20
     },
     {
       "id": "rilliance",
@@ -16033,7 +16033,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 3,
               "trainer": "eef",
               "umaName": "Matikanefukukitaru",
               "umaKey": "sprite:105601",
@@ -16047,7 +16047,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 7,
               "trainer": "dnh8",
               "umaName": "Mejiro Dober",
               "umaKey": "sprite:105902",
@@ -16061,7 +16061,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 6,
               "trainer": "Hines",
               "umaName": "Fine Motion",
               "umaKey": "sprite:102201",
@@ -16075,7 +16075,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 1,
               "trainer": "ThatGuyMark",
               "umaName": "Mejiro Ardan",
               "umaKey": "sprite:107101",
@@ -16089,7 +16089,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "North",
               "umaName": "Mihono Bourbon",
               "umaKey": "sprite:102602",
@@ -16103,7 +16103,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 2,
               "trainer": "mollusc",
               "umaName": "Oguri Cap",
               "umaKey": "sprite:100602",
@@ -16117,7 +16117,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 0,
-              "gate": null,
+              "gate": 8,
               "trainer": "WildCat",
               "umaName": "Tokai Teio",
               "umaKey": "sprite:100301",
@@ -16131,7 +16131,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 1,
-              "gate": null,
+              "gate": 5,
               "trainer": "Tn",
               "umaName": "Agnes Digital",
               "umaKey": "sprite:101901",
@@ -16145,7 +16145,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 2,
-              "gate": null,
+              "gate": 9,
               "trainer": "Horsefight",
               "umaName": "Oguri Cap",
               "umaKey": "sprite:100602",
@@ -16156,9 +16156,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "cabal",
+              "teamName": "Cabal Agency",
+              "teamColor": "#c0fa3b",
+              "slot": 2,
+              "gate": 9,
+              "trainer": "Horsefight",
+              "umaName": "Oguri Cap",
+              "umaKey": "sprite:100602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1006_100602.png",
+              "style": "pace",
+              "key": "cabal:2"
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": 4,
+              "trainer": "North",
+              "umaName": "Mihono Bourbon",
+              "umaKey": "sprite:102602",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1026_102602.png",
+              "style": "front",
+              "key": "kita-trauma:1"
+            },
+            "3": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 0,
+              "gate": 3,
+              "trainer": "eef",
+              "umaName": "Matikanefukukitaru",
+              "umaKey": "sprite:105601",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1056_105601.png",
+              "style": "late",
+              "key": "king:0"
+            }
           }
         },
         "long": {
@@ -16168,7 +16207,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "Snrubman",
               "umaName": "Super Creek",
               "umaKey": "sprite:104501",
@@ -16182,7 +16221,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 1,
-              "gate": null,
+              "gate": 3,
               "trainer": "Jaya",
               "umaName": "Nice Nature",
               "umaKey": "sprite:106002",
@@ -16196,7 +16235,7 @@
               "teamName": "First Class King",
               "teamColor": "#359b62",
               "slot": 2,
-              "gate": null,
+              "gate": 8,
               "trainer": "qontroL",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -16210,7 +16249,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 0,
-              "gate": null,
+              "gate": 5,
               "trainer": "Sharky",
               "umaName": "Kitasan Black",
               "umaKey": "sprite:106801",
@@ -16224,7 +16263,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 1,
-              "gate": null,
+              "gate": 4,
               "trainer": "evo",
               "umaName": "Gold Ship",
               "umaKey": "sprite:100701",
@@ -16238,7 +16277,7 @@
               "teamName": "KitaTrauma",
               "teamColor": "#eb5153",
               "slot": 2,
-              "gate": null,
+              "gate": 1,
               "trainer": "Izaya",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -16252,7 +16291,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 0,
-              "gate": null,
+              "gate": 6,
               "trainer": "ONEWINGEDANGEL",
               "umaName": "Mayano Top Gun",
               "umaKey": "sprite:102401",
@@ -16266,7 +16305,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "StirFryYutaka",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -16280,7 +16319,7 @@
               "teamName": "Cabal Agency",
               "teamColor": "#c0fa3b",
               "slot": 2,
-              "gate": null,
+              "gate": 9,
               "trainer": "Chungus Truther",
               "umaName": "Hishi Amazon",
               "umaKey": "sprite:101201",
@@ -16291,9 +16330,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 2,
+              "gate": 1,
+              "trainer": "Izaya",
+              "umaName": "Tamamo Cross",
+              "umaKey": "sprite:102101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1021_102101.png",
+              "style": "end",
+              "key": "kita-trauma:2"
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "teamName": "KitaTrauma",
+              "teamColor": "#eb5153",
+              "slot": 1,
+              "gate": 4,
+              "trainer": "evo",
+              "umaName": "Gold Ship",
+              "umaKey": "sprite:100701",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1007_100701.png",
+              "style": "end",
+              "key": "kita-trauma:1"
+            },
+            "3": {
+              "teamId": "king",
+              "teamName": "First Class King",
+              "teamColor": "#359b62",
+              "slot": 2,
+              "gate": 8,
+              "trainer": "qontroL",
+              "umaName": "Kitasan Black",
+              "umaKey": "sprite:106801",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1068_106801.png",
+              "style": "front",
+              "key": "king:2"
+            }
           }
         },
         "dirt": {
@@ -17105,11 +17183,11 @@
         "spritePath": "assets/characters/chara_stand_1006_100602.png",
         "population": 8,
         "isUnique": false,
-        "starts": 17,
-        "wins": 5,
-        "top3": 10,
-        "winRate": 0.29411764705882354,
-        "top3Rate": 0.5882352941176471
+        "starts": 19,
+        "wins": 6,
+        "top3": 11,
+        "winRate": 0.3157894736842105,
+        "top3Rate": 0.5789473684210527
       },
       {
         "umaKey": "sprite:106801",
@@ -17118,11 +17196,11 @@
         "spritePath": "assets/characters/chara_stand_1068_106801.png",
         "population": 8,
         "isUnique": false,
-        "starts": 15,
+        "starts": 17,
         "wins": 3,
-        "top3": 7,
-        "winRate": 0.2,
-        "top3Rate": 0.4666666666666667
+        "top3": 8,
+        "winRate": 0.17647058823529413,
+        "top3Rate": 0.47058823529411764
       },
       {
         "umaKey": "sprite:100402",
@@ -17138,6 +17216,19 @@
         "top3Rate": 0.3333333333333333
       },
       {
+        "umaKey": "sprite:102101",
+        "umaName": "Tamamo Cross",
+        "baseName": "Tamamo Cross",
+        "spritePath": "assets/characters/chara_stand_1021_102101.png",
+        "population": 6,
+        "isUnique": false,
+        "starts": 15,
+        "wins": 1,
+        "top3": 4,
+        "winRate": 0.06666666666666667,
+        "top3Rate": 0.26666666666666666
+      },
+      {
         "umaKey": "sprite:101001",
         "umaName": "Taiki Shuttle",
         "baseName": "Taiki Shuttle",
@@ -17148,19 +17239,6 @@
         "wins": 1,
         "top3": 3,
         "winRate": 0.07692307692307693,
-        "top3Rate": 0.23076923076923078
-      },
-      {
-        "umaKey": "sprite:102101",
-        "umaName": "Tamamo Cross",
-        "baseName": "Tamamo Cross",
-        "spritePath": "assets/characters/chara_stand_1021_102101.png",
-        "population": 6,
-        "isUnique": false,
-        "starts": 13,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
         "top3Rate": 0.23076923076923078
       },
       {
@@ -17183,11 +17261,11 @@
         "spritePath": "assets/characters/chara_stand_1024_102401.png",
         "population": 5,
         "isUnique": false,
-        "starts": 11,
+        "starts": 12,
         "wins": 2,
         "top3": 3,
-        "winRate": 0.18181818181818182,
-        "top3Rate": 0.2727272727272727
+        "winRate": 0.16666666666666666,
+        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:101901",
@@ -17196,11 +17274,11 @@
         "spritePath": "assets/characters/chara_stand_1019_101901.png",
         "population": 5,
         "isUnique": false,
-        "starts": 11,
+        "starts": 12,
         "wins": 1,
         "top3": 5,
-        "winRate": 0.09090909090909091,
-        "top3Rate": 0.45454545454545453
+        "winRate": 0.08333333333333333,
+        "top3Rate": 0.4166666666666667
       },
       {
         "umaKey": "sprite:105101",
@@ -17235,11 +17313,11 @@
         "spritePath": "assets/characters/chara_stand_1026_102602.png",
         "population": 4,
         "isUnique": false,
-        "starts": 9,
+        "starts": 10,
         "wins": 0,
-        "top3": 4,
+        "top3": 5,
         "winRate": 0,
-        "top3Rate": 0.4444444444444444
+        "top3Rate": 0.5
       },
       {
         "umaKey": "sprite:101002",
@@ -17253,6 +17331,19 @@
         "top3": 3,
         "winRate": 0.14285714285714285,
         "top3Rate": 0.42857142857142855
+      },
+      {
+        "umaKey": "sprite:101201",
+        "umaName": "Hishi Amazon",
+        "baseName": "Hishi Amazon",
+        "spritePath": "assets/characters/chara_stand_1012_101201.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 9,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.2222222222222222
       },
       {
         "umaKey": "sprite:100801",
@@ -17294,19 +17385,6 @@
         "top3Rate": 0.25
       },
       {
-        "umaKey": "sprite:101201",
-        "umaName": "Hishi Amazon",
-        "baseName": "Hishi Amazon",
-        "spritePath": "assets/characters/chara_stand_1012_101201.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 8,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.25
-      },
-      {
         "umaKey": "sprite:101701",
         "umaName": "Symboli Rudolf",
         "baseName": "Symboli Rudolf",
@@ -17331,6 +17409,32 @@
         "top3": 5,
         "winRate": 0.14285714285714285,
         "top3Rate": 0.7142857142857143
+      },
+      {
+        "umaKey": "sprite:107101",
+        "umaName": "Mejiro Ardan",
+        "baseName": "Mejiro Ardan",
+        "spritePath": "assets/characters/chara_stand_1071_107101.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 7,
+        "wins": 0,
+        "top3": 1,
+        "winRate": 0,
+        "top3Rate": 0.14285714285714285
+      },
+      {
+        "umaKey": "sprite:100701",
+        "umaName": "Gold Ship",
+        "baseName": "Gold Ship",
+        "spritePath": "assets/characters/chara_stand_1007_100701.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 6,
+        "wins": 1,
+        "top3": 3,
+        "winRate": 0.16666666666666666,
+        "top3Rate": 0.5
       },
       {
         "umaKey": "sprite:103801",
@@ -17359,32 +17463,6 @@
         "top3Rate": 0.16666666666666666
       },
       {
-        "umaKey": "sprite:107101",
-        "umaName": "Mejiro Ardan",
-        "baseName": "Mejiro Ardan",
-        "spritePath": "assets/characters/chara_stand_1071_107101.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 6,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 0.16666666666666666
-      },
-      {
-        "umaKey": "sprite:100701",
-        "umaName": "Gold Ship",
-        "baseName": "Gold Ship",
-        "spritePath": "assets/characters/chara_stand_1007_100701.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 5,
-        "wins": 1,
-        "top3": 2,
-        "winRate": 0.2,
-        "top3Rate": 0.4
-      },
-      {
         "umaKey": "sprite:101601",
         "umaName": "Narita Brian",
         "baseName": "Narita Brian",
@@ -17396,6 +17474,19 @@
         "top3": 3,
         "winRate": 0.3333333333333333,
         "top3Rate": 0.5
+      },
+      {
+        "umaKey": "sprite:100301",
+        "umaName": "Tokai Teio",
+        "baseName": "Tokai Teio",
+        "spritePath": "assets/characters/chara_stand_1003_100301.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 6,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.16666666666666666,
+        "top3Rate": 0.16666666666666666
       },
       {
         "umaKey": "sprite:103301",
@@ -17422,19 +17513,6 @@
         "top3": 2,
         "winRate": 0.4,
         "top3Rate": 0.4
-      },
-      {
-        "umaKey": "sprite:100301",
-        "umaName": "Tokai Teio",
-        "baseName": "Tokai Teio",
-        "spritePath": "assets/characters/chara_stand_1003_100301.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 5,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.2,
-        "top3Rate": 0.2
       },
       {
         "umaKey": "sprite:103201",
@@ -17513,6 +17591,19 @@
         "top3": 3,
         "winRate": 0.5,
         "top3Rate": 0.75
+      },
+      {
+        "umaKey": "sprite:102201",
+        "umaName": "Fine Motion",
+        "baseName": "Fine Motion",
+        "spritePath": "assets/characters/chara_stand_1022_102201.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 4,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.25,
+        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:100502",
@@ -17619,6 +17710,32 @@
         "top3Rate": 0.5
       },
       {
+        "umaKey": "sprite:105601",
+        "umaName": "Matikanefukukitaru",
+        "baseName": "Matikanefukukitaru",
+        "spritePath": "assets/characters/chara_stand_1056_105601.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 4,
+        "wins": 0,
+        "top3": 3,
+        "winRate": 0,
+        "top3Rate": 0.75
+      },
+      {
+        "umaKey": "sprite:105902",
+        "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
+        "spritePath": "assets/characters/chara_stand_1059_105902.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 4,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:105001",
         "umaName": "Narita Taishin",
         "baseName": "Narita Taishin",
@@ -17645,19 +17762,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:102201",
-        "umaName": "Fine Motion",
-        "baseName": "Fine Motion",
-        "spritePath": "assets/characters/chara_stand_1022_102201.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.3333333333333333,
-        "top3Rate": 0.3333333333333333
-      },
-      {
         "umaKey": "sprite:106102",
         "umaName": "King Halo",
         "baseName": "King Halo",
@@ -17669,32 +17773,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 0.6666666666666666
-      },
-      {
-        "umaKey": "sprite:105601",
-        "umaName": "Matikanefukukitaru",
-        "baseName": "Matikanefukukitaru",
-        "spritePath": "assets/characters/chara_stand_1056_105601.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.6666666666666666
-      },
-      {
-        "umaKey": "sprite:105902",
-        "umaName": "Mejiro Dober",
-        "baseName": "Mejiro Dober",
-        "spritePath": "assets/characters/chara_stand_1059_105902.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 3,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       },
       {
         "umaKey": "sprite:106101",
@@ -17983,10 +18061,36 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:106002",
+        "umaName": "Nice Nature",
+        "baseName": "Nice Nature",
+        "spritePath": "assets/characters/chara_stand_1060_106002.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:106701",
         "umaName": "Satono Diamond",
         "baseName": "Satono Diamond",
         "spritePath": "assets/characters/chara_stand_1067_106701.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
+        "umaKey": "sprite:104501",
+        "umaName": "Super Creek",
+        "baseName": "Super Creek",
+        "spritePath": "assets/characters/chara_stand_1045_104501.png",
         "population": 1,
         "isUnique": true,
         "starts": 2,
@@ -18007,32 +18111,6 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 1
-      },
-      {
-        "umaKey": "sprite:106002",
-        "umaName": "Nice Nature",
-        "baseName": "Nice Nature",
-        "spritePath": "assets/characters/chara_stand_1060_106002.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:104501",
-        "umaName": "Super Creek",
-        "baseName": "Super Creek",
-        "spritePath": "assets/characters/chara_stand_1045_104501.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
       }
     ],
     "combinedUmas": [
@@ -18400,18 +18478,24 @@
       },
       {
         "umaName": "Oguri Cap",
-        "starts": 17,
-        "wins": 5,
-        "winRate": 0.29411764705882354
+        "starts": 19,
+        "wins": 6,
+        "winRate": 0.3157894736842105
       },
       {
         "umaName": "Kitasan Black",
-        "starts": 15,
+        "starts": 17,
         "wins": 3,
-        "winRate": 0.2
+        "winRate": 0.17647058823529413
       },
       {
         "umaName": "Maruzensky",
+        "starts": 15,
+        "wins": 1,
+        "winRate": 0.06666666666666667
+      },
+      {
+        "umaName": "Tamamo Cross",
         "starts": 15,
         "wins": 1,
         "winRate": 0.06666666666666667
@@ -18423,12 +18507,6 @@
         "winRate": 0.07692307692307693
       },
       {
-        "umaName": "Tamamo Cross",
-        "starts": 13,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Haru Urara",
         "starts": 12,
         "wins": 1,
@@ -18436,15 +18514,15 @@
       },
       {
         "umaName": "Mayano Top Gun",
-        "starts": 11,
+        "starts": 12,
         "wins": 2,
-        "winRate": 0.18181818181818182
+        "winRate": 0.16666666666666666
       },
       {
         "umaName": "Agnes Digital",
-        "starts": 11,
+        "starts": 12,
         "wins": 1,
-        "winRate": 0.09090909090909091
+        "winRate": 0.08333333333333333
       },
       {
         "umaName": "Nishino Flower",
@@ -18460,7 +18538,7 @@
       },
       {
         "umaName": "Mihono Bourbon",
-        "starts": 9,
+        "starts": 10,
         "wins": 0,
         "winRate": 0
       },
@@ -18469,6 +18547,12 @@
         "starts": 7,
         "wins": 1,
         "winRate": 0.14285714285714285
+      },
+      {
+        "umaName": "Hishi Amazon",
+        "starts": 9,
+        "wins": 0,
+        "winRate": 0
       },
       {
         "umaName": "Vodka",
@@ -18489,12 +18573,6 @@
         "winRate": 0.125
       },
       {
-        "umaName": "Hishi Amazon",
-        "starts": 8,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
         "umaName": "Symboli Rudolf",
         "starts": 7,
         "wins": 2,
@@ -18505,6 +18583,18 @@
         "starts": 7,
         "wins": 1,
         "winRate": 0.14285714285714285
+      },
+      {
+        "umaName": "Mejiro Ardan",
+        "starts": 7,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Gold Ship",
+        "starts": 6,
+        "wins": 1,
+        "winRate": 0.16666666666666666
       },
       {
         "umaName": "Curren Chan",
@@ -18519,22 +18609,16 @@
         "winRate": 0
       },
       {
-        "umaName": "Mejiro Ardan",
-        "starts": 6,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Gold Ship",
-        "starts": 5,
-        "wins": 1,
-        "winRate": 0.2
-      },
-      {
         "umaName": "Narita Brian",
         "starts": 6,
         "wins": 2,
         "winRate": 0.3333333333333333
+      },
+      {
+        "umaName": "Tokai Teio",
+        "starts": 6,
+        "wins": 1,
+        "winRate": 0.16666666666666666
       },
       {
         "umaName": "Admire Vega",
@@ -18547,12 +18631,6 @@
         "starts": 5,
         "wins": 2,
         "winRate": 0.4
-      },
-      {
-        "umaName": "Tokai Teio",
-        "starts": 5,
-        "wins": 1,
-        "winRate": 0.2
       },
       {
         "umaName": "Agnes Tachyon",
@@ -18589,6 +18667,12 @@
         "starts": 4,
         "wins": 2,
         "winRate": 0.5
+      },
+      {
+        "umaName": "Fine Motion",
+        "starts": 4,
+        "wins": 1,
+        "winRate": 0.25
       },
       {
         "umaName": "Fuji Kiseki",
@@ -18639,6 +18723,18 @@
         "winRate": 0
       },
       {
+        "umaName": "Matikanefukukitaru",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Mejiro Dober",
+        "starts": 4,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Narita Taishin",
         "starts": 4,
         "wins": 0,
@@ -18651,25 +18747,7 @@
         "winRate": 0
       },
       {
-        "umaName": "Fine Motion",
-        "starts": 3,
-        "wins": 1,
-        "winRate": 0.3333333333333333
-      },
-      {
         "umaName": "King Halo",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Matikanefukukitaru",
-        "starts": 3,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Mejiro Dober",
         "starts": 3,
         "wins": 0,
         "winRate": 0
@@ -18807,7 +18885,19 @@
         "winRate": 0
       },
       {
+        "umaName": "Nice Nature",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Satono Diamond",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
+        "umaName": "Super Creek",
         "starts": 2,
         "wins": 0,
         "winRate": 0
@@ -18815,18 +18905,6 @@
       {
         "umaName": "Yaeno Muteki",
         "starts": 2,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Nice Nature",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Super Creek",
-        "starts": 1,
         "wins": 0,
         "winRate": 0
       }
