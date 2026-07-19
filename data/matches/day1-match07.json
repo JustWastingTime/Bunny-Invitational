@@ -8,100 +8,100 @@
     "falena",
     "umalliance"
   ],
-  "activeCategory": "sprint",
+  "activeCategory": "mile",
   "races": {
     "sprint": [
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "falena",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "falena",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "falena",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 2
       }
     ],
     "mile": [
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 5
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "falena",
         "slot": 0,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "falena",
         "slot": 1,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "falena",
         "slot": 2,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 9
       }
     ],
     "medium": [

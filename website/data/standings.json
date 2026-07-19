@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-18T18:44:30.825Z",
+  "updatedAt": "2026-07-19T15:08:11.199Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -37,9 +37,9 @@
       "color": "#c1e1f1",
       "firsts": 2,
       "seconds": 2,
-      "thirds": 1,
+      "thirds": 2,
       "uniqueBonuses": 2,
-      "points": 19,
+      "points": 20,
       "matchesPlayed": 1,
       "pointsPerMatch": 19
     },
@@ -90,11 +90,11 @@
     "umalliance": {
       "name": "UMAlliance",
       "color": "#2c49c9",
-      "firsts": 3,
-      "seconds": 5,
+      "firsts": 4,
+      "seconds": 6,
       "thirds": 3,
       "uniqueBonuses": 0,
-      "points": 33,
+      "points": 41,
       "matchesPlayed": 2,
       "pointsPerMatch": 16.5
     },
@@ -708,9 +708,18 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "umalliance",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "umalliance",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "umazing-hotspring",
+              "slot": 2
+            }
           }
         },
         "mile": {
