@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T17:07:32.932Z",
+  "updatedAt": "2026-07-19T17:15:37.676Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -29,8 +29,8 @@
       "thirds": 4,
       "uniqueBonuses": 0,
       "points": 46,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 23
+      "matchesPlayed": 3,
+      "pointsPerMatch": 15.33
     },
     "umazing-hotspring": {
       "name": "Umazing Hotsprings",
@@ -101,13 +101,13 @@
     "king": {
       "name": "King",
       "color": "#359b62",
-      "firsts": 8,
+      "firsts": 9,
       "seconds": 5,
-      "thirds": 7,
+      "thirds": 8,
       "uniqueBonuses": 1,
-      "points": 63,
-      "matchesPlayed": 3,
-      "pointsPerMatch": 21
+      "points": 69,
+      "matchesPlayed": 4,
+      "pointsPerMatch": 17.25
     },
     "rilliance": {
       "name": "Rilliance",
@@ -124,12 +124,12 @@
       "name": "KitaTrauma",
       "color": "#eb5153",
       "firsts": 5,
-      "seconds": 8,
+      "seconds": 9,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 53,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 26.5
+      "points": 56,
+      "matchesPlayed": 3,
+      "pointsPerMatch": 18.67
     },
     "uma-love": {
       "name": "Uma Love",
@@ -1168,9 +1168,18 @@
       "raceResults": {
         "sprint": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "king",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "kita-trauma",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "king",
+              "slot": 0
+            }
           }
         },
         "mile": {
