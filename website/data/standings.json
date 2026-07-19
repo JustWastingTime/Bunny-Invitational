@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T17:34:32.965Z",
+  "updatedAt": "2026-07-19T17:38:25.460Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -25,12 +25,12 @@
       "name": "BUNS",
       "color": "#e91e45",
       "firsts": 6,
-      "seconds": 6,
-      "thirds": 7,
+      "seconds": 7,
+      "thirds": 8,
       "uniqueBonuses": 1,
-      "points": 56,
+      "points": 60,
       "matchesPlayed": 3,
-      "pointsPerMatch": 18.67
+      "pointsPerMatch": 20
     },
     "umazing-hotspring": {
       "name": "Umazing Hotsprings",
@@ -123,13 +123,13 @@
     "kita-trauma": {
       "name": "KitaTrauma",
       "color": "#eb5153",
-      "firsts": 9,
+      "firsts": 10,
       "seconds": 11,
       "thirds": 5,
       "uniqueBonuses": 0,
-      "points": 83,
+      "points": 88,
       "matchesPlayed": 3,
-      "pointsPerMatch": 27.67
+      "pointsPerMatch": 29.33
     },
     "uma-love": {
       "name": "Uma Love",
@@ -1264,9 +1264,18 @@
         },
         "medium2": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "kita-trauma",
+              "slot": 1
+            },
+            "2": {
+              "teamId": "dust-bunny",
+              "slot": 1
+            },
+            "3": {
+              "teamId": "dust-bunny",
+              "slot": 2
+            }
           }
         }
       }
