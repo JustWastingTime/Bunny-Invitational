@@ -24,7 +24,7 @@
           "stats": { "speed": 1230, "stamina": 511, "power": 1226, "guts": 739, "wisdom": 1232 },
           "skills": ["One True Color","Shooting for Victory!","Budding Blossom","Wet Conditions","Fall Runner","It's On!","Homestretch Haste","Speed Star","Turbo Sprint","Sprint Corners","Pace Chaser Corners","Straight Descent","Pace Chaser Savvy","Groundwork","Tail Held High","Playtime's Over!","Risky Business","Burning Spirit SPD","Racing Spirit: Speed"] }
       },
-      { "trainer": "Inigo",
+      { "trainer": "RDD Inigo",
         "locked": true,
         "uma": { "name": "Taiki Shuttle",
           "spriteId": 101002,

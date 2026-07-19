@@ -11,6 +11,42 @@
   },
   "standings": [
     {
+      "id": "cabal",
+      "name": "Cabal Agency",
+      "color": "#c0fa3b",
+      "firsts": 5,
+      "seconds": 3,
+      "thirds": 3,
+      "uniqueBonuses": 0,
+      "points": 37,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 18.5
+    },
+    {
+      "id": "umalliance",
+      "name": "UMAlliance",
+      "color": "#2c49c9",
+      "firsts": 3,
+      "seconds": 5,
+      "thirds": 3,
+      "uniqueBonuses": 0,
+      "points": 33,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 16.5
+    },
+    {
+      "id": "ritto-dorm-dropouts",
+      "name": "Ritto Dorm Dropouts",
+      "color": "#992724",
+      "firsts": 1,
+      "seconds": 7,
+      "thirds": 3,
+      "uniqueBonuses": 2,
+      "points": 31,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 15.5
+    },
+    {
       "id": "kita-trauma",
       "name": "KitaTrauma",
       "color": "#eb5153",
@@ -21,6 +57,18 @@
       "points": 30,
       "matchesPlayed": 1,
       "pointsPerMatch": 30
+    },
+    {
+      "id": "uma-love",
+      "name": "Uma Love",
+      "color": "#f66a9b",
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 27,
+      "matchesPlayed": 2,
+      "pointsPerMatch": 13.5
     },
     {
       "id": "umamusuko",
@@ -71,30 +119,6 @@
       "pointsPerMatch": 19
     },
     {
-      "id": "cabal",
-      "name": "Cabal Agency",
-      "color": "#c0fa3b",
-      "firsts": 5,
-      "seconds": 3,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 37,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 18.5
-    },
-    {
-      "id": "umalliance",
-      "name": "UMAlliance",
-      "color": "#2c49c9",
-      "firsts": 3,
-      "seconds": 5,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 33,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 16.5
-    },
-    {
       "id": "the-shadow-clones",
       "name": "The Shadow Clones",
       "color": "#646364",
@@ -107,18 +131,6 @@
       "pointsPerMatch": 16
     },
     {
-      "id": "ritto-dorm-dropouts",
-      "name": "Ritto Dorm Dropouts",
-      "color": "#992724",
-      "firsts": 1,
-      "seconds": 7,
-      "thirds": 3,
-      "uniqueBonuses": 2,
-      "points": 31,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 15.5
-    },
-    {
       "id": "falena",
       "name": "Falena",
       "color": "#2e65cf",
@@ -129,18 +141,6 @@
       "points": 14,
       "matchesPlayed": 1,
       "pointsPerMatch": 14
-    },
-    {
-      "id": "uma-love",
-      "name": "Uma Love",
-      "color": "#f66a9b",
-      "firsts": 4,
-      "seconds": 1,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 27,
-      "matchesPlayed": 2,
-      "pointsPerMatch": 13.5
     },
     {
       "id": "rilliance",
@@ -2249,7 +2249,7 @@
           },
           {
             "slot": 2,
-            "trainer": "Inigo",
+            "trainer": "RDD Inigo",
             "locked": true,
             "uma": {
               "name": "Taiki Shuttle",
@@ -10037,7 +10037,7 @@
               "teamColor": "#359b62",
               "slot": 2,
               "gate": 2,
-              "trainer": "Inigo",
+              "trainer": "RDD Inigo",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101002",
               "isUnique": false,
@@ -14919,7 +14919,7 @@
               "teamColor": "#359b62",
               "slot": 2,
               "gate": null,
-              "trainer": "Inigo",
+              "trainer": "RDD Inigo",
               "umaName": "Taiki Shuttle",
               "umaKey": "sprite:101002",
               "isUnique": false,

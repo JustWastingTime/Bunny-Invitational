@@ -226,12 +226,57 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 }
 
 .race-card.place-1 {
-  border: 2px solid #f4c15d;
+  position: relative;
+  border: 2px solid #ffd76a;
   box-shadow:
-    0 0 0 1px rgba(244, 193, 93, 0.55),
-    0 0 14px rgba(244, 193, 93, 0.35),
+    0 0 0 1px rgba(255, 220, 120, 0.75),
+    0 0 16px rgba(255, 200, 70, 0.55),
+    0 0 28px rgba(255, 170, 40, 0.28),
     0 4px 12px rgba(8, 4, 16, 0.35),
-    inset 0 0 0 1px rgba(255, 230, 150, 0.35);
+    inset 0 0 0 1px rgba(255, 245, 190, 0.55);
+}
+
+.race-card.place-1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 248, 210, 0.08) 44%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 220, 120, 0.28) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  background-size: 240% 100%;
+  background-position: 130% 0;
+  animation: gold-shine 3.2s ease-in-out infinite;
+  mix-blend-mode: soft-light;
+}
+
+@keyframes gold-shine {
+  0%,
+  18% {
+    background-position: 130% 0;
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  52% {
+    background-position: -40% 0;
+    opacity: 1;
+  }
+  62%,
+  100% {
+    background-position: -40% 0;
+    opacity: 0;
+  }
 }
 
 .race-card.place-2 {
@@ -244,12 +289,12 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
 }
 
 .race-card.place-3 {
-  border: 2px solid #e0a078;
+  border: 2px solid #c4845a;
   box-shadow:
-    0 0 0 1px rgba(224, 160, 120, 0.45),
-    0 0 12px rgba(224, 160, 120, 0.22),
+    0 0 0 1px rgba(180, 120, 80, 0.4),
+    0 0 10px rgba(160, 100, 60, 0.18),
     0 4px 12px rgba(8, 4, 16, 0.35),
-    inset 0 0 0 1px rgba(255, 210, 170, 0.25);
+    inset 0 0 0 1px rgba(220, 170, 130, 0.2);
 }
 
 .race-portrait-wrap {
@@ -293,6 +338,7 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   position: absolute;
   top: 4px;
   right: 4px;
+  z-index: 3;
   display: grid;
   place-items: center;
   width: 18px;
@@ -304,9 +350,19 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
-.podium-badge.place-1 { color: #f4c15d; border-color: rgba(244, 193, 93, 0.85); }
+.podium-badge.place-1 {
+  color: #ffe08a;
+  border-color: rgba(255, 220, 120, 0.95);
+  background: linear-gradient(160deg, rgba(80, 55, 18, 0.96), rgba(28, 18, 10, 0.96));
+  box-shadow:
+    0 0 10px rgba(255, 200, 80, 0.55),
+    0 2px 6px rgba(0, 0, 0, 0.35);
+}
 .podium-badge.place-2 { color: #d8dfef; border-color: rgba(216, 223, 239, 0.85); }
-.podium-badge.place-3 { color: #e7b69a; border-color: rgba(231, 182, 154, 0.85); }
+.podium-badge.place-3 {
+  color: #c9926e;
+  border-color: rgba(180, 120, 85, 0.8);
+}
 
 .podium-badge .race-icon-svg {
   width: 11px;
@@ -317,6 +373,7 @@ th { text-align: left; color: var(--muted); font-size: 12px; text-transform: upp
   position: absolute;
   left: 4px;
   bottom: 4px;
+  z-index: 3;
   display: grid;
   place-items: center;
   width: 16px;
