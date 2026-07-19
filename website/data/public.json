@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:59:02.059Z",
+  "updatedAt": "2026-07-19T16:03:06.081Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -23,6 +23,18 @@
       "pointsPerMatch": 18.5
     },
     {
+      "id": "umazing-hotspring",
+      "name": "Umazing Hotsprings",
+      "color": "#c1e1f1",
+      "firsts": 5,
+      "seconds": 5,
+      "thirds": 3,
+      "uniqueBonuses": 3,
+      "points": 46,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 19
+    },
+    {
       "id": "umalliance",
       "name": "UMAlliance",
       "color": "#2c49c9",
@@ -33,18 +45,6 @@
       "points": 45,
       "matchesPlayed": 2,
       "pointsPerMatch": 16.5
-    },
-    {
-      "id": "umazing-hotspring",
-      "name": "Umazing Hotsprings",
-      "color": "#c1e1f1",
-      "firsts": 5,
-      "seconds": 4,
-      "thirds": 3,
-      "uniqueBonuses": 3,
-      "points": 43,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
     },
     {
       "id": "ritto-dorm-dropouts",
@@ -71,6 +71,30 @@
       "pointsPerMatch": 30
     },
     {
+      "id": "umamusuko",
+      "name": "Umamusuko",
+      "color": "#f1c41f",
+      "firsts": 3,
+      "seconds": 3,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 28,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 21
+    },
+    {
+      "id": "dust-bunny",
+      "name": "BUNS",
+      "color": "#e91e45",
+      "firsts": 4,
+      "seconds": 1,
+      "thirds": 4,
+      "uniqueBonuses": 0,
+      "points": 27,
+      "matchesPlayed": 1,
+      "pointsPerMatch": 19
+    },
+    {
       "id": "uma-love",
       "name": "Uma Love",
       "color": "#f66a9b",
@@ -81,18 +105,6 @@
       "points": 27,
       "matchesPlayed": 2,
       "pointsPerMatch": 13.5
-    },
-    {
-      "id": "umamusuko",
-      "name": "Umamusuko",
-      "color": "#f1c41f",
-      "firsts": 3,
-      "seconds": 3,
-      "thirds": 3,
-      "uniqueBonuses": 0,
-      "points": 27,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 21
     },
     {
       "id": "the-shadow-clones",
@@ -129,18 +141,6 @@
       "points": 25,
       "matchesPlayed": 1,
       "pointsPerMatch": 14
-    },
-    {
-      "id": "dust-bunny",
-      "name": "BUNS",
-      "color": "#e91e45",
-      "firsts": 3,
-      "seconds": 1,
-      "thirds": 4,
-      "uniqueBonuses": 0,
-      "points": 22,
-      "matchesPlayed": 1,
-      "pointsPerMatch": 19
     },
     {
       "id": "king",
@@ -14976,7 +14976,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 0,
-              "gate": null,
+              "gate": 9,
               "trainer": "Bane@BUNS",
               "umaName": "Hishi Amazon",
               "umaKey": "sprite:101201",
@@ -14990,7 +14990,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 1,
-              "gate": null,
+              "gate": 2,
               "trainer": "Spurs@BUNS",
               "umaName": "Grass Wonder",
               "umaKey": "sprite:101101",
@@ -15004,7 +15004,7 @@
               "teamName": "BUNS",
               "teamColor": "#e91e45",
               "slot": 2,
-              "gate": null,
+              "gate": 6,
               "trainer": "Kylian Umappé",
               "umaName": "Nice Nature",
               "umaKey": "sprite:106001",
@@ -15018,7 +15018,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 0,
-              "gate": null,
+              "gate": 4,
               "trainer": "AzimDaQuixote",
               "umaName": "Agnes Digital",
               "umaKey": "sprite:101901",
@@ -15032,7 +15032,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 1,
-              "gate": null,
+              "gate": 3,
               "trainer": "Special Needs",
               "umaName": "Maruzensky",
               "umaKey": "sprite:100402",
@@ -15046,7 +15046,7 @@
               "teamName": "Umamusuko",
               "teamColor": "#f1c41f",
               "slot": 2,
-              "gate": null,
+              "gate": 8,
               "trainer": "InfinitumX",
               "umaName": "Tamamo Cross",
               "umaKey": "sprite:102101",
@@ -15060,7 +15060,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 0,
-              "gate": null,
+              "gate": 7,
               "trainer": "iluvtommboy2",
               "umaName": "Sweep Tosho",
               "umaKey": "sprite:104401",
@@ -15074,7 +15074,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 1,
-              "gate": null,
+              "gate": 5,
               "trainer": "Zardimi",
               "umaName": "Hishi Amazon",
               "umaKey": "sprite:101201",
@@ -15088,7 +15088,7 @@
               "teamName": "Umazing Hotsprings",
               "teamColor": "#c1e1f1",
               "slot": 2,
-              "gate": null,
+              "gate": 1,
               "trainer": "harry",
               "umaName": "Mejiro Dober",
               "umaKey": "sprite:105901",
@@ -15099,9 +15099,48 @@
             }
           ],
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "dust-bunny",
+              "teamName": "BUNS",
+              "teamColor": "#e91e45",
+              "slot": 1,
+              "gate": 2,
+              "trainer": "Spurs@BUNS",
+              "umaName": "Grass Wonder",
+              "umaKey": "sprite:101101",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1011_101101.png",
+              "style": "late",
+              "key": "dust-bunny:1"
+            },
+            "2": {
+              "teamId": "umazing-hotspring",
+              "teamName": "Umazing Hotsprings",
+              "teamColor": "#c1e1f1",
+              "slot": 0,
+              "gate": 7,
+              "trainer": "iluvtommboy2",
+              "umaName": "Sweep Tosho",
+              "umaKey": "sprite:104401",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1044_104401.png",
+              "style": "end",
+              "key": "umazing-hotspring:0"
+            },
+            "3": {
+              "teamId": "umamusuko",
+              "teamName": "Umamusuko",
+              "teamColor": "#f1c41f",
+              "slot": 0,
+              "gate": 4,
+              "trainer": "AzimDaQuixote",
+              "umaName": "Agnes Digital",
+              "umaKey": "sprite:101901",
+              "isUnique": false,
+              "spritePath": "assets/characters/chara_stand_1019_101901.png",
+              "style": "late",
+              "key": "umamusuko:0"
+            }
           }
         },
         "medium": {
@@ -16332,17 +16371,17 @@
       "spritePath": "assets/characters/chara_stand_1006_100602.png"
     },
     "bestWinRateUma": {
-      "umaKey": "sprite:105301",
-      "umaName": "Bamboo Memory",
-      "baseName": "Bamboo Memory",
-      "spritePath": "assets/characters/chara_stand_1053_105301.png",
+      "umaKey": "sprite:101101",
+      "umaName": "Grass Wonder",
+      "baseName": "Grass Wonder",
+      "spritePath": "assets/characters/chara_stand_1011_101101.png",
       "population": 2,
       "isUnique": false,
-      "starts": 4,
+      "starts": 3,
       "wins": 2,
-      "top3": 2,
-      "winRate": 0.5,
-      "top3Rate": 0.5
+      "top3": 3,
+      "winRate": 0.6666666666666666,
+      "top3Rate": 1
     },
     "mostUniqueTeam": {
       "id": "falena",
@@ -16467,11 +16506,11 @@
         "spritePath": "assets/characters/chara_stand_1004_100402.png",
         "population": 6,
         "isUnique": false,
-        "starts": 12,
+        "starts": 13,
         "wins": 0,
         "top3": 4,
         "winRate": 0,
-        "top3Rate": 0.3333333333333333
+        "top3Rate": 0.3076923076923077
       },
       {
         "umaKey": "sprite:102101",
@@ -16480,11 +16519,11 @@
         "spritePath": "assets/characters/chara_stand_1021_102101.png",
         "population": 6,
         "isUnique": false,
-        "starts": 12,
+        "starts": 13,
         "wins": 0,
         "top3": 3,
         "winRate": 0,
-        "top3Rate": 0.25
+        "top3Rate": 0.23076923076923078
       },
       {
         "umaKey": "sprite:105202",
@@ -16513,6 +16552,19 @@
         "top3Rate": 0.2727272727272727
       },
       {
+        "umaKey": "sprite:101901",
+        "umaName": "Agnes Digital",
+        "baseName": "Agnes Digital",
+        "spritePath": "assets/characters/chara_stand_1019_101901.png",
+        "population": 5,
+        "isUnique": false,
+        "starts": 10,
+        "wins": 0,
+        "top3": 4,
+        "winRate": 0,
+        "top3Rate": 0.4
+      },
+      {
         "umaKey": "sprite:105101",
         "umaName": "Nishino Flower",
         "baseName": "Nishino Flower",
@@ -16536,19 +16588,6 @@
         "wins": 2,
         "top3": 3,
         "winRate": 0.2222222222222222,
-        "top3Rate": 0.3333333333333333
-      },
-      {
-        "umaKey": "sprite:101901",
-        "umaName": "Agnes Digital",
-        "baseName": "Agnes Digital",
-        "spritePath": "assets/characters/chara_stand_1019_101901.png",
-        "population": 5,
-        "isUnique": false,
-        "starts": 9,
-        "wins": 0,
-        "top3": 3,
-        "winRate": 0,
         "top3Rate": 0.3333333333333333
       },
       {
@@ -16589,6 +16628,19 @@
         "top3": 3,
         "winRate": 0.16666666666666666,
         "top3Rate": 0.5
+      },
+      {
+        "umaKey": "sprite:101201",
+        "umaName": "Hishi Amazon",
+        "baseName": "Hishi Amazon",
+        "spritePath": "assets/characters/chara_stand_1012_101201.png",
+        "population": 3,
+        "isUnique": false,
+        "starts": 8,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.25
       },
       {
         "umaKey": "sprite:101701",
@@ -16667,19 +16719,6 @@
         "top3": 1,
         "winRate": 0,
         "top3Rate": 0.16666666666666666
-      },
-      {
-        "umaKey": "sprite:101201",
-        "umaName": "Hishi Amazon",
-        "baseName": "Hishi Amazon",
-        "spritePath": "assets/characters/chara_stand_1012_101201.png",
-        "population": 3,
-        "isUnique": false,
-        "starts": 6,
-        "wins": 0,
-        "top3": 2,
-        "winRate": 0,
-        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:107101",
@@ -16799,6 +16838,19 @@
         "top3Rate": 0.8
       },
       {
+        "umaKey": "sprite:104401",
+        "umaName": "Sweep Tosho",
+        "baseName": "Sweep Tosho",
+        "spritePath": "assets/characters/chara_stand_1044_104401.png",
+        "population": 2,
+        "isUnique": false,
+        "starts": 5,
+        "wins": 0,
+        "top3": 2,
+        "winRate": 0,
+        "top3Rate": 0.4
+      },
+      {
         "umaKey": "sprite:105301",
         "umaName": "Bamboo Memory",
         "baseName": "Bamboo Memory",
@@ -16877,17 +16929,17 @@
         "top3Rate": 0.5
       },
       {
-        "umaKey": "sprite:104401",
-        "umaName": "Sweep Tosho",
-        "baseName": "Sweep Tosho",
-        "spritePath": "assets/characters/chara_stand_1044_104401.png",
+        "umaKey": "sprite:101101",
+        "umaName": "Grass Wonder",
+        "baseName": "Grass Wonder",
+        "spritePath": "assets/characters/chara_stand_1011_101101.png",
         "population": 2,
         "isUnique": false,
-        "starts": 4,
-        "wins": 0,
-        "top3": 1,
-        "winRate": 0,
-        "top3Rate": 0.25
+        "starts": 3,
+        "wins": 2,
+        "top3": 3,
+        "winRate": 0.6666666666666666,
+        "top3Rate": 1
       },
       {
         "umaKey": "sprite:102201",
@@ -16994,19 +17046,6 @@
         "top3Rate": 0
       },
       {
-        "umaKey": "sprite:101101",
-        "umaName": "Grass Wonder",
-        "baseName": "Grass Wonder",
-        "spritePath": "assets/characters/chara_stand_1011_101101.png",
-        "population": 2,
-        "isUnique": false,
-        "starts": 2,
-        "wins": 1,
-        "top3": 2,
-        "winRate": 0.5,
-        "top3Rate": 1
-      },
-      {
         "umaKey": "sprite:106102",
         "umaName": "King Halo",
         "baseName": "King Halo",
@@ -17031,6 +17070,19 @@
         "top3": 2,
         "winRate": 0,
         "top3Rate": 1
+      },
+      {
+        "umaKey": "sprite:105901",
+        "umaName": "Mejiro Dober",
+        "baseName": "Mejiro Dober",
+        "spritePath": "assets/characters/chara_stand_1059_105901.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 3,
+        "wins": 1,
+        "top3": 1,
+        "winRate": 0.3333333333333333,
+        "top3Rate": 0.3333333333333333
       },
       {
         "umaKey": "sprite:106101",
@@ -17102,19 +17154,6 @@
         "umaName": "Mayano Top Gun",
         "baseName": "Mayano Top Gun",
         "spritePath": "assets/characters/chara_stand_1024_102402.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 2,
-        "wins": 1,
-        "top3": 1,
-        "winRate": 0.5,
-        "top3Rate": 0.5
-      },
-      {
-        "umaKey": "sprite:105901",
-        "umaName": "Mejiro Dober",
-        "baseName": "Mejiro Dober",
-        "spritePath": "assets/characters/chara_stand_1059_105901.png",
         "population": 1,
         "isUnique": true,
         "starts": 2,
@@ -17267,6 +17306,19 @@
         "top3Rate": 0
       },
       {
+        "umaKey": "sprite:106001",
+        "umaName": "Nice Nature",
+        "baseName": "Nice Nature",
+        "spritePath": "assets/characters/chara_stand_1060_106001.png",
+        "population": 1,
+        "isUnique": true,
+        "starts": 2,
+        "wins": 0,
+        "top3": 0,
+        "winRate": 0,
+        "top3Rate": 0
+      },
+      {
         "umaKey": "sprite:106701",
         "umaName": "Satono Diamond",
         "baseName": "Satono Diamond",
@@ -17323,19 +17375,6 @@
         "umaName": "Mejiro Ryan",
         "baseName": "Mejiro Ryan",
         "spritePath": "assets/characters/chara_stand_1027_102701.png",
-        "population": 1,
-        "isUnique": true,
-        "starts": 1,
-        "wins": 0,
-        "top3": 0,
-        "winRate": 0,
-        "top3Rate": 0
-      },
-      {
-        "umaKey": "sprite:106001",
-        "umaName": "Nice Nature",
-        "baseName": "Nice Nature",
-        "spritePath": "assets/characters/chara_stand_1060_106001.png",
         "population": 1,
         "isUnique": true,
         "starts": 1,
@@ -17748,13 +17787,13 @@
       },
       {
         "umaName": "Maruzensky",
-        "starts": 12,
+        "starts": 13,
         "wins": 0,
         "winRate": 0
       },
       {
         "umaName": "Tamamo Cross",
-        "starts": 12,
+        "starts": 13,
         "wins": 0,
         "winRate": 0
       },
@@ -17771,6 +17810,12 @@
         "winRate": 0.09090909090909091
       },
       {
+        "umaName": "Agnes Digital",
+        "starts": 10,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Nishino Flower",
         "starts": 10,
         "wins": 0,
@@ -17781,12 +17826,6 @@
         "starts": 9,
         "wins": 2,
         "winRate": 0.2222222222222222
-      },
-      {
-        "umaName": "Agnes Digital",
-        "starts": 9,
-        "wins": 0,
-        "winRate": 0
       },
       {
         "umaName": "Curren Chan",
@@ -17805,6 +17844,12 @@
         "starts": 6,
         "wins": 1,
         "winRate": 0.16666666666666666
+      },
+      {
+        "umaName": "Hishi Amazon",
+        "starts": 8,
+        "wins": 0,
+        "winRate": 0
       },
       {
         "umaName": "Symboli Rudolf",
@@ -17838,12 +17883,6 @@
       },
       {
         "umaName": "Curren Chan",
-        "starts": 6,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Hishi Amazon",
         "starts": 6,
         "wins": 0,
         "winRate": 0
@@ -17903,6 +17942,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Sweep Tosho",
+        "starts": 5,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Bamboo Memory",
         "starts": 4,
         "wins": 2,
@@ -17939,10 +17984,10 @@
         "winRate": 0
       },
       {
-        "umaName": "Sweep Tosho",
-        "starts": 4,
-        "wins": 0,
-        "winRate": 0
+        "umaName": "Grass Wonder",
+        "starts": 3,
+        "wins": 2,
+        "winRate": 0.6666666666666666
       },
       {
         "umaName": "Fine Motion",
@@ -17993,12 +18038,6 @@
         "winRate": 0
       },
       {
-        "umaName": "Grass Wonder",
-        "starts": 2,
-        "wins": 1,
-        "winRate": 0.5
-      },
-      {
         "umaName": "King Halo",
         "starts": 2,
         "wins": 0,
@@ -18009,6 +18048,12 @@
         "starts": 2,
         "wins": 0,
         "winRate": 0
+      },
+      {
+        "umaName": "Mejiro Dober",
+        "starts": 3,
+        "wins": 1,
+        "winRate": 0.3333333333333333
       },
       {
         "umaName": "King Halo",
@@ -18042,12 +18087,6 @@
       },
       {
         "umaName": "Mayano Top Gun",
-        "starts": 2,
-        "wins": 1,
-        "winRate": 0.5
-      },
-      {
-        "umaName": "Mejiro Dober",
         "starts": 2,
         "wins": 1,
         "winRate": 0.5
@@ -18119,6 +18158,12 @@
         "winRate": 0
       },
       {
+        "umaName": "Nice Nature",
+        "starts": 2,
+        "wins": 0,
+        "winRate": 0
+      },
+      {
         "umaName": "Satono Diamond",
         "starts": 2,
         "wins": 0,
@@ -18144,12 +18189,6 @@
       },
       {
         "umaName": "Mejiro Ryan",
-        "starts": 1,
-        "wins": 0,
-        "winRate": 0
-      },
-      {
-        "umaName": "Nice Nature",
         "starts": 1,
         "wins": 0,
         "winRate": 0
