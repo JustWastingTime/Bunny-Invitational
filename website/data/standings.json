@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:50:15.612Z",
+  "updatedAt": "2026-07-19T15:53:59.865Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -69,10 +69,10 @@
       "name": "Cabal Agency",
       "color": "#c0fa3b",
       "firsts": 7,
-      "seconds": 5,
+      "seconds": 6,
       "thirds": 4,
       "uniqueBonuses": 0,
-      "points": 54,
+      "points": 57,
       "matchesPlayed": 2,
       "pointsPerMatch": 18.5
     },
@@ -81,9 +81,9 @@
       "color": "#646364",
       "firsts": 2,
       "seconds": 4,
-      "thirds": 3,
+      "thirds": 4,
       "uniqueBonuses": 1,
-      "points": 26,
+      "points": 27,
       "matchesPlayed": 1,
       "pointsPerMatch": 16
     },
@@ -112,11 +112,11 @@
     "rilliance": {
       "name": "Rilliance",
       "color": "#da49b8",
-      "firsts": 2,
+      "firsts": 3,
       "seconds": 2,
       "thirds": 3,
       "uniqueBonuses": 2,
-      "points": 21,
+      "points": 26,
       "matchesPlayed": 1,
       "pointsPerMatch": 10
     },
@@ -864,9 +864,18 @@
         },
         "dirt": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "rilliance",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "cabal",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "the-shadow-clones",
+              "slot": 0
+            }
           }
         }
       }
