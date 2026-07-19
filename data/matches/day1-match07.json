@@ -8,7 +8,7 @@
     "falena",
     "umalliance"
   ],
-  "activeCategory": "mile",
+  "activeCategory": "medium",
   "races": {
     "sprint": [
       {
@@ -108,47 +108,47 @@
       {
         "teamId": "umazing-hotspring",
         "slot": 0,
-        "gate": null
+        "gate": 9
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 1,
-        "gate": null
+        "gate": 6
       },
       {
         "teamId": "umazing-hotspring",
         "slot": 2,
-        "gate": null
+        "gate": 4
       },
       {
         "teamId": "falena",
         "slot": 0,
-        "gate": null
+        "gate": 7
       },
       {
         "teamId": "falena",
         "slot": 1,
-        "gate": null
+        "gate": 3
       },
       {
         "teamId": "falena",
         "slot": 2,
-        "gate": null
+        "gate": 8
       },
       {
         "teamId": "umalliance",
         "slot": 0,
-        "gate": null
+        "gate": 2
       },
       {
         "teamId": "umalliance",
         "slot": 1,
-        "gate": null
+        "gate": 1
       },
       {
         "teamId": "umalliance",
         "slot": 2,
-        "gate": null
+        "gate": 5
       }
     ],
     "long": [

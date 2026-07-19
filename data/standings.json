@@ -1,6 +1,6 @@
 {
   "tournament": "Bunny Invitational",
-  "updatedAt": "2026-07-19T15:08:11.199Z",
+  "updatedAt": "2026-07-19T15:12:07.570Z",
   "scoring": {
     "place": {
       "1": 5,
@@ -36,21 +36,21 @@
       "name": "Umazing Hotsprings",
       "color": "#c1e1f1",
       "firsts": 2,
-      "seconds": 2,
+      "seconds": 3,
       "thirds": 2,
       "uniqueBonuses": 2,
-      "points": 20,
+      "points": 23,
       "matchesPlayed": 1,
       "pointsPerMatch": 19
     },
     "falena": {
       "name": "Falena",
       "color": "#2e65cf",
-      "firsts": 2,
+      "firsts": 3,
       "seconds": 0,
-      "thirds": 2,
+      "thirds": 3,
       "uniqueBonuses": 2,
-      "points": 14,
+      "points": 20,
       "matchesPlayed": 1,
       "pointsPerMatch": 14
     },
@@ -724,9 +724,18 @@
         },
         "mile": {
           "placements": {
-            "1": null,
-            "2": null,
-            "3": null
+            "1": {
+              "teamId": "falena",
+              "slot": 2
+            },
+            "2": {
+              "teamId": "umazing-hotspring",
+              "slot": 0
+            },
+            "3": {
+              "teamId": "falena",
+              "slot": 0
+            }
           }
         },
         "medium": {
